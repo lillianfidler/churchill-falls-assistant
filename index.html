@@ -30,8 +30,8 @@
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            height: 90vh;
-            max-height: 800px;
+            height: 95vh;
+            max-height: 1200px;
         }
 
         .header {
@@ -394,9 +394,18 @@
             const contentDiv = document.createElement('div');
             contentDiv.className = 'message-content';
             
-            // Convert markdown-style links to HTML links and preserve line breaks
-            const formattedContent = content
+            // Convert markdown to HTML
+            let formattedContent = content
+                // Headers
+                .replace(/^### (.*$)/gm, '<h3 style="font-size: 16px; font-weight: 600; margin: 12px 0 8px 0;">$1</h3>')
+                .replace(/^## (.*$)/gm, '<h2 style="font-size: 18px; font-weight: 600; margin: 14px 0 10px 0;">$1</h2>')
+                .replace(/^# (.*$)/gm, '<h1 style="font-size: 20px; font-weight: 600; margin: 16px 0 12px 0;">$1</h1>')
+                // Bold
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                // Links
                 .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank">$1</a>')
+                // Line breaks
+                .replace(/\n\n/g, '<br><br>')
                 .replace(/\n/g, '<br>');
             
             contentDiv.innerHTML = formattedContent;
