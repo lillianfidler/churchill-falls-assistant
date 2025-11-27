@@ -1,0 +1,802 @@
+===================================
+GULL ISLAND 2002 FRAMEWORK AGREEMENT
+November 14, 2002
+===================================
+
+DOCUMENT TYPE: Framework Agreement for the Development of Gull Island
+DATE: November 14, 2002
+STATUS: Historical document - negotiations did not proceed to completion
+
+PARTIES:
+1. Gull Island Energy Corporation (wholly-owned subsidiary of NLH)
+2. Newfoundland and Labrador Hydro (NLH)
+3. Hydro-Québec (HQ)
+4. Her Majesty in Right of Newfoundland and Labrador
+5. The Government of Québec
+
+INTERVENING PARTY:
+- Churchill Falls (Labrador) Corporation Limited (acknowledged and agreed to be bound)
+
+---
+
+## EXECUTIVE SUMMARY
+
+### Purpose of Agreement
+
+Framework for developing Gull Island hydroelectric project with:
+- **Ownership, development, engineering, construction** by Gull Island Energy Corp.
+- **Construction financing and long-term financing** by Hydro-Québec
+- **Operation and maintenance** by Gull Island Energy Corp.
+- **Sale and delivery of energy** to Hydro-Québec at delivery point
+- **Conditions precedent** for Project Release
+- **Framework for Additional Agreements** required
+
+### Key Terms at a Glance
+
+**Project ownership:** 100% Gull Island Energy Corp. (NL Crown corporation, wholly-owned by NLH)
+**Power purchaser:** Hydro-Québec (all power less NL recall)
+**Price:** $35.50/MWh (indexed to HQ's North American sales price)
+**Minimum price:** $33.50/MWh for first 10 years
+**Term:** 45 years from Project Completion Date
+**Financing:** 100% by Hydro-Québec (non-recourse to NL or NLH)
+**NL recall rights:** Up to 500 MW cumulative (phased over 20 years)
+**Project Release deadline:** April 1, 2006
+
+### Historical Context
+
+**This agreement was never executed.** The 2002 framework established terms for Gull Island development between NL and Quebec, but negotiations did not proceed to Project Release. The project remained undeveloped until the 2010s when NL pursued Lower Churchill development independently through Muskrat Falls and (planned) Gull Island.
+
+**Comparison to 2024 MOU:**
+The 2024 MOU represents a completely different approach to Gull Island development, with different ownership structure (60% NLH / 40% HQ), different pricing mechanisms, and different financing arrangements.
+
+---
+
+## ARTICLE 1: PRINCIPLES OF INTERPRETATION
+
+### Language
+- Both English and French versions authoritative
+
+### Currency
+- All dollar references = Canadian dollars
+
+### Terms of Reference
+- Attached Terms of Reference form integral part of agreement
+- Include: Annual Price Index, Financing, Benefits Advisory Committee, Conditions Precedent, Glossary
+
+---
+
+## ARTICLE 2: OWNERSHIP AND FINANCIAL TERMS
+
+### 2.1 Ownership Structure
+
+**Gull Island Project (in Newfoundland and Labrador):**
+- Built, owned, operated by **Gull Island Energy Corporation**
+- Single purpose, newly incorporated Crown corporation
+- Wholly-owned subsidiary of NLH
+- NLH wholly-owned by Government of Newfoundland and Labrador
+
+**Quebec Transmission Expansion Project:**
+- Built, owned, operated by **Hydro-Québec**
+- Approximately 500 km of 735kV transmission lines
+- Montagnais-2 substation and associated facilities
+
+### 2.2 Energy Sales
+
+**Power Purchase Agreement:**
+- Gull Island will sell and deliver to HQ: ALL power produced
+- LESS any power recalled by Gull Island (see 2.9 Recall)
+- From Project In-Service Date through Term
+- Delivery at the Delivery Point
+
+### 2.3 Price
+
+**Base price:** $35.50 per megawatt hour (MWh)
+- Adjusted with base year = year in which Project Release occurs
+
+**Minimum price protection:** $33.50/MWh
+- Applies for first full 10 years of Term after Project In-Service Date
+- Floor price to protect NL from downside risk
+
+### 2.4 Annual Price Index (Escalation Mechanism)
+
+**Formula:**
+```
+Annual Price Index = 1 + [(HQ Avg. Price Year X - HQ Avg. Price Year X-1) / HQ Avg. Price Year X-1]
+```
+
+**Where HQ's Average Gross Sales Price equals:**
+```
+HQ's total annual revenue from power sales in North America ($) 
+÷ 
+HQ's total quantity of power sold in North America (MWh)
+```
+
+**Key features:**
+- Price indexed to **HQ's actual North American sales price**
+- Based on audited HQ results
+- Commences at Project Release Date
+- Applied annually, adjusted to reflect actual results at year end
+- First base year = year of Project Release
+
+**Significance:** Price moves with HQ's market performance, not fixed or predetermined escalation
+
+### 2.5 Term
+
+**Power Purchase Agreement duration:** 45 years
+- Starts from Project Completion Date
+- No automatic renewal mentioned
+
+### 2.6 Completion Risk
+
+**Gull Island (NL project):**
+- Assumes and mitigates completion risk for the Project
+- NL bears construction risk
+
+**Hydro-Québec (Quebec transmission):**
+- Assumes completion risk for Quebec Transmission Expansion Project
+- Assumes regulatory issues relating to transmission construction
+
+### 2.7 Financing
+
+**Lender:** Hydro-Québec
+
+**Financing provided:**
+- Construction financing
+- Long-term financing
+- **Non-recourse to Newfoundland & Labrador or NLH**
+
+**Amount financed:** Full Project Costs including:
+- All Sunk Costs
+- Pre-Release Costs
+- Full EPC Contract amount
+- Interest during construction
+- Owner's costs during construction
+- Additional contingency fund
+
+**Terms:** Consistent with Financing Terms of Reference (detailed below)
+
+### 2.8 Pre-Release Costs
+
+**Cost sharing before Project Release:**
+- NLH and HQ share 50%-50%
+- Costs incurred by Gull Island after Framework Agreement date
+- Reimbursed with interest upon conversion of Construction Loan to Term Loan
+
+### 2.9 Recall Rights (NL Power Access)
+
+**Cumulative recall rights:** Up to 500 MW with 100% load factor
+
+**Phased implementation:**
+
+**Phase 1:** Up to 150 MW
+- Available: From Project In-Service Date
+- Notice requirement: 5 years prior written notice
+
+**Phase 2:** Additional 150 MW (cumulative 300 MW)
+- Available: From 10th anniversary of In-Service Date
+- Notice requirement: 5 years prior written notice
+
+**Phase 3:** Additional 200 MW (cumulative 500 MW)
+- Available: From 20th anniversary of In-Service Date
+- Notice requirement: 5 years prior written notice
+
+**Compensation:** Gull Island will compensate HQ for:
+- Stranded transmission costs for Quebec Transmission Expansion Facilities
+- Subject to mitigation adjustments by HQ in certain cases
+
+**Significance:** 
+- NL retains flexibility to use power for domestic/industrial development
+- 500 MW represents substantial capacity for Labrador
+- Long notice periods give HQ planning certainty
+
+### 2.10 Greenhouse Gas Emission Credits
+
+**Ownership:** Greenhouse Gas Emission Credits = **Newfoundland & Labrador**
+
+**Context:** Kyoto Accord era - carbon credits had significant anticipated value
+
+---
+
+## ARTICLE 3: INNU, BENEFITS AND IMPLEMENTATION
+
+### 3.1 Innu Consultation
+
+**Both governments commit to:**
+- Consult with Innu affected by Projects in timely fashion and good faith
+- Seek appropriate relationships with affected Innu
+- Conduct discussions/negotiations in coordinated fashion and good faith
+- Ensure environmental process agreement accounts for Innu interests
+
+**Jurisdictional split:**
+- NL responsible for Gull Island Project consultations
+- Quebec responsible for Quebec Transmission Expansion consultations
+
+### 3.2 EPC Contract
+
+**EPC Contractor selection:**
+- Company or consortium with appropriate:
+  - Expertise
+  - Experience
+  - Creditworthiness
+
+### 3.3 Benefits and Labour
+
+**Policy objective:** Maximize economic benefits for **both** NL and Quebec
+- Fair and equitable sharing of benefits
+- Consistent with Canada's bilateral/multilateral commitments
+- Subject to economic efficiency considerations
+
+**Benefits Committee:**
+- Panel of senior officials from both provinces
+- Created by Premiers
+- Meet regularly in cooperative effort
+- Ensure HQ, Gull Island, EPC Contractor maximize opportunities for:
+  - Newfoundland & Labrador residents
+  - Quebec residents
+  - Innu
+
+**Implementation:** Benefits maximized through:
+- EPC contract terms
+- Labour agreements
+
+**Government commitments:**
+- Remove legislative/administrative obstacles
+- Ensure NL and Quebec residents/firms can access work in both jurisdictions
+- Consistent with NL-Quebec Agreement on Labour Mobility (April 24, 1998)
+
+---
+
+## ARTICLE 4: TECHNICAL AND REGULATORY ISSUES
+
+### 4.1 Choice of Law and Jurisdiction
+
+**Most agreements governed by:**
+- Laws of **Newfoundland and Labrador**
+- Adjudicated by NL courts
+- Subject to appeal to Supreme Court of Canada
+
+**Includes:**
+- Gull Island Power Purchase Agreement
+- Water Management Agreement
+
+**Exception - Construction and Term Loan Agreement:**
+- Governed by laws of **Quebec**
+- Adjudicated by Quebec courts
+- Subject to appeal to Supreme Court of Canada
+
+**Financial consequences of changes in law:**
+- NL law changes → borne by Newfoundland & Labrador
+- Quebec law changes → borne by Quebec
+- Via Reciprocal Indemnity Agreements
+
+**Dispute resolution:**
+- Alternate non-binding mechanisms before courts:
+  - Inter-utility liaison committee
+  - Intergovernmental committees
+  - Conciliation provisions
+
+### 4.2 Environmental Approval
+
+**Government commitments:**
+- Conduct appropriate environmental assessment
+- Consistent with statutory/regulatory requirements of all jurisdictions
+- Establish precise timetable for each process step
+- Respect jurisdictional authority of NL and Quebec
+
+**Coordination:**
+- Joint committee to monitor pre-feasibility studies
+- Monitor inter-jurisdictional issues
+
+### 4.3 Conditions Precedent
+
+**Obligations to proceed with Project Release subject to:**
+- Satisfaction of conditions in Conditions Precedent Terms of Reference (detailed below)
+
+### 4.4 Water Management
+
+**Water Management Agreement required:**
+- Parties: HQ, CF(L)Co, NLH, Gull Island
+- Purpose: Maximize production and minimize spills on Churchill River
+- Mechanism for coordinated water management between Churchill Falls and Gull Island
+
+### 4.5 Technical Standards
+
+**Project configuration and standards:**
+- Consistent with latest study reports
+- North American electric industry standards
+
+### 4.6 Project Coordination
+
+**Coordination mechanisms for:**
+- Construction timetable and sequencing
+- Procurement matters
+- Innu relationships and consultations
+- Progress reporting
+
+**Project Liaison Committee:**
+- Two representatives from HQ
+- Two representatives from Gull Island
+- Authority to represent respective interests
+
+### 4.7 through 4.15: Standard Contract Provisions
+
+**Amendments:** Prior written consent required
+**Public announcements:** Coordinated between parties
+**Waiver:** Must be in writing
+**Notices:** Procedures for official communications
+**Relationship of parties:** No joint venture/partnership created
+**Third party beneficiaries:** None
+**No assignments:** Rights not assignable
+**Churchill Falls Contracts:** Unaffected by this agreement
+
+---
+
+## FINANCING TERMS OF REFERENCE
+
+### Principal Amount
+
+**HQ provides financing for:**
+- All Sunk Costs
+- Pre-Release Costs
+- Full EPC Contract amount
+- Interest during construction
+- Owner's costs during construction
+- Additional contingency fund
+
+**Non-recourse:** Financing non-recourse to Newfoundland & Labrador or NLH
+
+**NL option:** NL has right to contribute towards cost or inject equity
+
+### Interest Rates
+
+**During construction (before Project Completion):**
+- Rate = HQ benchmark bond yield at drawdown + 150 basis points (1.50%)
+- Benchmark = semi-annual yield to maturity on acceptable HQ bond with maturity near Project Completion Date
+- Interest accrues and is capitalized
+- 150 bp compensates HQ for risks, costs, expenses including financing approved cost overruns
+
+**After Project Completion (term loan):**
+- Rate = each year's "HQed" (HQ weighted average cost of debt)
+- Based on HQ's Annual Audited Consolidated Financial Statements
+- Includes borrowings in all currencies and maturities
+- Accounts for nominal interest rates, discounts, premiums, issuance expenses, hedging impacts
+- Excludes loan guarantee fees to Province of Quebec
+
+### Amortization and Repayment
+
+**Amortization period:** 45 years
+- Commences date of conversion from construction loan to term loan
+
+**Gull Island option:** One-time option to amortize for period less than 45 years
+- Must be determined at least 6 months before Project Completion Date
+
+**Repayment structure:** "Mortgage style" repayment basis
+- Payments commence in first year of term loan
+
+**Prepayment option:** Right to repay 10% of original principal every 5th year
+- Requires 12 months prior written notice to HQ
+
+**Security:** HQ has right to take security over:
+- Project assets
+- Shares of Gull Island
+
+### Lender's Engineer
+
+**HQ will appoint Lender's Engineer**
+- Fees and expenses are "Owner's Costs"
+- Financed by HQ
+- Capitalized in Project cost
+
+### Sunk Costs (Historical Costs to be Reimbursed)
+
+**NLH Sunk Costs:**
+- Costs incurred March 9, 1998 to Framework Agreement date
+- Including capitalized interest
+- Plus interest from Framework Agreement to reimbursement date at NLH's weighted cost of capital
+
+**HQ Sunk Costs:**
+- Costs incurred March 9, 1998 to Framework Agreement date
+- Including capitalized interest
+- Plus interest from Framework Agreement to reimbursement date at 9.25% per annum
+
+**Excluded from Sunk Costs:**
+- All costs for negotiation/settlement of Innu land claims
+
+### Pre-Release Costs
+
+**Includes:**
+- Pre-release costs incurred by Gull Island
+- NLH Pre-Release Costs
+- HQ Pre-Release Costs
+- Plus interest from date incurred to reimbursement at rates in Pre-Release Costs Agreement
+
+**Excluded:**
+- All costs for negotiation/settlement of Innu land claims
+
+---
+
+## BENEFITS ADVISORY COMMITTEE TERMS OF REFERENCE
+
+### Structure
+
+**Joint Government Committee:**
+- 2 members from Government of Quebec
+- 2 members from Government of Newfoundland and Labrador
+
+### Role
+
+Assist Governments in developing program to:
+- Maximize economic benefits for NL and Quebec
+- Monitor economic benefits
+
+### Mandate (Key Elements)
+
+**Data and analysis:**
+- Review project data to identify opportunities
+- Match to NL and Quebec capacities
+- Determine strategies to maximize benefits
+
+**Specific activities:**
+- Develop information plan for industry participants
+- Identify contracting/procurement measures for full and fair opportunity
+- Develop supplier development program
+- Identify key points for EPC Contractor negotiations
+- Monitor joint industrial and employment benefits
+- Develop plan for employment and training provisions
+
+### Guiding Principles
+
+**1. Sound Commercial Basis:**
+- Primary consideration = complete Project on schedule, on budget, at quality specifications
+- Due regard to safety and environmental protection
+- Consistent with applicable law and Canada's commitments
+
+**2. Employment and Training:**
+- First consideration to **qualified residents of Newfoundland and Labrador**
+- Recognizing principle of adjacency (priority to Labrador)
+- Then to **qualified residents of Quebec**
+- Goal of effective Innu participation
+
+**3. Potential Suppliers:**
+- Early identification of opportunities
+- Work with governmental authorities and industry organizations
+- Jointly identify potential suppliers in both provinces
+
+**4. Procurement Policies:**
+- Timely communication of requirements
+- Bid packaging to provide full and fair opportunity
+- **Where bids competitive:** First consideration to NL suppliers, then Quebec suppliers
+- All suppliers/contractors must comply with policies
+
+**5. Disclosure:**
+- EPC Contractor must fully disclose:
+  - Arrangements among consortium participants
+  - Equity shares in consortium
+  - Share and nature of work by each participant
+
+**6. Project Management, Design and Procurement:**
+- **Project managed from Newfoundland and Labrador**
+- Staffed with managers having appropriate decision-making authority
+- Activities in NL include: feasibility, design, construction management, environmental studies, project management, operations, procurement, geo-scientific analysis, logistics, communications
+- **Engineering for Project carried out in NL by individuals located in NL**
+  - Exception: "Specialized Engineering Services" (limited specialists not available in NL, limited time duration, approved by project management)
+- EPC Contractor must use qualified NL engineering firms to fullest extent possible
+
+**7. Location of Offices:**
+- Gull Island will establish offices in NL as soon as possible
+- Will cause EPC Contractor to establish NL offices
+- Where feasible, other subcontractors to establish NL offices
+
+---
+
+## CONDITIONS PRECEDENT FOR PROJECT RELEASE
+
+### Conditions for Both Gull Island and HQ (1-12)
+
+**Must be satisfied to both parties' satisfaction, acting commercially reasonably:**
+
+1. **Environmental:** All Environmental Approvals received on satisfactory terms
+
+2. **Regulatory:** All Regulatory Approvals received on satisfactory terms
+
+3. **Consultation with Innu:** Parties satisfied with consultation results
+
+4. **EPC Contract:** Final agreement reached with EPC Contractor on satisfactory terms
+
+5. **Quebec Transmission Expansion:** HQ received and confirmed regulatory approvals for transmission, final configuration acceptable, compatible with Project Schedule
+
+6. **Additional Agreements:** Final agreement reached and executed on all Additional Agreements
+
+7. **Additional Agreements Conditions Precedent:** Conditions in Additional Agreements satisfied
+
+8. **Economic Viability:** Project economically viable (including capital costs and Construction Schedule)
+
+9. **No Material Adverse Change in Law:** No material adverse change in legislative/regulatory framework
+
+10. **No Material Adverse Change:** No material adverse change or circumstance affecting Project, Gull Island, HQ or transactions
+
+11. **Enforceability:** Additional Agreements enforceable, enabling legislation passed if necessary
+
+12. **Performance of Obligations:** Each Party performed obligations in all material respects
+
+### Additional Condition for HQ Only (13)
+
+13. **Quebec Transmission Cost:** HQ satisfied with capital costs for Quebec Transmission Expansion Project
+
+### Board Approvals
+
+**All party approvals require:**
+- Resolution of Board of Directors
+
+### Waiver or Modification
+
+**Conditions 1-12:** For benefit of both Gull Island and HQ
+- Require express prior written consent of both
+
+**Condition 13:** For sole benefit of HQ
+- Requires express prior written consent of HQ only
+
+### Deadlines for Satisfaction
+
+**Specific deadlines:**
+- **Condition 3 (Innu consultation):** June 30, 2003
+- **Condition 4 (EPC Contract):** November 30, 2004
+- **Condition 5 (Quebec transmission):** March 31, 2005
+- **Conditions 1, 2, 7-12:** April 1, 2006
+- **Condition 13 (HQ transmission costs):** April 1, 2006
+- **Condition 6 (Additional Agreements):** Various dates (see Additional Agreements section)
+
+**Parties agree to make commercially reasonable efforts to respect timetable**
+
+### Effect of Non-Satisfaction
+
+**If conditions not satisfied or waived by deadline:**
+- Parties deemed to have decided not to proceed
+- Framework Agreement terminates
+- Parties discharged of obligations
+
+**Exceptions - survive termination:**
+- Sections 4.1, 4.7-4.13, 4.15
+- Liability for breach occurring before termination
+
+**Additional Agreements:**
+- Become void
+- No party liability
+
+---
+
+## ADDITIONAL AGREEMENTS REQUIRED
+
+### List of Additional Agreements
+
+1. **Reciprocal Indemnity Agreements** (between all Parties)
+2. **EPC Contract and related agreements** (Gull Island and EPC Contractor)
+3. **Power Purchase Agreement** (HQ and Gull Island)
+4. **Water Management Agreement** (CF(L)Co, HQ, Gull Island, NLH)
+5. **Financing Agreements** (HQ, NLH, NL government, Gull Island)
+   - Construction and Term Loan Agreement
+   - Security Documents
+6. **GHG Emission Credits Agreement** (all Parties, if necessary)
+
+### Timetable for Additional Agreements
+
+**July 31, 2003:**
+- Reciprocal Indemnity Agreements
+
+**September 30, 2003:**
+- **Form** of Power Purchase Agreement (except provisions not capable of completion)
+- **Form** of Financing Agreements (including Construction/Term Loan, Security Documents)
+- Upon finalization, forms supersede relevant Framework Agreement provisions
+
+**November 30, 2004:**
+- EPC Contract and related agreements
+- **Definitive** Power Purchase Agreement
+- Water Management Agreement
+- **Definitive** Financing Agreements
+- GHG Emission Credits Agreement (if necessary)
+
+**Or such other dates as Parties agree**
+
+### Continuity Provisions
+
+**Additional Agreements must provide continuity for:**
+- Annual Price Index mechanism
+- HQ benchmark bond rate
+- HQ weighted average cost of debt mechanism
+
+### Supersession and Termination
+
+**Upon execution of Additional Agreement:**
+- That agreement supersedes relevant Framework Agreement provisions
+
+**Upon Project Release:**
+- Framework Agreement ceases and terminates
+
+---
+
+## GLOSSARY (KEY DEFINITIONS)
+
+### Churchill Falls Contracts
+
+**Defined as all contracts between CF(L)Co, NLH, and HQ in effect as of November 14, 2002:**
+
+1. **Sublease of Water Rights** (November 15, 1961) - CF(L)Co to Twinco, expires December 31, 2014
+
+2. **Trust Deed of Hypothec, Mortgage and Pledge** (September 1, 1968) - CF(L)Co and General Trust of Canada
+
+3. **Power Contract** (May 12, 1969) - HQ and CF(L)Co, including renewal
+
+4. **Deed of Trust and Mortgage** (May 15, 1969) - CF(L)Co, Royal Trust, NL, HQ, General Trust
+
+5. **Contract for sale of up to 300 MW** (March 9, 1998) - CF(L)Co and NLH
+
+6. **Operating Agreement** (November 1, 1990) - CF(L)Co and HQ
+
+7. **Guaranteed Winter Availability Contract (GWAC)** (November 1, 1998) - HQ and CF(L)Co
+
+8. **Shareholders' Agreement** (June 18, 1999) - NLH, HQ, CF(L)Co
+
+9. **Amended and Restated Purchase and Sale Agreement** (February 19, 2001) - HQ, NLH, CF(L)Co
+
+### HQed
+
+**Definition:** Hydro-Québec's weighted average cost of debt
+- Using data from HQ's Annual Audited Consolidated Financial Statements
+- Includes borrowings in all currencies and maturities (including perpetuals)
+- Accounts for: nominal interest rates, discounts, premiums, issuance expenses, hedging impacts
+- Excludes: loan guarantee fees to Province of Quebec
+
+### Project
+
+**Gull Island power plant and associated facilities and transmission lines** located in Newfoundland and Labrador
+
+### Quebec Transmission Expansion Project
+
+**Approximately 500 km of 735kV transmission lines, Montagnais-2 substation and associated facilities** located in Quebec, required to transmit firm energy and capacity on HQ TransÉnergie system
+
+---
+
+## COMPARISON: 2002 FRAMEWORK vs 2024 MOU
+
+### Ownership Structure
+
+**2002 Framework:**
+- 100% Gull Island Energy Corp. (NL Crown corp, wholly-owned by NLH)
+- HQ = lender and power purchaser, not equity owner
+
+**2024 MOU:**
+- 60% NL Hydro / 40% Hydro-Québec equity ownership
+- Joint development partnership
+
+### Pricing
+
+**2002 Framework:**
+- $35.50/MWh base price (adjusted from Project Release year)
+- Floor of $33.50/MWh for first 10 years
+- Indexed to HQ's North American sales price
+- 45-year term
+
+**2024 MOU:**
+- 5.9¢/kWh ($59/MWh) effective average price
+- Indexed to: Quebec wholesale market, replacement costs, northeast export markets
+- 50-year term (to 2075)
+
+### Financing
+
+**2002 Framework:**
+- 100% financing by HQ
+- Non-recourse to NL/NLH
+- Interest = HQ cost of debt plus 150bp during construction, HQ cost of debt after
+
+**2024 MOU:**
+- HQ pays $3.5B (present value) / $4.8B (nominal) for development rights
+- Cost-plus return structure with 8-9% ROE
+- HQ manages construction for Gull Island, accepts cost overruns
+- NL Hydro has some construction risk exposure (transmission, CF upgrade)
+
+### NL Power Access
+
+**2002 Framework:**
+- Up to 500 MW cumulative recall rights (phased over 20 years)
+- 5-year notice requirement
+- Compensation for stranded HQ transmission costs
+
+**2024 MOU:**
+- NL Hydro access to 225 MW from Gull Island
+- Plus additional capacity from CF expansion/upgrades
+- Total NL access ~1,990 MW from all projects
+
+### Project Management
+
+**2002 Framework:**
+- Project managed from Newfoundland and Labrador
+- Engineering, design, procurement in NL
+- Strong NL-first procurement and employment provisions
+
+**2024 MOU:**
+- HQ manages construction and accepts cost overruns (Gull Island, CF expansion)
+- NL Hydro operates facilities
+- Benefits agreements for employment
+
+### Risk Allocation
+
+**2002 Framework:**
+- Gull Island assumes completion risk for Project
+- HQ assumes Quebec transmission risk
+- HQ financing non-recourse to NL
+
+**2024 MOU:**
+- HQ accepts cost overruns for Gull Island and CF expansion
+- NL exposed to: transmission overruns, 65.8% of CF upgrade overruns
+- Province must borrow $17-18B for equity
+
+---
+
+## WHY 2002 FRAMEWORK DID NOT PROCEED
+
+### Conditions Precedent Not Met
+
+**Key deadlines:**
+- Innu consultation: June 30, 2003
+- EPC Contract: November 30, 2004
+- Project Release: April 1, 2006
+
+**The 2002 Framework terminated** because conditions precedent were not satisfied by deadlines
+
+### Likely Reasons (Context from Historical Research)
+
+**From historical documents:**
+1. **Economic viability questions** - Project economics at $35.50/MWh may not have been compelling
+2. **Innu consultation challenges** - Land claims negotiations ongoing
+3. **Market conditions** - Electricity demand/pricing may not have supported development
+4. **Political factors** - Danny Williams government (2003-2010) pursued different strategy
+5. **Alternative approaches** - NL eventually decided to develop Lower Churchill independently
+
+### Subsequent History
+
+**2000s:** Project did not advance
+**2010:** Muskrat Falls project announced (Lower Churchill first phase)
+**2012:** Gull Island Environmental Assessment completed
+**2024:** New MOU signed with fundamentally different structure
+
+---
+
+## SIGNIFICANCE FOR CHURCHILL FALLS AI AGENT
+
+### Historical Context
+
+**This 2002 Framework shows:**
+- NL and Quebec have negotiated Gull Island development before
+- Previous terms were very different from 2024 MOU
+- 100% NL ownership was once on the table
+- HQ role as lender vs equity partner distinction
+- Strong NL-first provisions were negotiated in 2002
+
+### Key Comparisons Users May Ask About
+
+**Ownership:** 100% NL (2002) vs 60/40 NL/HQ (2024)
+**Pricing:** $35.50/MWh indexed to HQ sales (2002) vs $59/MWh indexed to multiple factors (2024)
+**Risk:** HQ financing non-recourse (2002) vs NL borrowing $17-18B (2024)
+**Management:** NL manages from NL (2002) vs HQ manages construction (2024)
+
+### Why This Matters
+
+**Historical precedent for:**
+- Different deal structures
+- NL negotiating leverage
+- Alternative approaches to development
+- Comparison points for evaluating 2024 MOU
+
+**Shows that:**
+- Current MOU is not the only possible structure
+- Trade-offs between control, risk, and financing
+- Both provinces have long sought Gull Island development
+
+---
+
+**DOCUMENT INFORMATION:**
+- Agreement Type: Framework Agreement for Development of Gull Island
+- Date: November 14, 2002
+- Status: Never executed - conditions precedent not met
+- Project Release deadline missed: April 1, 2006
+- Historical significance: Provides comparison point for 2024 MOU terms

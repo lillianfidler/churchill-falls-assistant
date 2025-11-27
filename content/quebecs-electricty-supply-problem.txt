@@ -1,0 +1,243 @@
+================================================================================
+QUÉBEC'S ELECTRICITY SUPPLY PROBLEM
+================================================================================
+Author: Dr. Doug May
+Date: 2025
+Series: Follows Video #3-A on Imports in the CRPP Series
+Document Type: Analysis of Quebec's changing electricity import patterns
+Source: Statistics Canada Table 25-10-0016-01
+
+================================================================================
+EXECUTIVE SUMMARY
+================================================================================
+
+KEY FINDING: Quebec faces a growing electricity supply crisis, increasingly dependent on expensive US imports as Churchill Falls reaches capacity limits.
+
+CRITICAL CHANGES 2024-2025:
+• Historic reversal: Quebec now importing MORE from USA than it exports (first 8 months of 2025)
+• US imports up 111.4% year-over-year (Jan-Aug 2025)
+• Provincial imports (mostly Churchill Falls) down 13.6%
+• US electricity costs ~25× more than Churchill Falls power
+
+PRICE COMPARISON:
+• Churchill Falls: ~0.308¢/kWh
+• US imports: 7.15¢/kWh average (ranges 5.04¢ to 10.25¢)
+• Price differential: US power costs approximately 25 times more
+
+THE PROBLEM: Churchill Falls has reached generating capacity and cannot provide more power to Quebec, forcing reliance on expensive US imports.
+
+================================================================================
+SECTION 1: CHURCHILL FALLS' ROLE IN QUEBEC'S ELECTRICITY SYSTEM
+================================================================================
+(Context from Video 3-A)
+
+FUNDAMENTAL ROLE:
+Churchill Falls electricity is a "necessary import" to Hydro-Quebec that:
+• Guarantees long-term, secure, extremely cheap electricity source
+• Enables Quebec to meet domestic needs
+• Allows profitable exports to New Brunswick and USA
+• Provides Quebec households/businesses with cheapest power in Canada and G7
+
+THE SUBSIDY QUESTION:
+"Some would say that NL 'subsidizes' the low prices"
+• Key to CF's low price: almost free cost of vast Churchill River water resources
+• Former Government of NL wrote in "Our Chapter" that it hopes MOU will unlock the "value" of CF
+
+QUEBEC'S COMPETITIVE ADVANTAGE:
+CF electricity enables HQ to provide:
+• Cheapest power in Canada
+• Cheapest power in G7 (including USA)
+• Foundation for profitable export business
+
+================================================================================
+SECTION 2: HISTORICAL IMPORT PICTURE (2022 & EARLIER)
+================================================================================
+
+2022 IMPORT BREAKDOWN:
+Total imports: 14.0% of electricity available to Quebec
+
+SOURCE BREAKDOWN:
+• 13.7% from other provinces
+  - Some from Ontario
+  - Vast majority from Churchill Falls
+• 0.3% from USA
+
+HISTORICAL PATTERN:
+• Before 2022: HQ rarely imported power from USA
+• Churchill Falls was dominant import source
+• Minimal reliance on US electricity
+
+NOTE: This represents the stable historical pattern before the dramatic changes of 2024-2025.
+
+================================================================================
+SECTION 3: THE AMAZING RESTRUCTURING (2024-2025)
+================================================================================
+
+DRAMATIC SHIFT IN IMPORT PATTERNS:
+
+2025 YEAR-TO-DATE (First 8 Months):
+• Total imports: DOWN 4.2% vs same period 2024
+• Provincial imports: DOWN 13.6%
+• USA imports: UP 111.4%
+
+HISTORIC REVERSAL:
+"In the first eight months of 2025, imports from the USA were greater than exports. Traditionally, during this same time period, exports to the USA are greater than imports. This is an amazing change in electricity trading patterns with the USA."
+
+SIGNIFICANCE: Quebec has shifted from being a net exporter to USA (during this period) to a net IMPORTER from USA.
+
+2024 FULL YEAR DATA:
+Total imports: 17.4% of electricity available to Quebec
+
+SOURCE BREAKDOWN:
+• 15.7% from other provinces
+• 1.7% from USA
+• Estimated 31.5 TWh from Churchill Falls in 2024
+  - Represents approximately 80.6% of total imported power
+
+TREND: Growing dependency on imports overall, with dramatic increase in US sources.
+
+================================================================================
+SECTION 4: US IMPORT PRICING DATA
+================================================================================
+
+COST OF US ELECTRICITY TO QUEBEC:
+
+Q1 2025 (January-March): 10.25¢/kWh
+Q2 2025 (April-June): 5.04¢/kWh
+Year-to-date average (through Sept): 7.15¢/kWh
+
+SEASONAL VARIATION:
+• Winter (Q1): Highest prices at 10.25¢/kWh
+• Spring/Summer (Q2): Lower at 5.04¢/kWh
+• Reflects typical North American electricity demand patterns
+
+PRICE COMPARISON:
+• Churchill Falls: ~0.308¢/kWh
+• US average 2025: 7.15¢/kWh
+• US imports cost approximately 23-25 times more than Churchill Falls power
+
+SOURCE DISPUTE NOTE:
+According to CER (Canada Energy Regulator), all HQ imports from USA are from New York state. HQ says differently.
+
+================================================================================
+SECTION 5: DATA METHODOLOGY & CAUTIONS
+================================================================================
+
+DATA SOURCE:
+Statistics Canada Table 25-10-0016-01
+Time period: January 2015 - July 2025
+
+IMPORTANT CAUTIONS:
+
+1. QUEBEC vs HYDRO-QUEBEC DATA:
+• Statistics Canada data relates to TOTAL ELECTRICITY FOR QUEBEC
+• Not solely Hydro-Quebec
+• HQ production = approximately 90% of total Quebec generation
+• Most imports and exports are through HQ
+• Non-HQ production likely primarily for domestic industrial use
+
+2. CHURCHILL FALLS CLASSIFICATION:
+• Statistics Canada considers CF electricity an "import" into Quebec
+• Statistics Canada considers CF electricity an "export" from NL
+• HQ is substantial shareholder of CF(L)Co which owns CF generating station
+• HQ does NOT include CF power as "import" in its own publications
+• This creates discrepancy between Statistics Canada and HQ reporting
+
+IMPLICATION: When HQ publishes import statistics, they may not match Statistics Canada because HQ treats Churchill Falls as internal generation, not imports.
+
+================================================================================
+SECTION 6: CONCLUSIONS & IMPLICATIONS
+================================================================================
+
+THE SUPPLY CRISIS:
+
+1. GROWING DEPENDENCY ON IMPORTED POWER
+Particularly expensive US electricity (~25× cost of Churchill Falls)
+
+2. CHURCHILL FALLS AT CAPACITY
+• Has reached generating capacity limits
+• Cannot export more power to Quebec
+• No additional supply available from this ultra-cheap source
+
+3. PRICE IMPACT
+• US electricity costs 7.15¢/kWh average (2025)
+• Churchill Falls costs ~0.308¢/kWh
+• Price differential: approximately 25:1
+
+4. STRUCTURAL PROBLEM
+"HQ has a long-term, security of cheap electricity supply problem!"
+
+STRATEGIC IMPLICATIONS:
+
+For Quebec/Hydro-Quebec:
+• Must find alternative electricity sources
+• Faces significantly higher costs for new supply
+• Traditional competitive advantage (cheap power) under pressure
+• Export business economics changing
+
+For Newfoundland and Labrador:
+• CF's value increasingly clear as Quebec faces supply constraints
+• Strategic importance of Labrador water resources highlighted
+• Context for MOU negotiations and "unlocking value" of Churchill Falls
+
+CRITICAL CONTEXT FOR MOU:
+This analysis provides essential context for understanding:
+• Why Quebec pursued new Churchill Falls agreement
+• Value of additional Labrador hydroelectric development (Gull Island)
+• Strategic importance of water resources
+• Urgency of securing long-term electricity supply
+
+================================================================================
+KEY STATISTICS SUMMARY
+================================================================================
+
+HISTORICAL (2022):
+• Total imports: 14.0% of Quebec electricity
+• Provincial imports: 13.7% (mostly Churchill Falls)
+• US imports: 0.3%
+
+CURRENT (2024):
+• Total imports: 17.4% of Quebec electricity
+• Provincial imports: 15.7%
+• US imports: 1.7%
+• Churchill Falls estimated: 31.5 TWh (80.6% of total imports)
+
+RECENT TREND (Jan-Aug 2025):
+• Total imports: Down 4.2% vs 2024
+• Provincial imports: Down 13.6%
+• US imports: Up 111.4%
+• Historic reversal: Net importer from USA vs traditional net exporter
+
+PRICING:
+• Churchill Falls: ~0.308¢/kWh
+• US imports Q1 2025: 10.25¢/kWh
+• US imports Q2 2025: 5.04¢/kWh
+• US imports YTD 2025: 7.15¢/kWh average
+• Cost ratio: US electricity ~25× more expensive than Churchill Falls
+
+CAPACITY CONSTRAINT:
+• Churchill Falls: At generating capacity limit
+• Cannot provide additional power to Quebec
+• Forces reliance on expensive alternative sources
+
+================================================================================
+DOCUMENT CONTEXT FOR AI ASSISTANT
+================================================================================
+
+This document is part of Dr. Doug May's comprehensive analysis series on Churchill Falls and Quebec electricity. It should be used in conjunction with:
+
+• Other Doug May video analyses (particularly Video 3-A on imports)
+• Churchill Falls MOU documents
+• Historical context documents
+• Financial analysis documents
+
+When answering questions about Quebec's electricity situation, the AI should reference:
+• The dramatic 2024-2025 shift in import patterns
+• The historic reversal from net exporter to net importer (from USA)
+• The 25:1 cost differential between Churchill Falls and US power
+• The capacity constraints at Churchill Falls
+• The strategic supply problem facing Hydro-Quebec
+
+This analysis explains WHY the Churchill Falls MOU is strategically important to Quebec and provides context for understanding the negotiating dynamics.
+
+END OF DOCUMENT

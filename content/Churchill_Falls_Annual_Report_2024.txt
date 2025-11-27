@@ -1,0 +1,388 @@
+===================================
+CHURCHILL FALLS (LABRADOR) CORPORATION LIMITED
+2024 Annual Report - Financial Summary
+===================================
+
+DOCUMENT: CF(L)Co Consolidated Financial Statements for year ended December 31, 2024
+AUDITOR: Deloitte LLP, St. John's, NL
+AUDIT OPINION: Unqualified (clean opinion) - March 14, 2025
+ACCOUNTING STANDARDS: IFRS Accounting Standards (IASB)
+
+OWNERSHIP STRUCTURE:
+- Newfoundland and Labrador Hydro: 65.8%
+- Hydro-Québec: 34.2%
+
+NOTE: All figures in thousands of Canadian dollars unless otherwise stated
+
+---
+
+## KEY FINANCIAL HIGHLIGHTS (2024 vs 2023)
+
+### Revenue Performance
+
+**Total Revenue 2024:** $195,496 thousand ($195.5 million)
+**Total Revenue 2023:** $164,573 thousand ($164.6 million)
+**Increase:** $30,923 thousand (+18.8%)
+
+**Revenue Breakdown 2024:**
+1. **Energy sales:** $125,542 thousand (64.2% of revenue)
+2. **Guaranteed winter availability:** $38,293 thousand (19.6%)
+3. **Other revenue:** $22,615 thousand (11.6%)
+4. **Net finance income:** $9,046 thousand (4.6%)
+
+**Revenue Breakdown 2023:**
+1. **Energy sales:** $113,070 thousand (68.7%)
+2. **Guaranteed winter availability:** $38,897 thousand (23.6%)
+3. **Net finance income:** $8,964 thousand (5.4%)
+4. **Other revenue:** $3,642 thousand (2.2%)
+
+**Key Changes Year-over-Year:**
+- Energy sales: +$12,472 thousand (+11.0%)
+- Guaranteed winter availability: -$604 thousand (-1.6%)
+- Other revenue: +$18,973 thousand (+520.9%) ← **Significant increase**
+- Net finance income: +$82 thousand (+0.9%)
+
+### Profitability
+
+**Profit for the year 2024:** $81,533 thousand ($81.5 million)
+**Profit for the year 2023:** $54,099 thousand ($54.1 million)
+**Increase:** $27,434 thousand (+50.7%)
+
+**Total comprehensive income 2024:** $83,065 thousand
+**Total comprehensive income 2023:** $52,462 thousand
+**Increase:** $30,603 thousand (+58.3%)
+
+### Expenses
+
+**Total Expenses 2024:** $113,963 thousand
+**Total Expenses 2023:** $110,474 thousand
+**Increase:** $3,489 thousand (+3.2%)
+
+**Expense Breakdown 2024:**
+1. **Operating costs:** $70,798 thousand (62.1% of expenses)
+2. **Depreciation and amortization:** $30,640 thousand (26.9%)
+3. **Other expense:** $12,525 thousand (11.0%)
+
+**Expense Breakdown 2023:**
+1. **Operating costs:** $70,673 thousand (64.0%)
+2. **Depreciation and amortization:** $37,423 thousand (33.9%)
+3. **Other expense:** $2,378 thousand (2.2%)
+
+**Key Changes Year-over-Year:**
+- Operating costs: +$125 thousand (+0.2%) ← Very stable
+- Depreciation and amortization: -$6,783 thousand (-18.1%) ← **Significant decrease**
+- Other expense: +$10,147 thousand (+426.7%) ← **Significant increase**
+
+---
+
+## STATEMENT OF FINANCIAL POSITION (BALANCE SHEET)
+
+### Assets (As at December 31, 2024)
+
+**Total Assets 2024:** $1,294,705 thousand ($1.29 billion)
+**Total Assets 2023:** $1,203,187 thousand ($1.20 billion)
+**Increase:** $91,518 thousand (+7.6%)
+
+**Current Assets 2024:** $234,234 thousand
+- Cash: $138,670 thousand
+- Trade and other receivables: $51,630 thousand
+- Inventories: $22,970 thousand
+- Current portion of reserve fund: $18,236 thousand
+- Restricted cash: $298 thousand
+- Prepayments: $2,430 thousand
+
+**Current Assets 2023:** $197,991 thousand
+- Cash: $130,725 thousand
+- Trade and other receivables: $25,826 thousand
+- Inventories: $21,854 thousand
+- Current portion of reserve fund: $16,520 thousand
+- Restricted cash: $298 thousand
+- Prepayments: $2,768 thousand
+
+**Non-Current Assets 2024:**
+- **Property, plant and equipment:** $1,002,582 thousand (77.4% of total assets)
+- Reserve fund: $57,135 thousand
+- Intangible assets: $754 thousand
+
+**Non-Current Assets 2023:**
+- **Property, plant and equipment:** $945,487 thousand (78.6% of total assets)
+- Reserve fund: $58,905 thousand
+- Intangible assets: $804 thousand
+
+### Liabilities and Equity
+
+**Total Liabilities 2024:** $177,698 thousand
+**Total Equity 2024:** $1,117,007 thousand
+**Total 2024:** $1,294,705 thousand
+
+**Total Liabilities 2023:** $169,963 thousand
+**Total Equity 2023:** $1,033,224 thousand
+**Total 2023:** $1,203,187 thousand
+
+**Current Liabilities 2024:** $69,963 thousand
+- Trade and other payables: $51,675 thousand
+- Rental and royalty payable: $8,679 thousand
+- Deferred revenue: $6,112 thousand
+- Current portion of decommissioning/environmental liabilities: $1,486 thousand
+- Current portion of deferred credits: $1,514 thousand
+- Current portion of deferred contributions: $497 thousand
+
+**Non-Current Liabilities 2024:** $107,735 thousand
+- (Specific breakdown would require detailed notes)
+
+**Shareholders' Equity 2024:** $1,117,007 thousand
+- Includes: Share capital, Contributed capital, Reserves, Retained earnings
+
+---
+
+## KEY PERFORMANCE METRICS
+
+### Profitability Ratios
+
+**Profit Margin 2024:** 41.7% (Profit $81.5M / Revenue $195.5M)
+**Profit Margin 2023:** 32.9% (Profit $54.1M / Revenue $164.6M)
+**Improvement:** +8.8 percentage points
+
+### Financial Strength
+
+**Equity Ratio 2024:** 86.3% (Equity $1,117M / Total Assets $1,295M)
+**Equity Ratio 2023:** 85.9% (Equity $1,033M / Total Assets $1,203M)
+
+**Current Ratio 2024:** 3.35 (Current Assets $234M / Current Liabilities $70M)
+**Current Ratio 2023:** 2.83 (Current Assets $198M / Current Liabilities $70M)
+
+### Asset Efficiency
+
+**Cash Holdings Increase:** $7,945 thousand (+6.1%)
+**Receivables Increase:** $25,804 thousand (+99.9%) ← **Significant - nearly doubled**
+**PP&E Increase:** $57,095 thousand (+6.0%)
+
+---
+
+## CONTEXT: WADE LOCKE'S REFERENCED CF(L)Co DATA
+
+### 2023 Revenue Sources (from Locke analysis)
+
+**Total CF(L)Co revenues 2023:** $103 million
+
+**Breakdown per Locke:**
+- HQ payments: $40.5M
+- Guaranteed Winter Availability Contract (GWAC): $25.6M
+- NLH: $34M
+- Other: $1.2M
+
+**Note:** Locke's figures ($103M) differ from audited financial statements ($164.6M total revenue)
+
+**Possible explanation:**
+- Locke may have been referring to specific revenue categories
+- Financial statements include all revenue sources
+- Could be difference in reporting basis or timing
+
+### Water Royalties (from Dr. May's analysis)
+
+**2024 Water royalty to NL government:** $8,790 thousand ($8.79 million)
+
+**Other 2024 expenses breakdown (from CF financial notes):**
+- Salaries and benefits: Over $43 million
+- Maintenance: $12.7 million
+- Water royalties: $8.79 million
+
+**Cost per kWh:** 0.025¢/kWh paid to Government of Newfoundland and Labrador
+
+---
+
+## KEY OBSERVATIONS
+
+### Positive Indicators
+
+✅ **Strong profitability growth:** +50.7% year-over-year
+✅ **Revenue growth:** +18.8% despite stable GWAC
+✅ **Stable operating costs:** Only +0.2% increase
+✅ **Strong financial position:** 86.3% equity ratio
+✅ **Improved cash position:** +6.1%
+✅ **Strong current ratio:** 3.35 indicates good short-term liquidity
+
+### Items Requiring Context
+
+⚠️ **"Other revenue" spike:** +520.9% ($3.6M → $22.6M)
+- Represents $19M increase
+- Requires note review to understand source
+- Could be related to MOU discussions or one-time items
+
+⚠️ **"Other expense" spike:** +426.7% ($2.4M → $12.5M)
+- Represents $10.1M increase
+- Partially offsets "other revenue" increase
+- Requires note review to understand nature
+
+⚠️ **Receivables doubled:** Nearly 100% increase
+- Could indicate timing of payments
+- May relate to year-end billing cycles
+- Worth monitoring in future reports
+
+⚠️ **Depreciation decreased:** -18.1% ($37.4M → $30.6M)
+- Could indicate assets becoming fully depreciated
+- May relate to accounting policy changes
+- Could signal need for capital investment
+
+---
+
+## COMPARISON TO HYDRO-QUÉBEC 2024
+
+### Scale Comparison
+
+**CF(L)Co:**
+- Total revenue: $195.5 million
+- Net income: $81.5 million
+- Total assets: $1.29 billion
+
+**Hydro-Québec:**
+- Total revenue: $16.1 billion (82× larger)
+- Net income: $2.7 billion (33× larger)
+- Water royalties paid: $700 million (80× CF's royalty payment)
+
+### Water Royalty Comparison
+
+**CF(L)Co to NL government:** $8.79M ($0.025¢/kWh)
+**HQ to Quebec government:** $700M ($0.9¢/kWh)
+
+**Disparity:** Quebec receives 36× more per kWh in water royalties
+
+---
+
+## OWNERSHIP IMPLICATIONS
+
+### NL Hydro Share (65.8%)
+
+**NL's share of 2024 profit:** ~$53.6 million (65.8% of $81.5M)
+**NL's share of 2023 profit:** ~$35.6 million (65.8% of $54.1M)
+
+### Hydro-Québec Share (34.2%)
+
+**HQ's share of 2024 profit:** ~$27.9 million (34.2% of $81.5M)
+**HQ's share of 2023 profit:** ~$18.5 million (34.2% of $54.1M)
+
+### Total Shareholder Value
+
+**Shareholders' equity 2024:** $1,117.0 million
+- NL Hydro (65.8%): ~$735.0 million
+- Hydro-Québec (34.2%): ~$382.0 million
+
+---
+
+## MOU CONTEXT
+
+### Current Financial Performance
+
+**This 2024 report represents the LAST full year** before MOU pricing takes effect (Jan 1, 2025)
+
+### Historical Context
+
+**2024 represents:**
+- Last year of 1969 contract pricing (0.2¢/kWh)
+- Baseline for measuring MOU impact
+- Final year of GWAC at current terms
+
+### Expected Changes Under MOU
+
+**Starting 2025:**
+- Price increases from 0.2¢/kWh to 5.9¢/kWh (30× increase)
+- GWAC to be replaced
+- Revenue expected to increase dramatically
+
+**Projected annual revenue to CF(L)Co under MOU:** ~$1.17 billion (average to 2041)
+- Compared to 2024 revenue: $195.5 million
+- **Expected increase:** ~6× current revenue
+
+**NL treasury share (65.8%):** ~$768 million annually
+- Compared to 2024 NL share: ~$53.6 million
+- **Expected increase:** ~14× current NL return
+
+---
+
+## FINANCIAL STATEMENT NOTES (KEY ITEMS)
+
+While detailed notes are extensive in full report, key areas covered include:
+
+1. **Accounting policies** - IFRS compliance
+2. **Property, plant and equipment** - Depreciation methods
+3. **Revenue recognition** - Energy sales timing
+4. **Related party transactions** - Transactions with NLH and HQ
+5. **Commitments and contingencies** - Long-term obligations
+6. **Water power lease** - Terms with NL government
+7. **Power contracts** - Terms with customers
+8. **Employee benefits** - Pension and other obligations
+9. **Decommissioning** - Environmental obligations
+10. **Financial instruments** - Risk management
+
+---
+
+## AUDITOR'S OPINION
+
+**Clean Opinion Issued:** March 14, 2025
+
+**Key Points:**
+- Financial statements present fairly in all material respects
+- In accordance with IFRS Accounting Standards
+- No qualifications or concerns noted
+- Going concern basis appropriate
+
+---
+
+## SIGNIFICANT ITEMS FOR CHURCHILL FALLS AI AGENT
+
+### When Users Ask About CF(L)Co Finances:
+
+**2024 Performance:**
+- Revenue: $195.5M (+18.8% from 2023)
+- Profit: $81.5M (+50.7% from 2023)
+- Strong financial position (86.3% equity ratio)
+- Stable operating costs
+
+**Key Revenue Sources:**
+- Energy sales: $125.5M (64.2%)
+- GWAC: $38.3M (19.6%)
+- Other: $31.7M (16.2%)
+
+**Ownership Split:**
+- NL Hydro: 65.8% (~$53.6M profit share in 2024)
+- Hydro-Québec: 34.2% (~$27.9M profit share in 2024)
+
+**Water Royalties:**
+- Paid to NL government: $8.79M
+- Rate: 0.025¢/kWh
+- Compare to Quebec: 0.9¢/kWh (36× higher)
+
+**MOU Impact:**
+- 2024 is baseline year
+- Expected ~6× revenue increase starting 2025
+- NL treasury share expected ~14× increase
+
+---
+
+## LIMITATIONS OF THIS SUMMARY
+
+**This summary extracts:**
+- High-level financial metrics
+- Key performance indicators
+- Year-over-year comparisons
+- Context for MOU discussions
+
+**Full annual report contains:**
+- Detailed accounting policy notes
+- Complete breakdown of all line items
+- Commitments and contingencies details
+- Related party transaction details
+- Risk management disclosures
+- Complete cash flow analysis
+
+**For detailed analysis:** Consult full audited financial statements
+
+---
+
+**DOCUMENT INFORMATION:**
+- Company: Churchill Falls (Labrador) Corporation Limited
+- Period: Year ended December 31, 2024
+- Auditor: Deloitte LLP
+- Audit Date: March 14, 2025
+- Standards: IFRS (International Accounting Standards Board)
+- Opinion: Unqualified (clean)

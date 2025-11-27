@@ -1,0 +1,786 @@
+===================================
+DR. DOUG MAY: QUEBEC'S CHANGING IMPORT PICTURE
+Update August 2025 (Follows Video #3-A)
+===================================
+
+AUTHOR: Dr. Doug May
+DOCUMENT TYPE: Presentation/Analysis Update
+DATE: August 2025
+DATA SOURCES: Statistics Canada Table 25-10-0016-01, Canada Energy Regulator, HQ Mid-Year Report 2025
+SERIES: Follows Video #3-A in CRPP (Churchill River Power Project) Series
+
+CENTRAL FINDING: **"Amazing restructuring"** - HQ transformed from net exporter to net importer from USA
+
+---
+
+## EXECUTIVE SUMMARY
+
+### The Dramatic Transformation
+
+**Historical pattern (pre-2022):**
+- Virtually all imports from other provinces (primarily Churchill Falls)
+- Minimal imports from USA (0.3% in 2022)
+- HQ rarely imported from USA before 2022
+
+**Current pattern (2024-2025):**
+- Growing dependency on expensive USA imports
+- USA imports increased 488.4% (July 2024 to July 2025)
+- First 8 months 2025: USA imports up 111.4%
+- **HQ now net importer from USA** (imports > exports)
+
+### Key Price Comparison
+
+| Source | Price | Multiple vs CF |
+|--------|-------|----------------|
+| Churchill Falls (current) | 0.2¢/kWh | 1× (baseline) |
+| **MOU proposed (2025)** | **1.63¢/kWh** | **8×** |
+| USA imports (2024 average) | 4.1¢/kWh | 20.5× |
+| **USA imports (Jan-Aug 2025)** | **7.2¢/kWh** | **36×** |
+| USA imports (Q1 2025) | 10.25¢/kWh | 51.25× |
+
+**Bottom line:** USA import power is **25 times more expensive** than Churchill Falls electricity (comparing MOU 1.63¢ to USA 7.2¢ average)
+
+### Dr. May's Core Argument
+
+**"HQ has a long-term problem!"**
+
+1. Churchill Falls at maximum capacity - cannot export more
+2. Quebec drought forcing imports to meet domestic needs
+3. Must import expensive USA electricity (gas-fired)
+4. This expensive import price = true value of Churchill Falls water
+
+---
+
+## THE ROLE OF CHURCHILL FALLS IN QUEBEC'S ELECTRICITY PICTURE
+
+### From Video 3-A Context
+
+**Churchill Falls electricity is necessary "import" to Hydro-Quebec:**
+
+**Enables three critical functions:**
+1. **Guarantees long-term, secure, extremely cheap electricity**
+2. **Meets Quebec's own domestic needs**
+3. **Enables profitable exports** to New Brunswick and USA
+
+**Result:** HQ provides Quebec households and businesses with **cheapest power in Canada and G7**
+
+**Controversial framing:** "Some would say that NL 'subsidizes' the low prices"
+
+### The Water Value Question
+
+**Key to CF's low price:** "Almost free cost of the vast water resources of the Churchill River"
+
+**Government of NL's stated goal (from "Our Chapter"):** MOU hopes to **"unlock the value"** of Churchill Falls
+
+**Dr. May's methodology:** Use USA import prices to determine true value of NL water
+
+---
+
+## HISTORICAL IMPORT PATTERN (2022 & EARLIER)
+
+### 2022 Import Breakdown
+
+**Total imports:** 14.0% of electricity available to Quebec
+
+**Sources:**
+- **Other provinces:** 13.7% (mostly Churchill Falls, some Ontario)
+- **USA:** 0.3% (virtually none)
+
+**Key observation:** "Before 2022, HQ rarely imported power from the USA"
+
+**Implication:** Churchill Falls provided all import needs, USA not required
+
+---
+
+## THE AMAZING RESTRUCTURING (2024 & 2025)
+
+### 2024 Import Changes
+
+**Total imports:** 17.4% of electricity available to Quebec (up from 14.0% in 2022)
+
+**Sources:**
+- **Other provinces:** 15.7%
+- **USA:** 1.7% (up from 0.3%)
+
+**Churchill Falls specific:**
+- Estimated **31.5 TWh** imported from CF in 2024
+- Represents **80.6%** of total imported power
+- Churchill Falls still dominant but USA growing
+
+### 2025 Import Transformation (First 8 Months)
+
+**Year-over-year changes (vs same period 2024):**
+
+| Category | Change |
+|----------|--------|
+| Total imports | -4.2% |
+| Imports from other provinces | **-13.6%** |
+| Imports from USA | **+111.4%** |
+
+### August 2025 Specific Changes
+
+**From August 2024:**
+- Imports from New York: **+339.5%** (more than quadrupled)
+
+**From August 2022 (3-year comparison):**
+- Imports from New York: **No imports 3 years earlier** to significant volumes now
+- Total imports: +4.9%
+- Interprovincial imports: -9.4%
+
+### The Historic Reversal
+
+**"This is an amazing change in electricity trading patterns with the USA"**
+
+**Traditional pattern:**
+- HQ exports to USA > imports from USA
+- Net exporter status
+
+**Current pattern (First 8 months 2025):**
+- **Imports from USA > exports to USA**
+- **Net importer status**
+- Complete reversal of trade relationship
+
+---
+
+## USA IMPORT PRICE ESCALATION
+
+### Import Prices from New York State
+
+**Annual averages:**
+
+| Period | Price (¢/kWh CAD) | vs CF Current (0.2¢) | vs MOU (1.63¢) |
+|--------|-------------------|---------------------|----------------|
+| 2024 average | 4.1¢ | 20.5× | 2.5× |
+| Jan-Aug 2025 | 7.2¢ | 36× | 4.4× |
+
+**Quarterly breakdown 2025:**
+
+| Quarter | Price (¢/kWh) | Note |
+|---------|---------------|------|
+| Q1 2025 | 10.25¢ | Peak winter demand |
+| Q2 2025 | 5.04¢ | Lower spring demand |
+| Year to date (through Sept) | 7.15¢ | Blended average |
+
+### Price Escalation Trend
+
+**2024 to 2025 increase:**
+- From 4.1¢/kWh to 7.2¢/kWh
+- **Increase: 75.6%** in one year
+
+**Comparison to MOU escalation:**
+- MOU proposes 2% annual increase
+- Actual USA import prices: 75.6% increase
+- **Market increasing 38× faster than MOU terms**
+
+---
+
+## CAUTION: DATA INTERPRETATION ISSUES
+
+### Statistics Canada vs Hydro-Quebec Reporting
+
+**Statistics Canada Table 25-10-0016-01:**
+- Reports total electricity for **Quebec** (not just Hydro-Quebec)
+- Hydro-Quebec production ≈ 90% of total
+- Assumes most imports/exports through HQ
+- Non-HQ production primarily for domestic industrial use
+
+### Churchill Falls Classification Discrepancy
+
+**Statistics Canada classification:**
+- CF electricity = "import" into Quebec
+- CF electricity = "export" from Newfoundland and Labrador
+
+**Hydro-Quebec classification:**
+- **HQ does NOT include CF as "import" in publications**
+- Rationale: HQ is substantial shareholder (34.2%) of CF(L)Co
+- HQ treats CF as subsidiary/internal production
+
+**Significance:** Creates confusion in comparing data sources
+
+### Canada Energy Regulator Data Issues
+
+**CER reports:**
+- All HQ imports from USA come from New York State
+
+**But HQ states:**
+- New England is "primary export market"
+- Implies exports/imports with New England
+
+**Dr. May's note:**
+> "Full disclosure: I have asked CER for an explanation of NL exports to the USA, but have never received a response."
+
+**Data reliability:** Some inconsistency between CER and HQ reporting
+
+---
+
+## DR. MAY'S CONCLUSIONS
+
+### Immediate Situation
+
+**1. Falling hydroelectricity generation due to drought**
+- Forcing HQ to import more power
+- Imported power often needed just to meet domestic needs
+
+**2. Churchill Falls at maximum capacity**
+- HQ likely generating maximum from all hydro stations
+- While maintaining sustainable reservoir levels
+- Cannot increase Churchill Falls imports
+
+**3. Historic trade reversal**
+- Quebec turning to USA imports (New York, New England, Maine)
+- **HQ transformed from exporter to net importer**
+- "A dramatic change in Quebec's trade with the USA!"
+
+### The Cost Differential
+
+**4. Natural gas vs water cost comparison**
+- Main energy source in NY/New England: **Natural gas**
+- Natural gas electricity: **Extremely expensive**
+- Compare to: Cost of Smallwood Reservoir water = **Almost free**
+
+**Quote:** 
+> "The price of imported power by HQ from the USA would be used in the formula of differential rents to determine the value of the NL's water rights in the Smallwood Reservoir on the Churchill River when HQ imports electricity from CF."
+
+### The Value Proposition
+
+**5. Unlocking Churchill Falls value**
+- Differential rent = Market price - Production cost - Transmission cost
+- Market price = What HQ pays for USA imports
+- USA import price = True opportunity cost of CF water
+
+**Most important:**
+> "It would accomplish the primary purpose of the MOU as intended by the GNL in 'Our Chapter' to unlock the value of existing CF electricity."
+
+---
+
+## DETERMINING VALUE: DIFFERENTIAL (RICARDIAN) RENTS
+
+### The Economic Concept
+
+**Government of NL's stated goal:** MOU "unlocks the value"
+
+**Question:** How to determine value of natural resource (water)?
+
+**Dr. May's definition of rent:**
+> "The difference between the price that the output would have in an open market and the cost of producing that output and transmitting that output."
+
+**Costs include:**
+- Operating costs
+- Depreciation and amortization
+- Other direct production expenses
+- **Excludes:** Existing water rents (calculating new rent)
+
+### Application to Churchill Falls
+
+**If CF electricity had open market access:**
+- Not restricted by 1969 contract with Quebec
+- Not stranded (must run through Quebec)
+- Could reach provinces and states beyond Quebec
+- Then differential rents could be determined
+
+### Valuation for Domestic Use
+
+**When Quebec imports CF power for domestic use:**
+
+**Differential rent formula:**
+```
+Rent per MWh = USA import price at border 
+              - Transmission costs 
+              - Production cost at CF generating plant
+```
+
+**Dr. May's 2024 cost estimate:**
+- Production cost at CF station: ≈ 0.33¢/kWh
+- HQ pays: 0.2¢/kWh
+- **This implies loss, BUT CF(L)Co reported $81.5M profit in 2024**
+- **Conclusion:** Dr. May's average cost estimate "too high"
+- **NLH could calculate accurate cost** per kWh
+
+### Crude Differential Rent Estimate
+
+**Using available data:**
+
+**Differential rent per kWh:**
+```
+= 4.1¢/kWh (2024 USA import average)
+- 0.33¢/kWh (estimated AC at CF, likely too high)
+- Transmission costs (NLH could provide accurate figure)
+```
+
+**NLH advantages for calculation:**
+- Has accurate average cost data
+- Has transmission cost data (exports electricity to USA itself)
+- Could provide precise differential rent
+
+### Additional Observations
+
+**1. Declining depreciation:**
+- Depreciation and amortization expenses decline as capital assets age
+- Dam and buildings depreciate over time
+- Such expenses now less than operating costs
+
+**2. Rapid price increases:**
+- New England free-market price up 48% in 2025
+- Driven by increased demand (digital hubs, electrification, AI data centers)
+- Experts predicted this acceleration
+
+**3. Price volatility:**
+- Electricity prices vary throughout year (primarily demand shifts)
+- **Set annual wholesale prices are NOT the norm**
+- Market reality = dynamic pricing
+
+---
+
+## CRITICAL QUESTIONS FOR NLH, HQ, AND GNL
+
+### Churchill Falls Production and Sales Data
+
+**1. Churchill Falls percentage of HQ electricity:**
+- General understanding: CF ≈ 15% of HQ's total available electricity
+- **Is this true?**
+- **For each month since January 2015:**
+  - What amount of electricity has CF(L)Co sold to HQ?
+  - For how much revenue?
+
+**Dr. May note:** "I have made an ATIPPA request for these data on a monthly basis going back to January 1, 2015."
+
+### Import Cost Questions
+
+**2. HQ's reported import costs:**
+- HQ reported cost of imported power H1 2025 at 5¢/kWh
+- **Did this include low-cost CF electricity?**
+- HQ would know the details
+
+**3. Other provincial imports:**
+- Which other provinces does HQ import from?
+- How much each month?
+- What does HQ pay for this power?
+
+### Cost and Transmission Data
+
+**4. Average cost of CF power:**
+- What is the AC (average cost) of power from CF?
+
+**5. Transmission costs:**
+- What are transmission costs per MWh for CF power to:
+  - New England grid?
+  - New York grid?
+
+**6. HQ transmission ownership:**
+- Does HQ own part of transmission system in NY and NE?
+- If so, what are transmission costs per MWh?
+
+### Water and Reservoir Questions
+
+**7. Drought impact:**
+- Does drought affect water levels of Smallwood Reservoir?
+
+**8. MOU project impacts:**
+- How will proposed generating projects in MOU affect:
+  - Volume of water in Smallwood Reservoir?
+
+**9. Production costs:**
+- Does cost of producing power at CF increase when more power produced?
+- (Economist speak: estimates of marginal costs)
+
+**10. Future depreciation and maintenance:**
+- Estimates of depreciation costs for existing CF plant (no upgrades):
+  - For each year 2025-2071?
+- Estimates of maintenance costs:
+  - For each year 2025-2071?
+
+### Financial Questions
+
+**11. Outstanding capital costs:**
+- Are there outstanding capital asset costs for existing CF plant?
+- Are there debt costs associated with existing plant?
+
+**12. Export-import connection:**
+- Quebec electricity expert noted: In 2022, ~12% of electricity available to HQ was exported
+- This was close to amount imported from CF
+- **Is there a connection?**
+
+**13. HQ's 2025 mid-year statement:**
+- HQ states sales of ~6 TWh in H1 2025
+- About equal to volume of purchases
+- **Details?**
+
+### Water Royalty Modernization
+
+**14. Modernized water rental rates:**
+- NLH informed Dr. May that water rental rates and royalties being "modernized"
+- **What are the details?**
+- **How were these rates determined?**
+
+### Cost Calculation for Differential Rent
+
+**15. Average cost per MWh at CF:**
+- To calculate implicit rental value of CF water
+- Need aggregate cost per MWh including:
+  - Capital (K)
+  - Labour (L)
+  - Purchased materials (M) directly for production
+  - Services (S) directly required for production
+  - **Excludes:** Water royalties and rents (calculating new rent)
+- **What are these AC for CF power?**
+- **NLH has the answer**
+
+### MOU Base Price Clarification
+
+**16. Origin of 5.9¢/kWh base price:**
+- Walter Parsons (NLH) emphasizes 5.9¢/kWh is base price for MOU
+- His original explanation "has changed"
+- **Where does this price come from?**
+- GNL suggests tied to New England and New York market electricity prices
+- **Is it?**
+
+---
+
+## HQ MID-YEAR 2025 STATEMENT: KEY QUOTES
+
+### Strong Performance on Export Markets
+
+**Despite lower volumes, high prices drove profits**
+
+**Colder winter: Increase in market prices**
+- Sales of approximately **6 TWh** at **16¢/kWh** in 2025
+- Compare to: **9¢/kWh** in 2024
+- **Price increase: 78%**
+
+### Lower Prices Q2: Increase in Electricity Imports
+
+**Imports increased when export prices dropped**
+- Purchases of approximately **6 TWh** at **5¢/kWh** (H1 2025)
+- Compare to: **3¢/kWh** in 2024
+- **Price increase: 67%**
+
+### The Strategy
+
+> "Increase in income as a result of an efficient marketing strategy, supported by the reliability and performance of its generation and transmission equipment"
+
+**Dr. May's interpretation:**
+- HQ exports when prices high (Q1: 16¢/kWh)
+- HQ imports when prices lower (Q2: 5¢/kWh)
+- But import prices still rising (3¢ → 5¢ = 67% increase)
+
+**Critical note:**
+> "⚠️ HQ would likely not consider electricity obtained from CF(L)Co an import since it is a significant shareholder."
+
+**Implication:** HQ's reported "import" costs may exclude CF, making actual blended import cost appear lower
+
+---
+
+## NEW ENGLAND MARKET PRICE CHART (HQ DATA)
+
+### First Half 2025 Price Pattern
+
+**From HQ Semi-Annual Report:**
+
+| Month | 2025 Price | 2020-2024 Average | Increase |
+|-------|-----------|-------------------|----------|
+| January | ~18.5¢/kWh | ~8¢/kWh | +131% |
+| February | ~18.5¢/kWh | ~8¢/kWh | +131% |
+| March | ~5¢/kWh | ~7¢/kWh | -29% |
+| April | ~5¢/kWh | ~4¢/kWh | +25% |
+| May | ~5¢/kWh | ~3.5¢/kWh | +43% |
+| June | ~5¢/kWh | ~4¢/kWh | +25% |
+
+**Pattern observed:**
+- Extreme winter price spikes (Jan-Feb)
+- Collapse in March
+- Stabilization at elevated baseline (Apr-Jun)
+
+**Year-to-date average (Jan-Sept 2025):** 7.4¢/kWh
+- **48% increase** over same period 2024
+- **Compare to MOU:** 2% annual escalation
+- **Market increasing 24× faster** than MOU terms
+
+---
+
+## GNL'S OWN REFERENCE PRICES (REPEATED FROM PREVIOUS ANALYSIS)
+
+### From "A New Chapter for Hydroelectric Generation in Labrador"
+
+**Reference prices provided by Government of NL:**
+
+| Reference | Price | Source |
+|-----------|-------|--------|
+| New York ISO (YTD) | 4.3¢/kWh | NLH and HQ |
+| ISO New England (YTD) | 5.3¢/kWh | NLH and HQ |
+| **New CF PPA (MOU)** | **5.9¢/kWh** | **Proposed** |
+| HQ Long-Term Contracts (NECEC & CHPE) | 6.5¢/kWh | Actual |
+
+**Dr. May's observation:**
+- GNL using USA market prices as references
+- But actual Q1 2025 New England prices: 18.5¢/kWh
+- Actual Jan-Aug 2025 NY import prices to HQ: 7.2¢/kWh
+- **MOU's 2% escalation "do not reflect the realities of today's electricity markets!"**
+
+---
+
+## KEY CHARTS AND DATA VISUALIZATIONS
+
+### Chart 1: HQ's Electricity Imports (Jan 2015 - July 2025)
+
+**Pattern observed:**
+- Strong seasonal pattern with winter peaks
+- Until recently: Virtually all imports from other provinces
+- **Remarkable change:** Dramatic increase in USA imports starting 2023-2024
+- Imports from NY increased **almost 3.5 times**
+
+**Question raised:**
+> "Does this reflect monthly pattern from Churchill Falls? We don't know the answer to this question since NLH and HQ have not made these data publicly available."
+
+### Chart 2: Monthly Import Prices NY→HQ (Jan 2022 - Aug 2025)
+
+**Price range:** $20-$200+ CAD/MWh
+
+**Key observations:**
+- High volatility
+- Winter price spikes
+- Upward trend overall
+- Compare to: CF receives ~$2/MWh from HQ (0.2¢/kWh)
+
+**Visual comparison on chart:**
+> "Approximate price received by CF(L)Co from HQ for its [power]" - barely visible on chart due to scale difference
+
+---
+
+## SUMMARY OF KEY FINDINGS
+
+### The Transformation
+
+**1. Historic trade reversal:**
+- From net exporter to net importer (USA)
+- Complete restructuring of trade relationship
+
+**2. Growing USA import dependency:**
+- Imports from NY up 339.5% (Aug 2024-2025)
+- First time HQ regularly importing from USA
+- Expensive natural gas-based electricity
+
+**3. Churchill Falls at capacity limit:**
+- Cannot increase exports to Quebec
+- HQ must seek alternative sources
+- USA imports = only short-term solution
+
+### The Value Question
+
+**4. USA import price = CF water value:**
+- HQ paying 7.2¢/kWh average for USA imports (2025)
+- HQ paying 0.2¢/kWh for CF imports (current)
+- **Differential: 36× difference**
+- This differential represents true value of CF water
+
+**5. MOU pricing inadequate:**
+- MOU proposes 1.63¢/kWh starting price (2025)
+- USA imports averaging 7.2¢/kWh (4.4× MOU price)
+- Q1 2025 USA imports: 10.25¢/kWh (6.3× MOU price)
+
+### The Long-Term Problem
+
+**6. Climate change impact:**
+- Drought reducing Quebec hydroelectric production
+- Increasing reliance on imports
+- Water scarcity = increasing water value
+
+**7. Market dynamics ignored:**
+- USA import prices up 75.6% in one year (2024-2025)
+- New England prices up 48% (YTD 2025 vs 2024)
+- MOU's 2% escalation "do not reflect the realities of today's electricity markets!"
+
+**8. HQ's strategic position weakening:**
+- Must import expensive USA electricity
+- Cannot increase cheap CF imports
+- Profit margins on exports shrinking
+- Need for MOU projects now urgent
+
+---
+
+## IMPLICATIONS FOR MOU ASSESSMENT
+
+### What This Analysis Reveals
+
+**1. True market value of Churchill Falls water:**
+- Current methodology: Pay 0.2¢/kWh, ignore market
+- Proper methodology: Differential rent using USA import prices
+- **USA import price = opportunity cost of CF water**
+
+**2. MOU pricing severely undervalues water:**
+- MOU starting price: 1.63¢/kWh (2025)
+- Current USA import replacement cost: 7.2¢/kWh average, 10.25¢/kWh peak
+- **MOU captures only 23% of replacement value**
+
+**3. Fixed escalation ignores market reality:**
+- MOU: 2% annual escalation
+- Actual market: 75.6% increase in one year
+- Over 50 years, gap becomes massive
+
+**4. HQ's desperation for MOU:**
+- Cannot meet domestic needs without imports
+- USA imports 4-6× more expensive than MOU price
+- MOU projects = HQ's solution to long-term deficit
+- **NL has negotiating leverage HQ needs**
+
+### Questions for Newfoundland and Labrador
+
+**Strategic questions:**
+
+1. **Why accept 1.63¢/kWh when HQ paying 7.2¢/kWh for USA imports?**
+   - Differential: 4.4×
+   - Leaving massive value on table
+
+2. **Why not index price to HQ's USA import costs?**
+   - Automatic adjustment to market reality
+   - Captures true opportunity cost
+
+3. **Why 2% escalation when market increasing 75.6% annually?**
+   - Market 38× faster than MOU terms
+   - Repeats 1969 mistake of fixed escalation
+
+4. **What analysis of differential rents was conducted?**
+   - Economic theory provides clear methodology
+   - Did GNL calculate opportunity cost?
+
+5. **Does "unlocking value" mean capturing differential rent?**
+   - If yes: MOU fails to capture it
+   - If no: What does "unlocking value" mean?
+
+---
+
+## CONTEXT FOR CHURCHILL FALLS AI AGENT
+
+### How to Use This Analysis
+
+**Dr. May provides critical evidence that:**
+
+1. **HQ has transformed from exporter to importer** - Historic trade reversal with USA
+2. **USA import prices reveal true CF value** - Opportunity cost = what HQ must pay for replacement power
+3. **MOU pricing captures fraction of market value** - 1.63¢/kWh vs 7.2¢/kWh replacement cost
+4. **Climate change driving water scarcity** - Increasing value of Churchill Falls water
+5. **HQ desperately needs MOU projects** - Cannot meet domestic needs, USA imports too expensive
+
+### Key Statistics for AI Agent
+
+**Import transformation:**
+- USA imports up 488.4% (July 2024-2025)
+- USA imports up 111.4% (first 8 months 2025)
+- NY imports up 339.5% (August 2024-2025)
+
+**Price comparisons:**
+- CF current: 0.2¢/kWh
+- MOU 2025: 1.63¢/kWh
+- USA imports 2025: 7.2¢/kWh average
+- USA imports Q1 2025: 10.25¢/kWh peak
+
+**The value gap:**
+- HQ paying 36× more for USA imports than CF current
+- HQ paying 4.4× more for USA imports than MOU proposed
+- **MOU captures only 23% of replacement value**
+
+### User Questions to Anticipate
+
+**"Why does USA import price matter?"**
+- It's the opportunity cost - what HQ must pay if CF not available
+- Economic theory: differential rent = market price minus production cost
+- USA import price = true market value of CF water
+
+**"Is 7.2¢/kWh a fair price for CF?"**
+- It's the replacement cost HQ actually pays for alternative supply
+- Natural gas electricity (USA) vs water (CF) cost differential
+- Represents true economic value in competitive market
+
+**"Why not index MOU to USA import prices?"**
+- Would automatically capture market value
+- Would avoid 1969 mistake of fixed pricing
+- Would ensure NL participates in value HQ extracts
+
+---
+
+## SEASONAL PATTERN QUESTION
+
+### The Mystery Dr. May Identifies
+
+**Question posed:**
+> "Very strong seasonal pattern with winter-month peaks. Does this reflect monthly pattern from Churchill Falls?"
+
+**Answer:**
+> "We don't know the answer to this question since NLH and HQ have not made these data publicly available."
+
+**ATIPPA request:**
+- Dr. May has requested monthly data
+- From January 1, 2015 to present
+- Amount of electricity CF(L)Co sold to HQ
+- Revenue received
+- **Still waiting for response**
+
+**Significance:**
+- If CF has similar seasonal pattern (high winter production)
+- And HQ imports have same pattern
+- Suggests CF providing peak winter capacity
+- Makes CF even more valuable (peak demand pricing)
+
+---
+
+## EXTRA SLIDES DATA
+
+### August 2025 Trade with New York State
+
+**Exports to NY:** +10.1% vs August 2024, +3.3% vs August 2022
+**Imports from NY:** +339.5% vs August 2024, No imports August 2022
+
+**Interpretation:** Exports relatively stable, imports exploding
+
+### July 2025 Overall Import Changes
+
+**From July 2024:**
+- Total imports: +6.0%
+- Interprovincial imports: -6.1%
+- USA imports: +488.4%
+
+**From July 2022 (3-year):**
+- Total imports: +4.9%
+- Interprovincial imports: -9.4%
+- USA imports: No imports 3 years earlier
+
+---
+
+## DR. MAY'S BOTTOM LINE
+
+### The Core Argument
+
+**Churchill Falls water value determination:**
+
+1. **Current reality:** HQ needs imports to meet domestic demand
+2. **Import source:** Increasingly expensive USA electricity (natural gas-fired)
+3. **Opportunity cost:** What HQ pays for USA imports = value of CF alternative
+4. **Differential rent formula:** USA import price - CF production cost - transmission = water rent
+5. **Market value:** 7.2¢/kWh (2025 average) or 10.25¢/kWh (Q1 peak)
+
+### The MOU Assessment
+
+**MOU proposed price:** 1.63¢/kWh starting (2025)
+**Market replacement cost:** 7.2¢/kWh average
+**Value captured:** 23% of market replacement value
+
+**Quote:**
+> "Most importantly, it would accomplish the primary purpose of the MOU as intended by the GNL in 'Our Chapter' to unlock the value of existing CF electricity."
+
+**But:** Only if pricing reflects actual market value (USA import replacement cost), not arbitrary 1.63¢/kWh with 2% escalation
+
+### The Urgent Question
+
+**For Newfoundlanders and Labradorians:**
+
+> "Quebec is relying on a traditional source which has been is the Churchill River and CF to subsidize and support its lowest in Canada electricity prices. This is a sensible strategy for HQ and Quebec. **Does this process make sense for Newfoundlanders and Labradoreans? That's the question.**"
+
+---
+
+**DOCUMENT INFORMATION:**
+- Author: Dr. Doug May
+- Title: Quebec's Changing Import Picture (Follows Video #3-A)
+- Date: August 2025
+- Type: Presentation/Analysis Update
+- Series: Churchill River Power Project (CRPP) analysis series
+- Central finding: HQ transformed from net exporter to net importer; USA import prices reveal true value of Churchill Falls water
+- Key statistic: USA imports averaging 7.2¢/kWh vs MOU proposed 1.63¢/kWh - MOU captures only 23% of replacement value

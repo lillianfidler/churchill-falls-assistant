@@ -1,0 +1,419 @@
+===================================
+DR. DOUG MAY VIDEO ANALYSIS - VIDEO 3B OF 6
+Hydro-Québec's Electricity Exports
+===================================
+
+AUTHOR: Dr. Doug May, Economist, Memorial University of Newfoundland
+
+SERIES: Video 3B of 6 examining Quebec's electricity landscape
+
+FOCUS: Export volumes and prices from Hydro-Québec, primarily to United States
+
+NOTE: Companion to Video 3A on imports. This video examines the export side of Hydro-Québec's electricity trade.
+
+---
+
+## OVERVIEW: PRODUCTION VS. AVAILABILITY VS. EXPORTS
+
+### The Supply Chart (Familiar from Previous Videos)
+
+**Components:**
+- Orange area: Domestic production in Quebec
+- Green area: Total electricity available in Quebec
+- Difference between production and availability = imports (covered in Video 3A)
+- Difference between availability and domestic demand = **net exports**
+
+**Important note:** Hydro-Québec can be both exporting and importing simultaneously with same state or province
+
+---
+
+## TOTAL EXPORT VOLUMES: DECLINING TREND
+
+### Export Destinations
+- United States
+- Other provinces (primarily New Brunswick)
+
+### Total Export Trends (Gray Line on Chart)
+
+**Pattern:** Total amount of power exported is **going down over time**
+**Reason:** Drought (discussed in previous videos)
+
+**Blue line:** Power going to United States
+- Historically above power to other provinces
+
+**Recent dramatic shift:**
+- U.S. exports declining more rapidly than provincial exports
+- **By June 2025:** U.S. exports fallen BELOW exports to other provinces
+- Primary provincial destination: New Brunswick (long-term relationships with Hydro-Québec)
+
+---
+
+## THE EXPORT PARADOX
+
+### Quebec's Reputation vs. Reality
+
+**Reputation:** Major power-exporting province
+
+**Reality (current situation):**
+- Total exports: **Less than 5% of total power available**
+- Exports to United States: **Approximately 1.5%**
+
+**Dr. May's observation:** "Quite surprising"
+
+### The Investment Question
+
+**Recent heavy investments:**
+- New transmission lines into New England ISO (through Maine)
+- New transmission lines into New York
+
+**Current status:** "Presumably are not really being used"
+
+---
+
+## U.S. ENERGY INFORMATION ADMINISTRATION (EIA) ANALYSIS
+
+### Eastern Connections Trade Patterns
+
+**Data source:** United States Energy Information Administration (EIA)
+
+**Focus:** Electricity trade on Eastern connections between:
+- Hydro-Québec and New England ISO (new transmission line)
+- Hydro-Québec and New York ISO
+
+### Historical Pattern (Pre-2023)
+
+**Imports into United States from Quebec:**
+- Lighter shade of red: Imports into New York from Hydro-Québec
+- Darker shade of red: Imports into New England from Hydro-Québec
+- **New York received GREATER imports than New England**
+
+### The 2023 Reversal
+
+**Major shift:**
+- Most imports into U.S. now coming through New York connection
+- **New England (darker red) now EXPORTING into Quebec**
+- **Critical observation:** "Transmission lines supposed to take power from Quebec into New England, but instead they're taking power from New England into Quebec"
+
+**This represents a complete reversal of intended power flow direction**
+
+---
+
+## EXPORT/IMPORT PRICING (EIA DATA)
+
+### Market Definition
+**"East of Canada" = Ontario, Quebec, Maritimes, and Labrador**
+
+**Exports:** From U.S. east to Canada east
+**Imports:** From Canada east to U.S. (primarily Quebec and Ontario, some New Brunswick)
+
+### Price Patterns (Dollars per Megawatt-Hour)
+
+**Characteristic:** Prices move around significantly
+
+**U.S. exports to Canada (green line):**
+- Increasing trend
+- Peak around October: ~$140 per megawatt-hour (14¢/kWh)
+
+**Canadian exports to U.S. (imports from U.S. perspective):**
+- Fair amount of movement/volatility
+- **Significant spikes:** Over $150 per megawatt-hour (15¢/kWh)
+- Some periods quite high
+
+### Data Gap: Interprovincial Trade Pricing
+
+**What we showed:** Export and import volumes between provinces
+
+**What's missing:** Prices for interprovincial electricity trade
+
+**Who knows these prices:**
+- Hydro-Québec
+- New Brunswick Energy  
+- Newfoundland and Labrador Hydro
+
+**Availability:** "They're not sharing it with us"
+
+**Dr. May's frustration:** "It's strange. You're trying to examine what's going on, but you can't get a hold of the information that you'd really like to."
+
+---
+
+## EXPORT VOLUMES BY DESTINATION (DETAILED ANALYSIS)
+
+### Data Quality Note
+**Volume data:** Fairly accurate (Canada Energy Regulator shares with Statistics Canada)
+**Price/value data:** Sometimes inconsistent (noted concern)
+
+### Quebec Exports to New York
+
+**Pattern:**
+- Increasing trend through 2022
+- **2023: Big dive down**
+- Continued low in 2024-2025
+
+### Quebec Exports to New England ISO
+
+**Pattern:**
+- Declining trend
+- **2023: Virtually non-existent**
+- Continued minimal exports
+
+### Newfoundland and Labrador Exports (Gray Lines)
+
+**To New York (solid gray line):**
+- Steady initially
+- Drop down in middle period
+- **Now picking back up**
+
+**To New England (dotted gray line):**
+- Previously minimal
+- **Significant increase recently**
+
+**Key observation:** "Where Quebec wasn't shipping into New England, but guess which province is? Newfoundland and Labrador."
+
+**Dr. May's assessment:** "Very interesting pattern"
+
+---
+
+## EXPORT PRICES TO U.S. MARKETS (DETAILED PRICING ANALYSIS)
+
+### Chart Components
+
+**Price unit:** Canadian dollars per megawatt-hour
+
+**Lines:**
+- Blue line: Hydro-Québec exports
+- Solid gray line: NL Hydro exports to New York
+- Dotted gray line: NL Hydro exports to New England ISO
+
+**Data source:** Canada Energy Regulator
+**Data quality note:** "Sometimes their data seems a little bit inconsistent. I think the volume data are good, but the price and value data seem to be sometimes at odds with patterns that we see."
+
+### Pricing Patterns: Dynamic Pricing Evidence
+
+**Seasonal pattern clearly visible:**
+- High in January
+- Slight increase July/August  
+- High in January again
+- July/August increase
+- High in January again
+
+**Pattern consistency:** Prices follow "somewhat similar patterns" across different exporters
+
+### Specific Price Examples
+
+**July 2025 - Hydro-Québec to Maine:**
+- Price: **$192.53 per megawatt-hour**
+- Equivalent: **19.25 cents per kilowatt-hour**
+
+**July 2025 - NL Hydro to New England:**
+- Price: Similar range to Quebec exports
+- Also approximately **19.24 cents per kilowatt-hour**
+
+### The Profit Margin Analysis
+
+**Production cost:** ~0.3 cents per kWh
+**Quebec price to CF(L)Co:** ~0.48 cents per kWh (half a cent)
+**Export price to New England:** ~19 cents per kWh
+
+**Dr. May's observation:** "That's quite a spread there. From point three or half a cent... [to] 19 cents. That's a pair of spread."
+
+**Profit margin:** Approximately 40-63× markup from cost to export price
+
+---
+
+## DATA INCONSISTENCIES: THE NEW YORK PRICING PUZZLE
+
+### Quebec Exports to New York Pricing
+
+**Pattern description:** "Much more of a crazy pattern, and sometimes a suspect pattern"
+
+### June 2025 Example (Questionable Data Point)
+
+**Reported price:** $265.12 per megawatt-hour
+**Equivalent:** 26.5 cents per kilowatt-hour
+
+**Dr. May's skepticism:** "Do I really believe... that they were selling... at... 26 and a half cents per megawatt hour?"
+
+### Reality Check: Boston Residential Comparison
+
+**Dr. May's family in Boston:** Pay approximately 43 cents per kWh (U.S. dollars)
+**Converted to Canadian:** Even higher than 26.5¢/kWh
+**Assessment:** "That's pretty high"
+
+### Implication of High Prices
+
+**Strategic importance of reservoir management:**
+- Save water in reservoir
+- Generate/sell when can get highest price
+- This is why dynamic pricing and reservoir-as-battery strategy is so valuable
+
+---
+
+## PROFIT MAXIMIZATION IN EXPORT MARKETS
+
+### Market Characteristics
+
+**Export markets (Canadian and especially American):**
+- Very free markets
+- Prices vary day to day
+- Prices vary month to month  
+- Prices vary within months at different times
+
+### Hydro-Québec's Strategy
+
+**Operational approach:** **Profit maximizer** in export markets
+
+**Strategy execution:**
+- Uses reservoir management strategically
+- Generates power when prices highest
+- Reports show substantial profit from this strategy
+- Discusses strategy openly in annual reports
+
+### NL Hydro's Export Strategy
+
+**When can NL Hydro maximize profit:**
+- When not required to sell to Quebec
+- When Quebec doesn't want the power
+- Can sell into American markets
+
+**Result:** NL Hydro also becomes profit maximizer in these circumstances
+
+---
+
+## THE VOLUME-PRICE-PROFIT RELATIONSHIP
+
+### The Paradox
+
+**Volume trend:** Going down
+**Price trend:** Going up
+**Profit trend:** Going up
+
+**Explanation:**
+- Despite declining export volumes
+- Rising prices more than compensate
+- Hydro-Québec's reported profits increasing
+
+### Why Prices Are Rising
+
+**Primary factors:**
+
+1. **Generation cost increases in New England/New York:**
+   - Source: Natural gas turbines
+   - Natural gas prices increasing
+   
+2. **Demand increasing:**
+   - Growing electricity consumption
+   - Technology expansion (AI, EVs)
+   - Population growth
+
+**Result:** Higher prices for imported electricity in U.S. markets
+
+---
+
+## SEASONAL PRICING STRATEGY
+
+### Optimal Export Timing
+
+**Prices highest:**
+- **January and February** (winter peak demand)
+- Secondary peaks: July and August (summer cooling demand)
+
+**Prices lowest:**
+- Spring months (April/May)
+- Fall months (October/November)
+
+### Strategic Reservoir Management
+
+**The "Storage Battery" Strategy:**
+1. Use reservoirs as huge storage batteries
+2. Import cheap power when available (Churchill Falls at 0.3¢/kWh)
+3. Save Quebec reservoir water
+4. Generate from Quebec reservoirs when export prices highest
+5. Export to U.S. at 15-26¢/kWh
+6. Maximize profit spread
+
+**Profit potential:** 50-80× cost
+
+---
+
+## KEY TAKEAWAYS
+
+### Export Volume Trends
+
+1. Total Quebec exports declining over time due to drought
+2. U.S. exports declining faster than provincial exports
+3. By June 2025: U.S. exports below provincial exports
+4. Quebec exporting less than 5% of total power
+5. U.S. exports down to ~1.5% of total power
+
+### The Reversal
+
+6. New England transmission lines now importing INTO Quebec (opposite of intended)
+7. NL exports to New England increasing (filling Quebec's former role)
+8. Heavy investment in U.S. transmission lines "not really being used"
+
+### Pricing Dynamics
+
+9. Clear seasonal pricing pattern: peaks in January/February and July/August
+10. Export prices ranging from $140-265/MWh (14-26.5¢/kWh)
+11. Profit margins: 40-80× markup from production cost
+12. Dynamic pricing creates arbitrage opportunities
+
+### Strategic Implications
+
+13. Hydro-Québec operates as profit maximizer in export markets
+14. Despite volume declines, profits increasing due to price increases
+15. Reservoir management strategy: save water, sell when prices peak
+16. This strategy explains why cheap Churchill Falls power is so valuable
+17. Can import cheap Churchill Falls power, export expensive Quebec power
+
+### Data Challenges
+
+18. Volume data fairly reliable
+19. Price data sometimes inconsistent (Canada Energy Regulator)
+20. Interprovincial trade prices not publicly available
+
+---
+
+## TRANSITION TO NEXT VIDEO
+
+**Next video topic:** Royalties
+
+**Context:** Having examined production, imports, exports, and pricing, the series will now examine royalty structures and their implications
+
+---
+
+## KEY STATISTICS SUMMARY
+
+**Export volumes:**
+- Total Quebec exports: <5% of total power available
+- Quebec to U.S.: ~1.5% of total power
+- Trend: Declining, especially to U.S.
+
+**Export prices (per kWh):**
+- July 2025 to New England: 19.24¢
+- Reported peaks to New York: up to 26.5¢
+- Typical range: 14-26¢
+
+**Profit margins:**
+- Production cost: 0.3¢/kWh
+- Churchill Falls import: 0.48¢/kWh  
+- Export price: 14-26¢/kWh
+- Margin: 40-80× cost
+
+**Seasonal pattern:**
+- Peak export prices: January/February, July/August
+- Low prices: Spring/Fall
+- Pattern consistent across years
+
+**Volume trends by destination:**
+- Quebec to New York: Declining from 2022, major drop 2023
+- Quebec to New England: Virtually non-existent by 2023
+- NL to New England: Increasing significantly
+- NL to New York: Steady with recent increase
+
+**Key reversal:**
+- New England transmission: Now importing INTO Quebec (opposite direction)
+
+---
+
+**CONTEXT:** This is Video 3B of a 6-part series. Next video will examine royalty structures and implications.

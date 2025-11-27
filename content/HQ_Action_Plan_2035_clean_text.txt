@@ -1,0 +1,1160 @@
+Towards a Decarbonized
+and Prosperous Québec
+Action Plan
+2035
+
+Courtesy copy
+The Action Plan 2035 is available for
+downloading at:
+www.hydroquebec.com/about/
+action-plan.html
+
+Table of Contents
+3
+
+Introduction
+
+21
+
+Financial outlook
+
+The world is taking action
+
+22
+
+The importance of collaborating to achieve
+our common goals
+
+Québec is in an enviable position
+4
+
+Seizing the opportunity
+
+5
+
+Our customers: At the heart of our mission
+Taking action to build a sustainable future
+
+Priorities
+6
+
+Our priorities
+
+7
+
+Priority 1 – Improve service quality
+
+10
+
+Priority 2 – Help our customers make better
+
+23
+
+Next step: Initiating a focused dialogue
+
+Appendices
+25
+
+Glossary
+
+26
+
+Energy and capacity needs by 2035
+
+use of electricity
+13
+
+Priority 3 – Increase our power generation
+capacity
+
+17
+
+Priority 4 – Partner with Indigenous
+communities
+
+19
+
+Priority 5 – Become an agile, innovative and
+transparent organization
+
+Units of Measure
+MW
+
+megawatt (one million watts)
+(a unit for measuring capacity
+or power demand)
+
+TWh
+
+terawatthour (one billion kilowatthours)
+(a unit for measuring electric energy)
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+Legal deposit – November 2023
+Bibliothèque et Archives nationales
+du Québec
+ISBN 978-2-550-96176-5 (Print, English)
+ISBN 978-2-550-96174-1 (Print, French)
+ISBN 978-2-550-96178-9 (PDF, English)
+ISBN 978-2-550-96175-8 (PDF, French)
+2023G596A
+
+2
+
+The world is taking action
+The climate crisis is increasingly a reality in the daily lives of people around the world. Summer 2023 was the hottest on
+record. In North America, forest fires destroyed an area equivalent to the size of England. It’s clear the time to act is now.
+The global race has begun. Countries are rapidly accelerating investments and setting targets to decarbonize their
+economies. Of all the solutions put forward, one thing is clearly indispensable: clean energy. In 2022, $1.6 trillion was
+invested in the energy transition. And that’s just the beginning. By 2030, investments of over $40 trillion have been
+announced worldwide. In the United States alone, that represents over $660 billion a year from now to 2035.
+
+Québec is in an enviable position
+but must act now
+Québec has a head start in this race. Why? Because our predecessors bet on hydropower—clean energy that we supply
+at rates that are among the lowest in North America for all customers. Quebecers have always been proud of the
+ingenuity of these pioneers. Today, their achievements are the envy of the world.
+In fact, Québec benefits from a resource that makes it possible to offer residential rates that are the lowest in the
+G7. With industrial rates at least two times lower than virtually all western countries, this clean energy contributes to
+Québec’s ability to compete with the world’s largest economies.
+
+With many countries investing massively in the energy
+transition, Québec needs to act now if it is to remain a
+leader. Even with electricity accounting for a significant
+share of Québec’s energy mix, nearly 50% of local
+
+Total consumption by energy type
+in Québec, 2020
+42%
+
+50%
+
+Electricity
+
+Fossil fuels (e.g., natural gas,
+petroleum products, coal and
+propane)
+
+consumption still uses fossil fuel–based energy that
+emits greenhouse gases (GHG).
+Over 90% of cars consume gas, many thousands of
+buildings are still heated with gas or oil, and some
+factories still use coal.
+To reach Québec’s carbon neutral goal by 2050,
+these uses will have to be converted, particularly to
+electricity.
+
+8%
+
+Biofuel
+
+Source: Whitmore, J. and Pineau, P.-O., État de l’énergie au Québec,
+ed. 2023, Chaire de gestion du secteur de l’énergie, HEC Montréal.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+3
+
+Seizing the opportunity
+The energy transition goes beyond simply replacing energy that pollutes with clean energy. It’s also an opportunity to
+create durable prosperity for all Quebecers. Just as there is a growing demand for electric vehicles and greener buildings,
+more and more companies want to operate with the lowest possible carbon footprint.
+This provides an opportunity to establish new industries, encourage young entrepreneurs to engage in promising sectors
+and create stimulating jobs across Québec, especially in relation to the development of energy infrastructures.
+In other words, Québec’s next big society-wide endeavor is to decarbonize while also creating wealth. Building a
+sustainable future requires doing both at the same time.
+Hydro-Québec and the electricity we produce will be at the heart of this great undertaking. Clean electricity will be the
+driving force of the energy transition. Not only will it benefit the environment, it will also contribute to Québec’s prosperity.
+It will give Québec the means to achieve its goals.
+Decarbonization and economic growth can only be achieved through a major effort to expand the use of electricity—
+something that will significantly increase the demand for electricity. In fact, Québec’s consumption is expected to double
+by 2050. To put us on the right trajectory, we plan to add 60 TWh, or between 8,000 and 9,000 MW of capacity, by 2035.
+That’s equivalent to the installed capacity of three of our largest hydropower facilities: Robert-Bourassa (LG-2), Manic-5
+and the Romaine complex.
+
+Projected trajectory of electricity demand
+by 20501
+
+Breakdown of additional electricity use
+by 2035
+
++
+
+150–200 TWh
+2x more electricity
+
++200 TWh
++150 TWh
++60 TWh
+
+40%
+
+35%
+
+for transportation
+electrification
+and the
+decarbonization
+of buildings
+
+for industrial
+decarbonization
+
+25%
+
+for economic
+growth
+
+100%
+decarbonization
+
+2022
+
+2035
+Action Plan
+horizon
+
+2050
+Horizon
+for full decarbonization
+
+75%
+
+dedicated to the decarbonization of Québec
+
+75% of new electricity generation dedicated to decarbonizing the environment
+The additional clean energy that we will generate is needed to reduce Québec’s GHG emissions. In order for this
+electricity to have the greatest positive environmental impact, it will be used to decarbonize the activities that emit
+the most GHGs. By 2035, 40% of the additional electricity will be used to decarbonize the heating of buildings and to
+electrify transportation, as these two sectors represent over half of all current GHG emissions. The other 35% will be
+used to decarbonize industry, that is, to replace polluting processes by technologies powered by clean electricity or
+derivatives like green hydrogen. Today, a third of all emissions come from industry.
+1) Why is there a range in the 2050 forecast? Because the trajectory of electricity demand growth depends on several factors that vary over time, such as
+technology maturity, the availability of renewable energy in neighboring markets, and consumption habits.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+4
+
+Our customers: at the heart of our mission
+With over 75 years of history, Hydro-Québec is first and foremost a service company that belongs to all Quebecers.
+Climate change is having a very real impact on our power grid and affecting the daily lives of our customers. We know
+that the quality of the service we provide our customers has been declining. In terms of power outages, 2023 was one of
+the worst in the last 15 years. In addition, the time to connect new customers has increased by nearly 70% since 2019.
+We also know that we are not a simple company for our customers to deal with. Our bills are overcrowded and hard to
+follow, our notifications during major outages are not precise, and arranging for a new connection involves dealing with
+too many different representatives. We need to offer a better customer experience.
+We therefore commit to providing our customers with quality service that can be defined in three words: reliable, simple
+and affordable.
+To succeed, our organization needs to change. We need to reassess how we do business and adjust our processes
+accordingly. We must listen to our customers, be more efficient and innovative. All without losing sight of our most
+precious assets: the steady and affordable electricity generated with Hydro-Québec’s know-how.
+
+Taking action to build a sustainable future
+To better serve our customers, decarbonize Québec and create wealth, we need a plan that will allow us to take action
+and dare to do things differently: the Action Plan 2035 – Towards a Decarbonized and Prosperous Québec.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+5
+
+Our priorities
+1
+
+Improve service quality – Increase our investments in the power grid to offer our customers reliable,
+high‑quality service at an affordable price.
+
+2
+
+Help our customers make better use of electricity – Innovate to encourage our customers to treat electricity
+as a valuable resource that should be used wisely.
+
+3
+
+Increase our power generation capacity – Identify and launch the best projects that will enable us to generate
+more electricity to support Québec’s ambitions and remain open to all options available to us.
+
+4
+
+Partner with Indigenous communities – Work towards economic reconciliation with First Nations and Inuit,
+in collaboration with the Québec government.
+
+5
+
+Become an agile, innovative and transparent organization – Transform our ways of doing things to better meet
+our customers’ needs and support Québec’s decarbonization and economic prosperity.
+
+There’s no doubt that the energy transition will require a major collective effort. Everyone has a role to play. That’s
+why, in the coming months, we will launch a focused dialogue with our stakeholders to refine with them the means for
+implementing this action plan. This will allow us to align more closely with:
+•
+
+our customers, to whom we must provide a reliable electricity supply and high-quality services at the most
+affordable price possible while working with them to help them use electricity wisely;
+
+•
+
+Indigenous and local communities, with whom we want to partner to more equitably share the wealth generated
+by our energy development projects;
+
+•
+
+the business sector, which will decarbonize existing industries and invest to create new opportunities for
+a prosperous future for Quebecers;
+
+•
+
+our employees, with whom we will build a more agile, innovative and stimulating environment that will help us
+achieve our ambitions and those of Québec.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+6
+
+Priority 1 | quality
+
+Improve service
+
+Our customers must always be at the heart of our decisions.
+This means communicating better and offering them the most reliable service possible. Our efforts in this regard
+are especially important in the context of climate change. The impacts of global warming, particularly the increase
+in extreme weather events, are putting the resilience of our facilities to the test, especially given that many of them
+were commissioned decades ago and are approaching the end of their useful life.
+At a time where electricity will play an increasingly important role in all spheres of activity, like transportation and
+industrial processes, it is more important than ever for Hydro-Québec to meet our customers’ expectations.
+
+THEREFORE, WE ARE COMMITTED TO:
+Increase our investments in the power grid to offer our customers reliable, high-quality
+service at an affordable price.
+
+REDUCTION OF POWER OUTAGES AND PLANNED SERVICE INTERRUPTIONS
+Increase our investments in power grid reliability to better meet the challenges
+presented by major events and climate change.
+The extreme weather events that Québec has experienced in recent years, such as ice storms and forest fires, have
+caused more frequent and longer power outages. Combined with the aging of our assets, these phenomena have led to a
+decline in service quality. We aim to stabilize this situation quickly to avoid further deterioration in reliability, and will then
+work to significantly improve service quality.
+Hydro-Québec is determined to correct this tendency and reduce the number of power outages by 35% over the next
+7 to 10 years. To do so, we will roll out a three-pronged robust reliability plan involving actions to ensure grid resiliency,
+community resiliency and customer resiliency.
+• Significantly increase investments to enhance grid robustness, modernize the grid and replace equipment.
+The investments needed to make the power grid more durable over the long term will amount to $45 to $50 billion
+between now and 2035. In other words, we plan to invest on average between $4 and $5 billion a year in the reliability of
+our assets, taking into account the anticipated impacts of climate change. This will involve almost doubling the annual
+investments we have made in network sustainability over the last three years. In so doing, we will build a strong foundation
+to handle growing demand.
+To this end, we will deploy new equipment in the distribution system, such as composite poles and conductor covers, and
+adopt innovative practices like the direct, or “light,” burial of power lines.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+7
+
+Priority 1 – Improve service quality (continued)
+
+• Step up vegetation control around power lines to reduce outages by 30% by 2028.
+About 40% of outages on the distribution system are caused by vegetation coming into contact with our power lines. This
+percentage increases significantly during major weather events. To reduce the number and duration of outages, we will
+carry out more preventive work, such as selective clearing, brush clearing, pruning and cutting down at-risk trees around
+our facilities. We will also seek the cooperation of residents and communities to improve the management of trees that
+could cause outages in bad weather.
+We will pursue these efforts beyond 2028 in order to continually improve service reliability and quality for Quebecers.
+
+MANAGEMENT OF POWER OUTAGES AND PLANNED SERVICE INTERRUPTIONS
+Improve communications with our customers during major outages and offer
+resiliency solutions that can be deployed rapidly.
+• Improve communications with our customers during outages and planned service interruptions.
+We will make better use of digital technologies to make communications with our customers more proactive, more userfriendly and better adapted to their preferences. In addition to improving user interfaces and enriching the content on
+existing platforms, we will use additional channels of communication, such as text messages and email notifications. We
+will also gradually introduce the following:
+- targeted notices regarding possible outages due to weather events and planned service interruptions
+- notices in the Outage Tracker of an anticipated service restoration time in the case of a major outage
+- more regular and more specific updates about service restoration, as well as more targeted information for specific areas
+- customer surveys after major outages so that we can improve our practices on an ongoing basis
+• Offer resiliency solutions by providing backup electrical supply during service interruptions.
+We will make use of technologies available on the market, such as batteries and thermal storage, to develop new resiliency
+offers for customers who want to be prepared in case of service interruptions. Our first offers will be available in 2024.
+We will also launch a pilot project involving the deployment of mobile emergency hubs with generators and charging
+stations that can be moved from one community to another. This project will be conducted in collaboration with
+municipalities and emergency measures services.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+8
+
+Priority 1 – Improve service quality (continued)
+
+NEW SERVICE CONNECTIONS
+Speed up the processing of connection
+requests.
+• Improve efficiency to reduce the average processing time as the number of connection requests increases.
+There has been an increase in connection requests, which are also becoming more complex. To speed up processing,
+including the completion of work in the field, we have made certain adjustments to our practices, such as prioritizing work
+with the greatest impact for customers, simplifying request processing and standardizing equipment and work methods. In
+order to improve the customer experience, we will reduce the number of people that our customers must interact with and
+provide better information allowing them to track their requests on our online platforms.
+From 2023 to 2028, this will lead to a 40% reduction in the average completion time for the most common types of work
+related to customer connections, which account for roughly half of all connection requests.
+Our fundamental commitment to our customers is to offer a simpler, affordable and more reliable service.
+
+Our customers at the heart of our company
+Not only do our customers expect a high-quality, more reliable electricity service, they also want a simplified
+experience when they interact with us. That’s why, by the end of 2024, we will have started to implement enhanced
+online interactions by:
+•
+
+Deploying a single portal that will give customers access to their bill, real-time consumption data, as well as a chat
+option and energy diagnostic and advice tools, all with a single click
+
+•
+
+Simplifying online enrollment for commercial offers and of electricity bills, so that the information presented is clear
+and useful
+
+•
+
+Modernizing our ways of exchanging information to facilitate the sending of digital documents and simplifying our
+forms
+
+•
+
+Enhancing our interactive energy diagnostic and advice tools, such as the “energy coach” app, which suggests
+simple, concrete actions to help our customers reduce their consumption and their electricity bills. We will also make
+our tools available to our business customers, with the goal of recruiting one million new users within five years.
+
+Our commitment to our customers is to provide a more reliable, simpler and affordable service.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+9
+
+Priority 2 | make better use of electricity
+Help our customers
+
+Thanks to vast natural resources and our visionary predecessors, Québec has been able to rely on clean, renewable
+and affordable electricity that is the envy of the world. Today, in the era of the energy and economic transition,
+our electricity has become an even more precious resource that Quebecers must consume more wisely. This involves
+using less electricity, especially during peak hours.
+For our customers, it is a way to save on electricity bills. We must therefore equip them to do so. Better
+consumption habits will also reduce the number of new assets we need to deploy to decarbonize the economy
+and stimulate wealth creation for Québec.
+Everyone will have a role to play. Hydro-Québec’s role will be to support Quebecers in this major undertaking.
+
+THEREFORE, WE ARE COMMITTED TO:
+Innovate to encourage our customers to treat electricity as a valuable resource that
+should be used wisely.
+
+REDUCE AND SHIFT CONSUMPTION
+Double our customers’ energy savings to free up between 1,600 and 1,800 MW of
+additional power by 2035.
+The efforts we have made in the last 20 years have generated energy savings and shifted a portion of consumption
+outside of peak hours. In our Electricity Supply Plan published in November 2022, we targeted energy savings of 1,800
+MW. Today, we are striving for much more, far more quickly. We have doubled our energy savings target to shave off an
+additional 1,600 to 1,800 MW, for a total of about 3,500 MW 2—more than the capacity of the Manic-5 generating station
+and the Romaine hydroelectric complex combined.
+To encourage all our customers to use less electricity and consume it at the right time, we will:
+• Create a dedicated team so that all customers can benefit from customized support to make the best energy choices.
+We already have a renowned team, made up primarily of commercial delegates and engineers, who provide customized
+advice to our large business and industrial customers. We plan to offer this high-quality support service to all our
+customers, from individuals to corner stores to hospitals. To do this, we will set up a new team tasked with offering
+customized advice and support to help residential and commercial customers make the right energy choices.
+
+2) This corresponds to total savings of 21 TWh by 2035 thanks to energy efficiency.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+10
+
+Priority 2 – Help our customers make better use of electricity (continued)
+
+• Enhance our financial incentives to speed up the rollout of high-efficiency equipment.
+We will increase financial incentives to cover up to 50% of the cost of high-efficiency equipment, such as heat pumps,
+smart thermostats and water heater controls. Our goal: to have 700,000 high-efficiency systems and devices installed in
+our customers’ homes and businesses by 2035, which would increase the share of Québec homes with such equipment
+from 3% to 25%.
+We will also encourage energy-efficient renovations, such as improving the thermal envelope of existing buildings. In the
+long term, our initiatives should significantly improve the energy performance of 100,000 buildings. These initiatives will
+complement those offered by the Québec government.
+Finally, we will offer more support to facilitate the implementation of high-performance industrial processes and the
+adoption of building automation systems by our business customers, especially industrial customers. Furthermore, we will
+provide support to small- and medium-sized businesses to help them reduce their energy consumption by 10%. We will
+offer financial incentives and the personalized support of affiliated partners, which will result in a proportional reduction in
+our customers’ electricity bills.
+• Expand our rate offerings in order to encourage desired behaviors.
+To encourage more residential customers to shift part of their consumption outside of winter peak periods, we will make
+our rate options more flexible. This will encourage customers to adapt their behavior to the extent that suits them without
+compromising their comfort. We plan to quadruple the number of participating Québec households to reach one million
+by 2035. An average family could thus save about $150 a year.
+Furthermore, customized rate options adapted to the constraints of certain market segments will be developed for
+business customers.
+We will also consider adapting service terms and rates to encourage customers to reduce their electricity use and shift it
+to the right time. We will go further in our efforts to raise awareness among customers in certain categories, such as the
+owners of large homes or poorly insulated rental buildings and businesses in energy-intensive sectors.
+At all times, we will ensure that residential customers are protected, in accordance with the laws in effect.
+• Work closely with Québec’s energy sector.
+The Québec government plays a key role in putting in place the conditions required for us to meet our targets for reducing
+consumption and using electricity at the right time. We will therefore work with the government to bring about regulatory
+changes, particularly through the following measures:
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+11
+
+Priority 2 – Help our customers make better use of electricity (continued)
+
+- Establishment of best practices in energy efficiency for buildings
+- Establishment of a more flexible rate framework while respecting the principle of limiting rate increases to inflation, with a
+3% ceiling for residential customers, as legislated by the Québec government
+Businesses working in Québec’s wider energy sector—equipment suppliers, engineering consultants, electricians,
+plumbers and ventilation specialists—are well positioned to help our customers reduce their consumption and shift it
+to the right time. We will therefore develop a Hydro-Québec affiliated partners program that will offer these businesses
+training and sales support tools. We want them to become ambassadors of our incentive programs, our rate offerings and
+enabling technologies. This will give customers access to high-quality support and services in line with best practices in
+energy efficiency, at the best prices.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+12
+
+Priority 3 | power generation capacity
+Increase our
+
+Although it is essential to reduce and optimize electricity consumption, these measures alone will not be sufficient
+to meet all the additional requirements stemming from the energy and economic transition. We will also have to
+significantly increase our generating capacity.
+The clean, reliable, competitively priced energy that Quebecers enjoy today is the legacy of decades-long
+hydropower development projects. Today, we must leverage this advantageous position to create collective
+wealth for generations to come.
+In addition to relying primarily on energy sources that are already well established in Québec, such as wind power
+and hydropower, we must explore all the options offered by new technologies. In doing so, we will take sustainable
+development criteria into account, to generate the greenest, most socially acceptable and affordable electricity
+possible.
+We will also collaborate with industry players to assess all available options for increasing Québec’s generating
+capacity.
+
+THEREFORE, WE ARE COMMITTED TO:
+Identify and launch the best projects that will enable us to generate more electricity to
+support Québec’s ambitions and remain open to all options available to us.
+
+ADDITIONAL ENERGY INFRASTRUCTURE
+Integrate new assets into the Hydro-Québec grid that, combined with our energyefficiency and load-side management efforts, will help meet additional capacity
+requirements of 8,000 to 9,000 MW.
+• Triple wind power generation to meet capacity requirements ranging from 1,500 to 1,700 MW.
+Wind power is a competitively priced energy source that offers synergies with hydropower. However, given the intermittent
+nature of wind power—there are days without wind—current regulations state that wind generation’s contribution to
+capacity requirements are on the order of 15%. We therefore plan to add over 10,000 MW of new wind power generation
+by 2035.3
+These efforts represent over $30 billion in private and public investments, which will have major economic benefits across
+Québec by creating jobs and diversifying sources of income in the areas involved.
+
+3) According to this trajectory, Québec’s installed wind capacity would quadruple by 2040.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+13
+
+Priority 3 – Increase our power generation capacity (continued)
+
+Wind power: Essential, but not sufficient
+On windy days, wind energy can replace hydropower, which allows us to store water in Québec’s reservoirs. During
+less windy periods, however, hydropower facilities—which provide reliable, firm generation—must take over to
+meet demand.
+Although adding new wind generation is a key component of our strategy to meet Québec’s growing demand, it
+will not be enough. In addition to energy efficiency and load-side management efforts, we will have to commission
+facilities that can provide firm generation when there is no wind. We must also balance wind power with firm
+generation to ensure optimal balance in the energy system at all times.
+In Québec, hydropower is the best option for firming up intermittent wind power.
+
+• Add from 3,800 to 4,200 MW of new hydropower by increasing the capacity of our existing generating stations and
+building new hydropower facilities, including a pumped-storage facility.
+Hydro-Québec has developed expertise and know-how in the construction and operation of hydropower facilities that are
+the envy of many countries around the world. We must leverage these competencies and Québec’s hydroelectric potential
+to meet new demand.
+First, we will focus on increasing the power generated by our existing facilities. This strategy limits the footprint of
+hydropower development on the land and maximizes the use of existing infrastructures. By replacing generating units with
+more recent models, we will add 2,000 MW of capacity.
+To succeed in meeting increased demand, we will also undertake the first steps towards building new hydropower
+facilities. In the project planning stages, we will partner with First Nations and local communities to assess the potential of
+various sites and the best ways they can be developed.
+We will also draw on our hydropower experience to build our first pumped-storage facility, which will increase Québec’s
+generating capacity by 1,000 MW.
+The investments required to add to our hydropower capacity could reach $35 to $45 billion.
+• Integrate more solar energy and battery storage into the energy mix.
+Solar power and battery storage will make an important contribution to Québec’s energy balance as a complement to
+wind power and hydropower.
+We are currently studying the best grid integration solutions, including the connection of small solar fleets to the
+distribution system, for a total of approximately 300 MW, as well as self-generation by customers and the use of batteries
+in peak demand periods. We intend to add a few hundred megawatts in the form of solar energy and battery storage
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+14
+
+Priority 3 – Increase our power generation capacity (continued)
+
+by 2035. In addition, we will facilitate the installation of solar panels in the homes of over 125,000 customers. Solar selfgeneration could meet up to 45% of the electricity needs of these households.
+• Plan the conversion of the TransCanada Énergie power plant in Bécancour to renewable natural gas so that it can be
+used, if required, during peak periods.
+We plan on converting the existing TransCanada Énergie thermal plant in Bécancour to renewable natural gas (RNG) to
+ensure grid stability on very cold winter days and during peak hours. In other words, we will only use this peaking plant as
+an insurance policy. The use of RNG for this power plant would be consistent with Québec’s decarbonization goal.
+
+OTHER ENERGY OPTIONS
+Explore the potential of other energy sources for Québec, taking all tested
+and emerging solutions into consideration.
+• Explore all other options under development elsewhere in the world.
+In light of the magnitude of future needs, we must consider a wide range of solutions to increase our generating capacity
+and achieve our long-term decarbonization and economic prosperity goals. We will therefore carry out analyses to assess
+the potential of various technologies currently under development elsewhere in the world that may play a role in Québec
+after 2035. These could include offshore wind generation, which is underway in several countries.
+We will also examine the potential of the existing Gentilly-2 site for a new nuclear power plant or small modular reactors.
+These options will be analyzed based on their technological maturity, cost and social acceptability.
+
+POWER TRANSMISSION GRID
+Deploy transmission infrastructures to connect additional generating facilities
+and promising new projects for Québec.
+• Invest between $45 and $50 billion by 2035 to increase the capacity of our transmission system in order to maximize
+access to new generation.
+To connect new generating facilities to the grid and transmit their output to consumption centers, we will have to increase
+the capacity of our transmission infrastructures. We will capitalize on our integrated vision of the power system—from
+generating facilities to behind-the-meter equipment—to seize the best opportunities to develop the transmission system.
+Our priority will be to target the most congested areas and those where new capacity is being considered.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+15
+
+Priority 3 – Increase our power generation capacity (continued)
+
+• Make public our transmission system planning.
+To allow private-sector players to better plan their activities, we will continue to use open planning. This will provide them
+with a better view of the status of the transmission system and its expected evolution. Our goal is to ensure that the various
+players in the energy sector, such as wind developers and suppliers, and energy-intensive businesses, know which zones
+have available capacity so that they can adjust their plans accordingly. This will allow us to speed up commissioning and
+reduce connection times.
+
+Means for freeing up or adding capacity
+The following table summarizes the means we will deploy to meet additional
+capacity needs by 2035:
+MW recognized
+for added capacity
+Energy savings
+In addition to the 1,800 MW already included in the Electricity Supply Plan
+published in November 2022
+
+1,600–1,800
+
+Wind power
+Over 10,000 MW of installed capacity
+
+1,500–1,700
+
+Hydropower
+
+3,800–4,200
+
+Solar, storage and other means
+
+500–1,000
+
+Existing thermal plant converted to renewable natural gas
+Occasional use during peak periods
+TOTAL
+
+400–600
+8,000–9,000
+
+The investments required by 2035 to meet growing demand will reach $90 to $110 billion, in addition to
+investments to ensure reliability and service quality. In other words, we will have to invest, on average, between
+$7 and $9 billion a year to deploy the new generation, transmission and distribution assets required.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+16
+
+Priority 4 | Indigenous communities
+Partner with
+
+In recent decades, the vast majority of Hydro-Québec’s infrastructure projects have been carried out on
+Indigenous ancestral lands. Many have included agreements providing economic benefits to the impacted
+communities. It is important to acknowledge, however, that these projects had major impacts on these
+communities. The energy transition gives us the opportunity to do more and do it better.
+That’s why we are going to meet with First Nations and Inuit to jointly develop an economic reconciliation plan.
+We are determined to ensure that this transition brings about concrete partnerships and opportunities for Indigenous
+communities to get their fair share of the benefits from energy development.
+Until now, our agreements have focused primarily on measures to mitigate the impacts of projects, awarding
+contracts to Indigenous companies and fostering the hiring of Indigenous workers. Today, we want to go further in
+sharing the wealth generated by energy projects by providing First Nations and Inuit with the opportunity to draw
+autonomous sources of income from them. They could thus allocate this income to priorities of their own choosing:
+economic development, the preservation of culture and language, the practice of traditional activities and so on.
+To this end, we will propose actions that uphold three fundamental principles: establish financial partnerships with
+Indigenous communities, simplify their access to financing, and jointly define the terms of the projects we will carry
+out with them.
+
+THEREFORE, WE ARE COMMITTED TO:
+Work towards economic reconciliation with First Nations and Inuit, in collaboration
+with the Québec government.
+The initiatives presented below are a few initial proposals for future reflection. We would like to initiate a dialogue on this
+matter with our First Nations and Inuit partners.
+
+FINANCIAL PARTNERSHIPS
+Create opportunities for Indigenous communities to take part in new energy projects
+and turn them into sources of sustainable prosperity.
+• Facilitate the financial or economic participation of Indigenous communities in new infrastructure projects.
+Projects related to energy infrastructures, such as the construction of wind farms and hydroelectric generating stations,
+and other initiatives have the potential to generate long-term financial benefits for Indigenous communities. We intend to
+share those benefits by facilitating the financial participation of Indigenous communities in the infrastructure projects on
+their ancestral lands. The communities could receive financial support from Hydro-Québec or other sources of private or
+government funding. For Hydro-Québec’s share of the funding, we will explore various forms of concessionary financing,
+for example. We could also agree with communities on other alternatives adapted to their context or to the nature of each
+project.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+17
+
+Priority 4 – Partner with Indigenous communities (continued)
+
+Innovative partnership with the Mohawk Council of Kahnawà:ke
+As part of the Hertel–New York Interconnection Line project, we concluded a long-term partnership with the
+Mohawk Council of Kahnawà:ke (MCK) to reinforce our relationship with the community and enable it to
+participate in the project’s economic benefits. The partnership agreement provides for:
+•
+
+MCK acquiring a stake in a joint venture that it will own with Hydro-Québec
+
+•
+
+MCK’s participation in various aspects of the project: environmental studies, permits, authorizations and
+archaeological work
+
+• Collaborate more actively with Indigenous communities and businesses in various project development phases
+and in operating activities.
+We are committed to working with Indigenous communities, from initial project design and in all the stages of project
+development, through to the commissioning of the facilities and during their subsequent operation. Depending on
+the project and the context, this collaboration may take different forms, such as participation in the assessment of
+environmental impacts.
+In collaboration with the communities, we will work to add clauses to our contracts aimed at optimizing spinoffs,
+expanding our pool of Indigenous suppliers and supporting entrepreneurship.
+We will also be creative in the development of innovative business models, find new niches in keeping with the ambitions
+of Indigenous businesses and support companies that want to work with us.
+
+REPRESENTATION AND COOPERATION
+Work with First Nations and Inuit to increase the representation
+of the Indigenous peoples in Hydro-Québec’s activities.
+• Improve Indigenous representation in our workforce and decision-making bodies to better reflect the importance
+of Indigenous peoples for us and for Québec.
+To increase Indigenous representation within our organization, we will expand our efforts to create a work environment
+that takes into account the realities and culture of Indigenous peoples. We will actively work to increase our Indigenous
+workforce—for instance, by adapting our recruitment practices—and to ensure fair representation in a variety of fields,
+including management and governance positions.
+Furthermore, we will continue to financially support organizations and initiatives that foster academic success and
+training organized by Indigenous communities in fields related to our activities.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+18
+
+Priority 5 | and transparent organization
+Become an agile, innovative
+
+Hydro-Québec must change if it is to succeed in attaining the broad goals of this plan: decarbonization and
+economic growth, coupled with improved quality of service to our customers.
+Concretely, we will have to simplify our processes, step up the pace of project development by working efficiently
+and find innovative solutions to respond to real issues, such as the scarcity of qualified workers, supply problems
+for parts and materials. We must ensure that our organization lives up to Quebecers’ expectations at this critical
+juncture in our history.
+
+THEREFORE, WE ARE COMMITTED TO:
+Transform our ways of doing things to better meet our customers’ needs and support
+Québec’s decarbonization and economic prosperity.
+
+EXPERTISE AND INNOVATION
+Leverage expertise complementary to that of Hydro-Québec in order to develop a
+roadmap for decarbonization and economic prosperity as efficiently as possible.
+• Create a center of expertise that will develop, in close collaboration with the Québec government,
+a roadmap to guide the energy and economic transition.
+This new team will build strategies that will at the same time contribute to decarbonizing Québec’s economy and enhance
+economic prosperity. Working with the government, it will draw on the vast expertise of Hydro-Québec, while also
+soliciting the views of independent experts and the representatives of communities and Indigenous peoples.
+• Collaborate with our peers, the academic community and the private sector to identify and rapidly integrate
+innovations that will allow us to reach our goals faster.
+We will work closely with all players in the sector—including established companies and startups, universities, associations,
+research centers, customers and some of the largest companies in the global energy sector—in order to quickly integrate
+the innovations that are the most likely to help us meet the challenges of the energy transition head-on. The possible use
+of locally developed technologies will also allow Québec businesses to showcase their skills. Our first priority will be to
+target the innovations that will help reduce pressure on our energy and capacity balances.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+19
+
+Priority 5 – Become an agile, innovative and transparent organization (continued)
+
+AGILITY
+Adapt our ways of working to get things done faster.
+• Simplify and streamline our practices and governance in order to accelerate decision-making
+and ensure efficient execution.
+Given the scope of work to be accomplished and the pressure stemming from the labor shortage, we must seize every
+opportunity to streamline our decision-making processes, simplify our work methods and increase our speed of execution.
+We will achieve this by reducing certain administrative requirements, decentralizing decision-making and stepping
+up efforts to simplify, automate and standardize our processes. We will also adopt management practices that foster
+continuous learning and the mobility of workers in order to enhance our flexibility in a rapidly changing environment. The
+capacity freed up by our efforts will be reallocated to prioritized activities that generate the most value for our customers.
+
+TALENT AND CULTURE
+Invest in our employees to stimulate innovation and increase our capacity
+to meet the changing needs of our customers.
+• Implement the best improvements proposed by staff members.
+Hydro-Quebecers take their work to heart and they’re proud of it. They’re also best positioned to see what can be
+improved. To foster the emergence of solutions, we must provide them with an environment where their ideas are heard
+and give them the opportunity to help implement the most promising solutions. With this in mind, we will selectively deploy
+a platform for sharing innovative ideas about a variety of topics, such as health and safety, as well as operational and
+organizational efficiency.
+• Adopt the right reflexes for taking calculated risks and making decisions based on customer value.
+We must embody the values that enabled our visionary hydropower pioneers to meet past challenges and embark on the
+energy transition with the same proactive spirit. The current context will require strong leadership, open to greater risk
+tolerance and focused on value creation. As a result, we will adjust our risk-management processes and invest in our talent
+pool, in particular by rolling out a professional development program for executives and tools that allow for greater agility.
+
+Occupational health and safety: A constant concern
+Because Hydro-Québec is nothing without the men and women who devote their energy and talent to it, we are
+dedicated to making occupational health and safety (OHS) a source of pride that is firmly anchored in our culture
+and our practices.
+We aim to continuously improve our OHS performance by advancing our managers’, workers’ and suppliers’ safety
+knowledge and behaviors. We are also continuing our collaboration with major players in the Québec economy in
+terms of OHS awareness.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+20
+
+Financial outlook
+After a period of relative stability, we are entering a new phase of growth, at a time when the impacts of climate change
+are testing the resilience of our power grid. In this context, achieving the actions proposed in this plan will require a
+significant increase in our investments and operating expenses.
+
+Summary of required investments and operating expenses
+Investments and expenses
+
+Total amounts
+by 2035
+
+Annual average
+
+$45–$50 billion
+
+$4–$5 billion
+
+(growth projects)
+
+$90–$110 billion
+
+$7–$9 billion
+
+Additional operating expenses
+
+$20–$25 billion
+
+$1–$2 billion
+
+$155–$185 billion
+
+$12–$16 billion
+
+Investments to ensure service reliability and quality
+(reliability projects)
+Investments to meet demand growth
+
+TOTAL
+
+The projected average annual investments and additional expenses from now until 2035 are three to four times
+higher than those of the past five years.
+
+Investments that will have significant impact in Québec
+The massive deployment of infrastructures will generate sizable economic benefits in Québec, since it will mobilize an
+average of 35,000 construction workers a year until 2035. The positive impact of the energy sector on Québec’s gross
+domestic product (GDP) could exceed $100 billion by 2035.
+Rates that continue to be affordable for Québec households and competitive worldwide
+We will work closely with the government to set up the best legislative frameworks possible in order to limit rate
+increases to inflation, up to a ceiling of 3% for residential customers, and to maintain Québec’s competitive positioning
+with respect to industrial and commercial rates. Even though the investments we will have to make to ensure grid
+reliability and meet demand growth will put upward pressure on electricity rates, we will do everything possible to
+uphold the social pact behind the creation of Hydro-Québec, which was based on providing energy that is clean,
+reliable and affordable for Québec households. By adopting better consumption habits and efficient technologies such
+as heat pumps, Quebecers will see their total energy costs decline or at least limit their increase.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+21
+
+The importance of collaboration in achieving
+our common goals
+Our action plan is ambitious, as is our timeline for implementing it. To meet our targets and fulfill our commitments, we will
+double our efforts and draw on all the expertise at our disposal—our own and that of our partners. And to successfully build
+new infrastructures on this scale while providing reliable electricity and service under increased pressure from climate
+change, we must learn to do things differently and question our established practices.
+We will be able to deliver on the actions laid out in this plan if we work closely with the government and our stakeholders
+on three fronts:
+
+1
+
+Labor force: Sufficient qualified workers
+
+Until 2035, an average of approximately 35,000 construction workers a year will be needed to build the new
+infrastructures. Recruiting them will be an enormous challenge in the current environment, especially since other
+major infrastructure projects will be ongoing at the same time, which will further increase pressure on the job market.
+We will therefore have to work with the government and the construction industry to encourage a sufficient number
+of workers to take part in the energy transition. Accelerated training and skills development programs must continue
+so that we can quickly count on a pool of qualified and flexible workers.
+2
+
+New legislative and regulatory frameworks adapted to the needs of the energy transition
+
+Adjustments will have to be made to the legislative and regulatory frameworks to allow us to adapt to the current
+environment and provide us with the leverage we need to carry out the energy transition. In particular, these
+adjustments will be required in order to:
+- Develop flexible rates options designed to encourage responsible use of electricity while ensuring that our rates
+remain affordable for residential customers.
+- Increase the flexibility of our procurement process so that new generating facilities can be rolled out more quickly
+and at the best possible cost.
+- Maximize energy savings in the building sector.
+- Minimize the risks related to the presence of dangerous trees near power lines.
+The current permit issuance process in Canada is an obstacle to the development of major infrastructure projects,
+and Québec is no exception. The rapid deployment of new generating capacity will require streamlining and a better
+alignment of processes at the two government levels, through the elimination of duplication, for example.
+
+3
+
+A more robust network of suppliers and partners across the entire supply chain
+
+In this accelerating energy transition, we must be able to rely on the entrepreneurial fabric of Québec to increase
+our productivity. In addition, we must work with the business community to secure our global supply chain, which
+will continue to be under significant pressure given the race for renewable energy across the globe. We foresee a
+significant increase in the need for goods and services, and their availability will be crucial to meet our ambitious
+timelines.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+22
+
+Next step: initiating a focused dialogue
+The Action Plan 2035 details the significant challenge we face and the specific actions we will take to tackle it head-on.
+While we start working on our priorities, we would like to hear from our stakeholders on how to fine-tune our proposed
+solutions and implement them.
+To foster focused, in-depth discussions, we will meet with small groups from Indigenous communities, municipalities,
+energy experts and representatives from the business community, the labor movement, environmental and consumer
+groups, and the construction industry. And of course, we will also discuss the Plan with our employees as we carry out
+our day-to-day activities. We will also use digital channels to reach a higher proportion of Quebecers. Finally, we will
+take into account the views our stakeholders have already expressed in consultations on the evolution of the regulatory
+framework held recently by the Québec government.
+The dialogue will take place from November 2023 to March 2024 and we will present its results in spring 2024.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+23
+
+Appendices
+
+Appendix 1 – Glossary
+Reducing consumption and using electricity
+at the right time: What’s the difference?
+
+New technologies
+Pumped-storage generating station
+
+Reducing consumption
+
+A pumped-storage generating station is a type of
+
+Reducing consumption, or energy efficiency, consists of
+
+hydropower facility in which, during periods of low
+
+making optimal use of the energy available, primarily by
+
+demand, available electricity is used to pump water into a
+
+using high-performance technologies. In the residential
+
+higher reservoir, from which it will be released to drive the
+
+building sector, for example, using a heat pump, which
+
+turbines during peak demand periods. This long-term
+
+offers energy performance that is generally one to three
+
+storage solution facilitates the integration of variable
+
+times higher than an electric resistance heating system
+
+generation into the grid.
+
+(baseboard heaters), leads to significant savings, both for
+the customer with the heat pump and for all Quebecers.
+Using electricity at the right time
+
+Renewable thermal energy generation facility
+New technologies make it possible to generate electricity
+from thermal energy created by the combustion of
+
+Using electricity at the right time consists of consuming
+
+renewable energy sources like biofuels, green hydrogen or
+
+power outside of peak hours, which are between 6 and 9
+
+renewable natural gas. These generating facilities can be
+
+a.m. and between 4 and 8p.m. during cold winter days, in
+
+paired with a carbon-capture system.
+
+order to reduce the capacity required to meet demand
+when the Hydro-Québec grid is under the most pressure.
+
+Small modular reactor
+This technology consists of a small, low-capacity nuclear
+
+Variable generation, firm generation,
+storage: What’s the difference?
+
+reactor (from 10 to 300 MW), with modules manufactured
+in a plant that can be assembled at the implementation
+site. This new technology is currently under development
+
+Variable (intermittent) generation
+The electricity generated by variable sources, such as
+
+and aims to reduce on-site work and increase the safety
+of the nuclear materials.
+
+wind and solar, fluctuates as it is dependent on weather
+conditions (such as wind force and sunlight). However,
+these energy sources have a distinct advantage in that
+they can be deployed on the grid more quickly than firm
+generation sources like hydropower.
+Firm generation
+To ensure the reliability of the power supply, especially
+during peak periods, Hydro-Québec must include in its
+energy and capacity balances a sufficient quantity of
+electricity from firm generation sources like hydropower,
+which can be mobilized as needed.
+Storage
+Storage technologies, such as batteries or pumpedstorage generating stations, can be used to bank the
+energy generated during low-demand periods and inject it
+into the grid when it’s needed.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+25
+
+Appendix 2 – Energy and capacity needs by 2035
+Energy and capacity
+
+Additional energy and capacity
+by 2035
+
+To meet the growing demand for electricity in the years
+ahead, we plan to rely, first and foremost on energy
+efficiency, which will help our customers use electricity
+more wisely, and on wind power. Of the different options
+available to increase energy in Québec, these choices
+are the most advantageous in terms of rapid rollout, cost
+and social acceptability.
+
++60 TWh
+In addition to
+the 13 TWh or
+1,800 MW already
+included in the
+Electricity Supply
+Plan published in
+November 2022
+
+However, since we can’t control the wind or the behavior
+
+7–9
+
++8,000–9,000 MW
+1,600–1,800
+
+Improved
+consumption
+
+1,500–1,700
+
+Wind power
+
+30–35
+
+of our customers, these solutions alone are not enough.
+3,800–4,200 Hydropower
+
+We need only imagine a cold and windless winter day,
+when thousands of households turn up the heat and start
+preparing supper.
+
+6–10
+
+It is in cases like these, when a high number of customers
+
+6–8
+
+are consuming a lot of electricity at the same time, that
+
+Energy (TWh)
+
+capacity needs are at their highest, and we must be able
+to count on capacity that is reliable and readily available
+
+500–1,000
+
+The average amount
+of electricity available
+during the year
+
+400–600
+
+Other: Imports,
+solar, battery
+Renewable
+natural gas
+
+Capacity (MW)
+The amount of electricity
+available at a given point
+in time
+
+to meet the high demand. The best choice by far at times
+like these is hydropower. By managing our reservoirs
+optimally, we can ensure that we have enough water
+to produce the electricity we need, when we need it, to
+power Québec. That’s why our strategy must include
+sufficient hydropower capacity to meet demand when
+energy efficiency and wind power are not enough.
+
+Action Plan 2035 – Towards a Decarbonized and Prosperous Québec
+
+26
+
+© Hydro-Québec
+Stratégies et finances
+Reproduction authorized with acknowledgment
+of source.
+2023G596A
+The original text written in French shall prevail.
+Ce document est également publié en français.
+
+www.hydroquebec.com
+
+All amounts are expressed in Canadian dollars.
+The financial and other forecast data presented in this plan
+are based on estimates and assumptions concerning the
+course of events, among other things. Given the risks and
+uncertainties inherent in any forward-looking statements,
+actual data could differ from these forecasts.
+
+

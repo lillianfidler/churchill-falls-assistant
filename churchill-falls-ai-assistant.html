@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churchill Falls AI Assistant - Powered by Claude</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 40px;
+            border-radius: 12px 12px 0 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header h2 {
+            color: #4a5568;
+            font-size: 1.3em;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .expert-bio {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #667eea;
+        }
+
+        .expert-bio h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .expert-bio p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .controls {
+            background: white;
+            padding: 20px 40px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .toggle-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .toggle-container label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            font-size: 0.95em;
+            color: #4a5568;
+        }
+
+        .toggle-container input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .help-text {
+            margin-top: 10px;
+            padding: 12px;
+            background: #edf2f7;
+            border-radius: 6px;
+            font-size: 0.9em;
+            color: #4a5568;
+            line-height: 1.5;
+        }
+
+        .chat-container {
+            background: white;
+            padding: 20px 40px 40px;
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .messages {
+            flex: 1;
+            overflow-y: auto;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #f7fafc;
+            border-radius: 8px;
+            min-height: 400px;
+        }
+
+        .message {
+            margin-bottom: 20px;
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .message.user {
+            text-align: right;
+        }
+
+        .message.assistant {
+            text-align: left;
+        }
+
+        .message-content {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 12px;
+            max-width: 80%;
+            text-align: left;
+        }
+
+        .message.user .message-content {
+            background: #667eea;
+            color: white;
+        }
+
+        .message.assistant .message-content {
+            background: white;
+            color: #2d3748;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .message.assistant .message-content strong {
+            color: #667eea;
+        }
+
+        .citation {
+            font-size: 0.85em;
+            color: #718096;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        .input-container {
+            display: flex;
+            gap: 12px;
+        }
+
+        .input-container input {
+            flex: 1;
+            padding: 14px 18px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.2s;
+        }
+
+        .input-container input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .input-container button {
+            padding: 14px 32px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .input-container button:hover {
+            background: #5a67d8;
+        }
+
+        .input-container button:disabled {
+            background: #cbd5e0;
+            cursor: not-allowed;
+        }
+
+        .loading {
+            display: inline-block;
+            padding: 12px 18px;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            color: #718096;
+        }
+
+        .loading::after {
+            content: '...';
+            animation: dots 1.5s steps(4, end) infinite;
+        }
+
+        @keyframes dots {
+            0%, 20% { content: '.'; }
+            40% { content: '..'; }
+            60%, 100% { content: '...'; }
+        }
+
+        .welcome-message {
+            text-align: center;
+            color: #718096;
+            padding: 40px 20px;
+        }
+
+        .welcome-message h3 {
+            color: #4a5568;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+
+        .example-questions {
+            margin-top: 20px;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .example-questions h4 {
+            color: #4a5568;
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+
+        .example-questions ul {
+            list-style: none;
+        }
+
+        .example-questions li {
+            padding: 8px 12px;
+            margin: 6px 0;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+            font-size: 0.9em;
+            color: #667eea;
+        }
+
+        .example-questions li:hover {
+            background: #edf2f7;
+        }
+
+        .error {
+            background: #fed7d7;
+            color: #c53030;
+            padding: 12px 18px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Churchill Falls AI Assistant</h1>
+            <h2>Understanding the MOU and its Impact on Newfoundland and Labrador</h2>
+            
+            <div class="expert-bio">
+                <h3>About Dr. Doug May</h3>
+                <p>Dr. Doug May is a leading economist specializing in energy policy and resource economics. With over 30 years of research focused on Churchill Falls and its economic impact on Newfoundland and Labrador, Doug has become a trusted voice on this critical issue. His analysis draws on decades of data, policy review, and economic modeling to help the public understand one of the province's most significant agreements.</p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="toggle-container">
+                <label>
+                    <input type="checkbox" id="mouOnlyToggle">
+                    <strong>MOU Text Only</strong> (Official agreement text without analysis)
+                </label>
+            </div>
+            <div class="help-text">
+                Most people can simply start asking questions and get comprehensive answers drawing from both the MOU and Doug's analysis. Government officials or researchers who need only the official MOU text can check the box above. The AI automatically cites all sources clearly, so you always know whether information comes from the official agreement or Doug's analysis.
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <div class="messages" id="messages">
+                <div class="welcome-message">
+                    <h3>👋 Welcome! Ask me anything about the Churchill Falls MOU</h3>
+                    <p>I can help you understand the agreement, its economic impact, and what it means for Newfoundland and Labrador.</p>
+                    
+                    <div class="example-questions">
+                        <h4>Try asking:</h4>
+                        <ul>
+                            <li onclick="askQuestion(this.textContent)">What are the key terms of the Churchill Falls MOU?</li>
+                            <li onclick="askQuestion(this.textContent)">How will this agreement impact Newfoundland and Labrador's economy?</li>
+                            <li onclick="askQuestion(this.textContent)">What does Dr. May's analysis reveal about the long-term effects?</li>
+                            <li onclick="askQuestion(this.textContent)">When does the current agreement expire?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    placeholder="Ask a question about Churchill Falls..."
+                    onkeypress="if(event.key === 'Enter') sendMessage()"
+                >
+                <button onclick="sendMessage()" id="sendButton">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample knowledge base - in production, this would be much more extensive
+        const KNOWLEDGE_BASE = {
+            mou: `
+CHURCHILL FALLS MOU - OFFICIAL TEXT (Sample)
+
+The Memorandum of Understanding regarding Churchill Falls was signed between the Province of Newfoundland and Labrador and Hydro-Québec on [date].
+
+KEY TERMS:
+- The original 1969 contract expires in 2041
+- Current power rates are fixed at 0.2 cents per kilowatt-hour
+- The MOU addresses revenue sharing for the period beyond 2041
+- New terms will provide increased revenue to Newfoundland and Labrador
+- The agreement recognizes historical imbalances in the original contract
+
+REVENUE PROVISIONS:
+- Graduated increase in power rates post-2041
+- 50/50 revenue sharing arrangement
+- Minimum guaranteed payments to the province
+- Inflation adjustment clauses
+
+[Note: This is sample text for demonstration. Replace with actual MOU content.]
+            `,
+            analysis: `
+DR. DOUG MAY'S ECONOMIC ANALYSIS
+
+HISTORICAL CONTEXT:
+The 1969 Churchill Falls agreement is widely considered one of the most lopsided contracts in Canadian history. Quebec has earned over $28 billion from Churchill Falls power, while Newfoundland and Labrador received only a fraction of that amount due to the fixed-rate structure.
+
+ECONOMIC IMPACT:
+Dr. May's analysis shows that the new MOU could generate:
+- An estimated $3-5 billion in additional revenue over 20 years
+- 1,200 new jobs during renegotiation period
+- Significant boost to provincial GDP (estimated 2-3% increase)
+- Enhanced energy security for the province
+
+LONG-TERM IMPLICATIONS:
+The agreement sets a precedent for future energy negotiations and positions Newfoundland and Labrador as a more equal partner in energy development. However, Dr. May notes that the province must ensure strong oversight and accountability mechanisms.
+
+RISKS AND CONSIDERATIONS:
+- Market volatility in energy prices
+- Infrastructure maintenance costs
+- Need for skilled workforce development
+- Environmental considerations for expanded operations
+
+[Note: This is sample analysis for demonstration. Replace with actual Dr. May content.]
+            `
+        };
+
+        let conversationHistory = [];
+
+        function askQuestion(question) {
+            document.getElementById('userInput').value = question;
+            sendMessage();
+        }
+
+        async function sendMessage() {
+            const input = document.getElementById('userInput');
+            const sendButton = document.getElementById('sendButton');
+            const messagesDiv = document.getElementById('messages');
+            const question = input.value.trim();
+
+            if (!question) return;
+
+            // Clear welcome message if it exists
+            const welcomeMsg = messagesDiv.querySelector('.welcome-message');
+            if (welcomeMsg) welcomeMsg.remove();
+
+            // Add user message
+            addMessage('user', question);
+            input.value = '';
+            sendButton.disabled = true;
+
+            // Show loading
+            const loadingDiv = document.createElement('div');
+            loadingDiv.className = 'message assistant';
+            loadingDiv.innerHTML = '<div class="loading">Thinking</div>';
+            messagesDiv.appendChild(loadingDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+
+            try {
+                // Get Claude's response
+                const response = await getClaudeResponse(question);
+                
+                // Remove loading
+                loadingDiv.remove();
+                
+                // Add assistant response
+                addMessage('assistant', response);
+            } catch (error) {
+                loadingDiv.remove();
+                addMessage('error', 'Sorry, there was an error processing your question. Please try again.');
+                console.error('Error:', error);
+            }
+
+            sendButton.disabled = false;
+            input.focus();
+        }
+
+        async function getClaudeResponse(question) {
+            const mouOnly = document.getElementById('mouOnlyToggle').checked;
+            
+            // Build context based on toggle
+            let context = '';
+            if (mouOnly) {
+                context = `You are an AI assistant that answers questions ONLY based on the official Churchill Falls MOU text. Do not include any analysis or commentary beyond what's in the official agreement.
+
+MOU TEXT:
+${KNOWLEDGE_BASE.mou}
+
+Answer the following question using ONLY information from the MOU text above. If the answer isn't in the MOU, say so clearly.`;
+            } else {
+                context = `You are an AI assistant helping people understand the Churchill Falls MOU and its economic impact on Newfoundland and Labrador. You have access to both the official MOU text and Dr. Doug May's expert economic analysis.
+
+OFFICIAL MOU TEXT:
+${KNOWLEDGE_BASE.mou}
+
+DR. DOUG MAY'S ANALYSIS:
+${KNOWLEDGE_BASE.analysis}
+
+When answering questions:
+1. Cite your sources clearly (indicate if information comes from the MOU or Dr. May's analysis)
+2. Provide balanced, comprehensive answers
+3. Use specific data and examples when available
+4. If asked about something not covered in the materials, be honest about that
+
+Answer the following question based on the materials above:`;
+            }
+
+            // In a real implementation, this would call the Anthropic API
+            // For this demo, we'll simulate a response
+            return await simulateClaudeResponse(question, context, mouOnly);
+        }
+
+        async function simulateClaudeResponse(question, context, mouOnly) {
+            // Simulate API delay
+            await new Promise(resolve => setTimeout(resolve, 1000));
+
+            // This is a simplified simulation - in production, you'd call the actual Claude API
+            const lowerQuestion = question.toLowerCase();
+            
+            if (lowerQuestion.includes('key terms') || lowerQuestion.includes('main points')) {
+                if (mouOnly) {
+                    return `Based on the MOU text, the key terms include:\n\n` +
+                           `• The original 1969 contract expires in 2041\n` +
+                           `• Current power rates are fixed at 0.2 cents per kilowatt-hour\n` +
+                           `• New terms include a 50/50 revenue sharing arrangement\n` +
+                           `• Graduated increase in power rates post-2041\n` +
+                           `• Minimum guaranteed payments to the province\n\n` +
+                           `*Source: Official MOU Text*`;
+                } else {
+                    return `The Churchill Falls MOU includes several critical terms:\n\n` +
+                           `**From the Official MOU:**\n` +
+                           `• 50/50 revenue sharing arrangement post-2041\n` +
+                           `• Graduated power rate increases\n` +
+                           `• Minimum guaranteed payments with inflation adjustments\n\n` +
+                           `**Dr. May's Analysis:**\n` +
+                           `Dr. May emphasizes that these new terms represent a significant improvement over the 1969 agreement, which has cost the province billions. The 50/50 split is particularly important as it addresses the historical imbalance where Quebec earned over $28 billion while NL received only a fraction.\n\n` +
+                           `*Sources: Official MOU Text and Dr. Doug May's Economic Analysis*`;
+                }
+            } else if (lowerQuestion.includes('economic impact') || lowerQuestion.includes('economy')) {
+                if (mouOnly) {
+                    return `The official MOU text mentions revenue provisions including graduated rate increases and 50/50 revenue sharing, but specific economic impact projections are not detailed in the agreement itself.\n\n` +
+                           `For economic analysis and projections, you would need to consult expert analysis. Uncheck the "MOU Text Only" box to access Dr. May's economic analysis.\n\n` +
+                           `*Source: Official MOU Text*`;
+                } else {
+                    return `**Economic Impact According to Dr. May's Analysis:**\n\n` +
+                           `Dr. May projects the new MOU could generate:\n` +
+                           `• $3-5 billion in additional revenue over 20 years\n` +
+                           `• Creation of approximately 1,200 new jobs\n` +
+                           `• 2-3% boost to provincial GDP\n` +
+                           `• Enhanced energy security for the province\n\n` +
+                           `**Historical Context:**\n` +
+                           `The 1969 agreement resulted in Quebec earning over $28 billion while NL received only a fraction due to the fixed-rate structure at 0.2 cents per kilowatt-hour (from the official MOU).\n\n` +
+                           `Dr. May emphasizes this represents a major shift toward economic fairness for Newfoundland and Labrador.\n\n` +
+                           `*Sources: Dr. Doug May's Economic Analysis and Official MOU Text*`;
+                }
+            } else if (lowerQuestion.includes('expire') || lowerQuestion.includes('2041')) {
+                return `The original 1969 Churchill Falls contract expires in 2041. The new MOU addresses the terms and revenue sharing arrangements that will take effect after this expiration date.\n\n` +
+                       `*Source: Official MOU Text*`;
+            } else {
+                return `I can help you understand the Churchill Falls MOU! I have access to both the official agreement text and Dr. Doug May's economic analysis.\n\n` +
+                       `Try asking me about:\n` +
+                       `• Key terms of the agreement\n` +
+                       `• Economic impact projections\n` +
+                       `• Historical context\n` +
+                       `• Revenue sharing arrangements\n` +
+                       `• Long-term implications for NL\n\n` +
+                       `What would you like to know?`;
+            }
+        }
+
+        function addMessage(type, content) {
+            const messagesDiv = document.getElementById('messages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${type}`;
+            
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+            
+            if (type === 'error') {
+                contentDiv.className = 'error';
+            }
+            
+            // Convert markdown-style formatting to HTML
+            content = content
+                .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+                .replace(/\n/g, '<br>');
+            
+            contentDiv.innerHTML = content;
+            messageDiv.appendChild(contentDiv);
+            messagesDiv.appendChild(messageDiv);
+            
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        // Handle Enter key in input
+        document.getElementById('userInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,716 @@
+===================================
+DR. DOUG MAY: HQ EXPORTS AND ELECTRICITY PRICE ESCALATION
+Presentation Analysis (Version 1.1)
+===================================
+
+AUTHOR: Dr. Doug May
+DOCUMENT TYPE: Presentation/Analysis
+DATE: 2025 (references data through August 2025)
+DATA SOURCES: Statistics Canada Table 25-10-0016-01, Canada Energy Regulator, HQ Semi-Annual Report 2025
+
+CENTRAL QUESTION: "Do current export prices faced by HQ tell us anything about potential future price escalations?"
+
+ANSWER: **YES** - Current US export market prices provide insight into future escalation patterns
+
+---
+
+## EXECUTIVE SUMMARY
+
+### Key Findings
+
+**Export volumes dramatically declining:**
+- Total exports down 80.8% (August 2025 vs August 2022)
+- USA exports down 93.7% (August 2025 vs August 2022)
+- Interprovincial exports down 57.9% (August 2025 vs August 2022)
+
+**Export prices escalating rapidly:**
+- Maine Q1 2025: $177.95 CAD/MWh (17.80¢/kWh)
+- Maine Q1 2024: 8.32¢/kWh
+- **Increase: 114% year-over-year**
+
+**Strategic shift:**
+- Exports to New Brunswick now generally exceed USA exports
+- USA exports spike only during high-price winter months
+- HQ is "profit maximizer" - exports when prices are highest
+
+**MOU pricing concern:**
+- MOU specifies 2% annual escalation
+- Market reality: 114% increase in one year
+- MOU pricing "detached from market realities"
+
+---
+
+## DRAMATIC CHANGES IN HQ EXPORT PICTURE
+
+### What We've Learned About HQ's Exports
+
+**1. Export volumes generally falling**
+- As percentage of total electricity available
+- Consistent decline over 3-year period
+
+**2. Exports to other provinces (NB) in 2025:**
+- Generally greater than USA exports
+- More stable, long-term commitment pattern
+
+**3. Exports to USA:**
+- Exceed interprovincial only during winter months
+- When northeastern USA electricity prices particularly high
+
+**4. Net exports to USA:**
+- Generally NEGATIVE
+- USA imports more than it exports (HQ importing from USA)
+
+**5. Export destinations (per Canada Energy Regulator):**
+- HQ exports to Maine and New York
+- **Does NOT export to New England** (per CER data)
+- **BUT**: HQ's mid-year report states New England is "primary export market"
+- Data inconsistency issue
+
+---
+
+## EXPORT VOLUME DECLINE: THE NUMBERS
+
+### Year-Over-Year Changes (August 2025 vs August 2024)
+
+| Category | Change |
+|----------|--------|
+| Total Exports | **-45.4%** |
+| Exports to Other Provinces | **-29.1%** |
+| Exports to USA | **-70.7%** |
+
+### Three-Year Decline (August 2025 vs August 2022)
+
+| Category | Change |
+|----------|--------|
+| Total Exports | **-80.8%** |
+| Exports to Other Provinces | **-57.9%** |
+| Exports to USA | **-93.7%** |
+
+**Interpretation:**
+- Massive contraction in export capacity
+- USA exports hit hardest
+- Even interprovincial exports down nearly 60%
+
+---
+
+## EXPORT PATTERNS AND SEASONALITY
+
+### Seasonal Pattern Observed
+
+**Exports occur primarily during:**
+1. **Hotter summer months** (July-August)
+2. **Colder winter months** (January-February)
+
+**Drivers:**
+- **Climate:** Affects both demand and supply
+- **Climate change:** Increasingly important factor
+- **Peak pricing:** Corresponds to highest demand periods
+
+### Strategic Shift in Export Mix
+
+**Historical pattern (pre-2023):**
+- USA exports dominated
+- Interprovincial exports secondary
+
+**Current pattern (2023-2025):**
+- **Longer-term commitments to NB beginning to dominate**
+- USA exports now secondary
+- USA exports concentrated in high-price periods only
+
+**Implication:** HQ prioritizing stable long-term contracts over opportunistic spot market sales
+
+---
+
+## HQ'S NEW ENGLAND COMMITMENTS: THE CONTRACT PROBLEM
+
+### NECEC Agreement Details
+
+**Contract terms:**
+- **20-year supply** of clean, reliable, baseload energy
+- **9.45 TWh per annum** (terawatt-hours)
+- Electricity produced by **"extensive fleet of Hydro-Québec hydroelectric power plants"**
+- Reduces dependence on fossil fuels in New England
+
+**Benefits claimed:**
+- Supply clean energy to **1.2 million New England households**
+- **Stable prices for next 20 years** (avoiding peak demand price spikes)
+- Customer savings: **$3,900 million over 20 years**
+  - Massachusetts: $150M annually
+  - Maine: $40M annually
+
+### THE CRITICAL QUESTION
+
+**⚠️ "Does Churchill Falls qualify as a Hydro-Quebec hydroelectric power plant? Maybe"**
+
+**Significance:**
+- NECEC contract commits to power from "HQ hydroelectric power plants"
+- Churchill Falls provides 17% of Quebec's electricity
+- Is HQ using Churchill Falls power to fulfill NECEC commitments?
+- If yes: NL subsidizing New England electricity at 0.2¢/kWh while NE pays stable long-term rates
+
+---
+
+## USA EXPORT PRICES: THE ESCALATION STORY
+
+### Maine Export Price Data (Canada Energy Regulator)
+
+**Q1 2025 average:** $177.95 CAD/MWh (17.80¢ CAD/kWh)
+**Q1 2024 average:** 8.32¢/kWh
+
+**Year-over-year increase:** **114%**
+
+**Monthly price volatility observed:**
+- Prices exceed $200/MWh in some months
+- High winter prices (January-February peaks)
+- Lower prices in shoulder seasons
+
+### HQ's Export Strategy (from HQ Semi-Annual Report 2025)
+
+**Official statement:**
+> "The company increased electricity exports to take advantage of high prices in a context marked by strong demand."
+
+**Market commentary:**
+> "On markets outside Québec, weather conditions experienced during the first few months of the year led to an overall increase in energy prices. This was especially true in New England, Hydro-Québec's primary export market."
+
+**Key insight:** HQ is **profit maximizer** - exports more when prices are highest
+
+### New England Market Prices (First Half 2025)
+
+**From HQ Semi-Annual Report chart:**
+
+**January-February 2025:** ~18-19¢/kWh
+**2020-2024 average (Jan-Feb):** ~8¢/kWh
+**Increase:** Over 100%
+
+**March 2025 price collapse:** From ~19¢ to ~5¢/kWh
+**April-June 2025:** Stabilized around 4-5¢/kWh
+**2020-2024 average (Apr-Jun):** ~4-5¢/kWh
+
+**Pattern:** Extreme winter price spikes, then return to baseline
+
+---
+
+## HQ'S MID-YEAR 2025 PERFORMANCE ON EXPORTS
+
+### Official HQ Statement: "Strong Performance on Export Markets"
+
+**Colder winter: Increase in market prices**
+
+**Key metrics:**
+- Sales of approximately **6 TWh** at **16¢/kWh** in 2025
+- Compare to: **9¢/kWh** in 2024
+- **Increase: 78% year-over-year**
+
+**Attribution:**
+> "Increase in income as a result of an efficient marketing strategy, supported by the reliability and performance of its generation and transmission equipment"
+
+**Translation:** HQ exported during highest-price periods, maximized profit
+
+---
+
+## EXPORT DESTINATIONS: DATA INCONSISTENCY ISSUES
+
+### Canada Energy Regulator Data
+
+**HQ exports to:**
+1. **Maine** - Consistent monthly exports, price data available
+2. **New York** - Exports via interconnections
+3. **New England (ISO-NE)** - **NO EXPORTS REPORTED** by CER
+
+### HQ's Own Statements
+
+**From Semi-Annual Report 2025:**
+> "New England, Hydro-Québec's **primary export market**"
+
+### The Discrepancy
+
+**Two possibilities:**
+1. **Data classification issue:** CER classifying NE exports under Maine/NY
+2. **Transmission path:** Power to New England routed through Maine, counted as Maine exports
+3. **Timing:** NECEC agreement implementation may not yet be fully reflected in CER data
+
+**For Churchill Falls analysis:**
+- HQ clearly targeting New England market
+- NECEC and CHPE contracts commit significant volumes
+- Whether counted as Maine or NE exports, market reality is same
+
+---
+
+## NEW BRUNSWICK EXPORTS
+
+### Export Volume Pattern
+
+**General observation:**
+- More stable than USA exports
+- Lower volumes after 2022
+- Continues seasonal pattern but less pronounced
+
+### HQ-NB Power Relationship
+
+**Long-term commitments:**
+- HQ involved in power projects in NB
+- Long-term contracts including one to **2040**
+- Not 51-year term like Churchill Falls
+
+**Export pricing:**
+- **No fixed rate**
+- Rate **reflects market conditions**
+- **Not made public** (to Dr. May's knowledge)
+
+**Comparison to MOU:**
+- NB contract to 2040 (16 years remaining as of 2024)
+- Pricing tied to market conditions (not fixed escalation)
+- Churchill Falls MOU to 2075 (51 years) with 2% annual escalation
+
+---
+
+## ANSWERING THE CENTRAL QUESTION
+
+### Do Current Export Prices Tell Us About Future Price Escalations?
+
+**Dr. May's Answer: YES**
+
+**Reasoning:**
+
+**1. Competitive market pricing:**
+- USA prices in more competitive environment
+- Natural gas turbines = closest alternative to hydro/wind
+- Gas prices drive electricity pricing
+
+**2. Free market dynamics:**
+- Reflects variations in demand and supply:
+  - During the day (peak vs off-peak)
+  - During the year (seasonal)
+  - Over time (long-term trends)
+
+**3. Market evolution:**
+- "The electricity market in the USA is very dynamic and will change radically over the next few years"
+- Renewable energy transition accelerating
+- Demand increasing (electrification, AI/data centers)
+
+**4. Government of NL agrees:**
+- GNL references USA market prices as benchmarks in MOU documentation
+- Implicitly accepts market pricing as valid reference
+
+---
+
+## GNL'S OWN PRICE REFERENCES (FROM MOU MATERIALS)
+
+### Reference Prices Provided by Government of Newfoundland and Labrador
+
+| Reference | Price (¢/kWh) | Note |
+|-----------|---------------|------|
+| New York ISO (YTD) | 4.3¢ | Competitive market rate |
+| ISO New England (YTD) | 5.3¢ | Competitive market rate |
+| **New CF PPA** | **5.9¢** | **MOU proposed price** |
+| HQ Long-Term Contracts (NECEC & CHPE) | 6.5¢ | 20-year agreements |
+
+**Acronyms:**
+- **NECEC:** New England Clean Energy Connect
+- **CHPE:** Champlain Hudson Power Express
+
+### Dr. May's Analysis
+
+**GNL is using USA market prices as benchmark for MOU pricing**
+
+**But:**
+- Reference prices are year-to-date averages
+- **Actual peak prices much higher** (17.80¢ in Q1 2025)
+- MOU price (5.9¢) only 11% above ISO-NE average
+- MOU price 9% below HQ's long-term contract rate (6.5¢)
+
+**Critical concern:**
+- Market prices increased 114% in one year
+- MOU specifies 2% annual escalation
+- "Those prices are detached from market realities, especially in the rapidly evolving electricity market"
+
+---
+
+## THE 2% ESCALATION PROBLEM
+
+### Market Reality vs MOU Terms
+
+**Actual market price increase (Maine, Q1 2024 to Q1 2025):**
+- 8.32¢/kWh → 17.80¢/kWh
+- **Increase: 114%** (more than doubled)
+
+**MOU proposed escalation:**
+- **2% annual increase** (fixed rate)
+
+**The disconnect:**
+- **Part** of 114% increase attributable to colder winter 2025
+- **But:** Actual increase "significantly greater than 2%"
+- Fixed 2% rate ignores market dynamics
+
+### Why This Matters for Newfoundland and Labrador
+
+**Scenario over 50 years:**
+
+**If prices follow 2% escalation (MOU):**
+- Year 1: 5.9¢/kWh
+- Year 10: 7.19¢/kWh
+- Year 25: 9.68¢/kWh
+- Year 50: 15.79¢/kWh
+
+**If prices follow market trends (historical 114% spike shows volatility):**
+- Could reach 15.79¢ within 10-15 years, not 50
+- Or could fluctuate dramatically year-to-year
+- NL locked into 2% while HQ sells into volatile markets
+
+**The value gap:**
+- HQ buying from NL at 5.9¢ + 2% escalation
+- HQ selling to USA at 17.80¢ (Q1 2025)
+- **Profit margin: 201%**
+
+---
+
+## KEY INSIGHTS FOR CHURCHILL FALLS CONTEXT
+
+### 1. Churchill Falls Enables HQ Export Profits
+
+**The arbitrage:**
+- Import from Churchill Falls: 0.2¢/kWh (current) or 5.9¢/kWh (MOU)
+- Export to Maine: 17.80¢/kWh (Q1 2025)
+- **Current profit margin:** 8,800%
+- **MOU profit margin:** 201%
+
+**"It's plausible that NL exports from CF to HQ enables HQ to export electricity at very profitable prices to the US markets"**
+
+### 2. HQ is Profit Maximizer
+
+**Evidence:**
+- Increases exports when prices high
+- "Efficient marketing strategy" (per HQ)
+- Targets peak price periods
+- Reduces exports when prices low
+
+**Implication for NL:**
+- HQ will maximize profit from Churchill Falls power
+- Will sell into highest-priced markets
+- NL receives fixed price regardless of market
+
+### 3. Data Reliability Issues
+
+**CER data appears inconsistent:**
+- Value and price data for New York questionable
+- No HQ exports to NE reported by CER
+- But HQ states NE is "primary export market"
+
+**Most reliable source:** HQ's own reports
+
+### 4. Export Volumes Declining But Profits Rising
+
+**Paradox:**
+- Exports down 80.8% over 3 years
+- But export revenue and profit increasing
+- **Reason:** Price increases outpace volume decreases
+
+**For MOU assessment:**
+- Volume may not indicate profit
+- Price escalation is critical factor
+- 2% fixed escalation may significantly undervalue power
+
+### 5. Long-Term Contracts at Premium Prices
+
+**HQ's NECEC and CHPE contracts:**
+- 6.5¢/kWh (20-year terms)
+- 10% premium over MOU price (5.9¢)
+- Includes price stability for buyers
+
+**Question:** Why is NL accepting 5.9¢ for 50 years when HQ gets 6.5¢ for 20 years from New England?
+
+### 6. Climate Change Impact
+
+**Observed effects:**
+- Affecting supply (drought reducing hydro production)
+- Affecting demand (temperature extremes)
+- Creating price volatility
+
+**Long-term trend:**
+- Electricity increasingly valuable
+- Renewable sources (like Churchill Falls hydro) at premium
+- Fixed escalation ignores climate-driven price increases
+
+---
+
+## DR. MAY'S IMPLICIT CONCERNS
+
+### What the Presentation Suggests (Reading Between the Lines)
+
+**1. MOU pricing fundamentally flawed:**
+- 2% escalation ignores market reality
+- Market prices doubled in one year
+- 50-year fixed escalation = giving away value
+
+**2. Churchill Falls subsidizing New England:**
+- HQ's NECEC contract promises HQ hydroelectric power
+- Churchill Falls is 17% of HQ's electricity
+- New England getting cheap, clean power enabled by NL's cheap power to HQ
+
+**3. HQ's "efficient marketing strategy":**
+- Means maximizing profit
+- Buying cheap from NL, selling high to USA
+- NL not participating in upside
+
+**4. Data transparency issues:**
+- Interprovincial prices "not sharing with us" (from earlier May videos)
+- CER price data "sometimes inconsistent"
+- Hard to verify actual value of Churchill Falls power
+
+**5. Government of NL using contradictory logic:**
+- References USA market prices as benchmarks
+- Then accepts 2% fixed escalation
+- Ignores own reference prices showing volatility
+
+---
+
+## COMPARISON: MARKET PRICES VS MOU PRICING
+
+### Current Market Reference Points (from GNL and Dr. May)
+
+**USA competitive markets:**
+- New York ISO YTD: 4.3¢/kWh
+- ISO New England YTD: 5.3¢/kWh
+- Maine Q1 2025: **17.80¢/kWh** (peak winter)
+
+**HQ long-term contracts:**
+- NECEC and CHPE: 6.5¢/kWh (20 years)
+
+**MOU pricing:**
+- 5.9¢/kWh starting price
+- 2% annual escalation
+
+### The Price Gap Analysis
+
+**MOU vs HQ's own long-term contracts:**
+- MOU: 5.9¢ with 2% escalation over 50 years
+- HQ to New England: 6.5¢ over 20 years
+- **NL giving HQ 9% discount vs what HQ charges New England**
+
+**MOU vs actual Q1 2025 Maine prices:**
+- MOU: 5.9¢ (plus future 2% escalations)
+- Actual Maine: 17.80¢
+- **HQ can resell Churchill Falls power for 201% profit**
+
+**MOU escalation vs actual market increases:**
+- MOU: 2% annual
+- Actual (2024-2025): 114%
+- **Market increasing 57× faster than MOU escalation**
+
+---
+
+## IMPLICATIONS FOR MOU ASSESSMENT
+
+### What This Analysis Tells Us About the MOU
+
+**1. Pricing mechanism inadequate:**
+- Fixed 2% escalation doesn't track market
+- USA markets show prices can double year-over-year
+- NL locked into below-market escalation for 50 years
+
+**2. HQ's profit margin protected:**
+- Can buy from NL at 5.9¢ + 2%
+- Can sell to USA at market rates (17.80¢ in Q1 2025)
+- Margin increases as market prices rise faster than 2%
+
+**3. NL missing upside participation:**
+- No mechanism to capture market price spikes
+- No profit sharing when HQ resells at premium
+- Churchill Falls enables HQ export profits, NL doesn't benefit
+
+**4. Comparison to alternative pricing:**
+- HQ's own NECEC contract: 6.5¢ (10% higher than MOU)
+- NECEC is 20 years, not 50
+- Why is NL accepting worse terms for longer period?
+
+**5. "Detached from market realities":**
+- Dr. May's direct assessment
+- Supported by 114% actual increase vs 2% MOU increase
+- "Rapidly evolving electricity market" not reflected in MOU
+
+---
+
+## QUESTIONS RAISED BY THIS ANALYSIS
+
+### For Government of Newfoundland and Labrador
+
+**1.** Why accept 2% escalation when own reference data shows 114% increases possible?
+
+**2.** Why accept 5.9¢ when HQ charges New England 6.5¢ for comparable power?
+
+**3.** Why 50-year term when HQ's contracts are 20 years?
+
+**4.** What analysis was done of market price escalation trends?
+
+**5.** Why no profit-sharing mechanism for HQ's resale of Churchill Falls power?
+
+### For Understanding Churchill Falls Value
+
+**6.** If HQ can sell Churchill Falls power at 17.80¢, what is the true market value?
+
+**7.** How much of NECEC/CHPE commitments are fulfilled with Churchill Falls power?
+
+**8.** What would pricing look like with market-indexed escalation instead of fixed 2%?
+
+**9.** Over 50 years, how much additional revenue would NL receive with market-based pricing?
+
+**10.** Is "stable pricing" (2% escalation) worth giving up participation in market upside?
+
+---
+
+## SUPPORTING DATA SOURCES
+
+### Statistics Canada Table 25-10-0016-01
+
+**Provides:**
+- Monthly export volumes by destination
+- Historical data back to 2022
+- Breakdown: USA exports, interprovincial exports, total
+
+**Shows:**
+- 80.8% decline in total exports (Aug 2022 to Aug 2025)
+- Seasonal patterns
+- Shift from USA to interprovincial priority
+
+### Canada Energy Regulator Data
+
+**Provides:**
+- Export prices by destination (Maine, New York)
+- Volume and value data
+- Monthly granularity
+
+**Issues noted:**
+- Some inconsistency in New York data
+- Does not report New England exports (contradicts HQ statements)
+- Most reliable for Maine export prices
+
+### HQ Semi-Annual Report 2025
+
+**Provides:**
+- HQ's own market commentary
+- Export strategy and performance
+- New England market price chart
+- Official confirmation: "increased exports to take advantage of high prices"
+
+**Shows:**
+- HQ targeting New England as primary market
+- Strong performance on export markets in H1 2025
+- Weather-driven price increases
+
+---
+
+## KEY NUMBERS SUMMARY
+
+### Export Volume Decline (August 2025 vs August 2022)
+
+| Category | Decline |
+|----------|---------|
+| Total Exports | -80.8% |
+| USA Exports | -93.7% |
+| Interprovincial Exports | -57.9% |
+
+### Export Price Escalation (Q1 2025 vs Q1 2024)
+
+| Market | 2024 | 2025 | Increase |
+|--------|------|------|----------|
+| Maine | 8.32¢/kWh | 17.80¢/kWh | **+114%** |
+| HQ avg (all exports) | 9¢/kWh | 16¢/kWh | **+78%** |
+
+### Price Comparisons (¢/kWh)
+
+| Reference | Price |
+|-----------|-------|
+| Current Churchill Falls to HQ | 0.2¢ |
+| MOU Churchill Falls to HQ | 5.9¢ (starting) |
+| NY ISO average | 4.3¢ |
+| ISO New England average | 5.3¢ |
+| HQ to New England (NECEC/CHPE) | 6.5¢ |
+| HQ to Maine (Q1 2025) | 17.80¢ |
+
+### HQ Profit Margins on Churchill Falls Power
+
+| Scenario | Buy Price | Sell Price | Margin |
+|----------|-----------|------------|--------|
+| Current (2024) | 0.2¢ | 17.80¢ | **8,800%** |
+| MOU (starting 2025) | 5.9¢ | 17.80¢ | **201%** |
+| If prices stay at ISO-NE average | 5.9¢ | 5.3¢ | **-10%** (loss) |
+
+---
+
+## DR. MAY'S CONCLUSION
+
+### Explicit Statement
+
+**Central finding:**
+> "Do current export prices faced by HQ tell us anything about potential future price escalations? Answer: Yes, I believe so."
+
+**Reasoning:**
+- USA prices in competitive environment
+- Reflect free market supply and demand dynamics
+- Natural gas prices drive electricity pricing
+- Market "very dynamic and will change radically over the next few years"
+
+**Support for relevance:**
+- Government of Newfoundland and Labrador uses USA prices as references
+- Implicitly validates market pricing as appropriate benchmark
+
+### Implicit Warning
+
+**The MOU problem:**
+- Fixed 2% annual escalation
+- Market reality: 114% increase in one year
+- "Detached from market realities, especially in the rapidly evolving electricity market"
+
+**Translation:** NL is locking in below-market price escalation for 50 years while HQ can arbitrage into rapidly rising export markets
+
+---
+
+## CONTEXT FOR CHURCHILL FALLS AI AGENT
+
+### How to Use This Analysis
+
+**Dr. May provides:**
+- Hard data on export volume collapse
+- Proof of rapid price escalation (114% year-over-year)
+- Evidence HQ is profit maximizer
+- Comparison showing MOU's 2% escalation is inadequate
+
+**Key points for AI agent:**
+1. **Export prices matter more than export volumes** - HQ exporting less but making more profit
+2. **Market prices highly volatile** - Can double year-over-year
+3. **MOU's 2% fixed escalation doesn't track market** - "Detached from market realities"
+4. **HQ arbitraging Churchill Falls power** - Buy cheap, sell high to USA
+5. **GNL's own reference prices undermine MOU terms** - Using market prices as benchmarks, then ignoring market dynamics
+
+### Questions Users May Ask
+
+**"Are export prices really increasing that fast?"**
+- Yes, Maine prices up 114% year-over-year (Q1 2024 to Q1 2025)
+- Part due to colder winter, but increase "significantly greater than 2%"
+
+**"Why does 2% escalation matter?"**
+- Market prices can double in a year
+- Over 50 years, 2% fixed rate means NL loses massive upside
+- HQ can buy at MOU price, resell at market rates, keep difference
+
+**"What would fair pricing look like?"**
+- At minimum: Match HQ's own long-term contracts (6.5¢, not 5.9¢)
+- Better: Index to actual USA market prices (New England ISO, New York ISO)
+- Best: Profit-sharing mechanism when HQ resells Churchill Falls power at premium
+
+**"Is the MOU pricing worse than 1969 contract?"**
+- 1969: Fixed 0.2¢/kWh for 65 years (no escalation)
+- MOU: Starting 5.9¢/kWh with 2% escalation for 50 years
+- MOU is better than 1969, but still badly undervalues power given market dynamics
+- Repeats mistake of fixed escalation instead of market-based pricing
+
+---
+
+**DOCUMENT INFORMATION:**
+- Author: Dr. Doug May
+- Title: HQ Exports and Electricity Price Escalation
+- Version: 1.1
+- Date: 2025 (data through August 2025)
+- Type: Presentation/Analysis with supporting data
+- Central finding: USA export market prices demonstrate MOU's 2% escalation is inadequate
+- Key statistic: Actual prices increased 114% year-over-year vs MOU's 2% annual escalation

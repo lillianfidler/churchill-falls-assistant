@@ -1,0 +1,171 @@
+Hydro-Québec's Production Profiles:
+Update, August 2025
+
+Overview
+
+Doug May
+
+Is the Noose Continuing to Tighten on Hydro-Quebec?
+
+• Electricity generation by HQ continues to fall. Down 8.4% July 2025 to July 2024 or over 15% since July 2022.
+
+• Hydraulic turbine power in Quebec, the primary source of electricity (>90%) is down 10.6% and 18.4% over the same periods due to drought.
+
+• Quebec must import electricity to meet its own domestic needs. This need is the greatest in January and February.
+
+• But on the first 8 months of 2025 production was up by about 4% over the same period last year. It looks as though Quebec continues to import beyond its needs in winter (Dec-Feb) to be able to export power to the USA at high prices.
+
+• To answer question in the title, we have to examine the entire year.
+
+• In many recent months, even with the import electricity from Churchill Falls, electricity supply and demand for Quebec almost meet. There's no breathing room.
+
+• Since meeting domestic demand is a necessity. In the short- and medium-term Quebec must curtail exports and increase imports.
+
+• Churchill Falls, the main source of imported power, into Quebec has reached its limits to export to HQ. The solution for HQ is turning to its traditional export markets in the USA for imported power.
+
+• HQ's imported power from the USA is very expensive relative to its imported power from Churchill Falls (CF)!
+
+• The MOU proposes a price of 1.63¢/kWh for 2025. during the first half of this year Quebec imported power from the USA at 7.56¢/kWh. Cheap power from CF helps HQ to deliver cheap power to its households and industries.
+
+Prices
+
+• HQ has acknowledged that the reason why its electricity to households is the cheapest in Canada, is its access to very cheap hydro power. About 15% this power traditionally comes from Churchill Falls. What the current relative importance is publicly unknown, as far as I am aware.
+
+• When imported power from CF provides surplus (beyond Quebec's needs) power to Quebec, HQ can export the surplus to the USA.
+
+• This situation occurred in Q1 2025. The average price for its electricity that HQ obtained was 16.59¢/kWh. This price is about 10X the price for power offered the MOU. Note HQ uses the profit from these export sales to subsidize its domestic prices, helping to keep them amongst the lowest in Canada.
+
+• There is reason to believe that CF power is generally the cheapest power available to HQ. CF is an older generating station the Henri Bourassa (HB), and HB has to pay water royalties to Quebec which are far higher than those paid by CF(L)Co to the Government of Newfoundland and Labrador.
+
+Does the Drought Affect Water's Value?
+
+• Yes, it does in two ways.
+
+• As water becomes scarcer, like any resource, it's value increases.
+
+• As HQ has to increasingly turn to the USA markets for electricity, its cost keep increasing since its US suppliers depend on more expensive natural gas driven turbines. This increases the differential rental value of water.
+
+• Since CF depends on water to drive its hydraulic turbines, the value of the water in the Smallwood Reservoir implicitly increases. It's likely that the GNL (Government of Newfoundland and Labrador) does noy capture this.
+
+• Quebec does a better job since the water royalty rate is set annually at the beginning of each year.
+
+Water Reservoirs as Natural (Green) Storage Batteries.
+
+• The demand for electricity varies throughout the day and over the year. In the Northern Eastern US and Canada, demand is the highest in the winter months. The pricing of electricity in competitive markets reflects this.
+
+• The Guaranteed Winter Availability Contract (GWAC) of CF(L)Co acknowledges this. Based on the 2004 contract, the price of CF power under this contract is 5.6¢/kWh
+
+• The Smallwood Reservoir may be North America's greatest storage battery for electricity! Since the explicit and relatively fixed costs of hydroelectric power, given high seasonal prices in the winter, it's best to use the reservoir to generate power then.
+
+Some questions for HQ
+
+• When did HQ realize that they had a serious problem due to climate change?
+
+• Are the reservoirs in Quebec maintaining their capacity?
+
+• Is HQ or NLH able to predict reservoir capabilities over the next five years?
+
+• If water levels are falling and the amount of electricity produced is erratic from month to month but not increasing over the past eight years, then what are the alternative sources in the short-term?
+
+• Is the infrastructure projects outlined in the MOU the only longer-term solution to HQ's increasing domestic electricity deficit?
+
+The Bottom Line
+
+• In the last two years, Quebec could just meet its own needs by reducing its exports. The reason for this situation is its very heavy reliance on hydroelectric which has been reduced by drought.
+
+• Quebec must "import" power to meet its needs. The ideal long-term solution for Quebec is to increase it's import of very cheap power at stable prices from a secure source for as long a time period as possible. Quebec is relying on a traditional source which has been is the Churchill River and CF to subsidize and support its lowest in Canada electricity prices. This is a sensible strategy for HQ and Quebec. Does this process make sense for Newfoundlanders and Labradoreans? That's the question.
+
+Note: Statistics Canada has designated power from CF as an export from NL and an import into Quebec. HQ tends to consider CF electricity as its own production (not an import) since it owns 34.2% of CF(L)Co and CF is viewed as primarily delivering power to Quebec.
+
+Interested in The Evidence?
+
+Follow this link:
+
+---
+
+Hydro-Québec's Production Profiles:
+Update, August 2025
+
+The Statistical Evidence
+
+Doug May
+
+HQ's Monthly Domestic Production, January 2022- July 2025
+HQ's Total generation
+Megawatt Hours per month
+Source: Statistics Canada, Table 25-10-0016-01
+
+Talking Note (TN) 1
+
+• HQ's Quebec production in July declined by 8.4% from the same month a year earlier and over 15% over the past three years.
+
+• Note the seasonal pattern. Hydroelectricity is optimally positioned to meet this pattern since the reservoirs act as giant storage batteries. Unlike gas turbines, costs do not typically increase as more water is used from one seasonal to another.
+
+• CF likely has a similar production pattern.
+
+Monthly Production of Electricity by Hydraulic and Wind Power Turbines in Quebec, January 2015-July 2025
+QC Hydraulic turbine
+QC Wind power turbine
+Megawatt Hours per month
+Source: Statistics Canada, Table 25-10-0015-01
+
+Talking Note (TN) 2
+
+• HQ's Hydraulic Turbine production (HTP) in July declined by 10.6% from the same month a year earlier and over 18.4% over the past three years.
+
+• HTP is always over 90% of total production. In first half of 2025 HTP was about 93% of HQ's total domestic production.
+
+• Wind power turbine production has not compensated for the above production.
+
+• Hydro power is typically less than other forms of electricity generation including wind, nuclear, oil or gas. It's also cleaner than coal, oil, or gas.
+
+• CF and Gull Island power are hydroelectric projects.
+
+Quebec's Electricity Supply Deficit, January 2022- July 2025
+HQ's Total generation
+Total electricity available for domestic use
+Megawatt Hours per month
+Supply Deficit
+Source: Statistics Canada, Table 25-10-0016-01
+
+Talking Note (TN) 3
+
+• "Domestic availability" is really internal demand since Quebec must have enough power available to meet its own needs. Households cannot freeze!
+
+• Falling domestic production (internal supply) combined with slightly increasing the internal demand by Quebec's households and its industries is resulting in a supply deficit (a gap) which is increasing.
+
+• "Mind the Gap!" which is increasing!
+
+• Please Note Possible confusion: Stats Can data has CF as an import to Quebec. HQ sees CF power not as an import but power from a subsidiary.
+
+Importing Electricity to Increase Available Supply, January 2022- July 2025
+HQ's Total generation
+Total electricity available
+Megawatt Hours per month
+Imports
+Source: Statistics Canada, Table 25-10-0016-01
+
+Talking Note (TN) 4
+
+• Total Electricity Available equals domestic production plus all imports including those from the USA and other provinces, mainly Churchill Falls.
+
+• Imports into Quebec have increased by 6% between July 2024 and July 2025 mainly from the USA to increase to available supply to Quebec.
+
+• See Import video to see that the increased supply is coming from the USA.
+
+Does Available Supply Meet Domestic Demand, January 2022- July 2025?
+Total electricity available for domestic use
+Total electricity available
+Megawatt Hours per month
+Domestic Demand is 93.1% of Total Supply
+Source: Statistics Canada, Table 25-10-0016-01
+
+Talking Note (TN) 5
+
+• In July 2025, domestic demand was 93.1% of available supply. Three years earlier this figure was 78.6%. The result is that there is decreasingly the opportunity to export data.
+
+• One can argue that the data that Quebec has available when greater than its needs and therefore available for export has been primarily due to its imports of electricity from Churchill Falls.
+
+• Note that in many months there is almost no gap! In this case Internal Demand = Available Supply!
+
+Thanks for Watching
