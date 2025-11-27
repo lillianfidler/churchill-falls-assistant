@@ -340,7 +340,7 @@
 
             try {
                 // Call your backend API
-                const response = await fetch('http://localhost:3000/api/chat', {
+                const response = await fetch('https://churchill-falls.onrender.com/api/chat', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -440,36 +440,3 @@
     </script>
 </body>
 </html>
-```
-
-## **2. Changes Made:**
-
-✅ **Colors Changed:**
-- Purple gradient (`#667eea` to `#764ba2`) → Blue gradient (`#1e3c72` to `#2a5298`)
-- All purple accents now blue
-- Professional blue theme throughout
-
-✅ **Name Changed:**
-- "Churchill Falls AI Assistant" → "Churchill Falls Information Assistant"
-- Avatar changed from "AI" to "CF" (Churchill Falls)
-- Subtitle updated
-
-## **3. Deployment Options - Getting It Online**
-
-You mentioned you have access to a server. Here are your options:
-
-### **OPTION A: Deploy to Your Own Server (Recommended)**
-
-If you have a VPS or web hosting with Node.js support:
-
-**Steps:**
-
-1. **Upload files to your server via FTP/SSH:**
-```
-   /your-server-directory/
-   ├── server.js
-   ├── package.json
-   ├── .env
-   ├── index.html
-   └── content/
-       ├── all your .txt files
