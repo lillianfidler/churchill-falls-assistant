@@ -1,16 +1,15 @@
 require('dotenv').config();
 // server.js - Node.js backend for Churchill Falls AI Assistant
 // This handles the Claude API calls securely from your server
-
 const express = require('express');
 const cors = require('cors');
 const Anthropic = require('@anthropic-ai/sdk');
 const fs = require('fs');
 const path = require('path');
-
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(express.static('.')); // ADD THIS LINE - Serves index.html
 
 // Initialize Anthropic client
 const anthropic = new Anthropic({
