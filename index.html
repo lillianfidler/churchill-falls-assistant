@@ -118,12 +118,11 @@
 
         .input-container {
             position: sticky;
-            bottom: 0;
+            top: 0;
             background: white;
-            padding: 20px 24px;
-            border-top: 2px solid #e5e7eb;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+            padding: 20px 0 30px 0;
             z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
 
         #userInput {
@@ -392,12 +391,19 @@
             <h2>Ask Questions About Churchill Falls</h2>
             <p>Get answers based on the MOU and Doug's expert analysis. Just start typing your question below.</p>
 
-            <div id="chatContainer">
-                <!-- Messages will be added here dynamically -->
+            <div class="input-container">
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    placeholder="Type your question here... (e.g., 'What does the MOU say about rate structures?')"
+                    autocomplete="off"
+                    style="display: block; width: 100%; margin-bottom: 12px;"
+                >
+                <button id="sendButton" style="display: block; margin: 0 auto;">
+                    Ask →
+                </button>
             </div>
-        </div>
 
-        <div class="input-container">
             <div class="example-questions">
                 Try asking: "When does the agreement expire?" • "What are the current rates?" • "Why is this deal important for NL?" • "What happens after 2041?"
             </div>
@@ -407,16 +413,9 @@
                 <label for="mouOnlyMode"><strong>MOU Text Only</strong> - Show only official agreement text (no analysis)</label>
             </div>
 
-            <input 
-                type="text" 
-                id="userInput" 
-                placeholder="Type your question here... (e.g., 'What does the MOU say about rate structures?')"
-                autocomplete="off"
-                style="display: block; width: 100%; margin-bottom: 12px;"
-            >
-            <button id="sendButton" style="display: block; margin: 0 auto;">
-                Ask →
-            </button>
+            <div id="chatContainer">
+                <!-- Messages will be added here dynamically -->
+            </div>
         </div>
     </div>
 
