@@ -172,9 +172,7 @@
         }
 
         #chatContainer {
-            min-height: 400px;
-            max-height: 600px;
-            overflow-y: auto;
+            min-height: 200px;
             padding: 20px;
             background: #f9fafb;
             border-radius: 10px;
@@ -250,7 +248,7 @@
         .message-content h2,
         .message-content h3 {
             color: #1e40af;
-            margin: 16px 0 10px 0;
+            margin: 12px 0 6px 0;
             font-weight: 600;
         }
 
@@ -539,8 +537,13 @@
             messageDiv.appendChild(contentDiv);
             chatContainer.appendChild(messageDiv);
 
-            // Scroll to bottom smoothly
-            chatContainer.scrollTop = chatContainer.scrollHeight;
+            // Scroll page to bottom smoothly
+            setTimeout(() => {
+                window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: 'smooth'
+                });
+            }, 100);
         }
 
         function showLoading() {
@@ -560,7 +563,15 @@
                 </div>
             `;
             chatContainer.appendChild(loadingDiv);
-            chatContainer.scrollTop = chatContainer.scrollHeight;
+            
+            // Scroll page to show loading indicator
+            setTimeout(() => {
+                window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: 'smooth'
+                });
+            }, 100);
+            
             return loadingId;
         }
 
