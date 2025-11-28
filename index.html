@@ -423,11 +423,6 @@
         // Send message on button click
         document.getElementById('sendButton').addEventListener('click', sendMessage);
 
-        // Add welcome message on load
-        window.addEventListener('load', function() {
-            addMessage('assistant', 'Hello! I\'m here to help you understand the Churchill Falls agreements and analyses.\n\nYou can ask me about:\n• The December 2024 MOU and its implications\n• Dr. Doug May\'s economic analyses\n• Proposed pricing structures and projects\n• Historical context and negotiations\n• Financial impacts and debt obligations\n\n**What would you like to know?**');
-        });
-
         async function sendMessage() {
             const input = document.getElementById('userInput');
             const message = input.value.trim();
