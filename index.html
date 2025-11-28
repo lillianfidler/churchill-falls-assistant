@@ -248,8 +248,17 @@
         .message-content h2,
         .message-content h3 {
             color: #1e40af;
-            margin: 12px 0 6px 0;
+            margin: 12px 0 4px 0;
             font-weight: 600;
+        }
+
+        .message-content h1 + p,
+        .message-content h2 + p,
+        .message-content h3 + p,
+        .message-content h1 + ul,
+        .message-content h2 + ul,
+        .message-content h3 + ul {
+            margin-top: 4px;
         }
 
         .message-content h1 { font-size: 20px; }
