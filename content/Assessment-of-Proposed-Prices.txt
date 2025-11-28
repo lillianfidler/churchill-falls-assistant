@@ -1,0 +1,57 @@
+Assessment of Proposed Prices for Existing Power Under the MOU
+Doug May
+
+My initial review of the proposed prices following the schedules contained in the MOU is that the proposal is seriously flawed.
+
+Newfoundlanders and Labradorians believe that the 1969 contract has provided minimal revenue to the province as compared to Quebec, which resulted from a low price of .2¢/kWh that was set in 1969 and and could not be changed under the terms of the contract. This has been seen as unfair and my understanding is that the MOU is to address these concerns.
+
+The price currently applied to CF electricity exports to HQ of .2¢.kWh is not linked to current market prices for electricity. Moreover, as inflation occurs the real purchasing power of Hydro-Québec (HQ) payments to CF(L)Co declines. For example, assuming that commercial production of electricity began on January 1, 1972, and sold for 2.5¢/kWh, then a roughly equivalent value in today's prices would be around 19¢/kWh using the Canadian CPI since a CPI was not available then for NL.
+
+The concerns about these prices are longstanding as is the willingness of HQ to address these concerns, conditional upon NL's willingness to agree to jointly building additional generating facilities, such as Gull Island, on the Lower Churchill. It is understood that most of the financing would come from NL even though most of the electricity would be exported to Quebec at prices consistent with existing low prices in Quebec.
+
+Under the MOU, prices for the existing power from Churchill Falls (CF) were calculated for each year in the period from 2025 until 2075, which is the final year of the proposed contract.
+
+There is no information as to the basis for producing these prices.
+
+Producing forecasted prices without recognizing scenarios that might affected these prices and recognizes uncertainty is not advisable.
+
+Generating price estimates beyond 5 years is risky especially when demand is rapidly growing due to technological factors and climate change. Forecasting beyond 10 years with any accuracy is likely unreasonable and potentially misleading the public.
+
+Schedule F of the MOU does state indicate that the forecast payments will be "reflective of wholesale electricity market value in Québec; replacement costs in Québec; and wholesale electricity market value in northeast export markets". There is a recognition that markets should be involved, but once again there are no specifics.
+
+An explanation of the forecasted prices by Newfoundland and Labrador Hydro (NLH) emphasizes the effective price or baseline average price of 5.9¢/kWh. This price is the present value of the average forecasted prices, rather than the average of the present values of the forecasted prices for each year over the contract period. The present value technique acknowledges that costs or revenues received in different years is not the same, even when expressed in constant dollar terms. What Parsons has done is to ignore this classic insight and by taking the average over the time-period from 2025 to 2075 has focused on the associated year of the averages 2050.
+
+Listeners may wish to listen to my separate discussion on the rationale for calculating present values and net present values as well as some of the pitfalls that users often make in interpreting these concepts.
+
+In any event, it is not clear the role that this price of 5.9¢ plays in relation to markets. However, one slide in Our Chapter relates it to HQ's markets in the USA for part of 2024. Are we to convert the PV of average prices to an actual price in 2024 and escalate from there using electricity prices in HQ's exports markets as our guide? If the answer is yes, then prices in the current year are 50% higher.
+
+To be clear, a present value estimate is not a guarantee that the price or revenue amount is equivalent to money in the present since there is uncertainty for future amounts. PV revenues are not cash in the bank.
+
+The "wholesale" market in Quebec is not a free market since the prices are set by HQ with the goal of minimizing the cost of electricity to Quebec households and using low costs as part of an industrial strategy to promote industrial development.
+
+The desire of HQ to further develop hydroelectric generation on the Churchill River comes from a recognition of the unique water flow of this river and the absence of similar unutilized flows in Quebec.
+
+While it is universally recognized that hydroelectricity can potentially generate electricity at the lowest cost possible, the water from the Smallwood Reservoir is essentially a free source of energy. Its low cost does not promote prudent use of this resource in an era of climate change.
+
+In all the discussions on proposed prices and associated present value revenues in the MOU, a focus is on the prices to CF(L)Co in which HQ is a significant (34.2%) shareholder.
+
+As for the calculating future revenues in any year, there are two parts: the forecasted price and the forecasted quantity of electricity produced in that year. Given climate change and the recent and ongoing Quebec experience, there is no guarantee that CF will continue to generate the same amount of electricity over the next 50 years.
+
+In all the discussions on proposed prices and associated present value revenues in the MOU, a focus is on the prices to CF(L)Co in which HQ is a significant (34.2%) shareholder. The implication is that currently CF(L)Co earns a small profit each year. Any increase in the price of existing power from CF, would result in an increase profit. HQ as a shareholder could simply remit 34.2% of this increased profit, that is, its share. The result is that HQ is partially shielded from any increase in prices for existing power by virtue of its ownership in CF(L)Co.
+
+As for calculating future revenues in any year, there are two parts: the forecasted price and the forecasted quantity of electricity produced in that year. Given climate change and the recent and ongoing Quebec experience, there is no guarantee that CF will continue to generate the same amount of electricity over the next 50 years.
+
+A contract for future hydroelectric development and modernizing the price for existing power from Churchill Falls that is potentially transitional for Newfoundland and Labrador is possible.
+
+Unfortunately, the flaws associated with the proposed prices for existing in the MOU do not realize that potential, in my opinion.
+
+A more detailed explanation for my conclusions is available in the following video.
+
+Acronyms
+• MOU : Memorandum of Understanding (Dec. 12, 2024 between Quebec, and Newfoundland and Labrador
+• CF: Churchill Falls Generating Station
+• NLH: Newfoundland and Labrador Hydro
+• GNL: Government of Newfoundland and Labrador
+• HQ: Hydro Québec
+• NPV: Net Present Value
+• PV: Present Value.

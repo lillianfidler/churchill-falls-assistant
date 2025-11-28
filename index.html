@@ -13,88 +13,190 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: #f3f4f6;
             min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
+            padding: 40px 20px;
         }
 
         .container {
-            width: 100%;
-            max-width: 900px;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(30, 60, 114, 0.3);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            height: 95vh;
-            max-height: 1200px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
             color: white;
-            padding: 30px;
+            padding: 50px 40px;
+            border-radius: 16px;
             text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .header h1 {
-            font-size: 28px;
-            font-weight: 600;
-            margin-bottom: 8px;
+            font-size: 42px;
+            margin-bottom: 12px;
+            font-weight: 700;
         }
 
         .header p {
-            font-size: 14px;
-            opacity: 0.9;
+            font-size: 20px;
+            opacity: 0.95;
         }
 
-        .mode-toggle {
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            padding: 15px;
-            margin-top: 20px;
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-        }
-
-        .mode-button {
-            background: rgba(255, 255, 255, 0.3);
-            border: 2px solid transparent;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 14px;
-            transition: all 0.3s ease;
-        }
-
-        .mode-button:hover {
-            background: rgba(255, 255, 255, 0.4);
-        }
-
-        .mode-button.active {
+        .info-section {
             background: white;
-            color: #1e3c72;
-            border-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .info-section h2 {
+            color: #1e40af;
+            font-size: 28px;
+            margin-bottom: 20px;
             font-weight: 600;
         }
 
-        .chat-container {
+        .info-section p {
+            color: #4b5563;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .chat-section {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .chat-section h2 {
+            color: #1e40af;
+            font-size: 28px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .chat-section > p {
+            color: #6b7280;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .mode-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding: 16px;
+            background: #f9fafb;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .mode-checkbox input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .mode-checkbox label {
+            color: #374151;
+            font-size: 15px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .example-questions {
+            color: #9ca3af;
+            font-size: 14px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .input-container {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        #userInput {
             flex: 1;
+            padding: 16px 20px;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            font-size: 15px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+
+        #userInput:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+
+        #userInput::placeholder {
+            color: #9ca3af;
+        }
+
+        #sendButton {
+            padding: 16px 32px;
+            background: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        #sendButton:hover {
+            background: #2563eb;
+            transform: translateY(-1px);
+        }
+
+        #sendButton:active {
+            transform: translateY(0);
+        }
+
+        #sendButton:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        #chatContainer {
+            min-height: 400px;
+            max-height: 600px;
             overflow-y: auto;
-            padding: 30px;
-            background: #f8f9fa;
+            padding: 20px;
+            background: #f9fafb;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
         }
 
         .message {
-            margin-bottom: 20px;
             display: flex;
             gap: 12px;
+            margin-bottom: 24px;
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .message.user {
@@ -102,8 +204,8 @@
         }
 
         .message-avatar {
-            width: 36px;
-            height: 36px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -114,139 +216,151 @@
         }
 
         .message.user .message-avatar {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
             color: white;
         }
 
         .message.assistant .message-avatar {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
             color: white;
         }
 
         .message-content {
-            max-width: 70%;
-            padding: 15px 20px;
-            border-radius: 15px;
-            line-height: 1.6;
+            max-width: 75%;
+            padding: 16px 20px;
+            border-radius: 12px;
+            line-height: 1.7;
+            font-size: 15px;
         }
 
         .message.user .message-content {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #3b82f6;
             color: white;
             border-bottom-right-radius: 4px;
         }
 
         .message.assistant .message-content {
             background: white;
-            color: #333;
+            color: #1f2937;
+            border: 1px solid #e5e7eb;
             border-bottom-left-radius: 4px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
-        .message.assistant .message-content a {
-            color: #2a5298;
-            text-decoration: underline;
-        }
-
-        .message.assistant .message-content a:hover {
-            color: #1e3c72;
-        }
-
-        .input-container {
-            padding: 20px 30px;
-            background: white;
-            border-top: 1px solid #e0e0e0;
-        }
-
-        .input-wrapper {
-            display: flex;
-            gap: 10px;
-        }
-
-        #userInput {
-            flex: 1;
-            padding: 15px 20px;
-            border: 2px solid #e0e0e0;
-            border-radius: 12px;
-            font-size: 15px;
-            outline: none;
-            transition: border-color 0.3s ease;
-        }
-
-        #userInput:focus {
-            border-color: #2a5298;
-        }
-
-        #sendButton {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 12px;
-            font-size: 15px;
+        .message-content h1,
+        .message-content h2,
+        .message-content h3 {
+            color: #1e40af;
+            margin: 16px 0 10px 0;
             font-weight: 600;
-            cursor: pointer;
-            transition: transform 0.2s ease, box-shadow 0.3s ease;
         }
 
-        #sendButton:hover:not(:disabled) {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
+        .message-content h1 { font-size: 20px; }
+        .message-content h2 { font-size: 18px; }
+        .message-content h3 { font-size: 16px; }
+
+        .message-content strong {
+            color: #1e40af;
+            font-weight: 600;
         }
 
-        #sendButton:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
+        .message-content ul,
+        .message-content ol {
+            margin: 8px 0;
+            padding-left: 24px;
         }
 
-        .loading {
+        .message-content li {
+            margin: 2px 0;
+            line-height: 1.6;
+        }
+
+        .message-content a {
+            color: #3b82f6;
+            text-decoration: none;
+            border-bottom: 1px solid #3b82f6;
+        }
+
+        .message-content a:hover {
+            color: #2563eb;
+            border-bottom-color: #2563eb;
+        }
+
+        .message-content code {
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+        }
+
+        .message-content p {
+            margin: 8px 0;
+        }
+
+        .message-content p:first-child {
+            margin-top: 0;
+        }
+
+        .message-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .loading-dots {
             display: flex;
-            gap: 5px;
-            padding: 15px 20px;
+            gap: 4px;
+            padding: 8px 0;
         }
 
         .loading-dot {
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background: #2a5298;
-            animation: bounce 1.4s infinite ease-in-out both;
+            background: #9ca3af;
+            animation: loadingDots 1.4s infinite ease-in-out both;
         }
 
-        .loading-dot:nth-child(1) {
-            animation-delay: -0.32s;
-        }
+        .loading-dot:nth-child(1) { animation-delay: -0.32s; }
+        .loading-dot:nth-child(2) { animation-delay: -0.16s; }
 
-        .loading-dot:nth-child(2) {
-            animation-delay: -0.16s;
-        }
-
-        @keyframes bounce {
-            0%, 80%, 100% {
-                transform: scale(0);
-            }
-            40% {
-                transform: scale(1);
-            }
+        @keyframes loadingDots {
+            0%, 80%, 100% { transform: scale(0); }
+            40% { transform: scale(1); }
         }
 
         @media (max-width: 768px) {
-            .container {
-                height: 100vh;
-                max-height: none;
-                border-radius: 0;
+            body {
+                padding: 20px 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
             }
 
             .header h1 {
-                font-size: 24px;
+                font-size: 28px;
+            }
+
+            .header p {
+                font-size: 16px;
+            }
+
+            .info-section,
+            .chat-section {
+                padding: 24px;
+            }
+
+            .info-section h2,
+            .chat-section h2 {
+                font-size: 22px;
             }
 
             .message-content {
                 max-width: 85%;
+                font-size: 14px;
             }
 
-            .mode-toggle {
-                flex-direction: column;
+            #sendButton {
+                padding: 14px 20px;
             }
         }
     </style>
@@ -255,69 +369,63 @@
     <div class="container">
         <div class="header">
             <h1>Churchill Falls Information Assistant</h1>
-            <p>Expert information about Churchill Falls, the 1969 contract, and the 2024 MOU</p>
-            
-            <div class="mode-toggle">
-                <button class="mode-button active" data-mode="comprehensive">
-                    Comprehensive Analysis
-                </button>
-                <button class="mode-button" data-mode="mou-only">
-                    MOU Text Only
-                </button>
-            </div>
+            <p>Understanding the MOU and its Impact on Newfoundland and Labrador</p>
         </div>
 
-        <div class="chat-container" id="chatContainer">
-            <div class="message assistant">
-                <div class="message-avatar">CF</div>
-                <div class="message-content">
-                    Hello! I'm here to help you understand the Churchill Falls situation. I have access to the 2024 MOU, Dr. Doug May's economic analyses, Wade Locke's assessment, historical research, and financial reports.
-                    <br><br>
-                    What would you like to know?
-                </div>
-            </div>
+        <div class="info-section">
+            <h2>About Dr. Doug May</h2>
+            <p>Dr. Doug May is a leading economist specializing in energy policy and resource economics. With over [X] years of research focused on Churchill Falls and its economic impact on Newfoundland and Labrador, Doug has become a trusted voice on this critical issue. His analysis draws on decades of data, policy review, and economic modeling to help the public understand one of the province's most significant agreements.</p>
         </div>
 
-        <div class="input-container">
-            <div class="input-wrapper">
+        <div class="chat-section">
+            <h2>Ask Questions About Churchill Falls</h2>
+            <p>Get answers based on the MOU and Doug's expert analysis. Just start typing your question below.</p>
+
+            <div class="input-container">
                 <input 
                     type="text" 
                     id="userInput" 
-                    placeholder="Ask a question about Churchill Falls..."
-                    onkeypress="if(event.key === 'Enter') sendMessage()"
+                    placeholder="Type your question here... (e.g., 'What does the MOU say about rate structures?')"
+                    autocomplete="off"
                 >
-                <button id="sendButton" onclick="sendMessage()">Send</button>
+                <button id="sendButton">
+                    Ask →
+                </button>
+            </div>
+
+            <div class="example-questions">
+                Try asking: "When does the agreement expire?" • "What are the current rates?" • "Why is this deal important for NL?" • "What happens after 2041?"
+            </div>
+
+            <div class="mode-checkbox">
+                <input type="checkbox" id="mouOnlyMode">
+                <label for="mouOnlyMode"><strong>MOU Text Only</strong> - Show only official agreement text (no analysis)</label>
+            </div>
+
+            <div id="chatContainer">
+                <!-- Messages will be added here dynamically -->
             </div>
         </div>
     </div>
 
     <script>
+        const API_URL = 'https://churchill-falls.onrender.com/api/chat';
         let conversationHistory = [];
-        let currentMode = 'comprehensive';
 
-        // Mode toggle functionality
-        document.querySelectorAll('.mode-button').forEach(button => {
-            button.addEventListener('click', function() {
-                document.querySelectorAll('.mode-button').forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-                currentMode = this.dataset.mode;
-                
-                // Clear conversation when switching modes
-                conversationHistory = [];
-                const chatContainer = document.getElementById('chatContainer');
-                chatContainer.innerHTML = `
-                    <div class="message assistant">
-                        <div class="message-avatar">CF</div>
-                        <div class="message-content">
-                            ${currentMode === 'mou-only' 
-                                ? 'I\'m now in MOU-only mode. I\'ll answer questions using only the official MOU text.' 
-                                : 'I\'m now in comprehensive mode. I\'ll use all available documents including expert analyses.'}
-                            <br><br>
-                            What would you like to know?
-                        </div>
-                    </div>
-                `;
-            });
+        // Send message on Enter key
+        document.getElementById('userInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+
+        // Send message on button click
+        document.getElementById('sendButton').addEventListener('click', sendMessage);
+
+        // Add welcome message on load
+        window.addEventListener('load', function() {
+            addMessage('assistant', 'Hello! I\'m here to help you understand the Churchill Falls agreements and analyses.\n\nYou can ask me about:\n• The December 2024 MOU and its implications\n• Dr. Doug May\'s economic analyses\n• Proposed pricing structures and projects\n• Historical context and negotiations\n• Financial impacts and debt obligations\n\n**What would you like to know?**');
         });
 
         async function sendMessage() {
@@ -326,95 +434,117 @@
             
             if (!message) return;
 
-            // Disable input while processing
-            const sendButton = document.getElementById('sendButton');
+            const mouOnlyMode = document.getElementById('mouOnlyMode').checked;
+            const mode = mouOnlyMode ? 'mou-only' : 'comprehensive';
+
+            // Disable input
             input.disabled = true;
-            sendButton.disabled = true;
+            document.getElementById('sendButton').disabled = true;
 
             // Add user message to chat
-            addMessage(message, 'user');
+            addMessage('user', message);
             input.value = '';
 
             // Show loading indicator
             const loadingId = showLoading();
 
             try {
-                // Call your backend API
-                const response = await fetch('https://churchill-falls.onrender.com/api/chat', {
+                conversationHistory.push({
+                    role: 'user',
+                    content: message
+                });
+
+                const response = await fetch(API_URL, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
-                        question: message,
-                        mouOnly: currentMode === 'mou-only',
+                        message: message,
+                        mode: mode,
                         conversationHistory: conversationHistory
                     })
                 });
 
-                const data = await response.json();
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
 
+                const data = await response.json();
+                
                 // Remove loading indicator
                 removeLoading(loadingId);
 
-                if (data.success) {
-                    // Add assistant response to chat
-                    addMessage(data.response, 'assistant');
-                    
-                    // Update conversation history
-                    conversationHistory.push(
-                        { role: 'user', content: message },
-                        { role: 'assistant', content: data.response }
-                    );
-                } else {
-                    addMessage('Sorry, I encountered an error. Please try again.', 'assistant');
-                }
+                // Add assistant response
+                conversationHistory.push({
+                    role: 'assistant',
+                    content: data.response
+                });
+                
+                addMessage('assistant', data.response);
 
             } catch (error) {
                 removeLoading(loadingId);
+                addMessage('assistant', 'I apologize, but I encountered an error. Please try again.');
                 console.error('Error:', error);
-                addMessage('Sorry, I couldn\'t connect to the server. Please make sure the backend is running.', 'assistant');
             }
 
             // Re-enable input
             input.disabled = false;
-            sendButton.disabled = false;
+            document.getElementById('sendButton').disabled = false;
             input.focus();
         }
 
-        function addMessage(content, type) {
+        function addMessage(role, content) {
             const chatContainer = document.getElementById('chatContainer');
             const messageDiv = document.createElement('div');
-            messageDiv.className = `message ${type}`;
-            
+            messageDiv.className = `message ${role}`;
+
             const avatar = document.createElement('div');
             avatar.className = 'message-avatar';
-            avatar.textContent = type === 'user' ? 'You' : 'CF';
-            
+            avatar.textContent = role === 'user' ? 'You' : 'CF';
+
             const contentDiv = document.createElement('div');
             contentDiv.className = 'message-content';
-            
-            // Convert markdown to HTML
+
+            // Enhanced markdown rendering
             let formattedContent = content
                 // Headers
-                .replace(/^### (.*$)/gm, '<h3 style="font-size: 16px; font-weight: 600; margin: 12px 0 8px 0;">$1</h3>')
-                .replace(/^## (.*$)/gm, '<h2 style="font-size: 18px; font-weight: 600; margin: 14px 0 10px 0;">$1</h2>')
-                .replace(/^# (.*$)/gm, '<h1 style="font-size: 20px; font-weight: 600; margin: 16px 0 12px 0;">$1</h1>')
+                .replace(/^### (.*$)/gm, '<h3>$1</h3>')
+                .replace(/^## (.*$)/gm, '<h2>$1</h2>')
+                .replace(/^# (.*$)/gm, '<h1>$1</h1>')
                 // Bold
                 .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                // Italic
+                .replace(/\*(.*?)\*/g, '<em>$1</em>')
                 // Links
                 .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank">$1</a>')
-                // Line breaks
-                .replace(/\n\n/g, '<br><br>')
+                // Bullet points - handle them first before line breaks
+                .replace(/^[•\-\*] (.+)$/gm, '<!LI!>$1</!LI!>')
+                .replace(/^\d+\. (.+)$/gm, '<!LI!>$1</!LI!>')
+                // Line breaks - double newlines become paragraph breaks
+                .replace(/\n\n+/g, '</p><p>')
+                // Single newlines become breaks (but will be cleaned up in lists)
                 .replace(/\n/g, '<br>');
-            
+
+            // Wrap consecutive list items in <ul> and convert placeholders to real <li> tags
+            formattedContent = formattedContent.replace(/(<!LI!>.*?<\/!LI!>(<br><!LI!>.*?<\/!LI!>)*)/gs, function(match) {
+                // Remove <br> tags between list items and convert placeholders
+                return '<ul>' + match.replace(/<br>/g, '').replace(/<!LI!>/g, '<li>').replace(/<\/!LI!>/g, '</li>') + '</ul>';
+            });
+
+            // Wrap in paragraph if not already wrapped
+            if (!formattedContent.match(/^<[h|u|p]/)) {
+                formattedContent = '<p>' + formattedContent + '</p>';
+            }
+
             contentDiv.innerHTML = formattedContent;
-            
+
             messageDiv.appendChild(avatar);
             messageDiv.appendChild(contentDiv);
             chatContainer.appendChild(messageDiv);
-            
-            // Scroll to bottom
+
+            // Scroll to bottom smoothly
             chatContainer.scrollTop = chatContainer.scrollHeight;
         }
 
@@ -426,10 +556,12 @@
             loadingDiv.className = 'message assistant';
             loadingDiv.innerHTML = `
                 <div class="message-avatar">CF</div>
-                <div class="message-content loading">
-                    <div class="loading-dot"></div>
-                    <div class="loading-dot"></div>
-                    <div class="loading-dot"></div>
+                <div class="message-content">
+                    <div class="loading-dots">
+                        <div class="loading-dot"></div>
+                        <div class="loading-dot"></div>
+                        <div class="loading-dot"></div>
+                    </div>
                 </div>
             `;
             chatContainer.appendChild(loadingDiv);

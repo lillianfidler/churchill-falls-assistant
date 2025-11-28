@@ -1,0 +1,141 @@
+The Assessment of the Proposed Projects Under the MOU
+Doug May
+
+Initial Statement
+
+In January of 2025, Dr. Wade Locke released an in-depth assessment of the Dec. 12, 2024 MOU between the governments of Quebec and Newfoundland and Labrador. In his assessment, Wade was constrained by the information that was contained in the MOU or that was publicly available. In all similar matters, including my analysis, readers must take into consideration the accuracy or reliability of the data that were provided or are publicly available.
+
+Accordingly, Dr. Wade Locke wrote in his conclusion, "There is not sufficient information in the MOU to thoroughly evaluate all, or any, of the proposed new developments." Source: W. Locke, An Assessment of the December 12, 2024, Churchill Falls MOU between Newfoundland and Labrador, and Quebec, Jan. 2025, p.19
+
+Having thoroughly reviewed the material, I concur with Wade's statement. My analysis has been greatly constrained by the lack of critical data or the potential unreliability of such data. My attempts to obtain the data which I believe are critical for a proper assessment from Newfoundland and Labrador Hydro have been unsuccessful. I am uncertain as to why this is the case. The point to be made by Wade and myself is that we need more information to thoroughly evaluate the proposed infrastructure projects outlined in the MOU using professionally recognized standards.
+
+Some of the missing information would include any prices for the electricity outputs for Gull Island or the CF Enlargement. Surprisingly, to me, is that prices for CF Upgrade are included as part of the existing prices. Also missing are any information on operating costs and their timing. The result is that net present value financial analysis or cost-benefit analysis cannot be performed. Amongst the input costs, the suggestion of any increase in water rents or royalties is ignored in the MOU, although NLH has informed me that such rates are being "modernized".
+
+Although we have been notified that the prices for existing power are forecasted, they are presented as being certainty-equivalent base prices. In other words, the prices might be higher, but they will not be lower. Implicit is that NL'ers do not care about the risks associated with hydro projects. If there are cost overruns, HQ may accept the additional costs. Could costs be lower? Could financing costs of debt be higher for the Government of Newfoundland and Labrador?
+
+One of the greatest risks that might affect any new hydro developments are changes in water levels and flows due to climate change. Decreasing water flows have recently been a major problem for HQ. Has the same drought phenomena affected the Churchill River system, which is further to the east of Quebec's La Grande generating stations? Hydraulic electricity generation in NL for the period from January to July in 2025 is 15% lower than the same period in 2024.
+
+The Government of Newfoundland and Labrador in its publication, Our Chapter (Slide 9) states with respect to the proposed Gull Island hydro project that, "Environmental Assessment (EA) in 2012 following extensive and rigorous environmental review" was conducted. Okay, but in 2021 did HQ forecast that electricity production would decline from 2023 onwards?
+
+I would argue that there are risks and the public does care about future risks, especially when they or their children (future generations) are on the hook for such costs.
+
+A lot has happened in our economy since December 2024, have tariffs affected any of the development costs estimates?
+
+Although the projects are separated in the MOU, in economic analysis Gull Island cannot be separated from the proposed transmission line.
+
+The GNL's Fact Sheet's reference to an average of 3,000 annual jobs over a period of up to 11 years sounds enticing. Much more detail is needed with respect to occupational details, related compensation, and timelines. It is likely to be the case that labour markets will be very tight given the current emphasis on large infrastructure projects. It is quite possible that most jobs will not go to individuals in local or regional labour markets.
+
+Given the above it is important that cost/benefit analysis be carried out in order to understand which groups have their economic well-being increase from the development and operation of these proposed projects.
+
+In the MOU we are told that the three proposed generating projects are to be financed by 25% equity and 75% debt. The transmission line is entirely the responsibility of Newfoundland and Labrador Hydro (NLH). The table below from Locke provides more detail.
+
+To be clear, while the debt is the responsibility of NLH, its debt obligations are guaranteed by the Government of Newfoundland and Labrador (GNL).
+
+I concur with Wade Locke that the potential direct debt of some 17 billion dollars and the potential of additional financial obligations associated with the CF upgrade and the transmission lines is very substantial. Indeed, given the primary use of the additional power for Quebec households and industries (as part of an industrial strategy) it is not clear to me why the NL public would want to continue the subsidization of low-cost electricity for Quebec.
+
+Locke's Table 11: An Approximation to NLH Equity Obligations for New Developments
+
+Project                           Capital     Equity based  Implied NLH   Debt based   NL Debt
+                                  Costs ($B)  on 25% Share  Equity        on 75% Share
+
+Gull Island Generating Station    $24.900     $6.23         $3.735        $18.68       $11.21
+Churchill Falls Expansion         $4.600      $1.15         $0.757        $3.45        $2.27
+Churchill Falls Upgrade           $1.900      $0.48         $0.313        $1.43        $0.94
+Churchill Falls Transmission      $3.600      $0.90         $0.900        $2.70        $2.70
+Subtotal - New Developments       $35.000     $8.75         $5.704        $26.25       $17.11
+
+Source: W. Locke, An Assessment of the December 12, 2024, Churchill Falls MOU between Newfoundland and Labrador, and Quebec, Jan. 2025, p.19
+
+Financing the Projects
+
+Locke writes:
+HQ purchases 40% of the equity in Gull Island for $4.8 B nominal dollars, which is equivalent to $3.5 B in present value terms, with a 5.8% discount rate and 2024 as the base year. The debt equity structure for this project and the other development projects is 25% equity and 75% debt.
+
+HQ's Profit-Maximizing Strategy
+
+Claudine Bouchard, the Chief Executive Officer (CEO) of Hydro-Québec was recently quoted in the Montreal Gazette as saying, "At some point, they're (northeastern U.S. markets) going to need energy because of the data centres and all that, so this new energy economy will be very different in the next decade, so we have to prepare for that in order to get all the opportunities that we can get from that new market."
+
+So, the profit-making strategy is to buy cheap electric power from a company in which you are a substantial minority shareholder and sell it into U.S. markets at much higher prices. My other video on proposed prices for existing power demonstrates that the export prices for power are the highest in the winter months.
+
+The table below tells us a lot. Locke estimates the current load factor from Churchill Falls to be about 72% and this seems to be consistent in replicating Parsons' forecasted prices. NHL and HQ estimate the average annual load of the 3 projects to be just shy of 40%.
+
+HQ's sensible strategy to generate the most electricity in the winter when it is the most needed by Quebec households and other users, and when it can be exported, or re-exported (using CF electricity) into New England and New York.
+
+In order forecast annual loads, HQ and NLH have forecasted electricity generation daily and by month. Once again, independent reviewers will need to make such data available to the public.
+
+Proposed Generating Infrastructure Projects
+
+Proposed Projects           Capacity      Generation        Forecasted Average    Implied Load
+                                                           Annual Generation      Factor
+
+Gull Island                 2250 MWh      12.0 TWh         60.88%
+CF Expansion                1100 MWh      0.4 TWh          4.15%
+CF Upgrade                  500 MWh       1.0 TWh          22.83%
+
+These estimated load factors imply winter usage when higher prices prevail in U.S. markets.
+
+Some observations and questions:
+
+To what extent does the NL public want NLH to be a profit-making enterprise (PME)?
+
+There are challenges if it does since it is selling power into a primarily cost-minimizing public utility which is buying captured power from a company in which it is a substantial shareholder.
+
+Are the projected costs subject to change because of changes in purchased imported capital goods such as turbines?
+
+As Locke correctly points out, Net Present Value (NPV) estimates for these projects would require timelines of projected detailed costs with alternative scenarios. Such information must be made available to independent reviewers and the public.
+
+As Carney points out in his book, Value(s), cost-benefit analysis should be conducted to determine the economic gains to consumers, businesses and government within Newfoundland and Labrador. Additionally, one might wish to estimate the gains to Quebec groups for comparison purposes.
+
+One might also consider equity considerations on indigenous and on those NL households currently living in poverty. The question is: Will the development or the existence of the proposed projects increase the economic well-being or overall well-being of these groups?
+
+The transmission line project of $3.8B (whose costs fall entirely to NLH) must be considered as part of the Gull Island project since they are not independent. Gull Island power cannot leave the generating station without the line.
+
+Given the low load factors, the additional power seems to targeted to specific months. These patterns seem to suggest that the electricity would be targeted to specific markets in which high seasonal prices would prevail. These projects could be very profitable to HQ. Monthly output projections and distributions should be produced for the first ten years.
+
+Much more detail needs to be available by occupation and levels of compensation since labour markets for large construction projects is expected to be very tight over the next fifteen years.
+
+The NL public would be responsible for a very substantial amount (over 17 billion dollars) debt. Given current and recent concerns about the current debt levels and its sustainability, the public should be particularly concern.
+
+Finally, but perhaps most importantly, the public should re-examine the role of NLH as a publicly-owned entity focused on delivering reliable, low-cost power to meet their needs rather than incurring substantial debt to meet the needs of others at subsidized rates lower than they pay for electricity using a valuable and ever-increasingly scarce resource, namely, water.
+
+Summary and Some Conclusions
+
+Hydro-Québec is in a very tough situation. It's electricity production from its hydroelectric stations has fallen substantially over the past three years. HQ's access to very cheap water resources permits users in Quebec to enjoy the lowest electricity prices in North America.
+
+HQ has gone from a net exporter of electricity to its traditional U.S. markets to a net importer from them.
+
+HQ apparently expects that its demand for electricity in Quebec will double over the next 25 years.
+
+Presumably, because of limited ideal water resources in Quebec it is turning to using wind power.
+
+Quebec has always been a net importer of electricity. It's historic primary source of imported electricity has been Churchill Falls.
+
+Given the above, it is natural that HQ would turn to the Churchill River and its part ownership of CF(L)Co in order to obtain security of additional supply of very cheap electricity. While the additional electricity is primarily to meet Québec's needs for electricity, the MOU proposes that NLH (people of NL) finance its share of the projects by primarily (75% of its share) incurring debt. Since we have no idea of the pricing structure for any additional electricity that would be produced, it is not clear to me what the benefit would be to the people of Newfoundland and Labrador for taking on such a large debt. This is especially true when they are only too familiar with debts arising from recent hydro electric developments.
+
+The strategy in the MOU of offering increased compensation for existing power for jointly undertaking new projects is not new, but a repeat of previous efforts.
+
+It is not possible to properly evaluate any or all of the proposed developments under the MOU. Much more information is needed. I concur with Wade Locke's conclusions noted at the beginning.
+
+The very large debt that NLH must incur and potentially add to the current high provincial debt in order to bring the proposed projects to completion should be of great concern to the residents of NL. In a sense, incurring debt costs for unknown returns for electricity, which is to be exported, represents a subsidy to external buyers. Is it the few NL'ers subsidizing the many Quebecers?
+
+The Newfoundland and Labrador public must wonder why they are continuing to finance projects designed to continue to supply cheap electricity to Quebec for domestic consumption and re-export to lucrative markets in the USA.
+
+The proposed project may increase, at least, before 2041 the benefit from existing power.
+
+The ultimate question is: Is the MOU of December 12th, 2024, the Best Alternative to a Negotiated Agreement (BATNA)? We need additional information with respect to the proposals in the MOU and we need to consider new viable alternatives!
+
+Thanks for watching
+
+We would encourage you to discuss with others and share your opinions and insights.
+
+Don't understand? Ask me!
+
+Acronyms
+• MOU : Memorandum of Understanding (Dec. 12, 2024 between Quebec, and Newfoundland and Labrador
+• CF: Churchill Falls Generating Station
+• NLH: Newfoundland and Labrador Hydro
+• GNL: Government of Newfoundland and Labrador
+• HQ: Hydro Québec
+• NPV: Net Present Value
+• PV: Present Value.
+• CF(L)Co: Churchill Falls (Labrador) Corporation which owns and operates the Churchill Falls hydro electric generating station.
