@@ -42,10 +42,10 @@ const KNOWLEDGE_BASE = {
     fs.readFileSync('./content/quebecs-changing-import-picture.txt', 'utf-8'),
     fs.readFileSync('./content/quebecs-electricity-supply-problem.txt', 'utf-8'),
 fs.readFileSync('./content/The-Assessment-of-the-Proposed-Proj.txt', 'utf-8'),
-fs.readFileSync('./content/Assessment-of-Proposed-Prices', 'utf-8'),
-fs.readFileSync('./content/Proposed-Prices-for-Existing-Power', 'utf-8'),
+fs.readFileSync('./content/Assessment-of-Proposed-Prices.txt', 'utf-8'),
+fs.readFileSync('./content/Proposed-Prices-for-Existing-Power.txt', 'utf-8'),
 fs.readFileSync('./content/MOU_Churchill_Falls_Dec_12_2024.txt', 'utf-8'),
-fs.readFileSync('./content/Understanding-Some-Financial-Concep', 'utf-8'),
+fs.readFileSync('./content/Understanding-Some-Financial-Concep.txt', 'utf-8'),
 
   ].join('\n\n=================\n\n') // Separates each file with a line
 };
