@@ -127,14 +127,12 @@
         }
 
         #userInput {
-            width: 100%;
             padding: 16px 20px;
             border: 2px solid #e5e7eb;
             border-radius: 10px;
             font-size: 15px;
             font-family: inherit;
             transition: border-color 0.2s;
-            margin-bottom: 12px;
         }
 
         #userInput:focus {
@@ -156,8 +154,7 @@
             font-weight: 600;
             cursor: pointer;
             transition: background 0.2s, transform 0.1s;
-            display: block;
-            margin: 0 auto;
+            white-space: nowrap;
         }
 
         #sendButton:hover {
@@ -281,8 +278,12 @@
         }
 
         .message-content li {
-            margin: 2px 0;
+            margin: 4px 0;
             line-height: 1.6;
+        }
+        
+        .message-content ol li {
+            margin: 6px 0;
         }
 
         .message-content a {
@@ -385,7 +386,7 @@
 
         <div class="info-section">
             <h2>About Dr. Doug May</h2>
-            <p>Dr. Doug May is a leading economist specializing in energy policy and resource economics. With over [X] years of research focused on Churchill Falls and its economic impact on Newfoundland and Labrador, Doug has become a trusted voice on this critical issue. His analysis draws on decades of data, policy review, and economic modeling to help the public understand one of the province's most significant agreements.</p>
+            <p>Dr. Doug May is an honorary research professor at Memorial University of Newfoundland. His research interests include labour markets, the determinants of well-being, and applied production economics. He has taught business economics to MBA students for over 40 years and has spent about the same amount of time researching various aspects of the economy of Newfoundland and Labrador.</p>
         </div>
 
         <div class="chat-section">
@@ -393,16 +394,18 @@
             <p>Get answers based on the MOU and Doug's expert analysis. Just start typing your question below.</p>
 
             <div class="input-container">
-                <input 
-                    type="text" 
-                    id="userInput" 
-                    placeholder="Type your question here... (e.g., 'What does the MOU say about rate structures?')"
-                    autocomplete="off"
-                    style="display: block; width: 100%; margin-bottom: 12px;"
-                >
-                <button id="sendButton" style="display: block; margin: 0 auto;">
-                    Ask →
-                </button>
+                <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px;">
+                    <input 
+                        type="text" 
+                        id="userInput" 
+                        placeholder="Type your question here... (e.g., 'What does the MOU say about rate structures?')"
+                        autocomplete="off"
+                        style="flex: 1; margin-bottom: 0;"
+                    >
+                    <button id="sendButton" style="margin: 0;">
+                        Ask →
+                    </button>
+                </div>
             </div>
 
             <div class="example-questions">
@@ -434,6 +437,11 @@
 
         // Send message on button click
         document.getElementById('sendButton').addEventListener('click', sendMessage);
+
+        // Add welcome message on load
+        window.addEventListener('load', function() {
+            addMessage('assistant', 'Hello! I\'m the Churchill Falls Information Assistant.\n\nI can help you understand:\n• The December 2024 MOU and its implications\n• Dr. Doug May\'s economic analyses\n• Proposed pricing structures and projects\n• Historical context and negotiations\n• Financial impacts and debt obligations\n\n**What would you like to know?**');
+        });
 
         async function sendMessage() {
             const input = document.getElementById('userInput');
