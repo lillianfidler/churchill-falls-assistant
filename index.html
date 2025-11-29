@@ -249,8 +249,14 @@
         .message-content h2,
         .message-content h3 {
             color: #1e40af;
-            margin: 12px 0 4px 0;
+            margin: 20px 0 6px 0;
             font-weight: 600;
+        }
+        
+        .message-content h1:first-child,
+        .message-content h2:first-child,
+        .message-content h3:first-child {
+            margin-top: 0;
         }
 
         .message-content h1 + p,
@@ -259,7 +265,7 @@
         .message-content h1 + ul,
         .message-content h2 + ul,
         .message-content h3 + ul {
-            margin-top: 4px;
+            margin-top: 6px;
         }
 
         .message-content h1 { font-size: 20px; }
@@ -437,11 +443,6 @@
 
         // Send message on button click
         document.getElementById('sendButton').addEventListener('click', sendMessage);
-
-        // Add welcome message on load
-        window.addEventListener('load', function() {
-            addMessage('assistant', 'Hello! I\'m the Churchill Falls Information Assistant.\n\nI can help you understand:\n• The December 2024 MOU and its implications\n• Dr. Doug May\'s economic analyses\n• Proposed pricing structures and projects\n• Historical context and negotiations\n• Financial impacts and debt obligations\n\n**What would you like to know?**');
-        });
 
         async function sendMessage() {
             const input = document.getElementById('userInput');
