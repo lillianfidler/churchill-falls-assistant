@@ -45,7 +45,8 @@ const comprehensiveContent = [
     fs.readFileSync('./content/Assessment-of-Proposed-Prices.txt', 'utf-8'),
     fs.readFileSync('./content/Proposed-Prices-for-Existing-Power.txt', 'utf-8'),
     fs.readFileSync('./content/MOU_Churchill_Falls_Dec_12_2024_clean_text.txt', 'utf-8'),
-    fs.readFileSync('./content/Understanding-Some-Financial-Concep.txt', 'utf-8'),
+  fs.readFileSync('./content/Understanding-Some-Financial-Concep.txt', 'utf-8'),  
+  fs.readFileSync('./content/history-of-churchill-falls-development.txt', 'utf-8'),
 ].join('\n\n---\n\n');
 
 // MOU-only content (just the official MOU document)
@@ -234,7 +235,7 @@ app.post('/api/chat', async (req, res) => {
 
         // Call Claude API
         const response = await anthropic.messages.create({
-            model: 'claude-sonnet-4-20250514',
+            model: 'claude-sonnet-4.5-20250929',
             max_tokens: 4096,
             system: systemPrompt,
             messages: messages
