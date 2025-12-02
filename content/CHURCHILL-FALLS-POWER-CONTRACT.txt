@@ -1,0 +1,364 @@
+CHURCHILL FALLS POWER CONTRACT
+May 12, 1969
+
+Between:
+QUEBEC HYDRO-ELECTRIC COMMISSION
+and
+CHURCHILL FALLS (LABRADOR) CORPORATION LIMITED
+
+====================
+INDEX
+====================
+
+ARTICLE I - INTERPRETATION
+1.1 Definitions
+1.2 Applicable Law
+1.3 Number and Gender
+1.4 Headings
+1.5 Schedules
+1.6 Successors and Assigns
+1.7 Letter of Intent
+1.8 Payments and Loans
+
+ARTICLE II - OBJECT
+2.1 Object
+
+ARTICLE III - TERM AND RENEWAL
+3.1 Term
+3.2 Renewal
+
+ARTICLE IV - CONSTRUCTION AND OPERATION OF THE PLANT
+4.1 Construction
+4.2 Operation
+4.3 Interruptions
+4.4 Communications System
+4.5 Metering and Measurement
+4.6 Method of Calculating Spillage and Inventory
+
+ARTICLE V - COMPLETION GUARANTEE
+5.1 Provision for Additional Funds Required
+5.2 General Provisions Applicable to Debentures
+5.3 Dividend Restrictions
+5.4 Right of Hydro-Quebec to cure events of default under certain Debt Obligations of CFLCo
+
+ARTICLE VI - ENERGY, FIRM CAPACITY AND RECAPTURE
+6.1 Energy Characteristics
+6.2 Sale and Purchase of Power and Energy
+6.3 Prior to Effective Date
+6.4 Firm Capacity
+6.5 Firm Capacity Schedules
+6.6 Recapture
+6.7 Recapture Adjustments
+
+ARTICLE VII - DELIVERY
+7.1 Delivery Point
+7.2 Transmission Facilities
+
+ARTICLE VIII - RATE AND PRICE
+8.1 Base Rate
+8.2 Applicable Rates
+8.3 Price Prior to Effective Date
+8.4 Price After the Effective Date
+8.5 Direct Price Adjustments
+
+ARTICLE IX - ADJUSTMENT OF ANNUAL ENERGY BASE
+9.1 Adjustment Intervals
+9.2 Basis for Adjustment
+9.3 Limitations on Adjustment of Annual Energy Base
+9.4 Conditions under which Annual Energy Base may be adjusted
+9.5 No Adjustment
+9.6 Effect of Changing Annual Energy Base
+
+ARTICLE X - FIRM CAPACITY PENALTY
+10.1 Extent of Penalty
+10.2 Rules Applicable
+10.3 No Penalty
+
+ARTICLE XI - REFINANCINGS
+11.1 Prior Approval
+11.2 Costs and Benefits
+
+ARTICLE XII - DEBT SERVICE REQUIREMENT AND EXPENSE CHARGES
+12.1 Advances by Hydro-Quebec
+12.2 Consideration for Advances
+12.3 Duration of Obligation to Make Advances
+12.4 Advances During Restoration
+12.5 Estimate
+12.6 Insurance Proceeds
+
+ARTICLE XIII - ACCESS TO RECORDS
+13.1 Audit by Hydro-Quebec
+13.2 Questions Arising
+13.3 Sharing of Expenses
+13.4 Annual Review
+
+ARTICLE XIV - U.S. DOLLAR TRANSACTIONS
+14.1 Variations in Exchange Rate
+14.2 Deemed Conversion
+14.3 U.S. Refinancing of U.S. Debt Obligations
+14.4 Subsequent U.S. Debt Obligations
+
+ARTICLE XV - INTEREST CHARGES
+15.1 Portions of Interest to be borne by Hydro-Quebec
+15.2 Method of Payment
+15.3 Forecasts
+15.4 Acknowledgment
+15.5 Exemption
+
+ARTICLE XVI - PAYMENT
+16.1 Monthly Accounts
+16.2 Method of Payment
+
+ARTICLE XVII - FORCE MAJEURE
+17.1 Contract Not Terminated
+17.2 Effect of Force Majeure on Payment Obligations
+17.3 Obligations Suspended or Abated
+17.4 Assignment of Indemnification
+
+ARTICLE XVIII - INDEMNIFICATION AND LIABILITY
+18.1 Of Hydro-Quebec by CFLCo
+18.2 Of CFLCo by Hydro-Quebec
+18.3 Reciprocal Release of Claim
+
+ARTICLE XIX - ASSIGNMENT
+19.1 Prohibition
+19.2 Protection of Trustee
+19.3 Assignment to Trustee for First Mortgage Bondholders
+
+ARTICLE XX - USE OF QUEBEC PERSONNEL, SERVICES AND MATERIALS
+20.1 Preference Concerning Quebec Equipment, Services and Personnel
+20.2 Preference to Other Canadian Manufacturers
+20.3 Liaison Committees
+20.4 Management Rights of CFLCo
+
+ARTICLE XXI - CASE OF CFLCo BEING UNABLE TO COMPLETE PROJECT
+21.1 Cooperation
+
+ARTICLE XXII - FINANCING CONSULTATION
+22.1 Financing
+
+ARTICLE XXIII - NOTICES
+23.1 How Given
+23.2 When Effective
+23.3 Change of Address
+
+====================
+ARTICLE I - INTERPRETATION
+====================
+
+1.1 Definitions
+
+The following words and phrases whenever used in this Power Contract shall have the following meanings:
+
+I - TECHNICAL TERMS:
+
+"Billion" means one thousand million.
+
+"Energy" means electrical energy measured in kilowatthours.
+
+"Excessive Corona Losses" means, expressed in kilowatts, that part of corona losses experienced at any time which is in excess of 14 kilowatts per circuit mile.
+
+"Load Factor" means, for any period, the ratio, expressed as a percentage, of the average power over that period to the highest peak power in that period.
+
+"Mill" means 1/1000 of a dollar in lawful money of Canada.
+
+"Month" means, unless the context otherwise requires, a calendar month.
+
+"Power" means the rate at which energy is transferred at any point measured in kilowatts or multiples thereof.
+
+"Power Factor" means at a given point at any instant of time the number of kilowatts divided by the number of kilovolt-amperes.
+
+All other technical terms employed in this Power Contract shall have the meanings, respectively, attributed thereto by American Standard Definitions of Electrical Terms Number ASA C42 published 1957 by American Institute of Electrical Engineers and, to the extent not thereby defined, by The International Electro-Technical Vocabulary, second edition, 1956, published by The Central Office of The International Electro-Technical Commission.
+
+II - CONCERNING CONSTRUCTION OF THE PLANT:
+
+"Completion Date" means the first day of the first month on or after the Effective Date by which all of the following shall have occurred:
+
+(a) the eleven units at the Plant contemplated by Schedule I and all associated generating, transformation and transmission facilities shall have been installed;
+
+(b) the Plant shall have become capable of delivering energy at the Delivery Point at a rate of 2625 million kilowatthours per month of 730 hours;
+
+(c) the Plant shall have become capable of making available at the Delivery Point at least 4,382,600 kilowatts in months other than June, July, August or September or, in June, July, August or September, at least 4,163,500 kilowatts;
+
+(d) Hydro-Quebec shall have furnished to CFLCo or CFLCo shall have furnished to Hydro-Quebec a certificate of an independent engineer stating that the Plant has been completed to the extent mentioned in (a) above and that, in his opinion, the Plant has the capabilities referred to in (b) and (c) above.
+
+"Effective Date" means:
+
+(a) if, by the date specified in Schedule II for completion of the eleventh unit, the eleven units of the Plant and all associated generating, transformation and transmission facilities are installed and each unit is ready to deliver or has delivered energy at the Delivery Point, and not more than three units are then inoperative, the date so specified in Schedule II, or failing that
+
+(b) if earlier than December 31, 1978, the first day of the month following the date by which completion to the extent referred to in (a) above is achieved, or failing that
+
+(c) December 31, 1978.
+
+"Delivery Date" means, respectively, each of the ten dates specified in Column 1 of Schedule II as one on and from which capacity and energy are to be available to Hydro-Quebec at the Delivery Point to the relevant extents contemplated by said Schedule II; the whole subject to revision as provided in Section 6.3 hereof.
+
+"Delivery Point" means, in respect of each circuit of the transmission lines, the point at which delivery of the energy is to be made hereunder and also means, collectively, all of such points.
+
+"Plant" means the Hydro-Electric Plant (as referred to in the Engineering Report and in the Construction Cost Estimate, each prepared by Acres Canadian Bechtel of Churchill Falls, copies of each of which have been furnished to Hydro-Quebec by CFLCo) to be constructed by CFLCo pursuant to Section I hereof at a site near Churchill Falls on the Upper Churchill River, having, when completed, at least those technical characteristics set forth in Schedule I hereto, or as may be varied pursuant to Section 4.1 hereof, and all facilities, properties and rights obtained by CFLCo for the construction and operation thereof and the generation, transformation, transmission and delivery of power and energy therefrom including, without limiting the generality of the foregoing,
+
+(a) all access roads
+(b) airports and runways
+(c) all construction camps
+(d) permanent townsite and services therefor
+(e) all transport and communication facilities
+(f) all water control and water storage works and facilities
+(g) all buildings and structures and their appurtenances
+(h) all machinery and equipment, whether moveable or immoveable
+(i) all spare parts
+(j) all tools and maintenance material and
+(k) all transmission circuits of CFLCo and all such circuits, to or from the said Plant, of any company which, under the present text of Section 121B of the Canada Corporations Act, would be a subsidiary of CFLCo, provided such circuits are required to be used either to supply energy to Hydro-Quebec pursuant hereto or to supply energy to Twin Falls Power Corporation Limited in satisfaction of CFLCo's obligations referred to in Section 4.2.2 hereof.
+
+"Stage of Construction" means, in respect of the construction of the Plant, the respective periods between the Delivery Dates, commencing with the first Delivery Date and treating as a final stage the period between the ninth Delivery Date and the Effective Date.
+
+III - Concerning Capacity:
+
+"Deficiency" means, in respect of any request by Hydro-Quebec made pursuant to Section 6.5 hereof for the supply at any given time of capacity, that number of megawatts out of the total megawatts so requested which (exclusive of capacity in excess of Firm Capacity) CFLCo fails to make available at the Delivery Point at such time.
+
+"Deficiency Period" means the period of duration of a Deficiency, it being understood that the extent of a Deficiency can vary during a Deficiency Period.
+
+"Firm Capacity" means, subject to reduction by adjustment pursuant to Section 6.7 hereof, at any time:
+
+(a) after the first Delivery Date and prior to the Effective Date, the number of kilowatts, to be available to Hydro-Quebec at the Delivery Point, as indicated in Column 5 of Schedule II with reference to, and to be available to Hydro-Quebec by, the dates shown in Column 1 of Schedule II; and
+
+(b) after the Effective Date,
+(i) at any time in the months of October, November, December, January, February, March, April and May: 4,382,600 kilowatts at the Delivery Point
+(ii) at any time in the months of June, July, August and September: 4,163,500 kilowatts at the Delivery Point.
+
+"Minimum Capacity" means, after the sixth Delivery Date and subject to the provisions of Section 4.3 and to reduction, if any, pursuant to Section 6.7, 1,200,000 kilowatts.
+
+IV - CONCERNING ENERGY:
+
+"Annual Energy Base" means 31.50 billion kilowatthours per year or, in the event of an adjustment pursuant to Section 6.7 or to Article IX hereof, the number of kilowatthours per year established as a result of such adjustment, calculated to the nearest 1/100 of a billion kilowatthours.
+
+"Basic Contract Demand" means, in respect of any month, the number of kilowatthours obtainable, calculated to the nearest 1/100 of a billion kilowatthours, when the Annual Energy Base is multiplied by the number which corresponds to the number of days in the month concerned and the result is then divided by the number which corresponds to the number of days in the year concerned.
+
+"Energy Payable" means
+
+(a) in respect of any month after the first Delivery Date and prior to the Effective Date, the amount of energy taken by Hydro-Quebec or made available to it up to the amount indicated in Column 6 of Schedule II hereof as available during the stage of construction applying to such month as shown in Column 1 of Schedule II hereof, plus any excess energy taken by Hydro-Quebec;
+
+(b) in respect of any month commencing on or after the Effective Date, (i) the amount of energy which is taken by Hydro-Quebec during such month plus (ii) the amount of energy equivalent to water spilled during such month, as determined pursuant to Sections 4.2.6 and 4.6 and after excluding spillages attributable to the fact that CFLCo has, during the 12 months preceding the spillage, either incurred any penalty under Article X or avoided such penalty only by virtue of Sections 10.3.4 or 10.3.6. Such spillage shall not cause the total Energy Payable for the 12 month period which terminates with the cessation of spilling to exceed the amount obtained when the total amount of all prior recaptures is deducted from 35.4 billion kilowatthours.
+
+V - CONCERNING RECAPTURE:
+
+"Recapture" means any withholding from the power and energy agreed to be sold hereunder which may be made by CFLCo in accordance with the provisions of, and within the limits stipulated by, Section 6.6 hereof. All references herein to the amount of recaptures of energy are to the aggregate amount of kilowatt-hours per year referred to in all Recapture Notices which have been given up to that date which is three years prior to the date as of which the amount of recaptures of energy is being determined.
+
+"Recapture Notice" means any notice given by CFLCo to Hydro-Quebec in accordance with the provisions of Section 6.6 hereof of CFLCo's election to effect a recapture.
+
+VI - CONCERNING RATES AND RATE ADJUSTMENTS:
+
+"Applicable Rate" means the Base Rate, as adjusted pursuant to Section 8.2 hereof, calculated to the nearest 1/10,000 of a mill.
+
+"Base Rate" means at any time, the unadjusted mill rate applicable to such time as stipulated by Section 8.1 hereof.
+
+"Final Capital Cost of the Plant" means, without duplication, the sum (less net salvage recoveries realized by CFLCo on equipment purchased for, or used in, construction) of all amounts at any time paid or payable directly or indirectly by CFLCo in respect of the construction and bringing into operation of the Plant, and incurred prior to the first anniversary of the Completion Date, including without limiting the generality of the foregoing:
+
+(a) the aggregate net amounts paid or legally payable by CFLCo to architects, manufacturers, engineers, surveyors, contractors, subcontractors, carriers, workmen and suppliers of material and services;
+
+(b) that portion of the interest paid and payable in respect of monies borrowed by CFLCo which does not exceed 5½% per annum on First Mortgage Bonds and 6% per annum on other Debt Obligations (including General Mortgage Bonds, debentures and bank loans) but exclusive of any amount thereof which, as hereinafter contemplated, CFLCo shall charge from time to time to the expenses of operations;
+
+(c) all other amounts not included under items (a) and (b) paid or payable by CFLCo for salaries, wages, insurance costs, casualty liabilities, rentals, royalties, costs of outside consultants and all applicable overhead, general, operating and administration costs, but exclusive of any amount thereof, which, as hereinafter contemplated, CFLCo shall charge from time to time to the expenses of operations;
+
+(d) the first $25,000,000 of the overall financing costs and expenses incurred by CFLCo, including professional fees related thereto.
+
+For the purposes of items (b) and (c) above, CFLCo shall, from the commencement of revenue from sales of energy hereunder, charge to operations 2/10 of the amounts payable for such items and, cumulatively, after each additional unit installed thereafter produces revenue, charge to operations an additional 1/10 of said amounts, provided that CFLCo may so charge to operations from any earlier dates, if it so elects.
+
+The Final Capital Cost of the Plant shall, however, exclude specifically the following:
+
+(i) all professional fees and expenses incurred by CFLCo in respect of the entering into of this Power Contract; and
+
+(ii) any management fees or liabilities arising out of management contracts between CFLCo and any parent, affiliate or subsidiary company as said terms are defined in the present text of section 121B of the Canada Corporations Act, or any other company under the same effective control as CFLCo.
+
+Any grant received from any governmental authority, provincial or federal to help defray all or any part of the Final Capital Cost of the Plant or which is applicable to same shall be deducted from the Final Capital Cost of the Plant. The assistance which may be furnished by Hydro-Quebec pursuant to Articles XIV and XV shall not be considered as such a grant.
+
+VII - CONCERNING DEBT SERVICE AND EXPENSE CHARGES
+
+"Debt Service Requirement" means, in respect of any period, the sum of the aggregate amount required to be paid by CFLCo in such period on account of principal, interest, mandatory sinking fund instalments (applicable premium included), indemnification payments, applicable federal and provincial tax payments, and all other mandatory payments in such period on all outstanding Debt Obligations incurred by CFLCo for the financing of the construction and bringing into operation of the Plant or for the refinancing from time to time of Debt Obligations originally incurred to finance or refinance such construction and bringing into operation, except that as regards any such outstanding Debt Obligations the maturity of which shall be or have become accelerated, only as if such acceleration had not occurred.
+
+For the purposes of this definition, any such payments as aforesaid falling due on or in respect of the General Mortgage Bonds of CFLCo shall be considered as amounts required to be paid by it as they fall due notwithstanding that the subordination provisions with respect to the General Mortgage Bonds may restrict the sources of funds from which such payments may be made.
+
+"Expense Charges" means, in respect of any period, all cash payments made or to be made by CFLCo (whether of a capital or revenue nature) in or for such period on account of the ownership, occupancy, maintenance, operation, replacement, repair and restoration of the Plant, including without limiting the generality of the foregoing, all administrative expenses directly related to the construction, bringing into operation, operation and maintenance of the Plant, insurance, rentals, royalties, licenses and taxes, but excluding dividend payments, directors' fees, depreciation, deferred taxes, CFLCo's Debt Service Requirement for such period and any expenses incurred in such period exclusively for the purpose of supplying recaptured energy hereunder to customers other than Hydro-Quebec.
+
+VIII - CONCERNING EXCHANGE TRANSACTIONS:
+
+"U.S. Dollars", "U.S. funds", "U.S. currency" and similar expressions mean coin or currency of the United States of America which at the time of payment shall be legal tender for the payment of public and private debts in the United States of America.
+
+"Weighted Average Exchange Rate" means at any time the average relationship of a Canadian dollar to a U.S. dollar, when, in respect of all of any class of Debt Obligations then incurred by CFLCo on which CFLCo obtains U.S. dollars, an amount equal to the amount of Canadian dollars obtained on the conversion of such U.S. dollars is divided into an amount equal to the amount of U.S. dollars obtained.
+
+IX - CONCERNING INTEREST CHARGES:
+
+"Effective Interest Rate" means, in respect of any Debt Obligation, the rate per annum of the interest payable thereon expressed in relation to the gross proceeds to CFLCo of such Debt Obligation after taking into account discounts and premiums, if any, but without taking into account underwriting commissions, commitment fees, indemnification payments, placement fees, financial advisory fees, the value of any conversion right attaching to such Debt Obligation and the value of any other additional right or security issued to the lender with such Debt Obligation.
+
+X - GENERAL:
+
+"Debt Obligation" means any bond, debenture, note or other promise or obligation to pay which is issued by CFLCo, provided however that the issue was made with the knowledge of Hydro-Quebec and in compliance with Section 22.1 hereof.
+
+"Force Majeure" means:
+
+(a) any fortuitous event, act of governmental authority, act of public enemies, war, invasion or insurrection, riot, civil disturbance, labour trouble, strike, and
+
+(b) any flood, fire, shortage of labour, or of materials or of transport or other cause of inability to perform or delay in performing obligations hereunder which, in each such event, is beyond the reasonable control of the party or parties affected.
+
+Failure of equipment to perform adequately, or improper operation of equipment, shall not constitute Force Majeure.
+
+"Project" means (i) the construction and bringing into operation of the Plant and (ii) the satisfying of all requirements to achieve the Completion Date, as herein defined and also as said term or a corresponding term may be defined in each of the Trust Deed securing the First Mortgage Bonds of CFLCo and in every other Debt Obligation of CFLCo, for the financing or refinancing of (i), which defines a date of completion and imposes requirements in such respect.
+
+1.2 Applicable Law
+
+This Power Contract shall at all times and in all respects be governed by, and interpreted in accordance with, the laws of the Province of Quebec. The only courts competent to adjudge disputes between the parties hereto arising out of this Contract are, subject to appeal to the Supreme Court of Canada when such appeal lies, the Courts of the Judicial District of Montreal, where, for purposes of litigation only as aforesaid, CFLCo elects domicile for service at One Westmount Square in the City of Westmount, District of Montreal or at such other place in the said District of Montreal of which CFLCo may from time to time give written notice to Hydro-Quebec.
+
+1.3 Number and Gender
+
+References herein to the singular shall, where the context requires, include the plural and vice-versa and references herein to the masculine, feminine or neuter genders shall, where the context requires, include any other of such genders.
+
+1.4 Headings
+
+The headings to Articles, Sections, subsections and Schedules which are employed herein are for convenience of reference only and form no part of this Power Contract.
+
+1.5 Schedules
+
+Schedules I, II and III hereto annexed are an integral part of this Power Contract.
+
+1.6 Successors and Assigns
+
+Subject as provided in Article XIX hereof, this Power Contract shall enure to the benefit of and be binding upon each party hereto and its respective successors and assigns.
+
+1.7 Letter of Intent
+
+The Letter of Intent executed between the parties hereto under date of October 13, 1966 is hereby fully superseded and replaced.
+
+1.8 Payments and Loans
+
+Payments made by Hydro-Quebec pursuant to Articles XIV and XV are not loans and are not subject to the provisions of Articles V and XII.
+
+====================
+ARTICLE II - OBJECT
+====================
+
+2.1 Object
+
+During the existence of the present Power Contract Hydro-Quebec agrees to purchase from CFLCo and CFLCo agrees to sell to Hydro-Quebec each month (i) prior to the Effective Date at least the amount of energy indicated in Column 7 of Schedule II hereof as available during the stage of construction applying to such month and the Firm Capacity and (ii) from and after the Effective Date, the Energy Payable and the Firm Capacity; all at the prices, on the terms and conditions, and in accordance with the provisions, set forth herein.
+
+====================
+ARTICLE III - TERM AND RENEWAL
+====================
+
+3.1 Term
+
+This Power Contract shall, subject to renewal as herein provided, expire on that date which is the later of
+
+(a) the 44th anniversary of the first Delivery Date, and
+(b) the 40th anniversary of the Effective Date.
+
+3.2 Renewal of Contract
+
+This Power Contract shall be renewed on the basis stated in this Section, for a further term of 25 years from the expiry date hereof.
+
+The renewed Power Contract shall be that set forth in Schedule III hereof, which shall come into force automatically without any further signature being required.
+
+Any or all Articles or Sections of this Power Contract, other than this Section 3.2, as well as any or all undertakings or promises not specifically contained in Schedule III shall have no force and effect beyond the expiry date hereof and shall not thereafter be binding upon the parties to the renewed Power Contract.
+
+====================
+[Contract continues with detailed terms through Article XXIII - Notices, followed by Schedule I, II, and III with technical specifications and renewal terms]
+====================
+
+END OF DOCUMENT
