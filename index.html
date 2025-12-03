@@ -164,6 +164,7 @@
             display: flex;
             gap: 10px;
             margin-bottom: 15px;
+            max-width: 800px;
         }
 
         #userInput {
@@ -180,9 +181,8 @@
             border-color: #3b82f6;
         }
 
-        #sendButton {
+        #sendButton, #resetButton {
             padding: 12px 24px;
-            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
             color: white;
             border: none;
             border-radius: 8px;
@@ -190,6 +190,11 @@
             font-weight: 500;
             cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s;
+            white-space: nowrap;
+        }
+
+        #sendButton {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
         }
 
         #sendButton:hover {
@@ -198,6 +203,19 @@
         }
 
         #sendButton:active {
+            transform: translateY(0);
+        }
+
+        #resetButton {
+            background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+        }
+
+        #resetButton:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(100, 116, 139, 0.4);
+        }
+
+        #resetButton:active {
             transform: translateY(0);
         }
 
@@ -262,6 +280,7 @@
                     autocomplete="off"
                 >
                 <button id="sendButton">Ask →</button>
+                <button id="resetButton">Reset</button>
             </div>
 
             <div class="example-questions">
@@ -284,6 +303,16 @@
 
         // Send message on button click
         document.getElementById('sendButton').addEventListener('click', sendMessage);
+
+        // Reset conversation on reset button click
+        document.getElementById('resetButton').addEventListener('click', function() {
+            if (confirm('Are you sure you want to clear the conversation?')) {
+                conversationHistory = [];
+                document.getElementById('chatContainer').innerHTML = '';
+                document.getElementById('userInput').value = '';
+                document.getElementById('userInput').focus();
+            }
+        });
 
         async function sendMessage() {
             const input = document.getElementById('userInput');
