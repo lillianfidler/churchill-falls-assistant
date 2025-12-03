@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Churchill Falls Information Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            color: #1e3c72;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #64748b;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .nav-links {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .nav-links a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+            margin-right: 20px;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+
+        .content-section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section h2 {
+            color: #1e3c72;
+            font-size: 24px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3b82f6;
+        }
+
+        .content-section h3 {
+            color: #1e3c72;
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .content-section p {
+            color: #475569;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .content-section ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        .content-section li {
+            color: #475569;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .content-section a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+
+        .content-section a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight-box {
+            background: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 10px;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .video-list {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .video-list li {
+            margin-bottom: 12px;
+        }
+
+        .contact-form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #1e3c72;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 15px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-button {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+        }
+
+        .submit-button:active {
+            transform: translateY(0);
+        }
+
+        .disclaimer-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .disclaimer-box h4 {
+            color: #92400e;
+            margin-bottom: 10px;
+        }
+
+        .disclaimer-box p {
+            color: #78350f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>About the Churchill Falls Information Assistant</h1>
+            <p>Sources, methodology, and contributors</p>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>About This Resource</h2>
+            <p>The Churchill Falls Information Assistant is an AI-powered research tool designed to provide accurate, source-based information about the Churchill Falls hydroelectric project and the December 2024 Memorandum of Understanding (MOU) between Newfoundland and Labrador and Quebec.</p>
+            
+            <p>This system was created to address the need for accessible, reliable information about complex hydroelectric agreements and their economic implications. By consolidating official documents, expert analyses, and historical context into a single searchable resource, it serves students, researchers, journalists, policymakers, and the general public.</p>
+
+            <div class="highlight-box">
+                <p><strong>Important:</strong> All responses are drawn exclusively from this system's curated knowledge base. The assistant does not use external searches or general internet information. Every answer is based solely on verified sources including:</p>
+                <ul>
+                    <li><strong>Official Documents:</strong> The December 12, 2024 MOU, the 2002 Gull Island Framework Agreement, and the 1969 Churchill Falls contract</li>
+                    <li><strong>Economic Analyses:</strong> Dr. Doug May's comprehensive 6-video series and written analyses</li>
+                    <li><strong>Expert Assessments:</strong> Wade Locke's economic critique and James Feehan's academic research</li>
+                    <li><strong>Corporate Reports:</strong> Annual reports from Churchill Falls Labrador Corporation, Hydro-Québec, and NL Hydro (2024)</li>
+                    <li><strong>Historical Context:</strong> Documents tracing the development of Churchill River hydro projects from 1949-2007</li>
+                </ul>
+            </div>
+
+            <p><strong>What You Can Ask:</strong> Questions about pricing structures, project proposals, economic impacts, historical agreements, financial analyses, and the implications of the 2024 MOU for both Newfoundland and Labrador and Quebec.</p>
+
+            <p><strong>Citation Standards:</strong> The assistant provides specific citations including document names, dates, and direct links to video analyses when applicable, ensuring full transparency and verifiability of all information.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>About Dr. Doug May</h2>
+            <p>Dr. Doug May is an economist and Professor Emeritus at Memorial University of Newfoundland. His research focuses on energy economics, regional economic development, and public policy analysis with particular expertise in hydroelectric agreements and their economic impacts.</p>
+
+            <p>Dr. May has created the most comprehensive independent economic assessment of the December 2024 MOU through his 6-part video analysis series and supporting written materials. His analyses examine present value calculations, discount rate methodology, Quebec's electricity situation, pricing structures, water royalties, and financial concepts—all grounded in economic theory and publicly available data.</p>
+
+            <p>His work is characterized by transparent methodology, clear explanations accessible to general audiences, balanced presentation of multiple perspectives, and explicit acknowledgment of information gaps and analytical limitations. All of Dr. May's video analyses are available on YouTube and are fully integrated into this assistant's knowledge base.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Knowledge Base Materials</h2>
+            <p>All responses are drawn exclusively from the following curated sources:</p>
+
+            <h3>Official Agreements and Documents</h3>
+            <ul>
+                <li><strong>December 12, 2024 Memorandum of Understanding (MOU)</strong> between Newfoundland and Labrador and Quebec - The complete text of the current agreement</li>
+                <li><strong>2002 Gull Island Framework Agreement</strong> - Historical context for proposed developments</li>
+                <li><strong>1969 Churchill Falls Power Contract</strong> - The original agreement and its terms</li>
+                <li><strong>January 2025 NL Hydro MOU Documentation</strong> - Supporting provincial materials</li>
+            </ul>
+
+            <h3>Economic Analyses and Expert Commentary</h3>
+            
+            <h4>Dr. Doug May's Video Analysis Series</h4>
+            <div class="video-list">
+                <ul>
+                    <li><strong>Video 1:</strong> Quebec's Emerging Electricity Shortage - <a href="https://youtu.be/QJWWpT7Ip_Q" target="_blank">Watch on YouTube</a></li>
+                    <li><strong>Video 2A:</strong> Electricity Pricing in Quebec - Part A: Quebec's Costs - <a href="https://youtu.be/j2GWirWVg48" target="_blank">Watch on YouTube</a></li>
+                    <li><strong>Video 2B:</strong> Electricity Pricing in Quebec - Part B: Churchill Falls' Role - <a href="https://youtu.be/MJ91O1W358E" target="_blank">Watch on YouTube</a></li>
+                    <li><strong>Video 3A:</strong> Hydro-Québec's Electricity Imports - <a href="https://youtu.be/ToKebHmN16s" target="_blank">Watch on YouTube</a></li>
+                    <li><strong>Video 3B:</strong> Hydro-Québec's Electricity Exports - <a href="https://youtu.be/ToKebHmN16s" target="_blank">Watch on YouTube</a></li>
+                    <li><strong>Video 4:</strong> Water Royalties and Resource Rents - <a href="https://youtu.be/OFcA4-SlWTE" target="_blank">Watch on YouTube</a></li>
+                </ul>
+            </div>
+
+            <h4>Dr. Doug May's Written Analyses</h4>
+            <ul>
+                <li>Assessment of Proposed Prices for Existing Power</li>
+                <li>Assessment of the Proposed Projects (Gull Island, CF Expansion, CF Upgrade)</li>
+                <li>Understanding Financial Concepts (Present Value, Discount Rates)</li>
+                <li>Quebec's Electricity Supply Problem</li>
+                <li>Quebec's Changing Import Picture</li>
+                <li>Analysis of Hydro-Québec's Import/Export Patterns</li>
+            </ul>
+
+            <h4>Other Expert Analyses</h4>
+            <ul>
+                <li><strong>Wade Locke's Economic Assessment (2024)</strong> - Critical analysis of the MOU's economic implications</li>
+                <li><strong>James Feehan's Academic Research</strong> - Historical and economic context of Churchill Falls agreements</li>
+            </ul>
+
+            <h3>Corporate and Government Reports</h3>
+            <ul>
+                <li><strong>Churchill Falls Labrador Corporation Annual Report 2024</strong></li>
+                <li><strong>Hydro-Québec Annual Report 2024</strong></li>
+                <li><strong>Newfoundland and Labrador Hydro Reports</strong></li>
+                <li><strong>Hydro-Québec Production Data (July 2025)</strong></li>
+            </ul>
+
+            <h3>Historical Documentation</h3>
+            <ul>
+                <li><strong>History of Churchill River Hydro Development (1949-2007)</strong> - Comprehensive historical overview</li>
+                <li>Historical contract analyses and government documents</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Methodology and Limitations</h2>
+            
+            <h3>How the Assistant Works</h3>
+            <p>The Churchill Falls Information Assistant uses artificial intelligence (Claude by Anthropic) to analyze and synthesize information from the curated knowledge base. When you ask a question:</p>
+            <ol>
+                <li>The system searches all source documents for relevant information</li>
+                <li>Multiple sources are cross-referenced to ensure accuracy</li>
+                <li>Responses include specific citations with document names, dates, and links</li>
+                <li>Different analytical perspectives are presented when they exist in the source materials</li>
+                <li>The system clearly indicates when information is not available in the knowledge base</li>
+            </ol>
+
+            <h3>What the Assistant Can Do</h3>
+            <ul>
+                <li>Explain technical economic and legal concepts in accessible language</li>
+                <li>Compare different analytical perspectives (e.g., Dr. May vs. Wade Locke)</li>
+                <li>Provide specific citations with dates and video links</li>
+                <li>Answer follow-up questions and maintain conversation context</li>
+                <li>Adapt explanation depth based on user expertise level</li>
+            </ul>
+
+            <h3>Limitations</h3>
+            <ul>
+                <li><strong>No External Sources:</strong> The assistant does not access information beyond its knowledge base. It cannot provide updates about events after the documents were created.</li>
+                <li><strong>No Predictions:</strong> The assistant does not make predictions about future outcomes or events.</li>
+                <li><strong>No Legal/Financial Advice:</strong> Responses are educational only and not professional advice.</li>
+                <li><strong>Document-Bound:</strong> Analysis is limited to what is explicitly stated in the source materials.</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Disclaimer</h2>
+            <div class="disclaimer-box">
+                <h4>Important Legal Notice</h4>
+                <p><strong>Educational Purposes Only:</strong> The Churchill Falls Information Assistant is provided for educational and informational purposes only. It is designed to help users understand complex hydroelectric agreements and economic analyses but is not a substitute for professional advice.</p>
+                
+                <p><strong>Not Professional Advice:</strong> Information provided by this assistant should not be construed as legal, financial, investment, or policy advice. Users should consult qualified professionals (lawyers, accountants, financial advisors, policy consultants) for specific decisions related to Churchill Falls, hydroelectric projects, or energy policy matters.</p>
+                
+                <p><strong>No Warranty:</strong> While every effort has been made to ensure accuracy, the system and its creators make no warranties about the completeness, reliability, or accuracy of the information. Users rely on this information at their own risk.</p>
+                
+                <p><strong>Sources May Be Incomplete:</strong> The knowledge base, while comprehensive, may not include all relevant documents or perspectives. Users conducting research or making decisions should consult additional sources.</p>
+                
+                <p><strong>No Endorsement:</strong> Inclusion of documents or analyses in the knowledge base does not constitute endorsement of any particular viewpoint, conclusion, or recommendation.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Contact & Feedback</h2>
+            <p>We welcome feedback, questions, and suggestions for improving the Churchill Falls Information Assistant. If you have questions about the knowledge base, encounter technical issues, or would like to suggest additional sources, please use the form below.</p>
+
+            <div class="highlight-box">
+                <p><strong>Please Note:</strong> This contact form is for feedback about the Churchill Falls Information Assistant itself. For questions about Churchill Falls, the MOU, or related topics, please use the chat interface on the <a href="index.html">home page</a>.</p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+
+            <div id="formStatus" style="margin-top: 20px; padding: 15px; border-radius: 8px; display: none;"></div>
+        </div>
+
+        <div class="content-section">
+            <h2>Credits and Acknowledgments</h2>
+            <p>This resource was developed by <strong>Fidler Innovations Inc.</strong> in collaboration with contributors passionate about making complex energy policy information accessible to the public.</p>
+
+            <p><strong>Special Thanks:</strong></p>
+            <ul>
+                <li>Dr. Doug May for his comprehensive economic analyses and video series</li>
+                <li>All researchers and economists who have contributed to public understanding of Churchill Falls</li>
+                <li>Memorial University of Newfoundland for supporting academic research on regional energy policy</li>
+            </ul>
+
+            <p><strong>Technical Infrastructure:</strong></p>
+            <ul>
+                <li>AI Technology: Claude by Anthropic</li>
+                <li>Development: Fidler Innovations Inc.</li>
+                <li>Hosting: Render.com</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formStatus = document.getElementById('formStatus');
+            formStatus.style.display = 'block';
+            formStatus.style.background = '#eff6ff';
+            formStatus.style.color = '#1e3c72';
+            formStatus.innerHTML = 'Thank you for your message. We will respond as soon as possible.';
+            
+            // Reset form
+            this.reset();
+            
+            // Note: In production, you would actually send this to a server
+            // This is just a placeholder for the UI
+        });
+    </script>
+</body>
+</html>

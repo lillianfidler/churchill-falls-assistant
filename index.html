@@ -12,318 +12,133 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: #f3f4f6;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             min-height: 100vh;
-            padding: 40px 20px;
+            padding: 20px;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
         .header {
-            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-            color: white;
-            padding: 50px 40px;
-            border-radius: 16px;
-            text-align: center;
-            margin-bottom: 30px;
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .header h1 {
-            font-size: 42px;
-            margin-bottom: 12px;
-            font-weight: 700;
+            color: #1e3c72;
+            font-size: 32px;
+            margin-bottom: 10px;
         }
 
         .header p {
-            font-size: 20px;
-            opacity: 0.95;
-        }
-
-        .info-section {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-        }
-
-        .info-section h2 {
-            color: #1e40af;
-            font-size: 28px;
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-
-        .info-section p {
-            color: #4b5563;
+            color: #64748b;
             font-size: 16px;
-            line-height: 1.8;
+            line-height: 1.6;
+        }
+
+        .nav-links {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .nav-links a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+            margin-right: 20px;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+            text-decoration: underline;
         }
 
         .chat-section {
             background: white;
-            padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .chat-section h2 {
-            color: #1e40af;
-            font-size: 28px;
-            margin-bottom: 12px;
-            font-weight: 600;
-        }
-
-        .chat-section > p {
-            color: #6b7280;
-            font-size: 16px;
-            margin-bottom: 30px;
-        }
-
-        .mode-checkbox {
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            color: #1e3c72;
+            font-size: 24px;
             margin-bottom: 20px;
-            padding: 16px;
-            background: #f9fafb;
-            border-radius: 8px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .mode-checkbox input[type="checkbox"] {
-            width: 18px;
-            height: 18px;
-            cursor: pointer;
-        }
-
-        .mode-checkbox label {
-            color: #374151;
-            font-size: 15px;
-            cursor: pointer;
-            user-select: none;
-        }
-
-        .example-questions {
-            color: #9ca3af;
-            font-size: 14px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .input-container {
-            position: sticky;
-            bottom: 0;
-            background: white;
-            padding: 20px 0;
-            z-index: 100;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
-            border-top: 2px solid #e5e7eb;
-        }
-
-        #userInput {
-            padding: 16px 20px;
-            border: 2px solid #e5e7eb;
-            border-radius: 10px;
-            font-size: 15px;
-            font-family: inherit;
-            transition: border-color 0.2s;
-        }
-
-        #userInput:focus {
-            outline: none;
-            border-color: #3b82f6;
-        }
-
-        #userInput::placeholder {
-            color: #9ca3af;
-        }
-
-        #sendButton {
-            padding: 16px 32px;
-            background: #3b82f6;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            font-size: 15px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s, transform 0.1s;
-            white-space: nowrap;
-        }
-
-        #sendButton:hover {
-            background: #2563eb;
-            transform: translateY(-1px);
-        }
-
-        #sendButton:active {
-            transform: translateY(0);
-        }
-
-        #sendButton:disabled {
-            background: #9ca3af;
-            cursor: not-allowed;
-            transform: none;
         }
 
         #chatContainer {
-            min-height: 200px;
+            height: 500px;
+            overflow-y: auto;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
             padding: 20px;
-            background: #f9fafb;
-            border-radius: 10px;
-            border: 1px solid #e5e7eb;
+            margin-bottom: 20px;
+            background: #f8fafc;
         }
 
         .message {
+            margin-bottom: 20px;
             display: flex;
             gap: 12px;
-            margin-bottom: 24px;
             animation: fadeIn 0.3s ease-in;
         }
 
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .message.user {
-            flex-direction: row-reverse;
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .message-avatar {
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 36px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 600;
+            font-weight: bold;
             font-size: 14px;
             flex-shrink: 0;
         }
 
-        .message.user .message-avatar {
-            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+        .user .message-avatar {
+            background: #3b82f6;
             color: white;
         }
 
-        .message.assistant .message-avatar {
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        .assistant .message-avatar {
+            background: #1e3c72;
             color: white;
         }
 
         .message-content {
-            max-width: 75%;
-            padding: 16px 20px;
-            border-radius: 12px;
-            line-height: 1.7;
-            font-size: 15px;
-        }
-
-        .message.user .message-content {
-            background: #3b82f6;
-            color: white;
-            border-bottom-right-radius: 4px;
-        }
-
-        .message.assistant .message-content {
-            background: white;
-            color: #1f2937;
-            border: 1px solid #e5e7eb;
-            border-bottom-left-radius: 4px;
-        }
-
-        .message-content h1,
-        .message-content h2,
-        .message-content h3 {
-            color: #1e40af;
-            margin: 20px 0 6px 0;
-            font-weight: 600;
-        }
-        
-        .message-content h1:first-child,
-        .message-content h2:first-child,
-        .message-content h3:first-child {
-            margin-top: 0;
-        }
-
-        .message-content h1 + p,
-        .message-content h2 + p,
-        .message-content h3 + p,
-        .message-content h1 + ul,
-        .message-content h2 + ul,
-        .message-content h3 + ul {
-            margin-top: 6px;
-        }
-
-        .message-content h1 { font-size: 20px; }
-        .message-content h2 { font-size: 18px; }
-        .message-content h3 { font-size: 16px; }
-
-        .message-content strong {
-            color: #1e40af;
-            font-weight: 600;
-        }
-
-        .message-content ul,
-        .message-content ol {
-            margin: 8px 0;
-            padding-left: 24px;
-        }
-
-        .message-content li {
-            margin: 4px 0;
+            flex: 1;
             line-height: 1.6;
+            color: #1e293b;
         }
-        
-        .message-content ol li {
-            margin: 6px 0;
+
+        .message-content p {
+            margin-bottom: 10px;
         }
 
         .message-content a {
             color: #3b82f6;
             text-decoration: none;
-            border-bottom: 1px solid #3b82f6;
         }
 
         .message-content a:hover {
-            color: #2563eb;
-            border-bottom-color: #2563eb;
+            text-decoration: underline;
         }
 
-        .message-content code {
-            background: #f3f4f6;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: 'Courier New', monospace;
-            font-size: 13px;
-        }
-
-        .message-content p {
-            margin: 8px 0;
-        }
-
-        .message-content p:first-child {
-            margin-top: 0;
-        }
-
-        .message-content p:last-child {
-            margin-bottom: 0;
-        }
-
-        .loading-dots {
+        .loading {
             display: flex;
             gap: 4px;
             padding: 8px 0;
@@ -333,53 +148,86 @@
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background: #9ca3af;
-            animation: loadingDots 1.4s infinite ease-in-out both;
+            background: #3b82f6;
+            animation: bounce 1.4s infinite ease-in-out both;
         }
 
         .loading-dot:nth-child(1) { animation-delay: -0.32s; }
         .loading-dot:nth-child(2) { animation-delay: -0.16s; }
 
-        @keyframes loadingDots {
+        @keyframes bounce {
             0%, 80%, 100% { transform: scale(0); }
             40% { transform: scale(1); }
         }
 
-        @media (max-width: 768px) {
-            body {
-                padding: 20px 10px;
-            }
+        .input-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
 
-            .header {
-                padding: 30px 20px;
-            }
+        #userInput {
+            flex: 1;
+            padding: 12px 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: border-color 0.2s;
+        }
 
-            .header h1 {
-                font-size: 28px;
-            }
+        #userInput:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
 
-            .header p {
-                font-size: 16px;
-            }
+        #sendButton {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
 
-            .info-section,
-            .chat-section {
-                padding: 24px;
-            }
+        #sendButton:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+        }
 
-            .info-section h2,
-            .chat-section h2 {
-                font-size: 22px;
-            }
+        #sendButton:active {
+            transform: translateY(0);
+        }
 
-            .message-content {
-                max-width: 85%;
-                font-size: 14px;
-            }
+        .mode-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px;
+            background: #f1f5f9;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
 
-            #sendButton {
-                padding: 14px 20px;
-            }
+        .mode-checkbox input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .mode-checkbox label {
+            color: #475569;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .example-questions {
+            color: #64748b;
+            font-size: 13px;
+            margin-bottom: 15px;
+            font-style: italic;
         }
     </style>
 </head>
@@ -387,44 +235,41 @@
     <div class="container">
         <div class="header">
             <h1>Churchill Falls Information Assistant</h1>
-            <p>Understanding the MOU and its Impact on Newfoundland and Labrador</p>
-        </div>
-
-        <div class="info-section">
-            <h2>About Dr. Doug May</h2>
-            <p>Dr. Doug May is an honorary research professor at Memorial University of Newfoundland. His research interests include labour markets, the determinants of well-being, and applied production economics. He has taught business economics to MBA students for over 40 years and has spent about the same amount of time researching various aspects of the economy of Newfoundland and Labrador.</p>
+            <p>Your comprehensive resource for understanding the Churchill Falls hydroelectric agreements</p>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+            </div>
+            <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #e2e8f0;">
+                <h2 style="color: #1e3c72; font-size: 20px; margin-bottom: 10px;">Welcome to the Churchill Falls Information Assistant</h2>
+                <p style="color: #475569; line-height: 1.6;">This AI-powered assistant provides accurate, source-based information about the Churchill Falls hydroelectric project and the December 2024 Memorandum of Understanding (MOU) between Newfoundland and Labrador and Quebec. Learn more about our sources and methodology on the <a href="about.html" style="color: #3b82f6; text-decoration: none;">About page</a>.</p>
+            </div>
         </div>
 
         <div class="chat-section">
-            <h2>Ask Questions About Churchill Falls</h2>
-            <p>Get answers based on the MOU and Doug's expert analysis. Just start typing your question below.</p>
-
-            <div class="input-container">
-                <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px;">
-                    <input 
-                        type="text" 
-                        id="userInput" 
-                        placeholder="Type your question here... (e.g., 'What does the MOU say about rate structures?')"
-                        autocomplete="off"
-                        style="flex: 1; margin-bottom: 0;"
-                    >
-                    <button id="sendButton" style="margin: 0;">
-                        Ask →
-                    </button>
-                </div>
-            </div>
-
-            <div class="example-questions">
-                Try asking: "When does the agreement expire?" • "What are the current rates?" • "Why is this deal important for NL?" • "What happens after 2041?"
-            </div>
-
+            <h2>Ask Your Questions</h2>
+            
             <div class="mode-checkbox">
                 <input type="checkbox" id="mouOnlyMode">
-                <label for="mouOnlyMode"><strong>MOU Text Only</strong> - Show only official agreement text (no analysis)</label>
+                <label for="mouOnlyMode"><strong>MOU Text Only</strong> - Reference only the official December 2024 MOU (excludes analysis and commentary)</label>
             </div>
 
             <div id="chatContainer">
-                <!-- Messages will be added here dynamically -->
+                <!-- Messages will appear here -->
+            </div>
+
+            <div class="input-container">
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    placeholder="Type your question here... (e.g., 'What does the MOU say about electricity pricing?')"
+                    autocomplete="off"
+                >
+                <button id="sendButton">Ask →</button>
+            </div>
+
+            <div class="example-questions">
+                Try: "What are the key terms of the December 2024 MOU?" • "What does Dr. May say about the pricing structure?" • "What happens in 2041?"
             </div>
         </div>
     </div>
@@ -453,10 +298,6 @@
             const mouOnlyMode = document.getElementById('mouOnlyMode').checked;
             const mode = mouOnlyMode ? 'mou-only' : 'comprehensive';
 
-            // Disable input
-            input.disabled = true;
-            document.getElementById('sendButton').disabled = true;
-
             // Add user message to chat
             addMessage('user', message);
             input.value = '';
@@ -465,11 +306,6 @@
             const loadingId = showLoading();
 
             try {
-                conversationHistory.push({
-                    role: 'user',
-                    content: message
-                });
-
                 const response = await fetch(API_URL, {
                     method: 'POST',
                     headers: {
@@ -482,91 +318,60 @@
                     })
                 });
 
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-
                 const data = await response.json();
-                
+
                 // Remove loading indicator
                 removeLoading(loadingId);
 
-                // Add assistant response
-                conversationHistory.push({
-                    role: 'assistant',
-                    content: data.response
-                });
-                
-                addMessage('assistant', data.response);
+                if (data.error) {
+                    addMessage('assistant', 'I apologize, but I encountered an error. Please try again.');
+                } else {
+                    addMessage('assistant', data.response);
+                    
+                    // Update conversation history
+                    conversationHistory.push({
+                        role: 'user',
+                        content: message
+                    });
+                    conversationHistory.push({
+                        role: 'assistant',
+                        content: data.response
+                    });
+                }
 
             } catch (error) {
                 removeLoading(loadingId);
                 addMessage('assistant', 'I apologize, but I encountered an error. Please try again.');
                 console.error('Error:', error);
             }
-
-            // Re-enable input
-            input.disabled = false;
-            document.getElementById('sendButton').disabled = false;
-            input.focus();
         }
 
         function addMessage(role, content) {
             const chatContainer = document.getElementById('chatContainer');
             const messageDiv = document.createElement('div');
             messageDiv.className = `message ${role}`;
-
+            
             const avatar = document.createElement('div');
             avatar.className = 'message-avatar';
             avatar.textContent = role === 'user' ? 'You' : 'CF';
-
+            
             const contentDiv = document.createElement('div');
             contentDiv.className = 'message-content';
-
-            // Enhanced markdown rendering
+            
+            // Convert markdown-style formatting to HTML
             let formattedContent = content
-                // Headers
-                .replace(/^### (.*$)/gm, '<h3>$1</h3>')
-                .replace(/^## (.*$)/gm, '<h2>$1</h2>')
-                .replace(/^# (.*$)/gm, '<h1>$1</h1>')
-                // Bold
                 .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                // Italic
-                .replace(/\*(.*?)\*/g, '<em>$1</em>')
-                // Links
                 .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank">$1</a>')
-                // Bullet points - handle them first before line breaks
-                .replace(/^[•\-\*] (.+)$/gm, '<!LI!>$1</!LI!>')
-                .replace(/^\d+\. (.+)$/gm, '<!LI!>$1</!LI!>')
-                // Line breaks - double newlines become paragraph breaks
-                .replace(/\n\n+/g, '</p><p>')
-                // Single newlines become breaks (but will be cleaned up in lists)
+                .replace(/\n\n/g, '</p><p>')
                 .replace(/\n/g, '<br>');
-
-            // Wrap consecutive list items in <ul> and convert placeholders to real <li> tags
-            formattedContent = formattedContent.replace(/(<!LI!>.*?<\/!LI!>(<br><!LI!>.*?<\/!LI!>)*)/gs, function(match) {
-                // Remove <br> tags between list items and convert placeholders
-                return '<ul>' + match.replace(/<br>/g, '').replace(/<!LI!>/g, '<li>').replace(/<\/!LI!>/g, '</li>') + '</ul>';
-            });
-
-            // Wrap in paragraph if not already wrapped
-            if (!formattedContent.match(/^<[h|u|p]/)) {
-                formattedContent = '<p>' + formattedContent + '</p>';
-            }
-
-            contentDiv.innerHTML = formattedContent;
-
+            
+            contentDiv.innerHTML = '<p>' + formattedContent + '</p>';
+            
             messageDiv.appendChild(avatar);
             messageDiv.appendChild(contentDiv);
             chatContainer.appendChild(messageDiv);
-
-            // Scroll page to bottom smoothly
-            setTimeout(() => {
-                window.scrollTo({
-                    top: document.body.scrollHeight,
-                    behavior: 'smooth'
-                });
-            }, 100);
+            
+            chatContainer.scrollTop = chatContainer.scrollHeight;
         }
 
         function showLoading() {
@@ -577,24 +382,14 @@
             loadingDiv.className = 'message assistant';
             loadingDiv.innerHTML = `
                 <div class="message-avatar">CF</div>
-                <div class="message-content">
-                    <div class="loading-dots">
-                        <div class="loading-dot"></div>
-                        <div class="loading-dot"></div>
-                        <div class="loading-dot"></div>
-                    </div>
+                <div class="message-content loading">
+                    <div class="loading-dot"></div>
+                    <div class="loading-dot"></div>
+                    <div class="loading-dot"></div>
                 </div>
             `;
             chatContainer.appendChild(loadingDiv);
-            
-            // Scroll page to show loading indicator
-            setTimeout(() => {
-                window.scrollTo({
-                    top: document.body.scrollHeight,
-                    behavior: 'smooth'
-                });
-            }, 100);
-            
+            chatContainer.scrollTop = chatContainer.scrollHeight;
             return loadingId;
         }
 
