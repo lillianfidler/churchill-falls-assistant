@@ -240,10 +240,6 @@
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
             </div>
-            <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #e2e8f0;">
-                <h2 style="color: #1e3c72; font-size: 20px; margin-bottom: 10px;">Welcome to the Churchill Falls Information Assistant</h2>
-                <p style="color: #475569; line-height: 1.6;">This AI-powered assistant provides accurate, source-based information about the Churchill Falls hydroelectric project and the December 2024 Memorandum of Understanding (MOU) between Newfoundland and Labrador and Quebec. Learn more about our sources and methodology on the <a href="about.html" style="color: #3b82f6; text-decoration: none;">About page</a>.</p>
-            </div>
         </div>
 
         <div class="chat-section">
@@ -360,8 +356,15 @@
             
             // Convert markdown-style formatting to HTML
             let formattedContent = content
+                // Headers (must come before bold to avoid conflicts)
+                .replace(/^### (.*$)/gim, '<h3 style="font-size: 16px; font-weight: 600; margin: 12px 0 8px 0; color: #1e3c72;">$1</h3>')
+                .replace(/^## (.*$)/gim, '<h2 style="font-size: 18px; font-weight: 600; margin: 14px 0 10px 0; color: #1e3c72;">$1</h2>')
+                .replace(/^# (.*$)/gim, '<h1 style="font-size: 20px; font-weight: 600; margin: 16px 0 12px 0; color: #1e3c72;">$1</h1>')
+                // Bold
                 .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                // Links
                 .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank">$1</a>')
+                // Paragraphs and line breaks
                 .replace(/\n\n/g, '</p><p>')
                 .replace(/\n/g, '<br>');
             
