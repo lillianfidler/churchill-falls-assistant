@@ -287,13 +287,27 @@ app.post('/api/chat', async (req, res) => {
         );
 
         // Build messages array for Claude
-        const messages = [
-            ...cleanedHistory,
-            {
-                role: 'user',
-                content: `${contentToUse}\n\n---\n\nUser Question: ${message}`
-            }
-        ];
+        let messages;
+        
+        if (cleanedHistory.length === 0) {
+            // First message - include all content with the question
+            messages = [
+                {
+                    role: 'user',
+                    content: `${contentToUse}\n\n---\n\nUser Question: ${message}`
+                }
+            ];
+        } else {
+            // Follow-up message - conversation history already has documents in first message
+            // Just add the new user question
+            messages = [
+                ...cleanedHistory,
+                {
+                    role: 'user',
+                    content: message
+                }
+            ];
+        }
 
         // Call Claude API
         const response = await anthropic.messages.create({

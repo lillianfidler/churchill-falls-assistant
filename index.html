@@ -467,10 +467,19 @@ I have access to the official MOU documents, economic analyses by Dr. Doug May a
                     addMessage('assistant', data.response);
                     
                     // Update conversation history
-                    conversationHistory.push({
-                        role: 'user',
-                        content: message
-                    });
+                    // For first message, store it with "User Question:" prefix to match server format
+                    // For follow-ups, store plain message
+                    if (conversationHistory.length === 0) {
+                        conversationHistory.push({
+                            role: 'user',
+                            content: `User Question: ${message}`
+                        });
+                    } else {
+                        conversationHistory.push({
+                            role: 'user',
+                            content: message
+                        });
+                    }
                     conversationHistory.push({
                         role: 'assistant',
                         content: data.response
