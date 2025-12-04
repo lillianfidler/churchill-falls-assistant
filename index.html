@@ -76,13 +76,25 @@
         }
 
         #chatContainer {
-            height: 550px;
+            height: calc(100vh - 500px);
+            min-height: 400px;
+            max-height: 600px;
             overflow-y: auto;
             border: 1px solid #e2e8f0;
             border-radius: 8px;
             padding: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 0;
             background: #f8fafc;
+        }
+
+        .input-area {
+            position: sticky;
+            bottom: 0;
+            background: white;
+            padding: 20px 30px;
+            border-top: 2px solid #e2e8f0;
+            margin: 0 -30px -30px -30px;
+            border-radius: 0 0 12px 12px;
         }
 
         .message {
@@ -247,6 +259,82 @@
             margin-bottom: 15px;
             font-style: italic;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                max-width: 100%;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .chat-section {
+                padding: 20px;
+            }
+
+            #chatContainer {
+                height: calc(100vh - 450px);
+                min-height: 300px;
+                padding: 15px;
+            }
+
+            .input-area {
+                padding: 15px 20px;
+                margin: 0 -20px -20px -20px;
+            }
+
+            .input-container {
+                flex-direction: column;
+                max-width: 100%;
+            }
+
+            #sendButton, #resetButton {
+                width: 100%;
+                padding: 14px;
+            }
+
+            .mode-checkbox {
+                font-size: 13px;
+                padding: 10px;
+            }
+
+            .message {
+                gap: 8px;
+            }
+
+            .message-avatar {
+                width: 32px;
+                height: 32px;
+                font-size: 12px;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                max-width: 750px;
+            }
+
+            #chatContainer {
+                height: calc(100vh - 480px);
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .container {
+                max-width: 1100px;
+            }
+
+            #chatContainer {
+                height: calc(100vh - 450px);
+                max-height: 700px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -267,20 +355,22 @@
                 <!-- Messages will appear here -->
             </div>
 
-            <div class="mode-checkbox">
-                <input type="checkbox" id="mouOnlyMode">
-                <label for="mouOnlyMode"><strong>MOU Text Only</strong> - Reference only the official December 2024 MOU (excludes analysis and commentary)</label>
-            </div>
+            <div class="input-area">
+                <div class="mode-checkbox">
+                    <input type="checkbox" id="mouOnlyMode">
+                    <label for="mouOnlyMode"><strong>MOU Text Only</strong> - Reference only the official December 2024 MOU (excludes analysis and commentary)</label>
+                </div>
 
-            <div class="input-container">
-                <input 
-                    type="text" 
-                    id="userInput" 
-                    placeholder="Type your question here... (e.g., 'What does the MOU say about electricity pricing?')"
-                    autocomplete="off"
-                >
-                <button id="sendButton">Ask →</button>
-                <button id="resetButton">Reset</button>
+                <div class="input-container">
+                    <input 
+                        type="text" 
+                        id="userInput" 
+                        placeholder="Type your question here... (e.g., 'What does the MOU say about electricity pricing?')"
+                        autocomplete="off"
+                    >
+                    <button id="sendButton">Ask →</button>
+                    <button id="resetButton">Reset</button>
+                </div>
             </div>
         </div>
     </div>
