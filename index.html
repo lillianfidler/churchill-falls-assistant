@@ -76,7 +76,7 @@
         }
 
         #chatContainer {
-            height: 500px;
+            height: 550px;
             overflow-y: auto;
             border: 1px solid #e2e8f0;
             border-radius: 8px;
@@ -262,14 +262,14 @@
 
         <div class="chat-section">
             <h2>Ask Your Questions</h2>
-            
-            <div class="mode-checkbox">
-                <input type="checkbox" id="mouOnlyMode">
-                <label for="mouOnlyMode"><strong>MOU Text Only</strong> - Reference only the official December 2024 MOU (excludes analysis and commentary)</label>
-            </div>
 
             <div id="chatContainer">
                 <!-- Messages will appear here -->
+            </div>
+
+            <div class="mode-checkbox">
+                <input type="checkbox" id="mouOnlyMode">
+                <label for="mouOnlyMode"><strong>MOU Text Only</strong> - Reference only the official December 2024 MOU (excludes analysis and commentary)</label>
             </div>
 
             <div class="input-container">
@@ -281,10 +281,6 @@
                 >
                 <button id="sendButton">Ask →</button>
                 <button id="resetButton">Reset</button>
-            </div>
-
-            <div class="example-questions">
-                Try: "What are the key terms of the December 2024 MOU?" • "What does Dr. May say about the pricing structure?" • "What happens in 2041?"
             </div>
         </div>
     </div>
@@ -309,10 +305,32 @@
             if (confirm('Are you sure you want to clear the conversation?')) {
                 conversationHistory = [];
                 document.getElementById('chatContainer').innerHTML = '';
+                showWelcomeMessage();
                 document.getElementById('userInput').value = '';
                 document.getElementById('userInput').focus();
             }
         });
+
+        // Show welcome message when page loads
+        window.addEventListener('load', function() {
+            showWelcomeMessage();
+            document.getElementById('userInput').focus();
+        });
+
+        function showWelcomeMessage() {
+            const welcomeText = `Hello! I'm here to help you understand the Churchill Falls hydroelectric project and the proposed December 2024 MOU between Newfoundland and Labrador and Quebec.
+
+**What I can help with:**
+I have access to the official MOU documents, economic analyses by Dr. Doug May and other researchers, historical agreements, and corporate reports. You can ask me about pricing structures, proposed projects, economic impacts, and more.
+
+**Choose your focus:**
+• Check **"MOU Text Only"** below to explore just the official agreement
+• Leave it unchecked for comprehensive answers including expert analyses and commentary
+
+**Ready to start?** Type your question below. For more information about this assistant and the sources used, visit the **About** page.`;
+            
+            addMessage('assistant', welcomeText);
+        }
 
         async function sendMessage() {
             const input = document.getElementById('userInput');
@@ -432,8 +450,24 @@
             }
         }
 
-        // Focus input on load
-        document.getElementById('userInput').focus();
+        function showLoading() {
+            const chatContainer = document.getElementById('chatContainer');
+            const loadingDiv = document.createElement('div');
+            const loadingId = 'loading-' + Date.now();
+            loadingDiv.id = loadingId;
+            loadingDiv.className = 'message assistant';
+            loadingDiv.innerHTML = `
+                <div class="message-avatar">CF</div>
+                <div class="message-content loading">
+                    <div class="loading-dot"></div>
+                    <div class="loading-dot"></div>
+                    <div class="loading-dot"></div>
+                </div>
+            `;
+            chatContainer.appendChild(loadingDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+            return loadingId;
+        }
     </script>
 </body>
 </html>
