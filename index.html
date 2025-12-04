@@ -341,6 +341,11 @@ I have access to the official MOU documents, economic analyses by Dr. Doug May a
             const mouOnlyMode = document.getElementById('mouOnlyMode').checked;
             const mode = mouOnlyMode ? 'mou-only' : 'comprehensive';
 
+            // Clear welcome message on first question
+            if (conversationHistory.length === 0) {
+                document.getElementById('chatContainer').innerHTML = '';
+            }
+
             // Add user message to chat
             addMessage('user', message);
             input.value = '';
