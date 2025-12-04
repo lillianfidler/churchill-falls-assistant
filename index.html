@@ -576,7 +576,16 @@ I have access to the official MOU documents, economic analyses by Dr. Doug May a
                 .replace(/\n\n/g, '</p><p>')
                 .replace(/\n/g, '<br>');
             
-            contentDiv.innerHTML = '<p>' + formattedContent + '</p>';
+            // Clean up empty paragraphs and extra spacing
+            formattedContent = '<p>' + formattedContent + '</p>';
+            formattedContent = formattedContent
+                .replace(/<p><\/p>/g, '')
+                .replace(/<p>\s*<\/p>/g, '')
+                .replace(/<\/h[123]><\/p>/g, '</h$1>')
+                .replace(/<p><h([123])/g, '<h$1')
+                .replace(/<\/h([123])><p>/g, '</h$1>');
+            
+            contentDiv.innerHTML = formattedContent;
             
             messageDiv.appendChild(avatar);
             messageDiv.appendChild(contentDiv);
