@@ -11,6 +11,22 @@
             box-sizing: border-box;
         }
 
+        /* Skip to main content link for screen readers and keyboard users */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #1e3c72;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
@@ -191,6 +207,7 @@
         #userInput:focus {
             outline: none;
             border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
         }
 
         #sendButton, #resetButton {
@@ -203,6 +220,11 @@
             cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s;
             white-space: nowrap;
+        }
+
+        #sendButton:focus, #resetButton:focus {
+            outline: 3px solid #000;
+            outline-offset: 2px;
         }
 
         #sendButton {
@@ -247,10 +269,20 @@
             cursor: pointer;
         }
 
+        .mode-checkbox input[type="checkbox"]:focus {
+            outline: 3px solid #000;
+            outline-offset: 2px;
+        }
+
         .mode-checkbox label {
             color: #475569;
             font-size: 14px;
             cursor: pointer;
+        }
+
+        .nav-links a:focus {
+            outline: 3px solid #000;
+            outline-offset: 2px;
         }
 
         .example-questions {
@@ -258,6 +290,19 @@
             font-size: 13px;
             margin-bottom: 15px;
             font-style: italic;
+        }
+
+        /* Screen reader only content */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
         }
 
         /* Responsive Design */
@@ -338,41 +383,50 @@
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <div class="container">
-        <div class="header">
+        <header class="header" role="banner">
             <h1>Churchill Falls Information Assistant</h1>
             <p>Your comprehensive resource for understanding the Churchill Falls hydroelectric agreements</p>
-            <div class="nav-links">
+            <nav class="nav-links" role="navigation" aria-label="Main navigation">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
-            </div>
-        </div>
+            </nav>
+        </header>
 
-        <div class="chat-section">
+        <main id="main-content" role="main" class="chat-section">
             <h2>Ask Your Questions</h2>
 
-            <div id="chatContainer">
+            <div id="chatContainer" role="log" aria-live="polite" aria-atomic="false" aria-label="Conversation history">
                 <!-- Messages will appear here -->
             </div>
 
             <div class="input-area">
-                <div class="input-container">
-                    <input 
-                        type="text" 
-                        id="userInput" 
-                        placeholder="Type your question here... (e.g., 'What does the MOU say about electricity pricing?')"
-                        autocomplete="off"
-                    >
-                    <button id="sendButton">Ask →</button>
-                    <button id="resetButton">Reset</button>
-                </div>
+                <form onsubmit="return false;" role="search" aria-label="Ask a question">
+                    <div class="input-container">
+                        <label for="userInput" class="sr-only">Your question</label>
+                        <input 
+                            type="text" 
+                            id="userInput"
+                            aria-label="Type your question about Churchill Falls"
+                            placeholder="Type your question here... (e.g., 'What does the MOU say about electricity pricing?')"
+                            autocomplete="off"
+                        >
+                        <button id="sendButton" type="submit" aria-label="Send question">Ask →</button>
+                        <button id="resetButton" type="button" aria-label="Reset conversation">Reset</button>
+                    </div>
 
-                <div class="mode-checkbox">
-                    <input type="checkbox" id="mouOnlyMode">
-                    <label for="mouOnlyMode"><strong>MOU Text Only</strong> - Reference only the official December 2024 MOU (excludes analysis and commentary)</label>
-                </div>
+                    <div class="mode-checkbox">
+                        <input type="checkbox" id="mouOnlyMode" aria-describedby="mou-mode-description">
+                        <label for="mouOnlyMode">
+                            <strong>MOU Text Only</strong> 
+                            <span id="mou-mode-description">- Reference only the official December 2024 MOU (excludes analysis and commentary)</span>
+                        </label>
+                    </div>
+                </form>
             </div>
-        </div>
+        </main>
     </div>
 
     <script>
@@ -497,10 +551,13 @@ I have access to the official MOU documents, economic analyses by Dr. Doug May a
             const chatContainer = document.getElementById('chatContainer');
             const messageDiv = document.createElement('div');
             messageDiv.className = `message ${role}`;
+            messageDiv.setAttribute('role', role === 'user' ? 'article' : 'article');
+            messageDiv.setAttribute('aria-label', role === 'user' ? 'Your question' : 'Assistant response');
             
             const avatar = document.createElement('div');
             avatar.className = 'message-avatar';
             avatar.textContent = role === 'user' ? 'You' : 'CF';
+            avatar.setAttribute('aria-hidden', 'true');
             
             const contentDiv = document.createElement('div');
             contentDiv.className = 'message-content';
@@ -514,7 +571,7 @@ I have access to the official MOU documents, economic analyses by Dr. Doug May a
                 // Bold
                 .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
                 // Links
-                .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank">$1</a>')
+                .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
                 // Paragraphs and line breaks
                 .replace(/\n\n/g, '</p><p>')
                 .replace(/\n/g, '<br>');
@@ -526,6 +583,21 @@ I have access to the official MOU documents, economic analyses by Dr. Doug May a
             chatContainer.appendChild(messageDiv);
             
             chatContainer.scrollTop = chatContainer.scrollHeight;
+            
+            // Announce new message to screen readers
+            if (role === 'assistant') {
+                announceToScreenReader('New response from assistant');
+            }
+        }
+
+        function announceToScreenReader(message) {
+            const announcement = document.createElement('div');
+            announcement.setAttribute('role', 'status');
+            announcement.setAttribute('aria-live', 'polite');
+            announcement.className = 'sr-only';
+            announcement.textContent = message;
+            document.body.appendChild(announcement);
+            setTimeout(() => announcement.remove(), 1000);
         }
 
         function showLoading() {
