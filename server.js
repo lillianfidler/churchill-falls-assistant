@@ -296,26 +296,31 @@ app.post('/api/chat', async (req, res) => {
         // Determine content based on filters
         let contentToUse;
         
-        if (sourceFilters) {
-            // User selected specific filters
-            const filters = sourceFilters.split(',');
-            
-            if (filters.includes('mou')) {
-                // MOU Only - just the official December 2024 MOU
+        try {
+            if (sourceFilters) {
+                // User selected specific filters
+                const filters = sourceFilters.split(',');
+                
+                if (filters.includes('mou')) {
+                    // MOU Only - just the official December 2024 MOU
+                    contentToUse = mouOnlyContent;
+                } else if (filters.includes('historical')) {
+                    // 1969 Contract Only
+                    contentToUse = fs.readFileSync('./content/CHURCHILL-FALLS-POWER-CONTRACT.txt', 'utf-8');
+                } else {
+                    // Other filters not implemented yet, default to comprehensive
+                    contentToUse = comprehensiveContent;
+                }
+            } else if (mode === 'mou-only') {
+                // Legacy support for old mode parameter
                 contentToUse = mouOnlyContent;
-            } else if (filters.includes('historical')) {
-                // 1969 Contract Only
-                contentToUse = fs.readFileSync('./content/CHURCHILL-FALLS-POWER-CONTRACT.txt', 'utf-8');
             } else {
-                // Other filters not implemented yet, default to comprehensive
+                // No filters = comprehensive
                 contentToUse = comprehensiveContent;
             }
-        } else if (mode === 'mou-only') {
-            // Legacy support for old mode parameter
-            contentToUse = mouOnlyContent;
-        } else {
-            // No filters = comprehensive
-            contentToUse = comprehensiveContent;
+        } catch (fileError) {
+            console.error('Error loading document:', fileError);
+            return res.status(500).json({ error: 'Failed to load requested document. Please try again.' });
         }
 
         // Filter out any empty messages from conversation history
@@ -331,9 +336,9 @@ app.post('/api/chat', async (req, res) => {
         if (sourceFilters) {
             const filters = sourceFilters.split(',');
             if (filters.includes('mou')) {
-                filterInstruction = '\n\nIMPORTANT: The user has selected "MOU Only" mode. You must ONLY reference and cite information from the December 12, 2024 MOU document provided above. Do NOT include any analyses, commentary, or viewpoints from economists or researchers in your answer. Provide only factual information directly from the MOU text. However, you MAY offer to provide additional perspectives or analyses if the user asks a follow-up question (e.g., "Would you like to hear what economists like Dr. Doug May or Wade Locke have said about this aspect?").';
+                filterInstruction = '\n\nIMPORTANT: The user has selected "MOU Only" mode. You must ONLY reference and cite information from the December 12, 2024 MOU document in your knowledge base. Do NOT include any analyses, commentary, or viewpoints from economists or researchers in your answer. Provide only factual information directly from the MOU text itself. However, you MAY offer to provide additional perspectives or analyses if the user asks a follow-up question (e.g., "Would you like to hear what economists like Dr. Doug May or Wade Locke have said about this aspect?").';
             } else if (filters.includes('historical')) {
-                filterInstruction = '\n\nIMPORTANT: The user has selected "1969 Contract Only" mode. You must ONLY reference and cite information from the 1969 Churchill Falls Power Contract provided above. Do NOT include any analyses, commentary, or viewpoints from economists or researchers in your answer. Provide only factual information directly from the original contract. However, you MAY offer to provide additional perspectives or modern analyses if the user asks a follow-up question (e.g., "Would you like to hear how this compares to the proposed 2024 MOU?").';
+                filterInstruction = '\n\nIMPORTANT: The user has selected "1969 Contract Only" mode. You must ONLY reference and cite information from the 1969 Churchill Falls Power Contract in your knowledge base. Do NOT include any analyses, commentary, or viewpoints from economists or researchers in your answer. Provide only factual information directly from the original contract text itself. Do NOT say you see an uploaded document - the contract is part of your permanent knowledge base. However, you MAY offer to provide additional perspectives or modern analyses if the user asks a follow-up question (e.g., "Would you like to hear how this compares to the proposed 2024 MOU?").';
             }
         }
         
