@@ -475,12 +475,12 @@
         }
 
         .message-content p {
-            margin-bottom: 12px;
+            margin-bottom: 8px;
             color: #1e293b;
         }
 
         .message-content h1, .message-content h2, .message-content h3 {
-            margin: 16px 0 10px 0;
+            margin: 12px 0 8px 0;
             color: #3b82f6;
         }
 
@@ -493,17 +493,27 @@
             color: #3b82f6;
         }
 
-        /* Bold text at start of line (subheadings) - make blue */
-        .message-content p > strong:first-child,
-        .message-content strong:first-child {
-            color: #3b82f6;
+        /* Bold text that appears to be a heading/subheading - make entire thing blue */
+        .message-content strong {
             font-weight: 600;
         }
-
-        /* Regular inline bold text - keep black */
-        .message-content strong {
+        
+        /* Detect if bold text is likely a heading (ends with : or is short standalone) */
+        .message-content p:has(> strong:only-child) strong,
+        .message-content br + strong {
+            color: #3b82f6;
+            display: inline-block;
+            margin-top: 8px;
+        }
+        
+        /* Fallback: if a paragraph starts with strong, make it blue */
+        .message-content p > strong:first-child {
+            color: #3b82f6;
+        }
+        
+        /* Regular inline bold stays black */
+        .message-content p strong:not(:first-child) {
             color: #1e293b;
-            font-weight: 600;
         }
 
         .loading {
@@ -757,7 +767,7 @@
                 <input 
                     type="text" 
                     id="landingInput"
-                    placeholder="Ask your first question..."
+                    placeholder="e.g., What are the key terms of the proposed MOU?"
                     autocomplete="off"
                     aria-label="Ask your first question about Churchill Falls"
                 >
@@ -765,7 +775,7 @@
             </div>
 
             <div class="landing-filters">
-                <p class="landing-filters-label">Or focus on specific documents:</p>
+                <p class="landing-filters-label">Focus on specific documents:</p>
                 <div class="landing-checkbox-group">
                     <label class="landing-checkbox">
                         <input type="checkbox" id="landingMouOnly">
