@@ -344,33 +344,36 @@
         .sidebar-footer {
             padding: 20px;
             border-top: 1px solid #e2e8f0;
+            background: #f8fafc;
         }
 
         .sidebar-brand {
             color: #1e3c72;
-            font-size: 13px;
-            font-weight: 600;
-            margin-bottom: 12px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 15px;
             padding: 0 12px;
+            letter-spacing: -0.3px;
         }
 
         .sidebar-nav {
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 4px;
         }
 
         .sidebar-nav a {
-            color: #64748b;
+            color: #1e3c72;
             text-decoration: none;
             font-size: 14px;
-            padding: 8px 12px;
+            font-weight: 500;
+            padding: 10px 12px;
             border-radius: 6px;
             transition: background 0.2s;
         }
 
         .sidebar-nav a:hover {
-            background: #f1f5f9;
+            background: #e0e7ff;
         }
 
         .sidebar-nav a:focus {
@@ -757,9 +760,9 @@
         <!-- Sidebar -->
         <aside class="sidebar" id="sidebar" role="complementary">
             <div class="sidebar-header">
-                <button class="new-chat-btn" id="newChatBtn" aria-label="Start new chat">
+                <button class="new-chat-btn" id="newChatBtn" aria-label="Start new conversation">
                     <span style="font-size: 18px;">+</span>
-                    <span>New Chat</span>
+                    <span>Ask Another Question</span>
                 </button>
             </div>
 
@@ -1005,15 +1008,11 @@
         }
 
         function showWelcomeMessage() {
-            const welcomeText = `Hello! I'm here to help you understand the Churchill Falls hydroelectric project and the proposed December 2024 MOU between Newfoundland and Labrador and Quebec.
+            const welcomeText = `Hello! I'm here to help you understand the Churchill Falls hydroelectric project and the proposed December 2024 MOU.
 
-**What I can help with:**
-I have access to official government documents, economic analyses by Dr. Doug May and other researchers, historical agreements, and corporate reports. You can ask me about pricing structures, proposed projects, economic impacts, and more.
+I have access to official documents, economic analyses by Dr. Doug May and other researchers, historical agreements, and corporate reports.
 
-**Customize your sources:**
-Use the filter buttons below to focus on specific types of sources, or leave all unchecked for comprehensive answers drawing from all available materials.
-
-**Ready to start?** Type your question below. For more information, visit the **About** page.`;
+Use the filter buttons below to focus on specific documents (MOU Only or 1969 Contract), or leave unchecked for comprehensive answers. Visit the **About & Sources** page for the complete list of materials.`;
             
             addMessage('assistant', welcomeText, false);
         }
