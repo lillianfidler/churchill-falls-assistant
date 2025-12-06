@@ -761,6 +761,7 @@
             <nav class="sidebar-footer">
                 <div class="sidebar-brand">Churchill Falls Information Assistant</div>
                 <div class="sidebar-nav">
+                    <a href="#" id="homeLinkReset">Home (Start Fresh)</a>
                     <a href="about.html">About & Sources</a>
                     <a href="contact.html">Contact</a>
                     <a href="videos.html">Videos</a>
@@ -846,6 +847,13 @@
             // Mobile menu
             document.getElementById('mobileMenuBtn').addEventListener('click', toggleMobileMenu);
             document.getElementById('mobileOverlay').addEventListener('click', closeMobileMenu);
+            
+            // Home link - clear session and return to landing
+            document.getElementById('homeLinkReset').addEventListener('click', function(e) {
+                e.preventDefault();
+                sessionStorage.clear();
+                location.reload();
+            });
         }
 
         function handleLandingMessage() {
