@@ -285,14 +285,36 @@ Remember: You are here to inform and educate about Churchill Falls and the MOU. 
 // Chat endpoint
 app.post('/api/chat', async (req, res) => {
     try {
-        const { message, mode = 'comprehensive', conversationHistory = [] } = req.body;
+        const { message, mode = 'comprehensive', sourceFilters = '', conversationHistory = [] } = req.body;
 
         if (!message || typeof message !== 'string' || message.trim().length === 0) {
             return res.status(400).json({ error: 'Valid message is required' });
         }
 
-        // Choose content based on mode
-        const contentToUse = mode === 'mou-only' ? mouOnlyContent : comprehensiveContent;
+        // Determine content based on filters
+        let contentToUse;
+        
+        if (sourceFilters) {
+            // User selected specific filters
+            const filters = sourceFilters.split(',');
+            
+            if (filters.includes('mou')) {
+                // MOU Only - just the official December 2024 MOU
+                contentToUse = mouOnlyContent;
+            } else if (filters.includes('historical')) {
+                // 1969 Contract Only
+                contentToUse = fs.readFileSync('./content/CHURCHILL-FALLS-POWER-CONTRACT.txt', 'utf-8');
+            } else {
+                // Other filters not implemented yet, default to comprehensive
+                contentToUse = comprehensiveContent;
+            }
+        } else if (mode === 'mou-only') {
+            // Legacy support for old mode parameter
+            contentToUse = mouOnlyContent;
+        } else {
+            // No filters = comprehensive
+            contentToUse = comprehensiveContent;
+        }
 
         // Filter out any empty messages from conversation history
         const cleanedHistory = conversationHistory.filter(msg => 
@@ -302,12 +324,23 @@ app.post('/api/chat', async (req, res) => {
         // Build messages array for Claude
         let messages;
         
+        // Add filter-specific instruction if needed
+        let filterInstruction = '';
+        if (sourceFilters) {
+            const filters = sourceFilters.split(',');
+            if (filters.includes('mou')) {
+                filterInstruction = '\n\nIMPORTANT: The user has selected "MOU Only" mode. You must ONLY reference and cite information from the December 12, 2024 MOU document provided above. Do NOT include any analyses, commentary, or viewpoints from economists or researchers in your answer. Provide only factual information directly from the MOU text. However, you MAY offer to provide additional perspectives or analyses if the user asks a follow-up question (e.g., "Would you like to hear what economists like Dr. Doug May or Wade Locke have said about this aspect?").';
+            } else if (filters.includes('historical')) {
+                filterInstruction = '\n\nIMPORTANT: The user has selected "1969 Contract Only" mode. You must ONLY reference and cite information from the 1969 Churchill Falls Power Contract provided above. Do NOT include any analyses, commentary, or viewpoints from economists or researchers in your answer. Provide only factual information directly from the original contract. However, you MAY offer to provide additional perspectives or modern analyses if the user asks a follow-up question (e.g., "Would you like to hear how this compares to the proposed 2024 MOU?").';
+            }
+        }
+        
         if (cleanedHistory.length === 0) {
             // First message - include all content with the question
             messages = [
                 {
                     role: 'user',
-                    content: `${contentToUse}\n\n---\n\nUser Question: ${message}`
+                    content: `${contentToUse}\n\n---\n\nUser Question: ${message}${filterInstruction}`
                 }
             ];
         } else {
