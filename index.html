@@ -404,11 +404,46 @@
             display: flex;
             gap: 16px;
             animation: fadeIn 0.3s ease-in;
+            position: relative;
         }
 
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
+        }
+
+        .copy-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 6px 12px;
+            font-size: 12px;
+            color: #64748b;
+            cursor: pointer;
+            opacity: 0;
+            transition: all 0.2s;
+        }
+
+        .message:hover .copy-button {
+            opacity: 1;
+        }
+
+        .copy-button:hover {
+            background: #e2e8f0;
+            color: #1e3c72;
+        }
+
+        .copy-button:active {
+            background: #cbd5e1;
+        }
+
+        .copy-button.copied {
+            background: #dcfce7;
+            color: #166534;
+            border-color: #86efac;
         }
 
         .message-avatar {
@@ -1134,8 +1169,28 @@ Use the filter buttons below to focus on specific documents (MOU Only or 1969 Co
             
             contentDiv.innerHTML = formattedContent;
             
+            // Create copy button
+            const copyButton = document.createElement('button');
+            copyButton.className = 'copy-button';
+            copyButton.textContent = 'Copy';
+            copyButton.setAttribute('aria-label', 'Copy message');
+            copyButton.onclick = function() {
+                // Copy plain text content
+                navigator.clipboard.writeText(content).then(() => {
+                    copyButton.textContent = 'Copied!';
+                    copyButton.classList.add('copied');
+                    setTimeout(() => {
+                        copyButton.textContent = 'Copy';
+                        copyButton.classList.remove('copied');
+                    }, 2000);
+                }).catch(err => {
+                    console.error('Failed to copy:', err);
+                });
+            };
+            
             messageDiv.appendChild(avatar);
             messageDiv.appendChild(contentDiv);
+            messageDiv.appendChild(copyButton);
             chatContainer.appendChild(messageDiv);
             
             chatContainer.scrollTop = chatContainer.scrollHeight;
