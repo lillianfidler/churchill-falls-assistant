@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - Churchill Falls Information Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 12px 12px 0 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            color: #1e3c72;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #64748b;
+            font-size: 16px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .nav-links a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .content-section {
+            background: white;
+            padding: 40px 30px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .content-section:last-child {
+            border-radius: 0 0 12px 12px;
+        }
+
+        .content-section h2 {
+            color: #1e3c72;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .content-section h3 {
+            color: #1e3c72;
+            font-size: 18px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content-section p {
+            color: #475569;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .video-card {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .video-card h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .video-card p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .highlight-box {
+            background: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .content-section {
+                padding: 25px 20px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Video Analysis Series</h1>
+            <p>Dr. Doug May's comprehensive economic analysis of the Churchill Falls MOU</p>
+            <div class="nav-links">
+                <a href="index.html">← Back to Assistant</a>
+                <a href="about.html">About & Sources</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>About Dr. Doug May</h2>
+            <p>Dr. Doug May is Professor Emeritus in the Department of Economics at Memorial University of Newfoundland and Labrador. His research focuses on energy economics, regional economic development, and public policy analysis.</p>
+            
+            <p>His video series on the December 2024 Churchill Falls MOU represents the most comprehensive independent economic assessment of the proposed agreement. Dr. May's methodology emphasizes transparency, accessibility, and balanced analysis while acknowledging the limitations of publicly available information.</p>
+
+            <div class="highlight-box">
+                <p><strong>Note:</strong> All of Dr. May's video analyses and written documents are integrated into the Churchill Falls Information Assistant's knowledge base. You can ask questions about any aspect of his analysis through the chat interface.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Video Series</h2>
+
+            <div class="video-grid">
+                <div class="video-card">
+                    <h3>Video 1: Quebec's Emerging Electricity Shortage</h3>
+                    <p>Analysis of Quebec's electricity supply challenges and the context for the proposed MOU.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/QJWWpT7Ip_Q" title="Quebec's Emerging Electricity Shortage" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Video 2A: Electricity Pricing - Quebec's Costs</h3>
+                    <p>Examination of Quebec's electricity cost structure and pricing considerations.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/j2GWirWVg48" title="Electricity Pricing - Quebec's Costs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Video 2B: Electricity Pricing - Churchill Falls' Role</h3>
+                    <p>Analysis of Churchill Falls' position in electricity pricing discussions.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/MJ91O1W358E" title="Electricity Pricing - Churchill Falls' Role" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Video 3A: Hydro-Québec's Electricity Imports</h3>
+                    <p>Review of Hydro-Québec's electricity import patterns and implications.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/ToKebHmN16s" title="Hydro-Québec's Electricity Imports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Video 3B: Hydro-Québec's Electricity Exports</h3>
+                    <p>Analysis of Hydro-Québec's export market and revenue generation.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/ToKebHmN16s" title="Hydro-Québec's Electricity Exports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Video 4: Water Royalties and Resource Rents</h3>
+                    <p>Examination of water royalty structures and resource rent considerations.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/OFcA4-SlWTE" title="Water Royalties and Resource Rents" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Ask Questions About the Videos</h2>
+            <p>All content from Dr. May's video series is available through the Churchill Falls Information Assistant. You can ask specific questions about any topic covered in these videos, request comparisons between different analyses, or explore the economic implications discussed.</p>
+            <p><a href="index.html" style="color: #3b82f6; text-decoration: none; font-weight: 500;">← Return to Assistant to ask questions</a></p>
+        </div>
+    </div>
+</body>
+</html>

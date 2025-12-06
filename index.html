@@ -11,7 +11,14 @@
             box-sizing: border-box;
         }
 
-        /* Skip to main content link for screen readers and keyboard users */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f8fafc;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Skip link for accessibility */
         .skip-link {
             position: absolute;
             top: -40px;
@@ -27,96 +34,372 @@
             top: 0;
         }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        /* Screen reader only content */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* Landing Page (Initial View) */
+        .landing-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            min-height: 100vh;
             padding: 20px;
         }
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
+        .landing-page.hidden {
+            display: none;
         }
 
-        .header {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        .landing-content {
+            max-width: 700px;
+            width: 100%;
+            text-align: center;
         }
 
-        .header h1 {
-            color: #1e3c72;
-            font-size: 32px;
+        .landing-title {
+            color: white;
+            font-size: 36px;
             margin-bottom: 10px;
+            font-weight: 600;
         }
 
-        .header p {
-            color: #64748b;
-            font-size: 16px;
+        .landing-subtitle {
+            color: #e0e7ff;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .landing-info {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            text-align: left;
+            color: white;
+        }
+
+        .landing-info p {
+            margin-bottom: 12px;
             line-height: 1.6;
         }
 
-        .nav-links {
-            margin-top: 15px;
-            padding-top: 15px;
-            border-top: 1px solid #e2e8f0;
+        .landing-info strong {
+            color: #e0e7ff;
         }
 
-        .nav-links a {
-            color: #3b82f6;
-            text-decoration: none;
+        .landing-info ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .landing-info li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .landing-input-container {
+            background: white;
+            border-radius: 12px;
+            padding: 8px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            display: flex;
+            gap: 8px;
+        }
+
+        .landing-input-container input {
+            flex: 1;
+            padding: 16px 20px;
+            border: none;
+            font-size: 16px;
+            outline: none;
+            border-radius: 8px;
+        }
+
+        .landing-input-container button {
+            padding: 16px 32px;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
             font-weight: 500;
-            margin-right: 20px;
-            transition: color 0.2s;
+            cursor: pointer;
+            transition: transform 0.2s;
+            white-space: nowrap;
         }
 
-        .nav-links a:hover {
-            color: #2563eb;
+        .landing-input-container button:hover {
+            transform: translateY(-2px);
+        }
+
+        .landing-filters {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .landing-filters-label {
+            color: #e0e7ff;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .landing-checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .landing-checkbox {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .landing-checkbox input[type="checkbox"] {
+            margin-top: 2px;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .landing-checkbox input[type="checkbox"]:focus {
+            outline: 3px solid white;
+            outline-offset: 2px;
+        }
+
+        .landing-checkbox span {
+            flex: 1;
+        }
+
+        .landing-filters-note {
+            color: #e0e7ff;
+            font-size: 13px;
+            line-height: 1.5;
+            margin-top: 12px;
+        }
+
+        .landing-filters-note a {
+            color: white;
             text-decoration: underline;
         }
 
-        .chat-section {
+        .landing-filters-note a:hover {
+            color: #fbbf24;
+        }
+
+        .landing-nav {
+            margin-top: 30px;
+        }
+
+        .landing-nav a {
+            color: #e0e7ff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        .landing-nav a:hover {
+            color: white;
+        }
+
+        /* Main Chat Interface */
+        .chat-interface {
+            display: none;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .chat-interface.active {
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 260px;
             background: white;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-right: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
         }
 
-        .chat-section h2 {
-            color: #1e3c72;
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        #chatContainer {
-            height: calc(100vh - 500px);
-            min-height: 400px;
-            max-height: 600px;
-            overflow-y: auto;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
+        .sidebar-header {
             padding: 20px;
-            margin-bottom: 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .new-chat-btn {
+            width: 100%;
+            padding: 12px 16px;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: transform 0.2s;
+        }
+
+        .new-chat-btn:hover {
+            transform: translateY(-1px);
+        }
+
+        .new-chat-btn:focus {
+            outline: 3px solid #000;
+            outline-offset: 2px;
+        }
+
+        .chat-history {
+            flex: 1;
+            overflow-y: auto;
+            padding: 10px;
+        }
+
+        .chat-history-item {
+            padding: 12px 16px;
+            margin-bottom: 4px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+            font-size: 14px;
+            color: #475569;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .chat-history-item:hover {
+            background: #f1f5f9;
+        }
+
+        .chat-history-item.active {
+            background: #eff6ff;
+            color: #1e3c72;
+            font-weight: 500;
+        }
+
+        .chat-history-item:focus {
+            outline: 2px solid #3b82f6;
+            outline-offset: -2px;
+        }
+
+        .chat-title {
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .delete-chat-btn {
+            opacity: 0;
+            background: none;
+            border: none;
+            color: #94a3b8;
+            cursor: pointer;
+            padding: 4px;
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        .chat-history-item:hover .delete-chat-btn {
+            opacity: 1;
+        }
+
+        .delete-chat-btn:hover {
+            color: #ef4444;
+        }
+
+        .sidebar-footer {
+            padding: 20px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .sidebar-brand {
+            color: #1e3c72;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            padding: 0 12px;
+        }
+
+        .sidebar-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .sidebar-nav a {
+            color: #64748b;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .sidebar-nav a:hover {
+            background: #f1f5f9;
+        }
+
+        .sidebar-nav a:focus {
+            outline: 2px solid #3b82f6;
+            outline-offset: -2px;
+        }
+
+        /* Main Chat Area */
+        .main-chat {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
             background: #f8fafc;
         }
 
-        .input-area {
-            position: sticky;
-            bottom: 0;
-            background: white;
-            padding: 20px 30px;
-            border-top: 2px solid #e2e8f0;
-            margin: 0 -30px -30px -30px;
-            border-radius: 0 0 12px 12px;
+        #chatContainer {
+            flex: 1;
+            overflow-y: auto;
+            padding: 40px 20px;
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
         }
 
         .message {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             display: flex;
-            gap: 12px;
+            gap: 16px;
             animation: fadeIn 0.3s ease-in;
         }
 
@@ -126,8 +409,8 @@
         }
 
         .message-avatar {
-            width: 36px;
-            height: 36px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -154,7 +437,11 @@
         }
 
         .message-content p {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+        }
+
+        .message-content h1, .message-content h2, .message-content h3 {
+            margin: 16px 0 10px 0;
         }
 
         .message-content a {
@@ -188,16 +475,27 @@
             40% { transform: scale(1); }
         }
 
+        /* Input Area */
+        .input-area {
+            background: white;
+            border-top: 1px solid #e2e8f0;
+            padding: 20px 20px 30px 20px;
+        }
+
+        .input-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
         .input-container {
             display: flex;
             gap: 10px;
-            margin-bottom: 15px;
-            max-width: 800px;
+            margin-bottom: 12px;
         }
 
         #userInput {
             flex: 1;
-            padding: 12px 16px;
+            padding: 14px 18px;
             border: 2px solid #e2e8f0;
             border-radius: 8px;
             font-size: 15px;
@@ -211,7 +509,7 @@
         }
 
         #sendButton, #resetButton {
-            padding: 12px 24px;
+            padding: 14px 24px;
             color: white;
             border: none;
             border-radius: 8px;
@@ -220,11 +518,6 @@
             cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s;
             white-space: nowrap;
-        }
-
-        #sendButton:focus, #resetButton:focus {
-            outline: 3px solid #000;
-            outline-offset: 2px;
         }
 
         #sendButton {
@@ -236,10 +529,6 @@
             box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
         }
 
-        #sendButton:active {
-            transform: translateY(0);
-        }
-
         #resetButton {
             background: linear-gradient(135deg, #64748b 0%, #475569 100%);
         }
@@ -249,231 +538,484 @@
             box-shadow: 0 4px 12px rgba(100, 116, 139, 0.4);
         }
 
-        #resetButton:active {
+        #sendButton:focus, #resetButton:focus {
+            outline: 3px solid #000;
+            outline-offset: 2px;
+        }
+
+        #sendButton:active, #resetButton:active {
             transform: translateY(0);
         }
 
-        .mode-checkbox {
+        /* Source Filters */
+        .source-filters {
             display: flex;
-            align-items: center;
+            flex-wrap: wrap;
             gap: 8px;
-            padding: 12px;
-            background: #f1f5f9;
-            border-radius: 8px;
-            margin-bottom: 15px;
+            align-items: center;
+            margin-top: 16px;
         }
 
-        .mode-checkbox input[type="checkbox"] {
-            width: 18px;
-            height: 18px;
-            cursor: pointer;
-        }
-
-        .mode-checkbox input[type="checkbox"]:focus {
-            outline: 3px solid #000;
-            outline-offset: 2px;
-        }
-
-        .mode-checkbox label {
-            color: #475569;
-            font-size: 14px;
-            cursor: pointer;
-        }
-
-        .nav-links a:focus {
-            outline: 3px solid #000;
-            outline-offset: 2px;
-        }
-
-        .example-questions {
+        .source-filters-label {
             color: #64748b;
             font-size: 13px;
-            margin-bottom: 15px;
-            font-style: italic;
+            font-weight: 500;
+            margin-right: 8px;
         }
 
-        /* Screen reader only content */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
+        .filter-toggle {
+            padding: 6px 14px;
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #64748b;
+            cursor: pointer;
+            transition: all 0.2s;
             white-space: nowrap;
-            border-width: 0;
         }
 
-        /* Responsive Design */
+        .filter-toggle:hover {
+            border-color: #3b82f6;
+            color: #3b82f6;
+        }
+
+        .filter-toggle.active {
+            background: #3b82f6;
+            border-color: #3b82f6;
+            color: white;
+        }
+
+        .filter-toggle:focus {
+            outline: 3px solid #000;
+            outline-offset: 2px;
+        }
+
+        /* Mobile Responsive */
         @media (max-width: 768px) {
-            body {
+            .sidebar {
+                position: fixed;
+                left: -260px;
+                z-index: 1000;
+                transition: left 0.3s;
+            }
+
+            .sidebar.mobile-open {
+                left: 0;
+            }
+
+            .mobile-overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 999;
+            }
+
+            .mobile-overlay.active {
+                display: block;
+            }
+
+            .mobile-menu-btn {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                z-index: 998;
+                background: white;
+                border: 1px solid #e2e8f0;
                 padding: 10px;
+                border-radius: 8px;
+                cursor: pointer;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             }
 
-            .container {
-                max-width: 100%;
+            .landing-title {
+                font-size: 28px;
             }
 
-            .header h1 {
-                font-size: 24px;
+            .landing-subtitle {
+                font-size: 16px;
             }
 
-            .chat-section {
+            .landing-info {
                 padding: 20px;
+                font-size: 14px;
             }
 
-            #chatContainer {
-                height: calc(100vh - 450px);
-                min-height: 300px;
+            .landing-info ul {
+                padding-left: 15px;
+            }
+
+            .landing-input-container {
+                flex-direction: column;
+            }
+
+            .landing-input-container button {
+                width: 100%;
+            }
+
+            .landing-filters {
                 padding: 15px;
             }
 
-            .input-area {
-                padding: 15px 20px;
-                margin: 0 -20px -20px -20px;
+            .landing-checkbox {
+                font-size: 13px;
+            }
+
+            #chatContainer {
+                padding: 20px 15px;
             }
 
             .input-container {
                 flex-direction: column;
-                max-width: 100%;
             }
 
             #sendButton, #resetButton {
                 width: 100%;
-                padding: 14px;
             }
 
-            .mode-checkbox {
-                font-size: 13px;
-                padding: 10px;
+            .source-filters-label {
+                width: 100%;
+                margin-bottom: 4px;
             }
 
-            .message {
-                gap: 8px;
-            }
-
-            .message-avatar {
-                width: 32px;
-                height: 32px;
+            .filter-toggle {
                 font-size: 12px;
-            }
-        }
-
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .container {
-                max-width: 750px;
-            }
-
-            #chatContainer {
-                height: calc(100vh - 480px);
-            }
-        }
-
-        @media (min-width: 1400px) {
-            .container {
-                max-width: 1100px;
-            }
-
-            #chatContainer {
-                height: calc(100vh - 450px);
-                max-height: 700px;
+                padding: 5px 12px;
             }
         }
     </style>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    
-    <div class="container">
-        <header class="header" role="banner">
-            <h1>Churchill Falls Information Assistant</h1>
-            <p>Your comprehensive resource for understanding the Churchill Falls hydroelectric agreements</p>
-            <nav class="nav-links" role="navigation" aria-label="Main navigation">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
+
+    <!-- Landing Page -->
+    <div class="landing-page" id="landingPage">
+        <div class="landing-content">
+            <h1 class="landing-title">Churchill Falls Information Assistant</h1>
+            <p class="landing-subtitle">Your comprehensive resource for understanding the Churchill Falls hydroelectric project and agreements</p>
+            
+            <div class="landing-info">
+                <p>This assistant provides accurate, source-based information about the Churchill Falls hydroelectric project and the proposed December 2024 Memorandum of Understanding (MOU) between Newfoundland and Labrador and Quebec.</p>
+                
+                <p><strong>I can help you understand:</strong></p>
+                <ul>
+                    <li>Proposed pricing structures and economic impacts</li>
+                    <li>The December 2024 MOU terms and conditions</li>
+                    <li>Historical context and the original 1969 contract</li>
+                    <li>Economic analyses by Dr. Doug May and other researchers</li>
+                    <li>Proposed development projects (Gull Island, CF Expansion, CF Upgrade)</li>
+                </ul>
+            </div>
+            
+            <div class="landing-input-container">
+                <input 
+                    type="text" 
+                    id="landingInput"
+                    placeholder="Ask your first question... (e.g., 'What are the key terms of the proposed MOU?')"
+                    autocomplete="off"
+                    aria-label="Ask your first question about Churchill Falls"
+                >
+                <button id="landingButton" aria-label="Send question">Ask →</button>
+            </div>
+
+            <div class="landing-filters">
+                <p class="landing-filters-label">Or focus on specific documents:</p>
+                <div class="landing-checkbox-group">
+                    <label class="landing-checkbox">
+                        <input type="checkbox" id="landingMouOnly">
+                        <span><strong>December 2024 MOU Only</strong> - Reference only the official proposed agreement</span>
+                    </label>
+                    <label class="landing-checkbox">
+                        <input type="checkbox" id="landing1969Only">
+                        <span><strong>Original 1969 Contract Only</strong> - Reference only the historic Churchill Falls Power Contract</span>
+                    </label>
+                </div>
+                <p class="landing-filters-note">Leave both unchecked for comprehensive answers drawing from all available sources including economic analyses, government documents, and corporate reports. <a href="about.html">See full list of sources →</a></p>
+            </div>
+
+            <nav class="landing-nav">
+                <a href="about.html">About & Sources</a>
             </nav>
-        </header>
+        </div>
+    </div>
 
-        <main id="main-content" role="main" class="chat-section">
-            <h2>Ask Your Questions</h2>
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn" style="display: none;" aria-label="Open menu">
+        ☰
+    </button>
 
-            <div id="chatContainer" role="log" aria-live="polite" aria-atomic="false" aria-label="Conversation history">
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Main Chat Interface -->
+    <div class="chat-interface" id="chatInterface">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar" role="complementary">
+            <div class="sidebar-header">
+                <button class="new-chat-btn" id="newChatBtn" aria-label="Start new chat">
+                    <span style="font-size: 18px;">+</span>
+                    <span>New Chat</span>
+                </button>
+            </div>
+
+            <div class="chat-history" id="chatHistory" role="navigation" aria-label="Chat history">
+                <!-- Chat history items will be added here -->
+            </div>
+
+            <nav class="sidebar-footer">
+                <div class="sidebar-brand">Churchill Falls Information Assistant</div>
+                <div class="sidebar-nav">
+                    <a href="about.html">About & Sources</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="videos.html">Videos</a>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="main-chat" id="main-content" role="main">
+            <div id="chatContainer" role="log" aria-live="polite" aria-atomic="false" aria-label="Conversation">
                 <!-- Messages will appear here -->
             </div>
 
             <div class="input-area">
-                <form onsubmit="return false;" role="search" aria-label="Ask a question">
+                <div class="input-wrapper">
                     <div class="input-container">
                         <label for="userInput" class="sr-only">Your question</label>
                         <input 
                             type="text" 
                             id="userInput"
                             aria-label="Type your question about Churchill Falls"
-                            placeholder="Type your question here... (e.g., 'What does the MOU say about electricity pricing?')"
+                            placeholder="Type your question..."
                             autocomplete="off"
                         >
-                        <button id="sendButton" type="submit" aria-label="Send question">Ask →</button>
+                        <button id="sendButton" type="button" aria-label="Send question">Ask →</button>
                         <button id="resetButton" type="button" aria-label="Reset conversation">Reset</button>
                     </div>
 
-                    <div class="mode-checkbox">
-                        <input type="checkbox" id="mouOnlyMode" aria-describedby="mou-mode-description">
-                        <label for="mouOnlyMode">
-                            <strong>MOU Text Only</strong> 
-                            <span id="mou-mode-description">- Reference only the official December 2024 MOU (excludes analysis and commentary)</span>
-                        </label>
+                    <div class="source-filters">
+                        <span class="source-filters-label">Focus on specific document:</span>
+                        <button type="button" class="filter-toggle" data-filter="mou" aria-pressed="false">MOU Only</button>
+                        <button type="button" class="filter-toggle" data-filter="historical" aria-pressed="false">1969 Contract</button>
                     </div>
-                </form>
+                </div>
             </div>
         </main>
     </div>
 
     <script>
         const API_URL = 'https://churchill-falls.onrender.com/api/chat';
-        let conversationHistory = [];
-
-        // Send message on Enter key
-        document.getElementById('userInput').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter' && !e.shiftKey) {
-                e.preventDefault();
-                sendMessage();
+        
+        // Session management
+        let chatSessions = JSON.parse(sessionStorage.getItem('chatSessions') || '[]');
+        let currentSessionId = sessionStorage.getItem('currentSessionId') || null;
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if we have active sessions
+            if (chatSessions.length > 0 && currentSessionId) {
+                showChatInterface();
+                loadCurrentSession();
             }
+            
+            setupEventListeners();
+            updateChatHistory();
         });
 
-        // Send message on button click
-        document.getElementById('sendButton').addEventListener('click', sendMessage);
+        function setupEventListeners() {
+            // Landing page
+            document.getElementById('landingInput').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    handleLandingMessage();
+                }
+            });
+            document.getElementById('landingButton').addEventListener('click', handleLandingMessage);
+            
+            // Chat interface
+            document.getElementById('userInput').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+            document.getElementById('sendButton').addEventListener('click', sendMessage);
+            document.getElementById('resetButton').addEventListener('click', resetCurrentChat);
+            document.getElementById('newChatBtn').addEventListener('click', createNewChat);
+            
+            // Filter toggles
+            document.querySelectorAll('.filter-toggle').forEach(button => {
+                button.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    this.setAttribute('aria-pressed', this.classList.contains('active'));
+                });
+            });
+            
+            // Mobile menu
+            document.getElementById('mobileMenuBtn').addEventListener('click', toggleMobileMenu);
+            document.getElementById('mobileOverlay').addEventListener('click', closeMobileMenu);
+        }
 
-        // Reset conversation on reset button click
-        document.getElementById('resetButton').addEventListener('click', function() {
-            if (confirm('Are you sure you want to clear the conversation?')) {
-                conversationHistory = [];
-                document.getElementById('chatContainer').innerHTML = '';
-                showWelcomeMessage();
-                document.getElementById('userInput').value = '';
-                document.getElementById('userInput').focus();
+        function handleLandingMessage() {
+            const input = document.getElementById('landingInput');
+            const message = input.value.trim();
+            if (!message) return;
+            
+            // Check which filters were selected on landing page
+            const mouOnly = document.getElementById('landingMouOnly').checked;
+            const contract1969Only = document.getElementById('landing1969Only').checked;
+            
+            // Create first chat session
+            createNewChat();
+            showChatInterface();
+            
+            // Apply filters to chat interface if selected
+            if (mouOnly) {
+                const mouButton = document.querySelector('.filter-toggle[data-filter="mou"]');
+                if (mouButton) {
+                    mouButton.classList.add('active');
+                    mouButton.setAttribute('aria-pressed', 'true');
+                }
             }
-        });
+            if (contract1969Only) {
+                const historicalButton = document.querySelector('.filter-toggle[data-filter="historical"]');
+                if (historicalButton) {
+                    historicalButton.classList.add('active');
+                    historicalButton.setAttribute('aria-pressed', 'true');
+                }
+            }
+            
+            // Send the message
+            document.getElementById('userInput').value = message;
+            sendMessage();
+        }
 
-        // Show welcome message when page loads
-        window.addEventListener('load', function() {
+        function showChatInterface() {
+            document.getElementById('landingPage').classList.add('hidden');
+            document.getElementById('chatInterface').classList.add('active');
+            document.getElementById('mobileMenuBtn').style.display = 'block';
+        }
+
+        function createNewChat() {
+            const sessionId = Date.now().toString();
+            const newSession = {
+                id: sessionId,
+                title: 'New Chat',
+                messages: [],
+                conversationHistory: [],
+                created: new Date().toISOString()
+            };
+            
+            chatSessions.push(newSession);
+            currentSessionId = sessionId;
+            
+            saveSessions();
+            updateChatHistory();
+            clearChatContainer();
             showWelcomeMessage();
+            
             document.getElementById('userInput').focus();
-        });
+        }
+
+        function loadSession(sessionId) {
+            currentSessionId = sessionId;
+            sessionStorage.setItem('currentSessionId', sessionId);
+            
+            const session = chatSessions.find(s => s.id === sessionId);
+            if (!session) return;
+            
+            // Clear and reload messages
+            document.getElementById('chatContainer').innerHTML = '';
+            session.messages.forEach(msg => {
+                addMessage(msg.role, msg.content, false);
+            });
+            
+            updateChatHistory();
+            closeMobileMenu();
+        }
+
+        function deleteSession(sessionId, event) {
+            event.stopPropagation();
+            
+            if (!confirm('Delete this chat?')) return;
+            
+            chatSessions = chatSessions.filter(s => s.id !== sessionId);
+            
+            if (currentSessionId === sessionId) {
+                if (chatSessions.length > 0) {
+                    loadSession(chatSessions[0].id);
+                } else {
+                    currentSessionId = null;
+                    clearChatContainer();
+                }
+            }
+            
+            saveSessions();
+            updateChatHistory();
+        }
+
+        function updateChatHistory() {
+            const historyContainer = document.getElementById('chatHistory');
+            historyContainer.innerHTML = '';
+            
+            chatSessions.forEach(session => {
+                const item = document.createElement('div');
+                item.className = 'chat-history-item' + (session.id === currentSessionId ? ' active' : '');
+                item.setAttribute('role', 'button');
+                item.setAttribute('tabindex', '0');
+                item.onclick = () => loadSession(session.id);
+                
+                const title = document.createElement('span');
+                title.className = 'chat-title';
+                title.textContent = session.title;
+                
+                const deleteBtn = document.createElement('button');
+                deleteBtn.className = 'delete-chat-btn';
+                deleteBtn.innerHTML = '×';
+                deleteBtn.setAttribute('aria-label', 'Delete chat');
+                deleteBtn.onclick = (e) => deleteSession(session.id, e);
+                
+                item.appendChild(title);
+                item.appendChild(deleteBtn);
+                historyContainer.appendChild(item);
+            });
+        }
+
+        function saveSessions() {
+            sessionStorage.setItem('chatSessions', JSON.stringify(chatSessions));
+            sessionStorage.setItem('currentSessionId', currentSessionId);
+        }
+
+        function getCurrentSession() {
+            return chatSessions.find(s => s.id === currentSessionId);
+        }
+
+        function loadCurrentSession() {
+            const session = getCurrentSession();
+            if (!session) return;
+            
+            // Load messages
+            document.getElementById('chatContainer').innerHTML = '';
+            session.messages.forEach(msg => {
+                addMessage(msg.role, msg.content, false);
+            });
+        }
 
         function showWelcomeMessage() {
             const welcomeText = `Hello! I'm here to help you understand the Churchill Falls hydroelectric project and the proposed December 2024 MOU between Newfoundland and Labrador and Quebec.
 
 **What I can help with:**
-I have access to the official MOU documents, economic analyses by Dr. Doug May and other researchers, historical agreements, and corporate reports. You can ask me about pricing structures, proposed projects, economic impacts, and more.
+I have access to official government documents, economic analyses by Dr. Doug May and other researchers, historical agreements, and corporate reports. You can ask me about pricing structures, proposed projects, economic impacts, and more.
 
-**Choose your focus:**
-• Check **"MOU Text Only"** below to explore just the official agreement
-• Leave it unchecked for comprehensive answers including expert analyses and commentary
+**Customize your sources:**
+Use the filter buttons below to focus on specific types of sources, or leave all unchecked for comprehensive answers drawing from all available materials.
 
-**Ready to start?** Type your question below. For more information about this assistant and the sources used, visit the **About** page.`;
+**Ready to start?** Type your question below. For more information, visit the **About** page.`;
             
-            addMessage('assistant', welcomeText);
+            addMessage('assistant', welcomeText, false);
         }
 
         async function sendMessage() {
@@ -482,19 +1024,27 @@ I have access to the official MOU documents, economic analyses by Dr. Doug May a
             
             if (!message) return;
 
-            const mouOnlyMode = document.getElementById('mouOnlyMode').checked;
-            const mode = mouOnlyMode ? 'mou-only' : 'comprehensive';
+            const session = getCurrentSession();
+            if (!session) return;
 
-            // Clear welcome message on first question
-            if (conversationHistory.length === 0) {
-                document.getElementById('chatContainer').innerHTML = '';
+            // Collect active filters
+            const checkedFilters = Array.from(document.querySelectorAll('.filter-toggle.active'))
+                .map(button => button.dataset.filter);
+            
+            const mode = checkedFilters.length === 0 ? 'comprehensive' : 'filtered';
+            const sourceFilters = checkedFilters.join(',');
+
+            // Update chat title if it's the first real message
+            if (session.title === 'New Chat' && session.conversationHistory.length === 0) {
+                session.title = message.substring(0, 50) + (message.length > 50 ? '...' : '');
+                updateChatHistory();
             }
 
-            // Add user message to chat
-            addMessage('user', message);
+            // Add user message
+            addMessage('user', message, true);
             input.value = '';
 
-            // Show loading indicator
+            // Show loading
             const loadingId = showLoading();
 
             try {
@@ -506,52 +1056,51 @@ I have access to the official MOU documents, economic analyses by Dr. Doug May a
                     body: JSON.stringify({
                         message: message,
                         mode: mode,
-                        conversationHistory: conversationHistory
+                        sourceFilters: sourceFilters,
+                        conversationHistory: session.conversationHistory
                     })
                 });
 
                 const data = await response.json();
-
-                // Remove loading indicator
                 removeLoading(loadingId);
 
                 if (data.error) {
-                    addMessage('assistant', 'I apologize, but I encountered an error. Please try again.');
+                    addMessage('assistant', 'I apologize, but I encountered an error. Please try again.', true);
                 } else {
-                    addMessage('assistant', data.response);
+                    addMessage('assistant', data.response, true);
                     
                     // Update conversation history
-                    // For first message, store it with "User Question:" prefix to match server format
-                    // For follow-ups, store plain message
-                    if (conversationHistory.length === 0) {
-                        conversationHistory.push({
+                    if (session.conversationHistory.length === 0) {
+                        session.conversationHistory.push({
                             role: 'user',
                             content: `User Question: ${message}`
                         });
                     } else {
-                        conversationHistory.push({
+                        session.conversationHistory.push({
                             role: 'user',
                             content: message
                         });
                     }
-                    conversationHistory.push({
+                    session.conversationHistory.push({
                         role: 'assistant',
                         content: data.response
                     });
+                    
+                    saveSessions();
                 }
 
             } catch (error) {
                 removeLoading(loadingId);
-                addMessage('assistant', 'I apologize, but I encountered an error. Please try again.');
+                addMessage('assistant', 'I apologize, but I encountered an error. Please try again.', true);
                 console.error('Error:', error);
             }
         }
 
-        function addMessage(role, content) {
+        function addMessage(role, content, saveToSession) {
             const chatContainer = document.getElementById('chatContainer');
             const messageDiv = document.createElement('div');
             messageDiv.className = `message ${role}`;
-            messageDiv.setAttribute('role', role === 'user' ? 'article' : 'article');
+            messageDiv.setAttribute('role', 'article');
             messageDiv.setAttribute('aria-label', role === 'user' ? 'Your question' : 'Assistant response');
             
             const avatar = document.createElement('div');
@@ -562,21 +1111,16 @@ I have access to the official MOU documents, economic analyses by Dr. Doug May a
             const contentDiv = document.createElement('div');
             contentDiv.className = 'message-content';
             
-            // Convert markdown-style formatting to HTML
+            // Convert markdown
             let formattedContent = content
-                // Headers (must come before bold to avoid conflicts)
                 .replace(/^### (.*$)/gim, '<h3 style="font-size: 16px; font-weight: 600; margin: 12px 0 8px 0; color: #1e3c72;">$1</h3>')
                 .replace(/^## (.*$)/gim, '<h2 style="font-size: 18px; font-weight: 600; margin: 14px 0 10px 0; color: #1e3c72;">$1</h2>')
                 .replace(/^# (.*$)/gim, '<h1 style="font-size: 20px; font-weight: 600; margin: 16px 0 12px 0; color: #1e3c72;">$1</h1>')
-                // Bold
                 .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                // Links
                 .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
-                // Paragraphs and line breaks
                 .replace(/\n\n/g, '</p><p>')
                 .replace(/\n/g, '<br>');
             
-            // Clean up empty paragraphs and extra spacing
             formattedContent = '<p>' + formattedContent + '</p>';
             formattedContent = formattedContent
                 .replace(/<p><\/p>/g, '')
@@ -593,7 +1137,16 @@ I have access to the official MOU documents, economic analyses by Dr. Doug May a
             
             chatContainer.scrollTop = chatContainer.scrollHeight;
             
-            // Announce new message to screen readers
+            // Save to session
+            if (saveToSession) {
+                const session = getCurrentSession();
+                if (session) {
+                    session.messages.push({ role, content });
+                    saveSessions();
+                }
+            }
+            
+            // Announce to screen readers
             if (role === 'assistant') {
                 announceToScreenReader('New response from assistant');
             }
@@ -635,23 +1188,34 @@ I have access to the official MOU documents, economic analyses by Dr. Doug May a
             }
         }
 
-        function showLoading() {
-            const chatContainer = document.getElementById('chatContainer');
-            const loadingDiv = document.createElement('div');
-            const loadingId = 'loading-' + Date.now();
-            loadingDiv.id = loadingId;
-            loadingDiv.className = 'message assistant';
-            loadingDiv.innerHTML = `
-                <div class="message-avatar">CF</div>
-                <div class="message-content loading">
-                    <div class="loading-dot"></div>
-                    <div class="loading-dot"></div>
-                    <div class="loading-dot"></div>
-                </div>
-            `;
-            chatContainer.appendChild(loadingDiv);
-            chatContainer.scrollTop = chatContainer.scrollHeight;
-            return loadingId;
+        function resetCurrentChat() {
+            if (!confirm('Clear this conversation?')) return;
+            
+            const session = getCurrentSession();
+            if (!session) return;
+            
+            session.messages = [];
+            session.conversationHistory = [];
+            
+            clearChatContainer();
+            showWelcomeMessage();
+            
+            saveSessions();
+        }
+
+        function clearChatContainer() {
+            document.getElementById('chatContainer').innerHTML = '';
+        }
+
+        // Mobile menu functions
+        function toggleMobileMenu() {
+            document.getElementById('sidebar').classList.toggle('mobile-open');
+            document.getElementById('mobileOverlay').classList.toggle('active');
+        }
+
+        function closeMobileMenu() {
+            document.getElementById('sidebar').classList.remove('mobile-open');
+            document.getElementById('mobileOverlay').classList.remove('active');
         }
     </script>
 </body>
