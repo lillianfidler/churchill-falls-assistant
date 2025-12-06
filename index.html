@@ -802,6 +802,16 @@
     <script>
         const API_URL = 'https://churchill-falls.onrender.com/api/chat';
         
+        // Version control - clear old incompatible sessions
+        const CURRENT_VERSION = '2.0';
+        const storedVersion = sessionStorage.getItem('appVersion');
+        
+        if (storedVersion !== CURRENT_VERSION) {
+            // Clear old incompatible session data
+            sessionStorage.clear();
+            sessionStorage.setItem('appVersion', CURRENT_VERSION);
+        }
+        
         // Session management
         let chatSessions = JSON.parse(sessionStorage.getItem('chatSessions') || '[]');
         let currentSessionId = sessionStorage.getItem('currentSessionId') || null;
