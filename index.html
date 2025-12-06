@@ -476,19 +476,27 @@
 
         .message-content p {
             margin-bottom: 12px;
+            color: #1e293b;
         }
 
         .message-content h1, .message-content h2, .message-content h3 {
             margin: 16px 0 10px 0;
+            color: #3b82f6;
         }
 
         .message-content a {
             color: #3b82f6;
             text-decoration: none;
+            font-weight: 500;
         }
 
         .message-content a:hover {
             text-decoration: underline;
+        }
+
+        .message-content strong {
+            color: #3b82f6;
+            font-weight: 600;
         }
 
         .loading {
@@ -1159,11 +1167,11 @@ Use the filter buttons below to focus on specific documents (MOU Only or 1969 Co
             
             // Convert markdown
             let formattedContent = content
-                .replace(/^### (.*$)/gim, '<h3 style="font-size: 16px; font-weight: 600; margin: 12px 0 8px 0; color: #1e3c72;">$1</h3>')
-                .replace(/^## (.*$)/gim, '<h2 style="font-size: 18px; font-weight: 600; margin: 14px 0 10px 0; color: #1e3c72;">$1</h2>')
-                .replace(/^# (.*$)/gim, '<h1 style="font-size: 20px; font-weight: 600; margin: 16px 0 12px 0; color: #1e3c72;">$1</h1>')
-                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+                .replace(/^### (.*$)/gim, '<h3 style="font-size: 16px; font-weight: 600; margin: 12px 0 8px 0; color: #3b82f6;">$1</h3>')
+                .replace(/^## (.*$)/gim, '<h2 style="font-size: 18px; font-weight: 600; margin: 14px 0 10px 0; color: #3b82f6;">$1</h2>')
+                .replace(/^# (.*$)/gim, '<h1 style="font-size: 20px; font-weight: 600; margin: 16px 0 12px 0; color: #3b82f6;">$1</h1>')
+                .replace(/\*\*(.*?)\*\*/g, '<strong style="color: #3b82f6;">$1</strong>')
+                .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" style="color: #3b82f6; text-decoration: none; font-weight: 500;">$1</a>')
                 .replace(/\n\n/g, '</p><p>')
                 .replace(/\n/g, '<br>');
             
