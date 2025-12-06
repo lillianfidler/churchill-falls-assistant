@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Churchill Falls Information Assistant</title>
+    <title>Videos - Churchill Falls Information Assistant</title>
     <style>
         * {
             margin: 0;
@@ -19,7 +19,7 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
@@ -82,72 +82,65 @@
             margin-bottom: 20px;
         }
 
+        .content-section h3 {
+            color: #1e3c72;
+            font-size: 18px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
         .content-section p {
             color: #475569;
             line-height: 1.8;
             margin-bottom: 15px;
         }
 
-        .form-group {
-            margin-bottom: 20px;
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
         }
 
-        .form-group label {
-            display: block;
-            color: #1e3c72;
-            font-weight: 500;
-            margin-bottom: 8px;
+        .video-card {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid #e2e8f0;
         }
 
-        .form-group input,
-        .form-group textarea {
+        .video-card h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .video-card p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            padding: 12px;
-            border: 2px solid #e2e8f0;
-            border-radius: 8px;
-            font-size: 15px;
-            font-family: inherit;
-            transition: border-color 0.2s;
+            height: 100%;
         }
 
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #3b82f6;
-        }
-
-        .form-group textarea {
-            min-height: 150px;
-            resize: vertical;
-        }
-
-        .submit-btn {
-            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-            color: white;
-            padding: 14px 32px;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-
-        .submit-btn:hover {
-            transform: translateY(-2px);
-        }
-
-        .note {
-            background: #fef3c7;
-            border-left: 4px solid #f59e0b;
-            padding: 15px;
+        .highlight-box {
+            background: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 20px;
+            margin: 20px 0;
             border-radius: 4px;
-            margin-top: 20px;
-        }
-
-        .note p {
-            color: #92400e;
-            margin-bottom: 0;
         }
 
         @media (max-width: 768px) {
@@ -171,84 +164,95 @@
                 flex-direction: column;
                 gap: 10px;
             }
+
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>Contact & Feedback</h1>
-            <p>Questions, suggestions, or feedback about the Churchill Falls Information Assistant</p>
+            <h1>Video Analysis Series</h1>
+            <p>Dr. Doug May's comprehensive economic analysis of the Churchill Falls MOU</p>
             <div class="nav-links">
                 <a href="index.html">← Churchill Falls Assistant</a>
                 <a href="about.html">About & Sources</a>
-                <a href="videos.html">Videos</a>
+                <a href="contact.html">Contact</a>
             </div>
         </div>
 
         <div class="content-section">
-            <h2>Get in Touch</h2>
-            <p>Have feedback about the Churchill Falls Information Assistant? Want to report an issue or suggest improvements? Use the form below to contact us.</p>
+            <h2>About Dr. Doug May</h2>
+            <p>Dr. Doug May is Professor Emeritus in the Department of Economics at Memorial University of Newfoundland and Labrador. His research focuses on energy economics, regional economic development, and public policy analysis.</p>
+            
+            <p>His video series on the December 2024 Churchill Falls MOU represents the most comprehensive independent economic assessment of the proposed agreement. Dr. May's methodology emphasizes transparency, accessibility, and balanced analysis while acknowledging the limitations of publicly available information.</p>
 
-            <div class="note">
-                <p><strong>Note:</strong> This form is for feedback about the assistant system itself. For questions about Churchill Falls or the MOU, please use the chat interface.</p>
+            <div class="highlight-box">
+                <p><strong>Note:</strong> All of Dr. May's video analyses and written documents are integrated into the Churchill Falls Information Assistant's knowledge base. You can ask questions about any aspect of his analysis through the chat interface.</p>
             </div>
-
-            <form id="contactForm" style="margin-top: 30px;">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">Send Message</button>
-
-                <div id="formStatus" style="margin-top: 20px; padding: 15px; border-radius: 8px; display: none;"></div>
-            </form>
         </div>
 
         <div class="content-section">
-            <h2>Technical Infrastructure</h2>
-            <p><strong>Development:</strong> Fidler Innovations Inc.</p>
-            <p><strong>Language Technology:</strong> Claude by Anthropic</p>
-            <p><strong>Hosting:</strong> Render.com</p>
+            <h2>Video Series</h2>
+
+            <div class="video-grid">
+                <div class="video-card">
+                    <h3>Video 1: Quebec's Emerging Electricity Shortage</h3>
+                    <p>Analysis of Quebec's electricity supply challenges and the context for the proposed MOU.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/QJWWpT7Ip_Q" title="Quebec's Emerging Electricity Shortage" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Video 2A: Electricity Pricing - Quebec's Costs</h3>
+                    <p>Examination of Quebec's electricity cost structure and pricing considerations.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/j2GWirWVg48" title="Electricity Pricing - Quebec's Costs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Video 2B: Electricity Pricing - Churchill Falls' Role</h3>
+                    <p>Analysis of Churchill Falls' position in electricity pricing discussions.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/MJ91O1W358E" title="Electricity Pricing - Churchill Falls' Role" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Video 3A: Hydro-Québec's Electricity Imports</h3>
+                    <p>Review of Hydro-Québec's electricity import patterns and implications.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/ToKebHmN16s" title="Hydro-Québec's Electricity Imports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Video 3B: Hydro-Québec's Electricity Exports</h3>
+                    <p>Analysis of Hydro-Québec's export market and revenue generation.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/ToKebHmN16s" title="Hydro-Québec's Electricity Exports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Video 4: Water Royalties and Resource Rents</h3>
+                    <p>Examination of water royalty structures and resource rent considerations.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/OFcA4-SlWTE" title="Water Royalties and Resource Rents" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Ask Questions About the Videos</h2>
+            <p>All content from Dr. May's video series is available through the Churchill Falls Information Assistant. You can ask specific questions about any topic covered in these videos, request comparisons between different analyses, or explore the economic implications discussed.</p>
+            <p><a href="index.html" style="color: #3b82f6; text-decoration: none; font-weight: 500;">← Return to Assistant to ask questions</a></p>
         </div>
     </div>
-
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Show pending status
-            const statusDiv = document.getElementById('formStatus');
-            statusDiv.style.display = 'block';
-            statusDiv.style.background = '#eff6ff';
-            statusDiv.style.color = '#1e3c72';
-            statusDiv.textContent = 'Sending message...';
-            
-            // TODO: Add actual form submission logic here
-            // For now, just show a success message
-            setTimeout(() => {
-                statusDiv.style.background = '#d1fae5';
-                statusDiv.style.color = '#065f46';
-                statusDiv.textContent = 'Thank you! Your message has been sent.';
-                document.getElementById('contactForm').reset();
-            }, 1000);
-        });
-    </script>
 </body>
 </html>

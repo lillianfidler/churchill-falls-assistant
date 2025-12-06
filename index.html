@@ -511,7 +511,7 @@
             box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
         }
 
-        #sendButton, #resetButton {
+        #sendButton {
             padding: 14px 24px;
             color: white;
             border: none;
@@ -521,9 +521,6 @@
             cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s;
             white-space: nowrap;
-        }
-
-        #sendButton {
             background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
         }
 
@@ -532,21 +529,12 @@
             box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
         }
 
-        #resetButton {
-            background: linear-gradient(135deg, #64748b 0%, #475569 100%);
-        }
-
-        #resetButton:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(100, 116, 139, 0.4);
-        }
-
-        #sendButton:focus, #resetButton:focus {
+        #sendButton:focus {
             outline: 3px solid #000;
             outline-offset: 2px;
         }
 
-        #sendButton:active, #resetButton:active {
+        #sendButton:active {
             transform: translateY(0);
         }
 
@@ -677,7 +665,7 @@
                 flex-direction: column;
             }
 
-            #sendButton, #resetButton {
+            #sendButton {
                 width: 100%;
             }
 
@@ -719,7 +707,7 @@
                 <input 
                     type="text" 
                     id="landingInput"
-                    placeholder="Ask your first question... (e.g., 'What are the key terms of the proposed MOU?')"
+                    placeholder="Ask your first question..."
                     autocomplete="off"
                     aria-label="Ask your first question about Churchill Falls"
                 >
@@ -798,7 +786,6 @@
                             autocomplete="off"
                         >
                         <button id="sendButton" type="button" aria-label="Send question">Ask →</button>
-                        <button id="resetButton" type="button" aria-label="Reset conversation">Reset</button>
                     </div>
 
                     <div class="source-filters">
@@ -846,7 +833,6 @@
                 }
             });
             document.getElementById('sendButton').addEventListener('click', sendMessage);
-            document.getElementById('resetButton').addEventListener('click', resetCurrentChat);
             document.getElementById('newChatBtn').addEventListener('click', createNewChat);
             
             // Filter toggles
@@ -1185,21 +1171,6 @@ Use the filter buttons below to focus on specific documents (MOU Only or 1969 Co
             if (loadingDiv) {
                 loadingDiv.remove();
             }
-        }
-
-        function resetCurrentChat() {
-            if (!confirm('Clear this conversation?')) return;
-            
-            const session = getCurrentSession();
-            if (!session) return;
-            
-            session.messages = [];
-            session.conversationHistory = [];
-            
-            clearChatContainer();
-            showWelcomeMessage();
-            
-            saveSessions();
         }
 
         function clearChatContainer() {
