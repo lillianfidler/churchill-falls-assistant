@@ -933,6 +933,14 @@
             // Send the message
             document.getElementById('userInput').value = message;
             sendMessage();
+            
+            // Auto-uncheck filters after first question to prevent confusion on follow-ups
+            setTimeout(() => {
+                document.querySelectorAll('.filter-toggle').forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-pressed', 'false');
+                });
+            }, 100);
         }
 
         function showChatInterface() {
