@@ -527,27 +527,20 @@
             color: #3b82f6;
         }
 
-        /* Bold text that appears to be a heading/subheading - make entire thing blue */
+        /* Bold text - default is black */
         .message-content strong {
             font-weight: 600;
-        }
-        
-        /* Detect if bold text is likely a heading (ends with : or is short standalone) */
-        .message-content p:has(> strong:only-child) strong,
-        .message-content br + strong {
-            color: #3b82f6;
-            display: inline-block;
-            margin-top: 4px;
-        }
-        
-        /* Fallback: if a paragraph starts with strong, make it blue */
-        .message-content p > strong:first-child {
-            color: #3b82f6;
-        }
-        
-        /* Regular inline bold stays black */
-        .message-content p strong:not(:first-child) {
             color: #1e293b;
+        }
+        
+        /* ONLY make bold blue if it's a clear standalone heading:
+           - The paragraph contains ONLY the strong tag and nothing else
+           - This catches section headers like "Financial Arrangements:" */
+        .message-content p:has(> strong:only-child) strong {
+            color: #3b82f6;
+            display: block;
+            margin-top: 8px;
+            margin-bottom: 4px;
         }
 
         .loading {
