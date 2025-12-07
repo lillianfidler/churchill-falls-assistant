@@ -33,6 +33,7 @@ const comprehensiveContent = [
     fs.readFileSync('./content/Doug-video-series-video4.txt', 'utf-8'),
     fs.readFileSync('./content/Feehan, James P., Smallwood, Churchill Falls, and the Power Corridor through Quebec.txt', 'utf-8'),
     fs.readFileSync('./content/Gull_Island_Contract_2002.txt', 'utf-8'),
+    fs.readFileSync('./content/history-of-churchill-falls-development.txt', 'utf-8'),
     fs.readFileSync('./content/HQ_Production_July_2025_text.txt', 'utf-8'),
     fs.readFileSync('./content/HQ-exports-electricity-price-escalation.txt', 'utf-8'),
     fs.readFileSync('./content/HQ_Action_Plan_2035_clean_text.txt', 'utf-8'),
