@@ -512,11 +512,12 @@
         }
 
         .message-content p {
-            margin-bottom: 4px;
+            margin-bottom: 2px;
             color: #1e293b;
             font-size: 14px;
             line-height: 1.5;
             font-weight: 400;
+            display: block;
         }
         
         /* Remove extra margin after paragraphs that are headings (numbered or standalone bold) */
@@ -524,9 +525,10 @@
             margin-bottom: 2px;
         }
         
-        /* If a paragraph contains just a number followed by period, reduce space and prevent break */
-        .message-content p {
-            display: block;
+        /* Paragraphs with only a link (like "Rushed Timeline") - treat as heading */
+        .message-content p:has(> a:only-child) {
+            margin-top: 16px;
+            margin-bottom: 2px;
         }
         
         /* Keep numbered items with their headings - no break between */
