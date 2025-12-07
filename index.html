@@ -1296,13 +1296,18 @@ Use the filter buttons below to focus on specific documents (MOU Only or 1969 Co
                             copyButton.classList.remove('copied');
                         }, 2000);
                     }).catch(err => {
-                    console.error('Failed to copy:', err);
-                });
-            };
-            
-            messageDiv.appendChild(avatar);
-            messageDiv.appendChild(contentDiv);
-            messageDiv.appendChild(copyButton);
+                        console.error('Failed to copy:', err);
+                    });
+                };
+                
+                // Append copy button inside the if block
+                messageDiv.appendChild(avatar);
+                messageDiv.appendChild(contentDiv);
+                messageDiv.appendChild(copyButton);
+            } else {
+                // No content yet (for streaming scenarios)
+                messageDiv.appendChild(avatar);
+                messageDiv.appendChild(contentDiv);
             }
             
             chatContainer.appendChild(messageDiv);
