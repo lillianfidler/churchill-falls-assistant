@@ -512,7 +512,8 @@
         }
 
         .message-content p {
-            margin-bottom: 2px;
+            margin-bottom: 1px;
+            margin-top: 0;
             color: #1e293b;
             font-size: 14px;
             line-height: 1.5;
@@ -522,13 +523,14 @@
         
         /* Remove extra margin after paragraphs that are headings (numbered or standalone bold) */
         .message-content p:has(> strong:only-child) {
-            margin-bottom: 2px;
+            margin-bottom: 1px;
+            margin-top: 16px;
         }
         
         /* Paragraphs with only a link (like "Rushed Timeline") - treat as heading */
         .message-content p:has(> a:only-child) {
             margin-top: 16px;
-            margin-bottom: 2px;
+            margin-bottom: 1px;
         }
         
         /* Keep numbered items with their headings - no break between */
@@ -1184,6 +1186,7 @@ Use the filter buttons below to focus on specific documents (MOU Only or 1969 Co
             const loadingId = showLoading();
 
             try {
+                // Use fetch with streaming
                 const response = await fetch(API_URL, {
                     method: 'POST',
                     headers: {
@@ -1197,33 +1200,96 @@ Use the filter buttons below to focus on specific documents (MOU Only or 1969 Co
                     })
                 });
 
-                const data = await response.json();
                 removeLoading(loadingId);
 
-                if (data.error) {
+                if (!response.ok) {
                     addMessage('assistant', 'I apologize, but I encountered an error. Please try again.', true);
-                } else {
-                    addMessage('assistant', data.response, true);
-                    
-                    // Update conversation history
-                    if (session.conversationHistory.length === 0) {
-                        session.conversationHistory.push({
-                            role: 'user',
-                            content: `User Question: ${message}`
-                        });
-                    } else {
-                        session.conversationHistory.push({
-                            role: 'user',
-                            content: message
-                        });
-                    }
-                    session.conversationHistory.push({
-                        role: 'assistant',
-                        content: data.response
-                    });
-                    
-                    saveSessions();
+                    return;
                 }
+
+                // Create placeholder for streaming response
+                const messageDiv = addMessage('assistant', '', false);
+                const contentDiv = messageDiv.querySelector('.message-content');
+                let fullResponse = '';
+
+                // Read the stream
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+
+                    const chunk = decoder.decode(value);
+                    const lines = chunk.split('\n');
+
+                    for (const line of lines) {
+                        if (line.startsWith('data: ')) {
+                            const data = line.slice(6);
+                            if (data === '[DONE]') {
+                                break;
+                            }
+                            try {
+                                const parsed = JSON.parse(data);
+                                if (parsed.text) {
+                                    fullResponse += parsed.text;
+                                    
+                                    // Format and display the accumulated response
+                                    let formattedContent = fullResponse
+                                        .replace(/^### (.*$)/gim, '<h3 style="font-size: 16px; font-weight: 600; margin: 12px 0 8px 0; color: #3b82f6;">$1</h3>')
+                                        .replace(/^## (.*$)/gim, '<h2 style="font-size: 18px; font-weight: 600; margin: 14px 0 10px 0; color: #3b82f6;">$1</h2>')
+                                        .replace(/^# (.*$)/gim, '<h1 style="font-size: 20px; font-weight: 600; margin: 16px 0 12px 0; color: #3b82f6;">$1</h1>')
+                                        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                                        .replace(/\[([^\]]+)\]\((https?:\/\/(www\.)?youtube\.com\/[^\)]+|https?:\/\/youtu\.be\/[^\)]+)\)/g, '<a href="videos.html">$1</a>')
+                                        .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+                                        .replace(/\n\n/g, '</p><p>')
+                                        .replace(/\n/g, '<br>');
+                                    
+                                    formattedContent = '<p>' + formattedContent + '</p>';
+                                    formattedContent = formattedContent
+                                        .replace(/<p><\/p>/g, '')
+                                        .replace(/<p>\s*<\/p>/g, '')
+                                        .replace(/<\/h[123]><\/p>/g, '</h$1>')
+                                        .replace(/<p><h([123])/g, '<h$1')
+                                        .replace(/<\/h([123])><p>/g, '</h$1>')
+                                        .replace(/<br>\s*<br>/g, '<br>')
+                                        .replace(/<\/strong><br><br>/g, '</strong><br>')
+                                        .replace(/<p><br>/g, '<p>')
+                                        .replace(/<br><\/p>/g, '</p>')
+                                        .replace(/(\d+\.)<br>/g, '$1 ')
+                                        .replace(/(\d+\.)\s*<br>\s*/g, '$1 ');
+                                    
+                                    contentDiv.innerHTML = formattedContent;
+                                    
+                                    // Auto-scroll to bottom
+                                    const chatContainer = document.getElementById('chatContainer');
+                                    chatContainer.scrollTop = chatContainer.scrollHeight;
+                                }
+                            } catch (e) {
+                                // Ignore parse errors
+                            }
+                        }
+                    }
+                }
+
+                // Save to conversation history
+                if (session.conversationHistory.length === 0) {
+                    session.conversationHistory.push({
+                        role: 'user',
+                        content: `User Question: ${message}`
+                    });
+                } else {
+                    session.conversationHistory.push({
+                        role: 'user',
+                        content: message
+                    });
+                }
+                session.conversationHistory.push({
+                    role: 'assistant',
+                    content: fullResponse
+                });
+                
+                saveSessions();
 
             } catch (error) {
                 removeLoading(loadingId);
@@ -1247,58 +1313,64 @@ Use the filter buttons below to focus on specific documents (MOU Only or 1969 Co
             const contentDiv = document.createElement('div');
             contentDiv.className = 'message-content';
             
-            // Convert markdown
-            let formattedContent = content
-                .replace(/^### (.*$)/gim, '<h3 style="font-size: 16px; font-weight: 600; margin: 12px 0 8px 0; color: #3b82f6;">$1</h3>')
-                .replace(/^## (.*$)/gim, '<h2 style="font-size: 18px; font-weight: 600; margin: 14px 0 10px 0; color: #3b82f6;">$1</h2>')
-                .replace(/^# (.*$)/gim, '<h1 style="font-size: 20px; font-weight: 600; margin: 16px 0 12px 0; color: #3b82f6;">$1</h1>')
-                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                // Convert YouTube links to Videos page links
-                .replace(/\[([^\]]+)\]\((https?:\/\/(www\.)?youtube\.com\/[^\)]+|https?:\/\/youtu\.be\/[^\)]+)\)/g, '<a href="videos.html">$1</a>')
-                // Convert other links normally
-                .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
-                .replace(/\n\n/g, '</p><p>')
-                .replace(/\n/g, '<br>');
-            
-            formattedContent = '<p>' + formattedContent + '</p>';
-            formattedContent = formattedContent
-                .replace(/<p><\/p>/g, '')
-                .replace(/<p>\s*<\/p>/g, '')
-                .replace(/<\/h[123]><\/p>/g, '</h$1>')
-                .replace(/<p><h([123])/g, '<h$1')
-                .replace(/<\/h([123])><p>/g, '</h$1>')
-                .replace(/<br>\s*<br>/g, '<br>')
-                .replace(/<\/strong><br><br>/g, '</strong><br>')
-                .replace(/<p><br>/g, '<p>')
-                .replace(/<br><\/p>/g, '</p>')
-                // Remove line breaks between numbers and following content
-                .replace(/(\d+\.)<br>/g, '$1 ')
-                .replace(/(\d+\.)\s*<br>\s*/g, '$1 ');
-            
-            contentDiv.innerHTML = formattedContent;
-            
-            // Create copy button
-            const copyButton = document.createElement('button');
-            copyButton.className = 'copy-button';
-            copyButton.textContent = 'Copy';
-            copyButton.setAttribute('aria-label', 'Copy message');
-            copyButton.onclick = function() {
-                // Copy plain text content
-                navigator.clipboard.writeText(content).then(() => {
-                    copyButton.textContent = 'Copied!';
-                    copyButton.classList.add('copied');
-                    setTimeout(() => {
-                        copyButton.textContent = 'Copy';
-                        copyButton.classList.remove('copied');
-                    }, 2000);
-                }).catch(err => {
+            // Only format content if it exists (for streaming, content may be empty initially)
+            if (content) {
+                // Convert markdown
+                let formattedContent = content
+                    .replace(/^### (.*$)/gim, '<h3 style="font-size: 16px; font-weight: 600; margin: 12px 0 8px 0; color: #3b82f6;">$1</h3>')
+                    .replace(/^## (.*$)/gim, '<h2 style="font-size: 18px; font-weight: 600; margin: 14px 0 10px 0; color: #3b82f6;">$1</h2>')
+                    .replace(/^# (.*$)/gim, '<h1 style="font-size: 20px; font-weight: 600; margin: 16px 0 12px 0; color: #3b82f6;">$1</h1>')
+                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                    // Convert YouTube links to Videos page links
+                    .replace(/\[([^\]]+)\]\((https?:\/\/(www\.)?youtube\.com\/[^\)]+|https?:\/\/youtu\.be\/[^\)]+)\)/g, '<a href="videos.html">$1</a>')
+                    // Convert other links normally
+                    .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+                    .replace(/\n\n/g, '</p><p>')
+                    .replace(/\n/g, '<br>');
+                
+                formattedContent = '<p>' + formattedContent + '</p>';
+                formattedContent = formattedContent
+                    .replace(/<p><\/p>/g, '')
+                    .replace(/<p>\s*<\/p>/g, '')
+                    .replace(/<\/h[123]><\/p>/g, '</h$1>')
+                    .replace(/<p><h([123])/g, '<h$1')
+                    .replace(/<\/h([123])><p>/g, '</h$1>')
+                    .replace(/<br>\s*<br>/g, '<br>')
+                    .replace(/<\/strong><br><br>/g, '</strong><br>')
+                    .replace(/<p><br>/g, '<p>')
+                    .replace(/<br><\/p>/g, '</p>')
+                    // Remove line breaks between numbers and following content
+                    .replace(/(\d+\.)<br>/g, '$1 ')
+                    .replace(/(\d+\.)\s*<br>\s*/g, '$1 ');
+                
+                contentDiv.innerHTML = formattedContent;
+                
+                // Create copy button only if content exists
+                const copyButton = document.createElement('button');
+                copyButton.className = 'copy-button';
+                copyButton.textContent = 'Copy';
+                copyButton.setAttribute('aria-label', 'Copy message');
+                copyButton.onclick = function() {
+                    // Copy plain text content
+                    navigator.clipboard.writeText(content).then(() => {
+                        copyButton.textContent = 'Copied!';
+                        copyButton.classList.add('copied');
+                        setTimeout(() => {
+                            copyButton.textContent = 'Copy';
+                            copyButton.classList.remove('copied');
+                        }, 2000);
+                    }).catch(err => {
                     console.error('Failed to copy:', err);
                 });
             };
             
             messageDiv.appendChild(avatar);
             messageDiv.appendChild(contentDiv);
-            messageDiv.appendChild(copyButton);
+            if (content) {
+                messageDiv.appendChild(copyButton);
+            }
+            }
+            
             chatContainer.appendChild(messageDiv);
             
             chatContainer.scrollTop = chatContainer.scrollHeight;
@@ -1313,9 +1385,11 @@ Use the filter buttons below to focus on specific documents (MOU Only or 1969 Co
             }
             
             // Announce to screen readers
-            if (role === 'assistant') {
+            if (role === 'assistant' && content) {
                 announceToScreenReader('New response from assistant');
             }
+            
+            return messageDiv;
         }
 
         function announceToScreenReader(message) {

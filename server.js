@@ -31,8 +31,13 @@ const comprehensiveContent = [
     fs.readFileSync('./content/Doug-video-series-video3A.txt', 'utf-8'),
     fs.readFileSync('./content/Doug-video-series-video3B.txt', 'utf-8'),
     fs.readFileSync('./content/Doug-video-series-video4.txt', 'utf-8'),
+    fs.readFileSync('./content/Feehan, James P., Smallwood, Churchill Falls, and the Power Corridor through Quebec.txt', 'utf-8'),
     fs.readFileSync('./content/Gull_Island_Contract_2002.txt', 'utf-8'),
+    fs.readFileSync('./content/history-of-churchill-falls-development.txt', 'utf-8'),
     fs.readFileSync('./content/HQ_Production_July_2025_text.txt', 'utf-8'),
+    fs.readFileSync('./content/HQ-exports-electricity-price-escalation.txt', 'utf-8'),
+    fs.readFileSync('./content/HQ_Action_Plan_2035_clean_text.txt', 'utf-8'),
+    fs.readFileSync('./content/HYDRO_MOU_GNL_Jan_2025.txt', 'utf-8'),
     fs.readFileSync('./content/Hydro-quebec-annual-report-2024.txt', 'utf-8'),
     fs.readFileSync('./content/HYDRO-QUEBECS-IMPORTS.txt', 'utf-8'),
     fs.readFileSync('./content/LOCKE analysis of MOU CF.txt', 'utf-8'),
@@ -359,8 +364,8 @@ app.post('/api/chat', async (req, res) => {
             ];
         }
 
-        // Call Claude API with prompt caching
-        const response = await anthropic.messages.create({
+        // Call Claude API with streaming enabled
+        const stream = await anthropic.messages.stream({
             model: 'claude-opus-4-20250514',
             max_tokens: 4096,
             system: [
@@ -373,9 +378,20 @@ app.post('/api/chat', async (req, res) => {
             messages: messages
         });
 
-        const assistantMessage = response.content[0].text;
+        // Set headers for SSE (Server-Sent Events)
+        res.setHeader('Content-Type', 'text/event-stream');
+        res.setHeader('Cache-Control', 'no-cache');
+        res.setHeader('Connection', 'keep-alive');
 
-        res.json({ response: assistantMessage });
+        // Stream the response
+        for await (const chunk of stream) {
+            if (chunk.type === 'content_block_delta' && chunk.delta.type === 'text_delta') {
+                res.write(`data: ${JSON.stringify({ text: chunk.delta.text })}\n\n`);
+            }
+        }
+
+        res.write('data: [DONE]\n\n');
+        res.end();
 
     } catch (error) {
         console.error('Error calling Claude API:', error);
