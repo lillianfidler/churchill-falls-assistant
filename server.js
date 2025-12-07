@@ -24,7 +24,6 @@ const comprehensiveContent = [
     fs.readFileSync('./content/Assessment-of-Proposed-Prices.txt', 'utf-8'),
     fs.readFileSync('./content/Churchill_Falls_Annual_Report_2024.txt', 'utf-8'),
     fs.readFileSync('./content/CHURCHILL-FALLS-POWER-CONTRACT.txt', 'utf-8'),
-    fs.readFileSync('./content/Doug-video-series-summary.txt', 'utf-8'),
     fs.readFileSync('./content/Doug-video-series-video1.txt', 'utf-8'),
     fs.readFileSync('./content/Doug-video-series-video2A.txt', 'utf-8'),
     fs.readFileSync('./content/Doug-video-series-video2B.txt', 'utf-8'),
@@ -42,8 +41,6 @@ const comprehensiveContent = [
     fs.readFileSync('./content/HYDRO-QUEBECS-IMPORTS.txt', 'utf-8'),
     fs.readFileSync('./content/LOCKE analysis of MOU CF.txt', 'utf-8'),
     fs.readFileSync('./content/MOU_Churchill_Falls_Dec_12_2024_clean_text.txt', 'utf-8'),
-    fs.readFileSync('./content/MOU_NL_QC_Dec12-2024.txt', 'utf-8'),
-    fs.readFileSync('./content/Proposed-Prices-for-Existing-Power.txt', 'utf-8'),
     fs.readFileSync('./content/quebecs-changing-import-picture.txt', 'utf-8'),
     fs.readFileSync('./content/quebecs-electricity-supply-problem.txt', 'utf-8'),
     fs.readFileSync('./content/The-Assessment-of-the-Proposed-Proj.txt', 'utf-8'),
@@ -154,7 +151,6 @@ You have access to comprehensive information including:
 
 **Dr. Doug May's Written Analyses:**
 - Assessment of Proposed Prices
-- Proposed Prices for Existing Power
 - Assessment of the Proposed Projects
 - Understanding Financial Concepts
 - Quebec's Electricity Supply Problem
