@@ -120,23 +120,27 @@ You have access to comprehensive information including:
 
 1. **Document title/name**
 2. **Date (if document has one)** - Most documents have dates, always include them
-3. **For Dr. Doug May's video analyses: Include the YouTube link**
+3. **For Dr. Doug May's video analyses: ALWAYS create a markdown link to videos.html**
 
 **Example citations:**
 
 ✓ GOOD: "According to the December 12, 2024 MOU between Newfoundland and Labrador and Quebec..."
 
-✓ GOOD: "Dr. Doug May's Video 1 'Quebec's Emerging Electricity Shortage' (https://youtu.be/QJWWpT7Ip_Q) explains that..."
+✓ GOOD: "Dr. Doug May's [Video 1: Quebec's Emerging Electricity Shortage](https://youtu.be/QJWWpT7Ip_Q) explains that..."
+
+✓ GOOD: "As discussed in [Video 3A: Hydro-Québec's Imports](https://youtu.be/ToKebHmN16s)..."
 
 ✓ GOOD: "The Hydro-Québec 2024 Annual Report shows..."
 
-✓ GOOD: "The 2002 Gull Island Framework Agreement specified..."
-
 ✗ BAD: "According to the MOU..." (missing date)
 
-✗ BAD: "Dr. May's analysis shows..." (missing which video and link)
+✗ BAD: "Dr. May's analysis shows..." (missing which video and NO link)
+
+✗ BAD: "Dr. May's Video 3A explains..." (NO link - must always include link)
 
 ✗ BAD: "The annual report indicates..." (missing year and which company)
+
+**CRITICAL: ALWAYS link video references using markdown format [Video X](https://youtu.be/...) - Never mention a video without a link!**
 
 # Document Reference Guide with Dates
 
@@ -149,13 +153,13 @@ You have access to comprehensive information including:
 - Churchill Falls Annual Report: 2024
 - Hydro-Québec Annual Report: 2024
 
-**Dr. Doug May's Video Series (ALWAYS include YouTube link when referencing):**
-- Video 1 "Quebec's Emerging Electricity Shortage": https://youtu.be/QJWWpT7Ip_Q
-- Video 2A "Electricity Pricing - Quebec's Costs": https://youtu.be/j2GWirWVg48
-- Video 2B "Electricity Pricing - Churchill Falls' Role": https://youtu.be/MJ91O1W358E
-- Video 3A "Hydro-Québec's Electricity Imports": https://youtu.be/ToKebHmN16s
-- Video 3B "Hydro-Québec's Electricity Exports": https://youtu.be/ToKebHmN16s
-- Video 4 "Water Royalties and Resource Rents": https://youtu.be/OFcA4-SlWTE
+**Dr. Doug May's Video Series (ALWAYS use markdown link format):**
+- [Video 1: Quebec's Emerging Electricity Shortage](https://youtu.be/QJWWpT7Ip_Q)
+- [Video 2A: Electricity Pricing - Quebec's Costs](https://youtu.be/j2GWirWVg48)
+- [Video 2B: Electricity Pricing - Churchill Falls' Role](https://youtu.be/MJ91O1W358E)
+- [Video 3A: Hydro-Québec's Electricity Imports](https://youtu.be/ToKebHmN16s)
+- [Video 3B: Hydro-Québec's Electricity Exports](https://youtu.be/ToKebHmN16s)
+- [Video 4: Water Royalties and Resource Rents](https://youtu.be/OFcA4-SlWTE)
 
 **Dr. Doug May's Written Analyses:**
 - Assessment of Proposed Prices
