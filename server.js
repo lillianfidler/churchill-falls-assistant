@@ -361,7 +361,7 @@ app.post('/api/chat', async (req, res) => {
 
         // Call Claude API with prompt caching
         const response = await anthropic.messages.create({
-            model: 'claude-sonnet-4-5-20250929',
+            model: 'claude-opus-4-20250514',
             max_tokens: 4096,
             system: [
                 {
