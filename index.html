@@ -518,6 +518,11 @@
             line-height: 1.5;
             font-weight: 400;
         }
+        
+        /* Remove extra margin after paragraphs that are headings (numbered or standalone bold) */
+        .message-content p:has(> strong:only-child) {
+            margin-bottom: 2px;
+        }
 
         .message-content h1, .message-content h2, .message-content h3 {
             margin: 10px 0 4px 0;
@@ -1240,7 +1245,11 @@ Use the filter buttons below to focus on specific documents (MOU Only or 1969 Co
                 .replace(/<p>\s*<\/p>/g, '')
                 .replace(/<\/h[123]><\/p>/g, '</h$1>')
                 .replace(/<p><h([123])/g, '<h$1')
-                .replace(/<\/h([123])><p>/g, '</h$1>');
+                .replace(/<\/h([123])><p>/g, '</h$1>')
+                .replace(/<br>\s*<br>/g, '<br>')
+                .replace(/<\/strong><br><br>/g, '</strong><br>')
+                .replace(/<p><br>/g, '<p>')
+                .replace(/<br><\/p>/g, '</p>');
             
             contentDiv.innerHTML = formattedContent;
             
