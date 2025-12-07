@@ -31,9 +31,11 @@ const comprehensiveContent = [
     fs.readFileSync('./content/Doug-video-series-video3A.txt', 'utf-8'),
     fs.readFileSync('./content/Doug-video-series-video3B.txt', 'utf-8'),
     fs.readFileSync('./content/Doug-video-series-video4.txt', 'utf-8'),
+    fs.readFileSync('./content/Feehan, James P., Smallwood, Churchill Falls, and the Power Corridor through Quebec.txt', 'utf-8'),
     fs.readFileSync('./content/Gull_Island_Contract_2002.txt', 'utf-8'),
     fs.readFileSync('./content/HQ_Production_July_2025_text.txt', 'utf-8'),
     fs.readFileSync('./content/HQ-exports-electricity-price-escalation.txt', 'utf-8'),
+    fs.readFileSync('./content/HQ_Action_Plan_2035_clean_text.txt', 'utf-8'),
     fs.readFileSync('./content/HYDRO_MOU_GNL_Jan_2025.txt', 'utf-8'),
     fs.readFileSync('./content/Hydro-quebec-annual-report-2024.txt', 'utf-8'),
     fs.readFileSync('./content/HYDRO-QUEBECS-IMPORTS.txt', 'utf-8'),
@@ -341,10 +343,17 @@ app.post('/api/chat', async (req, res) => {
         
         if (cleanedHistory.length === 0) {
             // First message - include all content with the question
+            // Use prompt caching for the documents and system prompt
             messages = [
                 {
                     role: 'user',
-                    content: `${contentToUse}\n\n---\n\nUser Question: ${message}${filterInstruction}`
+                    content: [
+                        {
+                            type: 'text',
+                            text: `${contentToUse}\n\n---\n\nUser Question: ${message}${filterInstruction}`,
+                            cache_control: { type: 'ephemeral' }
+                        }
+                    ]
                 }
             ];
         } else {
@@ -359,11 +368,17 @@ app.post('/api/chat', async (req, res) => {
             ];
         }
 
-        // Call Claude API
+        // Call Claude API with prompt caching
         const response = await anthropic.messages.create({
             model: 'claude-sonnet-4-5-20250929',
             max_tokens: 4096,
-            system: systemPrompt,
+            system: [
+                {
+                    type: 'text',
+                    text: systemPrompt,
+                    cache_control: { type: 'ephemeral' }
+                }
+            ],
             messages: messages
         });
 
