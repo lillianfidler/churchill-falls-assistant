@@ -360,8 +360,8 @@ app.post('/api/chat', async (req, res) => {
             ];
         }
 
-        // Call Claude API with streaming enabled
-        const stream = await anthropic.messages.stream({
+        // Call Claude API with prompt caching
+        const response = await anthropic.messages.create({
             model: 'claude-opus-4-20250514',
             max_tokens: 4096,
             system: [
@@ -374,20 +374,9 @@ app.post('/api/chat', async (req, res) => {
             messages: messages
         });
 
-        // Set headers for SSE (Server-Sent Events)
-        res.setHeader('Content-Type', 'text/event-stream');
-        res.setHeader('Cache-Control', 'no-cache');
-        res.setHeader('Connection', 'keep-alive');
+        const assistantMessage = response.content[0].text;
 
-        // Stream the response
-        for await (const chunk of stream) {
-            if (chunk.type === 'content_block_delta' && chunk.delta.type === 'text_delta') {
-                res.write(`data: ${JSON.stringify({ text: chunk.delta.text })}\n\n`);
-            }
-        }
-
-        res.write('data: [DONE]\n\n');
-        res.end();
+        res.json({ response: assistantMessage });
 
     } catch (error) {
         console.error('Error calling Claude API:', error);
