@@ -31,13 +31,8 @@ const comprehensiveContent = [
     fs.readFileSync('./content/Doug-video-series-video3A.txt', 'utf-8'),
     fs.readFileSync('./content/Doug-video-series-video3B.txt', 'utf-8'),
     fs.readFileSync('./content/Doug-video-series-video4.txt', 'utf-8'),
-    fs.readFileSync('./content/Feehan, James P., Smallwood, Churchill Falls, and the Power Corridor through Quebec.txt', 'utf-8'),
     fs.readFileSync('./content/Gull_Island_Contract_2002.txt', 'utf-8'),
-    fs.readFileSync('./content/history-of-churchill-falls-development.txt', 'utf-8'),
     fs.readFileSync('./content/HQ_Production_July_2025_text.txt', 'utf-8'),
-    fs.readFileSync('./content/HQ-exports-electricity-price-escalation.txt', 'utf-8'),
-    fs.readFileSync('./content/HQ_Action_Plan_2035_clean_text.txt', 'utf-8'),
-    fs.readFileSync('./content/HYDRO_MOU_GNL_Jan_2025.txt', 'utf-8'),
     fs.readFileSync('./content/Hydro-quebec-annual-report-2024.txt', 'utf-8'),
     fs.readFileSync('./content/HYDRO-QUEBECS-IMPORTS.txt', 'utf-8'),
     fs.readFileSync('./content/LOCKE analysis of MOU CF.txt', 'utf-8'),
@@ -119,47 +114,38 @@ You have access to comprehensive information including:
 **When citing ANY document, you MUST include:**
 
 1. **Document title/name**
-2. **Date (if document has one)** - Most documents have dates, always include them
-3. **For Dr. Doug May's video analyses: ALWAYS create a markdown link to videos.html**
+2. **Date (if document has one)**
+3. **For Dr. Doug May's videos: ALWAYS use markdown link format**
 
 **Example citations:**
 
-✓ GOOD: "According to the December 12, 2024 MOU between Newfoundland and Labrador and Quebec..."
+✓ GOOD: "According to the December 12, 2024 MOU..."
 
-✓ GOOD: "Dr. Doug May's [Video 1: Quebec's Emerging Electricity Shortage](https://youtu.be/QJWWpT7Ip_Q) explains that..."
+✓ GOOD: "Dr. Doug May's [Video 1](https://youtu.be/QJWWpT7Ip_Q) explains..."
 
-✓ GOOD: "As discussed in [Video 3A: Hydro-Québec's Imports](https://youtu.be/ToKebHmN16s)..."
+✓ GOOD: "As discussed in [Video 3A](https://youtu.be/ToKebHmN16s)..."
 
-✓ GOOD: "The Hydro-Québec 2024 Annual Report shows..."
+✗ BAD: "Dr. May's Video 3A explains..." (NO link)
 
-✗ BAD: "According to the MOU..." (missing date)
+**CRITICAL: Always link videos using [Video X](URL) format**
 
-✗ BAD: "Dr. May's analysis shows..." (missing which video and NO link)
-
-✗ BAD: "Dr. May's Video 3A explains..." (NO link - must always include link)
-
-✗ BAD: "The annual report indicates..." (missing year and which company)
-
-**CRITICAL: ALWAYS link video references using markdown format [Video X](https://youtu.be/...) - Never mention a video without a link!**
-
-# Document Reference Guide with Dates
+# Document Reference Guide
 
 **Official Agreements:**
 - MOU: December 12, 2024
 - Gull Island Framework Agreement: 2002
-- NL Hydro MOU Document: January 2025
 
 **Annual Reports:**
 - Churchill Falls Annual Report: 2024
 - Hydro-Québec Annual Report: 2024
 
-**Dr. Doug May's Video Series (ALWAYS use markdown link format):**
-- [Video 1: Quebec's Emerging Electricity Shortage](https://youtu.be/QJWWpT7Ip_Q)
-- [Video 2A: Electricity Pricing - Quebec's Costs](https://youtu.be/j2GWirWVg48)
-- [Video 2B: Electricity Pricing - Churchill Falls' Role](https://youtu.be/MJ91O1W358E)
-- [Video 3A: Hydro-Québec's Electricity Imports](https://youtu.be/ToKebHmN16s)
-- [Video 3B: Hydro-Québec's Electricity Exports](https://youtu.be/ToKebHmN16s)
-- [Video 4: Water Royalties and Resource Rents](https://youtu.be/OFcA4-SlWTE)
+**Dr. Doug May's Videos (use markdown links):**
+- [Video 1](https://youtu.be/QJWWpT7Ip_Q)
+- [Video 2A](https://youtu.be/j2GWirWVg48)
+- [Video 2B](https://youtu.be/MJ91O1W358E)
+- [Video 3A](https://youtu.be/ToKebHmN16s)
+- [Video 3B](https://youtu.be/ToKebHmN16s)
+- [Video 4](https://youtu.be/OFcA4-SlWTE)
 
 **Dr. Doug May's Written Analyses:**
 - Assessment of Proposed Prices
