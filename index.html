@@ -527,19 +527,22 @@
         .message-content h1, .message-content h2, .message-content h3 {
             margin: 10px 0 4px 0;
             color: #3b82f6;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 600;
+            line-height: 1.4;
         }
 
         .message-content a {
-            color: #1e293b;
-            text-decoration: underline;
+            color: #3b82f6;
+            text-decoration: none;
             font-size: 14px;
-            font-weight: 400;
+            font-weight: 500;
+            border-bottom: 1px solid #3b82f6;
         }
 
         .message-content a:hover {
-            color: #3b82f6;
+            color: #2563eb;
+            border-bottom-color: #2563eb;
         }
 
         /* Bold text - same size as regular, just slightly heavier weight, always black */
@@ -557,6 +560,7 @@
             margin-bottom: 2px;
             font-size: 15px;
             font-weight: 600;
+            line-height: 1.4;
         }
 
         .loading {
@@ -1235,6 +1239,9 @@ Use the filter buttons below to focus on specific documents (MOU Only or 1969 Co
                 .replace(/^## (.*$)/gim, '<h2 style="font-size: 18px; font-weight: 600; margin: 14px 0 10px 0; color: #3b82f6;">$1</h2>')
                 .replace(/^# (.*$)/gim, '<h1 style="font-size: 20px; font-weight: 600; margin: 16px 0 12px 0; color: #3b82f6;">$1</h1>')
                 .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                // Convert YouTube links to Videos page links
+                .replace(/\[([^\]]+)\]\((https?:\/\/(www\.)?youtube\.com\/[^\)]+|https?:\/\/youtu\.be\/[^\)]+)\)/g, '<a href="videos.html">$1</a>')
+                // Convert other links normally
                 .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
                 .replace(/\n\n/g, '</p><p>')
                 .replace(/\n/g, '<br>');
