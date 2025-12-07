@@ -22,6 +22,7 @@ const anthropic = new Anthropic({
 const comprehensiveContent = [
   fs.readFileSync('./content/Analyis-James-P-Feehan.txt', 'utf-8'),
     fs.readFileSync('./content/Assessment-of-Proposed-Prices.txt', 'utf-8'),
+    fs.readFileSync('./content/Churchill_Falls_Annual_Report_2024.txt', 'utf-8'),
     fs.readFileSync('./content/CHURCHILL-FALLS-POWER-CONTRACT.txt', 'utf-8'),
     fs.readFileSync('./content/Doug-video-series-summary.txt', 'utf-8'),
     fs.readFileSync('./content/Doug-video-series-video1.txt', 'utf-8'),
@@ -33,8 +34,8 @@ const comprehensiveContent = [
     fs.readFileSync('./content/Gull_Island_Contract_2002.txt', 'utf-8'),
     fs.readFileSync('./content/HQ_Production_July_2025_text.txt', 'utf-8'),
     fs.readFileSync('./content/HQ-exports-electricity-price-escalation.txt', 'utf-8'),
-    fs.readFileSync('./content/HQ_Action_Plan_2035_clean_text.txt', 'utf-8'),
     fs.readFileSync('./content/HYDRO_MOU_GNL_Jan_2025.txt', 'utf-8'),
+    fs.readFileSync('./content/Hydro-quebec-annual-report-2024.txt', 'utf-8'),
     fs.readFileSync('./content/HYDRO-QUEBECS-IMPORTS.txt', 'utf-8'),
     fs.readFileSync('./content/LOCKE analysis of MOU CF.txt', 'utf-8'),
     fs.readFileSync('./content/MOU_Churchill_Falls_Dec_12_2024_clean_text.txt', 'utf-8'),
