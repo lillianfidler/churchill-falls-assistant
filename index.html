@@ -512,8 +512,8 @@
         }
 
         .message-content p {
-            margin-bottom: 1px;
-            margin-top: 0;
+            margin-bottom: 0px;
+            margin-top: 0px;
             color: #1e293b;
             font-size: 14px;
             line-height: 1.5;
@@ -523,14 +523,14 @@
         
         /* Remove extra margin after paragraphs that are headings (numbered or standalone bold) */
         .message-content p:has(> strong:only-child) {
-            margin-bottom: 1px;
-            margin-top: 16px;
+            margin-bottom: 0px;
+            margin-top: 12px;
         }
         
         /* Paragraphs with only a link (like "Rushed Timeline") - treat as heading */
         .message-content p:has(> a:only-child) {
-            margin-top: 16px;
-            margin-bottom: 1px;
+            margin-top: 12px;
+            margin-bottom: 0px;
         }
         
         /* Keep numbered items with their headings - no break between */
@@ -541,7 +541,7 @@
         }
 
         .message-content h1, .message-content h2, .message-content h3 {
-            margin: 16px 0 2px 0;
+            margin: 12px 0 0px 0;
             color: #3b82f6;
             font-size: 15px;
             font-weight: 600;
