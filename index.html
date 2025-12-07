@@ -523,6 +523,18 @@
         .message-content p:has(> strong:only-child) {
             margin-bottom: 2px;
         }
+        
+        /* If a paragraph contains just a number followed by period, reduce space and prevent break */
+        .message-content p {
+            display: block;
+        }
+        
+        /* Keep numbered items with their headings - no break between */
+        .message-content br + strong,
+        .message-content br + a {
+            display: inline;
+            margin-left: 4px;
+        }
 
         .message-content h1, .message-content h2, .message-content h3 {
             margin: 10px 0 4px 0;
@@ -1256,7 +1268,10 @@ Use the filter buttons below to focus on specific documents (MOU Only or 1969 Co
                 .replace(/<br>\s*<br>/g, '<br>')
                 .replace(/<\/strong><br><br>/g, '</strong><br>')
                 .replace(/<p><br>/g, '<p>')
-                .replace(/<br><\/p>/g, '</p>');
+                .replace(/<br><\/p>/g, '</p>')
+                // Remove line breaks between numbers and following content
+                .replace(/(\d+\.)<br>/g, '$1 ')
+                .replace(/(\d+\.)\s*<br>\s*/g, '$1 ');
             
             contentDiv.innerHTML = formattedContent;
             
