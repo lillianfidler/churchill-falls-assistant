@@ -434,12 +434,12 @@ TREAT THIS AS ABSOLUTE: You cannot make comparisons or discuss changes because y
             ];
         } else {
             // Follow-up message - conversation history already has documents in first message
-            // Just add the new user question
+            // But we need to add filter instruction if filter is active
             messages = [
                 ...cleanedHistory,
                 {
                     role: 'user',
-                    content: message
+                    content: filterInstruction ? `${message}${filterInstruction}` : message
                 }
             ];
         }
