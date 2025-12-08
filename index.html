@@ -1198,6 +1198,10 @@ Use the filter buttons below to focus on specific documents (MOU Only or 1969 Co
             
             const mode = checkedFilters.length === 0 ? 'comprehensive' : 'filtered';
             const sourceFilters = checkedFilters.join(',');
+            
+            // Debug logging
+            console.log('Active filters:', sourceFilters);
+            console.log('Filter buttons:', document.querySelectorAll('.filter-toggle.active'));
 
             // Update chat title if it's the first real message
             if (session.title === 'New Chat' && session.conversationHistory.length === 0) {
