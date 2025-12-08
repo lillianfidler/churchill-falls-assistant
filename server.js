@@ -327,9 +327,44 @@ app.post('/api/chat', async (req, res) => {
         if (sourceFilters) {
             const filters = sourceFilters.split(',');
             if (filters.includes('mou')) {
-                filterInstruction = '\n\nIMPORTANT: The user has selected "MOU Only" mode. You must ONLY reference and cite information from the December 12, 2024 MOU document in your knowledge base. Do NOT include any analyses, commentary, or viewpoints from economists or researchers in your answer. Provide only factual information directly from the MOU text itself. However, you MAY offer to provide additional perspectives or analyses if the user asks a follow-up question (e.g., "Would you like to hear what economists like Dr. Doug May or Wade Locke have said about this aspect?").';
+                filterInstruction = `
+
+CRITICAL FILTER MODE: MOU ONLY
+
+You must STRICTLY follow these rules:
+
+1. ONLY cite information that appears directly in the December 12, 2024 MOU document
+2. Do NOT mention or reference:
+   - Dr. Doug May's analyses or videos
+   - Wade Locke's analyses  
+   - Economist opinions, concerns, or critiques
+   - Financial analyses from researchers
+   - Debt concerns or risk assessments from analysts
+   - ANY content from sources other than the MOU itself
+
+3. When asked about "main points" or to "summarize", provide ONLY what the MOU document states:
+   - Official terms and conditions from the MOU
+   - Dates, prices, and structures specified in the MOU
+   - Project descriptions from the MOU
+   - Nothing else
+
+4. If the user asks a question that would require economist analysis, respond with:
+   "That information isn't in the MOU document itself. I'm currently in MOU-only mode. Would you like me to include economist analyses by unchecking the MOU Only filter?"
+
+Do NOT provide economist viewpoints, financial concerns, or analytical commentary in this mode.`;
             } else if (filters.includes('historical')) {
-                filterInstruction = '\n\nIMPORTANT: The user has selected "1969 Contract Only" mode. You must ONLY reference and cite information from the 1969 Churchill Falls Power Contract in your knowledge base. Do NOT include any analyses, commentary, or viewpoints from economists or researchers in your answer. Provide only factual information directly from the original contract text itself. Do NOT say you see an uploaded document - the contract is part of your permanent knowledge base. However, you MAY offer to provide additional perspectives or modern analyses if the user asks a follow-up question (e.g., "Would you like to hear how this compares to the proposed 2024 MOU?").';
+                filterInstruction = `
+
+CRITICAL FILTER MODE: 1969 CONTRACT ONLY
+
+You must STRICTLY follow these rules:
+
+1. ONLY cite information from the 1969 Churchill Falls Power Contract
+2. Do NOT mention economists, researchers, or modern analyses
+3. Do NOT compare to the 2024 MOU unless explicitly asked
+4. Provide only factual contract terms from 1969
+
+If asked about concerns or modern analysis, offer to switch modes.`;
             }
         }
         
