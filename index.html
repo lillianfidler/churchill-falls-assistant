@@ -973,11 +973,40 @@
             document.getElementById('sendButton').addEventListener('click', sendMessage);
             document.getElementById('newChatBtn').addEventListener('click', createNewChat);
             
-            // Filter toggles
+            // Filter toggles - track previous state and clear chat when changed
+            let previousFilters = '';
+            
             document.querySelectorAll('.filter-toggle').forEach(button => {
                 button.addEventListener('click', function() {
+                    // Get current filter state before change
+                    const currentFilters = Array.from(document.querySelectorAll('.filter-toggle.active'))
+                        .map(btn => btn.dataset.filter)
+                        .join(',');
+                    
+                    // Toggle the clicked button
                     this.classList.toggle('active');
                     this.setAttribute('aria-pressed', this.classList.contains('active'));
+                    
+                    // Get new filter state after change
+                    const newFilters = Array.from(document.querySelectorAll('.filter-toggle.active'))
+                        .map(btn => btn.dataset.filter)
+                        .join(',');
+                    
+                    // If filters actually changed (not just unchecking everything)
+                    if (currentFilters !== newFilters && previousFilters !== '') {
+                        // Start a new chat to ensure clean filter context
+                        const session = getCurrentSession();
+                        if (session && session.conversationHistory.length > 0) {
+                            // Create new chat session
+                            createNewChat();
+                            
+                            // Show message explaining the reset
+                            addMessage('assistant', 'Started a new conversation due to filter change. Previous messages are saved in the sidebar.', false);
+                        }
+                    }
+                    
+                    // Update previous state
+                    previousFilters = newFilters;
                 });
             });
             
