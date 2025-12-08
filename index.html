@@ -1015,22 +1015,26 @@
                         .map(btn => btn.dataset.filter)
                         .join(',');
                     
-                    // If filters actually changed AND there's existing conversation
-                    if (currentFilters !== newFilters && previousFilters !== '') {
+                    // If filters actually changed AND there are messages visible
+                    const chatContainer = document.getElementById('chatContainer');
+                    const hasMessages = chatContainer && chatContainer.children.length > 0;
+                    
+                    if (currentFilters !== newFilters && hasMessages) {
                         const session = getCurrentSession();
-                        if (session && session.conversationHistory.length > 0) {
+                        if (session) {
                             // Clear the conversation history for clean filter context
                             session.conversationHistory = [];
+                            session.messages = [];
                             saveSessions();
                             
                             // Clear the chat display
                             clearChatContainer();
                             
-                            // Add a subtle notice
+                            // Add a prominent notice
                             const noticeDiv = document.createElement('div');
-                            noticeDiv.style.cssText = 'text-align: center; padding: 20px; color: #64748b; font-size: 13px; font-style: italic;';
-                            noticeDiv.textContent = 'Filter changed - starting fresh conversation';
-                            document.getElementById('chatContainer').appendChild(noticeDiv);
+                            noticeDiv.style.cssText = 'text-align: center; padding: 30px 20px; color: #3b82f6; font-size: 14px; font-weight: 500; background: #eff6ff; border-radius: 8px; margin: 20px auto; max-width: 600px;';
+                            noticeDiv.innerHTML = '🔄 Filter changed - Starting fresh conversation<br><span style="font-size: 12px; color: #64748b; font-weight: 400;">Previous messages are saved in the sidebar</span>';
+                            chatContainer.appendChild(noticeDiv);
                         }
                     }
                     
