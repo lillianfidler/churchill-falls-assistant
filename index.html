@@ -1021,13 +1021,11 @@
                     
                     if (currentFilters !== newFilters && hasMessages) {
                         const session = getCurrentSession();
-                        if (session) {
-                            // Clear the conversation history for clean filter context
-                            session.conversationHistory = [];
-                            session.messages = [];
-                            saveSessions();
+                        if (session && (session.messages.length > 0 || session.conversationHistory.length > 0)) {
+                            // Create a NEW chat session to preserve the old one
+                            createNewChat();
                             
-                            // Clear the chat display
+                            // Clear the display
                             clearChatContainer();
                             
                             // Add a prominent notice
@@ -1035,6 +1033,9 @@
                             noticeDiv.style.cssText = 'text-align: center; padding: 30px 20px; color: #3b82f6; font-size: 14px; font-weight: 500; background: #eff6ff; border-radius: 8px; margin: 20px auto; max-width: 600px;';
                             noticeDiv.innerHTML = '🔄 Filter changed - Starting fresh conversation<br><span style="font-size: 12px; color: #64748b; font-weight: 400;">Previous messages are saved in the sidebar</span>';
                             chatContainer.appendChild(noticeDiv);
+                            
+                            // Update the chat history display
+                            updateChatHistory();
                         }
                     }
                     
