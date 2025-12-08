@@ -992,16 +992,22 @@
                         .map(btn => btn.dataset.filter)
                         .join(',');
                     
-                    // If filters actually changed (not just unchecking everything)
+                    // If filters actually changed AND there's existing conversation
                     if (currentFilters !== newFilters && previousFilters !== '') {
-                        // Start a new chat to ensure clean filter context
                         const session = getCurrentSession();
                         if (session && session.conversationHistory.length > 0) {
-                            // Create new chat session
-                            createNewChat();
+                            // Clear the conversation history for clean filter context
+                            session.conversationHistory = [];
+                            saveSessions();
                             
-                            // Show message explaining the reset
-                            addMessage('assistant', 'Started a new conversation due to filter change. Previous messages are saved in the sidebar.', false);
+                            // Clear the chat display
+                            clearChatContainer();
+                            
+                            // Add a subtle notice
+                            const noticeDiv = document.createElement('div');
+                            noticeDiv.style.cssText = 'text-align: center; padding: 20px; color: #64748b; font-size: 13px; font-style: italic;';
+                            noticeDiv.textContent = 'Filter changed - starting fresh conversation';
+                            document.getElementById('chatContainer').appendChild(noticeDiv);
                         }
                     }
                     
