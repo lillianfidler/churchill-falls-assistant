@@ -292,7 +292,12 @@ app.post('/api/chat', async (req, res) => {
                 // User selected specific filters
                 const filters = sourceFilters.split(',');
                 
-                if (filters.includes('mou')) {
+                if (filters.includes('mou') && filters.includes('historical')) {
+                    // Both filters selected - comparison mode
+                    const mouContent = mouOnlyContent;
+                    const contractContent = fs.readFileSync('./content/CHURCHILL-FALLS-POWER-CONTRACT.txt', 'utf-8');
+                    contentToUse = `${mouContent}\n\n---\n\n${contractContent}`;
+                } else if (filters.includes('mou')) {
                     // MOU Only - just the official December 2024 MOU
                     contentToUse = mouOnlyContent;
                 } else if (filters.includes('historical')) {
@@ -326,7 +331,29 @@ app.post('/api/chat', async (req, res) => {
         let filterInstruction = '';
         if (sourceFilters) {
             const filters = sourceFilters.split(',');
-            if (filters.includes('mou')) {
+            if (filters.includes('mou') && filters.includes('historical')) {
+                // Both filters selected - comparison mode
+                filterInstruction = `
+
+COMPARISON MODE: MOU + 1969 CONTRACT
+
+You have access to BOTH documents:
+- The December 12, 2024 MOU
+- The 1969 Churchill Falls Power Contract
+
+When asked about differences or comparisons:
+1. Directly compare the two documents
+2. Highlight key changes in:
+   - Pricing (0.2¢/kWh → new pricing structure)
+   - Duration (1969-2041 → 2025-2075)
+   - Volume allocations
+   - New projects proposed in MOU
+   - Financial terms
+3. Present information clearly and factually
+4. Do NOT include economist commentary - just the document facts
+
+You may ONLY reference these two documents, not economist analyses.`;
+            } else if (filters.includes('mou')) {
                 filterInstruction = `
 
 CRITICAL FILTER MODE: MOU ONLY
