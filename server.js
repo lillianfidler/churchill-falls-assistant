@@ -351,6 +351,8 @@ You must STRICTLY follow these rules:
 4. If the user asks a question that would require economist analysis, respond with:
    "That information isn't in the MOU document itself. I'm currently in MOU-only mode. Would you like me to include economist analyses by unchecking the MOU Only filter?"
 
+5. IGNORE any previous conversation context that used different filters - treat this as a fresh MOU-only question.
+
 Do NOT provide economist viewpoints, financial concerns, or analytical commentary in this mode.`;
             } else if (filters.includes('historical')) {
                 filterInstruction = `
@@ -359,12 +361,32 @@ CRITICAL FILTER MODE: 1969 CONTRACT ONLY
 
 You must STRICTLY follow these rules:
 
-1. ONLY cite information from the 1969 Churchill Falls Power Contract
-2. Do NOT mention economists, researchers, or modern analyses
-3. Do NOT compare to the 2024 MOU unless explicitly asked
-4. Provide only factual contract terms from 1969
+1. You ONLY have access to the 1969 Churchill Falls Power Contract document
+2. You do NOT have access to:
+   - The 2024 MOU
+   - Economist analyses
+   - Modern commentary
+   - Any other documents
 
-If asked about concerns or modern analysis, offer to switch modes.`;
+3. When user asks comparative questions like "what's changed":
+   - Respond: "I'm currently in 1969 Contract Only mode, so I can only tell you what's IN the 1969 contract itself. To compare with the proposed MOU, please uncheck the 1969 Contract filter."
+   
+4. When asked about "main points" or contract details, provide ONLY from 1969 contract:
+   - Pricing: 0.2¢/kWh with escalation terms
+   - Duration: Until 2041 (or 2016 with extensions)
+   - Capacity: Commitments and delivery terms
+   - Financial arrangements from the contract
+   - Rights and obligations of parties
+
+5. NEVER mention:
+   - The 2024 MOU or any proposed changes
+   - What economists say
+   - Comparisons to modern agreements
+   - "Changes" unless they're changes within the 1969 contract amendments
+
+6. DO NOT say "I notice you've uploaded" - this document is in your knowledge base
+
+TREAT THIS AS ABSOLUTE: You cannot make comparisons or discuss changes because you ONLY have the 1969 contract.`;
             }
         }
         
