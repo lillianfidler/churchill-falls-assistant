@@ -1244,52 +1244,78 @@ Use the filter buttons below to focus on specific documents (MOU Only or 1969 Co
             // Show loading
             const loadingId = showLoading();
 
-            try {
-                const response = await fetch(API_URL, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        message: message,
-                        mode: mode,
-                        sourceFilters: sourceFilters,
-                        conversationHistory: session.conversationHistory
-                    })
-                });
+            // Retry logic - try up to 2 times
+            let attempts = 0;
+            const maxAttempts = 2;
+            let lastError = null;
 
-                const data = await response.json();
-                removeLoading(loadingId);
-
-                if (data.error) {
-                    addMessage('assistant', 'I apologize, but I encountered an error. Please try again.', true);
-                } else {
-                    addMessage('assistant', data.response, true);
+            while (attempts < maxAttempts) {
+                try {
+                    attempts++;
                     
-                    // Update conversation history
-                    if (session.conversationHistory.length === 0) {
-                        session.conversationHistory.push({
-                            role: 'user',
-                            content: `User Question: ${message}`
-                        });
-                    } else {
-                        session.conversationHistory.push({
-                            role: 'user',
-                            content: message
-                        });
-                    }
-                    session.conversationHistory.push({
-                        role: 'assistant',
-                        content: data.response
+                    const response = await fetch(API_URL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            message: message,
+                            mode: mode,
+                            sourceFilters: sourceFilters,
+                            conversationHistory: session.conversationHistory
+                        })
                     });
-                    
-                    saveSessions();
-                }
 
-            } catch (error) {
-                removeLoading(loadingId);
-                addMessage('assistant', 'I apologize, but I encountered an error. Please try again.', true);
-                console.error('Error:', error);
+                    const data = await response.json();
+                    removeLoading(loadingId);
+
+                    if (data.error) {
+                        // Server returned an error
+                        if (attempts < maxAttempts) {
+                            console.log(`Attempt ${attempts} failed, retrying...`);
+                            await new Promise(resolve => setTimeout(resolve, 1000)); // Wait 1 second before retry
+                            continue;
+                        }
+                        addMessage('assistant', 'I apologize, but I encountered an error. Please try again.', true);
+                    } else {
+                        // Success!
+                        addMessage('assistant', data.response, true);
+                        
+                        // Update conversation history
+                        if (session.conversationHistory.length === 0) {
+                            session.conversationHistory.push({
+                                role: 'user',
+                                content: `User Question: ${message}`
+                            });
+                        } else {
+                            session.conversationHistory.push({
+                                role: 'user',
+                                content: message
+                            });
+                        }
+                        session.conversationHistory.push({
+                            role: 'assistant',
+                            content: data.response
+                        });
+                        
+                        saveSessions();
+                        return; // Exit successfully
+                    }
+
+                } catch (error) {
+                    lastError = error;
+                    console.error(`Attempt ${attempts} error:`, error);
+                    
+                    if (attempts < maxAttempts) {
+                        console.log('Retrying in 1 second...');
+                        await new Promise(resolve => setTimeout(resolve, 1000));
+                    } else {
+                        // All retries failed
+                        removeLoading(loadingId);
+                        addMessage('assistant', 'I apologize, but I encountered an error after multiple attempts. Please check your connection and try again.', true);
+                        console.error('All retry attempts failed:', lastError);
+                    }
+                }
             }
         }
 
@@ -1406,12 +1432,33 @@ Use the filter buttons below to focus on specific documents (MOU Only or 1969 Co
             const loadingId = 'loading-' + Date.now();
             loadingDiv.id = loadingId;
             loadingDiv.className = 'message assistant';
+            
+            // Determine which documents are being analyzed based on active filters
+            const activeFilters = Array.from(document.querySelectorAll('.filter-toggle.active'))
+                .map(btn => btn.dataset.filter);
+            
+            let loadingText = 'Analyzing documents';
+            if (activeFilters.includes('mou') && activeFilters.includes('historical')) {
+                loadingText = 'Analyzing MOU and 1969 Contract';
+            } else if (activeFilters.includes('mou')) {
+                loadingText = 'Analyzing December 2024 MOU';
+            } else if (activeFilters.includes('historical')) {
+                loadingText = 'Analyzing 1969 Contract';
+            } else {
+                loadingText = 'Analyzing 24 documents';
+            }
+            
             loadingDiv.innerHTML = `
                 <div class="message-avatar">CF</div>
                 <div class="message-content loading">
-                    <div class="loading-dot"></div>
-                    <div class="loading-dot"></div>
-                    <div class="loading-dot"></div>
+                    <div style="display: flex; align-items: center; gap: 10px; color: #64748b;">
+                        <div style="display: flex; gap: 4px;">
+                            <div class="loading-dot"></div>
+                            <div class="loading-dot"></div>
+                            <div class="loading-dot"></div>
+                        </div>
+                        <span style="font-size: 13px;">${loadingText}...</span>
+                    </div>
                 </div>
             `;
             chatContainer.appendChild(loadingDiv);
