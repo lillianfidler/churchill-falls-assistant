@@ -1312,9 +1312,9 @@ Use the filter buttons below to focus on specific documents (MOU Only or 1969 Co
             if (content) {
                 // Convert markdown
                 let formattedContent = content
-                    .replace(/^### (.*$)/gim, '<h3 style="font-size: 16px; font-weight: 600; margin: 12px 0 8px 0; color: #3b82f6;">$1</h3>')
-                    .replace(/^## (.*$)/gim, '<h2 style="font-size: 18px; font-weight: 600; margin: 14px 0 10px 0; color: #3b82f6;">$1</h2>')
-                    .replace(/^# (.*$)/gim, '<h1 style="font-size: 20px; font-weight: 600; margin: 16px 0 12px 0; color: #3b82f6;">$1</h1>')
+                    .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+                    .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+                    .replace(/^# (.*$)/gim, '<h1>$1</h1>')
                     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
                     // Convert YouTube links to Videos page links
                     .replace(/\[([^\]]+)\]\((https?:\/\/(www\.)?youtube\.com\/[^\)]+|https?:\/\/youtu\.be\/[^\)]+)\)/g, '<a href="videos.html">$1</a>')
