@@ -1,522 +1,221 @@
-===================================
-HYDRO-QUÉBEC 2024 ANNUAL REPORT
-Key Information Summary for Churchill Falls Context
-===================================
+HYDRO-QUÉBEC ANNUAL REPORT 2024 - FACTUAL SUMMARY
+Facts as Reported by Hydro-Québec
 
-DOCUMENT: Hydro-Québec Annual Report 2024 - "An Ambitious Transition"
-PUBLISHED: 2025 (covering fiscal year 2024)
-SOURCE: Official corporate annual report
+Document: Hydro-Québec Annual Report 2024 - "An Ambitious Transition"
+Published: 2025 (covering fiscal year 2024)
+Source: Official corporate annual report
 
-NOTE: This summary extracts information relevant to Churchill Falls MOU context, including financial performance, electricity sales, pricing, generation, strategic initiatives, and specific references to Labrador/Churchill Falls.
+===== FINANCIAL RESULTS (2024) =====
 
----
+NET INCOME: $2.7 billion
+- 2023 comparison: $3.3 billion (decrease of $625 million)
+- Stated reason: "Mild temperatures in Quebec and below-normal water inflows for second year in a row"
 
-## EXECUTIVE SUMMARY: KEY STATISTICS (2024)
+TOTAL REVENUE: $16.113 billion
+- 2023 comparison: $16.086 billion (increase of $27 million)
+- Electricity sales: $15.578 billion
+- Other revenue: $535 million
 
-### Financial Performance
+INVESTMENTS IN QUEBEC: $6.0 billion
+- 2023 comparison: $4.9 billion (increase of $1.1 billion, +20%)
+- Purpose stated: Generation, transmission, distribution facilities
 
-**Net Income:** $2.7 billion (2024)
-- **Comparison:** $3.3 billion (2023) - decrease of $625 million
-- **Reason for decrease:** Mild temperatures in Quebec and below-normal water inflows for second year in a row
+CONTRIBUTION TO QUEBEC GOVERNMENT: $4.0 billion
+- Net income: $2.7 billion
+- Water-power royalties: $0.7 billion
+- Public utilities tax: $0.3 billion
+- Guarantee fees related to debt: $0.2 billion
+- Contributions to government funds/agencies: $0.1 billion
 
-**Total Revenue:** $16.113 billion (2024)
-- **Comparison:** $16.086 billion (2023) - increase of $27 million
-- **Electricity sales:** $15.578 billion
-- **Other revenue:** $535 million
+===== ELECTRICITY SALES (2024) =====
 
-**Investments in Quebec:** $6.0 billion (2024)
-- **Comparison:** $4.9 billion (2023) - increase of $1.1 billion (+20%)
-- **Purpose:** Generation, transmission, distribution facilities
+TOTAL ELECTRICITY SALES: 192.3 TWh
 
-**Contribution to Quebec Government Revenue:** $4.0 billion (2024)
-- **Breakdown:**
-  - Net income: $2.7 billion
-  - Water-power royalties: $0.7 billion
-  - Public utilities tax: $0.3 billion
-  - Guarantee fees related to debt: $0.2 billion
-  - Contributions to government funds and agencies: $0.1 billion
+SALES IN QUEBEC: 177.2 TWh
+- 2023 comparison: 177.3 TWh (virtually identical)
+- Revenue: $13.515 billion (increase of $564 million from 2023)
 
-### Electricity Sales
+SALES OUTSIDE QUEBEC (EXPORTS): 15.1 TWh
+- Revenue: $2.365 billion
+- Average export price: 9.9¢/kWh
+- 2023 comparison: Revenue decreased by $866 million
 
-**Total Electricity Sales:** 192.3 TWh (2024)
+BREAKDOWN OF QUEBEC SALES BY SEGMENT:
+- Residential: 38% (~67.3 TWh)
+- Large industrial: 31% (~54.9 TWh)
+- Commercial, institutional, small industrial: 27% (~47.8 TWh)
+- Other: 4% (~7.1 TWh)
 
-**Sales in Quebec:** 177.2 TWh (2024)
-- **Comparison:** 177.3 TWh (2023) - virtually identical
-- **Revenue:** $13.515 billion (increase of $564 million from 2023)
+===== ELECTRICITY PRICING (2024) =====
 
-**Sales Outside Quebec (Exports):** 15.1 TWh (2024)
-- **Revenue:** $2.365 billion
-- **Average export price:** **9.9¢/kWh**
-- **Note:** Revenue decreased by $866 million compared to 2023
+RESIDENTIAL RATE (QUEBEC): 8.05¢/kWh
+- HQ states: "The lowest in North America"
 
-### Electricity Pricing
+AVERAGE EXPORT PRICE: 9.9¢/kWh
 
-**Residential Rate (Quebec):** 8.05¢/kWh
-- **Status:** "The lowest in North America"
-
-**Average Price on External Markets:** 9.9¢/kWh (2024)
-
-**Rate Indexations (April 1, 2024):**
-- Domestic rates (residential and farm): Capped at 3%
+RATE INDEXATIONS (April 1, 2024):
+- Domestic rates (residential/farm): Capped at 3%
 - Business customer rates: Increased by 5.1%
 - Large-power industrial rate (Rate L): Increased by 3.3%
 
----
+===== CHURCHILL FALLS REFERENCES =====
 
-## BREAKDOWN OF ELECTRICITY SALES IN QUEBEC BY SEGMENT (2024)
+BOARD CHAIR STATEMENT (Manon Brouillette):
+"In addition, we gave the green light to the non-binding agreement in principle for hydroelectric generation in Labrador, signed in December."
 
-**Total: 177.2 TWh**
+CEO STATEMENT (Michael Sabia):
+"Our collaborative approach extends beyond Quebec itself. The memorandum of understanding signed with our neighbours in Newfoundland and Labrador provides an outline of the new agreement that will replace the outdated agreement for Churchill Falls generating station, which has been the source of much discontent for Newfoundlanders and Labradorians.
 
-1. **Residential:** 38% (~67.3 TWh)
-2. **Large industrial:** 31% (~54.9 TWh)
-3. **Commercial, institutional and small industrial:** 27% (~47.8 TWh)
-4. **Other:** 4% (~7.1 TWh)
+The agreement lays the groundwork for a win-win partnership that will contribute to Québec's energy security for the next 50 years at competitive prices, while also providing our partners with new opportunities and benefits."
 
----
+===== INVESTMENT BREAKDOWN (2024) =====
 
-## CHURCHILL FALLS / LABRADOR REFERENCES
+TOTAL INVESTMENTS: $6.0 billion
 
-### Board Chair's Message (Manon Brouillette)
+Large-Scale Projects: $3.6 billion
+- Purpose stated: Long-term asset operability, enhance grid robustness, modernize equipment, replace end-of-life equipment
 
-**Key Statement:**
-"In addition, we gave the green light to the **non-binding agreement in principle for hydroelectric generation in Labrador, signed in December.**"
+Development Projects: $2.4 billion
+- Purpose stated: Capacity expansion, growth, increase generation capacity, handle growing customer base, increase energy exchange capacity with neighboring markets
 
-**Context:** Mentioned alongside other major 2024 Board approvals:
+SPECIFIC PROJECT INVESTMENTS:
+- Hertel-New York interconnection line: $0.7 billion
+  Purpose: Connect with Champlain Hudson Power Express line to deliver electricity into New York City
+- Appalaches-Maine interconnection line: $0.3 billion
+  Purpose: Part of new 1,200-MW interconnection between Quebec and New England
+- Transmission substations and lines: $2.0 billion
+- Dams and hydroelectric generating stations: $1.0 billion
+- Growth in customer base: $0.7 billion
+- Distribution asset sustainment: $0.5 billion
+- Computer and telecommunications equipment: $0.3 billion
+- Other: $0.5 billion
+
+===== OPERATIONAL PERFORMANCE (2024) =====
+
+SERVICE QUALITY:
+- Average outage duration: Dropped by over 50% (compared to 2023)
+- Connection-related work requests: Average wait time decreased by 20%
+
+ENERGY EFFICIENCY:
+- Energy savings: Increased by over 30% (compared to 2023)
+- Stated impact: "Kilowatt-hours saved will allow Quebec to meet growth in electricity demand with fewer new facilities, positively impacting rates"
+
+===== FACTORS AFFECTING 2024 PERFORMANCE =====
+
+TEMPERATURE IMPACT:
+- Effect on sales: -1.2 TWh or -$107 million (compared to 2023)
+- HQ states: "2024 temperatures in Quebec were warmest on record"
+- Winter 2023-2024: "For almost 90% of days, temperatures were above climate normals"
+- First quarter: Decrease of 1.5 TWh or $135 million
+- February: "On average 4°C higher than previous year"
+- Fourth quarter: Slightly colder than 2023, increase of 0.4 TWh or $40 million
+- Note from report: "Heating accounts for vast majority of electricity consumption during winter months"
+
+WATER INFLOW:
+- Status: "Below-normal natural water inflows for second year in a row"
+- Stated impact: "Contributed significantly to decline in net income"
+
+BASELOAD DEMAND:
+- Increase: +1.1 TWh or +$118 million
+- Factors stated: Increased residential energy needs, growth in commercial/institutional/small industrial segment, demographic change leading to growth in customer accounts
+- Note: Leap year 2024 (February 29) provided additional day of sales
+
+RATE INDEXATIONS:
+- Revenue effect: +$508 million
+
+ALUMINUM PRICES:
+- Revenue effect: +$53 million from electricity sales in Quebec
+- Stated reason: "Aluminum prices affect revenue from some special contracts"
+
+===== STRATEGIC INITIATIVES =====
+
+ACTION PLAN 2035:
+- Launched: November 2023
+- Purpose stated: "Energy transition - replacing polluting fossil fuels with renewable energy"
+- Impact noted: "Significant increase in electricity demand, requiring more generation, more investment and wiser consumption"
+
+2024 STRATEGIC DOCUMENTS LAUNCHED:
 - Wind Power Development Strategy
-- Strategy for Economic Reconciliation and to Strengthen Relations with First Nations and Inuit
-- Project to upgrade main transmission system
-- Three partnerships for wind power development
-
-### CEO's Message (Michael Sabia)
-
-**Key Statement:**
-"Our collaborative approach extends beyond Quebec itself. **The memorandum of understanding signed with our neighbours in Newfoundland and Labrador provides an outline of the new agreement that will replace the outdated agreement for Churchill Falls generating station, which has been the source of much discontent for Newfoundlanders and Labradorians.**
-
-**The agreement lays the groundwork for a win-win partnership that will contribute to Québec's energy security for the next 50 years at competitive prices**, while also providing our partners with new opportunities and benefits."
-
-**NOTE:** This is a significant public acknowledgment by Hydro-Québec that:
-1. The existing Churchill Falls agreement is "outdated"
-2. The existing agreement has been "the source of much discontent" for Newfoundland and Labrador
-3. The new MOU is intended as a "win-win partnership"
-4. Focus on Quebec's "energy security for the next 50 years"
-5. Commitment to "competitive prices" and "new opportunities and benefits" for NL
-
----
-
-## ACTION PLAN 2035: TOWARDS A DECARBONIZED AND PROSPEROUS QUEBEC
-
-### Overview
-
-**Launched:** November 2023
-
-**Purpose:** Energy transition - replacing polluting fossil fuels with renewable energy
-
-**Impact:** "Significant increase in electricity demand, requiring more generation, more investment and wiser consumption"
-
-### 2024 Implementation Progress
-
-**Board of Directors actions:**
-- Reviewed operations
-- Aligned committee mandates with five main priorities in the Plan
-- Added new board members including first Indigenous person (Victoria LaBillois, Listuguj Mi'gmaq First Nation)
-
-**Public engagement:**
-- Initiated dialogue with public, municipalities, stakeholders
-- Gathered ideas and expectations
-- Influenced environmental, social, governance visions
-- Affected practices in customer interaction and community relations
-
-**Key strategic documents launched (2024):**
-- Wind Power Development Strategy
-- Three partnership agreements (zones with wind power potential up to 5,000 MW)
+- Three partnership agreements (wind power potential up to 5,000 MW)
 - Sustainable Development Plan
 - Plan to upgrade main transmission system
 - Strategy for Economic Reconciliation and to Strengthen Relations with First Nations and Inuit
 
----
+WIND POWER PARTNERSHIPS (2024):
+Three partnership agreements:
+- Wocawson zone (Bas-Saint-Laurent)
+- Chamouchouane zone (Saguenay-Lac-Saint-Jean)
+- Nutinamu-Chauvin zone (Saguenay-Lac-Saint-Jean)
+Total potential: Up to 5,000 MW of wind power
 
-## 2024 INVESTMENTS BREAKDOWN
+===== INDIGENOUS RELATIONS =====
 
-**Total: $6.0 billion**
-
-### Large-Scale Projects ($3.6 billion)
-**Purpose:** Long-term asset operability
-- Enhance grid robustness
-- Modernize equipment
-- Replace end-of-life equipment
-
-### Development Projects ($2.4 billion)
-**Purpose:** Capacity expansion and growth
-- Increase generation capacity
-- Handle growing customer base in Quebec
-- Increase energy exchange capacity with neighboring markets
-
-**Specific ongoing projects:**
-- **Hertel-New York interconnection line:** $0.7 billion - to connect with Champlain Hudson Power Express line to deliver electricity into New York City
-- **Appalaches-Maine interconnection line:** $0.3 billion - part of larger project to build new 1,200-MW interconnection between Quebec and New England
-- **Transmission substations and lines:** $2.0 billion
-- **Dams and hydroelectric generating stations:** $1.0 billion
-- **Growth in customer base:** $0.7 billion
-- **Distribution asset sustainment:** $0.5 billion
-- **Computer and telecommunications equipment:** $0.3 billion
-- **Other:** $0.5 billion
-
----
-
-## 2024 OPERATIONAL PERFORMANCE
-
-### Service Quality Improvements
-
-**Average outage duration:** Dropped by over 50% (compared to 2023)
-
-**Connection-related work requests:** Average wait time decreased by 20% (for three most common types)
-
-### Energy Efficiency Initiatives
-
-**Energy savings increase:** Over 30% (compared to 2023)
-
-**Impact:** Kilowatt-hours saved will allow Quebec to meet growth in electricity demand with fewer new facilities, positively impacting rates
-
-**Methods:**
-- Improved offerings and customer support
-- Advertising campaigns
-
----
-
-## FACTORS AFFECTING 2024 PERFORMANCE
-
-### Temperature Impact (Negative)
-
-**Effect on sales:** -1.2 TWh or -$107 million (compared to 2023)
-
-**Key fact:** 2024 temperatures in Quebec were warmest on record
-
-**Winter 2023-2024:** For almost 90% of days, temperatures were above climate normals
-- **First quarter:** Most pronounced impact - decrease of 1.5 TWh or $135 million
-- **February:** On average 4°C higher than previous year
-- **Fourth quarter:** Slightly colder than 2023 - increase of 0.4 TWh or $40 million
-
-**Note:** Heating accounts for vast majority of electricity consumption during winter months, so temperature rises have unfavorable impact on sales
-
-### Water Inflow (Negative)
-
-**Status:** Below-normal natural water inflows for second year in a row
-
-**Impact:** Contributed significantly to decline in net income
-
-### Baseload Demand (Positive)
-
-**Increase:** +1.1 TWh or +$118 million
-
-**Factors:**
-- Increased energy needs in residential segment
-- Growth in commercial, institutional, and small industrial segment
-- Demographic change leading to growth in customer accounts
-- **Note:** Mitigated by slight downturn in demand in several large industrial customer segments
-
-**Additional factor:** 2024 was leap year (February 29) - additional day of sales
-
-### Rate Indexations (Positive)
-
-**Effect:** +$508 million in revenue
-
-**April 1, 2023 and April 1, 2024 indexations:**
-- Domestic rates: Capped at 3%
-- Business customer rates: +5.1%
-- Large-power industrial rate (Rate L): +3.3%
-
-### Aluminum Prices (Positive)
-
-**Effect:** +$53 million in revenue from electricity sales in Quebec
-
-**Reason:** Aluminum prices affect revenue from some special contracts
-
----
-
-## EXPORT MARKET PERFORMANCE
-
-### 2024 Export Sales
-
-**Volume:** 15.1 TWh
-**Revenue:** $2.365 billion
-**Average price:** 9.9¢/kWh
-
-### Comparison to 2023
-
-**Revenue change:** -$866 million (significant decrease)
-
-**Context:** 2023 had "record levels" for average price obtained on external markets due to "skilful deployment of hedging strategy"
-
-**Implication:** 2024 represented a return to more normal export pricing after exceptional 2023 performance
-
----
-
-## STRATEGIC PARTNERSHIPS AND INDIGENOUS RELATIONS
-
-### Strategy for Economic Reconciliation (December 2024)
-
-**Purpose:**
-- Create opportunities for Indigenous communities to actively participate as full partners in large-scale infrastructure projects
+STRATEGY FOR ECONOMIC RECONCILIATION (December 2024):
+Purpose stated:
+- Create opportunities for Indigenous communities to participate as full partners in large-scale infrastructure projects
 - Enable communities to gain tangible and sustainable benefits
 - Make Hydro-Québec more open and inclusive
 - Ensure Indigenous people play greater role at all levels
 
-### Wind Power Partnerships (2024)
+BOARD APPOINTMENT:
+Victoria LaBillois (Listuguj Mi'gmaq First Nation) appointed as first Indigenous person on Board of Directors in 2024
 
-**Three partnership agreements:**
-- Wocawson zone (Bas-Saint-Laurent)
-- Chamouchouane and Nutinamu-Chauvin zones (Saguenay-Lac-Saint-Jean)
+===== LEADERSHIP =====
 
-**Total potential:** Up to 5,000 MW of wind power
+BOARD CHAIR: Manon Brouillette
 
----
+PRESIDENT AND CEO: Michael Sabia
 
-## INTERCONNECTIONS AND EXPORT INFRASTRUCTURE
+2024 NEW BOARD MEMBERS:
+- Victoria LaBillois (Listuguj Mi'gmaq First Nation) - First Indigenous Board member
+- Jean Marc Lechene (Paris, France) - Expert in global wind energy sector, first Director from abroad
+- Jonathan Gignac - Deputy Minister of Economy, Innovation and Energy
 
-### Major Transmission Projects
+===== EXPORT INFRASTRUCTURE =====
 
-**Hertel-New York Interconnection:**
+HERTEL-NEW YORK INTERCONNECTION:
 - Connects with Champlain Hudson Power Express line
 - Delivers electricity directly into New York City
-- Investment: $0.7 billion in 2024
+- 2024 investment: $0.7 billion
 
-**Appalaches-Maine Interconnection:**
+APPALACHES-MAINE INTERCONNECTION:
 - Part of new 1,200-MW interconnection between Quebec and New England
-- Investment: $0.3 billion in 2024
+- 2024 investment: $0.3 billion
 
-### Strategic Importance
+===== KEY STATISTICS SUMMARY =====
 
-**Purpose:** Increase energy exchange capacity with neighboring markets
-
-**Context:** Critical for export sales strategy while maintaining Quebec's energy security
-
----
-
-## WATER-POWER ROYALTIES
-
-**2024 Payment to Quebec Government:** $0.7 billion
-
-**Context for Churchill Falls:**
-- This represents Hydro-Québec's water-power royalty payments to Quebec government
-- Dr. Doug May's analysis noted Quebec charges $9 per MWh (0.9¢/kWh) for water royalties
-- In contrast, Churchill Falls pays Newfoundland government only 0.025¢/kWh in water royalties
-- **Disparity:** Quebec receives 36× more per kWh in water royalties than Newfoundland
-
-**Significance:** Water royalties are significant revenue source for Quebec government from Hydro-Québec operations
-
----
-
-## ORGANIZATIONAL LEADERSHIP
-
-### Board of Directors
-
-**Chair:** Manon Brouillette
-
-**2024 New Members:**
-- **Victoria LaBillois** (Listuguj Mi'gmaq First Nation) - First Indigenous person on Board
-- **Jean Marc Lechene** (Paris, France) - Expert in global wind energy sector - First Director from abroad
-- **Jonathan Gignac** - Deputy Minister of Economy, Innovation and Energy
-
-**Departing members (mandates ended):**
-- David Bahan
-- Geneviève Biron
-- Dominique Fagnoule
-- Hélène V. Gagnon
-
-### Executive Leadership
-
-**President and Chief Executive Officer:** Michael Sabia
-
----
-
-## KEY THEMES AND PRIORITIES
-
-### Three Foundational Words (CEO Sabia)
-
-1. **Listening** - Public dialogue on Action Plan 2035
-2. **Collaboration** - Working with stakeholders, communities
-3. **Partnership** - Including Churchill Falls MOU with Newfoundland and Labrador
-
-### Five Main Priorities (Action Plan 2035)
-
-**Note:** Specific priorities not detailed in extracted sections, but Board aligned committee mandates with these priorities
-
-### Service Mission
-
-**Core commitment:** Improve quality of electricity service to Quebec customers
-
-**2024 achievements:**
-- 50% reduction in average outage duration
-- 20% reduction in connection-related work wait times
-- 30% increase in energy efficiency savings
-
----
-
-## ECONOMIC IMPACT
-
-### Direct Benefits to Quebec
-
-**Total contribution to Quebec economy (2024):** $10.0 billion combined
-- $4.0 billion contribution to Quebec government revenue
-- $6.0 billion investments in Quebec
-
-**Employment and spinoffs:** Report notes "major economic spinoffs throughout the province"
-
-**Public finances role:** "Important role in public finances, benefiting all Quebecers"
-
----
-
-## COMPARATIVE ANALYSIS: RELEVANT TO CHURCHILL FALLS CONTEXT
-
-### Export Pricing
-
-**Hydro-Québec average export price (2024):** 9.9¢/kWh
-
-**Dr. May's analysis references:**
-- July 2025 exports to New England: 19.24¢/kWh
-- Export prices ranging 14-26¢/kWh at various times
-- Note: Annual average (9.9¢) is lower than peak prices, consistent with seasonal variation
-
-### Quebec Domestic Pricing
-
-**Residential rate:** 8.05¢/kWh (2024)
-
-**Dr. May's analysis:**
-- Cited Quebec residential price as 8.30¢/kWh
-- Slight difference may be due to specific rate category or fees
-- Confirms Quebec has lowest rates in North America
-
-### Churchill Falls Cost to Hydro-Québec
-
-**Not explicitly stated in annual report, but from Dr. May's analysis:**
-- Effective cost: 0.308¢/kWh
-- Nominal cost: 0.475¢/kWh
-
-**Comparison to Hydro-Québec's own costs:**
-- La Grande complex cost: 5-7¢/kWh (per Dr. May)
-- Churchill Falls is 17-24× cheaper than Quebec's own generation
-
-### Strategic Value Confirmation
-
-**CEO Sabia's statement confirms:**
-- Churchill Falls contributes to "Québec's energy security for the next 50 years"
-- Commitment to "competitive prices"
-- Recognition of value to Quebec's electricity supply
-
----
-
-## CHALLENGES AND CONTEXT
-
-### Climate Impacts
-
-**2024 experience:**
-- Warmest temperatures on record in Quebec
-- Below-normal water inflows (second consecutive year)
-- Combined effect: Reduced sales volume and generation capacity
-
-**Implication:** Climate variability becoming significant factor in Hydro-Québec operations and planning
-
-### Demand Growth vs. Supply
-
-**Energy transition challenge:**
-- Significant increase in electricity demand expected
-- Need for more generation capacity
-- Need for more investment
-- Need for wiser consumption
-
-**Strategic response:**
-- $6.0 billion annual investments
-- Wind power development (5,000 MW potential)
-- Hydroelectric refurbishment projects
-- Interconnections with neighboring markets
-- Churchill Falls MOU for long-term supply security
-
-### Rate Pressure Management
-
-**Balancing act:**
-- Maintaining lowest rates in North America (8.05¢/kWh residential)
-- Funding $6.0 billion annual investments
-- Meeting growing demand
-- Contributing $4.0 billion to Quebec government
-- Managing climate impacts (temperature, water inflows)
-
-**Energy efficiency benefit:** Savings allow meeting demand growth "with fewer new facilities, which will have positive impact on rates"
-
----
-
-## TRANSPARENCY AND ACKNOWLEDGMENTS
-
-### Unusual Candor in CEO Message
-
-**Significant that CEO Sabia publicly acknowledged:**
-
-1. **"Outdated agreement"** - Rare admission that existing Churchill Falls contract is problematic
-2. **"Source of much discontent"** - Recognition of Newfoundland and Labrador's grievances
-3. **"Win-win partnership"** - Positioning new MOU as equitable solution
-4. **"New opportunities and benefits"** - Commitment to better terms for NL
-
-**Context:** This level of acknowledgment in official annual report is unusual and significant
-
-**Implication:** Hydro-Québec positioning new arrangement as fundamentally different from 1969 contract
-
----
-
-## RELEVANT STATISTICS SUMMARY
-
-**For quick reference in Churchill Falls AI agent responses:**
-
-### Financial (2024)
+Financial (2024):
 - Net income: $2.7 billion
 - Total revenue: $16.1 billion
 - Investments: $6.0 billion
 - Government contribution: $4.0 billion
 - Water-power royalties paid: $0.7 billion
 
-### Sales (2024)
-- Total electricity sales: 192.3 TWh
-- Quebec sales: 177.2 TWh
-- Export sales: 15.1 TWh
+Sales (2024):
+- Total: 192.3 TWh
+- Quebec: 177.2 TWh
+- Exports: 15.1 TWh
 
-### Pricing (2024)
+Pricing (2024):
 - Residential rate: 8.05¢/kWh
 - Average export price: 9.9¢/kWh
 
-### Capacity/Infrastructure (2024)
+Infrastructure (2024):
 - Transmission investment: $2.0 billion
-- New interconnection capacity planned: 1,200 MW (Quebec-New England)
+- New interconnection capacity (Quebec-New England): 1,200 MW planned
 - Wind power potential (partnerships): 5,000 MW
 
----
+===== DOCUMENT INFORMATION =====
 
-## DOCUMENT CONTEXT
+Title: "An Ambitious Transition"
+Fiscal Year Covered: 2024
+Publication Date: Q1 2025
+Legal Deposit: Bibliothèque et Archives nationales du Québec
 
-**Publication:** Hydro-Québec Annual Report 2024
-**Title:** "An Ambitious Transition"
-**Year Covered:** Fiscal year 2024
-**Published:** Q1 2025
-**Legal Deposit:** Bibliothèque et Archives nationales du Québec
-
-**ISBN:**
+ISBN Numbers:
 - PDF English: 978-2-555-00477-1
 - PDF French: 978-2-555-00475-7
 - Print English: 978-2-555-00476-4
 - Print French: 978-2-555-00474-0
 
----
-
-## KEY TAKEAWAYS FOR CHURCHILL FALLS AI AGENT
-
-1. **Official recognition** of Churchill Falls issues in Hydro-Québec's own annual report
-2. **Public commitment** to "win-win partnership" replacing "outdated agreement"
-3. **Strategic importance** confirmed: "energy security for next 50 years"
-4. **Financial context:** HQ's strong financial position ($2.7B net income, $4.0B to government)
-5. **Export strategy:** Average 9.9¢/kWh export price, with significant export infrastructure investments
-6. **Domestic pricing:** 8.05¢/kWh residential rate maintained as "lowest in North America"
-7. **Growth imperative:** $6.0B annual investments to meet increasing demand from energy transition
-8. **Climate challenges:** Temperature and water inflow variability affecting operations
-9. **Indigenous partnerships:** New commitment to economic reconciliation and full partnerships
-10. **Interconnection focus:** Major investments in transmission to New York and New England markets
-
----
-
-**NOTE:** This summary extracts information specifically relevant to Churchill Falls MOU context. Full annual report contains extensive additional detail on financial statements, corporate governance, facility operations, and other topics not directly relevant to Churchill Falls discussions.
+NOTE: This summary contains only factual information as stated in Hydro-Québec's 2024 Annual Report. No analysis or interpretation included.

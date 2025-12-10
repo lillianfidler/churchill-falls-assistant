@@ -482,7 +482,7 @@ TREAT THIS AS ABSOLUTE: You cannot make comparisons or discuss changes because y
 
         // Call Claude API with prompt caching
         const response = await anthropic.messages.create({
-            model: 'claude-opus-4-20250514',
+            model: 'claude-sonnet-4-5-20250929',
             max_tokens: 4096,
             system: [
                 {
