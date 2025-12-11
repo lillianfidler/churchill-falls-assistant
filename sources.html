@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sources & Videos - Churchill Falls Information Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 12px 12px 0 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            color: #1e3c72;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #64748b;
+            font-size: 16px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #1e3c72;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 10px 18px;
+            background: #f1f5f9;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .nav-links a:hover {
+            background: #e0e7ff;
+            transform: translateY(-1px);
+        }
+
+        .content-section {
+            background: white;
+            padding: 40px 30px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .content-section:last-child {
+            border-radius: 0 0 12px 12px;
+        }
+
+        .content-section h2 {
+            color: #1e3c72;
+            font-size: 24px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3b82f6;
+        }
+
+        .content-section h3 {
+            color: #1e3c72;
+            font-size: 18px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content-section p {
+            color: #475569;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .content-section ul {
+            color: #475569;
+            line-height: 1.8;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .content-section li {
+            margin-bottom: 10px;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .video-card {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .video-card h3 {
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .video-card p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .highlight-box {
+            background: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .document-list {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .document-list li {
+            margin-bottom: 12px;
+        }
+
+        .document-list strong {
+            color: #1e3c72;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .content-section {
+                padding: 25px 20px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Sources & Videos</h1>
+            <p>Complete reference library for the Churchill Falls Information Assistant</p>
+            <div class="nav-links">
+                <a href="index.html">← Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Dr. Doug May's Video Analysis Series</h2>
+            <p>Dr. Doug May is Professor Emeritus in the Department of Economics at Memorial University of Newfoundland and Labrador. His comprehensive 6-part video series provides an independent economic assessment of the December 2024 Churchill Falls MOU.</p>
+
+            <div class="highlight-box">
+                <p><strong>Note:</strong> All of Dr. May's video analyses and written documents are integrated into the assistant's knowledge base. You can ask questions about any aspect of his analysis through the chat interface.</p>
+            </div>
+
+            <div class="video-grid">
+                <div class="video-card">
+                    <h3>Video 1: Quebec's Emerging Electricity Shortage</h3>
+                    <p>Analysis of Quebec's electricity supply challenges and the context for the proposed MOU.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/QJWWpT7Ip_Q" title="Quebec's Emerging Electricity Shortage" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Video 2A: Electricity Pricing - Quebec's Costs</h3>
+                    <p>Examination of Quebec's electricity cost structure and pricing considerations.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/j2GWirWVg48" title="Electricity Pricing - Quebec's Costs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Video 2B: Electricity Pricing - Churchill Falls' Role</h3>
+                    <p>Analysis of Churchill Falls' position in electricity pricing discussions.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/MJ91O1W358E" title="Electricity Pricing - Churchill Falls' Role" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Video 3A: Hydro-Québec's Electricity Imports</h3>
+                    <p>Review of Hydro-Québec's electricity import patterns and implications.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/ToKebHmN16s" title="Hydro-Québec's Electricity Imports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Video 3B: Hydro-Québec's Electricity Exports</h3>
+                    <p>Analysis of Hydro-Québec's export market and revenue generation.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/ToKebHmN16s" title="Hydro-Québec's Electricity Exports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Video 4: Water Royalties and Resource Rents</h3>
+                    <p>Examination of water royalty structures and resource rent considerations.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/OFcA4-SlWTE" title="Water Royalties and Resource Rents" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Source Documents</h2>
+            <p>All documents below are integrated into the Churchill Falls Information Assistant's knowledge base. The assistant can answer questions, provide summaries, and make comparisons across all of these materials.</p>
+
+            <h3>Official Agreements and Documents</h3>
+            <div class="document-list">
+                <ul>
+                    <li><strong>December 12, 2024 Memorandum of Understanding (MOU)</strong> - The complete text of the proposed agreement between Newfoundland and Labrador and Quebec</li>
+                    <li><strong>1969 Churchill Falls Power Contract</strong> - The original agreement and its terms</li>
+                    <li><strong>2002 Gull Island Framework Agreement</strong> - Historical context for proposed developments</li>
+                    <li><strong>January 2025 NL Hydro MOU Documentation</strong> - Supporting provincial materials</li>
+                </ul>
+            </div>
+
+            <h3>Economic Analyses - Dr. Doug May</h3>
+            <div class="document-list">
+                <p><strong>Video Series Transcripts:</strong></p>
+                <ul>
+                    <li>Video 1: Quebec's Emerging Electricity Shortage (transcript)</li>
+                    <li>Video 2A: Electricity Pricing - Quebec's Costs (transcript)</li>
+                    <li>Video 2B: Electricity Pricing - Churchill Falls' Role (transcript)</li>
+                    <li>Video 3A: Hydro-Québec's Electricity Imports (transcript)</li>
+                    <li>Video 3B: Hydro-Québec's Electricity Exports (transcript)</li>
+                    <li>Video 4: Water Royalties and Resource Rents (transcript)</li>
+                </ul>
+                
+                <p><strong>Written Analyses:</strong></p>
+                <ul>
+                    <li>Assessment of Proposed Prices for Existing Power</li>
+                    <li>Assessment of the Proposed Projects (Gull Island, CF Expansion, CF Upgrade)</li>
+                    <li>Understanding Financial Concepts (Present Value, Discount Rates)</li>
+                    <li>Quebec's Electricity Supply Problem</li>
+                </ul>
+            </div>
+
+            <h3>Economic Analyses - Other Economists</h3>
+            <div class="document-list">
+                <ul>
+                    <li><strong>Wade Locke's Economic Assessment (2024)</strong> - Critical analysis of the MOU's economic implications for Newfoundland and Labrador</li>
+                    <li><strong>James Feehan's Academic Research</strong> - Historical and economic context of Churchill Falls agreements</li>
+                </ul>
+            </div>
+
+            <h3>Corporate and Government Reports</h3>
+            <div class="document-list">
+                <ul>
+                    <li><strong>Churchill Falls (Labrador) Corporation Annual Report 2024</strong> - Financial performance and operational data</li>
+                    <li><strong>Hydro-Québec Annual Report 2024</strong> - Financial results, operations, and strategic direction</li>
+                    <li><strong>Hydro-Québec Action Plan 2035</strong> - Strategic plan for decarbonization and capacity expansion</li>
+                    <li><strong>Newfoundland and Labrador Hydro Reports</strong> - Provincial utility operations and planning</li>
+                    <li><strong>Hydro-Québec Production and Import/Export Data</strong> - Operational statistics</li>
+                </ul>
+            </div>
+
+            <h3>Historical Documentation</h3>
+            <div class="document-list">
+                <ul>
+                    <li><strong>History of Churchill River Hydro Development (1949-2007)</strong> - Comprehensive historical overview of the project's development</li>
+                    <li>Historical contract analyses and government documents</li>
+                </ul>
+            </div>
+
+            <div class="highlight-box">
+                <p><strong>Using These Sources:</strong> Instead of reading through all these documents, ask the assistant questions. It will synthesize information across multiple sources, cite specific documents, and provide clear answers based on this complete reference library.</p>
+                <p style="margin-top: 15px;"><a href="index.html" style="color: #3b82f6; text-decoration: none; font-weight: 600;">← Return to Assistant to ask questions</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
