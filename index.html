@@ -257,6 +257,36 @@
             color: white;
         }
 
+        .landing-sources-highlight {
+            margin-top: 35px;
+            padding: 20px 30px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            text-align: center;
+        }
+
+        .landing-sources-highlight p {
+            color: #e0e7ff;
+            font-size: 15px;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .landing-sources-highlight a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+            padding-bottom: 2px;
+            transition: all 0.2s;
+        }
+
+        .landing-sources-highlight a:hover {
+            border-bottom-color: white;
+            color: #ffffff;
+        }
+
         /* Main Chat Interface */
         .chat-interface {
             display: none;
@@ -795,6 +825,16 @@
                 width: 100%;
             }
 
+            .landing-sources-highlight {
+                margin-top: 25px;
+                padding: 15px 20px;
+                font-size: 14px;
+            }
+
+            .landing-sources-highlight p {
+                font-size: 14px;
+            }
+
             .landing-filters {
                 padding: 15px;
             }
@@ -837,16 +877,18 @@
             <p class="landing-subtitle">Your comprehensive resource for understanding the Churchill Falls hydroelectric project and agreements</p>
             
             <div class="landing-info">
-                <p>This assistant provides accurate, source-based information about the Churchill Falls hydroelectric project and the proposed December 2024 Memorandum of Understanding (MOU) between Newfoundland and Labrador and Quebec.</p>
+                <p>This assistant focuses on Dr. Doug May's analysis of Quebec's emerging electricity picture and Churchill Falls' contribution. Doug, along with Wade Locke and other economists, provide their assessments of the MOU and its impacts on Newfoundland and Labrador and Quebec. Cited reference materials are separately available.</p>
                 
-                <p><strong>I can help you understand:</strong></p>
+                <p><strong>It can help you understand:</strong></p>
                 <ul>
-                    <li>Proposed pricing structures and economic impacts</li>
-                    <li>The December 2024 MOU terms and conditions</li>
-                    <li>Historical context and the original 1969 contract</li>
-                    <li>Economic analyses by Dr. Doug May and other researchers</li>
-                    <li>Proposed development projects (Gull Island, CF Expansion, CF Upgrade)</li>
+                    <li>Why Quebec needs security of electricity supply</li>
+                    <li>Is the MOU the best agreement possible and why not</li>
+                    <li>The history of similar agreements to the MOU and attempts at a joint agreement</li>
+                    <li>What don't we know from the MOU</li>
+                    <li>How could we calculate the value of the water in the Churchill River</li>
                 </ul>
+                
+                <p><strong>How it works:</strong> Instead of watching hours of videos and reading long, complex documents, ask your questions and get concise, easy-to-read answers. The full videos and documents are <a href="sources.html" style="color: #3b82f6; text-decoration: underline;">available here</a> if you want to dive deeper.</p>
             </div>
             
             <div class="landing-input-box">
@@ -856,32 +898,17 @@
                     <input 
                         type="text" 
                         id="landingInput"
-                        placeholder="e.g., What are the key terms of the proposed MOU?"
+                        placeholder="e.g., Why does Quebec need Churchill Falls power?"
                         autocomplete="off"
                         aria-label="Ask your first question about Churchill Falls"
                     >
                     <button id="landingButton" aria-label="Send question">Ask →</button>
                 </div>
-
-                <div class="landing-filters-inline">
-                    <p class="landing-filters-label">Focus on specific documents:</p>
-                    <div class="landing-checkbox-group">
-                        <label class="landing-checkbox">
-                            <input type="checkbox" id="landingMouOnly">
-                            <span><strong>December 2024 MOU Only</strong> - Reference only the official proposed agreement</span>
-                        </label>
-                        <label class="landing-checkbox">
-                            <input type="checkbox" id="landing1969Only">
-                            <span><strong>Original 1969 Contract Only</strong> - Reference only the historic Churchill Falls Power Contract</span>
-                        </label>
-                    </div>
-                    <p class="landing-filters-note">Leave both unchecked for comprehensive answers drawing from all available sources including economic analyses, government documents, and corporate reports. <a href="about.html">See full list of sources →</a></p>
-                </div>
             </div>
 
-            <nav class="landing-nav">
-                <a href="about.html">About & Sources</a>
-            </nav>
+            <div class="landing-sources-highlight">
+                <p>All source materials for this assistant can be found on the <a href="sources.html">Sources & Videos</a> page.</p>
+            </div>
         </div>
     </div>
 
@@ -912,9 +939,9 @@
                 <div class="sidebar-brand">Churchill Falls Information Assistant</div>
                 <div class="sidebar-nav">
                     <a href="#" id="homeLinkReset">Home (Start Fresh)</a>
-                    <a href="about.html">About & Sources</a>
+                    <a href="about.html">About</a>
+                    <a href="sources.html">Sources & Videos</a>
                     <a href="contact.html">Contact</a>
-                    <a href="videos.html">Videos</a>
                 </div>
             </nav>
         </aside>
@@ -937,12 +964,6 @@
                             autocomplete="off"
                         >
                         <button id="sendButton" type="button" aria-label="Send question">Ask →</button>
-                    </div>
-
-                    <div class="source-filters">
-                        <span class="source-filters-label">Focus on specific document:</span>
-                        <button type="button" class="filter-toggle" data-filter="mou" aria-pressed="false">MOU Only</button>
-                        <button type="button" class="filter-toggle" data-filter="historical" aria-pressed="false">1969 Contract</button>
                     </div>
                 </div>
             </div>
@@ -996,54 +1017,6 @@
             document.getElementById('sendButton').addEventListener('click', sendMessage);
             document.getElementById('newChatBtn').addEventListener('click', createNewChat);
             
-            // Filter toggles - track previous state and clear chat when changed
-            let previousFilters = '';
-            
-            document.querySelectorAll('.filter-toggle').forEach(button => {
-                button.addEventListener('click', function() {
-                    // Get current filter state before change
-                    const currentFilters = Array.from(document.querySelectorAll('.filter-toggle.active'))
-                        .map(btn => btn.dataset.filter)
-                        .join(',');
-                    
-                    // Toggle the clicked button
-                    this.classList.toggle('active');
-                    this.setAttribute('aria-pressed', this.classList.contains('active'));
-                    
-                    // Get new filter state after change
-                    const newFilters = Array.from(document.querySelectorAll('.filter-toggle.active'))
-                        .map(btn => btn.dataset.filter)
-                        .join(',');
-                    
-                    // If filters actually changed AND there are messages visible
-                    const chatContainer = document.getElementById('chatContainer');
-                    const hasMessages = chatContainer && chatContainer.children.length > 0;
-                    
-                    if (currentFilters !== newFilters && hasMessages) {
-                        const session = getCurrentSession();
-                        if (session && (session.messages.length > 0 || session.conversationHistory.length > 0)) {
-                            // Create a NEW chat session to preserve the old one
-                            createNewChat();
-                            
-                            // Clear the display
-                            clearChatContainer();
-                            
-                            // Add a prominent notice
-                            const noticeDiv = document.createElement('div');
-                            noticeDiv.style.cssText = 'text-align: center; padding: 30px 20px; color: #3b82f6; font-size: 14px; font-weight: 500; background: #eff6ff; border-radius: 8px; margin: 20px auto; max-width: 600px;';
-                            noticeDiv.innerHTML = '🔄 Filter changed - Starting fresh conversation<br><span style="font-size: 12px; color: #64748b; font-weight: 400;">Previous messages are saved in the sidebar</span>';
-                            chatContainer.appendChild(noticeDiv);
-                            
-                            // Update the chat history display
-                            updateChatHistory();
-                        }
-                    }
-                    
-                    // Update previous state
-                    previousFilters = newFilters;
-                });
-            });
-            
             // Mobile menu
             document.getElementById('mobileMenuBtn').addEventListener('click', toggleMobileMenu);
             document.getElementById('mobileOverlay').addEventListener('click', closeMobileMenu);
@@ -1061,29 +1034,9 @@
             const message = input.value.trim();
             if (!message) return;
             
-            // Check which filters were selected on landing page
-            const mouOnly = document.getElementById('landingMouOnly').checked;
-            const contract1969Only = document.getElementById('landing1969Only').checked;
-            
             // Create first chat session
             createNewChat();
             showChatInterface();
-            
-            // Apply filters to chat interface if selected
-            if (mouOnly) {
-                const mouButton = document.querySelector('.filter-toggle[data-filter="mou"]');
-                if (mouButton) {
-                    mouButton.classList.add('active');
-                    mouButton.setAttribute('aria-pressed', 'true');
-                }
-            }
-            if (contract1969Only) {
-                const historicalButton = document.querySelector('.filter-toggle[data-filter="historical"]');
-                if (historicalButton) {
-                    historicalButton.classList.add('active');
-                    historicalButton.setAttribute('aria-pressed', 'true');
-                }
-            }
             
             // Send the message
             document.getElementById('userInput').value = message;
@@ -1206,7 +1159,7 @@
 
 I have access to official documents, economic analyses by Dr. Doug May and other researchers, historical agreements, and corporate reports.
 
-Use the filter buttons below to focus on specific documents (MOU Only or 1969 Contract), or leave unchecked for comprehensive answers. Visit the [About & Sources](about.html) page for the complete list of materials.`;
+Visit the [Sources & Videos](sources.html) page for the complete list of materials.`;
             
             addMessage('assistant', welcomeText, false);
         }
@@ -1219,17 +1172,6 @@ Use the filter buttons below to focus on specific documents (MOU Only or 1969 Co
 
             const session = getCurrentSession();
             if (!session) return;
-
-            // Collect active filters
-            const checkedFilters = Array.from(document.querySelectorAll('.filter-toggle.active'))
-                .map(button => button.dataset.filter);
-            
-            const mode = checkedFilters.length === 0 ? 'comprehensive' : 'filtered';
-            const sourceFilters = checkedFilters.join(',');
-            
-            // Debug logging
-            console.log('Active filters:', sourceFilters);
-            console.log('Filter buttons:', document.querySelectorAll('.filter-toggle.active'));
 
             // Update chat title if it's the first real message
             if (session.title === 'New Chat' && session.conversationHistory.length === 0) {
@@ -1260,8 +1202,6 @@ Use the filter buttons below to focus on specific documents (MOU Only or 1969 Co
                         },
                         body: JSON.stringify({
                             message: message,
-                            mode: mode,
-                            sourceFilters: sourceFilters,
                             conversationHistory: session.conversationHistory
                         })
                     });
@@ -1433,21 +1373,6 @@ Use the filter buttons below to focus on specific documents (MOU Only or 1969 Co
             loadingDiv.id = loadingId;
             loadingDiv.className = 'message assistant';
             
-            // Determine which documents are being analyzed based on active filters
-            const activeFilters = Array.from(document.querySelectorAll('.filter-toggle.active'))
-                .map(btn => btn.dataset.filter);
-            
-            let loadingText = 'Analyzing documents';
-            if (activeFilters.includes('mou') && activeFilters.includes('historical')) {
-                loadingText = 'Analyzing MOU and 1969 Contract';
-            } else if (activeFilters.includes('mou')) {
-                loadingText = 'Analyzing December 2024 MOU';
-            } else if (activeFilters.includes('historical')) {
-                loadingText = 'Analyzing 1969 Contract';
-            } else {
-                loadingText = 'Analyzing 24 documents';
-            }
-            
             loadingDiv.innerHTML = `
                 <div class="message-avatar">CF</div>
                 <div class="message-content loading">
@@ -1457,7 +1382,7 @@ Use the filter buttons below to focus on specific documents (MOU Only or 1969 Co
                             <div class="loading-dot"></div>
                             <div class="loading-dot"></div>
                         </div>
-                        <span style="font-size: 13px;">${loadingText}...</span>
+                        <span style="font-size: 13px;">Analyzing documents...</span>
                     </div>
                 </div>
             `;
