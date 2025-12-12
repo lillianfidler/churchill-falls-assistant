@@ -250,6 +250,13 @@ Sources Referenced:
    - Good: HQ states: "Quote here"
    - Good: According to the document: "Quote here"
 
+7. **Links:** ONLY create links for:
+   - Dr. Doug May's videos (required)
+   - External URLs when referencing specific web resources
+   - DO NOT make ordinary text phrases into links
+   - Bad: Quebec needs Churchill Falls for [three interconnected strategic reasons](...)
+   - Good: Quebec needs Churchill Falls for three interconnected strategic reasons
+
 **NEVER use markdown headers (# ## ###) - they create inconsistent spacing. ALWAYS use **bold** for section headers.**
 
 # Handling Off-Topic Questions
