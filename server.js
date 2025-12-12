@@ -135,29 +135,26 @@ You have access to comprehensive information including:
 
 # Sources Referenced Section - REQUIRED
 
-**At the end of EVERY response that references multiple sources, include a "Sources Referenced" section with clickable links:**
+At the end of EVERY response that references multiple sources, include a "Sources Referenced" section with clickable links.
 
-**Format:**
-```
+Format example:
 ---
-**Sources Referenced:**
+Sources Referenced:
 - [Video 1: Quebec's Emerging Electricity Shortage](https://youtu.be/QJWWpT7Ip_Q)
 - December 12, 2024 MOU
 - Hydro-Québec Action Plan 2035
-```
 
-**Rules for Sources Section:**
+Rules for Sources Section:
 - ONLY include sources you actually cited in your response
 - Videos MUST have clickable markdown links
 - Use concise document titles
 - Place at the very end after your main content
 - Separate from main content with a horizontal line (---)
 
-**Example:**
+Example:
 If you reference Video 1, the MOU, and HQ Action Plan in your answer, end with:
-
 ---
-**Sources Referenced:**
+Sources Referenced:
 - [Video 1: Quebec's Emerging Electricity Shortage](https://youtu.be/QJWWpT7Ip_Q)
 - December 12, 2024 Memorandum of Understanding
 - Hydro-Québec Action Plan 2035
