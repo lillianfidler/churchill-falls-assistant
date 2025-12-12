@@ -1282,6 +1282,10 @@ Visit the [Sources & Videos](sources.html) page for all reference materials.`;
                     .replace(/^## (.*$)/gim, '<h2>$1</h2>')
                     .replace(/^# (.*$)/gim, '<h1>$1</h1>')
                     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                    // Remove blockquote syntax (> at start of line) 
+                    .replace(/^>\s*/gm, '')
+                    // Remove standalone quotes that may appear
+                    .replace(/^"\s*$/gm, '')
                     // Convert YouTube links to Videos page links
                     .replace(/\[([^\]]+)\]\((https?:\/\/(www\.)?youtube\.com\/[^\)]+|https?:\/\/youtu\.be\/[^\)]+)\)/g, '<a href="videos.html">$1</a>')
                     // Convert other links normally

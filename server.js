@@ -133,6 +133,35 @@ You have access to comprehensive information including:
 
 **CRITICAL: Always link videos using [Video X](URL) format**
 
+# Sources Referenced Section - REQUIRED
+
+**At the end of EVERY response that references multiple sources, include a "Sources Referenced" section with clickable links:**
+
+**Format:**
+```
+---
+**Sources Referenced:**
+- [Video 1: Quebec's Emerging Electricity Shortage](https://youtu.be/QJWWpT7Ip_Q)
+- December 12, 2024 MOU
+- Hydro-Québec Action Plan 2035
+```
+
+**Rules for Sources Section:**
+- ONLY include sources you actually cited in your response
+- Videos MUST have clickable markdown links
+- Use concise document titles
+- Place at the very end after your main content
+- Separate from main content with a horizontal line (---)
+
+**Example:**
+If you reference Video 1, the MOU, and HQ Action Plan in your answer, end with:
+
+---
+**Sources Referenced:**
+- [Video 1: Quebec's Emerging Electricity Shortage](https://youtu.be/QJWWpT7Ip_Q)
+- December 12, 2024 Memorandum of Understanding
+- Hydro-Québec Action Plan 2035
+
 # Document Reference Guide
 
 **Official Agreements:**
@@ -218,6 +247,11 @@ You have access to comprehensive information including:
 5. **Numbered items:** Use format 1. Item directly followed by content
    - Good: 1. Pricing adequacy
    - Bad: 1. on one line, then Pricing adequacy on next line
+
+6. **NEVER use blockquotes (> symbol):** For quotes, use regular text with quotation marks
+   - Bad: > "Quote here"
+   - Good: HQ states: "Quote here"
+   - Good: According to the document: "Quote here"
 
 **NEVER use markdown headers (# ## ###) - they create inconsistent spacing. ALWAYS use **bold** for section headers.**
 
@@ -305,46 +339,14 @@ Remember: You are here to inform and educate about Churchill Falls and the MOU. 
 // Chat endpoint
 app.post('/api/chat', async (req, res) => {
     try {
-        const { message, mode = 'comprehensive', sourceFilters = '', conversationHistory = [] } = req.body;
+        const { message, conversationHistory = [] } = req.body;
 
         if (!message || typeof message !== 'string' || message.trim().length === 0) {
             return res.status(400).json({ error: 'Valid message is required' });
         }
 
-        // Determine content based on filters
-        let contentToUse;
-        
-        try {
-            if (sourceFilters) {
-                // User selected specific filters
-                const filters = sourceFilters.split(',');
-                
-                if (filters.includes('mou') && filters.includes('historical')) {
-                    // Both filters selected - comparison mode
-                    const mouContent = mouOnlyContent;
-                    const contractContent = fs.readFileSync('./content/CHURCHILL-FALLS-POWER-CONTRACT.txt', 'utf-8');
-                    contentToUse = `${mouContent}\n\n---\n\n${contractContent}`;
-                } else if (filters.includes('mou')) {
-                    // MOU Only - just the official December 2024 MOU
-                    contentToUse = mouOnlyContent;
-                } else if (filters.includes('historical')) {
-                    // 1969 Contract Only
-                    contentToUse = fs.readFileSync('./content/CHURCHILL-FALLS-POWER-CONTRACT.txt', 'utf-8');
-                } else {
-                    // Other filters not implemented yet, default to comprehensive
-                    contentToUse = comprehensiveContent;
-                }
-            } else if (mode === 'mou-only') {
-                // Legacy support for old mode parameter
-                contentToUse = mouOnlyContent;
-            } else {
-                // No filters = comprehensive
-                contentToUse = comprehensiveContent;
-            }
-        } catch (fileError) {
-            console.error('Error loading document:', fileError);
-            return res.status(500).json({ error: 'Failed to load requested document. Please try again.' });
-        }
+        // Always use comprehensive content (all 24 documents)
+        const contentToUse = comprehensiveContent;
 
         // Filter out any empty messages from conversation history
         const cleanedHistory = conversationHistory.filter(msg => 
@@ -354,104 +356,6 @@ app.post('/api/chat', async (req, res) => {
         // Build messages array for Claude
         let messages;
         
-        // Add filter-specific instruction if needed
-        let filterInstruction = '';
-        if (sourceFilters) {
-            const filters = sourceFilters.split(',');
-            if (filters.includes('mou') && filters.includes('historical')) {
-                // Both filters selected - comparison mode
-                filterInstruction = `
-
-COMPARISON MODE: MOU + 1969 CONTRACT
-
-You have access to BOTH documents:
-- The December 12, 2024 MOU
-- The 1969 Churchill Falls Power Contract
-
-When asked about differences or comparisons:
-1. Directly compare the two documents
-2. Highlight key changes in:
-   - Pricing (0.2¢/kWh → new pricing structure)
-   - Duration (1969-2041 → 2025-2075)
-   - Volume allocations
-   - New projects proposed in MOU
-   - Financial terms
-3. Present information clearly and factually
-4. Do NOT include economist commentary - just the document facts
-
-You may ONLY reference these two documents, not economist analyses.`;
-            } else if (filters.includes('mou')) {
-                filterInstruction = `
-
-CRITICAL FILTER MODE: MOU ONLY
-
-You must STRICTLY follow these rules:
-
-1. ONLY cite information that appears directly in the December 12, 2024 MOU document
-2. Do NOT mention or reference:
-   - Dr. Doug May's analyses or videos
-   - Wade Locke's analyses  
-   - Economist opinions, concerns, or critiques
-   - Financial analyses from researchers
-   - Debt concerns or risk assessments from analysts
-   - ANY content from sources other than the MOU itself
-
-3. When asked about "main points" or to "summarize", provide ONLY what the MOU document states:
-   - Official terms and conditions from the MOU
-   - Dates, prices, and structures specified in the MOU
-   - Project descriptions from the MOU
-   - Nothing else
-
-4. When asked vague questions like "tell me about this" or "what is this":
-   - Assume user is asking about the MOU document
-   - Provide a direct summary of the MOU's main points
-   - Do NOT explain what the assistant does
-   - Do NOT give an introduction to yourself
-
-5. NEVER introduce yourself or explain your capabilities - just answer the question about the MOU
-
-6. If the user asks a question that would require economist analysis, respond with:
-   "That information isn't in the MOU document itself. I'm currently in MOU-only mode. Would you like me to include economist analyses by unchecking the MOU Only filter?"
-
-7. IGNORE any previous conversation context that used different filters - treat this as a fresh MOU-only question.
-
-Do NOT provide economist viewpoints, financial concerns, or analytical commentary in this mode.
-Do NOT provide introductions or explanations about yourself.`;
-            } else if (filters.includes('historical')) {
-                filterInstruction = `
-
-CRITICAL FILTER MODE: 1969 CONTRACT ONLY
-
-You must STRICTLY follow these rules:
-
-1. You ONLY have access to the 1969 Churchill Falls Power Contract document
-2. You do NOT have access to:
-   - The 2024 MOU
-   - Economist analyses
-   - Modern commentary
-   - Any other documents
-
-3. When user asks comparative questions like "what's changed":
-   - Respond: "I'm currently in 1969 Contract Only mode, so I can only tell you what's IN the 1969 contract itself. To compare with the proposed MOU, please uncheck the 1969 Contract filter."
-   
-4. When asked about "main points" or contract details, provide ONLY from 1969 contract:
-   - Pricing: 0.2¢/kWh with escalation terms
-   - Duration: Until 2041 (or 2016 with extensions)
-   - Capacity: Commitments and delivery terms
-   - Financial arrangements from the contract
-   - Rights and obligations of parties
-
-5. NEVER mention:
-   - The 2024 MOU or any proposed changes
-   - What economists say
-   - Comparisons to modern agreements
-   - "Changes" unless they're changes within the 1969 contract amendments
-
-6. DO NOT say "I notice you've uploaded" - this document is in your knowledge base
-
-TREAT THIS AS ABSOLUTE: You cannot make comparisons or discuss changes because you ONLY have the 1969 contract.`;
-            }
-        }
         
         if (cleanedHistory.length === 0) {
             // First message - include all content with the question
@@ -462,7 +366,7 @@ TREAT THIS AS ABSOLUTE: You cannot make comparisons or discuss changes because y
                     content: [
                         {
                             type: 'text',
-                            text: `${contentToUse}\n\n---\n\nUser Question: ${message}${filterInstruction}`,
+                            text: `${contentToUse}\n\n---\n\nUser Question: ${message}`,
                             cache_control: { type: 'ephemeral' }
                         }
                     ]
@@ -470,12 +374,11 @@ TREAT THIS AS ABSOLUTE: You cannot make comparisons or discuss changes because y
             ];
         } else {
             // Follow-up message - conversation history already has documents in first message
-            // But we need to add filter instruction if filter is active
             messages = [
                 ...cleanedHistory,
                 {
                     role: 'user',
-                    content: filterInstruction ? `${message}${filterInstruction}` : message
+                    content: message
                 }
             ];
         }
