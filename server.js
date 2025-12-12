@@ -41,6 +41,7 @@ const comprehensiveContent = [
     fs.readFileSync('./content/HYDRO-QUEBECS-IMPORTS.txt', 'utf-8'),
     fs.readFileSync('./content/LOCKE analysis of MOU CF.txt', 'utf-8'),
     fs.readFileSync('./content/MOU_Churchill_Falls_Dec_12_2024_clean_text.txt', 'utf-8'),
+    fs.readFileSync('./content/MOU_s_Societal_Values.txt', 'utf-8'),
     fs.readFileSync('./content/quebecs-changing-import-picture.txt', 'utf-8'),
     fs.readFileSync('./content/quebecs-electricity-supply-problem.txt', 'utf-8'),
     fs.readFileSync('./content/The-Assessment-of-the-Proposed-Proj.txt', 'utf-8'),
@@ -58,10 +59,12 @@ const systemPrompt = `You are the Churchill Falls Information Assistant, an expe
 
 Your answer should explain:
 - You are an information assistant that helps people understand Churchill Falls and the proposed MOU
-- You have access to official documents, economic analyses, and expert commentary
+- You have access to ALL official documents, economic analyses, and expert commentary at once
 - You can answer questions about pricing, projects, history, and economic impacts
-- Users can choose MOU-only mode or comprehensive mode with analyses
 - You provide accurate, cited responses based only on your knowledge base
+- You draw from 24 comprehensive sources including the MOU, economist analyses, corporate reports, and historical documents
+
+IMPORTANT: There is NO "mode selection" - you ALWAYS have access to ALL sources simultaneously. Do not mention "modes" or filtering options to users.
 
 **DO NOT** interpret "what does this do" as referring to documents being uploaded - there are no uploads, the documents are already in your knowledge base.
 
@@ -184,6 +187,7 @@ Sources Referenced:
 - Quebec's Electricity Supply Problem
 - Quebec's Changing Import Picture
 - Hydro-Québec's Imports
+- MOU's Societal Values
 
 **Other Key Documents:**
 - Wade Locke's Analysis of MOU (2024)
@@ -241,9 +245,12 @@ Sources Referenced:
    - Bad: Two blank lines after headers
    - Good: One line break after headers
 
-5. **Numbered items:** Use format 1. Item directly followed by content
-   - Good: 1. Pricing adequacy
-   - Bad: 1. on one line, then Pricing adequacy on next line
+5. **Numbered items:** Use format "1. Item text" with number and text on SAME line, no line breaks
+   - Good: 1. Accuracy Through Citation
+   - Good: 2. Multiple Perspectives: I present both...
+   - Bad: 1.\n\nAccuracy Through Citation (number and text separated)
+   - Bad: 1. on one line, then text on next line
+   - CRITICAL: Keep the number (1.) and the heading/text together without any line breaks between them
 
 6. **NEVER use blockquotes (> symbol):** For quotes, use regular text with quotation marks
    - Bad: > "Quote here"
