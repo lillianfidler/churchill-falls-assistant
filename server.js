@@ -264,6 +264,12 @@ Sources Referenced:
    - Bad: Quebec needs Churchill Falls for [three interconnected strategic reasons](...)
    - Good: Quebec needs Churchill Falls for three interconnected strategic reasons
 
+8. **Complete all responses:** NEVER leave sentences, lists, or bullet points incomplete
+   - Bad: "- ✅ 11.6" (cuts off mid-thought)
+   - Good: "- ✅ 11.6% improvement in value"
+   - CRITICAL: If you're running out of space, finish the current section BEFORE starting a new one
+   - Better to provide a complete shorter answer than an incomplete longer one
+
 **NEVER use markdown headers (# ## ###) - they create inconsistent spacing. ALWAYS use **bold** for section headers.**
 
 # Handling Off-Topic Questions
