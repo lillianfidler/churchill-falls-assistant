@@ -49,8 +49,6 @@ const comprehensiveContent = [
     // NEW DOCUMENTS ADDED
     fs.readFileSync('./content/NL-Debt-Fiscal-Sustainability.txt', 'utf-8'),
     fs.readFileSync('./content/lower-churchill-projects.txt', 'utf-8'),
-    fs.readFileSync('./content/CF-financial-summary-23-24.txt', 'utf-8'),
-    fs.readFileSync('./content/CF-financial-summary-21-22.txt', 'utf-8')
 ].join('\n\n---\n\n');
 
 // MOU-only content (just the official MOU document)
