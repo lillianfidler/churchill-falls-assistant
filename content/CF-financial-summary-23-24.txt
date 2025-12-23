@@ -1,0 +1,357 @@
+CHURCHILL FALLS (LABRADOR) CORPORATION LIMITED
+FINANCIAL SUMMARY 2024
+Fiscal Year Ended: December 31, 2024
+
+PAGE 1: CORE FINANCIALS
+BALANCE SHEET SUMMARY (thousands of CAD)
+Item	2024	2023	Change	% Change
+ASSETS				
+Cash	138,670	130,725	7,945	6.1%
+Trade & Other Receivables	51,630	25,826	25,804	99.9%
+Inventories	22,970	21,854	1,116	5.1%
+Reserve Fund (Current)	18,236	16,520	1,716	10.4%
+Total Current Assets	234,234	197,991	36,243	18.3%
+Property, Plant & Equipment	1,002,582	945,487	57,095	6.0%
+Reserve Fund (Non-current)	57,135	58,905	(1,770)	-3.0%
+Total Assets	1,294,705	1,203,187	91,518	7.6%
+LIABILITIES				
+Trade & Other Payables	51,675	40,559	11,116	27.4%
+Rental & Royalty Payable	8,679	6,499	2,180	33.5%
+Deferred Revenue	6,112	-	6,112	new
+Total Current Liabilities	69,963	51,277	18,686	36.4%
+Employee Future Benefits	29,339	27,517	1,822	6.6%
+Deferred Credits	23,723	25,237	(1,514)	-6.0%
+Total Liabilities	132,833	113,970	18,863	16.5%
+SHAREHOLDERS' EQUITY				
+Share Capital	82,900	82,900	-	0%
+Reserves	5,980	4,448	1,532	34.4%
+Retained Earnings	1,064,797	993,674	71,123	7.2%
+Total Equity	1,161,872	1,089,217	72,655	6.7%
+INCOME STATEMENT SUMMARY (thousands of CAD)
+Item	2024	2023	Change	% Change
+REVENUE				
+Energy Sales	125,542	113,070	12,472	11.0%
+Guaranteed Winter Availability	38,293	38,897	(604)	-1.6%
+Net Finance Income	9,046	8,964	82	0.9%
+Other Revenue	22,615	3,642	18,973	520.9%
+Total Revenue	195,496	164,573	30,923	18.8%
+EXPENSES				
+Operating Costs	70,798	70,673	125	0.2%
+Depreciation & Amortization	30,640	37,423	(6,783)	-18.1%
+Other Expense	12,525	2,378	10,147	426.8%
+Total Expenses	113,963	110,474	3,489	3.2%
+Profit for the Year	81,533	54,099	27,434	50.7%
+Other Comprehensive Income	1,532	(1,637)	3,169	-
+Total Comprehensive Income	83,065	52,462	30,603	58.3%
+CASH FLOW SUMMARY (thousands of CAD)
+Item	2024	2023	Change
+Net Cash from Operating Activities	112,020	83,079	28,941
+Net Cash Used in Investing Activities	(93,665)	(68,198)	(25,467)
+Net Cash Used in Financing Activities	(10,410)	(6,392)	(4,018)
+Net Increase in Cash	7,945	8,489	(544)
+Cash - Beginning of Year	130,725	122,236	8,489
+Cash - End of Year	138,670	130,725	7,945
+KEY FINANCIAL RATIOS
+Ratio	2024	2023
+Current Ratio (Current Assets/Current Liabilities)	3.35	3.86
+Debt-to-Equity Ratio (Total Liabilities/Total Equity)	0.11	0.10
+Return on Equity (Profit/Avg Equity)	7.2%	5.1%
+Profit Margin (Profit/Revenue)	41.7%	32.9%
+Asset Turnover (Revenue/Total Assets)	0.15	0.14
+
+PAGE 2: CRITICAL DETAILS
+REVENUE BREAKDOWN
+Energy Sales by Customer (thousands of CAD):
+Customer	2024	2023	% of Total
+Hydro-Québec	72,077	61,516	57.4% (2024)
+NL Hydro	53,465	51,554	42.6% (2024)
+Total Energy Sales	125,542	113,070	100%
+Guaranteed Winter Availability:
+    • 2024: $38,293K (paid by Hydro-Québec) 
+    • 2023: $38,897K (paid by Hydro-Québec) 
+    • This is capacity payment regardless of energy delivered 
+Other Revenue (2024 increase):
+    • Service fee revenue: $17,660K (new in 2024 - related party) 
+    • Grocery store revenue: $2,617K 
+    • Other: $2,338K 
+    • Total: $22,615K (2023: $3,642K) 
+MAJOR ASSETS
+Property, Plant & Equipment: $1,002,582K
+Category	Net Book Value 2024	Net Book Value 2023
+Hydroelectric Generation Plant	493,845	463,898
+Transmission & Distribution	264,127	256,933
+Service Facilities & Other	181,239	170,182
+Construction in Progress	63,371	54,474
+Total	1,002,582	945,487
+Capital Expenditures 2024: $90.4 million (2023: $74.3 million)
+Reserve Fund: $75.4 million (required under Shareholders' Agreement)
+    • Purpose: Fund capital expenditures for existing facilities 
+    • Composition: Government of Canada and provincial securities, Canadian bank debt 
+    • Must remain until Shareholders' Agreement ends (2041) 
+MAJOR LIABILITIES & OBLIGATIONS
+Employee Future Benefits: $29.3 million
+    • Group life insurance and healthcare for retired employees 
+    • Retirement allowances 
+    • Unfunded defined benefit obligation 
+Deferred Credits: $25.2 million
+    • Telecommunications services obligation to Hydro-Québec 
+    • Relates to microwave equipment upgrades 
+    • Recognized evenly through August 2041 
+Rental & Royalty Payable to Province: $8.7 million
+    • Annual rental: 8% of net profits before taxes 
+    • Annual royalty: $0.50 per horsepower year generated 
+    • Payable before March 31 of following year 
+Deferred Revenue: $6.1 million (NEW in 2024)
+    • Variance between payments received and energy delivered 
+    • Related to Hydro-Québec contract 
+RELATED PARTY TRANSACTIONS (thousands of CAD)
+Amounts Receivable:
+    • Hydro-Québec: $26,747K (2023: $17,543K) 
+    • NL Hydro: $14,950K (2023: $4,422K) 
+Major Transactions:
+Transaction Type	Party	2024	2023
+Energy Sales	Hydro-Québec	72,077	61,516
+Energy Sales	NL Hydro	53,465	51,554
+Guaranteed Availability	Hydro-Québec	38,293	38,897
+Service Fee Revenue	Muskrat Falls Corp	17,660	-
+Rental & Royalty	Province of NL	8,790	6,553
+Note: Churchill Falls entered into a short-term energy purchase agreement with Muskrat Falls Corporation in 2024, generating $17.7M in service fee revenue.
+DIVIDENDS
+Preferred Dividends Paid:
+    • 2024: $10,410K 
+    • 2023: $6,395K 
+Common Dividends:
+    • 2024: $0 
+    • 2023: $0 
+Ownership:
+    • NL Hydro: 65.8% 
+    • Hydro-Québec: 34.2% 
+CAPITAL COMMITMENTS
+Outstanding Commitments: $92.6 million (2023: $49.1 million)
+    • Related to ongoing capital projects 
+    • Significantly higher than prior year due to major refurbishment work 
+OPERATING HIGHLIGHTS
+Generating Capacity: 5,428 MW (unchanged)
+Operating Cost Breakdown 2024:
+    • Salaries & Benefits: $43.2M (61% of operating costs) 
+    • Maintenance & Materials: $12.7M 
+    • Insurance: $4.8M 
+    • Travel: $4.0M 
+    • Professional Services: $2.8M 
+    • Other: $3.3M 
+    • Total: $70.8M 
+Major Expense Items:
+    • Rental & Royalty to Province: $8.8M 
+    • Loss on disposal of PP&E: $3.0M 
+CONTINGENCIES
+Water Management Agreement:
+    • Muskrat Falls has stored approximately 1.0 TWh of energy in Churchill Falls reservoir as of December 31, 2024 
+    • Coordinated production ensures efficient water use on Churchill River system 
+Legal Claims:
+    • Subject to legal claims regarding land use, energy delivery, construction matters 
+    • Outcome uncertain; could have significant adverse effect if unfavorable 
+SUBSEQUENT EVENT
+Effective January 1, 2025:
+    • NL Hydro and Nalcor Energy amalgamated into "Newfoundland and Labrador Hydro" 
+    • Combined entity holds all assets/liabilities and is bound by existing contracts 
+    • Provincial government guarantees continue 
+KEY NOTES
+    1. Revenue Growth: 18.8% increase driven by higher energy sales and new service fee revenue from Muskrat Falls 
+    2. Profit Growth: 50.7% increase in profit despite stable operating costs 
+    3. Receivables Spike: Trade receivables nearly doubled (99.9% increase) - primarily from increased sales 
+    4. Capital Investment: $90.4M invested in PP&E, focused on generation plant upgrades 
+    5. Strong Financial Position: Low debt, high equity, strong current ratio 
+    6. Cash Generation: Strong operating cash flow of $112M 
+
+END OF 2024 SUMMARY
+
+CHURCHILL FALLS (LABRADOR) CORPORATION LIMITED
+FINANCIAL SUMMARY 2023
+Fiscal Year Ended: December 31, 2023
+
+PAGE 1: CORE FINANCIALS
+BALANCE SHEET SUMMARY (thousands of CAD)
+Item	2023	2022	Change	% Change
+ASSETS				
+Cash	130,725	122,236	8,489	6.9%
+Trade & Other Receivables	25,826	22,969	2,857	12.4%
+Inventories	21,854	19,071	2,783	14.6%
+Reserve Fund (Current)	16,520	14,166	2,354	16.6%
+Total Current Assets	197,991	181,723	16,268	9.0%
+Property, Plant & Equipment	945,487	911,201	34,286	3.8%
+Reserve Fund (Non-current)	58,905	60,755	(1,850)	-3.0%
+Total Assets	1,203,187	1,154,583	48,604	4.2%
+LIABILITIES				
+Trade & Other Payables	40,559	37,007	3,552	9.6%
+Rental & Royalty Payable	6,499	9,052	(2,553)	-28.2%
+Decommissioning Liabilities (Current)	2,223	3,400	(1,177)	-34.6%
+Total Current Liabilities	51,277	51,363	(86)	-0.2%
+Employee Future Benefits	27,517	23,219	4,298	18.5%
+Deferred Credits	25,237	26,751	(1,514)	-5.7%
+Total Liabilities	113,970	110,664	3,306	3.0%
+SHAREHOLDERS' EQUITY				
+Share Capital	82,900	82,900	-	0%
+Reserves	4,448	6,085	(1,637)	-26.9%
+Retained Earnings	993,674	946,739	46,935	5.0%
+Total Equity	1,089,217	1,043,919	45,298	4.3%
+INCOME STATEMENT SUMMARY (thousands of CAD)
+Item	2023	2022	Change	% Change
+REVENUE				
+Energy Sales	113,070	145,402	(32,332)	-22.2%
+Guaranteed Winter Availability	38,897	34,279	4,618	13.5%
+Net Finance Income	8,964	5,018	3,946	78.6%
+Other Revenue	3,642	939	2,703	287.9%
+Total Revenue	164,573	185,638	(21,065)	-11.3%
+EXPENSES				
+Operating Costs	70,673	60,663	10,010	16.5%
+Depreciation & Amortization	37,423	33,526	3,897	11.6%
+Other Expense	2,378	9,513	(7,135)	-75.0%
+Total Expenses	110,474	104,401	6,073	5.8%
+Profit for the Year	54,099	81,237	(27,138)	-33.4%
+Other Comprehensive (Loss) Income	(1,637)	7,090	(8,727)	-
+Total Comprehensive Income	52,462	88,327	(35,865)	-40.6%
+CASH FLOW SUMMARY (thousands of CAD)
+Item	2023	2022	Change
+Net Cash from Operating Activities	83,079	117,541	(34,462)
+Net Cash Used in Investing Activities	(68,198)	(81,737)	13,539
+Net Cash Used in Financing Activities	(6,392)	(13,381)	6,989
+Net Increase in Cash	8,489	22,423	(13,934)
+Cash - Beginning of Year	122,236	99,813	22,423
+Cash - End of Year	130,725	122,236	8,489
+KEY FINANCIAL RATIOS
+Ratio	2023	2022
+Current Ratio (Current Assets/Current Liabilities)	3.86	3.54
+Debt-to-Equity Ratio (Total Liabilities/Total Equity)	0.10	0.11
+Return on Equity (Profit/Avg Equity)	5.1%	8.2%
+Profit Margin (Profit/Revenue)	32.9%	43.8%
+Asset Turnover (Revenue/Total Assets)	0.14	0.16
+
+PAGE 2: CRITICAL DETAILS
+REVENUE BREAKDOWN
+Energy Sales by Customer (thousands of CAD):
+Customer	2023	2022	% of Total
+Hydro-Québec	61,516	95,383	54.4% (2023)
+NL Hydro	51,554	50,019	45.6% (2023)
+Total Energy Sales	113,070	145,402	100%
+Note: Significant decline in energy sales to Hydro-Québec (-35.5%) drove overall revenue decrease
+Guaranteed Winter Availability:
+    • 2023: $38,897K (paid by Hydro-Québec) 
+    • 2022: $34,279K (paid by Hydro-Québec) 
+    • 13.5% increase year-over-year 
+Other Revenue:
+    • Deferred credit amortization (telecom services to HQ): $1,799K 
+    • Government grants and contributions: modest amounts 
+    • Other miscellaneous: $1,843K 
+    • Total: $3,642K (2022: $939K) 
+MAJOR ASSETS
+Property, Plant & Equipment: $945,487K
+Category	Net Book Value 2023	Net Book Value 2022
+Hydroelectric Generation Plant	463,898	461,185
+Transmission & Distribution	256,933	237,627
+Service Facilities & Other	170,182	170,426
+Construction in Progress	54,474	41,963
+Total	945,487	911,201
+Capital Expenditures 2023: $74.3 million (2022: $75.6 million)
+Reserve Fund: $75.4 million (required under Shareholders' Agreement)
+    • Purpose: Fund capital expenditures for existing facilities 
+    • Composition: Government of Canada and provincial securities, Canadian bank debt 
+    • Must remain until Shareholders' Agreement ends (2041) 
+    • Withdrawal of $0.9M in 2023 to maintain $75M balance 
+MAJOR LIABILITIES & OBLIGATIONS
+Employee Future Benefits: $27.5 million
+    • Group life insurance and healthcare for retired employees 
+    • Retirement allowances 
+    • Unfunded defined benefit obligation 
+    • Increase of $4.3M from 2022 due to actuarial losses 
+Deferred Credits: $25.2 million
+    • Telecommunications services obligation to Hydro-Québec 
+    • Relates to microwave equipment upgrades received in 2022 
+    • Asset value of $28.5M being amortized over contract term through August 2041 
+    • Annual amortization: $1.5M 
+Rental & Royalty Payable to Province: $6.5 million
+    • Annual rental: 8% of net profits before taxes 
+    • Annual royalty: $0.50 per horsepower year generated 
+    • Payable before March 31 of following year 
+    • Decreased from 2022 due to lower profitability 
+Decommissioning Liabilities: $2.4 million
+    • PCB (Polychlorinated Biphenyls) disposal obligations 
+    • Current portion: $2.2M (to be settled in 2024) 
+    • Non-current portion: $0.2M 
+RELATED PARTY TRANSACTIONS (thousands of CAD)
+Amounts Receivable:
+    • Hydro-Québec: $17,543K (2022: $14,286K) 
+    • NL Hydro: $4,422K (2022: $4,266K) 
+Major Transactions:
+Transaction Type	Party	2023	2022
+Energy Sales	Hydro-Québec	61,516	95,383
+Energy Sales	NL Hydro	51,554	50,019
+Guaranteed Availability	Hydro-Québec	38,897	34,279
+Other Revenue	Hydro-Québec	1,799	287
+Rental & Royalty	Province of NL	6,553	9,052
+DIVIDENDS
+Preferred Dividends Paid:
+    • 2023: $6,395K 
+        ? Recovery of prior year: ($667K) 
+        ? Interim for 2023: $7,062K 
+    • 2022: $13,393K 
+Common Dividends:
+    • 2023: $0 
+    • 2022: $0 
+Ownership:
+    • NL Hydro: 65.8% 
+    • Hydro-Québec: 34.2% 
+DISSOLUTION OF TWIN FALLS POWER CORPORATION
+Effective December 18, 2023:
+    • Twin Falls Power Corporation (100% owned subsidiary) was dissolved 
+    • Net assets of $2.3M transferred to Churchill Falls 
+    • Environmental liabilities of $2.1M assumed by Churchill Falls 
+    • Gain on dissolution: $0.8M 
+Assets Acquired:
+    • Cash: $4.4M 
+    • Trade receivables: $0.1M 
+Liabilities Assumed:
+    • Trade payables: $0.1M 
+    • Environmental liability: $2.1M 
+CAPITAL COMMITMENTS
+Outstanding Commitments: $49.1 million (2022: $26.4 million)
+    • Related to ongoing capital projects 
+    • Significant increase reflects major refurbishment planning 
+OPERATING HIGHLIGHTS
+Generating Capacity: 5,428 MW (unchanged)
+Operating Cost Breakdown 2023:
+    • Salaries & Benefits: $42.1M (60% of operating costs) 
+    • Maintenance & Materials: $15.2M 
+    • Insurance: $4.7M 
+    • Professional Services: $3.3M 
+    • Travel: $3.2M 
+    • Other: $2.2M 
+    • Total: $70.7M 
+    • Increase of $10M (16.5%) from 2022 due to inflation and increased maintenance 
+Other Expense:
+    • Rental & Royalty to Province: $6.6M 
+    • Loss on disposal of PP&E: $2.6M 
+    • Insurance proceeds: ($6.3M) - offsetting gain 
+    • Net Other Expense: $2.4M 
+CONTINGENCIES
+Water Management Agreement:
+    • Muskrat Falls has stored approximately 2.0 TWh of energy in Churchill Falls reservoir as of December 31, 2023 
+    • Coordinated production ensures efficient water use on Churchill River system 
+    • This arrangement continues 
+Legal Claims:
+    • Subject to legal claims regarding land use, energy delivery, construction matters 
+    • Outcome uncertain; could have significant adverse effect if unfavorable 
+KEY NOTES
+    1. Revenue Decline: 11.3% decrease primarily due to 35.5% drop in Hydro-Québec energy sales 
+    2. Profit Decline: 33.4% decrease in profit reflects lower revenue partially offset by insurance proceeds 
+    3. Operating Cost Increase: 16.5% increase driven by inflation and maintenance needs 
+    4. Twin Falls Dissolution: Subsidiary dissolved, environmental liabilities assumed 
+    5. Strong Liquidity: Current ratio of 3.86, cash position of $130.7M 
+    6. Capital Focus: $74.3M invested in PP&E for ongoing refurbishment 
+COMPARISON TO 2022 HIGHLIGHTS
+Major Changes:
+    • Energy sales to Hydro-Québec dropped sharply (-$33.9M) - primary driver of revenue decline 
+    • Operating costs increased significantly (+$10M) due to inflation and maintenance 
+    • Insurance proceeds of $6.3M offset some losses 
+    • Employee future benefits obligation increased $4.3M due to actuarial assumptions 
+    • Twin Falls dissolution added $2.3M net assets 
+
