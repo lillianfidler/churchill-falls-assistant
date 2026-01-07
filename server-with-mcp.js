@@ -4,7 +4,6 @@ const Anthropic = require('@anthropic-ai/sdk');
 const cors = require('cors');
 const { Client } = require('@modelcontextprotocol/sdk/client/index.js');
 const { StdioClientTransport } = require('@modelcontextprotocol/sdk/client/stdio.js');
-const { spawn } = require('child_process');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -29,15 +28,10 @@ async function initializeMCP() {
     console.log('Initializing MCP client connection...');
     
     try {
-        // Spawn the MCP server process
-        const serverProcess = spawn('node', ['mcp-server.js'], {
-            stdio: ['pipe', 'pipe', 'inherit'], // stdin, stdout, stderr
-            cwd: __dirname
-        });
-
-        // Create transport
+        // Create transport with correct command and args
         const transport = new StdioClientTransport({
-            command: serverProcess,
+            command: 'node',
+            args: ['mcp-server.js'],
         });
 
         // Create and connect client
@@ -252,7 +246,7 @@ app.post('/api/chat', async (req, res) => {
         }));
 
         // Call Claude API with MCP tools
-        const response = await anthropic.messages.create({
+        let response = await anthropic.messages.create({
             model: 'claude-sonnet-4-5-20250929',
             max_tokens: 4096,
             system: systemPrompt,
@@ -263,7 +257,7 @@ app.post('/api/chat', async (req, res) => {
         let finalText = '';
         let currentMessages = [...messages];
 
-        // Handle tool use
+        // Handle tool use loop
         while (response.stop_reason === 'tool_use' || 
                (response.content && response.content.some(block => block.type === 'tool_use'))) {
             
@@ -311,15 +305,13 @@ app.post('/api/chat', async (req, res) => {
             });
 
             // Get Claude's next response
-            const nextResponse = await anthropic.messages.create({
+            response = await anthropic.messages.create({
                 model: 'claude-sonnet-4-5-20250929',
                 max_tokens: 4096,
                 system: systemPrompt,
                 messages: currentMessages,
                 tools: tools
             });
-
-            response = nextResponse;
         }
 
         // Extract final text response
