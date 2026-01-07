@@ -1,0 +1,904 @@
+CHURCHILL FALLS (LABRADOR) CORPORATION LIMITED
+CONSOLIDATED FINANCIAL STATEMENTS
+December 31, 2024
+
+
+CONSOLIDATED STATEMENT OF FINANCIAL POSITION
+As at December 31 (thousands of Canadian dollars)
+
+                                                                    Notes       2024        2023
+
+ASSETS
+Current assets
+  Cash                                                                       138,670     130,725
+  Restricted cash                                                                298         298
+  Trade and other receivables                                      6          51,630      25,826
+  Inventories                                                      7          22,970      21,854
+  Current portion of reserve fund                                  9          18,236      16,520
+  Prepayments                                                                  2,430       2,768
+Total current assets                                                         234,234     197,991
+
+Non-current assets
+  Property, plant and equipment                                    8       1,002,582     945,487
+  Intangible assets                                                              754         804
+  Reserve fund                                                     9          57,135      58,905
+Total assets                                                               1,294,705   1,203,187
+
+
+LIABILITIES AND EQUITY
+Current liabilities
+  Trade and other payables                                        10          51,675      40,559
+  Rental and royalty payable                                      22           8,679       6,499
+  Deferred revenue                                                11           6,112           -
+  Current portion of decommissioning and environmental liabilities 12          1,486       2,223
+  Current portion of deferred credits                             13           1,514       1,514
+  Current portion of deferred contributions                       14             497         482
+Total current liabilities                                                     69,963      51,277
+
+Non-current liabilities
+  Decommissioning and environmental liabilities                   12               -         157
+  Deferred credits                                                13          23,723      25,237
+  Deferred contributions                                          14           9,808       9,782
+  Employee future benefits                                        15          29,339      27,517
+Total liabilities                                                            132,833     113,970
+
+Shareholders' equity
+  Share capital                                                   16          82,900      82,900
+  Contributed capital                                                          8,195       8,195
+  Reserves                                                                     5,980       4,448
+  Retained earnings                                                        1,064,797     993,674
+Total equity                                                               1,161,872   1,089,217
+
+Total liabilities and equity                                               1,294,705   1,203,187
+
+Commitments and contingencies (Note 23)
+Subsequent event (Note 26)
+
+
+CONSOLIDATED STATEMENT OF PROFIT AND COMPREHENSIVE INCOME
+For the year ended December 31 (thousands of Canadian dollars)
+
+                                                           Notes       2024        2023
+
+Energy sales                                                22      125,542     113,070
+Guaranteed winter availability                              22       38,293      38,897
+Net finance income                                          17        9,046       8,964
+Other revenue                                               18       22,615       3,642
+Revenue                                                              195,496     164,573
+
+Operating costs                                             19       70,798      70,673
+Depreciation and amortization                                        30,640      37,423
+Other expense                                               20       12,525       2,378
+Expenses                                                             113,963     110,474
+
+Profit for the year                                                   81,533      54,099
+
+Other comprehensive income (loss)
+Total items that may or have been reclassified to profit or loss:
+  Net fair value gain on reserve fund                        9        2,465       1,409
+  Actuarial loss on employee future benefits                15         (933)     (3,046)
+Other comprehensive income (loss) for the year                         1,532      (1,637)
+
+Total comprehensive income for the year                               83,065      52,462
+
+
+CONSOLIDATED STATEMENT OF CHANGES IN EQUITY
+(thousands of Canadian dollars)
+
+                                           Share      Contributed    Fair Value    Employee Benefit    Retained
+                                          Capital       Capital        Reserve         Reserve         Earnings      Total
+
+Balance at January 1, 2024               82,900         8,195         (2,351)          6,799          993,674    1,089,217
+Profit for the year                           -             -              -               -           81,533       81,533
+Net fair value gain on reserve fund           -             -          2,465               -                -        2,465
+Actuarial loss on employee future benefits    -             -              -            (933)               -         (933)
+Total comprehensive income for the year       -             -          2,465            (933)          81,533       83,065
+Preferred dividends                           -             -              -               -          (10,410)     (10,410)
+Balance at December 31, 2024             82,900         8,195            114           5,866        1,064,797    1,161,872
+
+Balance at January 1, 2023               82,900         8,195         (3,760)          9,845          946,739    1,043,919
+Profit for the year                           -             -              -               -           54,099       54,099
+Net fair value gain on reserve fund           -             -          1,409               -                -        1,409
+Actuarial loss on employee future benefits    -             -              -          (3,046)               -       (3,046)
+Total comprehensive income for the year       -             -          1,409          (3,046)          54,099       52,462
+Dissolution of subsidiary                     -             -              -               -             (769)        (769)
+Preferred dividends                           -             -              -               -           (6,395)      (6,395)
+Balance at December 31, 2023             82,900         8,195         (2,351)          6,799          993,674    1,089,217
+
+
+CONSOLIDATED STATEMENT OF CASH FLOWS
+For the year ended December 31 (thousands of Canadian dollars)
+
+                                                                   Notes       2024        2023
+
+Operating activities
+Profit for the year                                                          81,533      54,099
+Adjustments to reconcile profit to cash provided from operating activities:
+  Depreciation and amortization                                              30,640      37,423
+  Employee benefits                                                             889       1,252
+  Finance income                                                 17          (9,141)     (9,065)
+  Finance expense                                                17              95         101
+  Other                                                                        1,781        (177)
+                                                                             105,797      83,633
+Changes in non-cash working capital balances                     25          (9,649)     (9,626)
+Change in deferred revenue                                       11           6,112           -
+Interest received                                                             9,841       9,144
+Interest paid                                                                   (81)        (72)
+Net cash provided from operating activities                                 112,020      83,079
+
+Investing activities
+Additions to property, plant and equipment and intangible assets  8         (90,780)    (74,368)
+Withdrawals from reserve fund                                     9           2,519         905
+Changes in non-cash working capital balances                     25          (4,337)      5,118
+Increase in deferred contributions                               14             384       1,576
+Settlement of decommissioning and environmental liabilities      12          (1,451)     (1,429)
+Net cash used in investing activities                                       (93,665)    (68,198)
+
+Financing activities
+Decrease in restricted cash                                                       -           3
+Preferred dividends                                              16         (10,410)     (6,395)
+Net cash used in financing activities                                       (10,410)     (6,392)
+
+Net increase in cash                                                          7,945       8,489
+Cash, beginning of the year                                                 130,725     122,236
+Cash, end of the year                                                       138,670     130,725
+
+
+NOTES TO THE CONSOLIDATED FINANCIAL STATEMENTS
+
+
+1. DESCRIPTION OF BUSINESS
+
+Churchill Falls (Labrador) Corporation Limited (Churchill Falls) is incorporated under the laws of Canada and operates a hydroelectric generating plant and related transmission facilities in Labrador with a rated capacity of 5,428 megawatts. Churchill Falls operates under rights leased from the Province of Newfoundland and Labrador (the Province) for 99 years, which are renewable for a further term of 99 years under the Churchill Falls (Labrador) Corporation Limited (Lease) Act, 1961 as amended, covering the water power potential of the Upper Churchill watershed. Energy from Churchill Falls is provided to two customers: Hydro-Québec and Newfoundland and Labrador Hydro (Hydro). Churchill Falls is 65.8% owned by Hydro, whose parent company is Nalcor Energy (Nalcor). The remaining 34.2% is owned by Hydro-Québec. Effective June 18, 1999, the two shareholders of Churchill Falls, Hydro and Hydro-Québec, entered into a Shareholders' Agreement which provided, among other matters, that certain of the strategic operating, financing and investing policies of Churchill Falls be subject to joint approval by representatives of Hydro and Hydro-Québec. The head and corporate office for Churchill Falls is located at 500 Columbus Drive, St. John's, Newfoundland and Labrador, A1B 3T5.
+
+Churchill Falls held a 100% interest in Twin Falls Power Corporation Limited (Twin Falls). Effective December 18, 2023, Twin Falls was dissolved.
+
+
+2. MATERIAL ACCOUNTING POLICIES
+
+2.1 Statement of Compliance and Basis of Measurement
+
+These annual audited consolidated financial statements (financial statements) have been prepared in accordance with IFRS Accounting Standards, as issued by the International Accounting Standards Board (IASB).
+
+These financial statements have been prepared on a historical cost basis, except for financial assets and financial liabilities which have been measured at fair value through profit or loss (FVTPL) and fair value through other comprehensive income (FVTOCI) which have been measured at fair value. The financial statements are presented in Canadian Dollars and all values rounded to the nearest thousand, except when otherwise noted. The financial statements were approved by Churchill Falls' Board of Directors on March 3, 2025.
+
+2.2 Basis of Consolidation
+
+The financial statements include the financial statements of Churchill Falls and its formerly wholly owned subsidiary Twin Falls up until its dissolution on December 18, 2023. Intercompany transactions and balances have been eliminated upon consolidation.
+
+2.3 Cash and Cash Equivalents and Short-term Investments
+
+Cash and cash equivalents consist of amounts on deposit with Schedule 1 Canadian Chartered banks, as well as highly liquid investments with maturities of three months or less. Investments with maturities greater than three months and less than twelve months are classified as short-term investments.
+
+2.4 Inventories
+
+Inventories are carried at the lower of cost and net realizable value. Cost is determined on a weighted average basis and includes expenditures incurred in acquiring the inventories and bringing them to their existing condition and location. Net realizable value represents the estimated selling price for inventories less all estimated costs of completion and costs necessary to make the sale.
+
+2.5 Property, Plant and Equipment
+
+Items of property, plant and equipment are recognized at cost less accumulated depreciation and accumulated impairment losses. Cost includes materials, labour, contracted services, professional fees and, for qualifying assets, borrowing costs capitalized in accordance with Churchill Falls' accounting policy outlined in Note 2.7. Costs capitalized with the related asset include all those costs directly attributable to bringing the asset into operation.
+
+When significant parts of property, plant and equipment are required to be replaced at intervals, Churchill Falls recognizes such parts as individual assets with specific useful lives and depreciation rates. Likewise, when a major inspection is performed, its cost is recognized in the carrying amount of the property, plant and equipment as a replacement if the recognition criteria are satisfied. All other repairs and maintenance costs are recognized in the Consolidated Statement of Profit and Comprehensive Income as incurred. Depreciation commences when the assets are ready for their intended use. Residual values and useful lives are reviewed at the end of each year and adjusted prospectively, if appropriate. Depreciation is calculated on a straight line basis over the estimated useful lives of all assets.
+
+At December 31, 2024, the depreciation lives used are as follows:
+
+Hydroelectric generation plant              15 to 110 years
+Transmission and terminals                  18 to 65 years
+Service facilities and other                3 to 75 years
+
+Hydroelectric generation plant includes the powerhouse, turbines and generators, governors and exciters, and auxiliary systems, as well as water conveying and control structures, including dams, dikes, tailraces, surge chambers, penstocks and intake structures.
+
+Transmission lines and terminal stations include support structures, foundations, conductors, and insulators associated with lines at voltages of 735, 230, and 69 kilovolt. Terminal station assets which are used to step up voltages of electricity for transmission and to step down voltages for distribution, provide switching and protection functions, and include auxiliary systems. Distribution system assets include poles, transformers, insulators, and conductors.
+
+Service facilities and other include roads, telecontrol, buildings, airport, aircraft, vehicles, furniture, tools and equipment, and the town site, including municipal water and sanitary sewer systems.
+
+The carrying amount of a replaced asset is derecognized when it is replaced. Gains and losses on disposal of an item of property, plant and equipment are determined by comparing the proceeds from disposal with the carrying amount of property, plant and equipment and are recorded in other expense.
+
+2.6 Intangible Assets
+
+Assets that are expected to generate future economic benefit and are measurable, including computer software and technical service costs are capitalized as intangible assets in accordance with IAS 38 - Intangible Assets.
+
+Intangible assets with finite useful lives are carried at cost less accumulated amortization and accumulated impairment losses. The estimated useful life and amortization method are reviewed at the end of each year, with the effect of any changes in estimate being accounted for on a prospective basis. Intangible assets with indefinite useful lives are carried at cost less accumulated impairment losses.
+
+Amortization is calculated on a straight-line basis over the estimated useful lives of the assets as follows:
+
+Computer software                           7 years
+
+2.7 Borrowing Costs
+
+Borrowing costs directly attributable to the acquisition, construction or production of qualifying assets, which are assets that take a substantial period of time to get ready for their intended use or sale, are added to the cost of those assets, until such time as the assets are substantially ready for their intended use or sale. Investment income earned on the temporary investment of specific borrowings pending their expenditure on qualifying assets is deducted from the borrowing costs eligible for capitalization. All other borrowing costs are recognized in the Consolidated Statement of Profit and Comprehensive Income in the period in which they are incurred.
+
+2.8 Impairment of Non-Financial Assets
+
+Property, plant and equipment and other non-financial assets are reviewed for impairment losses whenever events or changes in circumstances indicate that the carrying amount may not be recoverable.
+
+Where it is not possible to estimate the recoverable amount of an individual asset, Churchill Falls estimates the recoverable amount of the cash-generating unit (CGU) to which the asset belongs. The recoverable amount is the higher of fair value less costs of disposal and value in use. Value in use is generally computed by reference to the present value of future cash flows expected to be derived from non-financial assets. In assessing value in use, the estimated future cash flows are discounted to their present value using a discount rate that reflects current market assessments of the time value of money and the risks specific to the asset for which the estimates of future cash flows have not been adjusted.
+
+If the recoverable amount of an asset or CGU is estimated to be less than its carrying amount, the carrying amount of the asset or CGU is reduced to its recoverable amount and an impairment loss is recognized immediately in the Consolidated Statement of Profit and Comprehensive Income.
+
+2.9 Employee Benefits Liability
+
+(i) Pension Plan
+
+Employees participate in the Province's Public Service Pension Plan, a multi-employer defined benefit plan. Contributions by Churchill Falls to this Plan are recognized as an expense when employees have rendered service entitling them to the contributions. Liabilities associated with this Plan are held with the Province.
+
+(ii) Other Benefits
+
+Churchill Falls provides group life insurance and health care benefits on a cost-shared basis to retired employees, in addition to a retirement allowance.
+
+The cost of providing these benefits is determined using the projected unit credit method, with actuarial valuations completed on an annual basis, based on service and Management's best estimate of salary escalation, retirement ages of employees and expected health care costs.
+
+Actuarial gains and losses on Churchill Falls' defined benefit obligation are recognized in reserves in the period in which they occur. Past service costs are recognized in operating costs as incurred.
+
+The retirement benefit obligation recognized in the Consolidated Statement of Financial Position represents the present value of the defined benefit obligation.
+
+2.10 Provisions
+
+A provision is a liability of uncertain timing or amount. A provision is recognized if Churchill Falls has a present legal obligation or constructive obligation as a result of past events, it is probable that an outflow of resources will be required to settle the obligation and the amount can be reliably estimated. Provisions are not recognized for future operating losses. The provision is measured at the present value of the best estimate of the expenditures expected to be required to settle the obligation using a discount rate that reflects the current market assessments of the time value of money and the risks specific to the obligation. Provisions are re-measured at each Consolidated Statement of Financial Position date using the current discount rate.
+
+2.11 Decommissioning, Restoration and Environmental Liabilities
+
+Legal and constructive obligations associated with the retirement of property, plant and equipment are recorded as liabilities when those obligations are incurred and are measured as the present value of the expected costs to settle the liability, discounted at a rate specific to the liability. The liability is accreted up to the date the liability will be incurred with a corresponding charge to net finance income. The carrying amount of decommissioning, restoration and environmental liabilities is reviewed annually with changes in the estimates of timing or amount of cash flows added to or deducted from the cost of the related asset or expensed in the Consolidated Statement of Profit and Comprehensive Income if the liability is short-term in nature.
+
+2.12 Revenue Recognition
+
+Revenue from Contracts with Customers
+
+Churchill Falls recognizes revenue from contracts with customers related to the sale of electricity, capacity and telecommunication services. Revenue is measured based on the consideration specified in a contract with a customer and excludes amounts collected on behalf of third parties. Churchill Falls recognizes revenue when it satisfies its performance obligation to the customer. Deferred revenue is recognized when contractual payments are received before satisfying the related performance obligation.
+
+2.13 Leasing
+
+Lessee Accounting
+
+Churchill Falls assesses whether a contract is or contains a lease, at inception of a contract. Churchill Falls recognizes a right-of-use asset and a corresponding lease liability with respect to all lease agreements in which it is the lessee, except for short-term leases (defined as leases with a lease term of 12 months or less) and leases of low-value assets. For these leases, Churchill Falls recognizes the lease payments as an operating expense on a straight-line basis over the term of the lease unless another systematic basis is more representative of the time pattern in which economic benefits from the leased asset are consumed.
+
+The lease liability is initially measured at the present value of the lease payments that are not paid at the commencement date, discounted by using the rate implicit in the lease. If this rate cannot be readily determined, Churchill Falls uses its incremental borrowing rate.
+
+Lease payments included in the measurement of the lease liability comprise:
+- fixed (and in-substance) lease payments, less any lease incentives;
+- variable lease payments that depend on an index or rate; and
+- payments expected under residual value guarantees and payments relating to purchase options and renewal option periods that are reasonably certain to be exercised (or periods subject to termination options that are not reasonably certain to be exercised).
+
+The lease liability is subsequently measured at amortized cost using the effective interest rate method. Lease liabilities are remeasured, with a corresponding adjustment to the related right-of-use assets, when there is a change in variable lease payments arising from a change in an index or rate, or when Churchill Falls changes its assessment of whether purchase, renewal or termination options will be exercised.
+
+Churchill Falls did not make any such adjustments during the periods presented.
+
+The right-of-use assets comprise the initial measurement of the corresponding lease liability, lease payments made at or before the commencement day and any initial direct costs. They are subsequently measured at cost less accumulated depreciation and accumulated impairment losses.
+
+Whenever Churchill Falls incurs an obligation for costs to dismantle and remove a leased asset, restore the site on which it is located or restore the underlying asset to the condition required by the terms and conditions of the lease, a provision is recognized and measured under IAS 37 – Provisions, Contingent Liabilities and Contingent Assets. The costs are included in the related right-of-use asset.
+
+Right-of-use assets are depreciated over the shorter period of the lease term and useful life of the underlying asset. If a lease transfers ownership of the underlying asset or the cost of the right-of-use asset reflects that Churchill Falls expects to exercise a purchase option, the related right-of-use asset is depreciated over the useful life of the underlying asset. Depreciation starts at the commencement date of the lease.
+
+Variable rents that do not depend on an index or rate are not included in the measurement of the lease liability and the right-of-use asset. The related payments are recognized as an expense in operating costs in the period in which the event or condition that triggers those payments occurs.
+
+As a practical expedient, IFRS 16 permits a lessee not to separate non-lease components, and instead account for any lease and associated non-lease components as a single arrangement. Churchill Falls has elected to apply this practical expedient.
+
+2.14 Foreign Currencies
+
+Transactions in currencies other than Churchill Falls' functional currency (foreign currencies) are recognized using the exchange rate in effect at the date of the transaction, approximated by the prior month end close rate. At the end of each reporting period, monetary items denominated in foreign currencies are translated at the rates of exchange in effect at the period end date. Foreign exchange gains and losses are included in the Consolidated Statement of Profit and Comprehensive Income as Other expense.
+
+2.15 Income Taxes
+
+Churchill Falls is exempt from paying income taxes under Paragraph 149(1) (d.2) of the Income Tax Act.
+
+2.16 Financial Instruments
+
+Classification and Initial Measurement
+
+Financial assets and financial liabilities are recognized in the Consolidated Statement of Financial Position when Churchill Falls becomes a party to the contractual provisions of the instrument and are initially measured at fair value. Financial assets are classified at amortized cost, FVTOCI, FVTPL or as derivatives designated as hedging instruments in an effective hedge. Financial liabilities are classified as financial liabilities designated at FVTPL, amortized cost or as derivatives designated as hedging instruments in an effective hedge. Transaction costs that are directly attributable to the acquisition or issue of financial assets and financial liabilities (other than financial assets and financial liabilities at FVTPL) are added to or deducted from the fair value of the financial assets or financial liabilities, as appropriate, on initial recognition. Transaction costs directly attributable to the acquisition of financial assets or financial liabilities at FVTPL are recognized immediately in profit or loss.
+
+Financial Assets at Amortized Cost
+
+Financial assets with contractual cash flows arising on specified dates, consisting solely of principal and interest, and that are held within a business model whose objective is to collect the contractual cash flows are subsequently measured at amortized cost using the effective interest rate method and are subject to impairment. Gains and losses are recognized in profit or loss when the asset is derecognized, modified or impaired.
+
+Churchill Falls' financial assets at amortized cost include cash, restricted cash and trade and other receivables.
+
+Financial Assets at FVTOCI
+
+Financial assets measured at FVTOCI are those that have contractual cash flows arising on specific dates, consisting solely of principal and interest, and that are held within a business model whose objective is to collect the contractual cash flows and to sell the financial asset. Any change in the carrying amount of these assets other than foreign exchange gains and losses, impairment gains and losses and interest income are recognized in other comprehensive income accumulated in the fair value reserve. When these assets are derecognized, the cumulative gains or losses previously recognized in other comprehensive income are reclassified to profit or loss.
+
+Churchill Falls' financial assets measured at FVTOCI include reserve fund investments.
+
+Financial assets at FVTPL
+
+Financial assets that do not meet the criteria for being measured at amortized cost or FVTOCI are measured at FVTPL. Financial assets at FVTPL are measured at fair value at the end of each reporting period, with any fair value gains or losses recognized in profit or loss. Churchill Falls does not currently have financial assets measured at FVTPL.
+
+Financial Liabilities at Amortized Cost
+
+Churchill Falls subsequently measures all financial liabilities at amortized cost using the effective interest rate method. Gains and losses are recognized in profit or loss when the liability is derecognized.
+
+Churchill Falls' financial liabilities at amortized cost include trade and other payables and rental and royalty payable.
+
+Financial Liabilities at FVTPL
+
+Financial liabilities that do not meet the criteria for being measured at amortized cost or FVTOCI are measured at FVTPL. Financial liabilities at FVTPL are measured at fair value at the end of each reporting period, with any fair value gains or losses recognized in profit or loss to the extent they are not part of a designated hedging relationship. Churchill Falls does not currently have financial liabilities measured at FVTPL.
+
+Derecognition of Financial Instruments
+
+Churchill Falls derecognizes a financial asset when the contractual rights to the cash flows from the asset expire, or when it transfers the financial asset and substantially all the risks and rewards of ownership of the asset to another party.
+
+Churchill Falls derecognizes financial liabilities when, and only when, its obligations are discharged, cancelled or have expired. The difference between the carrying amount of the financial liability derecognized and the consideration paid and payable is recognized in profit or loss.
+
+Impairment of Financial Assets
+
+Churchill Falls recognizes a loss allowance for expected credit losses (ECL) on investments in debt instruments that are measured at amortized cost or at FVTOCI. The amount of ECL is updated at each reporting date to reflect changes in credit risk since initial recognition of the respective financial instrument.
+
+Churchill Falls always recognizes lifetime ECL for trade and other receivables. The ECL on these financial assets are estimated based on Churchill Falls' historical credit loss experience, adjusted for factors that are specific to the debtors, general economic conditions and an assessment of both the current as well as the forecast direction of conditions at the reporting date, including time value of money where appropriate. Churchill Falls also records 12-month ECL for those financial assets which have low credit risk and where the low credit risk exemption has been applied. The classes of financial assets that have been identified to have low credit risk are cash and cash equivalents, restricted cash and the reserve fund.
+
+For all other financial instruments, Churchill Falls recognizes lifetime ECL when there has been a significant increase in credit risk since initial recognition. If, on the other hand, the credit risk on the financial instrument has not increased significantly since initial recognition, Churchill Falls measures the loss allowance for that financial instrument at an amount equal to 12-month ECL. The assessment of whether lifetime ECL should be recognized is based on significant increases in the likelihood or risk of a default occurring since initial recognition instead of on evidence of a financial asset being credit-impaired at the reporting date or an actual default occurring.
+
+Lifetime ECL represents the ECL that will result from all possible default events over the expected life of a financial instrument. In contrast, 12-month ECL represents the portion of lifetime ECL that is expected to result from default events on a financial instrument that are possible within 12 months after the reporting date.
+
+2.17 Government Grants
+
+Government grants are recognized when there is reasonable assurance that Churchill Falls will comply with the associated conditions and that the grants will be received.
+
+Government grants are recognized in profit or loss on a systematic basis over the periods in which Churchill Falls recognizes the related costs for which the grants are intended to compensate. Specifically, government grants whose primary condition is that Churchill Falls should purchase, construct or otherwise acquire non-current assets are recognized as deferred contributions in the Consolidated Statement of Financial Position and transferred to the Consolidated Statement of Profit and Comprehensive Income on a systematic and rational basis over the useful lives of the related assets.
+
+Government grants that are receivable as compensation for expenses or losses already incurred or for the purpose of giving immediate financial support to Churchill Falls with no future related costs are recognized in the Consolidated Statement of Profit and Comprehensive Income in the period in which they become receivable.
+
+
+3. SIGNIFICANT ACCOUNTING JUDGMENTS AND ESTIMATES
+
+The preparation of the consolidated financial statements in conformity with IFRS Accounting Standards requires Management to make judgments, estimates and assumptions that affect the application of accounting policies and the reported amounts of assets, liabilities, revenues and expenses. Actual results may differ materially from these estimates. The estimates and underlying assumptions are reviewed on an on-going basis. Revisions to accounting estimates are recognized in the period in which the estimate is reviewed if the revision affects only that period or in future periods.
+
+3.1 Use of Judgment
+
+(i) Asset Impairment and Reversals
+
+Churchill Falls applies judgment in evaluating impairment and impairment reversal indicators based on various internal and external factors.
+
+The recoverable amount of a CGU or asset is determined based on the higher of fair value less costs of disposal and its value in use. Management uses judgment in selecting discount rates and considering the occurrence of future events when determining the recoverable amount. Changes in these factors will affect the recoverable amount of CGUs and assets, which may result in a material adjustment to their carrying value.
+
+(ii) Property, Plant and Equipment
+
+Churchill Falls' accounting policy relating to property, plant and equipment is described in Note 2.5. In applying this policy, judgment is used in determining whether certain costs are additions to the carrying amount of the property, plant and equipment as opposed to repairs and maintenance. If an asset has been developed, judgment is required to identify the point at which the asset is capable of being used as intended and to identify the directly attributable borrowing costs to be included in the carrying value of the development asset. Judgment is also used in determining the appropriate componentization structure for Churchill Falls' property, plant and equipment.
+
+(iii) Determination of CGUs
+
+Churchill Falls' accounting policy relating to impairment of non-financial assets is described in Note 2.8. In applying this policy, Churchill Falls groups assets into the smallest identifiable groups for which cash flows are largely independent of the cash flows from other assets or groups of assets. Judgment is used in determining the level at which cash flows are largely independent of other assets or groups of assets.
+
+(iv) Discount Rates
+
+Certain of Churchill Falls' financial liabilities are discounted using discount rates that are subject to Management's judgment.
+
+3.2 Use of Estimates
+
+(i) Property, Plant and Equipment
+
+Amounts recorded for depreciation are based on the useful lives of Churchill Falls' assets. The useful lives of property, plant and equipment are determined by independent specialists and reviewed annually by Churchill Falls. These useful lives are Management's best estimate of the service lives of these assets. Changes to these lives could materially affect the amount of depreciation recorded.
+
+(ii) Decommissioning and Environmental Liabilities
+
+Churchill Falls recognizes a liability for the fair value of the future expenditures required to settle obligations associated with the retirement of property, plant and equipment. Decommissioning liabilities are recorded as a liability at fair value, with a corresponding increase to property, plant and equipment. Accretion of decommissioning liabilities is included in the Consolidated Statement of Profit and Comprehensive Income through net finance income. Differences between the recorded decommissioning liabilities and the actual decommissioning costs incurred are recorded as a gain or loss in the settlement period. The fair value of future expenditures required to settle obligations associated with environmental liabilities are recognized to the extent that they are reasonably estimated and are recorded at fair value.
+
+(iii) Employee Future Benefits
+
+Churchill Falls provides group life insurance and health care benefits on a cost-shared basis to retired employees, in addition to a severance payment upon retirement. The expected cost of providing these other employee benefits is accounted for on an accrual basis, and has been actuarially determined using the projected unit credit method prorated on service, and Management's best estimate of salary escalation, retirement ages of employees and expected health care costs.
+
+
+4. CURRENT AND FUTURE CHANGES IN ACCOUNTING POLICIES
+
+The following is a list of applicable standards/interpretations that have been issued and are effective for accounting periods commencing on or after January 1, 2024, as specified.
+
+- Amendments to IAS 1 – Presentation of Financial Statements – Classification of Liabilities as Current or Non-Current and Non-Current Liabilities with Covenants (Effective for annual periods beginning on or after January 1, 2024)
+- Amendments to IFRS 9 Financial Instruments and IFRS 7 Financial Instruments: Disclosure – Contracts Referencing Nature-dependent Electricity (Effective for annual periods beginning on or after January 1, 2026)
+- IFRS 18 – Presentation and Disclosures in Financial Statements (Effective for annual periods beginning on or after January 1, 2027)
+
+4.1 Amendments to IAS 1 – Presentation of Financial Statements – Classification of Liabilities as Current or Non-Current and Non-Current Liabilities with Covenants
+
+The IASB issued amendments to IAS 1 to promote consistency in applying the requirements by helping companies determine whether, in the Statement of Financial Position, debt and other liabilities with an uncertain settlement date should be classified as current (due or potentially due to be settled within one year) or non-current. The classification is based on rights that are in existence at the end of the reporting period and specify that classification is unaffected by expectations about whether an entity will exercise its right to defer settlement of a liability. Additional information was added to clarify that only covenants with which an entity is required to comply on or before the reporting date affect the classification of a liability as current or non-current. In addition, an entity has to disclose information in the notes that enables users of the financial statements to understand the risk that non-current liabilities with covenants could become repayable within 12 months. The amendments are applied retrospectively upon adoption. The application of these amendments did not have a material impact on Churchill Falls' financial statements.
+
+4.2 Amendments to IFRS 9 – Financial Instruments and IFRS 7 – Financial Instruments: Disclosure – Contracts Referencing Nature-dependent Electricity
+
+The IASB issued amendments to IFRS 9 and IFRS 7 to provide a reasonable basis for an entity to determine the required accounting for contracts referencing nature-dependent electricity which are often structured as power purchase agreements. The amendments include clarifying the application of the 'own-use' requirements, permitting hedge accounting if these contracts are used as hedging instruments, and adding new disclosure requirements to enable investors to understand the effect of these contracts on a company's financial performance and cash flows. Management is currently assessing the potential impact on Churchill Falls' financial statements.
+
+4.3 IFRS 18 – Presentation and Disclosures in Financial Statements
+
+IFRS 18 replaces IAS 1, carrying forward many of the requirements of IAS 1 unchanged and introducing new requirements to present specified categories and defined subtotals in the statement of profit or loss. As well, entities will be required to provide disclosures on management-defined performance measures in the notes to the financial statements and improve aggregation and disaggregation. In addition, some IAS 1 paragraphs have been moved to IAS 8 – Accounting Policies, Changes in Accounting Estimates and Errors and IFRS 7. Furthermore, the IASB has made minor amendments to IAS 7 – Statement of Cash Flows.
+
+An entity is required to apply IFRS 18 for annual reporting periods beginning on or after 1 January 2027, with earlier application permitted. The amendments to IAS 7, as well as the revised IAS 8 and IFRS 7, become effective when an entity applies IFRS 18. IFRS 18 requires retrospective application with specific transition provisions. Management is currently assessing the potential impact on Churchill Falls' financial statements.
+
+
+5. DISSOLUTION OF SUBSIDIARY
+
+Effective December 18, 2023, Twin Falls was dissolved and the Board of Directors were released from their duties and responsibilities related to the company. As of the date of dissolution, any remaining environmental liabilities of Twin Falls (and any responsibility to remediate them), were effectively transferred and are now the responsibility of Churchill Falls per the dissolution agreement signed November 1, 2023.
+
+The Consolidated Statement of Profit and Comprehensive Income for the year ended December 31, 2023 includes Churchill Falls' share of Twin Falls net revenue and expenditures for the period of January 1, 2023 through December 18, 2023. On December 18th, Twin Falls was dissolved and net assets of $2.3 million and associated gain of $0.8 million were recorded in Churchill Falls.
+
+
+6. TRADE AND OTHER RECEIVABLES
+
+As at December 31 (thousands of Canadian dollars)                    2024        2023
+
+Due from related parties                                          41,697      21,965
+Other receivables                                                  9,933       3,861
+                                                                  51,630      25,826
+
+Other receivables primarily includes HST remittances.
+
+As at December 31 (thousands of Canadian dollars)                    2024        2023
+
+0-60 days                                                         51,205      25,664
+60+ days                                                             425         162
+                                                                  51,630      25,826
+
+
+7. INVENTORIES
+
+As at December 31 (thousands of Canadian dollars)                    2024        2023
+
+Materials and other                                               18,397      17,655
+Construction aggregates                                            4,185       3,799
+Grocery store                                                        262         248
+Fuel                                                                 126         152
+                                                                  22,970      21,854
+
+The cost of inventories recognized as an expense during the year is $2.3 million (2023 - $2.8 million) and is included in operating costs in the Consolidated Statement of Profit and Comprehensive Income.
+
+
+8. PROPERTY, PLANT AND EQUIPMENT
+
+(thousands of Canadian dollars)              Hydroelectric    Transmission                Service
+                                              Generation    and Distribution    Facilities and    Construction
+                                                 Plant                              Other         in Progress      Total
+
+Cost
+Balance at January 1, 2023                      950,723         397,006            305,758         41,963      1,695,450
+Additions                                             -               -                  -         74,286         74,286
+Decommissioning liability and revisions               -            (139)                 -              -           (139)
+Other adjustments                                     -             (77)               (17)            94              -
+Disposals                                        (5,663)           (635)              (884)             -         (7,182)
+Transfers                                        21,872          28,636             11,361        (61,869)             -
+Balance at December 31, 2023                    966,932         424,791            316,218         54,474      1,762,415
+
+Additions                                             -               -                  -         90,416         90,416
+Decommissioning liability and revisions               -             (50)                 -              -            (50)
+Other adjustments                                   237              71                  -            (74)           234
+Disposals                                        (6,310)            (30)            (1,386)             -         (7,726)
+Transfers                                        46,441          15,565             19,439        (81,445)             -
+Balance at December 31, 2024                  1,007,300         440,347            334,271         63,371      1,845,289
+
+Depreciation
+Balance at January 1, 2023                      489,538         159,379            135,332              -        784,249
+Depreciation                                     16,776           9,006             11,459              -         37,241
+Other adjustments                                   (83)               -                 83              -              -
+Disposals                                        (3,197)           (527)              (838)             -         (4,562)
+Balance at December 31, 2023                    503,034         167,858            146,036              -        816,928
+
+Depreciation                                     13,716           8,362              8,382              -         30,460
+Disposals                                        (3,295)               -            (1,386)             -         (4,681)
+Balance at December 31, 2024                    513,455         176,220            153,032              -        842,707
+
+Carrying value
+Balance at January 1, 2023                      461,185         237,627            170,426         41,963        911,201
+Balance at December 31, 2023                    463,898         256,933            170,182         54,474        945,487
+Balance at December 31, 2024                    493,845         264,127            181,239         63,371      1,002,582
+
+
+9. RESERVE FUND
+
+Under the Shareholders' Agreement, Churchill Falls is required to maintain a $75.0 million segregated reserve fund to contribute towards the funding of capital expenditures related to Churchill Falls' existing facilities and their replacement. In 2024, $2.5 million was withdrawn from (2023 - $0.9 million withdrawn from) the fund to maintain the $75.0 million balance in accordance with the Shareholders' Agreement.
+
+This fund must remain in place until the end of the Shareholders' Agreement in 2041. Any amounts removed to fund capital expenditures must be replaced. Reserve fund holdings consist of securities issued by the Government of Canada, various provinces of Canada and Schedule 1 and 2 Canadian Chartered Banks.
+
+The reserve fund movements during the years ended December 31, 2024 and 2023 are as follows:
+
+As at December 31 (thousands of Canadian dollars)                    2024        2023
+
+Reserve fund, beginning of the year                               75,425      74,921
+Principal withdrawals                                             (2,519)       (905)
+Mark-to-market adjustment                                          2,465       1,409
+Reserve fund, end of the year                                     75,371      75,425
+Less: current portion                                            (18,236)    (16,520)
+                                                                  57,135      58,905
+
+
+10. TRADE AND OTHER PAYABLES
+
+As at December 31 (thousands of Canadian dollars)                    2024        2023
+
+Trade payables and accruals                                       38,894      36,848
+Due to related parties                                             4,452         306
+Other payables                                                     8,329       3,405
+                                                                  51,675      40,559
+
+Other payables primarily includes HST remittances.
+
+
+11. DEFERRED REVENUE
+
+As at December 31 (thousands of Canadian dollars)                    2024        2023
+
+Deferred revenue, beginning of the year                                -           -
+Revenue recognized                                               (52,356)          -
+Payments                                                          58,468           -
+Deferred revenue, end of the year                                  6,112           -
+
+The deferred revenue represents the variance in payments received from the vendor compared to the energy which has been delivered at December 31, 2024.
+
+
+12. DECOMMISSIONING AND ENVIRONMENTAL LIABILITIES
+
+Churchill Falls has recognized liabilities associated with the disposal of Polychlorinated Biphenyls (PCB). The reconciliation of the beginning and ending carrying amounts of the decommissioning and environmental liabilities as at December 31, 2024 and 2023 are as follows:
+
+As at December 31 (thousands of Canadian dollars)                    2024        2023
+
+Balance, beginning of the year                                     2,380       3,920
+Accretion                                                             14          28
+Liabilities settled                                               (1,451)     (1,429)
+Revisions                                                            543        (139)
+Balance, end of the year                                           1,486       2,380
+Less: current portion                                             (1,486)     (2,223)
+                                                                       -         157
+
+The total estimated undiscounted cash flows required to settle the PCB obligations at December 31, 2024 are $1.5 million (2023 - $2.4 million). The fair value of a portion of the decommissioning liabilities was determined using the present value of future cash flows discounted at the Company's credit adjusted risk free rate of 3.5% (2023 - 5.1%). The current portion relates to estimated settlements within the next twelve months.
+
+
+13. DEFERRED CREDITS
+
+The deferred credits relate to Churchill Falls' obligation to provide required telecommunications services to Hydro-Québec in exchange for significant upgrades to the microwave telecommunications equipment linking the Churchill Falls Generating Station to Hydro-Québec's transmission system. On November 4, 2022, Churchill Falls received legal title to the assets in consideration for providing telecommunications services to Hydro-Québec over the term of the contract ending August 31, 2041. The deferred credit will be recognized in Other revenue evenly over the contract term as Churchill Falls satisfies its performance obligation.
+
+As at December 31 (thousands of Canadian dollars)                    2024        2023
+
+Deferred credits, beginning of the year                           26,751      28,265
+Amortization                                                      (1,514)     (1,514)
+Deferred credits, end of the year                                 25,237      26,751
+Less: current portion                                             (1,514)     (1,514)
+                                                                  23,723      25,237
+
+
+14. DEFERRED CONTRIBUTIONS
+
+Churchill Falls has received contributions primarily from Transport Canada related to the airport. These contributions are deferred and amortized to other revenue over the life of the related items of property, plant and equipment.
+
+As at December 31 (thousands of Canadian dollars)                    2024        2023
+
+Deferred contributions, beginning of the year                     10,264       9,201
+Additions                                                            384       1,576
+Amortization                                                        (343)       (513)
+Deferred contributions, end of the year                           10,305      10,264
+Less: current portion                                               (497)       (482)
+                                                                   9,808       9,782
+
+
+15. EMPLOYEE FUTURE BENEFITS
+
+15.1 Pension Plan
+
+Employees participate in the Province's Public Service Pension Plan, a multi-employer defined benefit plan. The employer's contributions for the year ended December 31, 2024 of $2.6 million (2023 - $2.4 million) are expensed as incurred.
+
+15.2 Other Benefits
+
+Churchill Falls provides group life insurance and healthcare benefits on a cost shared basis to retired employees, and in certain cases, their surviving spouses, in addition to a retirement allowance. For the year ended December 31, 2024, cash payments to beneficiaries for its unfunded other employee future benefits were $1.0 million (2023 - $0.9 million). An actuarial valuation was performed as at December 31, 2024.
+
+As at December 31 (thousands of Canadian dollars)                    2024        2023
+
+Accrued benefit obligation
+Balance, beginning of the year                                    27,517      23,219
+Current service cost                                                 813         730
+Interest cost                                                      1,308       1,227
+Transfers                                                           (237)        158
+Benefits paid                                                       (995)       (863)
+Actuarial loss                                                       933       3,046
+Balance, end of the year                                          29,339      27,517
+
+For the year ended December 31 (thousands of Canadian dollars)       2024        2023
+
+Component of benefit cost
+Current service cost                                                 813         730
+Interest cost                                                      1,308       1,227
+Total benefit expense for the year                                 2,121       1,957
+
+The significant actuarial assumptions used in measuring the accrued benefit obligations and benefit expenses are as follows:
+
+                                                                      2024        2023
+Discount rate - benefit cost                                        4.65%       5.20%
+Discount rate - accrued benefit obligation                          4.70%       4.65%
+Rate of compensation increase                                       3.50%       3.50%
+
+Assumed healthcare trend rates:
+                                                                      2024        2023
+Initial healthcare expense trend rate                               5.85%       6.00%
+Cost trend decline to                                               3.60%       3.60%
+
+Current rate: 5.85%, reducing linearly to 3.6% in 2040 and thereafter
+
+A 1% change in assumed healthcare trend rates would have had the following effects:
+
+Increase (thousands of Canadian dollars)                              2024        2023
+Current service and interest cost                                      300         258
+Accrued benefit obligation                                           3,620       3,389
+
+Decrease (thousands of Canadian dollars)                              2024        2023
+Current service and interest cost                                     (229)       (198)
+Accrued benefit obligation                                          (2,875)     (2,687)
+
+
+16. SHAREHOLDERS' EQUITY
+
+16.1 Share Capital
+
+As at December 31 (thousands of Canadian dollars)                    2024        2023
+
+Common shares without nominal or par value
+  Authorized - unlimited
+  Issued, fully paid and outstanding - 8,759,999                  82,900      82,900
+
+Preferred shares without nominal or par value
+  Authorized - 3
+  Issued, fully paid and outstanding - 3                               -           -
+
+Additional shares cannot be issued without the approval of a majority of the directors on the Board of Directors, including at least one director nominated by Hydro and one director nominated by Hydro-Québec.
+
+The preferred shares are divided into three classes, one of each has been issued, and the dividends thereon, which rank ahead of dividends on common shares, are as follows:
+
+The Class A Cumulative Preferred Shareholder is entitled to dividend payments calculated as the amount equal to the income taxes which would have been received by the Province had Churchill Falls continued to be a taxable corporation.
+
+The Class B and Class C Redeemable Cumulative Preferred Shareholders are no longer entitled to receive dividends.
+
+Dividends Paid and Proposed
+
+For the year ended December 31 (thousands of Canadian dollars)       2024        2023
+
+Declared and paid during the year
+  Final preferred dividend (recovery) for prior year                   17        (667)
+  Interim preferred dividend for current year                      10,393       7,062
+                                                                   10,410       6,395
+
+Proposed for approval, not recognized as payable at December 31
+  Final dividend payable for current year                             533          17
+
+Churchill Falls did not pay any common dividends for the year ended December 31, 2024 (2023 - $nil).
+
+
+17. NET FINANCE INCOME
+
+For the year ended December 31 (thousands of Canadian dollars)       2024        2023
+
+Finance income
+  Interest on reserve fund                                           1,375       2,106
+  Bank interest income                                               7,766       6,959
+                                                                     9,141       9,065
+
+Finance expense
+  Accretion of decommissioning liability                                14          28
+  Other interest expense                                                81          73
+                                                                        95         101
+
+Net finance income                                                   9,046       8,964
+
+
+18. OTHER REVENUE
+
+For the year ended December 31 (thousands of Canadian dollars)       2024        2023
+
+Service fee revenue                                                 17,660           -
+Grocery store revenue                                                2,617       1,330
+Other revenue                                                        2,338       2,312
+                                                                    22,615       3,642
+
+
+19. OPERATING COSTS
+
+For the year ended December 31 (thousands of Canadian dollars)       2024        2023
+
+Salaries and benefits                                               43,247      42,069
+Maintenance and materials                                           12,708      15,173
+Insurance                                                            4,813       4,703
+Professional services                                                2,791       3,321
+Travel                                                               4,009       3,151
+Grocery store cost of goods sold                                     2,191       1,037
+Other operating costs                                                1,039       1,219
+                                                                    70,798      70,673
+
+
+20. OTHER EXPENSE
+
+For the year ended December 31 (thousands of Canadian dollars)       2024        2023
+
+Rental and royalty                                                   8,790       6,553
+Loss on disposal of property, plant and equipment                    3,045       2,620
+Environmental liabilities                                              593           -
+Insurance proceeds                                                       -      (6,251)
+Other                                                                   97        (544)
+                                                                    12,525       2,378
+
+
+21. FINANCIAL INSTRUMENTS
+
+21.1 Fair Value
+
+The estimated fair values of financial instruments as at December 31, 2024 and December 31, 2023 are based on relevant market prices and information available at the time. Fair value estimates are based on valuation techniques which are significantly affected by the assumptions used, including the amount and timing of future cash flows and discount rates reflecting various degrees of risk. As such, the fair value estimates below are not necessarily indicative of the amounts that Churchill Falls might receive or incur in actual market transactions.
+
+As a significant number of Churchill Falls' assets and liabilities do not meet the definition of a financial instrument, the fair value estimates below do not reflect the fair value of Churchill Falls as a whole.
+
+Establishing Fair Value
+
+Financial instruments recorded at fair value are classified using a fair value hierarchy that reflects the nature of the inputs used in making the measurements. The fair value hierarchy has the following levels:
+
+Level 1 - valuation based on quoted prices (unadjusted) in active markets for identical assets or liabilities.
+
+Level 2 - valuation techniques based on inputs other than quoted prices included in Level 1 that are observable for the asset or liability, either directly (i.e. as prices) or indirectly (i.e. derived from prices).
+
+Level 3 - valuation techniques using inputs for the asset or liability that are not based on observable market data (unobservable inputs).
+
+The fair value hierarchy requires the use of observable market inputs whenever such inputs exist. A financial instrument is classified to the lowest level of the hierarchy for which a significant input has been considered in measuring fair value. For assets and liabilities that are recognized at fair value on a recurring basis, Churchill Falls determines whether transfers have occurred between levels in the hierarchy by reassessing categorization (based on the lowest level input that is significant to the fair value measurement as a whole) at the end of each reporting period. There were no transfers between Level 1, 2 and 3 during the period ended December 31, 2024 and the year ended December 31, 2023.
+
+As at December 31, 2024 and December 31, 2023, Churchill Falls did not have any Level 3 instruments.
+
+                                                        Carrying        Fair          Carrying        Fair
+(thousands of Canadian dollars)           Level          Value         Value          Value         Value
+                                                     December 31, 2024            December 31, 2023
+
+Financial assets
+Reserve fund                                2          75,371        75,371         75,425        75,425
+
+The fair values of cash, restricted cash, trade and other receivables, trade and other payables, and rental and royalty payable approximate their carrying values due to their short-term maturity.
+
+The fair values of Level 2 financial instruments are determined using quoted prices in active markets, which in some cases are adjusted for factors specific to the asset or liability. Level 2 fair values of other risk management assets and liabilities are determined using observable inputs other than unadjusted quoted prices, such as interest rate yield curves and currency rates.
+
+21.2 Risk Management
+
+Churchill Falls is exposed to certain credit, liquidity and market risks through its operating, financing and investing activities. Financial risk is managed in accordance with a Board approved policy, which outlines the objectives and strategies for the management of financial risk, including the use of derivative contracts. Permitted financial risk management strategies are aimed at minimizing the volatility of Churchill Falls' expected future cash flows.
+
+Credit Risk
+
+Expected future cash flows are exposed to credit risk through operating activities, primarily due to the potential for non-performance by customers, and through investing activities, based on the risk of non-performance by counterparties to financial instruments. The degree of exposure on cash, restricted cash, the reserve fund and revenue including associated accounts receivable, is determined by the financial capacity and stability of those customers and counterparties. The maximum exposure to credit risk on these financial instruments is represented by their carrying values on the Consolidated Statement of Financial Position at the reporting date.
+
+Credit exposure on trade and other receivables is limited, as Churchill Falls' two main customers Hydro and Hydro-Québec, are investment grade utilities. As at December 31, 2024, there was no allowance for doubtful accounts associated with these customers included in trade and other receivables (2023 - $nil).
+
+Credit risk on cash and restricted cash is limited, as Churchill Falls' cash deposits are held by a Schedule 1 Canadian Chartered bank with a rating of A+ (Standard and Poor's).
+
+Credit exposure on the reserve fund is mitigated by adhering to an investment policy which restricts the holdings to long-term debt instruments issued or guaranteed by the Government of Canada or any province of Canada. Investment in the long-term debt instruments of Canadian banks are also permitted, provided the bank is rated A or higher by Standard and Poor's. With the exception of Government of Canada, holdings of any one issuer are limited to 10% of the total principal amount of the portfolio. The following credit risk table provides information on credit exposures according to issuer type and credit rating for the reserve fund:
+
+                                                       Fair Value                    Fair Value
+                                      Issuer         of Portfolio    Issuer       of Portfolio
+Issuer                             Credit Rating          (%)     Credit Rating         (%)
+                                        2024                            2023
+
+Government of Canada                   AAA                 -          AAA                -
+Provincial Governments              AA- to AAA          31.17%    AA- to AAA         24.05%
+Provincial Governments              A- to A+            29.63%    A- to A+           35.60%
+Provincially owned utilities        AA- to AAA           7.49%    AA- to AAA          6.07%
+Provincially owned utilities        A- to A+             3.30%    A- to A+            1.74%
+Canadian Schedule 1 banks           AA- to AAA           9.50%    AA- to AAA          9.30%
+Canadian Schedule 1 banks           A- to A+            18.91%    A- to A+           23.24%
+                                                       100.00%                       100.00%
+
+Liquidity Risk
+
+Churchill Falls is exposed to liquidity risk with respect to its contractual obligations and financial liabilities. Churchill Falls manages this risk by maintaining borrowing facilities, a minimum cash balance of $25.0 million (2023 - $25.0 million) and business interruption insurance. Short-term liquidity is provided through cash on hand, funds from operations and a $10.0 million (2023 - $10.0 million) unsecured credit facility. Long-term liquidity risk is managed by maintenance of the reserve fund in accordance with the Shareholders' Agreement and a dividend management policy that meets long-term liquidity requirements associated with Churchill Falls' capital expenditure program.
+
+The following are the contractual maturities of Churchill Falls' financial liabilities, including principal and interest, as at December 31, 2024.
+
+(thousands of Canadian dollars)      < 1 Year    1-3 Years    3-5 Years    > 5 Years       Total
+
+Trade and other payables              51,675            -            -            -      51,675
+Rental and royalty payable             8,679            -            -            -       8,679
+                                      60,354            -            -            -      60,354
+
+Market Risk
+
+In carrying out its operating and investing activities, Churchill Falls is exposed to possible market price movements that could impact expected future cash flow and the carrying value of certain financial assets and liabilities. Market price movements to which Churchill Falls has significant exposure include those relating to prevailing interest rates.
+
+Interest Rates
+
+Changes in prevailing interest rates will impact the fair value of financial assets and liabilities classified as FVTOCI, which includes the reserve fund. Expected future cash flows from these assets and liabilities are also impacted in certain circumstances, such as when reserve fund securities are sold prior to maturity.
+
+The impact of a 0.5% change in interest rates associated with the reserve fund on Other Comprehensive Income is as follows:
+
+(thousands of Canadian dollars)                           Decrease        Increase
+
+Interest on reserve fund                                      714            (703)
+
+
+22. RELATED PARTY TRANSACTIONS
+
+Churchill Falls enters into various transactions with its shareholders and other related parties. Unless otherwise noted, these transactions occur within the normal course of operations and are measured at the exchange amount, which is the amount of consideration agreed to by the related parties. Outstanding balances due to or from related parties are non-interest bearing with settlement normally within 30 days.
+
+Related parties with which Churchill Falls transacts are as follows:
+
+Related Party                                              Relationship
+
+Hydro                                                      65.8% shareholder of Churchill Falls
+Hydro-Québec                                               34.2% shareholder of Churchill Falls
+The Province                                               100% shareholder of Nalcor
+Nalcor                                                     100% shareholder of Hydro
+Labrador Transmission Corporation                          Wholly-owned subsidiary of Nalcor
+Muskrat Falls Corporation                                  Wholly-owned subsidiary of Nalcor
+Labrador-Island Link Limited Partnership                   Limited partnership between a wholly-owned
+                                                           subsidiary of Nalcor and KKR Island Link Incorporated
+
+Significant related party transactions, which are not otherwise disclosed separately in the condensed consolidated interim financial statements, are summarized below:
+
+As at December 31 (thousands of Canadian dollars)                    2024        2023
+
+Trade and other receivables:
+  Hydro-Québec                                                      26,747      17,543
+  Hydro                                                             14,950       4,422
+
+Rental and royalty payable:
+  The Province                                                       8,679       6,499
+
+Trade and other payables:
+  Other Related Parties                                              4,452         306
+
+Deferred revenue:
+  Hydro-Québec                                                       6,112           -
+
+For the year ended December 31 (thousands of Canadian dollars)       2024        2023
+
+Energy sales:
+  Hydro-Québec                                                      72,077      61,516
+  Hydro                                                             53,465      51,554
+
+Guaranteed winter availability:
+  Hydro-Québec                                                      38,293      38,897
+
+Other revenue:
+  Other Related Parties                                             17,660           -
+  Hydro-Québec                                                       1,880       1,799
+
+Operating costs:
+  Hydro                                                              2,147       1,189
+  Other Related Parties                                              2,734       2,365
+
+Other expense:
+  The Province                                                       8,790       6,553
+
+(a) Churchill Falls is required to pay the Province an annual rental of 8% of the consolidated net profits before income taxes and an annual royalty of $0.50 per horsepower year generated, which is payable on an annual basis before March 31 of the following fiscal year.
+
+(b) Churchill Falls has entered into a short-term energy purchase agreement with Muskrat Falls.
+
+22.1 Key Management Personnel
+
+Compensation for key management personnel, which Churchill Falls defines as its executives who have the primary authority and responsibility in planning, directing and controlling the activities of the entity, includes compensation for senior executives. Salaries and employee benefits include costs such as base salaries and contributions to employee benefit plans. Post-employment benefits include contributions to the Province's Public Service Pension Plan.
+
+For the year ended December 31 (thousands of Canadian dollars)       2024        2023
+
+Salaries and employee benefits                                         283         133
+Post-employment benefits                                                34          15
+                                                                       317         148
+
+
+23. COMMITMENTS AND CONTINGENCIES
+
+(a) Outstanding commitments for capital projects total approximately $92.6 million as at December 31, 2024 (2023 - $49.1 million).
+
+(b) Churchill Falls is subject to legal claims with respect to impact on land use, energy and capacity delivery, construction and other various matters. For some legal claims, it is not possible at this time to predict with any certainty the outcome of such litigation. Should these claims result in an unfavourable outcome for Churchill Falls, they may have a significant adverse effect on Churchill Falls' financial position.
+
+(c) The Water Management Agreement between Churchill Falls and Muskrat Falls provides for coordinated production for the efficient use of water on the Churchill River system by ensuring that water is available to meet delivery requirements and contractual commitments for both Churchill Falls and Muskrat Falls, while maximizing the energy produced from the water resource. As at December 31, 2024, Muskrat Falls has stored the equivalent of approximately 1.0 Twh (2023 – 2.0 Twh) of energy in the Churchill Falls reservoir.
+
+
+24. CAPITAL MANAGEMENT
+
+Churchill Falls' objective when managing capital is to maintain its ability to continue as a going concern. The focus of the capital management policy is to provide flexibility to ensure cash continues to be available to satisfy capital requirements. Managing the level of dividend payments is a key aspect of ensuring the availability of funding to maintain the plant and infrastructure.
+
+At present, the capital position of Churchill Falls is comprised entirely of equity capital (issued capital, shareholder contributions, reserves and retained earnings). The capital structure is adjusted through the amount of dividends paid to shareholders.
+
+Churchill Falls maintains a $10.0 million Canadian or US equivalent unsecured operating credit facility with its banker. Advances may take the form of a Prime Rate advance with interest calculated at the Prime Rate. The facility provides coverage for overdrafts on Churchill Falls' bank accounts, with interest calculated at the Prime Rate. There were no amounts drawn on this facility as at December 31, 2024 (2023 - $nil).
+
+Churchill Falls has issued three irrevocable letters of credit totalling $2.0 million (2023 – $2.0 million), $1.0 million of which does not impact the borrowing limit of the operating credit facility (2023 - $1.0 million). The letters of credit ensure satisfactory management of its waste management system and compliance with a certificate of approval for the transportation of special and hazardous wastes, granted by the Provincial Department of Environment and Climate.
+
+
+25. SUPPLEMENTARY CASH FLOW INFORMATION
+
+For the year ended December 31 (thousands of Canadian dollars)       2024        2023
+
+Trade and other receivables                                        (26,504)     (2,936)
+Inventories                                                         (1,116)     (2,783)
+Prepayments                                                            338         212
+Trade and other payables                                            11,116       3,552
+Rental and royalty payable                                           2,180      (2,553)
+Change in non-cash working capital balances                        (13,986)     (4,508)
+
+Related to:
+  Operating activities                                              (9,649)     (9,626)
+  Investing activities                                              (4,337)      5,118
+                                                                   (13,986)     (4,508)
+
+
+26. SUBSEQUENT EVENT
+
+Effective January 1, 2025, Hydro and Nalcor were legislatively amalgamated into a new legal corporation that will continue under the name "Newfoundland and Labrador Hydro". The amalgamated corporation holds the combined assets and liabilities of the former Hydro and Nalcor entities and is bound by any previously existing contracts and agreements from the former entities. As well, the legislation confirms the continuation of any security or guarantees provided by the Provincial Government to Nalcor with Hydro.
