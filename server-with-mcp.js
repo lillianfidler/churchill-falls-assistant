@@ -101,7 +101,31 @@ function prepareTextForSpeech(text) {
         .replace(/\n{3,}/g, '\n\n')
         .trim();
     
-    // THEN: Replace acronyms with speakable versions
+    // SECOND: Fix specific pronunciation issues BEFORE acronym replacement
+    
+    // Fix cents/kWh notation (e.g., "1.63¢/kWh" → "1.63 cents per kilowatt hour")
+    processedText = processedText
+        .replace(/(\d+\.?\d*)\s*¢\s*\/\s*kWh/gi, '$1 cents per kilowatt hour')
+        .replace(/(\d+\.?\d*)\s*¢\s*\/\s*kwh/gi, '$1 cents per kilowatt hour');
+    
+    // Fix "30x" style multipliers (e.g., "30x" → "30 times")
+    processedText = processedText
+        .replace(/(\d+)\s*x\b/gi, '$1 times');
+    
+    // Fix tilde symbol (~ → "approximately" or "to")
+    processedText = processedText
+        .replace(/~(\d)/g, 'approximately $1')
+        .replace(/(\d)~(\d)/g, '$1 to $2')
+        .replace(/~/g, 'to');
+    
+    // Add pauses between sections and numbered items
+    // Double line breaks → longer pause
+    processedText = processedText
+        .replace(/\n\n+/g, '. ... ')  // Pause between paragraphs
+        // Numbered items (1., 2., etc.) → pause before next number
+        .replace(/(\d+)\.\s+/g, '. ... $1. ');
+    
+    // THIRD: Replace acronyms with speakable versions
     const replacements = {
         // Organizations
         'MOU': 'M-O-U',
@@ -110,7 +134,7 @@ function prepareTextForSpeech(text) {
         'Hydro-Québec': 'Hydro-Quebec',
         'CF': 'Churchill Falls',
         
-        // Energy units
+        // Energy units (only if not already replaced above)
         'TWh': 'terawatt hours',
         'GWh': 'gigawatt hours',
         'kWh': 'kilowatt hours',
@@ -199,13 +223,21 @@ You have access to a Model Context Protocol (MCP) server with THREE tools for ac
 
 ## When to Use MCP Tools
 
-**ALWAYS use search_documents for:**
-- Answering questions about Churchill Falls
-- Finding specific facts, numbers, or quotes
-- Comparing information across documents
-- Any query that requires document content
+**Use search_documents when you need:**
+- Specific numbers, dates, or quotes from documents
+- Detailed information about the 2024 MOU terms
+- Financial data from statements
+- Analysis from Dr. Doug May's videos
+- Wade Locke's specific assessments
+- Comparisons across multiple documents
 
-**DO NOT** try to answer from memory - ALWAYS search the documents first.
+**Answer directly (without searching) for:**
+- Basic questions about Churchill Falls (it's a hydroelectric project in Labrador)
+- General context about the 1969 Power Contract
+- Simple explanations of concepts
+- Questions you can answer accurately from general knowledge
+
+**Golden Rule:** Search when you need document-specific details. Answer directly when general knowledge suffices.
 
 # Your Knowledge Base (Accessed via MCP)
 
@@ -272,14 +304,14 @@ For General Public Users:
 
 # Response Quality Standards
 
-✓ **Use MCP tools first** - Always search documents before answering
+✓ **Use MCP tools strategically** - Search when you need specific document details
 ✓ **Accurate** - Only use information from documents
 ✓ **Cited with dates and links** - Reference specific documents
 ✓ **Clear** - Explain complex concepts accessibly
 ✓ **Balanced** - Present multiple perspectives
 ✓ **Helpful** - Anticipate follow-up questions
 
-Remember: ALWAYS use MCP tools to search documents before answering questions.`;
+Remember: Search documents when you need specific details. Answer directly when general knowledge is sufficient.`;
 
 // Regular chat endpoint (existing)
 app.post('/api/chat', async (req, res) => {
