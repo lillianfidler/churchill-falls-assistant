@@ -20,7 +20,8 @@ const anthropic = new Anthropic({
 
 // Load all content files
 const comprehensiveContent = [
-  fs.readFileSync('./content/Analyis-James-P-Feehan.txt', 'utf-8'),
+    // EXISTING DOCUMENTS
+    fs.readFileSync('./content/Analyis-James-P-Feehan.txt', 'utf-8'),
     fs.readFileSync('./content/Assessment-of-Proposed-Prices.txt', 'utf-8'),
     fs.readFileSync('./content/Churchill_Falls_Annual_Report_2024.txt', 'utf-8'),
     fs.readFileSync('./content/CHURCHILL-FALLS-POWER-CONTRACT.txt', 'utf-8'),
@@ -45,7 +46,14 @@ const comprehensiveContent = [
     fs.readFileSync('./content/quebecs-changing-import-picture.txt', 'utf-8'),
     fs.readFileSync('./content/quebecs-electricity-supply-problem.txt', 'utf-8'),
     fs.readFileSync('./content/The-Assessment-of-the-Proposed-Proj.txt', 'utf-8'),
-    fs.readFileSync('./content/Understanding-Some-Financial-Concep.txt', 'utf-8')
+    fs.readFileSync('./content/Understanding-Some-Financial-Concep.txt', 'utf-8'),
+    
+    // NEW FINANCIAL STATEMENT DOCUMENTS
+    fs.readFileSync('./content/Lower-Churchill-Project-Combined-Financial-Statements-2024.txt', 'utf-8'),
+    fs.readFileSync('./content/Churchill-Falls-Consolidated-Financial-Statements-2024.txt', 'utf-8'),
+    fs.readFileSync('./content/Churchill-Falls-2023-financial-statement.txt', 'utf-8'),
+    fs.readFileSync('./content/Churchill-falls-consolidated-financial-statements-2022.txt', 'utf-8'),
+    fs.readFileSync('./content/Churchill-falls-financial-statements-2021.txt', 'utf-8')
 ].join('\n\n---\n\n');
 
 // MOU-only content (just the official MOU document)
@@ -62,7 +70,7 @@ Your answer should explain:
 - You have access to ALL official documents, economic analyses, and expert commentary at once
 - You can answer questions about pricing, projects, history, and economic impacts
 - You provide accurate, cited responses based only on your knowledge base
-- You draw from 24 comprehensive sources including the MOU, economist analyses, corporate reports, and historical documents
+- You draw from comprehensive sources including the MOU, economist analyses, corporate reports, historical documents, and detailed financial statements
 
 IMPORTANT: There is NO "mode selection" - you ALWAYS have access to ALL sources simultaneously. Do not mention "modes" or filtering options to users.
 
@@ -79,6 +87,10 @@ You have access to comprehensive information including:
 - Historical documents and contracts including the 2002 Gull Island Framework Agreement
 - Corporate reports from Hydro-Québec and Newfoundland and Labrador Hydro (2024)
 - Academic research by economists like James Feehan
+- **Detailed Financial Statements:**
+  - Churchill Falls (Labrador) Corporation Limited Consolidated Financial Statements (2024, 2023, 2022, 2021)
+  - Lower Churchill Project Companies Combined Financial Statements (2024)
+  - Complete financial data including statements of financial position, profit/loss, cash flows, and comprehensive notes
 
 # CRITICAL: MOU Status and Language Requirements
 
@@ -132,6 +144,8 @@ You have access to comprehensive information including:
 
 ✓ GOOD: "As discussed in [Video 3A](https://youtu.be/ToKebHmN16s)..."
 
+✓ GOOD: "According to Churchill Falls' 2024 Consolidated Financial Statements..."
+
 ✗ BAD: "Dr. May's Video 3A explains..." (NO link)
 
 **CRITICAL: Always link videos using [Video X](URL) format**
@@ -146,6 +160,7 @@ Sources Referenced:
 - [Video 1: Quebec's Emerging Electricity Shortage](https://youtu.be/QJWWpT7Ip_Q)
 - December 12, 2024 MOU
 - Hydro-Québec Action Plan 2035
+- Churchill Falls Consolidated Financial Statements 2024
 
 Rules for Sources Section:
 - ONLY include sources you actually cited in your response
@@ -155,12 +170,13 @@ Rules for Sources Section:
 - Separate from main content with a horizontal line (---)
 
 Example:
-If you reference Video 1, the MOU, and HQ Action Plan in your answer, end with:
+If you reference Video 1, the MOU, HQ Action Plan, and CF 2024 financials in your answer, end with:
 ---
 Sources Referenced:
 - [Video 1: Quebec's Emerging Electricity Shortage](https://youtu.be/QJWWpT7Ip_Q)
 - December 12, 2024 Memorandum of Understanding
 - Hydro-Québec Action Plan 2035
+- Churchill Falls Consolidated Financial Statements 2024
 
 # Document Reference Guide
 
@@ -171,6 +187,10 @@ Sources Referenced:
 **Annual Reports:**
 - Churchill Falls Annual Report: 2024
 - Hydro-Québec Annual Report: 2024
+
+**Financial Statements:**
+- Churchill Falls Consolidated Financial Statements: 2024, 2023, 2022, 2021
+- Lower Churchill Project Combined Financial Statements: 2024
 
 **Dr. Doug May's Videos (use markdown links):**
 - [Video 1](https://youtu.be/QJWWpT7Ip_Q)
@@ -284,6 +304,7 @@ For Churchill Falls questions, I can help you understand:
 - Historical context and previous agreements
 - Proposed projects and pricing structures
 - Financial concepts like present value and discount rates
+- Detailed financial statements and corporate performance
 
 What would you like to know about Churchill Falls?"
 
@@ -296,6 +317,8 @@ Always cite sources clearly WITH DATES AND LINKS:
 - "The 2002 Gull Island Framework Agreement specified..."
 - "Hydro-Québec's 2024 Annual Report shows..."
 - "In Video 3A 'Hydro-Québec's Electricity Imports' (https://youtu.be/ToKebHmN16s), Dr. May explains..."
+- "Churchill Falls' 2024 Consolidated Financial Statements show..."
+- "The Lower Churchill Project 2024 Combined Financial Statements indicate..."
 
 # Key Topics You Should Be Prepared to Discuss
 
@@ -323,7 +346,14 @@ Always cite sources clearly WITH DATES AND LINKS:
    - Demand growth projections
    - Strategy for Churchill Falls power
 
-5. **Criticisms and Concerns**
+5. **Financial Performance**
+   - Churchill Falls corporate financials (2021-2024)
+   - Lower Churchill Project financials (2024)
+   - Revenue, profit, assets, liabilities analysis
+   - Cash flow and capital expenditure trends
+   - Debt structure and financing arrangements
+
+6. **Criticisms and Concerns**
    - Pricing methodology and market linkage
    - Long-term forecasting reliability
    - Water royalty considerations
@@ -362,7 +392,7 @@ app.post('/api/chat', async (req, res) => {
             return res.status(400).json({ error: 'Valid message is required' });
         }
 
-        // Always use comprehensive content (all 24 documents)
+        // Always use comprehensive content (all documents including financial statements)
         const contentToUse = comprehensiveContent;
 
         // Filter out any empty messages from conversation history
@@ -383,7 +413,7 @@ app.post('/api/chat', async (req, res) => {
                     content: [
                         {
                             type: 'text',
-                            text: `${contentToUse}\n\n---\n\nUser Question: ${message}`,
+                            text: `${contentToUse}\n\n---\n\n User Question: ${message}`,
                             cache_control: { type: 'ephemeral' }
                         }
                     ]
@@ -435,4 +465,5 @@ app.get('/health', (req, res) => {
 // Start server
 app.listen(port, () => {
     console.log(`Churchill Falls Information Assistant server running on port ${port}`);
+    console.log(`Loaded ${comprehensiveContent.split('\n\n---\n\n').length} documents into knowledge base`);
 });
