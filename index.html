@@ -1146,7 +1146,21 @@
         }
 
         function playVoiceResponse(base64Audio, button) {
-            // Stop current audio if playing
+            // If this button's audio is currently playing, pause it
+            if (currentAudio && button.classList.contains('playing')) {
+                if (currentAudio.paused) {
+                    // Resume playing
+                    currentAudio.play();
+                    button.innerHTML = '<span class="voice-button-icon">⏸</span><span>Pause</span>';
+                } else {
+                    // Pause
+                    currentAudio.pause();
+                    button.innerHTML = '<span class="voice-button-icon">▶️</span><span>Resume</span>';
+                }
+                return;
+            }
+            
+            // Stop any other audio that might be playing
             if (currentAudio) {
                 currentAudio.pause();
                 currentAudio = null;
@@ -1172,7 +1186,7 @@
                 currentAudio = new Audio(audioUrl);
                 
                 button.classList.add('playing');
-                button.innerHTML = '<span class="voice-button-icon">⏸</span><span>Playing...</span>';
+                button.innerHTML = '<span class="voice-button-icon">⏸</span><span>Pause</span>';
                 
                 currentAudio.onended = () => {
                     URL.revokeObjectURL(audioUrl);

@@ -63,9 +63,45 @@ async function initializeMCP() {
 }
 
 /**
- * Prepare text for natural speech (expand acronyms, etc.)
+ * Prepare text for natural speech (expand acronyms, remove markdown, etc.)
  */
 function prepareTextForSpeech(text) {
+    let processedText = text;
+    
+    // FIRST: Remove all markdown formatting
+    processedText = processedText
+        // Remove bold/italic markers
+        .replace(/\*\*\*(.+?)\*\*\*/g, '$1')  // Bold + italic
+        .replace(/\*\*(.+?)\*\*/g, '$1')      // Bold
+        .replace(/\*(.+?)\*/g, '$1')          // Italic
+        .replace(/__(.+?)__/g, '$1')          // Alternative bold
+        .replace(/_(.+?)_/g, '$1')            // Alternative italic
+        
+        // Remove headers
+        .replace(/^#{1,6}\s+/gm, '')
+        
+        // Remove bullet points and list markers
+        .replace(/^[\s]*[-*+]\s+/gm, '')
+        .replace(/^[\s]*\d+\.\s+/gm, '')
+        
+        // Remove links but keep text
+        .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1')
+        
+        // Remove blockquotes
+        .replace(/^>\s*/gm, '')
+        
+        // Remove code blocks
+        .replace(/```[\s\S]*?```/g, '')
+        .replace(/`([^`]+)`/g, '$1')
+        
+        // Remove horizontal rules
+        .replace(/^[\s]*[-*_]{3,}[\s]*$/gm, '')
+        
+        // Clean up extra whitespace
+        .replace(/\n{3,}/g, '\n\n')
+        .trim();
+    
+    // THEN: Replace acronyms with speakable versions
     const replacements = {
         // Organizations
         'MOU': 'M-O-U',
@@ -90,8 +126,6 @@ function prepareTextForSpeech(text) {
         'i.e.': 'that is',
         'etc.': 'et cetera',
     };
-    
-    let processedText = text;
     
     for (const [acronym, spoken] of Object.entries(replacements)) {
         const regex = new RegExp(`\\b${acronym}\\b`, 'gi');
