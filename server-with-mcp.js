@@ -347,6 +347,9 @@ app.post('/api/chat', async (req, res) => {
             return res.status(400).json({ error: 'Valid message is required' });
         }
 
+        const requestStartTime = Date.now();
+        console.log(`\n[REQUEST] Voice chat request received: "${message.substring(0, 100)}..." at ${new Date().toISOString()}`);
+
         if (!mcpClient) {
             return res.status(503).json({ 
                 error: 'MCP server not available. Please try again shortly.' 
@@ -373,6 +376,9 @@ app.post('/api/chat', async (req, res) => {
             input_schema: tool.inputSchema
         }));
 
+        console.log(`[TIMING] Starting Claude API call at ${new Date().toISOString()}`);
+        const startTime = Date.now();
+        
         let response = await anthropic.messages.create({
             model: 'claude-sonnet-4-5-20250929',
             max_tokens: 4096,
@@ -380,12 +386,19 @@ app.post('/api/chat', async (req, res) => {
             messages: messages,
             tools: tools
         });
+        
+        console.log(`[TIMING] Claude initial response received in ${Date.now() - startTime}ms`);
 
         let finalText = '';
         let currentMessages = [...messages];
+        let toolCallCount = 0;
 
         while (response.stop_reason === 'tool_use' || 
                (response.content && response.content.some(block => block.type === 'tool_use'))) {
+            
+            toolCallCount++;
+            const roundStartTime = Date.now();
+            console.log(`[TIMING] Tool use round #${toolCallCount} starting`);
             
             const assistantMessage = {
                 role: 'assistant',
