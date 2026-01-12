@@ -24,7 +24,7 @@ const ELEVENLABS_VOICE_ID = process.env.ELEVENLABS_VOICE_ID;
 
 // Voice usage tracking
 let monthlyVoiceUsage = 0;
-const MONTHLY_VOICE_LIMIT = 30000; // Creator tier: 30,000 characters/month
+const MONTHLY_VOICE_LIMIT = 100000; // Creator tier: 100,000 credits/month ($22/month)
 
 // MCP Client
 let mcpClient = null;
@@ -173,7 +173,36 @@ async function convertToSpeech(text) {
     }
     
     // Prepare text for speech
-    const speechText = prepareTextForSpeech(text);
+    let speechText = prepareTextForSpeech(text);
+    
+    // ElevenLabs has a 10,000 character limit per request
+    // If text is too long, create an intelligent summary for voice
+    const ELEVENLABS_CHAR_LIMIT = 10000;
+    if (speechText.length > ELEVENLABS_CHAR_LIMIT) {
+        console.log(`Response too long for voice (${speechText.length} chars). Creating summary...`);
+        
+        // Create intelligent summary by taking first ~8000 chars and adding conclusion
+        const summaryLength = 8000;
+        const truncated = speechText.substring(0, summaryLength);
+        
+        // Find the last complete sentence
+        const lastPeriod = truncated.lastIndexOf('.');
+        const lastQuestion = truncated.lastIndexOf('?');
+        const lastExclamation = truncated.lastIndexOf('!');
+        const lastSentenceEnd = Math.max(lastPeriod, lastQuestion, lastExclamation);
+        
+        if (lastSentenceEnd > 0) {
+            speechText = truncated.substring(0, lastSentenceEnd + 1) + 
+                        " ... This is a summary of the key points. For complete details, please read the full text response.";
+        } else {
+            // Fallback: just truncate at word boundary
+            const lastSpace = truncated.lastIndexOf(' ');
+            speechText = truncated.substring(0, lastSpace) + 
+                        " ... This response has been summarized for voice. Please read the full text for complete details.";
+        }
+        
+        console.log(`Voice summary created: ${speechText.length} chars`);
+    }
     
     // Track usage
     monthlyVoiceUsage += speechText.length;
