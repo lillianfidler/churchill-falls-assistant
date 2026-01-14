@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
 /**
- * Churchill Falls MCP Server
+ * Churchill Falls MCP Server - HYBRID VERSION
  * 
- * Model Context Protocol server for managing Churchill Falls documents
- * Provides search and retrieval tools to avoid token limits
+ * Model Context Protocol server for managing Churchill Falls SUPPLEMENTARY documents
+ * Core documents are loaded directly into Express server context for fast access
+ * This server only handles historical/supplementary documents
  */
 
 const { Server } = require('@modelcontextprotocol/sdk/server/index.js');
@@ -19,27 +20,18 @@ const path = require('path');
 // Document directory
 const CONTENT_DIR = path.join(__dirname, 'content');
 
-// Complete list of all 35 documents in content folder (VERIFIED from screenshot)
+// SUPPLEMENTARY DOCUMENTS ONLY (22 documents)
+// Core documents (13) are loaded into Express server context for immediate access
 const DOCUMENTS = [
   // Analysis and Assessment Documents
   'Analyis-James-P-Feehan.txt',
   'Assessment-of-Proposed-Prices.txt',
   
-  // Churchill Falls Documents
+  // Churchill Falls Historical Documents
   'Churchill_Falls_Annual_Report_2024.txt',
-  'Churchill-Falls-2023-financial-statement.txt',
   'Churchill-falls-consolidated-financial-statements-2022.txt',
-  'Churchill-falls-consolidated-financial-statements-2024.txt',
   'Churchill-falls-financial-statements-2021.txt',
   'CHURCHILL-FALLS-POWER-CONTRACT.txt',
-  
-  // Doug May Video Series
-  'Doug-video-series-video1.txt',
-  'Doug-video-series-video2A.txt',
-  'Doug-video-series-video2B.txt',
-  'Doug-video-series-video3A.txt',
-  'Doug-video-series-video3B.txt',
-  'Doug-video-series-video4.txt',
   
   // Historical and Academic Documents
   'Feehan, James P., Smallwood, Churchill Falls, and the Power Corridor through Quebec.txt',
@@ -55,13 +47,10 @@ const DOCUMENTS = [
   'Hydro-quebec-annual-report-2024.txt',
   'HYDRO-QUEBECS-IMPORTS.txt',
   
-  // MOU and Related Documents
-  'LOCKE analysis of MOU CF.txt',
-  'MOU_Churchill_Falls_Dec_12_2024_clean_text.txt',
+  // MOU Supporting Documents
   'MOU_s_Societal_Values.txt',
   
   // Lower Churchill Project
-  'Lower-Churchill-Project-Combined-Financial-Statements-2024.txt',
   'lower-churchill-projects.txt',
   
   // Additional Analysis Documents
@@ -73,6 +62,22 @@ const DOCUMENTS = [
   'Understanding-Some-Financial-Concep.txt'
 ];
 
+// CORE DOCUMENTS (REMOVED FROM MCP - NOW IN EXPRESS SERVER CONTEXT)
+// These 13 documents are loaded into the Express server for immediate access:
+// - MOU_Churchill_Falls_Dec_12_2024_clean_text.txt
+// - LOCKE analysis of MOU CF.txt
+// - Reassessing-the-Churchill-Falls-MOU.txt
+// - Doug-video-series-video1.txt
+// - Doug-video-series-video2A.txt
+// - Doug-video-series-video2B.txt
+// - Doug-video-series-video3A.txt
+// - Doug-video-series-video3B.txt
+// - Doug-video-series-video4.txt
+// - Churchill-falls-consolidated-financial-statements-2024.txt
+// - Churchill-Falls-2023-financial-statement.txt
+// - Lower-Churchill-Project-Combined-Financial-Statements-2024.txt
+// - HYDRO-QUEBECS-EXPORTS.txt
+
 // Document cache
 let documentCache = {};
 
@@ -80,7 +85,7 @@ let documentCache = {};
  * Initialize document cache
  */
 async function initializeCache() {
-  console.error('Initializing Churchill Falls MCP document cache...');
+  console.error('Initializing Churchill Falls MCP supplementary document cache...');
   
   let loadedCount = 0;
   let totalSize = 0;
@@ -107,8 +112,9 @@ async function initializeCache() {
     }
   }
   
-  console.error(`\n✓ Loaded ${loadedCount}/${DOCUMENTS.length} documents`);
-  console.error(`✓ Total size: ${(totalSize / 1024 / 1024).toFixed(2)} MB\n`);
+  console.error(`\n✓ Loaded ${loadedCount}/${DOCUMENTS.length} supplementary documents`);
+  console.error(`✓ Total size: ${(totalSize / 1024 / 1024).toFixed(2)} MB`);
+  console.error(`✓ Core documents (13) are in Express server context\n`);
   
   if (loadedCount === 0) {
     console.error('❌ ERROR: No documents loaded! Check that /content/ directory exists with .txt files');
@@ -212,8 +218,8 @@ async function main() {
   // Create MCP server
   const server = new Server(
     {
-      name: 'churchill-falls-mcp',
-      version: '1.0.0',
+      name: 'churchill-falls-mcp-hybrid',
+      version: '2.0.0',
     },
     {
       capabilities: {
@@ -228,13 +234,13 @@ async function main() {
       tools: [
         {
           name: 'search_documents',
-          description: 'Search through Churchill Falls documents for relevant information. Returns snippets and document names.',
+          description: 'Search through Churchill Falls SUPPLEMENTARY documents (historical, pre-2023 financials, academic papers). Core documents are already in context.',
           inputSchema: {
             type: 'object',
             properties: {
               query: {
                 type: 'string',
-                description: 'Search query (keywords to find in documents)',
+                description: 'Search query (keywords to find in supplementary documents)',
               },
               max_results: {
                 type: 'number',
@@ -247,13 +253,13 @@ async function main() {
         },
         {
           name: 'get_document',
-          description: 'Retrieve the full content of a specific Churchill Falls document by filename.',
+          description: 'Retrieve the full content of a specific supplementary document by filename.',
           inputSchema: {
             type: 'object',
             properties: {
               filename: {
                 type: 'string',
-                description: 'Name of the document file to retrieve',
+                description: 'Name of the supplementary document file to retrieve',
               },
             },
             required: ['filename'],
@@ -261,7 +267,7 @@ async function main() {
         },
         {
           name: 'list_documents',
-          description: 'List all available Churchill Falls documents in the knowledge base.',
+          description: 'List all available supplementary Churchill Falls documents (historical/academic content only).',
           inputSchema: {
             type: 'object',
             properties: {},
@@ -298,7 +304,7 @@ async function main() {
             content: [
               {
                 type: 'text',
-                text: `Error: Document "${filename}" not found`,
+                text: `Error: Document "${filename}" not found in supplementary documents`,
               },
             ],
             isError: true,
@@ -354,7 +360,8 @@ async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
   
-  console.error('Churchill Falls MCP Server running');
+  console.error('Churchill Falls MCP Hybrid Server running');
+  console.error('Supplementary documents ready for search');
 }
 
 // Run the server

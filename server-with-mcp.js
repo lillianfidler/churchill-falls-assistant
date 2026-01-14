@@ -4,6 +4,8 @@ const Anthropic = require('@anthropic-ai/sdk');
 const cors = require('cors');
 const { Client } = require('@modelcontextprotocol/sdk/client/index.js');
 const { StdioClientTransport } = require('@modelcontextprotocol/sdk/client/stdio.js');
+const fs = require('fs');
+const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -28,6 +30,80 @@ const MONTHLY_VOICE_LIMIT = 100000; // Creator tier: 100,000 credits/month ($22/
 
 // MCP Client
 let mcpClient = null;
+
+// ============ HYBRID SYSTEM: CORE DOCUMENTS ============
+// Core documents storage (loaded into context for fast access)
+let coreDocumentsText = '';
+
+const CORE_DOCUMENTS = [
+    'MOU_Churchill_Falls_Dec_12_2024_clean_text.txt',
+    'LOCKE analysis of MOU CF.txt',
+    'Reassessing-the-Churchill-Falls-MOU.txt',
+    'Doug-video-series-video1.txt',
+    'Doug-video-series-video2A.txt',
+    'Doug-video-series-video2B.txt',
+    'Doug-video-series-video3A.txt',
+    'Doug-video-series-video3B.txt',
+    'Doug-video-series-video4.txt',
+    'Churchill-falls-consolidated-financial-statements-2024.txt',
+    'Churchill-Falls-2023-financial-statement.txt',
+    'Lower-Churchill-Project-Combined-Financial-Statements-2024.txt',
+    'HYDRO-QUEBECS-EXPORTS.txt'
+];
+
+/**
+ * Load core documents into memory for context window
+ */
+function loadCoreDocuments() {
+    console.log('\n============================================');
+    console.log('Loading core documents into context...');
+    console.log('============================================\n');
+    
+    const contentDir = path.join(__dirname, 'content');
+    let documentsLoaded = 0;
+    let totalSize = 0;
+    
+    for (const filename of CORE_DOCUMENTS) {
+        const filepath = path.join(contentDir, filename);
+        
+        try {
+            if (fs.existsSync(filepath)) {
+                const content = fs.readFileSync(filepath, 'utf-8');
+                const sizeKB = (Buffer.byteLength(content, 'utf-8') / 1024).toFixed(2);
+                
+                // Add document with clear headers for Claude to reference
+                coreDocumentsText += `\n\n========================================\n`;
+                coreDocumentsText += `DOCUMENT: ${filename}\n`;
+                coreDocumentsText += `========================================\n\n`;
+                coreDocumentsText += content;
+                coreDocumentsText += `\n\n========================================\n`;
+                coreDocumentsText += `END OF DOCUMENT: ${filename}\n`;
+                coreDocumentsText += `========================================\n\n`;
+                
+                documentsLoaded++;
+                totalSize += Buffer.byteLength(content, 'utf-8');
+                
+                console.log(`✓ Loaded: ${filename} (${sizeKB} KB)`);
+            } else {
+                console.warn(`⚠ File not found: ${filename}`);
+            }
+        } catch (error) {
+            console.error(`✗ Error loading ${filename}:`, error.message);
+        }
+    }
+    
+    const totalSizeMB = (totalSize / (1024 * 1024)).toFixed(2);
+    const estimatedTokens = Math.round(totalSize / 4);
+    
+    console.log(`\n✓ Core documents loaded successfully`);
+    console.log(`  - Documents: ${documentsLoaded}/${CORE_DOCUMENTS.length}`);
+    console.log(`  - Total size: ${totalSizeMB} MB`);
+    console.log(`  - Estimated tokens: ~${estimatedTokens.toLocaleString()}`);
+    console.log('============================================\n');
+    
+    return documentsLoaded > 0;
+}
+// ============ END CORE DOCUMENTS ============
 
 /**
  * Initialize MCP client connection
@@ -244,82 +320,78 @@ const systemPrompt = `You are the Churchill Falls Information Assistant, an expe
 
 # CRITICAL: RESPONSE EFFICIENCY
 
-**You must respond within 60 seconds.** To achieve this:
-- Search efficiently: Use ONE comprehensive search query instead of multiple narrow searches
-- Write concisely: Be thorough but efficient - aim for 3000-5000 words maximum
-- Synthesize quickly: Don't repeat information from search results verbatim
-- Stay focused: Address the user's specific question directly
+Respond within 60 seconds by:
+- Answering IMMEDIATELY from core documents already in your context (no searching needed)
+- Only using MCP search_documents for historical/supplementary content (2021-2022 financials, academic papers, pre-2020 history)
+- Writing concisely: aim for 3000-5000 words maximum
 
-# CRITICAL PERFORMANCE RULE: Balance Speed with Completeness
+# DOCUMENT ACCESS STRATEGY
 
-**Answer IMMEDIATELY (without searching) ONLY for these ultra-basic questions:**
-- "What is Churchill Falls?" → A 5,428 MW hydroelectric generating station in Labrador
-- "Where is Churchill Falls located?" → Labrador, Newfoundland and Labrador, Canada
-- "When was Churchill Falls built?" → Constructed 1967-1971, operational since 1971
-- "Who owns Churchill Falls?" → 65.8% NL Hydro (formerly CFLCo), 34.2% Hydro-Québec
+**CORE DOCUMENTS IN YOUR CONTEXT (Answer Immediately - No Searching):**
 
-**ALWAYS SEARCH for everything else, including:**
-- Any question about the MOU (December 2024 agreement) - search for specific terms and provisions
-- Questions about Dr. Doug May's analysis or opinions - search his video transcripts
-- Questions about Wade Locke's views or assessment - search his analysis documents
-- Financial data, revenue, profits, costs - search financial statements
-- Dates, percentages, dollar amounts, technical specifications - search for accuracy
-- Historical context beyond basic facts - search historical documents
-- Power contract details and terms - search the 1969 contract
-- Hydro-Québec information and data - search their reports
-- Comparisons, trends, or analysis - search relevant documents
-- Questions using "what does [document/person] say about..." - ALWAYS search
-- Questions asking "how much," "when exactly," "what were the terms" - ALWAYS search
-- ANY question where document-specific details would improve the answer - search
+You already have immediate access to these complete documents below. Answer questions about these topics DIRECTLY from the text below without using any MCP tools:
 
-**Golden Rule:** When in doubt, SEARCH. It's better to take 20 seconds and be comprehensive than to answer in 10 seconds and miss important information.
+1. December 2024 MOU (complete text)
+2. Wade Locke's MOU analysis (complete)
+3. "Reassessing the Churchill Falls MOU" analysis (complete)
+4. Dr. Doug May's complete 6-part video series (all transcripts)
+5. Churchill Falls 2023 financial statements (complete)
+6. Churchill Falls 2024 financial statements (complete)
+7. Lower Churchill Project 2024 financial statements (complete)
+8. Hydro-Québec Exports analysis (complete)
 
-# You Have MCP Tools Available
+**SUPPLEMENTARY DOCUMENTS IN MCP (Use search_documents Only When Needed):**
 
-1. **search_documents** - Search for relevant information (use liberally!)
-2. **get_document** - Retrieve full document content
-3. **list_documents** - See available documents
+Only use MCP search_documents tool for:
+- 2021-2022 Churchill Falls financial statements
+- Historical documents (pre-2020)
+- Academic papers (Feehan's research)
+- Technical specifications from old contracts
+- Older Hydro-Québec reports
+- Historical context from 1949-2007
 
-# Your Knowledge Base (Accessed via MCP)
+# MCP Tools Available
 
-Comprehensive documentation including:
-- December 12, 2024 Memorandum of Understanding (MOU)
-- Dr. Doug May's 6-part video analysis series (complete transcripts)
-- Wade Locke's MOU assessment and analysis
-- 1969 Power Contract details
-- Historical documents and development history
-- Hydro-Québec and NL Hydro corporate reports (2024)
-- Churchill Falls Consolidated Financial Statements (2024, 2023, 2022, 2021)
-- Lower Churchill Project Combined Financial Statements (2024)
-- Economic analyses and research papers
-- Technical specifications and project details
+You have three MCP tools available for supplementary content:
+- search_documents: Search historical/supplementary documents
+- get_document: Retrieve full supplementary document
+- list_documents: List supplementary documents
+
+Use these ONLY when the answer requires historical or supplementary content not in your core documents below.
+
+# ============================================
+# CORE DOCUMENTS (ALREADY IN YOUR CONTEXT)
+# ============================================
+
+${coreDocumentsText}
+
+# ============================================
+# END OF CORE DOCUMENTS
+# ============================================
 
 # CRITICAL: MOU Status Language
 
-The December 12, 2024 MOU is a **PROPOSED** agreement, NOT finalized:
+The December 12, 2024 MOU is a PROPOSED agreement, NOT finalized.
 
 ✓ CORRECT: "proposed MOU," "if implemented," "if approved," "would provide"
-✗ INCORRECT: "the deal," "was finalized," "will provide" (as if certain)
+✗ INCORRECT: "the deal," "was finalized," "will provide"
 
 # Document Citation Requirements
 
-When citing documents:
-1. Include document title/name
-2. Include date if applicable
+When citing core documents above:
+1. Reference the document name
+2. Include specific details/quotes
 3. For Dr. Doug May videos: use markdown links
 
 # Dr. Doug May's Video Links
 
+When referencing Doug May's videos, always include these links:
 - [Video 1: Quebec's Emerging Electricity Shortage](https://youtu.be/QJWWpT7Ip_Q)
 - [Video 2A: Assessment of Proposed Prices](https://youtu.be/j2GWirWVg48)
 - [Video 2B: Assessment of Proposed Prices (continued)](https://youtu.be/MJ91O1W358E)
 - [Video 3A: Hydro-Québec's Electricity Imports](https://youtu.be/ToKebHmN16s)
 - [Video 3B: Hydro-Québec's Electricity Imports (continued)](https://youtu.be/ToKebHmN16s)
 - [Video 4: Assessment of Proposed Projects](https://youtu.be/OFcA4-SlWTE)
-
-# Sources Referenced Section
-
-Include "Sources Referenced" at end when citing documents.
 
 # Communication Style
 
@@ -337,14 +409,18 @@ Adapt to user expertise:
 
 # Response Quality Standards
 
-✓ **Comprehensive** - Search liberally to provide complete, accurate answers
-✓ **Accurate** - Use document-specific information whenever relevant
-✓ **Fast for basics** - Only skip searching for the 4 ultra-basic questions listed above
-✓ **Cited** - Always reference documents when using their information
+✓ **FAST** - Answer immediately from core documents in context (10-15 seconds)
+✓ **Comprehensive** - Include all relevant details from core documents
+✓ **Accurate** - Only cite what's in the documents
 ✓ **Clear** - Explain complex concepts accessibly
-✓ **Helpful** - Anticipate follow-up questions
+✓ **Cited** - Reference documents, include video links
+✓ **Balanced** - Present multiple perspectives when available
 
-**REMEMBER: Search documents for almost everything. Only answer without searching for the 4 ultra-basic questions explicitly listed above. When in doubt, search - completeness matters more than speed.**`;
+# Sources Referenced Section
+
+Include "Sources Referenced" at end when citing documents.
+
+**REMEMBER: The core documents are already in your context above. Answer questions about MOU, Doug May, Wade Locke, 2023-2024 financials, and Hydro-Québec exports IMMEDIATELY without searching. Only use MCP search for historical/supplementary content.**`;
 
 // Regular chat endpoint (existing)
 app.post('/api/chat', async (req, res) => {
@@ -647,10 +723,24 @@ app.get('/health', (req, res) => {
 
 // Start server
 async function startServer() {
+    console.log('\n╔════════════════════════════════════════════════╗');
+    console.log('║   Churchill Falls HYBRID Information Assistant ║');
+    console.log('╚════════════════════════════════════════════════╝\n');
+    
+    // STEP 1: Load core documents into context
+    const coreLoaded = loadCoreDocuments();
+    if (!coreLoaded) {
+        console.error('\n✗ FATAL: Failed to load core documents');
+        console.error('Cannot start server without core documents\n');
+        process.exit(1);
+    }
+    
+    // STEP 2: Initialize MCP for supplementary documents
+    console.log('Connecting to MCP server for supplementary documents...\n');
     const mcpInitialized = await initializeMCP();
     
     if (!mcpInitialized) {
-        console.error('WARNING: MCP server not available. Some features may not work.');
+        console.error('WARNING: MCP server not available. Historical document search disabled.');
     }
     
     if (!ELEVENLABS_API_KEY || !ELEVENLABS_VOICE_ID) {
@@ -659,10 +749,20 @@ async function startServer() {
         console.log('✓ ElevenLabs voice enabled');
     }
     
+    // STEP 3: Start Express server
     app.listen(port, () => {
-        console.log(`Churchill Falls Information Assistant server running on port ${port}`);
-        console.log(`MCP Status: ${mcpInitialized ? 'Connected ✓' : 'Disconnected ✗'}`);
-        console.log(`Voice Status: ${(ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID) ? 'Enabled ✓' : 'Disabled ✗'}`);
+        console.log('\n╔════════════════════════════════════════════════╗');
+        console.log(`║  Server running on port ${port.toString().padEnd(24)} ║`);
+        console.log('╠════════════════════════════════════════════════╣');
+        console.log('║  HYBRID SYSTEM STATUS:                         ║');
+        console.log(`║  • Core docs in context: ✓ (Fast answers)     ║`);
+        console.log(`║  • MCP supplementary: ${mcpInitialized ? '✓' : '✗'}                      ║`);
+        console.log(`║  • Voice (ElevenLabs): ${(ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID) ? '✓' : '✗'}                   ║`);
+        console.log('╚════════════════════════════════════════════════╝\n');
+        console.log('Ready to answer questions!\n');
+        console.log('Expected performance:');
+        console.log('  • Core doc questions: 10-15 seconds');
+        console.log('  • Historical questions: 30-60 seconds\n');
     });
 }
 

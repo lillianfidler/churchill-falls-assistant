@@ -708,6 +708,113 @@
                 width: 100%;
             }
         }
+
+        /* Footer Navigation */
+        .sidebar-footer {
+            margin-top: auto;
+            padding: 20px;
+            border-top: none;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+
+        .sidebar-brand {
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+
+        .sidebar-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .sidebar-nav a {
+            color: rgba(255, 255, 255, 0.95);
+            text-decoration: none;
+            font-size: 13px;
+            padding: 8px 12px;
+            transition: all 0.2s;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .sidebar-nav a:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+        }
+
+        /* Voice Mode Toggle */
+        .voice-mode-toggle {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            background: #f1f5f9;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .voice-mode-toggle label {
+            color: #1e293b;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .voice-toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 26px;
+        }
+
+        .voice-toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .voice-toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 26px;
+        }
+
+        .voice-toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .voice-toggle-slider {
+            background-color: #3b82f6;
+        }
+
+        input:checked + .voice-toggle-slider:before {
+            transform: translateX(24px);
+        }
+
+        .voice-mode-label {
+            color: #64748b;
+            font-size: 12px;
+            min-width: 80px;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
@@ -728,7 +835,30 @@
                     <li>Financial statements and project assessments</li>
                     <li>Wade Locke's MOU evaluation</li>
                 </ul>
-                <p style="margin-top: 16px;"><strong>🎙️ NEW: Voice Responses!</strong> Hear answers in Dr. Doug May's voice (text always visible too).</p>
+                
+                <div style="margin-top: 24px;">
+                    <p style="margin: 0 0 14px 0; font-weight: 600; color: #1e293b; font-size: 15px;">Choose your response format:</p>
+                    
+                    <div style="display: flex; gap: 12px; margin-top: 12px;">
+                        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; padding: 14px 16px; background: white; border: 2px solid #cbd5e1; border-radius: 10px; flex: 1; transition: all 0.2s;">
+                            <input type="radio" name="landingVoiceMode" value="disabled" checked style="width: 20px; height: 20px; cursor: pointer; flex-shrink: 0;">
+                            <span style="font-size: 14px; color: #1e293b;">
+                                <strong style="display: block; margin-bottom: 4px;">Text Only</strong>
+                                <small style="color: #64748b;">Full detailed text responses</small>
+                            </span>
+                        </label>
+                        
+                        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; padding: 14px 16px; background: white; border: 2px solid #cbd5e1; border-radius: 10px; flex: 1; transition: all 0.2s;">
+                            <input type="radio" name="landingVoiceMode" value="enabled" style="width: 20px; height: 20px; cursor: pointer; flex-shrink: 0;">
+                            <span style="font-size: 14px; color: #1e293b;">
+                                <strong style="display: block; margin-bottom: 4px;">🎙️ Voice Mode</strong>
+                                <small style="color: #64748b;">Hear audio responses (shorter summaries)</small>
+                            </span>
+                        </label>
+                    </div>
+                    
+                    <p style="margin: 10px 0 0 0; font-size: 12px; color: #64748b; font-style: italic;">You can change this anytime in the sidebar</p>
+                </div>
             </div>
 
             <div class="landing-input-box">
@@ -779,6 +909,27 @@
                 <div class="sidebar-content" id="sessionList" role="navigation" aria-label="Chat history">
                     <!-- Session list will be populated by JavaScript -->
                 </div>
+                
+                <!-- Voice Mode Toggle -->
+                <div class="voice-mode-toggle">
+                    <label for="voiceModeToggle">Voice Mode:</label>
+                    <label class="voice-toggle-switch">
+                        <input type="checkbox" id="voiceModeToggle">
+                        <span class="voice-toggle-slider"></span>
+                    </label>
+                    <span class="voice-mode-label" id="voiceModeLabel">Enabled</span>
+                </div>
+                
+                <!-- Footer Navigation -->
+                <nav class="sidebar-footer">
+                    <div class="sidebar-brand">Churchill Falls Information Assistant</div>
+                    <div class="sidebar-nav">
+                        <a href="#" id="homeLinkReset">Home (Start Fresh)</a>
+                        <a href="about.html">About</a>
+                        <a href="sources.html">Sources & Videos</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </nav>
             </div>
 
             <!-- Chat Area -->
@@ -818,6 +969,53 @@
         // Voice state
         let currentAudio = null;
         let voiceAvailable = true;
+        let voiceModeEnabled = false;  // Voice mode toggle state (default: disabled/Text Only)
+
+        // Voice mode toggle handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const voiceToggle = document.getElementById('voiceModeToggle');
+            const voiceModeLabel = document.getElementById('voiceModeLabel');
+            
+            if (voiceToggle) {
+                voiceToggle.addEventListener('change', function(e) {
+                    voiceModeEnabled = e.target.checked;
+                    if (voiceModeLabel) {
+                        if (voiceModeEnabled) {
+                            voiceModeLabel.textContent = 'Enabled';
+                            voiceModeLabel.style.color = '#3b82f6'; // Blue when enabled
+                        } else {
+                            voiceModeLabel.textContent = 'Disabled';
+                            voiceModeLabel.style.color = '#64748b'; // Gray when disabled
+                        }
+                    }
+                });
+            }
+            
+            // Start Fresh button handler
+            const homeLinkReset = document.getElementById('homeLinkReset');
+            if (homeLinkReset) {
+                homeLinkReset.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    if (confirm('This will clear your conversation history and start fresh. Continue?')) {
+                        // Clear current session
+                        if (currentSessionId) {
+                            const sessionIndex = sessions.findIndex(s => s.id === currentSessionId);
+                            if (sessionIndex !== -1) {
+                                sessions[sessionIndex].conversationHistory = [];
+                            }
+                        }
+                        // Clear display
+                        const chatContainer = document.getElementById('chatContainer');
+                        if (chatContainer) {
+                            chatContainer.innerHTML = '';
+                        }
+                        // Save sessions
+                        saveSessions();
+                        window.scrollTo(0, 0);
+                    }
+                });
+            }
+        });
 
         // Check voice status on load
         checkVoiceStatus();
@@ -919,6 +1117,30 @@
             const message = input.value.trim();
             
             if (message) {
+                // Get voice mode preference from landing page
+                const voiceRadios = document.getElementsByName('landingVoiceMode');
+                let selectedVoiceMode = false; // default to disabled (Text Only is checked by default)
+                for (const radio of voiceRadios) {
+                    if (radio.checked) {
+                        selectedVoiceMode = radio.value === 'enabled';
+                        break;
+                    }
+                }
+                
+                // Set voice mode before starting chat
+                voiceModeEnabled = selectedVoiceMode;
+                
+                // Update toggle in sidebar to match
+                const voiceToggle = document.getElementById('voiceModeToggle');
+                const voiceModeLabel = document.getElementById('voiceModeLabel');
+                if (voiceToggle) {
+                    voiceToggle.checked = selectedVoiceMode;
+                }
+                if (voiceModeLabel) {
+                    voiceModeLabel.textContent = selectedVoiceMode ? 'Enabled' : 'Disabled';
+                    voiceModeLabel.style.color = selectedVoiceMode ? '#3b82f6' : '#64748b';
+                }
+                
                 document.getElementById('landingPage').classList.add('hidden');
                 document.getElementById('chatInterface').classList.add('active');
                 
@@ -975,7 +1197,7 @@
                         body: JSON.stringify({
                             message: message,
                             conversationHistory: session.conversationHistory,
-                            requestVoice: true
+                            requestVoice: voiceModeEnabled  // Use toggle state
                         })
                     });
 
@@ -1084,30 +1306,32 @@
                 
                 contentDiv.innerHTML = formattedContent;
                 
-                // Copy button
-                const copyButton = document.createElement('button');
-                copyButton.className = 'copy-button';
-                copyButton.textContent = 'Copy';
-                copyButton.setAttribute('aria-label', 'Copy message');
-                copyButton.onclick = function() {
-                    navigator.clipboard.writeText(content).then(() => {
-                        copyButton.textContent = 'Copied!';
-                        copyButton.classList.add('copied');
-                        setTimeout(() => {
-                            copyButton.textContent = 'Copy';
-                            copyButton.classList.remove('copied');
-                        }, 2000);
-                    }).catch(err => {
-                        console.error('Failed to copy:', err);
-                    });
-                };
-                
                 messageDiv.appendChild(avatar);
                 messageDiv.appendChild(contentDiv);
-                messageDiv.appendChild(copyButton);
                 
-                // Add voice button for assistant messages
-                if (role === 'assistant' && (audioData || voiceAvailable !== false)) {
+                // Copy button - ONLY for assistant messages
+                if (role === 'assistant') {
+                    const copyButton = document.createElement('button');
+                    copyButton.className = 'copy-button';
+                    copyButton.textContent = 'Copy';
+                    copyButton.setAttribute('aria-label', 'Copy message');
+                    copyButton.onclick = function() {
+                        navigator.clipboard.writeText(content).then(() => {
+                            copyButton.textContent = 'Copied!';
+                            copyButton.classList.add('copied');
+                            setTimeout(() => {
+                                copyButton.textContent = 'Copy';
+                                copyButton.classList.remove('copied');
+                            }, 2000);
+                        }).catch(err => {
+                            console.error('Failed to copy:', err);
+                        });
+                    };
+                    messageDiv.appendChild(copyButton);
+                }
+                
+                // Add voice button for assistant messages - ONLY if voice mode is enabled
+                if (role === 'assistant' && voiceModeEnabled && (audioData || voiceAvailable !== false)) {
                     const voiceButton = document.createElement('button');
                     voiceButton.className = 'voice-button';
                     voiceButton.innerHTML = '<span class="voice-button-icon">🔊</span><span>Listen with Doug\'s Voice</span>';
