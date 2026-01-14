@@ -901,11 +901,6 @@
 
             <!-- Sidebar -->
             <div class="sidebar" id="sidebar">
-                <div class="sidebar-header">
-                    <button class="new-chat-button" onclick="createNewSession()" aria-label="Start new conversation">
-                        <span>+ New Chat</span>
-                    </button>
-                </div>
                 <div class="sidebar-content" id="sessionList" role="navigation" aria-label="Chat history">
                     <!-- Session list will be populated by JavaScript -->
                 </div>
@@ -991,28 +986,26 @@
                 });
             }
             
-            // Start Fresh button handler
+            // Start Fresh button handler - returns to landing page
             const homeLinkReset = document.getElementById('homeLinkReset');
             if (homeLinkReset) {
                 homeLinkReset.addEventListener('click', function(e) {
                     e.preventDefault();
-                    if (confirm('This will clear your conversation history and start fresh. Continue?')) {
-                        // Clear current session
-                        if (currentSessionId) {
-                            const sessionIndex = sessions.findIndex(s => s.id === currentSessionId);
-                            if (sessionIndex !== -1) {
-                                sessions[sessionIndex].conversationHistory = [];
-                            }
+                    if (confirm('Return to home page and start fresh?')) {
+                        // Hide chat interface, show landing page
+                        document.getElementById('chatInterface').classList.remove('active');
+                        document.getElementById('landingPage').classList.remove('hidden');
+                        
+                        // Clear the landing input
+                        const landingInput = document.getElementById('landingInput');
+                        if (landingInput) {
+                            landingInput.value = '';
                         }
-                        // Clear display
-                        const chatContainer = document.getElementById('chatContainer');
-                        if (chatContainer) {
-                            chatContainer.innerHTML = '';
-                        }
-                        // Save sessions
-                        saveSessions();
+                        
+                        // Scroll to top
                         window.scrollTo(0, 0);
                     }
+                });
                 });
             }
         });
