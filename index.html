@@ -1144,7 +1144,14 @@
                 document.getElementById('landingPage').classList.add('hidden');
                 document.getElementById('chatInterface').classList.add('active');
                 
+                // Load sessions first
                 loadSessions();
+                
+                // Create a fresh new session for landing page entry
+                createNewSession();
+                
+                // Clear the chat display
+                clearChatContainer();
                 
                 setTimeout(() => {
                     sendMessage(message);
