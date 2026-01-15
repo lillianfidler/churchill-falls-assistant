@@ -1484,10 +1484,14 @@
             
             if (content) {
                 // 🎤 VOICE MODE: Strip markdown headers to prevent large text in voice responses
-                if (role === 'assistant' && voiceModeEnabled && audioData) {
+                if (role === 'assistant' && voiceModeEnabled) {
                     // Remove markdown headers (###, ##, #) from voice responses
-                    content = content.replace(/^###\s+/gm, '').replace(/^##\s+/gm, '').replace(/^#\s+/gm, '');
-                    console.log('🎤 Stripped markdown headers from voice response');
+                    // Do this BEFORE markdown conversion to prevent large text
+                    content = content.replace(/^###\s+/gm, '')
+                                    .replace(/^##\s+/gm, '')
+                                    .replace(/^#\s+/gm, '')
+                                    .replace(/\*\*/g, '');  // Also remove bold markers
+                    console.log('🎤 Stripped markdown formatting from voice response');
                 }
                 
                 // Convert markdown
