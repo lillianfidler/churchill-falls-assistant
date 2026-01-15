@@ -575,30 +575,16 @@ app.post('/api/voice-chat', async (req, res) => {
         if (requestVoice) {
             responseStyleInstruction = `
 
-<CRITICAL_VOICE_MODE_INSTRUCTION>
-THIS RESPONSE WILL BE CONVERTED TO AUDIO AND COSTS MONEY PER CHARACTER.
+<VOICE_MODE_FORMATTING>
+This response will be converted to audio. Please format appropriately:
 
-ABSOLUTE REQUIREMENTS - THESE ARE MANDATORY, NOT SUGGESTIONS:
+- Use clear, natural language suitable for audio narration
+- Avoid excessive markdown formatting (minimal headers)
+- Write as if explaining to someone out loud
+- Be comprehensive and detailed - the system will create a summary for audio
 
-1. MAXIMUM 3-5 SENTENCES TOTAL (not per section, TOTAL for entire response)
-2. MAXIMUM 75 WORDS for the ENTIRE response
-3. NO markdown headers (#, ##, ###) - use plain text only
-4. NO bullet points, NO numbered lists, NO formatting
-5. NO source citations, NO "Sources Referenced" sections
-6. NO detailed explanations - ONLY the direct answer
-7. NO "here's what you need to know" or similar introductions
-8. Write as if speaking naturally out loud to someone
-
-COST IMPACT:
-- Long response (600 words) = $0.09 = FAILS system budget
-- Short response (50 words) = $0.01 = CORRECT
-
-EXAMPLE - WHAT IS THE MOU:
-❌ WRONG (200+ words with details, headers, bullet points)
-✅ CORRECT: "The 2024 MOU renegotiates Churchill Falls power rates to market value and introduces 50-50 revenue sharing between Newfoundland & Labrador and Quebec. It extends the partnership to 2041 with new equity arrangements."
-
-Your response MUST be concise enough for audio playback. Generate 3-5 sentences maximum.
-</CRITICAL_VOICE_MODE_INSTRUCTION>`;
+Generate a complete, detailed response. The audio narration will use an abbreviated version, but the full text will be available for reading.
+</VOICE_MODE_FORMATTING>`;
         } else {
             responseStyleInstruction = `
 
