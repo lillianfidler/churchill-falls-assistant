@@ -304,6 +304,36 @@
             flex: 1;
         }
 
+        /* Landing Sources Highlight */
+        .landing-sources-highlight {
+            margin-top: 35px;
+            padding: 20px 30px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            text-align: center;
+        }
+
+        .landing-sources-highlight p {
+            color: #e0e7ff;
+            font-size: 15px;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .landing-sources-highlight a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+            padding-bottom: 2px;
+        }
+
+        .landing-sources-highlight a:hover {
+            border-bottom-color: white;
+            color: #ffffff;
+        }
+
         /* Chat Interface */
         .chat-interface {
             display: none;
@@ -917,19 +947,12 @@
                     <li>Wade Locke's MOU evaluation</li>
                 </ul>
                 
-                <div style="margin-top: 22px; padding: 16px 20px; background: #fafafa; border-radius: 8px; border: 1px solid #e5e7eb;">
-                    <p style="margin: 0 0 12px 0; color: #374151; font-size: 15px; line-height: 1.6;">
-                        Ask questions by typing or by voice (just click the microphone icon 🎤)
-                    </p>
-                    <p style="margin: 0; font-size: 14px; color: #6b7280; line-height: 1.6;">
-                        <strong style="color: #1f2937;">Text-only answers:</strong> Full detailed responses<br>
-                        <strong style="color: #1f2937;">Voice answers:</strong> Shorter summaries
-                    </p>
-                </div>
+                <p style="margin-top: 16px;"><strong>How it works:</strong> Instead of watching hours of videos and reading long, complex documents, ask your questions and get concise, easy-to-read answers. The full videos and documents are <a href="sources.html" style="color: #3b82f6; text-decoration: underline;">available here</a> if you want to dive deeper.</p>
             </div>
 
             <div class="landing-input-box">
                 <label class="landing-input-label" for="landingInput">Ask a question to get started:</label>
+                <p style="margin: 0 0 12px 0; font-size: 13px; color: #64748b; font-style: italic;">Click the microphone to converse with the assistant. This option will provide shorter summaries.</p>
                 <div class="landing-input-container">
                     <input 
                         type="text" 
@@ -939,12 +962,18 @@
                         onkeypress="if(event.key==='Enter') startChatFromLanding()"
                     >
                     <button class="mic-button" onclick="startVoiceInput('landingInput')" aria-label="Speak your question" title="Click to speak your question">
-                        🎤
+                        <svg width="24" height="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+                            <path fill="currentColor" d="m360.25 270.535c-3.878 24.517-16.456 47.037-35.417 63.412-15.28 13.197-33.911 21.649-53.605 24.546v23.007h32.461c6.627 0 12 5.373 12 12s-5.373 12-12 12h-88.921c-6.628 0-12-5.373-12-12s5.372-12 12-12h32.46v-22.254c-22.061-1.858-43.115-10.669-60.056-25.299-18.961-16.375-31.538-38.895-35.416-63.412-1.035-6.546 3.432-12.692 9.978-13.727 6.548-1.035 12.693 3.432 13.728 9.978 6.208 39.246 40.833 68.841 80.542 68.841s74.334-29.595 80.542-68.841c1.035-6.546 7.173-11.013 13.728-9.978 6.544 1.035 11.011 7.181 9.976 13.727zm-162.821-16.449v-89.013c0-32.297 26.275-58.573 58.573-58.573s58.574 26.276 58.574 58.573v89.013c0 32.298-26.275 58.574-58.573 58.574s-58.574-26.276-58.574-58.574zm24 0c0 19.064 15.51 34.574 34.573 34.574 19.064 0 34.574-15.51 34.574-34.574v-89.013c0-19.064-15.51-34.573-34.573-34.573h-.001c-19.063 0-34.573 15.509-34.573 34.573zm290.59 1.916c0 141.158-114.848 255.998-256.016 255.998s-256.016-114.84-256.016-255.998c0-141.16 114.848-256.002 256.016-256.002s256.016 114.842 256.016 256.002zm-24 0c0-127.926-104.082-232.002-232.016-232.002s-232.016 104.076-232.016 232.002c0 127.924 104.082 231.998 232.016 231.998s232.016-104.074 232.016-231.998z"/>
+                        </svg>
                     </button>
                     <button onclick="startChatFromLanding()" aria-label="Start chatting">
                         Ask Question
                     </button>
                 </div>
+            </div>
+            
+            <div class="landing-sources-highlight">
+                <p>All source materials for this assistant can be found on the <a href="sources.html">Sources & Videos</a> page. Find out more <a href="about.html">about this assistant</a>.</p>
             </div>
         </div>
     </div>
@@ -1015,7 +1044,9 @@
                                 aria-label="Type your message"
                             >
                             <button class="input-mic-button" onclick="startVoiceInput('messageInput')" aria-label="Speak your question" title="Click to speak">
-                                🎤
+                                <svg width="22" height="22" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+                                    <path fill="currentColor" d="m360.25 270.535c-3.878 24.517-16.456 47.037-35.417 63.412-15.28 13.197-33.911 21.649-53.605 24.546v23.007h32.461c6.627 0 12 5.373 12 12s-5.373 12-12 12h-88.921c-6.628 0-12-5.373-12-12s5.372-12 12-12h32.46v-22.254c-22.061-1.858-43.115-10.669-60.056-25.299-18.961-16.375-31.538-38.895-35.416-63.412-1.035-6.546 3.432-12.692 9.978-13.727 6.548-1.035 12.693 3.432 13.728 9.978 6.208 39.246 40.833 68.841 80.542 68.841s74.334-29.595 80.542-68.841c1.035-6.546 7.173-11.013 13.728-9.978 6.544 1.035 11.011 7.181 9.976 13.727zm-162.821-16.449v-89.013c0-32.297 26.275-58.573 58.573-58.573s58.574 26.276 58.574 58.573v89.013c0 32.298-26.275 58.574-58.573 58.574s-58.574-26.276-58.574-58.574zm24 0c0 19.064 15.51 34.574 34.573 34.574 19.064 0 34.574-15.51 34.574-34.574v-89.013c0-19.064-15.51-34.573-34.573-34.573h-.001c-19.063 0-34.573 15.509-34.573 34.573zm290.59 1.916c0 141.158-114.848 255.998-256.016 255.998s-256.016-114.84-256.016-255.998c0-141.16 114.848-256.002 256.016-256.002s256.016 114.842 256.016 256.002zm-24 0c0-127.926-104.082-232.002-232.016-232.002s-232.016 104.076-232.016 232.002c0 127.924 104.082 231.998 232.016 231.998s232.016-104.074 232.016-231.998z"/>
+                                </svg>
                             </button>
                         </div>
                         <button 
@@ -1082,7 +1113,6 @@
                         window.scrollTo(0, 0);
                     }
                 });
-                });
             }
         });
 
@@ -1106,6 +1136,15 @@
                     input.focus();
                 }
                 stopVoiceInput();
+                
+                // Auto-submit the question after voice input
+                setTimeout(() => {
+                    if (currentInputId === 'landingInput') {
+                        startChatFromLanding();
+                    } else if (currentInputId === 'messageInput') {
+                        sendMessage();
+                    }
+                }, 500); // Small delay to show the text appeared
             };
 
             recognition.onerror = function(event) {
