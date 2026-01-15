@@ -1093,6 +1093,24 @@
                 });
             }
             
+            // 🎯 AUTO-DISABLE voice mode when user starts typing
+            const messageInput = document.getElementById('messageInput');
+            if (messageInput) {
+                messageInput.addEventListener('input', function() {
+                    if (voiceModeEnabled && this.value.length > 0) {
+                        if (voiceToggle) {
+                            voiceToggle.checked = false;
+                            voiceModeEnabled = false;
+                            if (voiceModeLabel) {
+                                voiceModeLabel.textContent = 'Disabled';
+                                voiceModeLabel.style.color = '#64748b';
+                            }
+                            console.log('⌨️ Voice mode auto-disabled (user is typing)');
+                        }
+                    }
+                });
+            }
+            
             // Start Fresh button handler - returns to landing page
             const homeLinkReset = document.getElementById('homeLinkReset');
             if (homeLinkReset) {
@@ -1136,19 +1154,6 @@
                     input.focus();
                 }
                 stopVoiceInput();
-                
-                // 🎤 AUTO-ENABLE VOICE MODE when microphone is used
-                const voiceToggle = document.getElementById('voiceModeToggle');
-                const voiceModeLabel = document.getElementById('voiceModeLabel');
-                if (voiceToggle && !voiceToggle.checked) {
-                    voiceToggle.checked = true;
-                    voiceModeEnabled = true;
-                    if (voiceModeLabel) {
-                        voiceModeLabel.textContent = 'Enabled';
-                        voiceModeLabel.style.color = '#3b82f6';
-                    }
-                    console.log('🎤 Voice mode auto-enabled via microphone');
-                }
                 
                 // Auto-submit the question after voice input
                 setTimeout(() => {
@@ -1361,10 +1366,6 @@
             
             const loadingId = showLoading();
             
-            // 🐛 DEBUG: Log voice mode status
-            console.log('🎤 Voice Mode:', voiceModeEnabled ? 'ENABLED' : 'DISABLED');
-            console.log('📤 Sending requestVoice:', voiceModeEnabled);
-            
             const maxAttempts = 3;
             let lastError = null;
 
@@ -1394,18 +1395,7 @@
                         addMessage('assistant', 'I apologize, but I encountered an error. Please try again.', true);
                     } else {
                         // Add message with voice button
-                        const messageElement = addMessage('assistant', data.text, true, data.audio, data.voiceAvailable);
-                        
-                        // 🔊 AUTO-PLAY audio if voice mode is enabled and audio was generated
-                        if (voiceModeEnabled && data.audio) {
-                            console.log('🔊 Auto-playing audio response');
-                            setTimeout(() => {
-                                const voiceButton = messageElement.querySelector('.voice-button');
-                                if (voiceButton && !voiceButton.disabled) {
-                                    voiceButton.click();
-                                }
-                            }, 300); // Small delay to let button render
-                        }
+                        addMessage('assistant', data.text, true, data.audio, data.voiceAvailable);
                         
                         // Update voice status
                         if (data.voiceUsage) {
@@ -1465,6 +1455,13 @@
             contentDiv.className = 'message-content';
             
             if (content) {
+                // 🎤 VOICE MODE: Strip markdown headers to prevent large text in voice responses
+                if (role === 'assistant' && voiceModeEnabled && audioData) {
+                    // Remove markdown headers (###, ##, #) from voice responses
+                    content = content.replace(/^###\s+/gm, '').replace(/^##\s+/gm, '').replace(/^#\s+/gm, '');
+                    console.log('🎤 Stripped markdown headers from voice response');
+                }
+                
                 // Convert markdown
                 let formattedContent = content
                     .replace(/^### (.*$)/gim, '<h3>$1</h3>')
