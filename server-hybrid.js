@@ -638,7 +638,7 @@ Provide comprehensive, detailed responses with:
 
         let response = await anthropic.messages.create({
             model: 'claude-sonnet-4-5-20250929',
-            max_tokens: requestVoice ? 200 : 4096,  // Limit tokens for voice mode
+            max_tokens: 4096,  // Always generate full response, truncate later for audio
             system: modifiedSystemPrompt,
             messages: messages,
             tools: tools
@@ -692,7 +692,7 @@ Provide comprehensive, detailed responses with:
 
             response = await anthropic.messages.create({
                 model: 'claude-sonnet-4-5-20250929',
-                max_tokens: requestVoice ? 200 : 4096,  // Maintain voice mode limits in tool loop
+                max_tokens: 4096,  // Always use full tokens, truncate after if needed
                 system: modifiedSystemPrompt,  // CRITICAL: Use modified prompt with voice instructions
                 messages: currentMessages,
                 tools: tools
