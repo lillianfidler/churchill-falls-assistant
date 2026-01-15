@@ -1155,6 +1155,19 @@
                 }
                 stopVoiceInput();
                 
+                // 🎤 AUTO-ENABLE VOICE MODE when microphone is used
+                const voiceToggle = document.getElementById('voiceModeToggle');
+                const voiceModeLabel = document.getElementById('voiceModeLabel');
+                if (voiceToggle && !voiceToggle.checked) {
+                    voiceToggle.checked = true;
+                    voiceModeEnabled = true;
+                    if (voiceModeLabel) {
+                        voiceModeLabel.textContent = 'Enabled';
+                        voiceModeLabel.style.color = '#3b82f6';
+                    }
+                    console.log('🎤 Voice mode auto-enabled via microphone');
+                }
+                
                 // Auto-submit the question after voice input
                 setTimeout(() => {
                     if (currentInputId === 'landingInput') {
@@ -1366,6 +1379,10 @@
             
             const loadingId = showLoading();
             
+            // 🐛 DEBUG: Log voice mode status
+            console.log('🎤 Voice Mode:', voiceModeEnabled ? 'ENABLED' : 'DISABLED');
+            console.log('📤 Sending requestVoice:', voiceModeEnabled);
+            
             const maxAttempts = 3;
             let lastError = null;
 
@@ -1395,7 +1412,18 @@
                         addMessage('assistant', 'I apologize, but I encountered an error. Please try again.', true);
                     } else {
                         // Add message with voice button
-                        addMessage('assistant', data.text, true, data.audio, data.voiceAvailable);
+                        const messageElement = addMessage('assistant', data.text, true, data.audio, data.voiceAvailable);
+                        
+                        // 🔊 AUTO-PLAY audio if voice mode is enabled and audio was generated
+                        if (voiceModeEnabled && data.audio) {
+                            console.log('🔊 Auto-playing audio response');
+                            setTimeout(() => {
+                                const voiceButton = messageElement.querySelector('.voice-button');
+                                if (voiceButton && !voiceButton.disabled) {
+                                    voiceButton.click();
+                                }
+                            }, 300); // Small delay to let button render
+                        }
                         
                         // Update voice status
                         if (data.voiceUsage) {
