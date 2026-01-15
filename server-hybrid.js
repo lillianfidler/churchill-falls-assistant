@@ -575,38 +575,42 @@ app.post('/api/voice-chat', async (req, res) => {
         if (requestVoice) {
             responseStyleInstruction = `
 
-# ⚠️ CRITICAL: VOICE MODE ENABLED - CONCISE SUMMARY REQUIRED
+<CRITICAL_VOICE_MODE_INSTRUCTION>
+THIS RESPONSE WILL BE CONVERTED TO AUDIO AND COSTS MONEY PER CHARACTER.
 
-The user has VOICE MODE enabled. You MUST provide CONCISE SUMMARIES:
+ABSOLUTE REQUIREMENTS - THESE ARE MANDATORY, NOT SUGGESTIONS:
 
-**VOICE MODE REQUIREMENTS:**
-- Maximum 3-5 sentences total
-- Focus ONLY on the most essential information
-- Use simple, conversational language suitable for audio
-- NO lengthy details, statistics lists, or complex explanations
-- Think "elevator pitch" NOT "detailed report"
-- Omit "Sources Referenced" section
+1. MAXIMUM 3-5 SENTENCES TOTAL (not per section, TOTAL for entire response)
+2. MAXIMUM 75 WORDS for the ENTIRE response
+3. NO markdown headers (#, ##, ###) - use plain text only
+4. NO bullet points, NO numbered lists, NO formatting
+5. NO source citations, NO "Sources Referenced" sections
+6. NO detailed explanations - ONLY the direct answer
+7. NO "here's what you need to know" or similar introductions
+8. Write as if speaking naturally out loud to someone
 
-**EXAMPLE TRANSFORMATION:**
+COST IMPACT:
+- Long response (600 words) = $0.09 = FAILS system budget
+- Short response (50 words) = $0.01 = CORRECT
 
-❌ WRONG (Too Detailed):
-"The 2024 MOU proposes several significant changes including renegotiation of power rates from 0.2 cents/kWh to market rates, introduction of revenue sharing mechanisms where Newfoundland & Labrador would receive 50% of profits, equity stakes allowing provincial ownership, and long-term partnership frameworks extending to 2041 that will fundamentally restructure the relationship between Newfoundland & Labrador and Quebec regarding Churchill Falls operations."
+EXAMPLE - WHAT IS THE MOU:
+❌ WRONG (200+ words with details, headers, bullet points)
+✅ CORRECT: "The 2024 MOU renegotiates Churchill Falls power rates to market value and introduces 50-50 revenue sharing between Newfoundland & Labrador and Quebec. It extends the partnership to 2041 with new equity arrangements."
 
-✅ CORRECT (Concise for Voice):
-"The 2024 MOU renegotiates Churchill Falls power rates to market value and introduces 50-50 revenue sharing between Newfoundland & Labrador and Quebec. It extends the partnership to 2041 with new equity arrangements."
-
-Provide ONLY the essential answer in 3-5 clear sentences.`;
+Your response MUST be concise enough for audio playback. Generate 3-5 sentences maximum.
+</CRITICAL_VOICE_MODE_INSTRUCTION>`;
         } else {
             responseStyleInstruction = `
 
-# RESPONSE STYLE: FULL DETAILED MODE
-
+<DETAILED_TEXT_MODE>
 Provide comprehensive, detailed responses with:
 - Full context and background
 - Specific statistics and figures
 - In-depth analysis
 - Multiple perspectives
-- Complete citations and sources`;
+- Complete citations and sources
+- Use markdown formatting (headers, bold, lists) as appropriate
+</DETAILED_TEXT_MODE>`;
         }
 
         // Create modified system prompt with voice mode instruction
@@ -634,7 +638,7 @@ Provide comprehensive, detailed responses with:
 
         let response = await anthropic.messages.create({
             model: 'claude-sonnet-4-5-20250929',
-            max_tokens: 4096,
+            max_tokens: requestVoice ? 200 : 4096,  // Limit tokens for voice mode
             system: modifiedSystemPrompt,
             messages: messages,
             tools: tools
@@ -688,8 +692,8 @@ Provide comprehensive, detailed responses with:
 
             response = await anthropic.messages.create({
                 model: 'claude-sonnet-4-5-20250929',
-                max_tokens: 4096,
-                system: systemPrompt,
+                max_tokens: requestVoice ? 200 : 4096,  // Maintain voice mode limits in tool loop
+                system: modifiedSystemPrompt,  // CRITICAL: Use modified prompt with voice instructions
                 messages: currentMessages,
                 tools: tools
             });
@@ -699,6 +703,18 @@ Provide comprehensive, detailed responses with:
             if (block.type === 'text') {
                 finalText += block.text;
             }
+        }
+
+        // 🐛 DEBUG: Log response statistics
+        const wordCount = finalText.split(/\s+/).length;
+        const charCount = finalText.length;
+        console.log('📊 Response Statistics:');
+        console.log(`   Characters: ${charCount}`);
+        console.log(`   Words: ${wordCount}`);
+        console.log(`   Sentences: ~${(finalText.match(/[.!?]+/g) || []).length}`);
+        if (requestVoice) {
+            console.log(`   ⚠️ Voice Mode: ${wordCount <= 75 ? '✅ GOOD (≤75 words)' : '❌ TOO LONG (>75 words)'}`);
+            console.log(`   💰 Estimated credits: ~${charCount}`);
         }
 
         // Try to convert to voice if requested and quota available
