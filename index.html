@@ -1412,7 +1412,7 @@
                         addMessage('assistant', 'I apologize, but I encountered an error. Please try again.', true);
                     } else {
                         // Add message with voice button
-                        const messageElement = addMessage('assistant', data.text, true, data.audio, data.voiceAvailable);
+                        const messageElement = addMessage('assistant', data.text, true, data.audio, data.voiceAvailable, data.fullText);
                         
                         // 🔊 AUTO-PLAY audio if voice mode is enabled and audio was generated
                         if (voiceModeEnabled && data.audio) {
@@ -1467,7 +1467,7 @@
             }
         }
 
-        function addMessage(role, content, saveToSession, audioData, voiceAvailable) {
+        function addMessage(role, content, saveToSession, audioData, voiceAvailable, fullText) {
             const chatContainer = document.getElementById('chatContainer');
             const messageDiv = document.createElement('div');
             messageDiv.className = `message ${role}`;
@@ -1566,6 +1566,174 @@
                     }
                     
                     contentDiv.appendChild(voiceButton);
+                    
+                    // Add "Show Full Analysis" button if full text is available
+                    if (fullText && fullText !== content) {
+                        const expandButton = document.createElement('button');
+                        expandButton.className = 'voice-button';  // Use same styling as voice button
+                        expandButton.style.background = 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)';
+                        expandButton.innerHTML = '<span class="voice-button-icon">📄</span><span>Show Full Analysis</span>';
+                        expandButton.setAttribute('aria-label', 'Show full detailed response');
+                        
+                        expandButton.onclick = function() {
+                            if (expandButton.dataset.expanded === 'true') {
+                                // Collapse - show only summary
+                                const fullTextDiv = messageDiv.querySelector('.full-text-content');
+                                if (fullTextDiv) fullTextDiv.remove();
+                                expandButton.innerHTML = '<span class="voice-button-icon">📄</span><span>Show Full Analysis</span>';
+                                expandButton.dataset.expanded = 'false';
+                            } else {
+                                // Expand - show full text
+                                const fullTextDiv = document.createElement('div');
+                                fullTextDiv.className = 'full-text-content';
+                                fullTextDiv.style.marginTop = '20px';
+                                fullTextDiv.style.paddingTop = '20px';
+                                fullTextDiv.style.borderTop = '2px solid #e2e8f0';
+                                
+                                const fullTextHeader = document.createElement('h4');
+                                fullTextHeader.textContent = '📄 Full Detailed Analysis';
+                                fullTextHeader.style.color = '#1e3c72';
+                                fullTextHeader.style.marginBottom = '12px';
+                                fullTextHeader.style.fontSize = '16px';
+                                fullTextHeader.style.fontWeight = '600';
+                                
+                                // Format the full text
+                                let formattedFull = fullText
+                                    .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+                                    .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+                                    .replace(/^# (.*$)/gim, '<h1>$1</h1>')
+                                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                                    .replace(/\n\n/g, '</p><p>')
+                                    .replace(/\n/g, '<br>');
+                                formattedFull = '<p>' + formattedFull + '</p>';
+                                
+                                const fullTextContent = document.createElement('div');
+                                fullTextContent.innerHTML = formattedFull;
+                                
+                                fullTextDiv.appendChild(fullTextHeader);
+                                fullTextDiv.appendChild(fullTextContent);
+                                
+                                // 🔊 Add "Listen to Full Analysis" button
+                                const fullAudioButton = document.createElement('button');
+                                fullAudioButton.className = 'voice-button';
+                                fullAudioButton.style.marginTop = '16px';
+                                fullAudioButton.style.background = 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)';
+                                fullAudioButton.innerHTML = '<span class="voice-button-icon">🔊</span><span>Listen to Full Analysis</span>';
+                                fullAudioButton.setAttribute('aria-label', 'Generate and play full audio narration');
+                                
+                                let fullAudioData = null;  // Cache audio once generated
+                                
+                                fullAudioButton.onclick = async function() {
+                                    if (fullAudioData) {
+                                        // Already generated, just play it
+                                        playVoiceResponse(fullAudioData, fullAudioButton);
+                                    } else {
+                                        // Generate full audio on-demand
+                                        fullAudioButton.disabled = true;
+                                        fullAudioButton.innerHTML = '<span class="voice-button-icon">⏳</span><span>Generating Full Audio...</span>';
+                                        
+                                        try {
+                                            const response = await fetch('/api/generate-full-audio', {
+                                                method: 'POST',
+                                                headers: { 'Content-Type': 'application/json' },
+                                                body: JSON.stringify({ text: fullText })
+                                            });
+                                            
+                                            const data = await response.json();
+                                            
+                                            if (data.audio) {
+                                                fullAudioData = data.audio;  // Cache it
+                                                fullAudioButton.disabled = false;
+                                                fullAudioButton.innerHTML = '<span class="voice-button-icon">🔊</span><span>Listen to Full Analysis</span>';
+                                                // Auto-play the full audio
+                                                playVoiceResponse(fullAudioData, fullAudioButton);
+                                                console.log('🔊 Full audio generated and playing');
+                                            } else {
+                                                throw new Error('No audio data returned');
+                                            }
+                                        } catch (error) {
+                                            console.error('Failed to generate full audio:', error);
+                                            fullAudioButton.disabled = false;
+                                            fullAudioButton.innerHTML = '<span class="voice-button-icon">⚠️</span><span>Audio Generation Failed</span>';
+                                            setTimeout(() => {
+                                                fullAudioButton.innerHTML = '<span class="voice-button-icon">🔊</span><span>Listen to Full Analysis</span>';
+                                            }, 3000);
+                                        }
+                                    }
+                                };
+                                
+                                fullTextDiv.appendChild(fullAudioButton);
+                                contentDiv.appendChild(fullTextDiv);
+                                
+                                expandButton.innerHTML = '<span class="voice-button-icon">📄</span><span>Hide Full Analysis</span>';
+                                expandButton.dataset.expanded = 'true';
+                            }
+                        };
+                        
+                        contentDiv.appendChild(expandButton);
+                    }
+                }
+                
+                // 🎯 SMART AUDIO: Add audio generation for long text-mode responses
+                // Show audio button if: NOT in voice mode AND response is long (>200 words)
+                if (role === 'assistant' && !voiceModeEnabled && content) {
+                    const wordCount = content.split(/\s+/).length;
+                    
+                    if (wordCount > 200) {
+                        console.log(`📊 Text mode response: ${wordCount} words - offering audio generation`);
+                        
+                        const textAudioButton = document.createElement('button');
+                        textAudioButton.className = 'voice-button';
+                        textAudioButton.style.marginTop = '12px';
+                        textAudioButton.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+                        textAudioButton.innerHTML = '<span class="voice-button-icon">🔊</span><span>Generate Audio Narration</span>';
+                        textAudioButton.setAttribute('aria-label', 'Generate audio narration of this response');
+                        
+                        let textAudioData = null;  // Cache audio once generated
+                        
+                        textAudioButton.onclick = async function() {
+                            if (textAudioData) {
+                                // Already generated, just play it
+                                playVoiceResponse(textAudioData, textAudioButton);
+                            } else {
+                                // Generate audio on-demand
+                                textAudioButton.disabled = true;
+                                textAudioButton.innerHTML = '<span class="voice-button-icon">⏳</span><span>Generating Audio...</span>';
+                                
+                                try {
+                                    const response = await fetch('/api/generate-full-audio', {
+                                        method: 'POST',
+                                        headers: { 'Content-Type': 'application/json' },
+                                        body: JSON.stringify({ text: content })
+                                    });
+                                    
+                                    const data = await response.json();
+                                    
+                                    if (data.audio) {
+                                        textAudioData = data.audio;  // Cache it
+                                        textAudioButton.disabled = false;
+                                        textAudioButton.innerHTML = '<span class="voice-button-icon">🔊</span><span>Listen to Audio Narration</span>';
+                                        // Auto-play the audio
+                                        playVoiceResponse(textAudioData, textAudioButton);
+                                        console.log('🔊 Text mode audio generated and playing');
+                                    } else {
+                                        throw new Error('No audio data returned');
+                                    }
+                                } catch (error) {
+                                    console.error('Failed to generate text mode audio:', error);
+                                    textAudioButton.disabled = false;
+                                    textAudioButton.innerHTML = '<span class="voice-button-icon">⚠️</span><span>Audio Generation Failed</span>';
+                                    setTimeout(() => {
+                                        textAudioButton.innerHTML = '<span class="voice-button-icon">🔊</span><span>Generate Audio Narration</span>';
+                                    }, 3000);
+                                }
+                            }
+                        };
+                        
+                        contentDiv.appendChild(textAudioButton);
+                    } else {
+                        console.log(`📊 Text mode response: ${wordCount} words - too short for audio`);
+                    }
                 }
             } else {
                 messageDiv.appendChild(avatar);
