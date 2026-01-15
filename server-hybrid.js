@@ -705,6 +705,16 @@ Provide comprehensive, detailed responses with:
             }
         }
 
+        // 🔪 HARD TRUNCATION for voice mode - force short responses
+        if (requestVoice) {
+            const sentences = finalText.match(/[^.!?]+[.!?]+/g) || [];
+            if (sentences.length > 5) {
+                // Take only first 3-5 sentences
+                finalText = sentences.slice(0, Math.min(5, sentences.length)).join(' ');
+                console.log(`🔪 TRUNCATED: Reduced from ${sentences.length} sentences to 5 for voice mode`);
+            }
+        }
+
         // 🐛 DEBUG: Log response statistics
         const wordCount = finalText.split(/\s+/).length;
         const charCount = finalText.length;
