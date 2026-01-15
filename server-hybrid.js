@@ -705,14 +705,20 @@ Provide comprehensive, detailed responses with:
             }
         }
 
+        // Save full text before any truncation
+        const fullText = finalText;
+        let summaryText = finalText;
+
         // 🔪 HARD TRUNCATION for voice mode - force short responses
         if (requestVoice) {
             const sentences = finalText.match(/[^.!?]+[.!?]+/g) || [];
             if (sentences.length > 5) {
-                // Take only first 3-5 sentences
-                finalText = sentences.slice(0, Math.min(5, sentences.length)).join(' ');
+                // Take only first 3-5 sentences for summary
+                summaryText = sentences.slice(0, Math.min(5, sentences.length)).join(' ');
                 console.log(`🔪 TRUNCATED: Reduced from ${sentences.length} sentences to 5 for voice mode`);
             }
+            // Use summary for audio generation
+            finalText = summaryText;
         }
 
         // 🐛 DEBUG: Log response statistics
@@ -725,6 +731,7 @@ Provide comprehensive, detailed responses with:
         if (requestVoice) {
             console.log(`   ⚠️ Voice Mode: ${wordCount <= 75 ? '✅ GOOD (≤75 words)' : '❌ TOO LONG (>75 words)'}`);
             console.log(`   💰 Estimated credits: ~${charCount}`);
+            console.log(`   📄 Full text available: ${fullText.split(/\s+/).length} words`);
         }
 
         // Try to convert to voice if requested and quota available
@@ -749,7 +756,8 @@ Provide comprehensive, detailed responses with:
         }
 
         res.json({ 
-            text: finalText,
+            text: finalText,  // Summary for display
+            fullText: requestVoice ? fullText : null,  // Full text only for voice mode
             audio: audioData,
             voiceAvailable: voiceAvailable,
             quotaExceeded: quotaExceeded,
@@ -765,6 +773,58 @@ Provide comprehensive, detailed responses with:
         console.error('Error in voice chat:', error);
         res.status(500).json({ 
             error: 'Failed to get response from AI assistant',
+            details: error.message 
+        });
+    }
+});
+
+// Generate full audio on-demand endpoint
+app.post('/api/generate-full-audio', async (req, res) => {
+    try {
+        const { text } = req.body;
+        
+        if (!text || typeof text !== 'string') {
+            return res.status(400).json({ error: 'Text is required' });
+        }
+        
+        console.log('\n🔊 Generating FULL audio on-demand');
+        console.log(`   Text length: ${text.length} characters`);
+        console.log(`   Estimated credits: ~${text.length}`);
+        
+        // Check quota
+        if (monthlyVoiceUsage >= MONTHLY_VOICE_LIMIT) {
+            return res.json({ 
+                error: 'Monthly voice quota exceeded',
+                audio: null,
+                quotaExceeded: true 
+            });
+        }
+        
+        try {
+            const audioData = await convertToSpeech(text);
+            console.log('✓ Full audio generated successfully');
+            
+            res.json({ 
+                audio: audioData,
+                voiceUsage: {
+                    used: monthlyVoiceUsage,
+                    limit: MONTHLY_VOICE_LIMIT,
+                    remaining: MONTHLY_VOICE_LIMIT - monthlyVoiceUsage,
+                    percentUsed: ((monthlyVoiceUsage / MONTHLY_VOICE_LIMIT) * 100).toFixed(1)
+                }
+            });
+        } catch (error) {
+            console.error('✗ Full audio generation failed:', error.message);
+            res.status(500).json({ 
+                error: 'Failed to generate audio',
+                details: error.message 
+            });
+        }
+        
+    } catch (error) {
+        console.error('Error in generate-full-audio:', error);
+        res.status(500).json({ 
+            error: 'Failed to generate audio',
             details: error.message 
         });
     }
