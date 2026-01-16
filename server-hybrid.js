@@ -1,1885 +1,888 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Churchill Falls Information Assistant</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: #f8fafc;
-            min-height: 100vh;
-            overflow: auto;
-        }
-
-        /* Skip link for accessibility */
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #1e3c72;
-            color: white;
-            padding: 8px;
-            text-decoration: none;
-            z-index: 100;
-        }
-
-        .skip-link:focus {
-            top: 0;
-        }
-
-        /* Screen reader only content */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border-width: 0;
-        }
-
-        /* Landing Page (Initial View) */
-        .landing-page {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            padding: 20px;
-            overflow-y: auto;
-        }
-
-        .landing-page.hidden {
-            display: none;
-        }
-
-        .landing-content {
-            max-width: 700px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .landing-title {
-            color: white;
-            font-size: 36px;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .landing-subtitle {
-            color: #e0e7ff;
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-
-        .landing-info {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 20px;
-            text-align: left;
-            color: #1e293b;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .landing-info p {
-            margin-bottom: 12px;
-            line-height: 1.6;
-            color: #475569;
-        }
-
-        .landing-info strong {
-            color: #1e3c72;
-        }
-
-        .landing-info ul {
-            margin-top: 10px;
-            padding-left: 20px;
-        }
-
-        .landing-info li {
-            margin-bottom: 8px;
-            line-height: 1.5;
-            color: #475569;
-        }
-
-        .landing-input-box {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 12px;
-            padding: 25px;
-            text-align: left;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .landing-input-label {
-            color: #1e3c72;
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-
-        .landing-input-container {
-            background: white;
-            border-radius: 12px;
-            padding: 8px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-            display: flex;
-            gap: 8px;
-        }
-
-        .landing-input-container input {
-            flex: 1;
-            padding: 16px 20px;
-            border: none;
-            font-size: 16px;
-            outline: none;
-            border-radius: 8px;
-        }
-
-        .landing-input-container button {
-            padding: 16px 32px;
-            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: transform 0.2s;
-            white-space: nowrap;
-        }
-
-        .landing-input-container button:hover {
-            transform: translateY(-2px);
-        }
-
-        /* Microphone Button Styles - More specific to override above */
-        .landing-input-container .mic-button,
-        .mic-button {
-            padding: 10px 14px;
-            background: white !important;
-            border: 1px solid #e5e7eb !important;
-            border-radius: 8px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: all 0.2s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 44px;
-            color: #6b7280;
-        }
-
-        .landing-input-container .mic-button:hover,
-        .mic-button:hover {
-            border-color: #9ca3af !important;
-            background: #fafafa !important;
-            color: #374151;
-            transform: none;
-        }
-
-        .mic-button.listening {
-            background: #fef2f2 !important;
-            border-color: #fca5a5 !important;
-            color: #dc2626;
-            animation: pulse-mic 1.5s ease-in-out infinite;
-        }
-
-        @keyframes pulse-mic {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-
-        .mic-button:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-
-        .input-with-mic {
-            position: relative;
-            flex: 1;
-            display: flex;
-            align-items: center;
-        }
-
-        .input-with-mic input {
-            flex: 1;
-            padding-right: 50px;
-        }
-
-        .input-mic-button {
-            position: absolute;
-            right: 8px;
-            width: 36px;
-            height: 36px;
-            background: white;
-            border: 2px solid #e2e8f0;
-            border-radius: 6px;
-            font-size: 18px;
-            cursor: pointer;
-            transition: all 0.2s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .input-mic-button:hover {
-            border-color: #3b82f6;
-            background: #f0f9ff;
-        }
-
-        .input-mic-button.listening {
-            background: #fee2e2;
-            border-color: #ef4444;
-            animation: pulse-mic 1.5s ease-in-out infinite;
-        }
-
-        .landing-filters {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 12px;
-            padding: 20px;
-            margin-top: 20px;
-            text-align: left;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .landing-filters-inline {
-            margin-top: 16px;
-            padding-top: 16px;
-            border-top: 1px solid #e2e8f0;
-        }
-
-        .landing-filters-label {
-            color: #1e3c72;
-            font-size: 14px;
-            font-weight: 500;
-            margin-bottom: 12px;
-            display: block;
-        }
-
-        .landing-checkbox-group {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-bottom: 12px;
-        }
-
-        .landing-checkbox {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            color: #1e293b;
-            cursor: pointer;
-            font-size: 14px;
-            line-height: 1.5;
-        }
-
-        .landing-checkbox input[type="checkbox"] {
-            margin-top: 2px;
-            width: 18px;
-            height: 18px;
-            cursor: pointer;
-            flex-shrink: 0;
-        }
-
-        .landing-checkbox input[type="checkbox"]:focus {
-            outline: 3px solid #3b82f6;
-            outline-offset: 2px;
-        }
-
-        .landing-checkbox span {
-            flex: 1;
-        }
-
-        /* Landing Sources Highlight */
-        .landing-sources-highlight {
-            margin-top: 35px;
-            padding: 20px 30px;
-            background: rgba(255, 255, 255, 0.15);
-            border-radius: 12px;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            text-align: center;
-        }
-
-        .landing-sources-highlight p {
-            color: #e0e7ff;
-            font-size: 15px;
-            margin: 0;
-            line-height: 1.6;
-        }
-
-        .landing-sources-highlight a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-            padding-bottom: 2px;
-        }
-
-        .landing-sources-highlight a:hover {
-            border-bottom-color: white;
-            color: #ffffff;
-        }
-
-        /* Chat Interface */
-        .chat-interface {
-            display: none;
-            flex-direction: column;
-            height: 100vh;
-            max-height: 100vh;
-            overflow: hidden;
-        }
-
-        .chat-interface.active {
-            display: flex;
-        }
-
-        /* Header */
-        .header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            padding: 16px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            flex-shrink: 0;
-            position: relative;
-            z-index: 10;
-        }
-
-        .header-title {
-            font-size: 18px;
-            font-weight: 600;
-        }
-
-        .header-actions {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-        }
-
-        .menu-button {
-            background: rgba(255, 255, 255, 0.2);
-            border: none;
-            color: white;
-            width: 36px;
-            height: 36px;
-            border-radius: 8px;
-            cursor: pointer;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-        }
-
-        /* Main Layout */
-        .main-layout {
-            display: flex;
-            flex: 1;
-            overflow: hidden;
-            position: relative;
-        }
-
-        /* Sidebar */
-        .sidebar {
-            width: 280px;
-            background: white;
-            border-right: 1px solid #e2e8f0;
-            display: flex;
-            flex-direction: column;
-            flex-shrink: 0;
-            overflow: hidden;
-            position: relative;
-            z-index: 5;
-        }
-
-        .sidebar-header {
-            padding: 16px;
-            border-bottom: 1px solid #e2e8f0;
-            flex-shrink: 0;
-        }
-
-        .new-chat-button {
-            width: 100%;
-            padding: 12px 16px;
-            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 500;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            transition: transform 0.2s;
-        }
-
-        .new-chat-button:hover {
-            transform: translateY(-1px);
-        }
-
-        .sidebar-content {
-            flex: 1;
-            overflow-y: auto;
-            padding: 12px;
-        }
-
-        .session-item {
-            padding: 12px;
-            margin-bottom: 8px;
-            background: #f8fafc;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.2s;
-            border: 2px solid transparent;
-        }
-
-        .session-item:hover {
-            background: #f1f5f9;
-        }
-
-        .session-item.active {
-            background: #e0e7ff;
-            border-color: #3b82f6;
-        }
-
-        .session-title {
-            font-size: 14px;
-            font-weight: 500;
-            color: #1e293b;
-            margin-bottom: 4px;
-            word-break: break-word;
-        }
-
-        .session-date {
-            font-size: 12px;
-            color: #64748b;
-        }
-
-        /* Chat Area */
-        .chat-area {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            background: #f8fafc;
-        }
-
-        .chat-container {
-            flex: 1;
-            overflow-y: auto;
-            padding: 20px;
-            scroll-behavior: smooth;
-        }
-
-        /* Message Styles */
-        .message {
-            display: flex;
-            gap: 12px;
-            margin-bottom: 24px;
-            animation: fadeIn 0.3s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .message-avatar {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 14px;
-            font-weight: 600;
-            flex-shrink: 0;
-        }
-
-        .message.user .message-avatar {
-            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-            color: white;
-        }
-
-        .message.assistant .message-avatar {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-        }
-
-        .message-content {
-            flex: 1;
-            line-height: 1.6;
-            color: #1e293b;
-            background: white;
-            padding: 16px;
-            border-radius: 12px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
-
-        .message-content p {
-            margin-bottom: 12px;
-        }
-
-        .message-content p:last-child {
-            margin-bottom: 0;
-        }
-
-        .message-content strong {
-            font-weight: 600;
-            color: #1e3c72;
-        }
-
-        .message-content a {
-            color: #3b82f6;
-            text-decoration: none;
-            border-bottom: 1px solid #93c5fd;
-        }
-
-        .message-content a:hover {
-            border-bottom-color: #3b82f6;
-        }
-
-        .message-content h1, .message-content h2, .message-content h3 {
-            margin-top: 16px;
-            margin-bottom: 12px;
-            color: #1e3c72;
-            font-weight: 600;
-        }
-
-        .message-content h1 {
-            font-size: 1.5em;
-        }
-
-        .message-content h2 {
-            font-size: 1.3em;
-        }
-
-        .message-content h3 {
-            font-size: 1.1em;
-        }
-
-        .loading {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: #64748b;
-        }
-
-        .loading-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: #94a3b8;
-            animation: pulse 1.4s ease-in-out infinite;
-        }
-
-        .loading-dot:nth-child(2) {
-            animation-delay: 0.2s;
-        }
-
-        .loading-dot:nth-child(3) {
-            animation-delay: 0.4s;
-        }
-
-        @keyframes pulse {
-            0%, 80%, 100% {
-                opacity: 0.3;
-                transform: scale(0.8);
-            }
-            40% {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        .copy-button {
-            position: absolute;
-            top: 12px;
-            right: 12px;
-            padding: 6px 12px;
-            background: #f1f5f9;
-            border: 1px solid #e2e8f0;
-            border-radius: 6px;
-            font-size: 12px;
-            cursor: pointer;
-            color: #64748b;
-            transition: all 0.2s;
-        }
-
-        .copy-button:hover {
-            background: #e2e8f0;
-            color: #1e293b;
-        }
-
-        .copy-button.copied {
-            background: #dcfce7;
-            color: #166534;
-            border-color: #86efac;
-        }
-
-        /* NEW: Voice Button Styles */
-        .voice-button {
-            margin-top: 12px;
-            padding: 10px 16px;
-            background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 500;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: all 0.2s;
-        }
-
-        .voice-button:hover:not(:disabled) {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
-        }
-
-        .voice-button:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-
-        .voice-button.playing {
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-        }
-
-        .voice-button-icon {
-            font-size: 16px;
-        }
-
-        /* NEW: Voice Status Indicator */
-        .voice-status {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 6px 12px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 6px;
-            font-size: 12px;
-            color: white;
-        }
-
-        .voice-status-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: #10b981;
-        }
-
-        .voice-status-dot.disabled {
-            background: #ef4444;
-        }
-
-        /* Input Area */
-        .input-area {
-            padding: 16px 20px;
-            background: white;
-            border-top: 1px solid #e2e8f0;
-            flex-shrink: 0;
-        }
-
-        .input-container {
-            display: flex;
-            gap: 12px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .input-container input {
-            flex: 1;
-            padding: 12px 16px;
-            border: 2px solid #e2e8f0;
-            border-radius: 8px;
-            font-size: 15px;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-
-        .input-container input:focus {
-            border-color: #3b82f6;
-        }
-
-        .send-button {
-            padding: 12px 24px;
-            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 15px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: transform 0.2s;
-            white-space: nowrap;
-        }
-
-        .send-button:hover {
-            transform: translateY(-1px);
-        }
-
-        .send-button:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-            transform: none;
-        }
-
-        /* Mobile Overlay */
-        .mobile-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 4;
-        }
-
-        .mobile-overlay.active {
-            display: block;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .menu-button {
-                display: flex;
-            }
-
-            .sidebar {
-                position: fixed;
-                left: 0;
-                top: 0;
-                bottom: 0;
-                transform: translateX(-100%);
-                transition: transform 0.3s ease-in-out;
-                z-index: 5;
-            }
-
-            .sidebar.mobile-open {
-                transform: translateX(0);
-            }
-
-            .landing-title {
-                font-size: 28px;
-            }
-
-            .landing-subtitle {
-                font-size: 16px;
-            }
-
-            .landing-input-container {
-                flex-direction: column;
-            }
-
-            .landing-input-container button {
-                width: 100%;
-            }
-
-            .chat-container {
-                padding: 16px;
-            }
-
-            .message-content {
-                font-size: 14px;
-            }
-
-            .input-container {
-                flex-direction: column;
-            }
-
-            .send-button {
-                width: 100%;
-            }
-        }
-
-        /* Footer Navigation */
-        .sidebar-footer {
-            margin-top: auto;
-            padding: 20px;
-            border-top: none;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-        }
-
-        .sidebar-brand {
-            color: white;
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 15px;
-            opacity: 0.9;
-        }
-
-        .sidebar-nav {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .sidebar-nav a {
-            color: rgba(255, 255, 255, 0.95);
-            text-decoration: none;
-            font-size: 13px;
-            padding: 8px 12px;
-            transition: all 0.2s;
-            border-radius: 6px;
-            display: block;
-        }
-
-        .sidebar-nav a:hover {
-            background: rgba(255, 255, 255, 0.15);
-            color: white;
-        }
-
-        /* Voice Mode Toggle */
-        .voice-mode-toggle {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 12px 20px;
-            background: #f1f5f9;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            border: 1px solid #e2e8f0;
-        }
-
-        .voice-mode-toggle label {
-            color: #1e293b;
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        .voice-toggle-switch {
-            position: relative;
-            display: inline-block;
-            width: 50px;
-            height: 26px;
-        }
-
-        .voice-toggle-switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-
-        .voice-toggle-slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            transition: .4s;
-            border-radius: 26px;
-        }
-
-        .voice-toggle-slider:before {
-            position: absolute;
-            content: "";
-            height: 18px;
-            width: 18px;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            transition: .4s;
-            border-radius: 50%;
-        }
-
-        input:checked + .voice-toggle-slider {
-            background-color: #3b82f6;
-        }
-
-        input:checked + .voice-toggle-slider:before {
-            transform: translateX(24px);
-        }
-
-        .voice-mode-label {
-            color: #64748b;
-            font-size: 12px;
-            min-width: 80px;
-            font-weight: 500;
-        }
-    </style>
-</head>
-<body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <!-- Landing Page -->
-    <div class="landing-page" id="landingPage">
-        <div class="landing-content">
-            <h1 class="landing-title">Churchill Falls Information Assistant</h1>
-            <p class="landing-subtitle">AI-powered analysis of Churchill Falls agreements and economic impacts</p>
-
-            <div class="landing-info">
-                <p><strong>Welcome!</strong> This assistant provides detailed information about:</p>
-                <ul>
-                    <li>The December 2024 MOU between Newfoundland & Labrador and Quebec</li>
-                    <li>Dr. Doug May's comprehensive economic analyses</li>
-                    <li>Historical context and power contract details</li>
-                    <li>Financial statements and project assessments</li>
-                    <li>Wade Locke's MOU evaluation</li>
-                </ul>
+require('dotenv').config();
+const express = require('express');
+const Anthropic = require('@anthropic-ai/sdk');
+const cors = require('cors');
+const { Client } = require('@modelcontextprotocol/sdk/client/index.js');
+const { StdioClientTransport } = require('@modelcontextprotocol/sdk/client/stdio.js');
+const fs = require('fs');
+const path = require('path');
+
+const app = express();
+const port = process.env.PORT || 3000;
+
+// Middleware
+app.use(cors());
+app.use(express.json({ limit: '10mb' })); // Increased for audio data
+app.use(express.static(__dirname));
+
+// Initialize Anthropic client
+const anthropic = new Anthropic({
+    apiKey: process.env.ANTHROPIC_API_KEY,
+});
+
+// ElevenLabs Configuration
+const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY;
+const ELEVENLABS_VOICE_ID = process.env.ELEVENLABS_VOICE_ID;
+
+// Voice usage tracking
+let monthlyVoiceUsage = 0;
+const MONTHLY_VOICE_LIMIT = 100000; // Creator tier: 100,000 credits/month ($22/month)
+
+// MCP Client
+let mcpClient = null;
+
+// ============ HYBRID SYSTEM: CORE DOCUMENTS ============
+// Core documents storage (loaded into context for fast access)
+let coreDocumentsText = '';
+
+const CORE_DOCUMENTS = [
+    'MOU_Churchill_Falls_Dec_12_2024_clean_text.txt',
+    'LOCKE analysis of MOU CF.txt',
+    'Reassessing-the-Churchill-Falls-MOU.txt',
+    'Doug-video-series-video1.txt',
+    'Doug-video-series-video2A.txt',
+    'Doug-video-series-video2B.txt',
+    'Doug-video-series-video3A.txt',
+    'Doug-video-series-video3B.txt',
+    'Doug-video-series-video4.txt',
+    'Churchill-falls-consolidated-financial-statements-2024.txt',
+    'Churchill-Falls-2023-financial-statement.txt',
+    'Lower-Churchill-Project-Combined-Financial-Statements-2024.txt',
+    'HYDRO-QUEBECS-EXPORTS.txt'
+];
+
+/**
+ * Load core documents into memory for context window
+ */
+function loadCoreDocuments() {
+    console.log('\n============================================');
+    console.log('Loading core documents into context...');
+    console.log('============================================\n');
+    
+    const contentDir = path.join(__dirname, 'content');
+    let documentsLoaded = 0;
+    let totalSize = 0;
+    
+    for (const filename of CORE_DOCUMENTS) {
+        const filepath = path.join(contentDir, filename);
+        
+        try {
+            if (fs.existsSync(filepath)) {
+                const content = fs.readFileSync(filepath, 'utf-8');
+                const sizeKB = (Buffer.byteLength(content, 'utf-8') / 1024).toFixed(2);
                 
-                <p style="margin-top: 16px;"><strong>How it works:</strong> Instead of watching hours of videos and reading long, complex documents, ask your questions and get concise, easy-to-read answers. The full videos and documents are <a href="sources.html" style="color: #3b82f6; text-decoration: underline;">available here</a> if you want to dive deeper.</p>
-            </div>
+                // Add document with clear headers for Claude to reference
+                coreDocumentsText += `\n\n========================================\n`;
+                coreDocumentsText += `DOCUMENT: ${filename}\n`;
+                coreDocumentsText += `========================================\n\n`;
+                coreDocumentsText += content;
+                coreDocumentsText += `\n\n========================================\n`;
+                coreDocumentsText += `END OF DOCUMENT: ${filename}\n`;
+                coreDocumentsText += `========================================\n\n`;
+                
+                documentsLoaded++;
+                totalSize += Buffer.byteLength(content, 'utf-8');
+                
+                console.log(`✓ Loaded: ${filename} (${sizeKB} KB)`);
+            } else {
+                console.warn(`⚠ File not found: ${filename}`);
+            }
+        } catch (error) {
+            console.error(`✗ Error loading ${filename}:`, error.message);
+        }
+    }
+    
+    const totalSizeMB = (totalSize / (1024 * 1024)).toFixed(2);
+    const estimatedTokens = Math.round(totalSize / 4);
+    
+    console.log(`\n✓ Core documents loaded successfully`);
+    console.log(`  - Documents: ${documentsLoaded}/${CORE_DOCUMENTS.length}`);
+    console.log(`  - Total size: ${totalSizeMB} MB`);
+    console.log(`  - Estimated tokens: ~${estimatedTokens.toLocaleString()}`);
+    console.log('============================================\n');
+    
+    return documentsLoaded > 0;
+}
+// ============ END CORE DOCUMENTS ============
 
-            <div class="landing-input-box">
-                <label class="landing-input-label" for="landingInput">Ask a question to get started:</label>
-                <p style="margin: 0 0 12px 0; font-size: 13px; color: #64748b; font-style: italic;">Click the microphone to converse with the assistant. This option will provide shorter summaries.</p>
-                <div class="landing-input-container">
-                    <input 
-                        type="text" 
-                        id="landingInput" 
-                        placeholder="e.g., What does the 2024 MOU propose?"
-                        aria-label="Enter your question"
-                        onkeypress="if(event.key==='Enter') startChatFromLanding()"
-                    >
-                    <button class="mic-button" onclick="startVoiceInput('landingInput')" aria-label="Speak your question" title="Click to speak your question">
-                        <svg width="24" height="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="display: block;">
-                            <path fill="currentColor" d="m360.25 270.535c-3.878 24.517-16.456 47.037-35.417 63.412-15.28 13.197-33.911 21.649-53.605 24.546v23.007h32.461c6.627 0 12 5.373 12 12s-5.373 12-12 12h-88.921c-6.628 0-12-5.373-12-12s5.372-12 12-12h32.46v-22.254c-22.061-1.858-43.115-10.669-60.056-25.299-18.961-16.375-31.538-38.895-35.416-63.412-1.035-6.546 3.432-12.692 9.978-13.727 6.548-1.035 12.693 3.432 13.728 9.978 6.208 39.246 40.833 68.841 80.542 68.841s74.334-29.595 80.542-68.841c1.035-6.546 7.173-11.013 13.728-9.978 6.544 1.035 11.011 7.181 9.976 13.727zm-162.821-16.449v-89.013c0-32.297 26.275-58.573 58.573-58.573s58.574 26.276 58.574 58.573v89.013c0 32.298-26.275 58.574-58.573 58.574s-58.574-26.276-58.574-58.574zm24 0c0 19.064 15.51 34.574 34.573 34.574 19.064 0 34.574-15.51 34.574-34.574v-89.013c0-19.064-15.51-34.573-34.573-34.573h-.001c-19.063 0-34.573 15.509-34.573 34.573zm290.59 1.916c0 141.158-114.848 255.998-256.016 255.998s-256.016-114.84-256.016-255.998c0-141.16 114.848-256.002 256.016-256.002s256.016 114.842 256.016 256.002zm-24 0c0-127.926-104.082-232.002-232.016-232.002s-232.016 104.076-232.016 232.002c0 127.924 104.082 231.998 232.016 231.998s232.016-104.074 232.016-231.998z"/>
-                        </svg>
-                    </button>
-                    <button onclick="startChatFromLanding()" aria-label="Start chatting">
-                        Ask Question
-                    </button>
-                </div>
-            </div>
+/**
+ * Initialize MCP client connection
+ */
+async function initializeMCP() {
+    console.log('Initializing MCP client connection...');
+    
+    try {
+        const transport = new StdioClientTransport({
+            command: 'node',
+            args: ['mcp-server.js'],
+        });
+
+        mcpClient = new Client({
+            name: 'churchill-falls-express',
+            version: '1.0.0',
+        }, {
+            capabilities: {},
+        });
+
+        await mcpClient.connect(transport);
+        
+        console.log('✓ MCP client connected successfully');
+        
+        const tools = await mcpClient.listTools();
+        console.log(`✓ Available MCP tools: ${tools.tools.map(t => t.name).join(', ')}`);
+        
+        return true;
+    } catch (error) {
+        console.error('✗ Failed to initialize MCP client:', error);
+        return false;
+    }
+}
+
+/**
+ * Prepare text for natural speech (expand acronyms, remove markdown, etc.)
+ */
+function prepareTextForSpeech(text) {
+    let processedText = text;
+    
+    // FIRST: Remove all markdown formatting
+    processedText = processedText
+        // Remove bold/italic markers
+        .replace(/\*\*\*(.+?)\*\*\*/g, '$1')  // Bold + italic
+        .replace(/\*\*(.+?)\*\*/g, '$1')      // Bold
+        .replace(/\*(.+?)\*/g, '$1')          // Italic
+        .replace(/__(.+?)__/g, '$1')          // Alternative bold
+        .replace(/_(.+?)_/g, '$1')            // Alternative italic
+        
+        // Remove headers
+        .replace(/^#{1,6}\s+/gm, '')
+        
+        // Remove bullet points and list markers
+        .replace(/^[\s]*[-*+]\s+/gm, '')
+        .replace(/^[\s]*\d+\.\s+/gm, '')
+        
+        // Remove links but keep text
+        .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1')
+        
+        // Remove blockquotes
+        .replace(/^>\s*/gm, '')
+        
+        // Remove code blocks
+        .replace(/```[\s\S]*?```/g, '')
+        .replace(/`([^`]+)`/g, '$1')
+        
+        // Remove horizontal rules
+        .replace(/^[\s]*[-*_]{3,}[\s]*$/gm, '')
+        
+        // Clean up extra whitespace
+        .replace(/\n{3,}/g, '\n\n')
+        .trim();
+    
+    // SECOND: Fix specific pronunciation issues BEFORE acronym replacement
+    
+    // Fix cents/kWh notation (e.g., "1.63¢/kWh" → "1.63 cents per kilowatt hour")
+    processedText = processedText
+        .replace(/(\d+\.?\d*)\s*¢\s*\/\s*kWh/gi, '$1 cents per kilowatt hour')
+        .replace(/(\d+\.?\d*)\s*¢\s*\/\s*kwh/gi, '$1 cents per kilowatt hour');
+    
+    // Fix "30x" style multipliers (e.g., "30x" → "30 times")
+    processedText = processedText
+        .replace(/(\d+)\s*x\b/gi, '$1 times');
+    
+    // Fix tilde symbol (~ → "approximately" or "to")
+    processedText = processedText
+        .replace(/~(\d)/g, 'approximately $1')
+        .replace(/(\d)~(\d)/g, '$1 to $2')
+        .replace(/~/g, 'to');
+    
+    // Add pauses between sections and numbered items
+    // Double line breaks → longer pause
+    processedText = processedText
+        .replace(/\n\n+/g, '. ... ')  // Pause between paragraphs
+        // Numbered items (1., 2., etc.) → pause before next number
+        .replace(/(\d+)\.\s+/g, '. ... $1. ');
+    
+    // THIRD: Replace acronyms with speakable versions
+    const replacements = {
+        // Organizations
+        'MOU': 'M-O-U',
+        'NL': 'Newfoundland and Labrador',
+        'HQ': 'Hydro-Quebec',
+        'Hydro-Québec': 'Hydro-Quebec',
+        'CF': 'Churchill Falls',
+        
+        // Energy units (only if not already replaced above)
+        'TWh': 'terawatt hours',
+        'GWh': 'gigawatt hours',
+        'kWh': 'kilowatt hours',
+        'MW': 'megawatts',
+        
+        // Financial
+        'NPV': 'net present value',
+        
+        // Common abbreviations
+        'vs': 'versus',
+        'vs.': 'versus',
+        'e.g.': 'for example',
+        'i.e.': 'that is',
+        'etc.': 'et cetera',
+    };
+    
+    for (const [acronym, spoken] of Object.entries(replacements)) {
+        const regex = new RegExp(`\\b${acronym}\\b`, 'gi');
+        processedText = processedText.replace(regex, spoken);
+    }
+    
+    return processedText;
+}
+
+/**
+ * Convert text to speech using ElevenLabs
+ */
+async function convertToSpeech(text) {
+    if (!ELEVENLABS_API_KEY || !ELEVENLABS_VOICE_ID) {
+        throw new Error('ElevenLabs credentials not configured');
+    }
+    
+    // Check quota
+    if (monthlyVoiceUsage >= MONTHLY_VOICE_LIMIT) {
+        throw new Error('Monthly voice quota exceeded');
+    }
+    
+    // Prepare text for speech
+    let speechText = prepareTextForSpeech(text);
+    
+    // ElevenLabs has a 10,000 character limit per request
+    // If text is too long, create an intelligent summary for voice
+    const ELEVENLABS_CHAR_LIMIT = 10000;
+    if (speechText.length > ELEVENLABS_CHAR_LIMIT) {
+        console.log(`Response too long for voice (${speechText.length} chars). Creating summary...`);
+        
+        // Create intelligent summary by taking first ~8000 chars and adding conclusion
+        const summaryLength = 8000;
+        const truncated = speechText.substring(0, summaryLength);
+        
+        // Find the last complete sentence
+        const lastPeriod = truncated.lastIndexOf('.');
+        const lastQuestion = truncated.lastIndexOf('?');
+        const lastExclamation = truncated.lastIndexOf('!');
+        const lastSentenceEnd = Math.max(lastPeriod, lastQuestion, lastExclamation);
+        
+        if (lastSentenceEnd > 0) {
+            speechText = truncated.substring(0, lastSentenceEnd + 1) + 
+                        " ... This is a summary of the key points. For complete details, please read the full text response.";
+        } else {
+            // Fallback: just truncate at word boundary
+            const lastSpace = truncated.lastIndexOf(' ');
+            speechText = truncated.substring(0, lastSpace) + 
+                        " ... This response has been summarized for voice. Please read the full text for complete details.";
+        }
+        
+        console.log(`Voice summary created: ${speechText.length} chars`);
+    }
+    
+    // Track usage
+    monthlyVoiceUsage += speechText.length;
+    console.log(`Voice usage: ${monthlyVoiceUsage}/${MONTHLY_VOICE_LIMIT} chars (${((monthlyVoiceUsage/MONTHLY_VOICE_LIMIT)*100).toFixed(1)}%)`);
+    
+    // Call ElevenLabs API
+    const response = await fetch(
+        `https://api.elevenlabs.io/v1/text-to-speech/${ELEVENLABS_VOICE_ID}`,
+        {
+            method: 'POST',
+            headers: {
+                'Accept': 'audio/mpeg',
+                'Content-Type': 'application/json',
+                'xi-api-key': ELEVENLABS_API_KEY
+            },
+            body: JSON.stringify({
+                text: speechText,
+                model_id: 'eleven_monolingual_v1',
+                voice_settings: {
+                    stability: 0.5,
+                    similarity_boost: 0.75,
+                    style: 0.0,
+                    use_speaker_boost: true
+                }
+            })
+        }
+    );
+    
+    if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`ElevenLabs API error: ${response.status} - ${errorText}`);
+    }
+    
+    const audioBuffer = await response.arrayBuffer();
+    return Buffer.from(audioBuffer).toString('base64');
+}
+
+const systemPrompt = `You are the Churchill Falls Information Assistant, an expert resource on the Churchill Falls hydroelectric project, agreements, and related economic analyses.
+
+# CRITICAL: RESPONSE EFFICIENCY
+
+Respond within 60 seconds by:
+- Answering IMMEDIATELY from core documents already in your context (no searching needed)
+- Only using MCP search_documents for historical/supplementary content (2021-2022 financials, academic papers, pre-2020 history)
+- Writing concisely: aim for 3000-5000 words maximum
+
+# DOCUMENT ACCESS STRATEGY
+
+**CORE DOCUMENTS IN YOUR CONTEXT (Answer Immediately - No Searching):**
+
+You already have immediate access to these complete documents below. Answer questions about these topics DIRECTLY from the text below without using any MCP tools:
+
+1. December 2024 MOU (complete text)
+2. Wade Locke's MOU analysis (complete)
+3. "Reassessing the Churchill Falls MOU" analysis (complete)
+4. Dr. Doug May's complete 6-part video series (all transcripts)
+5. Churchill Falls 2023 financial statements (complete)
+6. Churchill Falls 2024 financial statements (complete)
+7. Lower Churchill Project 2024 financial statements (complete)
+8. Hydro-Québec Exports analysis (complete)
+
+**SUPPLEMENTARY DOCUMENTS IN MCP (Use search_documents Only When Needed):**
+
+Only use MCP search_documents tool for:
+- 2021-2022 Churchill Falls financial statements
+- Historical documents (pre-2020)
+- Academic papers (Feehan's research)
+- Technical specifications from old contracts
+- Older Hydro-Québec reports
+- Historical context from 1949-2007
+
+# MCP Tools Available
+
+You have three MCP tools available for supplementary content:
+- search_documents: Search historical/supplementary documents
+- get_document: Retrieve full supplementary document
+- list_documents: List supplementary documents
+
+Use these ONLY when the answer requires historical or supplementary content not in your core documents below.
+
+# ============================================
+# CORE DOCUMENTS (ALREADY IN YOUR CONTEXT)
+# ============================================
+
+${coreDocumentsText}
+
+# ============================================
+# END OF CORE DOCUMENTS
+# ============================================
+
+# CRITICAL: MOU Status Language
+
+The December 12, 2024 MOU is a PROPOSED agreement, NOT finalized.
+
+✓ CORRECT: "proposed MOU," "if implemented," "if approved," "would provide"
+✗ INCORRECT: "the deal," "was finalized," "will provide"
+
+# Document Citation Requirements
+
+When citing core documents above:
+1. Reference the document name
+2. Include specific details/quotes
+3. For Dr. Doug May videos: use markdown links
+
+# Dr. Doug May's Video Links
+
+When referencing Doug May's videos, always include these links:
+- [Video 1: Quebec's Emerging Electricity Shortage](https://youtu.be/QJWWpT7Ip_Q)
+- [Video 2A: Assessment of Proposed Prices](https://youtu.be/j2GWirWVg48)
+- [Video 2B: Assessment of Proposed Prices (continued)](https://youtu.be/MJ91O1W358E)
+- [Video 3A: Hydro-Québec's Electricity Imports](https://youtu.be/ToKebHmN16s)
+- [Video 3B: Hydro-Québec's Electricity Imports (continued)](https://youtu.be/ToKebHmN16s)
+- [Video 4: Assessment of Proposed Projects](https://youtu.be/OFcA4-SlWTE)
+
+# Communication Style
+
+Adapt to user expertise:
+- **Technical users:** Precise terminology, detailed calculations
+- **General users:** Plain language, examples, clear definitions
+
+# Formatting Rules
+
+1. **Section headers:** Use **bold** on own line (NOT ##)
+2. **Inline emphasis:** Use **bold** within sentences
+3. **Lists:** Use hyphens (- Item)
+4. **No blockquotes:** NEVER use > symbol
+5. **Complete responses:** NEVER leave incomplete
+
+# Response Quality Standards
+
+✓ **FAST** - Answer immediately from core documents in context (10-15 seconds)
+✓ **Comprehensive** - Include all relevant details from core documents
+✓ **Accurate** - Only cite what's in the documents
+✓ **Clear** - Explain complex concepts accessibly
+✓ **Cited** - Reference documents, include video links
+✓ **Balanced** - Present multiple perspectives when available
+
+# Sources Referenced Section
+
+Include "Sources Referenced" at end when citing documents.
+
+**REMEMBER: The core documents are already in your context above. Answer questions about MOU, Doug May, Wade Locke, 2023-2024 financials, and Hydro-Québec exports IMMEDIATELY without searching. Only use MCP search for historical/supplementary content.**`;
+
+// Regular chat endpoint (existing)
+app.post('/api/chat', async (req, res) => {
+    try {
+        const { message, conversationHistory = [] } = req.body;
+
+        if (!message || typeof message !== 'string' || message.trim().length === 0) {
+            return res.status(400).json({ error: 'Valid message is required' });
+        }
+
+        const requestStartTime = Date.now();
+        console.log(`\n[REQUEST] Voice chat request received: "${message.substring(0, 100)}..." at ${new Date().toISOString()}`);
+
+        if (!mcpClient) {
+            return res.status(503).json({ 
+                error: 'MCP server not available. Please try again shortly.' 
+            });
+        }
+
+        const cleanedHistory = conversationHistory.filter(msg => 
+            msg && msg.content && typeof msg.content === 'string' && msg.content.trim().length > 0
+        );
+
+        const messages = [
+            ...cleanedHistory,
+            {
+                role: 'user',
+                content: message
+            }
+        ];
+
+        const toolsList = await mcpClient.listTools();
+        
+        const tools = toolsList.tools.map(tool => ({
+            name: tool.name,
+            description: tool.description,
+            input_schema: tool.inputSchema
+        }));
+
+        console.log(`[TIMING] Starting Claude API call at ${new Date().toISOString()}`);
+        const startTime = Date.now();
+        
+        let response = await anthropic.messages.create({
+            model: 'claude-sonnet-4-5-20250929',
+            max_tokens: 4096,
+            system: systemPrompt,
+            messages: messages,
+            tools: tools
+        });
+        
+        console.log(`[TIMING] Claude initial response received in ${Date.now() - startTime}ms`);
+
+        let finalText = '';
+        let currentMessages = [...messages];
+        let toolCallCount = 0;
+
+        while (response.stop_reason === 'tool_use' || 
+               (response.content && response.content.some(block => block.type === 'tool_use'))) {
             
-            <div class="landing-sources-highlight">
-                <p>All source materials for this assistant can be found on the <a href="sources.html">Sources & Videos</a> page. Find out more <a href="about.html">about this assistant</a>.</p>
-            </div>
-        </div>
-    </div>
+            toolCallCount++;
+            const roundStartTime = Date.now();
+            console.log(`[TIMING] Tool use round #${toolCallCount} starting`);
+            
+            const assistantMessage = {
+                role: 'assistant',
+                content: response.content
+            };
+            currentMessages.push(assistantMessage);
 
-    <!-- Chat Interface --> 
-    <div class="chat-interface" id="chatInterface">
-        <!-- Header -->
-        <div class="header">
-            <button class="menu-button" onclick="toggleMobileMenu()" aria-label="Toggle menu">
-                ☰
-            </button>
-            <div class="header-title">Churchill Falls Information Assistant</div>
-            <div class="header-actions">
-                <div class="voice-status" id="voiceStatus">
-                    <div class="voice-status-dot" id="voiceStatusDot"></div>
-                    <span id="voiceStatusText">Voice Ready</span>
-                </div>
-            </div>
-        </div>
+            const toolResults = [];
+            
+            for (const block of response.content) {
+                if (block.type === 'tool_use') {
+                    console.log(`Executing MCP tool: ${block.name}`, block.input);
+                    
+                    try {
+                        const result = await mcpClient.callTool({
+                            name: block.name,
+                            arguments: block.input
+                        });
+                        
+                        toolResults.push({
+                            type: 'tool_result',
+                            tool_use_id: block.id,
+                            content: result.content[0].text
+                        });
+                    } catch (error) {
+                        console.error(`Error calling tool ${block.name}:`, error);
+                        toolResults.push({
+                            type: 'tool_result',
+                            tool_use_id: block.id,
+                            content: `Error: ${error.message}`,
+                            is_error: true
+                        });
+                    }
+                }
+            }
 
-        <!-- Main Layout -->
-        <div class="main-layout">
-            <!-- Mobile Overlay -->
-            <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileMenu()"></div>
+            currentMessages.push({
+                role: 'user',
+                content: toolResults
+            });
 
-            <!-- Sidebar -->
-            <div class="sidebar" id="sidebar">
-                <div class="sidebar-content" id="sessionList" role="navigation" aria-label="Chat history">
-                    <!-- Session list will be populated by JavaScript -->
-                </div>
-                
-                <!-- Voice Mode Toggle -->
-                <div class="voice-mode-toggle">
-                    <label for="voiceModeToggle">Voice Mode:</label>
-                    <label class="voice-toggle-switch">
-                        <input type="checkbox" id="voiceModeToggle">
-                        <span class="voice-toggle-slider"></span>
-                    </label>
-                    <span class="voice-mode-label" id="voiceModeLabel">Enabled</span>
-                </div>
-                
-                <!-- Footer Navigation -->
-                <nav class="sidebar-footer">
-                    <div class="sidebar-brand">Churchill Falls Information Assistant</div>
-                    <div class="sidebar-nav">
-                        <a href="#" id="homeLinkReset">Home (Start Fresh)</a>
-                        <a href="about.html">About</a>
-                        <a href="sources.html">Sources & Videos</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                </nav>
-            </div>
+            response = await anthropic.messages.create({
+                model: 'claude-sonnet-4-5-20250929',
+                max_tokens: 4096,
+                system: systemPrompt,
+                messages: currentMessages,
+                tools: tools
+            });
+        }
 
-            <!-- Chat Area -->
-            <div class="chat-area">
-                <div class="chat-container" id="chatContainer" role="main" aria-live="polite" aria-label="Chat messages">
-                    <!-- Messages will be added here -->
-                </div>
+        for (const block of response.content) {
+            if (block.type === 'text') {
+                finalText += block.text;
+            }
+        }
 
-                <div class="input-area">
-                    <div class="input-container">
-                        <div class="input-with-mic">
-                            <input 
-                                type="text" 
-                                id="messageInput" 
-                                placeholder="Ask about Churchill Falls, the MOU, or economic analyses..."
-                                onkeypress="handleKeyPress(event)"
-                                aria-label="Type your message"
-                            >
-                            <button class="input-mic-button" onclick="startVoiceInput('messageInput')" aria-label="Speak your question" title="Click to speak">
-                                <svg width="22" height="22" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="display: block;">
-                                    <path fill="currentColor" d="m360.25 270.535c-3.878 24.517-16.456 47.037-35.417 63.412-15.28 13.197-33.911 21.649-53.605 24.546v23.007h32.461c6.627 0 12 5.373 12 12s-5.373 12-12 12h-88.921c-6.628 0-12-5.373-12-12s5.372-12 12-12h32.46v-22.254c-22.061-1.858-43.115-10.669-60.056-25.299-18.961-16.375-31.538-38.895-35.416-63.412-1.035-6.546 3.432-12.692 9.978-13.727 6.548-1.035 12.693 3.432 13.728 9.978 6.208 39.246 40.833 68.841 80.542 68.841s74.334-29.595 80.542-68.841c1.035-6.546 7.173-11.013 13.728-9.978 6.544 1.035 11.011 7.181 9.976 13.727zm-162.821-16.449v-89.013c0-32.297 26.275-58.573 58.573-58.573s58.574 26.276 58.574 58.573v89.013c0 32.298-26.275 58.574-58.573 58.574s-58.574-26.276-58.574-58.574zm24 0c0 19.064 15.51 34.574 34.573 34.574 19.064 0 34.574-15.51 34.574-34.574v-89.013c0-19.064-15.51-34.573-34.573-34.573h-.001c-19.063 0-34.573 15.509-34.573 34.573zm290.59 1.916c0 141.158-114.848 255.998-256.016 255.998s-256.016-114.84-256.016-255.998c0-141.16 114.848-256.002 256.016-256.002s256.016 114.842 256.016 256.002zm-24 0c0-127.926-104.082-232.002-232.016-232.002s-232.016 104.076-232.016 232.002c0 127.924 104.082 231.998 232.016 231.998s232.016-104.074 232.016-231.998z"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <button 
-                            class="send-button" 
-                            id="sendButton" 
-                            onclick="sendMessage()"
-                            aria-label="Send message"
-                        >
-                            Send
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        res.json({ response: finalText });
 
-    <script>
-        // Session management
-        let sessions = [];
-        let currentSessionId = null;
+    } catch (error) {
+        console.error('Error calling Claude API:', error);
+        res.status(500).json({ 
+            error: 'Failed to get response from AI assistant',
+            details: error.message 
+        });
+    }
+});
 
-        // Voice state
-        let currentAudio = null;
+// NEW: Voice-enabled chat endpoint
+app.post('/api/voice-chat', async (req, res) => {
+    try {
+        const { message, conversationHistory = [], requestVoice = true } = req.body;
+
+        if (!message || typeof message !== 'string' || message.trim().length === 0) {
+            return res.status(400).json({ error: 'Valid message is required' });
+        }
+
+        if (!mcpClient) {
+            return res.status(503).json({ 
+                error: 'MCP server not available. Please try again shortly.' 
+            });
+        }
+
+        console.log('\n' + '='.repeat(60));
+        console.log(`📝 User Question: "${message}"`);
+        console.log(`🎤 Voice Mode: ${requestVoice ? 'ON (shorter summary)' : 'OFF (full detail)'}`);
+        console.log('='.repeat(60));
+
+        // Determine response style based on voice mode
+        let responseStyleInstruction = '';
+        if (requestVoice) {
+            responseStyleInstruction = `
+
+<VOICE_MODE_FORMATTING>
+This response will be converted to audio. Please format appropriately:
+
+- Use clear, natural language suitable for audio narration
+- Avoid excessive markdown formatting (minimal headers)
+- Write as if explaining to someone out loud
+- Be comprehensive and detailed - the system will create a summary for audio
+
+Generate a complete, detailed response. The audio narration will use an abbreviated version, but the full text will be available for reading.
+</VOICE_MODE_FORMATTING>`;
+        } else {
+            responseStyleInstruction = `
+
+<DETAILED_TEXT_MODE>
+Provide comprehensive, detailed responses with:
+- Full context and background
+- Specific statistics and figures
+- In-depth analysis
+- Multiple perspectives
+- Complete citations and sources
+- Use markdown formatting (headers, bold, lists) as appropriate
+</DETAILED_TEXT_MODE>`;
+        }
+
+        // Create modified system prompt with voice mode instruction
+        const modifiedSystemPrompt = systemPrompt + responseStyleInstruction;
+
+        // Get text response (same as /api/chat)
+        const cleanedHistory = conversationHistory.filter(msg => 
+            msg && msg.content && typeof msg.content === 'string' && msg.content.trim().length > 0
+        );
+
+        const messages = [
+            ...cleanedHistory,
+            {
+                role: 'user',
+                content: message
+            }
+        ];
+
+        const toolsList = await mcpClient.listTools();
+        const tools = toolsList.tools.map(tool => ({
+            name: tool.name,
+            description: tool.description,
+            input_schema: tool.inputSchema
+        }));
+
+        let response = await anthropic.messages.create({
+            model: 'claude-sonnet-4-5-20250929',
+            max_tokens: 4096,  // Always generate full response, truncate later for audio
+            system: modifiedSystemPrompt,
+            messages: messages,
+            tools: tools
+        });
+
+        let finalText = '';
+        let currentMessages = [...messages];
+
+        while (response.stop_reason === 'tool_use' || 
+               (response.content && response.content.some(block => block.type === 'tool_use'))) {
+            
+            const assistantMessage = {
+                role: 'assistant',
+                content: response.content
+            };
+            currentMessages.push(assistantMessage);
+
+            const toolResults = [];
+            
+            for (const block of response.content) {
+                if (block.type === 'tool_use') {
+                    console.log(`Executing MCP tool: ${block.name}`, block.input);
+                    
+                    try {
+                        const result = await mcpClient.callTool({
+                            name: block.name,
+                            arguments: block.input
+                        });
+                        
+                        toolResults.push({
+                            type: 'tool_result',
+                            tool_use_id: block.id,
+                            content: result.content[0].text
+                        });
+                    } catch (error) {
+                        console.error(`Error calling tool ${block.name}:`, error);
+                        toolResults.push({
+                            type: 'tool_result',
+                            tool_use_id: block.id,
+                            content: `Error: ${error.message}`,
+                            is_error: true
+                        });
+                    }
+                }
+            }
+
+            currentMessages.push({
+                role: 'user',
+                content: toolResults
+            });
+
+            response = await anthropic.messages.create({
+                model: 'claude-sonnet-4-5-20250929',
+                max_tokens: 4096,  // Always use full tokens, truncate after if needed
+                system: modifiedSystemPrompt,  // CRITICAL: Use modified prompt with voice instructions
+                messages: currentMessages,
+                tools: tools
+            });
+        }
+
+        for (const block of response.content) {
+            if (block.type === 'text') {
+                finalText += block.text;
+            }
+        }
+
+        // Save full text before any truncation
+        const fullText = finalText;
+        let summaryText = finalText;
+
+        // 🔪 HARD TRUNCATION for voice mode - force short responses
+        if (requestVoice) {
+            const sentences = finalText.match(/[^.!?]+[.!?]+/g) || [];
+            if (sentences.length > 5) {
+                // Take only first 3-5 sentences for summary
+                summaryText = sentences.slice(0, Math.min(5, sentences.length)).join(' ');
+                console.log(`🔪 TRUNCATED: Reduced from ${sentences.length} sentences to 5 for voice mode`);
+            }
+            // Use summary for audio generation
+            finalText = summaryText;
+        }
+
+        // 🐛 DEBUG: Log response statistics
+        const wordCount = finalText.split(/\s+/).length;
+        const charCount = finalText.length;
+        console.log('📊 Response Statistics:');
+        console.log(`   Characters: ${charCount}`);
+        console.log(`   Words: ${wordCount}`);
+        console.log(`   Sentences: ~${(finalText.match(/[.!?]+/g) || []).length}`);
+        if (requestVoice) {
+            console.log(`   ⚠️ Voice Mode: ${wordCount <= 75 ? '✅ GOOD (≤75 words)' : '❌ TOO LONG (>75 words)'}`);
+            console.log(`   💰 Estimated credits: ~${charCount}`);
+            console.log(`   📄 Full text available: ${fullText.split(/\s+/).length} words`);
+        }
+
+        // Try to convert to voice if requested and quota available
+        let audioData = null;
         let voiceAvailable = true;
-        let voiceModeEnabled = false;  // Voice mode toggle state (default: disabled/Text Only)
+        let quotaExceeded = false;
+        
+        if (requestVoice && monthlyVoiceUsage < MONTHLY_VOICE_LIMIT) {
+            try {
+                audioData = await convertToSpeech(finalText);
+                console.log('✓ Voice generated successfully');
+            } catch (error) {
+                console.error('✗ Voice generation failed:', error.message);
+                voiceAvailable = false;
+                if (error.message.includes('quota exceeded')) {
+                    quotaExceeded = true;
+                }
+            }
+        } else if (requestVoice) {
+            voiceAvailable = false;
+            quotaExceeded = true;
+        }
 
-        // Voice mode toggle handler
-        document.addEventListener('DOMContentLoaded', function() {
-            const voiceToggle = document.getElementById('voiceModeToggle');
-            const voiceModeLabel = document.getElementById('voiceModeLabel');
-            
-            if (voiceToggle) {
-                voiceToggle.addEventListener('change', function(e) {
-                    voiceModeEnabled = e.target.checked;
-                    if (voiceModeLabel) {
-                        if (voiceModeEnabled) {
-                            voiceModeLabel.textContent = 'Enabled';
-                            voiceModeLabel.style.color = '#3b82f6'; // Blue when enabled
-                        } else {
-                            voiceModeLabel.textContent = 'Disabled';
-                            voiceModeLabel.style.color = '#64748b'; // Gray when disabled
-                        }
-                    }
-                });
-            }
-            
-            // 🎯 AUTO-DISABLE voice mode when user starts typing
-            const messageInput = document.getElementById('messageInput');
-            if (messageInput) {
-                messageInput.addEventListener('input', function() {
-                    if (voiceModeEnabled && this.value.length > 0) {
-                        if (voiceToggle) {
-                            voiceToggle.checked = false;
-                            voiceModeEnabled = false;
-                            if (voiceModeLabel) {
-                                voiceModeLabel.textContent = 'Disabled';
-                                voiceModeLabel.style.color = '#64748b';
-                            }
-                            console.log('⌨️ Voice mode auto-disabled (user is typing)');
-                        }
-                    }
-                });
-            }
-            
-            // Start Fresh button handler - returns to landing page
-            const homeLinkReset = document.getElementById('homeLinkReset');
-            if (homeLinkReset) {
-                homeLinkReset.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    if (confirm('Return to home page and start fresh?')) {
-                        // Hide chat interface, show landing page
-                        document.getElementById('chatInterface').classList.remove('active');
-                        document.getElementById('landingPage').classList.remove('hidden');
-                        
-                        // Clear the landing input
-                        const landingInput = document.getElementById('landingInput');
-                        if (landingInput) {
-                            landingInput.value = '';
-                        }
-                        
-                        // Scroll to top
-                        window.scrollTo(0, 0);
-                    }
-                });
+        res.json({ 
+            text: finalText,  // Summary for display
+            fullText: requestVoice ? fullText : null,  // Full text only for voice mode
+            audio: audioData,
+            voiceAvailable: voiceAvailable,
+            quotaExceeded: quotaExceeded,
+            voiceUsage: {
+                used: monthlyVoiceUsage,
+                limit: MONTHLY_VOICE_LIMIT,
+                remaining: MONTHLY_VOICE_LIMIT - monthlyVoiceUsage,
+                percentUsed: ((monthlyVoiceUsage / MONTHLY_VOICE_LIMIT) * 100).toFixed(1)
             }
         });
 
-        // Voice Input (Speech Recognition)
-        let recognition = null;
-        let currentInputId = null;
+    } catch (error) {
+        console.error('Error in voice chat:', error);
+        res.status(500).json({ 
+            error: 'Failed to get response from AI assistant',
+            details: error.message 
+        });
+    }
+});
 
-        // Initialize speech recognition if available
-        if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
-            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-            recognition = new SpeechRecognition();
-            recognition.lang = 'en-US';
-            recognition.continuous = false;
-            recognition.interimResults = false;
-
-            recognition.onresult = function(event) {
-                const transcript = event.results[0][0].transcript;
-                const input = document.getElementById(currentInputId);
-                if (input) {
-                    input.value = transcript;
-                    input.focus();
+// Generate full audio on-demand endpoint
+app.post('/api/generate-full-audio', async (req, res) => {
+    try {
+        const { text } = req.body;
+        
+        if (!text || typeof text !== 'string') {
+            return res.status(400).json({ error: 'Text is required' });
+        }
+        
+        console.log('\n🔊 Generating FULL audio on-demand');
+        console.log(`   Text length: ${text.length} characters`);
+        console.log(`   Estimated credits: ~${text.length}`);
+        
+        // Check quota
+        if (monthlyVoiceUsage >= MONTHLY_VOICE_LIMIT) {
+            return res.json({ 
+                error: 'Monthly voice quota exceeded',
+                audio: null,
+                quotaExceeded: true 
+            });
+        }
+        
+        try {
+            const audioData = await convertToSpeech(text);
+            console.log('✓ Full audio generated successfully');
+            
+            res.json({ 
+                audio: audioData,
+                voiceUsage: {
+                    used: monthlyVoiceUsage,
+                    limit: MONTHLY_VOICE_LIMIT,
+                    remaining: MONTHLY_VOICE_LIMIT - monthlyVoiceUsage,
+                    percentUsed: ((monthlyVoiceUsage / MONTHLY_VOICE_LIMIT) * 100).toFixed(1)
                 }
-                stopVoiceInput();
-                
-                // 🎤 AUTO-ENABLE VOICE MODE when microphone is used
-                const voiceToggle = document.getElementById('voiceModeToggle');
-                const voiceModeLabel = document.getElementById('voiceModeLabel');
-                if (voiceToggle && !voiceToggle.checked) {
-                    voiceToggle.checked = true;
-                    voiceModeEnabled = true;
-                    if (voiceModeLabel) {
-                        voiceModeLabel.textContent = 'Enabled';
-                        voiceModeLabel.style.color = '#3b82f6';
-                    }
-                    console.log('🎤 Voice mode auto-enabled via microphone');
-                }
-                
-                // Auto-submit the question after voice input
-                setTimeout(() => {
-                    if (currentInputId === 'landingInput') {
-                        startChatFromLanding();
-                    } else if (currentInputId === 'messageInput') {
-                        sendMessage();
-                    }
-                }, 500); // Small delay to show the text appeared
-            };
-
-            recognition.onerror = function(event) {
-                console.error('Speech recognition error:', event.error);
-                stopVoiceInput();
-                if (event.error === 'not-allowed') {
-                    alert('Microphone access denied. Please enable microphone permissions in your browser settings.');
-                }
-            };
-
-            recognition.onend = function() {
-                stopVoiceInput();
-            };
+            });
+        } catch (error) {
+            console.error('✗ Full audio generation failed:', error.message);
+            res.status(500).json({ 
+                error: 'Failed to generate audio',
+                details: error.message 
+            });
         }
+        
+    } catch (error) {
+        console.error('Error in generate-full-audio:', error);
+        res.status(500).json({ 
+            error: 'Failed to generate audio',
+            details: error.message 
+        });
+    }
+});
 
-        function startVoiceInput(inputId) {
-            if (!recognition) {
-                alert('Voice input is not supported in your browser. Please use Chrome, Edge, or Safari.');
-                return;
-            }
+// Voice status endpoint
+app.get('/api/voice-status', (req, res) => {
+    const remaining = MONTHLY_VOICE_LIMIT - monthlyVoiceUsage;
+    const percentUsed = (monthlyVoiceUsage / MONTHLY_VOICE_LIMIT) * 100;
+    
+    res.json({
+        available: remaining > 0,
+        used: monthlyVoiceUsage,
+        limit: MONTHLY_VOICE_LIMIT,
+        remaining: remaining,
+        percentUsed: percentUsed.toFixed(1),
+        estimatedResponsesRemaining: Math.floor(remaining / 800)
+    });
+});
 
-            currentInputId = inputId;
-            const micButtons = document.querySelectorAll('.mic-button, .input-mic-button');
-            
-            try {
-                recognition.start();
-                micButtons.forEach(btn => btn.classList.add('listening'));
-                
-                // Update placeholder
-                const input = document.getElementById(inputId);
-                if (input) {
-                    input.setAttribute('data-original-placeholder', input.placeholder);
-                    input.placeholder = 'Listening... speak now';
-                }
-            } catch (error) {
-                console.error('Error starting recognition:', error);
-                stopVoiceInput();
-            }
-        }
+// Health check endpoint
+app.get('/health', (req, res) => {
+    res.json({ 
+        status: 'healthy',
+        mcp_connected: mcpClient !== null,
+        voice_enabled: !!(ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID)
+    });
+});
 
-        function stopVoiceInput() {
-            const micButtons = document.querySelectorAll('.mic-button, .input-mic-button');
-            micButtons.forEach(btn => btn.classList.remove('listening'));
-            
-            if (currentInputId) {
-                const input = document.getElementById(currentInputId);
-                if (input && input.hasAttribute('data-original-placeholder')) {
-                    input.placeholder = input.getAttribute('data-original-placeholder');
-                    input.removeAttribute('data-original-placeholder');
-                }
-            }
-        }
+// Start server
+async function startServer() {
+    console.log('\n╔════════════════════════════════════════════════╗');
+    console.log('║   Churchill Falls HYBRID Information Assistant ║');
+    console.log('╚════════════════════════════════════════════════╝\n');
+    
+    // STEP 1: Load core documents into context
+    const coreLoaded = loadCoreDocuments();
+    if (!coreLoaded) {
+        console.error('\n✗ FATAL: Failed to load core documents');
+        console.error('Cannot start server without core documents\n');
+        process.exit(1);
+    }
+    
+    // STEP 2: Initialize MCP for supplementary documents
+    console.log('Connecting to MCP server for supplementary documents...\n');
+    const mcpInitialized = await initializeMCP();
+    
+    if (!mcpInitialized) {
+        console.error('WARNING: MCP server not available. Historical document search disabled.');
+    }
+    
+    if (!ELEVENLABS_API_KEY || !ELEVENLABS_VOICE_ID) {
+        console.warn('WARNING: ElevenLabs credentials not configured. Voice features disabled.');
+    } else {
+        console.log('✓ ElevenLabs voice enabled');
+    }
+    
+    // STEP 3: Start Express server
+    app.listen(port, () => {
+        console.log('\n╔════════════════════════════════════════════════╗');
+        console.log(`║  Server running on port ${port.toString().padEnd(24)} ║`);
+        console.log('╠════════════════════════════════════════════════╣');
+        console.log('║  HYBRID SYSTEM STATUS:                         ║');
+        console.log(`║  • Core docs in context: ✓ (Fast answers)     ║`);
+        console.log(`║  • MCP supplementary: ${mcpInitialized ? '✓' : '✗'}                      ║`);
+        console.log(`║  • Voice (ElevenLabs): ${(ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID) ? '✓' : '✗'}                   ║`);
+        console.log('╚════════════════════════════════════════════════╝\n');
+        console.log('Ready to answer questions!\n');
+        console.log('Expected performance:');
+        console.log('  • Core doc questions: 10-15 seconds');
+        console.log('  • Historical questions: 30-60 seconds\n');
+    });
+}
 
-        // Check voice status on load
-        checkVoiceStatus();
-
-        function checkVoiceStatus() {
-            fetch('/api/voice-status')
-                .then(response => response.json())
-                .then(data => {
-                    voiceAvailable = data.available;
-                    updateVoiceStatusUI(data);
-                })
-                .catch(error => {
-                    console.error('Voice status check failed:', error);
-                    voiceAvailable = false;
-                    updateVoiceStatusUI({ available: false });
-                });
-        }
-
-        function updateVoiceStatusUI(status) {
-            const dot = document.getElementById('voiceStatusDot');
-            const text = document.getElementById('voiceStatusText');
-            
-            if (status.available) {
-                dot.classList.remove('disabled');
-                text.textContent = `Voice: ${status.remaining || 0} chars left`;
-            } else {
-                dot.classList.add('disabled');
-                text.textContent = 'Voice Unavailable';
-            }
-        }
-
-        function loadSessions() {
-            const stored = localStorage.getItem('chatSessions');
-            if (stored) {
-                sessions = JSON.parse(stored);
-            }
-            if (sessions.length === 0) {
-                createNewSession();
-            } else {
-                currentSessionId = sessions[0].id;
-                renderSessionList();
-                loadSession(currentSessionId);
-            }
-        }
-
-        function saveSessions() {
-            localStorage.setItem('chatSessions', JSON.stringify(sessions));
-        }
-
-        function createNewSession() {
-            closeMobileMenu();
-            const newSession = {
-                id: Date.now().toString(),
-                title: 'New Conversation',
-                date: new Date().toLocaleDateString(),
-                messages: [],
-                conversationHistory: []
-            };
-            sessions.unshift(newSession);
-            currentSessionId = newSession.id;
-            saveSessions();
-            renderSessionList();
-            clearChatContainer();
-        }
-
-        function renderSessionList() {
-            const sessionList = document.getElementById('sessionList');
-            sessionList.innerHTML = sessions.map(session => `
-                <div class="session-item ${session.id === currentSessionId ? 'active' : ''}" 
-                     onclick="loadSession('${session.id}')"
-                     role="button"
-                     tabindex="0"
-                     aria-label="Load conversation: ${session.title}">
-                    <div class="session-title">${session.title}</div>
-                    <div class="session-date">${session.date}</div>
-                </div>
-            `).join('');
-        }
-
-        function loadSession(sessionId) {
-            closeMobileMenu();
-            currentSessionId = sessionId;
-            renderSessionList();
-            const session = sessions.find(s => s.id === sessionId);
-            if (session) {
-                clearChatContainer();
-                session.messages.forEach(msg => {
-                    addMessage(msg.role, msg.content, false);
-                });
-            }
-        }
-
-        function getCurrentSession() {
-            return sessions.find(s => s.id === currentSessionId);
-        }
-
-        function startChatFromLanding() {
-            const input = document.getElementById('landingInput');
-            const message = input.value.trim();
-            
-            if (message) {
-                document.getElementById('landingPage').classList.add('hidden');
-                document.getElementById('chatInterface').classList.add('active');
-                
-                // Load sessions first
-                loadSessions();
-                
-                // Create a fresh new session for landing page entry
-                createNewSession();
-                
-                // Clear the chat display
-                clearChatContainer();
-                
-                setTimeout(() => {
-                    sendMessage(message);
-                }, 100);
-            }
-        }
-
-        function handleKeyPress(event) {
-            if (event.key === 'Enter') {
-                sendMessage();
-            }
-        }
-
-        async function sendMessage(predefinedMessage) {
-            const input = document.getElementById('messageInput');
-            const message = predefinedMessage || input.value.trim();
-            
-            if (!message) return;
-            
-            const session = getCurrentSession();
-            if (!session) {
-                console.error('No active session');
-                return;
-            }
-            
-            if (session.messages.length === 0 && message.length <= 50) {
-                session.title = message;
-                saveSessions();
-                renderSessionList();
-            }
-            
-            addMessage('user', message, true);
-            
-            if (!predefinedMessage) {
-                input.value = '';
-            }
-            
-            const loadingId = showLoading();
-            
-            // 🐛 DEBUG: Log voice mode status
-            console.log('🎤 Voice Mode:', voiceModeEnabled ? 'ENABLED' : 'DISABLED');
-            console.log('📤 Sending requestVoice:', voiceModeEnabled);
-            
-            const maxAttempts = 3;
-            let lastError = null;
-
-            for (let attempts = 1; attempts <= maxAttempts; attempts++) {
-                try {
-                    const response = await fetch('/api/voice-chat', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify({
-                            message: message,
-                            conversationHistory: session.conversationHistory,
-                            requestVoice: voiceModeEnabled  // Use toggle state
-                        })
-                    });
-
-                    const data = await response.json();
-                    removeLoading(loadingId);
-
-                    if (data.error) {
-                        if (attempts < maxAttempts) {
-                            console.log(`Attempt ${attempts} failed, retrying...`);
-                            await new Promise(resolve => setTimeout(resolve, 1000));
-                            continue;
-                        }
-                        addMessage('assistant', 'I apologize, but I encountered an error. Please try again.', true);
-                    } else {
-                        // Add message with voice button
-                        const messageElement = addMessage('assistant', data.text, true, data.audio, data.voiceAvailable, data.fullText);
-                        
-                        // 🔊 AUTO-PLAY audio if voice mode is enabled and audio was generated
-                        if (voiceModeEnabled && data.audio) {
-                            console.log('🔊 Auto-playing audio response');
-                            setTimeout(() => {
-                                const voiceButton = messageElement.querySelector('.voice-button');
-                                if (voiceButton && !voiceButton.disabled) {
-                                    voiceButton.click();
-                                }
-                            }, 300); // Small delay to let button render
-                        }
-                        
-                        // Update voice status
-                        if (data.voiceUsage) {
-                            updateVoiceStatusUI(data.voiceUsage);
-                        }
-                        
-                        // Update conversation history
-                        if (session.conversationHistory.length === 0) {
-                            session.conversationHistory.push({
-                                role: 'user',
-                                content: `User Question: ${message}`
-                            });
-                        } else {
-                            session.conversationHistory.push({
-                                role: 'user',
-                                content: message
-                            });
-                        }
-                        session.conversationHistory.push({
-                            role: 'assistant',
-                            content: data.text
-                        });
-                        
-                        saveSessions();
-                        return;
-                    }
-
-                } catch (error) {
-                    lastError = error;
-                    console.error(`Attempt ${attempts} error:`, error);
-                    
-                    if (attempts < maxAttempts) {
-                        console.log('Retrying in 1 second...');
-                        await new Promise(resolve => setTimeout(resolve, 1000));
-                    } else {
-                        removeLoading(loadingId);
-                        addMessage('assistant', 'I apologize, but I encountered an error after multiple attempts. Please check your connection and try again.', true);
-                        console.error('All retry attempts failed:', lastError);
-                    }
-                }
-            }
-        }
-
-        function addMessage(role, content, saveToSession, audioData, voiceAvailable, fullText) {
-            const chatContainer = document.getElementById('chatContainer');
-            const messageDiv = document.createElement('div');
-            messageDiv.className = `message ${role}`;
-            messageDiv.setAttribute('role', 'article');
-            messageDiv.setAttribute('aria-label', role === 'user' ? 'Your question' : 'Assistant response');
-            
-            const avatar = document.createElement('div');
-            avatar.className = 'message-avatar';
-            avatar.textContent = role === 'user' ? 'You' : 'CF';
-            avatar.setAttribute('aria-hidden', 'true');
-            
-            const contentDiv = document.createElement('div');
-            contentDiv.className = 'message-content';
-            
-            if (content) {
-                // 🎤 VOICE MODE: Strip markdown headers to prevent large text in voice responses
-                if (role === 'assistant' && voiceModeEnabled) {
-                    // Remove markdown headers (###, ##, #) from voice responses
-                    // Do this BEFORE markdown conversion to prevent large text
-                    content = content.replace(/^###\s+/gm, '')
-                                    .replace(/^##\s+/gm, '')
-                                    .replace(/^#\s+/gm, '')
-                                    .replace(/\*\*/g, '');  // Also remove bold markers
-                    console.log('🎤 Stripped markdown formatting from voice response');
-                }
-                
-                // Convert markdown
-                let formattedContent = content
-                    .replace(/^### (.*$)/gim, '<h3>$1</h3>')
-                    .replace(/^## (.*$)/gim, '<h2>$1</h2>')
-                    .replace(/^# (.*$)/gim, '<h1>$1</h1>')
-                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                    .replace(/^>\s*/gm, '')
-                    .replace(/^"\s*$/gm, '')
-                    .replace(/\[([^\]]+)\]\((https?:\/\/(www\.)?youtube\.com\/[^\)]+|https?:\/\/youtu\.be\/[^\)]+)\)/g, '<a href="videos.html">$1</a>')
-                    .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
-                    .replace(/\n\n/g, '</p><p>')
-                    .replace(/\n/g, '<br>');
-                
-                formattedContent = '<p>' + formattedContent + '</p>';
-                formattedContent = formattedContent
-                    .replace(/<p><\/p>/g, '')
-                    .replace(/<p>\s*<\/p>/g, '')
-                    .replace(/<\/h[123]><\/p>/g, '</h$1>')
-                    .replace(/<p><h([123])/g, '<h$1')
-                    .replace(/<\/h([123])><p>/g, '</h$1>')
-                    .replace(/<br>\s*<br>/g, '<br>')
-                    .replace(/<\/strong><br><br>/g, '</strong><br>')
-                    .replace(/<p><br>/g, '<p>')
-                    .replace(/<br><\/p>/g, '</p>')
-                    .replace(/(\d+\.)<br>/g, '$1 ')
-                    .replace(/(\d+\.)\s*<br>\s*/g, '$1 ')
-                    .replace(/(\d+\.)<\/p><p>/g, '$1 ')
-                    .replace(/(\d+\.)\s*<\/p>\s*<p>/g, '$1 ')
-                    .replace(/(\d+\.)\s*<br>\s*<strong>/g, '$1 <strong>')
-                    .replace(/(\d+\.)\s*<\/p>\s*<p>\s*<strong>/g, '$1 <strong>');
-                
-                contentDiv.innerHTML = formattedContent;
-                
-                messageDiv.appendChild(avatar);
-                messageDiv.appendChild(contentDiv);
-                
-                // Copy button - ONLY for assistant messages
-                if (role === 'assistant') {
-                    const copyButton = document.createElement('button');
-                    copyButton.className = 'copy-button';
-                    copyButton.textContent = 'Copy';
-                    copyButton.setAttribute('aria-label', 'Copy message');
-                    copyButton.onclick = function() {
-                        navigator.clipboard.writeText(content).then(() => {
-                            copyButton.textContent = 'Copied!';
-                            copyButton.classList.add('copied');
-                            setTimeout(() => {
-                                copyButton.textContent = 'Copy';
-                                copyButton.classList.remove('copied');
-                            }, 2000);
-                        }).catch(err => {
-                            console.error('Failed to copy:', err);
-                        });
-                    };
-                    messageDiv.appendChild(copyButton);
-                }
-                
-                // Add voice button for assistant messages - ONLY if voice mode is enabled
-                if (role === 'assistant' && voiceModeEnabled && (audioData || voiceAvailable !== false)) {
-                    const voiceButton = document.createElement('button');
-                    voiceButton.className = 'voice-button';
-                    voiceButton.innerHTML = '<span class="voice-button-icon">🔊</span><span>Listen with Doug\'s Voice</span>';
-                    voiceButton.setAttribute('aria-label', 'Play response with voice');
-                    
-                    if (audioData) {
-                        voiceButton.onclick = () => playVoiceResponse(audioData, voiceButton);
-                    } else if (voiceAvailable === false) {
-                        voiceButton.disabled = true;
-                        voiceButton.innerHTML = '<span class="voice-button-icon">🔇</span><span>Voice Unavailable</span>';
-                    }
-                    
-                    contentDiv.appendChild(voiceButton);
-                    
-                    // Add "Show Full Analysis" button if full text is available
-                    if (fullText && fullText !== content) {
-                        const expandButton = document.createElement('button');
-                        expandButton.className = 'voice-button';  // Use same styling as voice button
-                        expandButton.style.background = 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)';
-                        expandButton.innerHTML = '<span class="voice-button-icon">📄</span><span>Show Full Analysis</span>';
-                        expandButton.setAttribute('aria-label', 'Show full detailed response');
-                        
-                        expandButton.onclick = function() {
-                            if (expandButton.dataset.expanded === 'true') {
-                                // Collapse - show only summary
-                                const fullTextDiv = messageDiv.querySelector('.full-text-content');
-                                if (fullTextDiv) fullTextDiv.remove();
-                                expandButton.innerHTML = '<span class="voice-button-icon">📄</span><span>Show Full Analysis</span>';
-                                expandButton.dataset.expanded = 'false';
-                            } else {
-                                // Expand - show full text
-                                const fullTextDiv = document.createElement('div');
-                                fullTextDiv.className = 'full-text-content';
-                                fullTextDiv.style.marginTop = '20px';
-                                fullTextDiv.style.paddingTop = '20px';
-                                fullTextDiv.style.borderTop = '2px solid #e2e8f0';
-                                
-                                const fullTextHeader = document.createElement('h4');
-                                fullTextHeader.textContent = '📄 Full Detailed Analysis';
-                                fullTextHeader.style.color = '#1e3c72';
-                                fullTextHeader.style.marginBottom = '12px';
-                                fullTextHeader.style.fontSize = '16px';
-                                fullTextHeader.style.fontWeight = '600';
-                                
-                                // Format the full text
-                                let formattedFull = fullText
-                                    .replace(/^### (.*$)/gim, '<h3>$1</h3>')
-                                    .replace(/^## (.*$)/gim, '<h2>$1</h2>')
-                                    .replace(/^# (.*$)/gim, '<h1>$1</h1>')
-                                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                                    .replace(/\n\n/g, '</p><p>')
-                                    .replace(/\n/g, '<br>');
-                                formattedFull = '<p>' + formattedFull + '</p>';
-                                
-                                const fullTextContent = document.createElement('div');
-                                fullTextContent.innerHTML = formattedFull;
-                                
-                                fullTextDiv.appendChild(fullTextHeader);
-                                fullTextDiv.appendChild(fullTextContent);
-                                
-                                // 🔊 Add "Listen to Full Analysis" button
-                                const fullAudioButton = document.createElement('button');
-                                fullAudioButton.className = 'voice-button';
-                                fullAudioButton.style.marginTop = '16px';
-                                fullAudioButton.style.background = 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)';
-                                fullAudioButton.innerHTML = '<span class="voice-button-icon">🔊</span><span>Listen to Full Analysis</span>';
-                                fullAudioButton.setAttribute('aria-label', 'Generate and play full audio narration');
-                                
-                                let fullAudioData = null;  // Cache audio once generated
-                                
-                                fullAudioButton.onclick = async function() {
-                                    if (fullAudioData) {
-                                        // Already generated, just play it
-                                        playVoiceResponse(fullAudioData, fullAudioButton);
-                                    } else {
-                                        // Generate full audio on-demand
-                                        fullAudioButton.disabled = true;
-                                        fullAudioButton.innerHTML = '<span class="voice-button-icon">⏳</span><span>Generating Full Audio...</span>';
-                                        
-                                        try {
-                                            const response = await fetch('/api/generate-full-audio', {
-                                                method: 'POST',
-                                                headers: { 'Content-Type': 'application/json' },
-                                                body: JSON.stringify({ text: fullText })
-                                            });
-                                            
-                                            const data = await response.json();
-                                            
-                                            if (data.audio) {
-                                                fullAudioData = data.audio;  // Cache it
-                                                fullAudioButton.disabled = false;
-                                                fullAudioButton.innerHTML = '<span class="voice-button-icon">🔊</span><span>Listen to Full Analysis</span>';
-                                                // Auto-play the full audio
-                                                playVoiceResponse(fullAudioData, fullAudioButton);
-                                                console.log('🔊 Full audio generated and playing');
-                                            } else {
-                                                throw new Error('No audio data returned');
-                                            }
-                                        } catch (error) {
-                                            console.error('Failed to generate full audio:', error);
-                                            fullAudioButton.disabled = false;
-                                            fullAudioButton.innerHTML = '<span class="voice-button-icon">⚠️</span><span>Audio Generation Failed</span>';
-                                            setTimeout(() => {
-                                                fullAudioButton.innerHTML = '<span class="voice-button-icon">🔊</span><span>Listen to Full Analysis</span>';
-                                            }, 3000);
-                                        }
-                                    }
-                                };
-                                
-                                fullTextDiv.appendChild(fullAudioButton);
-                                contentDiv.appendChild(fullTextDiv);
-                                
-                                expandButton.innerHTML = '<span class="voice-button-icon">📄</span><span>Hide Full Analysis</span>';
-                                expandButton.dataset.expanded = 'true';
-                            }
-                        };
-                        
-                        contentDiv.appendChild(expandButton);
-                    }
-                }
-                
-                // 🎯 SMART AUDIO: Add audio generation for long text-mode responses
-                // Show audio button if: NOT in voice mode AND response is long (>200 words)
-                if (role === 'assistant' && !voiceModeEnabled && content) {
-                    const wordCount = content.split(/\s+/).length;
-                    
-                    if (wordCount > 200) {
-                        console.log(`📊 Text mode response: ${wordCount} words - offering audio generation`);
-                        
-                        const textAudioButton = document.createElement('button');
-                        textAudioButton.className = 'voice-button';
-                        textAudioButton.style.marginTop = '12px';
-                        textAudioButton.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
-                        textAudioButton.innerHTML = '<span class="voice-button-icon">🔊</span><span>Generate Audio Narration</span>';
-                        textAudioButton.setAttribute('aria-label', 'Generate audio narration of this response');
-                        
-                        let textAudioData = null;  // Cache audio once generated
-                        
-                        textAudioButton.onclick = async function() {
-                            if (textAudioData) {
-                                // Already generated, just play it
-                                playVoiceResponse(textAudioData, textAudioButton);
-                            } else {
-                                // Generate audio on-demand
-                                textAudioButton.disabled = true;
-                                textAudioButton.innerHTML = '<span class="voice-button-icon">⏳</span><span>Generating Audio...</span>';
-                                
-                                try {
-                                    const response = await fetch('/api/generate-full-audio', {
-                                        method: 'POST',
-                                        headers: { 'Content-Type': 'application/json' },
-                                        body: JSON.stringify({ text: content })
-                                    });
-                                    
-                                    const data = await response.json();
-                                    
-                                    if (data.audio) {
-                                        textAudioData = data.audio;  // Cache it
-                                        textAudioButton.disabled = false;
-                                        textAudioButton.innerHTML = '<span class="voice-button-icon">🔊</span><span>Listen to Audio Narration</span>';
-                                        // Auto-play the audio
-                                        playVoiceResponse(textAudioData, textAudioButton);
-                                        console.log('🔊 Text mode audio generated and playing');
-                                    } else {
-                                        throw new Error('No audio data returned');
-                                    }
-                                } catch (error) {
-                                    console.error('Failed to generate text mode audio:', error);
-                                    textAudioButton.disabled = false;
-                                    textAudioButton.innerHTML = '<span class="voice-button-icon">⚠️</span><span>Audio Generation Failed</span>';
-                                    setTimeout(() => {
-                                        textAudioButton.innerHTML = '<span class="voice-button-icon">🔊</span><span>Generate Audio Narration</span>';
-                                    }, 3000);
-                                }
-                            }
-                        };
-                        
-                        contentDiv.appendChild(textAudioButton);
-                    } else {
-                        console.log(`📊 Text mode response: ${wordCount} words - too short for audio`);
-                    }
-                }
-            } else {
-                messageDiv.appendChild(avatar);
-                messageDiv.appendChild(contentDiv);
-            }
-            
-            chatContainer.appendChild(messageDiv);
-            chatContainer.scrollTop = chatContainer.scrollHeight;
-            
-            if (saveToSession) {
-                const session = getCurrentSession();
-                if (session) {
-                    session.messages.push({ role, content });
-                    saveSessions();
-                }
-            }
-            
-            if (role === 'assistant' && content) {
-                announceToScreenReader('New response from assistant');
-            }
-            
-            return messageDiv;
-        }
-
-        function playVoiceResponse(base64Audio, button) {
-            // If this button's audio is currently playing, pause it
-            if (currentAudio && button.classList.contains('playing')) {
-                if (currentAudio.paused) {
-                    // Resume playing
-                    currentAudio.play();
-                    button.innerHTML = '<span class="voice-button-icon">⏸</span><span>Pause</span>';
-                } else {
-                    // Pause
-                    currentAudio.pause();
-                    button.innerHTML = '<span class="voice-button-icon">▶️</span><span>Resume</span>';
-                }
-                return;
-            }
-            
-            // Stop any other audio that might be playing
-            if (currentAudio) {
-                currentAudio.pause();
-                currentAudio = null;
-                // Reset all voice buttons
-                document.querySelectorAll('.voice-button').forEach(btn => {
-                    btn.classList.remove('playing');
-                    btn.innerHTML = '<span class="voice-button-icon">🔊</span><span>Listen with Doug\'s Voice</span>';
-                });
-            }
-            
-            try {
-                // Convert base64 to blob
-                const byteCharacters = atob(base64Audio);
-                const byteNumbers = new Array(byteCharacters.length);
-                for (let i = 0; i < byteCharacters.length; i++) {
-                    byteNumbers[i] = byteCharacters.charCodeAt(i);
-                }
-                const byteArray = new Uint8Array(byteNumbers);
-                const blob = new Blob([byteArray], { type: 'audio/mpeg' });
-                const audioUrl = URL.createObjectURL(blob);
-                
-                // Create and play audio
-                currentAudio = new Audio(audioUrl);
-                
-                button.classList.add('playing');
-                button.innerHTML = '<span class="voice-button-icon">⏸</span><span>Pause</span>';
-                
-                currentAudio.onended = () => {
-                    URL.revokeObjectURL(audioUrl);
-                    button.classList.remove('playing');
-                    button.innerHTML = '<span class="voice-button-icon">🔊</span><span>Listen with Doug\'s Voice</span>';
-                    currentAudio = null;
-                };
-                
-                currentAudio.onerror = () => {
-                    URL.revokeObjectURL(audioUrl);
-                    button.classList.remove('playing');
-                    button.innerHTML = '<span class="voice-button-icon">⚠️</span><span>Playback Error</span>';
-                    currentAudio = null;
-                };
-                
-                currentAudio.play();
-            } catch (error) {
-                console.error('Error playing audio:', error);
-                button.innerHTML = '<span class="voice-button-icon">⚠️</span><span>Playback Error</span>';
-            }
-        }
-
-        function announceToScreenReader(message) {
-            const announcement = document.createElement('div');
-            announcement.setAttribute('role', 'status');
-            announcement.setAttribute('aria-live', 'polite');
-            announcement.className = 'sr-only';
-            announcement.textContent = message;
-            document.body.appendChild(announcement);
-            setTimeout(() => announcement.remove(), 1000);
-        }
-
-        function showLoading() {
-            const chatContainer = document.getElementById('chatContainer');
-            const loadingDiv = document.createElement('div');
-            const loadingId = 'loading-' + Date.now();
-            loadingDiv.id = loadingId;
-            loadingDiv.className = 'message assistant';
-            
-            loadingDiv.innerHTML = `
-                <div class="message-avatar">CF</div>
-                <div class="message-content loading">
-                    <div style="display: flex; align-items: center; gap: 10px; color: #64748b;">
-                        <div style="display: flex; gap: 4px;">
-                            <div class="loading-dot"></div>
-                            <div class="loading-dot"></div>
-                            <div class="loading-dot"></div>
-                        </div>
-                        <span style="font-size: 13px;">Analyzing documents...</span>
-                    </div>
-                </div>
-            `;
-            chatContainer.appendChild(loadingDiv);
-            chatContainer.scrollTop = chatContainer.scrollHeight;
-            return loadingId;
-        }
-
-        function removeLoading(loadingId) {
-            const loadingDiv = document.getElementById(loadingId);
-            if (loadingDiv) {
-                loadingDiv.remove();
-            }
-        }
-
-        function clearChatContainer() {
-            document.getElementById('chatContainer').innerHTML = '';
-        }
-
-        function toggleMobileMenu() {
-            document.getElementById('sidebar').classList.toggle('mobile-open');
-            document.getElementById('mobileOverlay').classList.toggle('active');
-        }
-
-        function closeMobileMenu() {
-            document.getElementById('sidebar').classList.remove('mobile-open');
-            document.getElementById('mobileOverlay').classList.remove('active');
-        }
-
-        // Check voice status periodically
-        setInterval(checkVoiceStatus, 60000); // Every minute
-    </script>
-</body>
-</html>
+startServer();
