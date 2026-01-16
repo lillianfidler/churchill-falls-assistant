@@ -1194,6 +1194,11 @@
                 return;
             }
 
+            // If using mic from landing page, automatically enable voice mode
+            if (inputId === 'landingInput') {
+                selectConversationalMode();
+            }
+
             currentInputId = inputId;
             const micButtons = document.querySelectorAll('.mic-button, .input-mic-button');
             
