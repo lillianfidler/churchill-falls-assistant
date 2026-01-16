@@ -324,7 +324,7 @@ app.post('/api/chat', async (req, res) => {
             
             const voiceResponse = await anthropic.messages.create({
                 model: 'claude-sonnet-4-20250514',
-                max_tokens: 2000,
+                max_tokens: 300,  // Strict limit for voice mode
                 system: VOICE_MODE_SYSTEM_PROMPT,
                 messages: messages
             });
@@ -333,6 +333,13 @@ app.post('/api/chat', async (req, res) => {
                 .filter(block => block.type === 'text')
                 .map(block => block.text)
                 .join('\n');
+
+            // FORCE TRUNCATE to 100 words maximum
+            const words = responseText.split(/\s+/);
+            if (words.length > 100) {
+                console.log(`⚠️ Response too long (${words.length} words), truncating to 100 words`);
+                responseText = words.slice(0, 100).join(' ') + '...';
+            }
 
             // Check if fallback is needed
             if (responseText.includes('Please stand by, I\'m researching that')) {
