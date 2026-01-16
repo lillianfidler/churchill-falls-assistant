@@ -1338,23 +1338,16 @@
                 console.log('Showing chat interface...');
                 document.getElementById('chatInterface').classList.add('active');
                 
-                console.log('Loading sessions...');
-                // Load sessions first
+                console.log('Loading sessions (to populate sidebar)...');
                 loadSessions();
                 
                 console.log('Creating new session...');
                 // Create a fresh new session for landing page entry
                 createNewSession();
                 
-                console.log('Clearing chat container...');
-                // Clear the chat display
-                clearChatContainer();
-                
-                console.log('Sending message in 100ms...');
-                setTimeout(() => {
-                    console.log('Now sending message:', message);
-                    sendMessage(message);
-                }, 100);
+                console.log('Sending message immediately...');
+                // Send message right away, no setTimeout needed
+                sendMessage(message);
             } else {
                 console.log('No message to send');
             }
