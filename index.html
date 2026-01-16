@@ -1,4 +1,3 @@
-<!-- Updated version 2 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1331,26 +1330,22 @@
             const input = document.getElementById('landingInput');
             const message = input.value.trim();
             
-            console.log('startChatFromLanding called with message:', message);
-            
             if (message) {
-                console.log('Hiding landing page...');
                 document.getElementById('landingPage').classList.add('hidden');
-                console.log('Showing chat interface...');
                 document.getElementById('chatInterface').classList.add('active');
                 
-                console.log('Loading sessions (to populate sidebar)...');
+                // Load sessions first
                 loadSessions();
                 
-                console.log('Creating new session...');
                 // Create a fresh new session for landing page entry
                 createNewSession();
                 
-                console.log('Sending message immediately...');
-                // Send message right away, no setTimeout needed
-                sendMessage(message);
-            } else {
-                console.log('No message to send');
+                // Clear the chat display
+                clearChatContainer();
+                
+                setTimeout(() => {
+                    sendMessage(message);
+                }, 100);
             }
         }
 
@@ -1364,12 +1359,7 @@
             const input = document.getElementById('messageInput');
             const message = predefinedMessage || input.value.trim();
             
-            console.log('sendMessage called with:', message);
-            
-            if (!message) {
-                console.log('No message, returning');
-                return;
-            }
+            if (!message) return;
             
             const session = getCurrentSession();
             if (!session) {
@@ -1377,22 +1367,18 @@
                 return;
             }
             
-            console.log('Active session:', session.id);
-            
             if (session.messages.length === 0 && message.length <= 50) {
                 session.title = message;
                 saveSessions();
                 renderSessionList();
             }
             
-            console.log('Adding user message to UI...');
             addMessage('user', message, true);
             
             if (!predefinedMessage) {
                 input.value = '';
             }
             
-            console.log('Showing loading indicator...');
             const loadingId = showLoading();
             
             const maxAttempts = 3;
@@ -1400,7 +1386,6 @@
 
             for (let attempts = 1; attempts <= maxAttempts; attempts++) {
                 try {
-                    console.log(`Attempt ${attempts}: Sending to /api/chat...`);
                     const response = await fetch('/api/chat', {
                         method: 'POST',
                         headers: {
@@ -1412,13 +1397,10 @@
                         })
                     });
 
-                    console.log('Response received:', response.status);
                     const data = await response.json();
-                    console.log('Data:', data);
                     removeLoading(loadingId);
 
                     if (data.error) {
-                        console.error('Server returned error:', data.error);
                         if (attempts < maxAttempts) {
                             console.log(`Attempt ${attempts} failed, retrying...`);
                             await new Promise(resolve => setTimeout(resolve, 1000));
@@ -1426,7 +1408,6 @@
                         }
                         addMessage('assistant', 'I apologize, but I encountered an error. Please try again.', true);
                     } else {
-                        console.log('Adding assistant message to UI...');
                         // Add message with voice button
                         addMessage('assistant', data.text, true, data.audio, data.voiceAvailable);
                         
@@ -1453,7 +1434,6 @@
                         });
                         
                         saveSessions();
-                        console.log('Message send complete!');
                         return;
                     }
 
@@ -1474,11 +1454,7 @@
         }
 
         function addMessage(role, content, saveToSession, audioData, voiceAvailable) {
-            console.log('addMessage called:', {role, contentLength: content?.length, saveToSession, hasAudio: !!audioData});
-            
             const chatContainer = document.getElementById('chatContainer');
-            console.log('chatContainer element:', chatContainer);
-            
             const messageDiv = document.createElement('div');
             messageDiv.className = `message ${role}`;
             messageDiv.setAttribute('role', 'article');
