@@ -30,12 +30,13 @@ if (!ANTHROPIC_API_KEY) {
 const anthropic = new Anthropic({ apiKey: ANTHROPIC_API_KEY });
 
 app.use(express.json({ limit: '50mb' }));
-app.use(express.static('public'));
+app.use(express.static(__dirname)); // Serve files from root directory
 
 // Serve main files
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'public', 'index.html')));
-app.get('/sources.html', (req, res) => res.sendFile(path.join(__dirname, 'public', 'sources.html')));
-app.get('/about.html', (req, res) => res.sendFile(path.join(__dirname, 'public', 'about.html')));
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
+app.get('/index-TEST.html', (req, res) => res.sendFile(path.join(__dirname, 'index-TEST.html')));
+app.get('/sources.html', (req, res) => res.sendFile(path.join(__dirname, 'sources.html')));
+app.get('/about.html', (req, res) => res.sendFile(path.join(__dirname, 'about.html')));
 
 // ============================================================================
 // CORE DOCUMENTS - Loaded directly for Voice Mode (Fast)
