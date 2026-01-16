@@ -1929,8 +1929,14 @@
             }
             
             try {
+                // Strip data URL prefix if present
+                let base64Data = base64Audio;
+                if (base64Data.startsWith('data:')) {
+                    base64Data = base64Data.split(',')[1];
+                }
+                
                 // Convert base64 to blob
-                const byteCharacters = atob(base64Audio);
+                const byteCharacters = atob(base64Data);
                 const byteNumbers = new Array(byteCharacters.length);
                 for (let i = 0; i < byteCharacters.length; i++) {
                     byteNumbers[i] = byteCharacters.charCodeAt(i);
