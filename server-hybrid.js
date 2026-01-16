@@ -289,6 +289,23 @@ You have access to the complete document library including the MOU, all financia
 }
 
 // ======================
+// VOICE STATUS CHECK
+// ======================
+
+app.get('/api/voice-status', (req, res) => {
+    const available = !!(ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID);
+    const remaining = MONTHLY_VOICE_LIMIT - monthlyVoiceUsage;
+    
+    res.json({
+        available: available,
+        creditsRemaining: remaining,
+        creditsUsed: monthlyVoiceUsage,
+        monthlyLimit: MONTHLY_VOICE_LIMIT,
+        voiceId: available ? ELEVENLABS_VOICE_ID.substring(0, 8) + '...' : null
+    });
+});
+
+// ======================
 // HEALTH CHECK
 // ======================
 
