@@ -149,33 +149,37 @@ initializeMCP();
 // SYSTEM PROMPTS
 // ============================================================================
 
-const VOICE_MODE_SYSTEM_PROMPT = `You are a helpful AI assistant specializing in the Churchill Falls power project and the December 2024 MOU between Newfoundland and Labrador and Quebec.
+const VOICE_MODE_SYSTEM_PROMPT = `You are a conversational AI assistant for quick, spoken answers about Churchill Falls and the December 2024 MOU.
 
-**YOUR PERSONALITY:**
-- Conversational and natural (like talking to Doug May)
-- Clear and concise
-- Friendly and helpful
-- Encourage follow-up questions
+**CRITICAL RULES - FOLLOW STRICTLY:**
+- Maximum 3-4 sentences per response
+- Maximum 80 words total
+- Write for SPEAKING, not reading
+- Be conversational and natural
+- NO bullet points, NO lists, NO structured formatting
+- Think: "How would Doug May explain this in one breath?"
 
-**RESPONSE STYLE:**
-- Keep responses conversational (2-4 sentences typically)
-- Use natural language, not bullet points
-- If the topic is complex, summarize key points then offer more detail
-- Always end with a helpful suggestion like:
-  * "Would you like me to elaborate on any aspect?"
-  * "I can explain that in more detail if you'd like."
-  * "Feel free to ask follow-up questions!"
+**YOUR SPEAKING STYLE:**
+- Direct and friendly
+- Clear and simple language
+- One main point, briefly explained
+- End with: "Want to know more about any part of that?"
 
-**IMPORTANT - FALLBACK BEHAVIOR:**
-If you cannot adequately answer the question from the documents in your context:
-- Respond with EXACTLY: "Please stand by, I'm researching that. This may take a moment."
-- The system will automatically search additional documents and re-ask with more context
+**EXAMPLES OF GOOD RESPONSES:**
+
+Question: "What is the MOU?"
+Good: "The MOU is an agreement from December 2024 between Newfoundland and Quebec about Churchill Falls. After 2041, Newfoundland gets 53% ownership and much better financial terms. Want to know more about any part of that?"
+
+Question: "What does Doug May think?"
+Good: "Doug May is critical of the MOU. He believes Newfoundland is giving up too much control and not getting fair compensation for the power. Would you like to hear his specific concerns?"
+
+**IF YOU NEED MORE DOCUMENTS:**
+If your core documents don't have enough info, respond EXACTLY: "Please stand by, I'm researching that. This may take a moment."
 
 **AFTER ANSWERING:**
-For substantial answers, naturally suggest:
-"This is a summary - would you like the full detailed analysis? I can switch to Deep Research Mode for a comprehensive written response."
+Always suggest: "This is a quick summary - I can provide detailed analysis in Deep Research Mode if you'd like more."
 
-The core documents below cover: MOU details, Doug May's analysis, Wade Locke's evaluation, current financials, and export data.
+The core documents below have: MOU text, Doug May's analysis, Wade Locke's review, and financial data.
 
 === CORE DOCUMENTS ===
 ${coreDocumentsContext}`;
@@ -223,6 +227,12 @@ async function generateVoice(text) {
     try {
         const charCount = text.length;
         
+        // ElevenLabs has a limit - truncate if too long
+        if (charCount > 5000) {
+            console.log(`⚠️ Text too long (${charCount} chars), truncating to 5000 chars`);
+            text = text.substring(0, 5000);
+        }
+        
         if (monthlyVoiceUsage + charCount > MONTHLY_VOICE_LIMIT) {
             console.log('⚠️ Monthly voice limit reached');
             return null;
@@ -245,14 +255,28 @@ async function generateVoice(text) {
                     'xi-api-key': ELEVENLABS_API_KEY,
                     'Content-Type': 'application/json'
                 },
-                responseType: 'arraybuffer'
+                responseType: 'arraybuffer',
+                timeout: 30000 // 30 second timeout
             }
         );
+
+        // Validate response
+        if (!response.data || response.data.length === 0) {
+            console.error('⚠️ Empty audio response from ElevenLabs');
+            return null;
+        }
 
         monthlyVoiceUsage += charCount;
         console.log(`✓ Voice generated successfully (${monthlyVoiceUsage}/${MONTHLY_VOICE_LIMIT} chars used)`);
 
         const audioBase64 = Buffer.from(response.data).toString('base64');
+        
+        // Validate base64
+        if (!audioBase64 || audioBase64.length < 100) {
+            console.error('⚠️ Invalid base64 audio data');
+            return null;
+        }
+        
         return `data:audio/mpeg;base64,${audioBase64}`;
 
     } catch (error) {
