@@ -1154,10 +1154,18 @@
                     </svg>
                     <h3>Conversational Mode</h3>
                 </div>
-                <div style="display: flex; align-items: center; gap: 20px;">
-                    <p class="mode-description" style="flex: 1; margin: 0;">Quick, natural answers with Doug May's voice. Perfect for fast facts and exploring topics. Click on the microphone icon to ask your question. A popup will appear asking permission to use your microphone.</p>
-                    <button class="mic-button-medium" onclick="startVoiceConversation()" aria-label="Start voice conversation" title="Click to speak your question">
-                        <svg width="32" height="32" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+                <p class="mode-description">Quick, natural answers with Doug May's voice. Perfect for fast facts and exploring topics. Click on the microphone icon to ask your question. A popup will appear asking permission to use your microphone.</p>
+                <div class="mode-input-container">
+                    <input 
+                        type="text" 
+                        id="conversationalInput" 
+                        placeholder="Click the microphone to speak..."
+                        aria-label="Your spoken question will appear here"
+                        readonly
+                        style="cursor: default;"
+                    >
+                    <button class="mic-button" onclick="startVoiceInput('conversationalInput')" aria-label="Speak your question" title="Click to speak">
+                        <svg width="22" height="22" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="display: block;">
                             <path fill="currentColor" d="m360.25 270.535c-3.878 24.517-16.456 47.037-35.417 63.412-15.28 13.197-33.911 21.649-53.605 24.546v23.007h32.461c6.627 0 12 5.373 12 12s-5.373 12-12 12h-88.921c-6.628 0-12-5.373-12-12s5.372-12 12-12h32.46v-22.254c-22.061-1.858-43.115-10.669-60.056-25.299-18.961-16.375-31.538-38.895-35.416-63.412-1.035-6.546 3.432-12.692 9.978-13.727 6.548-1.035 12.693 3.432 13.728 9.978 6.208 39.246 40.833 68.841 80.542 68.841s74.334-29.595 80.542-68.841c1.035-6.546 7.173-11.013 13.728-9.978 6.544 1.035 11.011 7.181 9.976 13.727zm-162.821-16.449v-89.013c0-32.297 26.275-58.573 58.573-58.573s58.574 26.276 58.574 58.573v89.013c0 32.298-26.275 58.574-58.573 58.574s-58.574-26.276-58.574-58.574zm24 0c0 19.064 15.51 34.574 34.573 34.574 19.064 0 34.574-15.51 34.574-34.574v-89.013c0-19.064-15.51-34.573-34.573-34.573h-.001c-19.063 0-34.573 15.509-34.573 34.573zm290.59 1.916c0 141.158-114.848 255.998-256.016 255.998s-256.016-114.84-256.016-255.998c0-141.16 114.848-256.002 256.016-256.002s256.016 114.842 256.016 256.002zm-24 0c0-127.926-104.082-232.002-232.016-232.002s-232.016 104.076-232.016 232.002c0 127.924 104.082 231.998 232.016 231.998s232.016-104.074 232.016-231.998z"/>
                         </svg>
                     </button>
@@ -1340,31 +1348,6 @@
 
             recognition.onresult = function(event) {
                 const transcript = event.results[0][0].transcript;
-                
-                // Handle voice-only button (no input field)
-                if (currentInputId === 'voiceConversationTemp') {
-                    const button = document.querySelector('.mic-button-medium');
-                    if (button) button.classList.remove('listening');
-                    
-                    // Enable voice mode
-                    voiceModeEnabled = true;
-                    const voiceToggle = document.getElementById('voiceModeToggle');
-                    if (voiceToggle) voiceToggle.checked = true;
-                    
-                    // Start chat with the voice input
-                    document.getElementById('landingPage').classList.add('hidden');
-                    document.getElementById('chatInterface').classList.add('active');
-                    
-                    loadSessions();
-                    createNewSession();
-                    clearChatContainer();
-                    
-                    setTimeout(() => {
-                        sendMessage(transcript);
-                    }, 100);
-                    
-                    return;
-                }
                 
                 // Handle regular input fields
                 const input = document.getElementById(currentInputId);
@@ -1611,25 +1594,6 @@
                 setTimeout(() => {
                     sendMessage(message);
                 }, 100);
-            }
-        }
-
-        function startVoiceConversation() {
-            if (!recognition) {
-                alert('Voice input is not supported in your browser. Please use Chrome, Edge, or Safari.');
-                return;
-            }
-
-            // Create a temporary input ID for voice-only mode
-            currentInputId = 'voiceConversationTemp';
-            const button = document.querySelector('.mic-button-medium');
-            
-            try {
-                recognition.start();
-                if (button) button.classList.add('listening');
-            } catch (error) {
-                console.error('Error starting recognition:', error);
-                if (button) button.classList.remove('listening');
             }
         }
 
