@@ -1186,12 +1186,15 @@
                 ☰
             </button>
             <div class="header-title">Churchill Falls Information Assistant</div>
+            <!-- Voice status counter hidden - not needed for public interface -->
+            <!--
             <div class="header-actions">
                 <div class="voice-status" id="voiceStatus">
                     <div class="voice-status-dot" id="voiceStatusDot"></div>
                     <span id="voiceStatusText">Voice Ready</span>
                 </div>
             </div>
+            -->
         </div>
 
         <!-- Main Layout -->
@@ -1929,58 +1932,11 @@
                 if (role === 'assistant' && !voiceModeEnabled && content) {
                     const wordCount = content.split(/\s+/).length;
                     
-                    if (wordCount > 200) {
-                        console.log(`📊 Text mode response: ${wordCount} words - offering audio generation`);
-                        
-                        const textAudioButton = document.createElement('button');
-                        textAudioButton.className = 'voice-button';
-                        textAudioButton.style.marginTop = '12px';
-                        textAudioButton.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
-                        textAudioButton.innerHTML = '<span class="voice-button-icon">🔊</span><span>Generate Audio Narration</span>';
-                        textAudioButton.setAttribute('aria-label', 'Generate audio narration of this response');
-                        
-                        let textAudioData = null;  // Cache audio once generated
-                        
-                        textAudioButton.onclick = async function() {
-                            if (textAudioData) {
-                                // Already generated, just play it
-                                playVoiceResponse(textAudioData, textAudioButton);
-                            } else {
-                                // Generate audio on-demand
-                                textAudioButton.disabled = true;
-                                textAudioButton.innerHTML = '<span class="voice-button-icon">⏳</span><span>Generating Audio...</span>';
-                                
-                                try {
-                                    const response = await fetch('/api/generate-full-audio', {
-                                        method: 'POST',
-                                        headers: { 'Content-Type': 'application/json' },
-                                        body: JSON.stringify({ text: content })
-                                    });
-                                    
-                                    const data = await response.json();
-                                    
-                                    if (data.audio) {
-                                        textAudioData = data.audio;  // Cache it
-                                        textAudioButton.disabled = false;
-                                        textAudioButton.innerHTML = '<span class="voice-button-icon">🔊</span><span>Listen to Audio Narration</span>';
-                                        // Auto-play the audio
-                                        playVoiceResponse(textAudioData, textAudioButton);
-                                        console.log('🔊 Text mode audio generated and playing');
-                                    } else {
-                                        throw new Error('No audio data returned');
-                                    }
-                                } catch (error) {
-                                    console.error('Failed to generate text mode audio:', error);
-                                    textAudioButton.disabled = false;
-                                    textAudioButton.innerHTML = '<span class="voice-button-icon">⚠️</span><span>Audio Generation Failed</span>';
-                                    setTimeout(() => {
-                                        textAudioButton.innerHTML = '<span class="voice-button-icon">🔊</span><span>Generate Audio Narration</span>';
-                                    }, 3000);
-                                }
-                            }
-                        };
-                        
-                        contentDiv.appendChild(textAudioButton);
+                    // Audio generation disabled for text mode to conserve ElevenLabs credits
+                    // Text mode is for comprehensive written analysis, not audio playback
+                    if (false && wordCount > 200) {
+                        // Generate Audio button code disabled but preserved
+                        console.log(`📊 Text mode response: ${wordCount} words - audio generation disabled`);
                     } else {
                         console.log(`📊 Text mode response: ${wordCount} words - too short for audio`);
                     }
