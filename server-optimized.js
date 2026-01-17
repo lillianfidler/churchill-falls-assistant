@@ -144,25 +144,45 @@ initializeMCP();
 
 function stripMarkdownAndFormat(text) {
     return text
-        // Remove headers
+        // Remove headers (with or without # symbols)
         .replace(/^#{1,6}\s+/gm, '')
+        .replace(/^[A-Z][A-Za-z\s]+:$/gm, '') // Remove "Title:" style headers
         
-        // Remove bullet points
+        // Remove bullet points and list items
         .replace(/^\s*[-*•]\s+/gm, '')
         .replace(/^\s*\d+\.\s+/gm, '')
         
         // Remove bold/italic
         .replace(/\*\*(.+?)\*\*/g, '$1')
         .replace(/\*(.+?)\*/g, '$1')
+        .replace(/__(.+?)__/g, '$1')
+        .replace(/_(.+?)_/g, '$1')
         
         // Remove blockquotes
         .replace(/^>\s+/gm, '')
         
-        // Collapse multiple newlines
+        // Remove multiple consecutive colons (often used in structured lists)
+        .replace(/:\s*\n/g, ': ')
+        
+        // Remove standalone section markers
+        .replace(/^By \d{4}.*$/gm, '')
+        .replace(/^The [A-Z][a-z]+.*$/gm, (match) => {
+            // Only remove if it looks like a header (Title Case, short, ends sentence)
+            if (match.length < 50 && match.match(/^The [A-Z]/)) {
+                return '';
+            }
+            return match;
+        })
+        
+        // Collapse multiple newlines to single space
         .replace(/\n\n+/g, ' ')
+        .replace(/\n/g, ' ')
         
         // Normalize whitespace
         .replace(/\s+/g, ' ')
+        
+        // Remove any remaining isolated numbers or fragments
+        .replace(/\s+\d+\s+cents?\s+/gi, ' low rates ')
         
         .trim();
 }
@@ -261,20 +281,27 @@ async function generateVoice(text) {
 // SYSTEM PROMPTS
 // ============================================================================
 
-const DOUG_VOICE_PROMPT = `You are Dr. Doug May, economist and expert on Churchill Falls energy policy.
+const DOUG_VOICE_PROMPT = `You are Dr. Doug May speaking conversationally, not writing a report.
 
-Answer questions conversationally using YOUR analysis from your video series. Speak naturally as if explaining to a colleague over coffee.
+CRITICAL: You are SPEAKING to someone, not writing. Your responses will be read aloud in your voice.
 
-CRITICAL RULES:
-- Give COMPLETE answers in 2-3 SHORT sentences
-- Each sentence must END properly (don't start new thoughts you can't finish)
-- Natural conversational tone (like your videos)
-- NO bullet points, headers, or markdown formatting
-- Plain prose only
-- Stop after making your key point - don't elaborate further
-- If you don't know from your videos, say "I'd need to look deeper into that - try the Deep Research mode for a comprehensive analysis."
+RESPONSE FORMAT - ABSOLUTELY REQUIRED:
+- 2-3 sentences ONLY
+- Continuous flowing speech (like you're explaining over coffee)
+- NO section breaks, NO headers, NO structural organization
+- Just talk naturally in connected sentences
 
-Remember: You're Doug May giving a BRIEF, COMPLETE explanation. Quality over quantity.`;
+BAD EXAMPLE (DO NOT DO THIS):
+"The contract was controversial because:
+- Low rates
+- Long term  
+Financial Impact:
+Quebec made $28 billion..."
+
+GOOD EXAMPLE (DO THIS):
+"The 1969 contract was controversial because it locked us into selling electricity to Quebec at extremely low rates for 65 years, which meant Quebec made about $28 billion while we made only $2 billion."
+
+Remember: You're TALKING to someone. Speak in natural flowing sentences. Stop after 2-3 sentences.`;
 
 const TEXT_MODE_PROMPT = `You are an expert AI assistant specializing in the Churchill Falls power project.
 
