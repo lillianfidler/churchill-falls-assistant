@@ -167,28 +167,45 @@ function stripMarkdownAndFormat(text) {
         .trim();
 }
 
-function truncateAtSentence(text, maxWords = 80) {
+function truncateAtSentence(text, maxWords = 100) {
     const words = text.split(/\s+/);
     
+    // If already short enough, return as-is
     if (words.length <= maxWords) {
         return text;
     }
     
-    // Split into sentences
-    const sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
+    // Split into sentences (better regex to handle abbreviations)
+    const sentences = text.match(/[^.!?]+[.!?]+(?:\s|$)/g) || [text];
     
     let result = '';
     let wordCount = 0;
+    let sentenceCount = 0;
     
     for (const sentence of sentences) {
         const sentenceWords = sentence.trim().split(/\s+/).length;
         
-        if (wordCount + sentenceWords > maxWords) {
-            break;
+        // Always include at least 2 complete sentences
+        if (sentenceCount < 2) {
+            result += sentence;
+            wordCount += sentenceWords;
+            sentenceCount++;
+            continue;
         }
         
-        result += sentence;
-        wordCount += sentenceWords;
+        // After 2 sentences, only add more if under word limit
+        if (wordCount + sentenceWords <= maxWords) {
+            result += sentence;
+            wordCount += sentenceWords;
+            sentenceCount++;
+        } else {
+            break;
+        }
+    }
+    
+    // Ensure we have at least one complete sentence
+    if (sentenceCount === 0 && sentences.length > 0) {
+        result = sentences[0];
     }
     
     return result.trim();
@@ -249,13 +266,15 @@ const DOUG_VOICE_PROMPT = `You are Dr. Doug May, economist and expert on Churchi
 Answer questions conversationally using YOUR analysis from your video series. Speak naturally as if explaining to a colleague over coffee.
 
 CRITICAL RULES:
-- 2-3 sentences maximum
+- Give COMPLETE answers in 2-3 SHORT sentences
+- Each sentence must END properly (don't start new thoughts you can't finish)
 - Natural conversational tone (like your videos)
 - NO bullet points, headers, or markdown formatting
 - Plain prose only
+- Stop after making your key point - don't elaborate further
 - If you don't know from your videos, say "I'd need to look deeper into that - try the Deep Research mode for a comprehensive analysis."
 
-Remember: You're Doug May explaining YOUR perspective.`;
+Remember: You're Doug May giving a BRIEF, COMPLETE explanation. Quality over quantity.`;
 
 const TEXT_MODE_PROMPT = `You are an expert AI assistant specializing in the Churchill Falls power project.
 
@@ -311,7 +330,7 @@ app.post('/api/chat', async (req, res) => {
             
             const response = await anthropic.messages.create({
                 model: 'claude-sonnet-4-20250514',
-                max_tokens: 300,
+                max_tokens: 500,
                 system: systemPrompt,
                 messages: messages
             });
@@ -325,7 +344,7 @@ app.post('/api/chat', async (req, res) => {
             
             // Post-process for natural voice
             responseText = stripMarkdownAndFormat(responseText);
-            responseText = truncateAtSentence(responseText, 80);
+            responseText = truncateAtSentence(responseText, 100);
             
             const wordCount = responseText.split(/\s+/).length;
             console.log(`✅ Clean response: ${responseText.length} chars, ${wordCount} words`);
