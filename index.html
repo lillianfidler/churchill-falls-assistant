@@ -706,7 +706,7 @@
             flex: 1;
             line-height: 1.6;
             color: #1e293b;
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 400;
             background: white;
             padding: 16px;
@@ -717,7 +717,7 @@
 
         .message-content p {
             margin-bottom: 12px;
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 400;
             color: #1e293b;
         }
@@ -729,13 +729,13 @@
         .message-content strong {
             font-weight: 500;
             color: #1e293b;
-            font-size: 14px;
+            font-size: 15px;
         }
 
         .message-content a {
             color: #3b82f6;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 500;
             border-bottom: 1px solid #3b82f6;
             display: inline;
@@ -753,6 +753,48 @@
             font-size: 15px;
             font-weight: 600;
             line-height: 1.4;
+        }
+
+        /* Sources section styling */
+        .sources-section {
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .sources-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #64748b;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .sources-list {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .source-item {
+            font-size: 13px;
+            color: #3b82f6;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 0;
+        }
+
+        .source-item:hover {
+            color: #2563eb;
+        }
+
+        .source-item::before {
+            content: "•";
+            color: #94a3b8;
         }
 
         .loading {
@@ -1779,6 +1821,20 @@
                     .replace(/(\d+\.)\s*<\/p>\s*<p>\s*<strong>/g, '$1 <strong>');
                 
                 contentDiv.innerHTML = formattedContent;
+                
+                // Add sources section for text mode responses (when voiceModeEnabled is false)
+                if (role === 'assistant' && !voiceModeEnabled && content.length > 200) {
+                    const sourcesDiv = document.createElement('div');
+                    sourcesDiv.className = 'sources-section';
+                    sourcesDiv.innerHTML = `
+                        <div class="sources-title">📚 Reference Materials</div>
+                        <div class="sources-list">
+                            <a href="sources.html" class="source-item">View all source documents and videos</a>
+                            <a href="about.html" class="source-item">About the Churchill Falls Information Assistant</a>
+                        </div>
+                    `;
+                    contentDiv.appendChild(sourcesDiv);
+                }
                 
                 messageDiv.appendChild(avatar);
                 messageDiv.appendChild(contentDiv);
