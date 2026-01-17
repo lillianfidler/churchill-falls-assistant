@@ -481,6 +481,24 @@ app.post('/api/chat', async (req, res) => {
                                 arguments: block.input
                             });
 
+                            // Try to extract document name from result if get_document
+                            if (block.name === 'get_document' && result.content && result.content[0]) {
+                                const resultText = result.content[0].text || '';
+                                
+                                // Try to extract filename from result text
+                                // Common patterns: "From: filename.txt", "Source: filename", etc.
+                                const filenameMatch = resultText.match(/(?:From|Source|File|Document):\s*([^\n]+\.txt)/i) ||
+                                                     resultText.match(/^([A-Za-z0-9_-]+\.txt)/m);
+                                
+                                if (filenameMatch && filenameMatch[1]) {
+                                    documentsAccessed.add(filenameMatch[1].trim());
+                                    console.log(`  ✓ Tracked from result: ${filenameMatch[1].trim()}`);
+                                }
+                                
+                                // Also log first 100 chars of result to see structure
+                                console.log(`  → Result preview: ${resultText.substring(0, 100)}...`);
+                            }
+
                             toolResults.push({
                                 type: 'tool_result',
                                 tool_use_id: block.id,
