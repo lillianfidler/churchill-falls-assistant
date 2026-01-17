@@ -447,15 +447,31 @@ app.post('/api/chat', async (req, res) => {
                 for (const block of response.content) {
                     if (block.type === 'tool_use') {
                         console.log(`  → ${block.name}`);
-                        console.log(`  → Arguments:`, JSON.stringify(block.input));
                         
-                        // Track document access - try multiple possible patterns
+                        // Enhanced logging - show the actual input structure
                         if (block.input) {
-                            // Try different possible field names for document name
-                            const docName = block.input.name || block.input.document || block.input.filename || block.input.file;
-                            if (docName) {
-                                documentsAccessed.add(docName);
-                                console.log(`  → Tracked document: ${docName}`);
+                            console.log(`  → Input keys:`, Object.keys(block.input));
+                            console.log(`  → Full input:`, JSON.stringify(block.input, null, 2));
+                        }
+                        
+                        // Track document access - try ALL possible field names
+                        if (block.name === 'get_document' && block.input) {
+                            // Try every possible field that might contain the document name
+                            const possibleDocName = 
+                                block.input.name || 
+                                block.input.document || 
+                                block.input.document_name ||
+                                block.input.filename || 
+                                block.input.file ||
+                                block.input.path ||
+                                block.input.uri ||
+                                block.input.id;
+                            
+                            if (possibleDocName) {
+                                documentsAccessed.add(possibleDocName);
+                                console.log(`  ✓ Tracked document: ${possibleDocName}`);
+                            } else {
+                                console.log(`  ⚠ get_document called but no document name found in:`, block.input);
                             }
                         }
                         
