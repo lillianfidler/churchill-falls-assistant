@@ -447,10 +447,16 @@ app.post('/api/chat', async (req, res) => {
                 for (const block of response.content) {
                     if (block.type === 'tool_use') {
                         console.log(`  → ${block.name}`);
+                        console.log(`  → Arguments:`, JSON.stringify(block.input));
                         
-                        // Track document access
-                        if (block.name === 'get_document' && block.input && block.input.name) {
-                            documentsAccessed.add(block.input.name);
+                        // Track document access - try multiple possible patterns
+                        if (block.input) {
+                            // Try different possible field names for document name
+                            const docName = block.input.name || block.input.document || block.input.filename || block.input.file;
+                            if (docName) {
+                                documentsAccessed.add(docName);
+                                console.log(`  → Tracked document: ${docName}`);
+                            }
                         }
                         
                         try {
