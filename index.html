@@ -780,21 +780,26 @@
 
         .source-item {
             font-size: 13px;
-            color: #3b82f6;
-            text-decoration: none;
+            color: #475569;
             display: flex;
             align-items: center;
             gap: 6px;
             padding: 4px 0;
         }
 
-        .source-item:hover {
-            color: #2563eb;
-        }
-
         .source-item::before {
             content: "•";
             color: #94a3b8;
+        }
+
+        a.source-item {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+
+        a.source-item:hover {
+            color: #2563eb;
+            text-decoration: underline;
         }
 
         .loading {
@@ -1706,8 +1711,8 @@
                         }
                         addMessage('assistant', 'I apologize, but I encountered an error. Please try again.', true);
                     } else {
-                        // Add message with voice button
-                        const messageElement = addMessage('assistant', data.text, true, data.audio, data.voiceAvailable, data.fullText);
+                        // Add message with voice button and sources
+                        const messageElement = addMessage('assistant', data.text, true, data.audio, data.voiceAvailable, data.fullText, data.sources);
                         
                         // 🔊 AUTO-PLAY audio if voice mode is enabled and audio was generated
                         if (voiceModeEnabled && data.audio) {
@@ -1762,7 +1767,7 @@
             }
         }
 
-        function addMessage(role, content, saveToSession, audioData, voiceAvailable, fullText) {
+        function addMessage(role, content, saveToSession, audioData, voiceAvailable, fullText, sources) {
             const chatContainer = document.getElementById('chatContainer');
             const messageDiv = document.createElement('div');
             messageDiv.className = `message ${role}`;
@@ -1826,13 +1831,28 @@
                 if (role === 'assistant' && !voiceModeEnabled && content.length > 200) {
                     const sourcesDiv = document.createElement('div');
                     sourcesDiv.className = 'sources-section';
-                    sourcesDiv.innerHTML = `
-                        <div class="sources-title">📚 Reference Materials</div>
-                        <div class="sources-list">
-                            <a href="sources.html" class="source-item">View all source documents and videos</a>
-                            <a href="about.html" class="source-item">About the Churchill Falls Information Assistant</a>
-                        </div>
-                    `;
+                    
+                    let sourcesHTML = '<div class="sources-title">📚 Documents consulted in this response</div><div class="sources-list">';
+                    
+                    if (sources && sources.length > 0) {
+                        // Display actual documents used
+                        sources.forEach(docName => {
+                            // Clean up the filename for display
+                            const displayName = docName
+                                .replace(/\.txt$/, '')
+                                .replace(/_/g, ' ')
+                                .replace(/-/g, ' ');
+                            sourcesHTML += `<span class="source-item">${displayName}</span>`;
+                        });
+                        sourcesHTML += '<a href="sources.html" class="source-item" style="margin-top: 8px;">View all source materials →</a>';
+                    } else {
+                        // Fallback if no sources tracked
+                        sourcesHTML += '<a href="sources.html" class="source-item">View all source documents and videos</a>';
+                        sourcesHTML += '<a href="about.html" class="source-item">About the Churchill Falls Information Assistant</a>';
+                    }
+                    
+                    sourcesHTML += '</div>';
+                    sourcesDiv.innerHTML = sourcesHTML;
                     contentDiv.appendChild(sourcesDiv);
                 }
                 
