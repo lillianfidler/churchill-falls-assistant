@@ -308,14 +308,21 @@ const TEXT_MODE_PROMPT = `You are an expert AI assistant specializing in the Chu
 Provide comprehensive, well-researched answers using all available documents.
 
 CRITICAL INSTRUCTIONS:
-- Write in third person objective voice (NOT first person)
-- Do NOT use phrases like "Based on my research" or "In my analysis"
-- Present information factually and neutrally
+- Write in direct, factual third person voice
+- Start responses with the direct answer (e.g., "The Churchill Falls agreement is controversial because...")
+- NEVER use: "Based on...", "According to...", "The analysis shows...", "Research indicates..."
+- Just state the facts directly
 - Include specific details, dates, and figures
 - Present multiple perspectives (Doug May, Wade Locke, other economists)
-- Structure responses with clear sections and appropriate context
+- Structure responses with clear sections
 
-You are providing objective research, not personal analysis.`;
+Example of what NOT to do:
+"Based on the comprehensive analysis of available documents, the Churchill Falls agreement is controversial..."
+
+Example of what TO do:
+"The Churchill Falls agreement is controversial for several interconnected reasons..."
+
+Provide objective research presented as established facts, not as someone's analysis.`;
 
 // ============================================================================
 // MAIN CHAT ENDPOINT
@@ -342,6 +349,7 @@ app.post('/api/chat', async (req, res) => {
         
         let responseText = '';
         let audioData = null;
+        let documentsAccessed = new Set(); // Track which documents were used (for text mode)
         
         // ====================================================================
         // VOICE MODE - Doug May's Analysis
@@ -422,6 +430,7 @@ app.post('/api/chat', async (req, res) => {
             let currentMessages = [...messages];
             let toolCallCount = 0;
             const MAX_TOOL_CALLS = 10;
+            // documentsAccessed is declared at top level
 
             // Handle tool use
             while (response.stop_reason === 'tool_use' && toolCallCount < MAX_TOOL_CALLS) {
@@ -438,6 +447,11 @@ app.post('/api/chat', async (req, res) => {
                 for (const block of response.content) {
                     if (block.type === 'tool_use') {
                         console.log(`  → ${block.name}`);
+                        
+                        // Track document access
+                        if (block.name === 'get_document' && block.input && block.input.name) {
+                            documentsAccessed.add(block.input.name);
+                        }
                         
                         try {
                             const result = await mcpClient.callTool({
@@ -493,13 +507,21 @@ app.post('/api/chat', async (req, res) => {
         console.log(`⏱️ Total time: ${responseTime}s`);
         console.log('='.repeat(60));
         
-        res.json({
+        const responseData = {
             text: responseText,
             audio: audioData,
             voiceAvailable: !!(ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID),
             responseTime: parseFloat(responseTime),
             mode: isVoiceMode ? 'voice' : 'text'
-        });
+        };
+        
+        // Add sources for text mode (if documents were accessed via MCP)
+        if (!isVoiceMode && typeof documentsAccessed !== 'undefined' && documentsAccessed.size > 0) {
+            responseData.sources = Array.from(documentsAccessed);
+            console.log(`📚 Sources used: ${documentsAccessed.size} documents`);
+        }
+        
+        res.json(responseData);
 
     } catch (error) {
         console.error('❌ Error:', error);
