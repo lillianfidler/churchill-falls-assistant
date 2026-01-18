@@ -43,24 +43,23 @@ console.log('   Text: Comprehensive (All Sources)');
 console.log('='.repeat(60));
 
 // ============================================================================
-// DOUG'S CORE DOCUMENTS (Voice Mode Only - FAST!)
+// DOUG'S CORE DOCUMENTS - SUMMARIES (Voice Mode Only - OPTIMIZED!)
+// Using concise summaries instead of full documents for faster responses
 // ============================================================================
 
 const DOUG_DOCUMENTS = [
-    'MOU_Churchill_Falls_Dec_12_2024_clean_text.txt',
-    'Doug-video-series-video1.txt',
-    'Doug-video-series-video2A.txt',
-    'Doug-video-series-video2B.txt',
-    'Doug-video-series-video3A.txt',
-    'Doug-video-series-video3B.txt',
-    'Doug-video-series-video4.txt',
-    'LOCKE analysis of MOU CF.txt'
+    'MOU_Churchill_Falls_Dec_12_2024_summary.txt',
+    'Doug-video-series-video1-summary.txt',
+    'Doug-video-series-video2A-summary.txt',
+    'Doug-video-series-video2B-summary.txt',
+    'LOCKE analysis of MOU CF-summary.txt'
 ];
 
 const dougDocuments = new Map();
 
 function loadDougDocuments() {
-    console.log('\n📚 Loading Dr. Doug May\'s analysis for voice mode...');
+    console.log('\n📚 Loading Dr. Doug May\'s analysis SUMMARIES for voice mode...');
+    console.log('   (Using optimized summaries for faster responses)');
     
     const contentDir = path.join(__dirname, 'content');
     let loadedCount = 0;
@@ -88,8 +87,9 @@ function loadDougDocuments() {
     const totalSizeMB = (totalSize / (1024 * 1024)).toFixed(2);
     const estimatedTokens = Math.round(totalSize / 3.5);
     
-    console.log(`\n✅ Loaded ${loadedCount}/${DOUG_DOCUMENTS.length} documents`);
+    console.log(`\n✅ Loaded ${loadedCount}/${DOUG_DOCUMENTS.length} summary documents`);
     console.log(`   Size: ${totalSizeMB} MB (~${estimatedTokens.toLocaleString()} tokens)`);
+    console.log(`   💡 93% smaller than full documents - faster & more efficient!`);
 }
 
 loadDougDocuments();

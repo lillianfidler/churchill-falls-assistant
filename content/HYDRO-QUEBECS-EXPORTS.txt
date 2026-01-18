@@ -1,0 +1,478 @@
+Hydro-Québec’s Exports:
+Update, July & August 2025
+Summary Findings and Some Questions
+
+Doug May
+1
+
+The Noose Continues to Tighten on HQ
+• Falling Exports: Even with imports adding to the available
+electricity, with falling supply, there is little room for exports for
+many months. During March-June 2025, less than 4% of the total
+available was exportable, while in March-June 2022, at least 12%
+was available.
+• Exports by HQ to the USA in July were over 80% lower than the
+same month three years earlier.
+• Most of the decline was to New York State, HQ’s primary export market in
+the USA. HQ’s exports to NY spike in the winter when prices are high.
+• Maine was a secondary market, and HQ exported no electricity to New
+England despite new energy agreements.
+
+Percentage Changes
+In HQ’s Exports
+From the same month (August)
+last year
+
+From August 2025 to August
+2022
+
+Total Exports
+
+-45.4%
+
+-80.8%
+
+Exports to Other Provinces
+
+-29.1%
+
+-57.9%
+
+Exports to the USA
+
+-70.7%
+
+-93.7%
+
+From HQ
+
+NLH price data into the NY market for the same first six month
+was 8.7 cents /kWh.
+
+HQ’s Midyear report:
+Aligns with
+Stats Can’s
+sales data
+and CER
+price data
+for HQ sales
+into NY
+
+Percentage Changes
+In HQ’s Electricity Picture
+From the same month last year
+
+Over the past three years
+
+Imports
+
+6.0%
+
+4.9%
+
+Imports from other provinces
+
+-6.1
+
+-9.4
+
+Imports from the USA
+
+488.4
+
+No imports during that month
+3 yrs earlier
+
+Some Questions: Exports
+• Exports
+
+❖Why are CER data on exports not consistent with HQ
+information.
+➢CER states that no electricity is exported to NE-ISO. HQ
+2025 semester report says it is our primary customer.
+Why the difference???
+➢Why in the first six months of 2025 was the average sale
+price for HQ power into NY State 15.81¢/kWh while NLH
+power was 8.2¢/kWh? Transmission costs?
+➢Why are CER’s export data for New York state not
+consistent i.e. Price x quantity does not equal value,
+when it is consistent in other cases?
+
+Interested in The Evidence Using Data?
+Follow this link:
+
+Hydro-Québec’s Exports:
+Update, October & November 2025
+Findings: Supporting Evidence
+
+Doug May
+8
+
+Talking Note (TN) 1
+• Almost all of the electricity available( including CF) is increasingly
+needed to meet domestic needs.
+• This leaves little electricity for export including that needed for
+long term commitments to other provinces, principally New
+Brunswick.
+
+Exporting Electricity for Profit,
+January 2022-October 2025
+35,000,000
+Exports
+30,000,000
+25,000,000
+20,000,000
+15,000,000
+10,000,000
+Total electricity available for domestic use
+5,000,000
+
+Total electricity available
+
+0
+
+Source: Statistics Canada, Table 25-10-0016-01
+
+Talking Note (TN) 2
+• Most of the electricity produced in Quebec comes from Hydro-Québec’s
+operations.
+• We can assume that it is Hydro-Québec that does the importing and
+exporting of electricity.
+• The chart below shows a general decline in the export of available power by
+HQ.
+• HQ and Quebec are net importers of electricity and Churchill Falls is a
+significant (and very inexpensive) source of those imports.
+
+The amount of electricity available for export in October was down by 5.5
+percentage points from a year earlier and 14.6% points from that month 3 years
+earlier.
+
+TOTAL EXPORTS AS % OF TOTAL AVAILABLE
+TO HQ: Jan. 2022 – Oct. 2025
+25.0%
+
+20.0%
+
+15.0%
+
+10.0%
+
+5.0%
+
+0.0%
+
+Source: Statistics Canada, Tables 25-10-0015-01 & 25-10-0016-01 with author’s calculations
+
+Talking Note (TN) 3
+• HQ exports increased in July by almost 15 % from the same
+month a year earlier, fell by almost 70% over the past three years.
+• HQ states that its sales data in the first half of this year was 6 TWh
+(6 million MWh). Stats Can data are consistent with this figure.
+
+Percentage Changes
+In HQ’s Exports
+
+Total Exports
+
+From the same month last year
+
+Over the past three years
+
+14.8%
+
+-68.6%
+
+Talking Note (TN) 4
+• Exports to the USA in October were down by 12.5% from the same
+month in 2024 and 91.9 % from three years earlier.
+• Exports to other provinces to other provinces were up 22.2%
+year/year in October but fell just over 29% over the past three
+years.
+• In the diagram below note the growing relative importance of trade
+within Canada.
+• Export commitments to NB dominate commitments to U.S.
+states.
+• Note also that suggestions in the MOU to base Churchill River’s
+electricity prices on specific markets might acknowledge
+changing trade patterns.
+
+Megawatt Hours per month
+3,000,000
+
+2,500,000
+
+2,000,000
+
+1,500,000
+
+1,000,000
+
+500,000
+
+0
+
+Source: Statistics Canada, Table 25-10-0016-01
+
+Exports to other provinces
+Exports to the United States
+
+Percentage Changes
+In HQ’s Exports
+From the same month last year
+
+Over the past three years
+
+Exports to Other Provinces
+
+-24.8%
+
+-57.7%
+
+Exports to the USA
+
+-65.1%
+
+-81.8%
+
+Talking Note (TN) 5
+• According to the Canada Energy Regulator data Vermont seems to
+be the dominant export market for HQ with NY State not far
+behind.
+• Exports to Maine from HQ seem sporadic.
+• CER data report no significant sales from Quebec into New
+England –ISO. However, HQ Quarterly reports often refer to New
+England-ISO and the prices it receives there. It is not clear HQ’s
+reason for doing this.
+• NLH seems to be taking over the NE market according to CER and
+increasing its exports into NY.
+
+Megawatt Hours
+
+Monthly Exports of Electricity from HQ to U.S. States,
+Jan. 2022 –Nov. 2025
+
+1600000
+1400000
+
+HQ>ME
+HQ>VM
+
+HQ>NY
+
+1200000
+1000000
+800000
+600000
+400000
+200000
+0
+
+SOURCE: https://apps.cer-rec.gc.ca/CommodityStatistics/ViewReport.aspx
+
+Talking Note (TN) 6
+• The amount of electricity that Quebec exports to the USA has been
+much larger than Newfoundland and Labrador has.
+• Once electricity is in the grid it is likely impossible to say where is was
+generated.
+• The decrease by Hydro-Quebec in its electricity sales to the USA over
+the last four years is remarkable. Keep in mind, that while most people
+might believe that Quebec is a net exporter of electricity to the USA, it
+is a net importer.
+• Also keep in mind that HQ has invested vast amounts of money over
+the past couple of years constructing and upgrading transmission lines
+into the USA. It promotes hydroelectricity as green energy
+
+Monthly Electricity Exports by Quebec and NL to the USA:
+Jan. 2022-Nov. 2025
+Megawatt Hours
+3,000,000
+2,500,000
+2,000,000
+
+NL Exports to USA
+HQ Exports to USA
+
+1,500,000
+1,000,000
+500,000
+0
+
+Source: Statistics Canada, Tables 25-10-0015-01 & 25-10-0016-01 wi
+
+Talking Note (TN) 7
+• While there is not a pattern here. It is interesting that it is NL and
+not Quebec that ships electricity into New England. Quebec had
+entered into agreements with NE-ISO to export cheap green
+hydroelectric power into states such as Massachusetts. To do this
+it built new transmission lines through Maine, which were very
+controversial due to environmental concerns.
+• In early 2026, a kWh of electricity is about 33¢ US or 45.5¢
+Canadian. This price is about 3X the current price to households
+in St. John’s.
+
+Megawatt Hours
+200000
+
+Monthly Quantity Flows of Electricity by NL into
+New England and New York State
+
+180000
+
+NL>NE
+
+160000
+
+NL>NY
+
+140000
+120000
+100000
+80000
+60000
+40000
+20000
+0
+
+SOURCE: https://apps.cer-rec.gc.ca/CommodityStatistics/ViewReport.aspx
+
+Talking Note (TN) 8
+• The pattern of export prices into selective US markets using Canada
+Regulator Data seems to be increasingly inconsistent and unreliable.
+• How can trade prices be negative? Why are there extremely high prices in one
+market and not in others? Why does price x quantity not equal value when
+dealing with exports from NL but not from Quebec.
+• My repeated email requests and phone calls to CER in Calgary have been met
+with silence or a non-response. Reliable price data are necessary to
+determining the potential value of Churchill River electricity and water rents.
+• These data problems must be resolved before any adjustment price process
+for electricity outlined in subsequent negotiations can be implemented.
+• If there is a seasonal price pattern. Export prices are the highest in the
+coldest months and then increase somewhat in July and August!
+• Since electricity production and exports follow seasonal patterns then prices
+should not be set annually but seasonally which is what Hydro-Québec does
+in its export markets and is moving towards in its domestic markets.
+
+Canadian
+Dollars
+350
+
+Electricity Export Prices into US Markets from
+Quebec and Newfoundland and Labrador
+
+300
+250
+200
+150
+100
+50
+0
+-50
+-100
+
+HQ>VM
+
+HQ>NY
+
+HQ>ME
+
+NL>NE
+
+-150
+-200
+
+SOURCE: https://apps.cer-rec.gc.ca/CommodityStatistics/ViewReport.aspx
+
+NL>NY
+
+Talking Note (TN)9
+• The chart below and comments come from the 2025 mid-year
+report from Hydro-Québec.
+• The higher export price in the winter of 2025 is probably due to
+colder temperatures when increased demand competes with
+supply constraints.
+• The price pattern for 2025 seem to be consistent with CER’s report
+for NL exports to NE.
+• It is not clear why Hydro-Québec reports sales to New England
+when CER reports that it does not export there. Another puzzle to
+be solved.
+
+“The company increased electricity
+exports to take advantage of high prices in
+a context marked by strong demand.”
+Semi-Annual 2025 Report from HydroQuebec.
+On markets outside Québec, weather
+conditions experienced during the first few
+months of the year caused energy prices to
+increase overall.
+
+HQ’s Mid-year Statement, 2025
+
+The Bottom Line
+• HQ has a reputation as an energy powerhouse able to provide clean
+energy and meet the needs of markets in the USA.
+• HQ’s exports continue to fall due primarily to declining hydroelectric
+production resulting from the continuing drought.
+• Exporting electricity is profitable at any time but particularly in the
+winter months when prices are high. A key component of this process
+is using hydro reservoirs a storage batteries.
+• Any “profit” is used by HQ to reduce electricity prices to its domestic
+customers. Quebec follows profit-maximizing principles in operating
+outside Quebec.
+• The key to making all this strategy work is very cheap and abundant
+power from CF. It’s a necessity for HQ. It’s natural and rational that
+hydro Quebec can best meet its supply shortfalls by increasing
+production at CF and Gull Island.
+
+Thanks for watching!
+
+Hydro-Québec Reports
+
+Percentage Changes in HQ’s Imports and Exports
+(MWh) With New York State Year-to-Date (Nov)
+From the same YTD 24
+
+From the same YTD 22
+
+Exports to NY
+
+-37.0%
+
+-89.6%
+
+Imports from NY
+
+75.0%
+
+691.5%
+
+Storyline: Exports are falling and imports are rising.
+
+HQ Mid-year Statement, 2025
+
+SOURCE: https://apps.cer-rec.gc.ca/CommodityStatistics/ViewReport.aspx
+
+Percentage Changes in Prices of HQ’s From
+New York State for YTD (Nov) 2025
+From the same YTD 2024
+Imports from NY
+
+84.6%
+
+From the same YTD 2022
+-47.2%
+
+Nice story for 2024: Cost of importing electricity into Quebec from USA has risen. Wonky data for
+2022. Solution: Clean up the data and double-check the sources.
+
+A Summary
+• This declining generation has led HQ to curtail exports to the USA
+and increase its power imports from New York State. HQ is
+currently a net importer with the USA. This is a significant change
+in historical patterns.
+
+• Prices of imports from and exports to the USA are generally rising.
+This increases the relative attractiveness of Churchill Falls power
+with its very low, relatively fixed cost.
+• Check the data sources on prices. Export volumes from CER and
+Stats Can are consistent but electricity price data from Stats Can
+are not available.

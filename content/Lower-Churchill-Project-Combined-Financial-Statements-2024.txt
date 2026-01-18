@@ -2,371 +2,875 @@ LOWER CHURCHILL PROJECT COMPANIES
 COMBINED FINANCIAL STATEMENTS
 December 31, 2024
 
-INDEPENDENT AUDITOR'S REPORT
-Deloitte LLP
+Independent Auditor's Report
+
 To the Directors of Newfoundland and Labrador Hydro
 
 Opinion
-We have audited the accompanying combined financial statements of the Lower Churchill Project Companies (the "Company"), which comprise the combined statement of financial position as at December 31, 2024 and the combined statements of profit and comprehensive income, changes in equity and cash flows for the year then ended, and notes to the financial statements, including material accounting policy information. The combined financial statements have been prepared by management of the Lower Churchill Project Companies based on the financial reporting provisions of the Government of Newfoundland and Labrador Muskrat Falls Oversight Committee.
+
+We have audited the accompanying combined financial statements of the Lower Churchill Project Companies (the "Company"), which comprise the combined statement of financial position as at December 31, 2024 and the combined statements of profit and comprehensive income, changes in equity and cash flows for the year then ended, and notes to the financial statements, including material accounting policy information (collectively referred to as the "financial statements"). The combined financial statements have been prepared by management of the Lower Churchill Project Companies based on the financial reporting provisions of the Government of Newfoundland and Labrador Muskrat Falls Oversight Committee.
 
 In our opinion, the accompanying financial statements present fairly, in all material respects, the financial position of the Company as at December 31, 2024, and its financial performance and its cash flows for the year then ended in accordance with the financial reporting provisions of the Government of Newfoundland and Labrador Muskrat Falls Oversight Committee.
 
 Basis for Opinion
-We conducted our audit in accordance with Canadian generally accepted auditing standards ("Canadian GAAS"). We are independent of the Company in accordance with the ethical requirements that are relevant to our audit of the financial statements in Canada. We believe that the audit evidence we have obtained is sufficient and appropriate to provide a basis for our opinion.
+
+We conducted our audit in accordance with Canadian generally accepted auditing standards ("Canadian GAAS"). Our responsibilities under those standards are further described in the Auditor's Responsibilities for the Audit of the Financial Statements section of our report. We are independent of the Company in accordance with the ethical requirements that are relevant to our audit of the financial statements in Canada, and we have fulfilled our other ethical responsibilities in accordance with these requirements. We believe that the audit evidence we have obtained is sufficient and appropriate to provide a basis for our opinion.
 
 Emphasis of Matter
+
 We draw attention to Note 2 to the financial statements, which describes the basis of accounting. The combined financial statements are prepared to assist Nalcor Energy to comply with the financial reporting provisions of the Government of Newfoundland and Labrador Muskrat Falls Oversight Committee. As a result, the financial statements may not be suitable for another purpose. Our opinion is not modified in respect of this matter.
 
-Date: March 20, 2025
+Responsibilities of Management and Those Charged with Governance for the Financial Statements
+
+Management is responsible for the preparation and fair presentation of the financial statements in accordance with the financial reporting provisions of the Government of Newfoundland and Labrador Muskrat Falls Oversight Committee, and for such internal control as management determines is necessary to enable the preparation of financial statements that are free from material misstatement, whether due to fraud or error.
+
+In preparing the financial statements, management is responsible for assessing the Company's ability to continue as a going concern, disclosing, as applicable, matters related to going concern and using the going concern basis of accounting unless management either intends to liquidate the Company or to cease operations, or has no realistic alternative but to do so.
+
+Those charged with governance are responsible for overseeing the Company's financial reporting process.
+
+Auditor's Responsibilities for the Audit of the Financial Statements
+
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free from material misstatement, whether due to fraud or error, and to issue an auditor's report that includes our opinion. Reasonable assurance is a high level of assurance but is not a guarantee that an audit conducted in accordance with Canadian GAAS will always detect a material misstatement when it exists. Misstatements can arise from fraud or error and are considered material if, individually or in the aggregate, they could reasonably be expected to influence the economic decisions of users taken on the basis of these financial statements.
+
+As part of an audit in accordance with Canadian GAAS, we exercise professional judgment and maintain professional skepticism throughout the audit. We also:
+
+• Identify and assess the risks of material misstatement of the financial statements, whether due to fraud or error, design and perform audit procedures responsive to those risks, and obtain audit evidence that is sufficient and appropriate to provide a basis for our opinion. The risk of not detecting a material misstatement resulting from fraud is higher than for one resulting from error, as fraud may involve collusion, forgery, intentional omissions, misrepresentations, or the override of internal control.
+
+• Obtain an understanding of internal control relevant to the audit in order to design audit procedures that are appropriate in the circumstances, but not for the purpose of expressing an opinion on the effectiveness of the Company's internal control.
+
+• Evaluate the appropriateness of accounting policies used and the reasonableness of accounting estimates and related disclosures made by management.
+
+• Conclude on the appropriateness of management's use of the going concern basis of accounting and, based on the audit evidence obtained, whether a material uncertainty exists related to events or conditions that may cast significant doubt on the Company's ability to continue as a going concern. If we conclude that a material uncertainty exists, we are required to draw attention in our auditor's report to the related disclosures in the financial statements or, if such disclosures are inadequate, to modify our opinion. Our conclusions are based on the audit evidence obtained up to the date of our auditor's report. However, future events or conditions may cause the Company to cease to continue as a going concern.
+
+• Evaluate the overall presentation, structure and content of the financial statements, including the disclosures, and whether the financial statements represent the underlying transactions and events in a manner that achieves fair presentation.
+
+• Obtain sufficient appropriate audit evidence regarding the financial information of the entities or business activities within the Company to express an opinion on the financial statements. We are responsible for the direction, supervision and performance of the group audit. We remain solely responsible for our audit opinion.
+
+We communicate with those charged with governance regarding, among other matters, the planned scope and timing of the audit and significant audit findings, including any significant deficiencies in internal control that we identify during our audit.
+
 Chartered Professional Accountants
+March 20, 2025
 
-========================================
 
+LOWER CHURCHILL PROJECT COMPANIES
 COMBINED STATEMENT OF FINANCIAL POSITION
+
 As at December 31 (thousands of Canadian dollars)
 
-                                           2024          2023
+ASSETS                                                   Notes    2024         2023
 
-ASSETS
 Current assets
-  Cash                                     239,070       107,043
-  Restricted cash                        1,247,642     1,133,445
-  Trade and other receivables               30,366        20,873
-  Related party receivable                  61,255        71,725
-  Short-term investments                    42,611        41,872
-  Current portion of contract asset        325,315       273,730
-  Other current assets                      12,732         6,721
-Total current assets                     1,958,991     1,655,409
+Cash                                                              239,070      107,043
+Restricted cash                                                 1,247,642    1,133,445
+Trade and other receivables                              5         30,366       20,873
+Related party receivable                                18         61,255       71,725
+Short-term investments                                   7         42,611       41,872
+Current portion of contract asset                       9        325,315      273,730
+Other current assets                                              12,732        6,721
+Total current assets                                           1,958,991    1,655,409
 
 Non-current assets
-  Property, plant and equipment          12,166,082    12,346,633
-  Investments                               155,910       198,521
-  Intangible assets                          73,055        76,175
-  Contract asset                            400,520       177,566
-  Other long-term assets                      4,139         4,091
-Total assets                             14,758,697    14,458,395
+Property, plant and equipment                            6     12,166,082   12,346,633
+Investments                                             7        155,910      198,521
+Intangible assets                                       8         73,055       76,175
+Contract asset                                          9        400,520      177,566
+Other long-term assets                                            4,139        4,091
+Total assets                                                  14,758,697   14,458,395
 
 LIABILITIES AND EQUITY
+
 Current liabilities
-  Trade and other payables                  119,753        93,170
-  Contract liability                          2,171        11,518
-  Current portion of long-term debt          63,611        62,872
-  Current portion of Class B LP units        94,664        87,866
-  Other current liabilities                       5             5
-Total current liabilities                   280,204       255,431
+Trade and other payables                                10        119,753       93,170
+Contract liability                                      18          2,171       11,518
+Current portion of long-term debt                       11         63,611       62,872
+Current portion of Class B limited partnership units    12         94,664       87,866
+Other current liabilities                                              5            5
+Total current liabilities                                        280,204      255,431
 
 Non-current liabilities
-  Long-term debt                          8,561,147     8,624,931
-  Class B limited partnership units         884,747       668,846
-  Other long-term liabilities                   860           864
-Total liabilities                         9,726,958     9,550,072
+Long-term debt                                          11      8,561,147    8,624,931
+Class B limited partnership units                       12        884,747      668,846
+Other long-term liabilities                                          860          864
+Total liabilities                                              9,726,958    9,550,072
 
 Shareholder's equity
-  Share capital                           1,891,956     1,891,956
-  Shareholder contributions               2,703,929     2,678,275
-  Reserves                                  (48,149)      (51,737)
-  Retained earnings                         484,003       389,829
-Total equity                              5,031,739     4,908,323
+Share capital                                           13      1,891,956    1,891,956
+Shareholder contributions                                       2,703,929    2,678,275
+Reserves                                                          (48,149)     (51,737)
+Retained earnings                                                 484,003      389,829
+Total equity                                                    5,031,739    4,908,323
 
-Total liabilities and equity             14,758,697    14,458,395
+Total liabilities and equity                                   14,758,697   14,458,395
 
-========================================
+Commitments and contingencies (Note 19)
+Subsequent event (Note 22)
 
+
+LOWER CHURCHILL PROJECT COMPANIES
 COMBINED STATEMENT OF PROFIT AND COMPREHENSIVE INCOME
-For the year ended December 31 (thousands of Canadian dollars)
 
-                                           2024          2023
+For the year ended December 31 (thousands of Canadian dollars)    Notes    2024       2023
 
-Revenue                                  1,165,781       939,735
-Other revenue                                  380           390
-Total revenue                            1,166,161       940,125
+Revenue                                                    18    1,165,781    939,735
+Other revenue                                              18          380        390
+Total revenue                                                    1,166,161    940,125
 
-Power purchased                                850         8,217
-Operating costs                             71,355        36,715
-Depreciation and amortization              199,553       149,526
-Net finance expense                        291,964       237,401
-Other expense                               31,309        15,744
-Total expenses                             595,031       447,603
+Power purchased                                            18          850      8,217
+Operating costs                                            14       71,355     36,715
+Depreciation and amortization                                     199,553    149,526
+Net finance expense                                        15      291,964    237,401
+Other expense                                              16       31,309     15,744
+Total expenses                                                     595,031    447,603
 
-Profit for the year                        571,130       492,522
+Profit for the year                                               571,130    492,522
 
 Other comprehensive income
+Total items that may or have been reclassified to profit:
 Reclassification adjustment related to:
-  Cash flow hedges recognized in profit      3,588         3,639
-Other comprehensive income for the year      3,588         3,639
+Cash flow hedges recognized in profit                      16        3,588      3,639
+Other comprehensive income for the year                             3,588      3,639
 
-Total comprehensive income for the year    574,718       496,161
+Total comprehensive income for the year                           574,718    496,161
 
-========================================
 
+LOWER CHURCHILL PROJECT COMPANIES
+COMBINED STATEMENT OF CHANGES IN EQUITY
+
+(thousands of Canadian dollars)              Note    Share      Shareholder    Reserves    Retained
+                                                    Capital    Contributions              Earnings     Total
+
+Balance at January 1, 2024                        1,891,956    2,678,275     (51,737)    389,829   4,908,323
+Profit for the year                                      -            -            -      571,130     571,130
+Other comprehensive income                               -            -        3,588          -         3,588
+Total comprehensive income for the year                  -            -        3,588    571,130     574,718
+Shareholder contributions                                -       25,654            -          -        25,654
+Dividends                                    13           -            -            -   (476,956)   (476,956)
+Related party transactions                               -            -            -          -            -
+Balance at December 31, 2024                          1,891,956    2,703,929     (48,149)    484,003   5,031,739
+
+Balance at January 1, 2023                        1,891,956    2,607,049     (55,376)    427,781   4,871,410
+Profit for the year                                      -            -            -      492,522     492,522
+Other comprehensive income                               -            -        3,639          -         3,639
+Total comprehensive income for the year                  -            -        3,639    492,522     496,161
+Shareholder contributions                                -       71,226            -          -        71,226
+Dividends                                    13           -            -            -   (530,474)   (530,474)
+Related party transactions                               -            -            -          -            -
+Balance at December 31, 2023                          1,891,956    2,678,275     (51,737)    389,829   4,908,323
+
+
+LOWER CHURCHILL PROJECT COMPANIES
 COMBINED STATEMENT OF CASH FLOWS
-For the year ended December 31 (thousands of Canadian dollars)
 
-                                           2024          2023
+For the year ended December 31 (thousands of Canadian dollars)    Notes    2024       2023
 
 Operating activities
-  Profit for the year                      571,130       492,522
-  Adjustments to reconcile profit:
-    Depreciation and amortization          199,553       149,526
-    Reserves amortized to profit             3,588         3,639
-    Revenue                               (109,862)     (117,998)
-    Power purchased                            850         8,217
-    Loss (gain) on disposals                17,014          (109)
-    Finance income                         (73,648)      (76,449)
-    Finance expense                        365,612       313,850
-    Other                                       50             -
-                                           974,287       773,198
-  Changes in working capital                10,184        14,502
-  Increase in contract asset             (274,539)     (285,830)
-  Change in contract liability              (9,347)       11,518
-  Interest received                         75,209        75,838
-  Interest paid                           (299,341)     (300,098)
-Net cash from operating activities         476,389       176,074
+Profit for the year                                               571,130    492,522
+Adjustments to reconcile profit to cash provided from operating activities:
+Depreciation and amortization                                     199,553    149,526
+Reserves amortized to profit                                        3,588      3,639
+Revenue                                                          (109,862)  (117,998)
+Power purchased                                            18          850      8,217
+Loss (gain) on disposals                                           17,014       (109)
+Finance income                                             15      (73,648)   (76,449)
+Finance expense                                            15      365,612    313,850
+Other                                                                  50          -
+                                                                   974,287    773,198
+
+Changes in non-cash working capital balances               21       10,184     14,502
+Increase in contract asset                                       (274,539)  (285,830)
+Change in contract liability                                       (9,347)    11,518
+Increase in other long-term asset                                     (64)      (154)
+Decrease in deferred revenue                                            -   (112,900)
+Interest received                                                   75,209     75,838
+Interest paid                                                     (299,341)  (300,098)
+Net cash provided from operating activities                        476,389    176,074
 
 Investing activities
-  Change in related party receivable        10,470       (71,725)
-  Decrease in investments                   41,872        41,199
-  Additions to PP&E                        (30,940)      (36,687)
-  Additions to intangible assets            (1,941)       (2,044)
-  Changes in working capital                  (492)      (22,062)
-Net cash from investing activities          18,969       (91,319)
+Change in related party receivable                                  10,470    (71,725)
+Decrease in investments                                             41,872     41,199
+Additions to property, plant and equipment                 6       (30,940)   (36,687)
+Additions to intangible assets                             8        (1,941)    (2,044)
+Changes in non-cash working capital balances               21         (492)   (22,062)
+Net cash provided from (used in) investing activities               18,969    (91,319)
 
 Financing activities
-  Change in restricted cash               (114,197)      173,831
-  Repayment of long-term debt              (62,872)      (62,199)
-  Dividends                               (367,094)      (85,238)
-  Contributions of Class B units           233,116             -
-  Distributions of Class B units           (77,044)      (44,973)
-  Shareholder contributions                 24,804        63,009
-  Other                                        (44)         (149)
-Net cash from financing activities        (363,331)       14,749
+Change in restricted cash                                         (114,197)   173,831
+Decrease in related party loan payable                                  -    (29,532)
+Repayment of long-term debt                                        (62,872)   (62,199)
+Dividends                                                  13     (367,094)   (85,238)
+Contributions of Class B partnership units                 12      233,116          -
+Distributions of Class B limited partnership units         12      (77,044)   (44,973)
+Shareholder contributions                                           24,804     63,009
+Other                                                                  (44)      (149)
+Net cash (used in) provided from financing activities             (363,331)    14,749
 
-Net increase in cash                       132,027        99,504
-Cash, beginning of year                    107,043         7,539
-Cash, end of year                          239,070       107,043
+Net increase in cash                                               132,027     99,504
+Cash, beginning of the year                                        107,043      7,539
+Cash, end of the year                                              239,070    107,043
 
-========================================
 
-KEY NOTES TO FINANCIAL STATEMENTS
+LOWER CHURCHILL PROJECT COMPANIES
+NOTES TO THE COMBINED FINANCIAL STATEMENTS
 
-1. NATURE AND DESCRIPTION
-These combined financial statements include:
-- Labrador-Island Link Holding Corporation (LIL Holdco)
-- Muskrat Falls Corporation (Muskrat Falls)
-- Labrador Transmission Corporation (Labrador Transco)
-- Lower Churchill Management Corporation (LCMC)
+1. NATURE AND DESCRIPTION OF THE PROJECT
 
-Collectively referred to as the Lower Churchill Project Companies (the Project).
+These annual audited combined financial statements (financial statements) include the financial information of the consolidated Labrador-Island Link Holding Corporation (LIL Holdco), Muskrat Falls Corporation (Muskrat Falls), Labrador Transmission Corporation (Labrador Transco) and the Lower Churchill Management Corporation (LCMC). Collectively, the financial information from these combined companies is referred to as the Lower Churchill Project Companies (the Project). The Project's financial statements are prepared to comply with the financial reporting provisions of the Government of Newfoundland and Labrador Muskrat Falls Oversight Committee. As a result, the financial statements may not be suitable for another purpose.
 
-The Project was established to design, engineer, construct, commission, own, finance, operate and maintain:
-- Labrador-Island Link (LIL)
-- Labrador Transmission Assets (LTA)
-- Muskrat Falls hydroelectric generating facility (MF Plant)
+Each of the entities was separately formed under the laws of the Province of Newfoundland and Labrador (the Province). LIL Holdco was formed on July 31, 2012, whereas Muskrat Falls, Labrador Transco and LCMC were formed on November 13, 2013. Muskrat Falls, Labrador Transco and LCMC are 100% subsidiaries of Nalcor Energy (Nalcor) and LIL Holdco is a 100% subsidiary of LIL (2021) Limited Partnership (LIL (2021) LP). LIL (2021) LP's limited partner, Labrador-Island Link Holding (2021) Corporation (LIL Holdco (2021)), is a 100% subsidiary of Nalcor.
+
+The Project was established to carry on the business of designing, engineering, constructing, commissioning, owning, financing, operating and maintaining the assets and property constituting the Labrador-Island Link (LIL), the Labrador Transmission Assets (LTA) and the Muskrat Falls hydroelectric generating facility (MF Plant).
+
+Muskrat Falls has entered into a power purchase agreement (PPA) with Newfoundland and Labrador Hydro (Hydro) for the sale of energy and capacity from the MF Plant. Muskrat Falls and Labrador Transco have also entered into the Generator Interconnection Agreement (GIA) with Hydro which governs the development and operation of the LTA connecting the MF Plant to the existing hydroelectric facility in Churchill Falls. Under the terms of the GIA, Labrador Transco will recover all costs associated with the LTA from Muskrat Falls, which in turn will recover all costs incurred under the GIA as part of a PPA with Hydro. Hydro's obligation to pay for the costs under the PPA is absolute, non-conditional and irrevocable.
+
+Labrador-Island Link Limited Partnership (LIL LP) has entered into the LIL Lease and the Transmission Funding Agreement (TFA) with Labrador-Island Link Operating Corporation (LIL Opco) and Hydro. These agreements effectively provide Hydro with transmission services over the LIL. LIL Opco maintains and operates the LIL on behalf of LIL LP.
 
 2. MATERIAL ACCOUNTING POLICIES
-Prepared in accordance with IFRS Accounting Standards, with exception that these statements are combined.
 
-Key policies:
-- Property, plant and equipment: Recognized at cost less accumulated depreciation
-- Depreciation: Straight-line basis over useful lives (15-100 years)
-- Intangible assets: Computer software and right to collect upgrade costs
-- Revenue recognition: When performance obligations satisfied
-- Financial instruments: Classified at amortized cost or FVTPL
+2.1 Statement of Compliance and Basis of Measurement
+
+These financial statements have been prepared in accordance with IFRS® Accounting Standards as issued by the International Accounting Standards Board (IASB), with the exception of the fact that these statements are combined as described in Note 1.
+
+These financial statements have been prepared on a historical cost basis and are presented in Canadian Dollars (CAD) with all values rounded to the nearest thousand, except when otherwise noted. The financial statements reflect the financial position and financial performance of the Project and do not include other assets, liabilities, revenues, and expenses of the partners of LIL LP. These financial statements were approved by Nalcor's Board of Directors on March 6, 2025.
+
+2.2 Basis of Combination
+
+The Project includes the financial statements of LIL Holdco (consolidated), Muskrat Falls, Labrador Transco and LCMC. Material intercompany transactions have been eliminated.
+
+2.3 Cash
+
+Cash consists of amounts on deposit with Schedule 1 Canadian Chartered Banks.
+
+2.4 Restricted Cash
+
+Restricted cash consists of cash held on deposit with Schedule 1 Canadian Chartered Banks and administered by the Collateral Agent for the sole purpose of funding construction, financing, operating, maintenance and sustaining costs related to the LIL, LTA and MF Plant, including reserve accounts required under the LIL Project Finance Agreement (LIL PFA) and MF/LTA Project Finance Agreement (MF/LTA PFA). Restricted cash also includes funds held in trust by solicitors of the Project.
+
+2.5 Short-term Investments
+
+Investments with maturities greater than three months and less than twelve months are considered short-term investments.
+
+2.6 Inventories
+
+Inventories are carried at the lower of cost and net realizable value. Cost is determined on a weighted average basis and includes expenditures incurred in acquiring inventories and bringing them to their existing condition and location. Net realizable value represents the estimated selling price for inventories less all estimated costs of completion and costs necessary to make the sale.
+
+2.7 Property, Plant and Equipment
+
+Items of property, plant and equipment are recognized at cost less accumulated depreciation and accumulated impairment losses. Cost includes materials, labour, contracted services, professional fees and, for qualifying assets, borrowing costs capitalized in accordance with the Project's accounting policy outlined in Note 2.9. Costs capitalized with the related asset include all those costs directly attributable to bringing the asset into operation.
+
+When significant parts of property, plant and equipment are required to be replaced at intervals, the Project recognizes such parts as individual assets with specific useful lives and depreciation rates. Likewise, when a major inspection is performed, its cost is recognized in the carrying amount of the asset as a replacement if the recognition criteria are satisfied. All other repairs and maintenance costs are recognized in profit or loss as incurred.
+
+Depreciation commences when the assets are ready for their intended use. Residual values and useful lives are reviewed at the end of each year and adjusted prospectively, if appropriate. Depreciation is calculated on a straight-line basis over the estimated useful lives of the assets as follows:
+
+Hydroelectric generation plant: 15 to 100 years
+Transmission and terminals: 15 to 75 years
+Service facilities and other: 5 to 100 years
+
+Hydroelectric generation plant includes the powerhouse, turbines and generators, governors and exciters, and auxiliary systems, as well as water conveying and control structures, including dams, tailraces, spillway, penstocks, draft tube and intake structures.
+
+Transmission lines and terminal stations include support structures, foundations, conductors and insulators associated with lines at voltages of 735, 350, 315 and 230 kilovolt. Terminal station assets which are used to step up voltages of electricity for transmission and to step down voltages for distribution, provide switching and include HVDC Converters to convert between AC and DC voltages, synchronous condensers and auxiliary systems. Transmission also includes poles, transformers, subsea cables, and electrode equipment.
+
+Service facilities and other include roads, telecontrol, buildings, vehicles, heavy equipment, furniture, and tools and equipment.
+
+The carrying amount of a replaced asset is derecognized when replaced. Gains and losses on disposal of an item of property, plant and equipment are determined by comparing the proceeds from disposal with the carrying amount of property, plant and equipment and are recorded in other expense.
+
+2.8 Intangible Assets
+
+Intangible assets that are expected to generate future economic benefit and are measurable, including computer software costs, are capitalized as intangible assets in accordance with IAS 38. The Project also holds intangible assets which represent the Project's right to collect costs incurred related to asset upgrades through the LIL Lease/TFA and GIA/PPA.
+
+Intangible assets with finite useful lives are carried at cost less accumulated amortization and accumulated impairment losses. Computer software is amortized on a straight-line basis over their finite useful lives of 10 years. Intangible assets related to asset upgrades are amortized over the term of the GIA/PPA and LIL Lease/TFA of 50 years. The estimated useful life and amortization method are reviewed at the end of each reporting year, with the effect of any changes in estimate being accounted for on a prospective basis. Intangible assets with indefinite useful lives are carried at cost less accumulated impairment losses.
+
+2.9 Borrowing Costs
+
+Borrowing costs directly attributable to the acquisition, construction or production of qualifying assets, which are assets that take a substantial period of time to get ready for their intended use or sale, are added to the cost of those assets, until such time as the assets are substantially ready for their intended use or sale. Investment income earned on the temporary investment of specific borrowings pending their expenditure on qualifying assets is deducted from the borrowing costs eligible for capitalization. All other borrowing costs are recognized in the Combined Statement of Profit and Comprehensive Income in the period in which they are incurred.
+
+2.10 Impairment of Non-Financial Assets
+
+Property, plant and equipment and other non-financial assets are reviewed for impairment losses whenever events or changes in circumstances indicate that the carrying amount may not be recoverable. Where it is not possible to estimate the recoverable amount of an individual asset, the Project estimates the recoverable amount of the cash-generating unit (CGU) to which the asset belongs. The recoverable amount is the higher of fair value less costs of disposal and value in use. Value in use is generally computed by reference to the present value of future cash flows expected to be derived from non-financial assets. In assessing value in use, the estimated future cash flows are discounted to their present value using a discount rate that reflects current market assessments of the time value of money and the risks specific to the asset for which the estimates of future cash flows have not been adjusted.
+
+If the recoverable amount of an asset or CGU is estimated to be less than its carrying amount, the carrying amount of the asset or CGU is reduced to its recoverable amount and an impairment loss is recognized immediately in the Combined Statement of Profit and Comprehensive Income.
+
+2.11 Provisions
+
+A provision is a liability of uncertain timing or amount. A provision is recognized if the Project has a present legal obligation or constructive obligation as a result of past events, it is probable that an outflow of resources will be required to settle the obligation and the amount can be reliably estimated. Provisions are not recognized for future operating losses. The provision is measured at the present value of the best estimate of the expenditures expected to be required to settle the obligation using a discount rate that reflects the current market assessments of the time value of money and the risks specific to the obligation. Provisions are re-measured at each Combined Statement of Financial Position date using the current discount rate.
+
+2.12 Revenue Recognition
+
+The Project recognizes revenue from contracts with customers related to the sale of electricity, transmission interconnection services and the right to use the LIL. Revenue is measured based on the consideration specified in the contract with a customer, forecasted over the term of the contract and constrained where applicable. Sales are at rates under the terms of the applicable contracts, or at market rates.
+
+Revenue is recognized when the Project satisfies its performance obligations and is determined when it transfers control of a product or service to a customer. Variable components that meet the allocation exemption are recognized as incurred. A contract asset/liability is recognized when the timing of satisfying the performance obligation and the timing of contractual payments are not aligned.
+
+2.13 Income Taxes
+
+Provision has not been made in the accompanying financial statements for Canadian federal, provincial, or local taxes since any such liabilities are the responsibility of the individual partners. LCMC, Muskrat Falls, Labrador Transco, and LIL Holdco are exempt from paying income taxes under Paragraph 149(1) (d.2) of the Income Tax Act.
+
+2.14 Financial Instruments
+
+Classification and Initial Measurement
+
+Financial assets and financial liabilities are recognized in the Combined Statement of Financial Position when the Project becomes a party to the contractual provisions of the instrument and are initially measured at fair value.
+
+Financial assets are classified at amortized cost, fair value through other comprehensive income, fair value through profit or loss (FVTPL) or as derivatives designated as hedging instruments in an effective hedge. Financial liabilities are classified at FVTPL, amortized cost or as derivatives designated as hedging instruments in an effective hedge. Transaction costs that are directly attributable to the acquisition or issue of financial assets and financial liabilities (other than financial assets and financial liabilities at FVTPL) are added to or deducted from the fair value of the financial assets or financial liabilities, as appropriate, on initial recognition. Transaction costs directly attributable to the acquisition of financial assets or financial liabilities at FVTPL are recognized immediately in profit or loss.
+
+Financial Assets at Amortized Cost
+
+Financial assets with contractual cash flows arising on specified dates, consisting solely of principal and interest, and that are held within a business model whose objective is to collect the contractual cash flows are subsequently measured at amortized cost using the effective interest rate method and are subject to impairment. Gains and losses are recognized in profit or loss when the asset is derecognized, modified or impaired.
+
+The Project's financial assets at amortized cost include cash, restricted cash, trade and other receivables, related party receivable and investments (including short-term).
+
+Financial Liabilities at Amortized Cost
+
+The Project subsequently measures all financial liabilities at amortized cost using the effective interest rate method. Gains and losses are recognized in profit or loss when the liability is derecognized.
+
+The Project's financial liabilities at amortized cost include trade and other payables, Class B limited partnership units and long-term debt.
+
+Derecognition of Financial Instruments
+
+The Project derecognizes a financial asset when the contractual rights to the cash flows from the asset expire, or when it transfers the financial asset and substantially all the risks and rewards of ownership of the asset to another party. The Project derecognizes financial liabilities when, and only when, its obligations are discharged, cancelled or have expired. The difference between the carrying amount of the financial liability derecognized and the consideration paid and payable is recognized in profit or loss.
+
+Impairment of Financial Assets
+
+The Project recognizes a loss allowance for expected credit losses (ECL) on investments in debt instruments that are measured at amortized cost. The amount of ECL is updated at each reporting date to reflect changes in credit risk since initial recognition of the respective financial instrument.
+
+The Project always recognizes lifetime ECL for trade and other receivables. The ECL on these financial assets are estimated based on the Project's historical credit loss experience, adjusted for factors that are specific to the debtors, general economic conditions and an assessment of both the current as well as the forecast direction of conditions at the reporting date, including time value of money where appropriate. The Project also records 12-month ECL for those financial assets which have low credit risk and where the low credit risk exemption has been applied. The classes of financial assets that have been identified to have low credit risk consist of cash and restricted cash.
+
+For all other financial instruments, the Project recognizes lifetime ECL when there has been a significant increase in credit risk since initial recognition. If, on the other hand, the credit risk on the financial instrument has not increased significantly since initial recognition, the Project measures the loss allowance for that financial instrument at an amount equal to 12-month ECL. The assessment of whether lifetime ECL should be recognized is based on significant increases in the likelihood or risk of a default occurring since initial recognition instead of on evidence of a financial asset being credit-impaired at the reporting date or an actual default occurring.
+
+Lifetime ECL represents the ECL that will result from all possible default events over the expected life of a financial instrument. In contrast, 12-month ECL represents the portion of lifetime ECL that is expected to result from default events on a financial instrument that are possible within 12 months after the reporting date.
+
+Hedges
+
+The Project may choose to designate derivative instruments as hedges and apply hedge accounting if there is an economic relationship between the hedged item and the hedging instrument; the effect of credit risk does not dominate the value changes that result from that economic relationship; and the hedge ratio of the hedging relationship is the same as that resulting from the quantity of the hedged item that the Project actually hedges and the quantity of the hedging instrument that the entity actually uses to hedge that quantity of hedged item. The Project formally documents all hedges and the related risk management objectives at the inception of the hedge. Derivative instruments that have been designated and qualify for hedge accounting are classified as either cash flow or fair value hedges.
+
+The effective portion of the gain or loss on a cash flow hedging instrument is recognized directly in other comprehensive income, while any ineffective portion is recognized immediately in the Combined Statement of Profit and Comprehensive Income for the period in other expense. Amounts recognized in other comprehensive income are transferred to the Combined Statement of Profit and Comprehensive Income for the period when the hedged transaction affects profit or loss, such as when the hedged financial income or financial expense is recognized or when a forecast sale occurs.
+
+The Project does not hold any fair value hedges.
 
 3. SIGNIFICANT ACCOUNTING JUDGMENTS AND ESTIMATES
-Key judgments:
-- Asset impairment evaluation
-- Property, plant and equipment componentization
-- Revenue allocation and timing
-- CGU determination
-- Consolidation decisions
 
-Key estimates:
-- Useful lives of assets (15-100 years for generation, transmission, facilities)
-- Depreciation and amortization rates
+The preparation of the financial statements in conformity with IFRS Accounting Standards requires Management to make judgments, estimates and assumptions that affect the application of accounting policies and the reported amounts of assets, liabilities, revenues and expenses. Actual results may differ materially from these estimates. The estimates and underlying assumptions are reviewed on an on-going basis. Revisions to accounting estimates are recognized in the period in which the estimate is reviewed if the revision affects only that period or future periods.
 
-4. PROPERTY, PLANT AND EQUIPMENT (thousands)
-                           Hydraulic    Transmission    Service      Construction
-                           Generation   & Terminals     Facilities   in Progress    Total
+3.1 Use of Judgments
 
-Cost Dec 31, 2024          6,405,240    5,998,711      287,321      28,447         12,719,719
-Depreciation Dec 31, 2024    155,672      178,800      219,165           -            553,637
-Carrying value Dec 31, 2024 6,249,568   5,819,911       68,156      28,447        12,166,082
+(i) Asset Impairment and Reversals
 
-Cost Dec 31, 2023          6,405,995    6,003,126      284,964      11,773         12,705,858
-Depreciation Dec 31, 2023     66,726       76,642      215,857           -            359,225
-Carrying value Dec 31, 2023 6,339,269   5,926,484       69,107      11,773        12,346,633
+The Project applies judgment in evaluating impairment and impairment reversal indicators based on various internal and external factors.
 
-COMMISSIONING: On April 14, 2023, commissioning of the LIL was approved by all required stakeholders. All components of the Lower Churchill Project were put into service.
+The recoverable amount of a CGU or asset is determined based on the higher of fair value less costs of disposal and its value in use. Management uses judgment in selecting discount rates and considering the occurrence of future events when determining the recoverable amount. Changes in these factors will affect the recoverable amount of CGUs and assets, which may result in a material adjustment to their carrying value.
 
-CAPITALIZED BORROWING COSTS: For 2024, $nil borrowing costs were capitalized (2023: $31.8 million from debt + $17.4 million from Class B units).
+(ii) Property, Plant and Equipment
 
-5. OPERATING COSTS (thousands)
-                                           2024          2023
-Impacts and Benefits Agreement             35,260             -
-Maintenance and materials                  11,954        12,728
-Salaries and benefits                      11,320        10,799
-Professional services                       5,022         5,743
-Other operating costs                       4,705         4,294
-Insurance                                   3,094         3,151
-Total operating costs                      71,355        36,715
+The Project's accounting policy relating to property, plant and equipment is described in Note 2.7. In applying this policy, judgment is used in determining whether certain costs are additions to the carrying amount of the property, plant and equipment as opposed to repairs and maintenance. If an asset has been developed, judgment is required to identify the point at which the asset is capable of being used as intended and to identify the directly attributable borrowing costs to be included in the carrying value of the development asset.
 
-6. NET FINANCE EXPENSE (thousands)
-                                           2024          2023
-Finance income:
-  Interest on restricted cash              64,662        66,059
-  Interest on investments                   8,480        10,007
-  Other interest                              506           383
-Total finance income                       73,648        76,449
+Judgment is also used in determining the appropriate componentization structure for the Project's property, plant and equipment.
 
-Finance expense:
-  Interest on long-term debt              295,372       296,363
-  Interest on Class B LP units             66,577        62,777
-  Other interest                            3,663         3,949
-Total finance expense                     365,612       363,089
-Less: Interest capitalized                      -       (49,239)
-Net finance expense                       291,964       237,401
+(iii) Revenue
 
-7. LONG-TERM DEBT
-The Project has debt totaling $8.62 billion as at December 31, 2024.
+Management uses judgment in estimating the variable consideration in a contract, such as future sustaining capital costs, and assessing whether a variable component is constrained. Management also uses judgment in allocating amounts to performance obligations and determining the timing of satisfaction of performance obligations. Revenue related to electricity sales is allocated between energy and capacity components based on observable evidence of how efficiently island rate payers use the hydroelectric system. Energy is recognized as units are delivered whereas capacity, revenue related to interconnection services and the right to use the LIL are recognized evenly over the time elapse of the term.
 
-LIL LP Debt:
-- Tranche A: $725M @ 3.76% (maturity 2033)
-- Tranche B: $600M @ 3.86% (maturity 2045)
-- Tranche C: $1,075M @ 3.85% (maturity 2053)
-- Tranches 10-74: $1,156M @ 1.75%-2.86% (maturities 2025-2057)
+(iv) Determination of CGUs
 
-Muskrat Falls/Labrador Transco Debt:
-- Tranche A: $650M @ 3.63% (maturity 2029)
-- Tranche B: $675M @ 3.83% (maturity 2037)
-- Tranche C: $1,275M @ 3.86% (maturity 2048)
-- Tranches 10-64: $1,666M @ 1.75%-2.86% (maturities 2025-2052)
-- Tranches A-T, U: $1,000M @ 3.35%-3.38% (maturities 2037-2057)
+The Project's accounting policy relating to impairment of non-financial assets is described in Note 2.10. In applying this policy, the Project groups assets into the smallest identifiable groups for which cash flows are largely independent of the cash flows from other assets or groups of assets. Judgment is used in determining the level at which cash flows are largely independent of other assets or groups of assets.
 
-FEDERAL GUARANTEE: The credit facilities benefit from a direct, absolute, unconditional and irrevocable guarantee from the Government of Canada (AAA rating).
+(v) Consolidation
 
-SINKING FUNDS: Required annual instalments of $63.04 million for next five years.
+Management applies its judgment when determining whether to consolidate structured entities in accordance with the criteria outlined in IFRS 10.
 
-8. CLASS B LIMITED PARTNERSHIP UNITS
-Class B units represent KKR Island Link Incorporated's ownership interest in LIL LP.
-Measured at amortized cost using effective interest method.
+3.2 Use of Estimates
 
-                                           2024          2023
-Balance, beginning of year                756,712       738,908
-Contributions (November 2024)             233,116             -
-Accrued interest                           66,577        62,777
-Distributions                             (77,044)      (44,973)
-Tax adjustment                                 50             -
-Balance, end of year                      979,411       756,712
-Less: current portion                     (94,664)      (87,866)
-Non-current portion                       884,747       668,846
+(i) Property, Plant and Equipment and Intangible Assets
 
-EFFECTIVE INTEREST RATE: 8.7% as at December 31, 2024 (2023: 8.5%)
+Amounts recorded for depreciation and amortization are based on the useful lives of the Project's assets. The useful lives of property, plant and equipment and intangible assets are verified by independent specialists and reviewed annually by the Project. The useful lives are Management's best estimate of the service lives of these assets. Changes to these lives could materially affect the amount of depreciation and amortization recorded.
 
-9. DIVIDENDS (thousands)
-                                           2024          2023
-Preferred dividend (3% coupon)             56,914        56,758
-Common dividend                           310,180        28,480
-Total dividends paid                      367,094        85,238
+4. CURRENT AND FUTURE CHANGES IN ACCOUNTING POLICIES
 
-10. RELATED PARTY TRANSACTIONS
-Key related parties:
-- Nalcor Energy (100% shareholder)
-- KKR (Limited Partner - 25 Class B units)
-- Newfoundland and Labrador Hydro (wholly-owned subsidiary of Nalcor)
-- Churchill Falls (Labrador) Corporation (joint arrangement of Hydro)
-- Province of Newfoundland and Labrador (100% shareholder of Nalcor)
+The following is a list of applicable standards/interpretations that have been issued and are effective for accounting periods commencing on or after January 1, 2024, as specified.
 
-Key transactions 2024 (thousands):
-- Revenue from related parties: $1,165,781
-- Related party receivable: $61,255
-- Contract asset (related parties): $725,835
-- Power purchased: $850
-- Water rental fee to Province: $15,250
+• Amendments to IAS 1 – Presentation of Financial Statements – Classification of Liabilities as Current or Non-Current and Non-Current Liabilities with Covenants (effective January 1, 2024)
+• Amendments to IFRS 9 Financial Instruments and IFRS 7 Financial Instruments: Disclosure – Contracts Referencing Nature-dependent Electricity (effective January 1, 2026)
+• IFRS 18 – Presentation and Disclosures in Financial Statements (effective January 1, 2027)
 
-POWER PURCHASE AGREEMENT (PPA):
-- Muskrat Falls sells energy and capacity to Hydro
-- Hydro's payment obligation is absolute, non-conditional and irrevocable
+4.1 Amendments to IAS 1 – Presentation of Financial Statements – Classification of Liabilities as Current or Non-Current and Non-Current Liabilities with Covenants
 
-LIL LEASE AND TRANSMISSION FUNDING AGREEMENT (TFA):
-- LIL LP provides transmission services to Hydro via LIL Opco
-- Revenue allocated to remaining performance obligation: $426M within 1 year, $20,088M beyond 1 year
+The IASB issued amendments to IAS 1 to promote consistency in applying the requirements by helping companies determine whether, in the Combined Statement of Financial Position, debt and other liabilities with an uncertain settlement date should be classified as current (due or potentially due to be settled within one year) or non-current. The classification is based on rights that are in existence at the end of the reporting period and specify that classification is unaffected by expectations about whether an entity will exercise its right to defer settlement of a liability. Additional information was added to clarify that only covenants with which an entity is required to comply on or before the reporting date affect the classification of a liability as current or non-current. In addition, an entity has to disclose information in the notes that enables users of the financial statements to understand the risk that non-current liabilities with covenants could become repayable within 12 months. The amendments are applied retrospectively upon adoption. The application of these amendments did not have an impact on the Project's financial statements.
 
-11. COMMITMENTS AND CONTINGENCIES
+4.2 Amendments to IFRS 9 - Financial Instruments and IFRS 7 - Financial Instruments: Disclosure – Contracts Referencing Nature-dependent Electricity
 
-a) Water Management Agreement with Churchill Falls:
-   - Coordinates production for efficient water use on Churchill River
-   - As at Dec 31, 2024: ~1.0 TWh stored energy in Churchill Falls reservoir (2023: ~2.0 TWh)
+The IASB issued amendments to IFRS 9 and IFRS 7 to provide a reasonable basis for an entity to determine the required accounting for contracts referencing nature-dependent electricity which are often structured as power purchase agreements. The amendments include clarifying the application of the 'own-use' requirements, permitting hedge accounting if these contracts are used as hedging instruments, and adding new disclosure requirements to enable investors to understand the effect of these contracts on a company's financial performance and cash flows. Management is currently assessing the potential impact on the Project's financial statements.
 
-b) Outstanding capital commitments: $25.2 million (2023: $24.3 million)
+4.3 IFRS 18 – Presentation and Disclosures in Financial Statements
 
-c) Innu Impacts and Benefits Agreement Amendment (October 24, 2024):
-   - Annual payment of $12 million to Innu Nation
-   - Escalating at CPI for 50-year term
-   - Replaces all other IBA payments associated with Muskrat Falls
+IFRS 18 replaces IAS 1, carrying forward many of the requirements of IAS 1 unchanged and introducing new requirements to present specified categories and defined subtotals in the statement of profit or loss. As well, entities will be required to provide disclosures on management-defined performance measures in the notes to the financial statements and improve aggregation and disaggregation. In addition, some IAS 1 paragraphs have been moved to IAS 8 – Accounting Policies, Changes in Accounting Estimates and Errors and IFRS 7. Furthermore, the IASB has made minor amendments to IAS 7 – Statement of Cash Flows.
 
-d) Legal claims: Subject to claims regarding construction and other matters
-   - Outcome uncertain, could have significant adverse effect
+An entity is required to apply IFRS 18 for annual reporting periods beginning on or after 1 January 2027, with earlier application permitted. The amendments to IAS 7, as well as the revised IAS 8 and IFRS 7, become effective when an entity applies IFRS 18. IFRS 18 requires retrospective application with specific transition provisions. Management is currently assessing the potential impact on the Project's financial statements.
 
-e) Revenue commitments under PPA: $754M within 1 year, $36,512M beyond 1 year
+5. TRADE AND OTHER RECEIVABLES
 
-f) Nova Scotia Block: 0.986 TWh annually for 35 years to Emera Incorporated
+As at December 31 (thousands of Canadian dollars)    Note    2024      2023
 
-12. SUBSEQUENT EVENT
-Effective January 1, 2025, Hydro and Nalcor were legislatively amalgamated into a new corporation continuing as "Newfoundland and Labrador Hydro". The amalgamated corporation:
-- Holds combined assets and liabilities of former entities
-- Is bound by all previously existing contracts and agreements
-- Continues all Provincial Government security and guarantees
+Due from related parties                              18    23,981     9,619
+Interest receivable                                          4,522     6,048
+Other receivables                                            1,863     5,206
+                                                            30,366    20,873
 
-13. FINANCIAL RISK MANAGEMENT
+As at December 31 (thousands of Canadian dollars)           2024      2023
 
-Credit Risk: Minimal - deposits held with Canadian Schedule 1 Chartered Banks (A+ rated)
+0-60 days                                                   13,057    13,614
+60+ days                                                    17,309     7,259
+                                                            30,366    20,873
 
-Liquidity Risk: Minimal due to:
-- Reserve accounts under LIL PFA and MF/LTA PFA
-- Commercial arrangements requiring Hydro's absolute payments
+6. PROPERTY, PLANT AND EQUIPMENT
 
-Interest Rate Risk: Not exposed - all long-term debt has fixed interest rates
+(thousands of Canadian dollars)         Hydraulic    Transmission    Service      Construction
+                                       Generation    and Terminals   Facilities   in Progress    Total
+                                                                    and Other
 
-Fair Value of Financial Instruments (Dec 31, 2024):
-- Investments: Carrying $198.5M, Fair Value $200.2M
-- Long-term debt: Carrying $8,624.8M, Fair Value $7,966.6M
-- Class B LP units: Carrying/Fair Value $979.4M
+Cost
+Balance at January 1, 2023                    -         10,140       222,364     12,387,355  12,619,859
+Additions                                     -              -             -         85,999      85,999
+Transfers                             6,405,995      5,992,986        62,600    (12,461,581)         -
+Balance at December 31, 2023          6,405,995      6,003,126       284,964         11,773  12,705,858
 
-========================================
+Additions                                     -              -             -         30,940      30,940
+Disposals                                (2,052)       (13,443)         (305)        (1,279)    (17,079)
+Transfers                                 1,297          9,028         2,662        (12,987)          -
+Balance at December 31, 2024          6,405,240      5,998,711       287,321         28,447  12,719,719
 
-FINANCIAL HIGHLIGHTS AND KEY METRICS
+Depreciation
+Balance at January 1, 2023                    -            173       213,250              -     213,423
+Depreciation                             66,726         76,469         2,607              -     145,802
+Balance at December 31, 2023             66,726         76,642       215,857              -     359,225
 
-PROFITABILITY:
-- Revenue growth: 24.1% ($1,166M vs $940M)
-- Profit growth: 16.0% ($571M vs $493M)
-- Operating margin: 49.0%
+Depreciation                             88,946        102,219         3,422              -     194,587
+Disposals                                     -            (61)         (114)              -        (175)
+Balance at December 31, 2024            155,672        178,800       219,165              -     553,637
 
-BALANCE SHEET STRENGTH:
-- Total assets: $14.76 billion
-- Equity: $5.03 billion (34% equity ratio)
-- Current ratio: 7.0x
+Carrying value
+Balance at January 1, 2023                    -          9,967         9,114     12,387,355  12,406,436
+Balance at December 31, 2023          6,339,269      5,926,484        69,107         11,773  12,346,633
+Balance at December 31, 2024          6,249,568      5,819,911        68,156         28,447  12,166,082
 
-CASH GENERATION:
-- Operating cash flow: $476M (2023: $176M)
-- Strong improvement driven by revenue recognition timing
+On April 14, 2023, commissioning of the LIL was approved by all required stakeholders. As a result, all components of the Lower Churchill Project were put into service.
 
-DEBT PROFILE:
-- Total debt: $8.62 billion at fixed rates
-- Federal guarantee (AAA) on all project debt
-- Weighted average rate: ~3.5%
+Capitalized Borrowing Costs
 
-CAPITAL STRUCTURE:
-- Long-term debt: $8.62B
-- Class B LP units (KKR): $979M
-- Shareholder equity: $5.03B
-- Total capitalization: $14.63B
+The construction of the LIL, LTA and MF Plant was financed through the issuance of long-term debt and contributed capital. For the year ended December 31, 2024, $nil (2023 - $31.8 million) of borrowing costs were capitalized. The Project also capitalized borrowing costs associated with the Class B units of $nil (2023 - $17.4 million) as non-cash additions to property, plant and equipment.
 
-PERFORMANCE METRICS:
-- Return on equity: 11.4%
-- Debt/Equity: 1.72x
-- Interest coverage: 2.0x
+7. INVESTMENTS
 
-========================================
+The following table represents the value of the investments measured at amortized cost:
 
-END OF DOCUMENT
+                                                          Year of
+As at December 31 (thousands of Canadian dollars)      Maturity      2024       2023
+
+Amortizing Fixed Rate Deposit Notes with interest
+paid at a rate of 3.745% per annum.                   2025-2029    198,521    240,393
+Less: redemptions to be received within one year                    (42,611)   (41,872)
+                                                                    155,910    198,521
+
+On March 31, 2022, Muskrat Falls, jointly with Labrador Transco, purchased structured deposit notes using the proceeds from issued long-term debt. The investments are restricted in nature and subject to the provisions contained within the MF/LTA PFA.
+
+8. INTANGIBLE ASSETS
+
+(thousands of Canadian dollars)         Computer    Other    Construction    Total
+                                       Software             in Progress
+
+Cost
+Balance at January 1, 2023               7,515    36,360      40,952      84,827
+Additions                                    -       165       1,879       2,044
+Transfers                               41,236         -     (41,236)          -
+Balance at December 31, 2023            48,751    36,525       1,595      86,871
+
+Additions                                    -       216       1,725       1,941
+Disposals                                    -         -        (110)       (110)
+Transfers                                1,835         -      (1,835)          -
+Balance at December 31, 2024            50,586    36,741       1,375      88,702
+
+Amortization
+Balance at January 1, 2023               6,969        10           -       6,979
+Amortization                             3,167       550           -       3,717
+Balance at December 31, 2023            10,136       560           -      10,696
+
+Amortization                             4,220       731           -       4,951
+Balance at December 31, 2024            14,356     1,291           -      15,647
+
+Carrying value
+Balance at January 1, 2023                 546    36,350      40,952      77,848
+Balance at December 31, 2023            38,615    35,965       1,595      76,175
+Balance at December 31, 2024            36,230    35,450       1,375      73,055
+
+Other intangible assets represent the Project's right to collect the costs incurred related to asset upgrades through the LIL Lease/TFA and GIA/PPA.
+
+9. CONTRACT ASSET
+
+As at December 31 (thousands of Canadian dollars)                    2024       2023
+
+Contract asset, beginning of the year                             451,296    165,466
+Revenue recognized                                                549,898    535,761
+Payments                                                         (275,359)  (249,931)
+Contract asset, end of the year                                   725,835    451,296
+Less: current portion                                            (325,315)  (273,730)
+                                                                  400,520    177,566
+
+The contract asset represents the timing difference between the satisfaction of performance obligations to Hydro under the PPA and the timing of commercial payments.
+
+10. TRADE AND OTHER PAYABLES
+
+As at December 31 (thousands of Canadian dollars)    Note    2024      2023
+
+Due to related parties                                18    56,976    33,691
+Trade payables and accruals                                 32,229    31,375
+Accrued interest                                            24,553    24,642
+HST payable                                                  5,995     3,462
+                                                           119,753    93,170
+
+11. LONG-TERM DEBT
+
+The following table represents the value of long-term debt measured at amortized cost:
+
+                                        Face      Coupon    Year of    Year of
+As at December 31                      Value     Rate %     Issue    Maturity    2024         2023
+(thousands of Canadian dollars)
+
+LIL LP
+Tranche A                             725,000     3.76      2013       2033     725,131      725,147
+Tranche B                             600,000     3.86      2013       2045     600,075      600,078
+Tranche C                           1,075,000     3.85      2013       2053   1,075,163    1,075,169
+Tranche 10                             10,500     1.75      2017       2025      10,500       31,501
+Tranche 11-20                         105,000  1.84-2.37    2017    2025-2030   105,009      105,012
+Tranche 21-30                         105,000  2.41-2.64    2017    2030-2035   105,030      105,034
+Tranche 31-40                         105,000  2.66-2.80    2017    2035-2040   105,074      105,079
+Tranche 41-50                         105,000  2.81-2.86    2017    2040-2045   105,083      105,088
+Tranche 51-60                         105,000  2.84-2.86    2017    2045-2050   105,111      105,116
+Tranche 61-70                         105,000     2.85      2017    2050-2055   105,167      105,173
+Tranche 71-74                         315,000     2.85      2017    2055-2057   315,547      315,564
+
+Muskrat Falls/Labrador Transco
+Tranche A                             650,000     3.63      2013       2029     650,067      650,081
+Tranche B                             675,000     3.83      2013       2037     675,057      675,062
+Tranche C                           1,275,000     3.86      2013       2048   1,275,175    1,275,182
+Tranche 10                             21,112     1.75      2017       2025      21,112       62,987
+Tranche 11-20                         224,283  1.84-2.37    2017    2025-2030   224,301      224,309
+Tranche 21-30                         252,595  2.41-2.64    2017    2030-2035   252,666      252,675
+Tranche 31-40                         288,185  2.66-2.80    2017    2035-2040   288,389      288,404
+Tranche 41-50                         331,037  2.81-2.86    2017    2040-2045   331,298      331,312
+Tranche 51-60                         381,084  2.84-2.86    2017    2045-2050   381,493      381,510
+Tranche 61-64                         168,053     2.85      2017    2050-2052   168,310      168,320
+Tranche A-T                           500,000  3.35-3.38    2022    2037-2047   500,000      500,000
+Tranche U                             500,000     3.38      2022       2057     500,000      500,000
+
+Total                               8,621,849                                 8,624,758    8,687,803
+Less: maturities of debt within one year                                       (63,611)     (62,872)
+                                                                             8,561,147    8,624,931
+
+Under the terms and conditions of the LIL PFA, the Labrador-Island Link Funding Trust (LIL Funding Trust) provided two credit facilities totaling $3.5 billion. In addition, under the terms and conditions of the MF/LTA PFA, the Muskrat Falls/Labrador Transmission Assets Funding Trust (MF/LTA Funding Trust) provided three credit facilities totaling $5.5 billion.
+
+The credit facilities benefit from a direct, absolute, unconditional and irrevocable guarantee from the Government of Canada (Canada), and thereby carries its full faith and credit (AAA rating or equivalent). A Collateral Agent has been assigned to act on behalf of the lending parties, including the LIL Funding Trust, the MF/LTA Funding Trust and Canada. The Collateral Agent oversees the lending and security arrangements, the various project accounts and the compliance with covenants.
+
+Sinking funds are required to be set up for the Tranche A, B and C debentures for LIL LP and are required for the Tranche B, C and U debentures for Muskrat Falls and Labrador Transco. Sinking funds are to be held in a sinking fund account under the control of the Collateral Agent. Sinking fund instalments due for the next five years are as follows:
+
+(thousands of Canadian dollars)    2025    2026    2027    2028    2029
+
+Sinking fund instalments          63,043  63,043  63,043  63,043  63,043
+
+12. LIMITED PARTNERSHIP UNITS
+
+The Class B limited partnership units represent KKR Island Link Incorporated (KKR)'s ownership interest in LIL LP. As described in the Labrador-Island Link Limited Partnership Agreement (Partnership Agreement), these units have certain rights and obligations, including mandatory distributions, that indicate that the substance of the units represent a financial liability and are measured at amortized cost using the effective interest method.
+
+Class B Limited Partnership Units
+
+As at December 31 (thousands of Canadian dollars)          Units      2024      Units      2023
+
+Class B limited partnership units, beginning of the year     25     756,712      25     738,908
+Contributions (a)                                             -     233,116       -           -
+Accrued interest                                              -      66,577       -      62,777
+Distributions                                                 -     (77,044)      -     (44,973)
+Tax adjustment amount                                         -          50       -           -
+Class B limited partnership units, end of the year           25     979,411      25     756,712
+Less: maturities within one year                                    (94,664)           (87,866)
+                                                                     884,747            668,846
+
+(a) On November 25, 2024, KKR provided a contribution of $233.1 million to LIL LP in order to adjust its proportionate share of investment in LIL LP as in accordance with the Newfoundland and Labrador Development Agreement (NLDA).
+
+13. SHAREHOLDER'S EQUITY
+
+13.1 Share Capital
+
+As at December 31 (thousands of Canadian dollars)                               2024         2023
+
+Class A preferred shares without nominal or par value
+Authorized – unlimited
+Issued - fully paid and outstanding - 1,891,952,578                        1,891,952    1,891,952
+
+Class A common shares without nominal or par value
+Authorized – unlimited
+Issued - fully paid and outstanding - 2,000                                        2            2
+
+Common share without nominal or par value
+Authorized - unlimited
+Issued - fully paid and outstanding - 200                                          2            2
+                                                                           1,891,956    1,891,956
+
+13.2 Dividends
+
+For the year ended December 31 (thousands of Canadian dollars)                2024         2023
+
+Declared and paid during the year
+Preferred dividend for current year (3% coupon rate)                         56,914       56,758
+Common dividend for current year                                            310,180       28,480
+                                                                            367,094       85,238
+
+14. OPERATING COSTS
+
+For the year ended December 31 (thousands of Canadian dollars)                2024         2023
+
+Impacts and Benefits Agreement and Amendment                                 35,260            -
+Maintenance and materials                                                    11,954       12,728
+Salaries and benefits                                                        11,320       10,799
+Professional services                                                         5,022        5,743
+Other operating costs                                                         4,705        4,294
+Insurance                                                                     3,094        3,151
+                                                                             71,355       36,715
+
+15. NET FINANCE EXPENSE
+
+For the year ended December 31 (thousands of Canadian dollars)                2024         2023
+
+Finance income
+Interest on restricted cash                                                  64,662       66,059
+Interest on investments                                                       8,480       10,007
+Other interest                                                                  506          383
+                                                                             73,648       76,449
+
+Finance expense
+Interest and fees on long-term debt                                         295,372      296,363
+Interest on Class B limited partnership units                                66,577       62,777
+Other interest                                                                3,663        3,949
+                                                                            365,612      363,089
+Interest capitalized during construction                                          -      (49,239)
+                                                                            365,612      313,850
+
+Net finance expense                                                         291,964      237,401
+
+16. OTHER EXPENSE
+
+For the year ended December 31 (thousands of Canadian dollars)                2024         2023
+
+Rental and royalty                                                           15,255       12,874
+Loss (gain) on disposal of assets                                            12,467       (2,134)
+Other                                                                         3,587        5,004
+Other expense                                                                31,309       15,744
+
+Included in other expense is $3.6 million (2023 - $3.6 million) in amortization of the effective portion of the cash flow hedge relating to long-term debt.
+
+On April 19, 2024, a fire damaged inventory and capital spares, related to the Lower Churchill Project assets, held in a storage facility in Happy Valley Goose Bay. This has resulted in a loss on disposal of assets of $11.2 million.
+
+17. FINANCIAL INSTRUMENTS AND RISK MANAGEMENT
+
+17.1 Fair Value
+
+The estimated fair values of financial instruments as at December 31, 2024 and 2023 are based on relevant market prices and information available at the time. Fair value estimates are based on valuation techniques which are significantly affected by the assumptions used including the amount and timing of future cash flows and discount rates reflecting various degrees of risk. As such, the fair value estimates below are not necessarily indicative of the amounts that the Project might receive or incur in actual market transactions.
+
+As a significant number of the Project's assets and liabilities do not meet the definition of a financial instrument, the fair value estimates below do not reflect the fair value of the Project as a whole.
+
+Establishing Fair Value
+
+Financial instruments recorded at fair value are classified using a fair value hierarchy that reflects the nature of the inputs used in making the measurements. The fair value hierarchy has the following levels:
+
+Level 1 - valuation based on quoted prices (unadjusted) in active markets for identical assets or liabilities.
+Level 2 - valuation techniques based on inputs other than quoted prices included in Level 1 that are observable for the asset or liability, either directly (i.e. as prices) or indirectly (i.e. derived from prices).
+Level 3 - valuation techniques using inputs for the asset or liability that are not based on observable market data (unobservable inputs).
+
+The fair value hierarchy requires the use of observable market inputs whenever such inputs exist. A financial instrument is classified to the lowest level of the hierarchy for which a significant input has been considered in measuring fair value. For assets and liabilities that are recognized at fair value on a recurring basis, the Project determines whether transfers have occurred between levels in the hierarchy by reassessing categorization (based on the lowest level input that is significant to the fair value measurement as a whole) at the end of each reporting period. There were no transfers between Level 1, 2 and 3 fair value measurements during the years ended December 31, 2024 and 2023.
+
+                                                              Carrying    Fair       Carrying    Fair
+As at (thousands of Canadian dollars)              Level     Value       Value      Value       Value
+                                                          December 31, 2024      December 31, 2023
+
+Financial assets
+Investments, including short-term                    2      198,521    200,161     240,393    235,482
+
+Financial liabilities
+Long-term debt, including amount due within one year 2    8,624,758  7,966,600   8,687,803  8,153,702
+Class B limited partnership units, including amount
+due within one year                                  3      979,411    979,411     756,712    756,712
+
+The fair values of cash, restricted cash, trade and other receivables, related party receivable and trade and other payables approximate their carrying values due to their short-term maturity.
+
+The fair values of Level 2 financial instruments are determined using quoted prices in active markets, which in some cases are adjusted for factors specific to the asset or liability. Level 2 fair values of other risk management assets and liabilities and long-term debt are determined using observable inputs other than unadjusted quoted prices, such as interest rate yield curves.
+
+The Class B limited partnership units are carried at amortized cost, calculated using the effective interest method, which approximates fair value. The effective interest rate as at December 31, 2024 is 8.7% (2023 - 8.5%) which is the rate that discounts the estimated future cash flows to the amortized cost of the financial liabilities. Due to the unobservable nature of the effective interest rate and resulting discounted cash flows associated with the units, the instruments have been classified as Level 3.
+
+The table below sets forth a summary of changes in fair value of the Project's Level 3 financial liabilities given a one percent change in the discount rate while holding other variables constant:
+
+(thousands of Canadian dollars)           1% increase in    1% decrease in
+                                         discount rate      discount rate
+
+Class B limited partnership units            (67,703)           64,286
+
+17.2 Risk Management
+
+The Project is exposed to certain credit, liquidity and market risks through its operating, financing and investing activities. Financial risk is managed in accordance with a Board-approved policy, which outlines the objectives and strategies for the management of financial risk, including the use of derivative contracts. Permitted financial risk management strategies are aimed at minimizing the volatility of the Project's expected future cash flows.
+
+Credit Risk
+
+The Project's expected future cash flows are exposed to credit risk through its operating, financing and investing activities, primarily due to the potential for non-performance by counterparties to its financial instruments. The degree of exposure to credit risk on cash, restricted cash, investments, trade and other receivables and related party receivable is determined by the financial capacity and stability of the counterparties. The maximum exposure to credit risk on these financial instruments is represented by their carrying value on the Combined Statement of Financial Position at the reporting date. Credit risk on cash, restricted cash and investments is minimal, as the Project's deposits are held by Canadian Schedule 1 Chartered Banks with a rating of A+ (Standard and Poor's). Credit risk on trade and other receivables and related party receivable is also minimal as the Project does not have any material amounts that are past due and uncollectible.
+
+Liquidity Risk
+
+The Project is exposed to liquidity risk with respect to its contractual obligations and financial liabilities. Liquidity risk management activities are directed at ensuring cash is available to meet those obligations as they become due. Short-term liquidity is provided through cash, restricted cash, related party receivable and partnership and shareholder contributions. Liquidity risk for the Project is considered to be minimal due to the reserve accounts it holds as instructed in the LIL PFA and MF/LTA PFA as well as its commercial arrangements which require Hydro to make payments which are absolute, unconditional and irrevocable until the financing has been paid in full.
+
+The following are the contractual maturities of the Project's financial liabilities as at December 31, 2024:
+
+(thousands of Canadian dollars)    < 1 Year    1-3 Years    3-5 Years    > 5 Years      Total
+
+Trade and other payables            119,753            -            -            -     119,753
+Long-term debt (including interest
+and sinking fund)                   420,931      840,730    1,517,426   11,301,941  14,081,028
+Class B limited partnership units    94,664      186,286      182,224    2,761,050   3,224,224
+                                    635,348    1,027,016    1,699,650   14,062,991  17,425,005
+
+Market Risk
+
+In the course of carrying out its operating, financing and investing activities, the Project is exposed to possible market price movements that could impact expected future cash flow and the carrying value of certain financial assets.
+
+Interest Rates
+
+Changes in prevailing interest rate risk will impact the fair value of financial assets and liabilities. Expected future cash flows from these assets are also impacted in certain circumstances. The Project is not exposed to interest rate risk on its long-term debt as all of the Project's long-term debt has fixed interest rates.
+
+Foreign Currency and Commodity Exposure
+
+The Project does not hold any financial instruments whose value would vary due to changes in a commodity price or whose value would materially vary due to fluctuations in foreign currency exchange rates.
+
+18. RELATED PARTY TRANSACTIONS
+
+The Project enters into various transactions with its related parties. Unless otherwise noted, these transactions occur within the normal course of operations and are measured at the exchange amount, which is the amount of consideration agreed to by the related parties. Outstanding balances due to or from related parties are non-interest bearing with settlement normally within 30 days.
+
+Related parties with which the Project transacts are as follows:
+
+Related Party                                           Relationship
+
+Nalcor                                                 100% shareholder of LIL Holdco (2021), Labrador Transco,
+                                                       LCMC, LIL Opco, Labrador-Island Link General Partner (LIL GP)
+                                                       and Muskrat Falls
+KKR                                                    Limited Partner holding 25 Class B limited partnership units
+                                                       of LIL LP
+LIL GP                                                 General partner of LIL LP, wholly-owned subsidiary of Nalcor
+LIL Holdco (2021)                                      Wholly-owned subsidiary of Nalcor, limited partner of LIL
+                                                       (2021) LP
+LIL (2021) LP                                          100% shareholder of LIL Holdco
+LIL Opco                                               Wholly-owned subsidiary of Nalcor
+Hydro                                                  Wholly-owned subsidiary of Nalcor
+Churchill Falls (Labrador) Corporation                 Joint arrangement of Hydro
+(Churchill Falls)
+Nalcor Energy Marketing Corporation                    Wholly-owned subsidiary of Nalcor
+(Energy Marketing)
+The Province                                           100% shareholder of Nalcor
+
+Significant related party transactions, which are not otherwise disclosed separately in the financial statements, are summarized below:
+
+As at December 31 (thousands of Canadian dollars)                        2024       2023
+
+Trade and other receivables:                                      Note 5
+Other related parties                                                   23,981      9,183
+The Province                                                                 -        436
+
+Related party receivable:
+Other related parties (a)                                               61,255     71,725
+
+Contract asset (including current portion):
+Other related parties                                             Note 9
+                                                                       725,835    451,296
+
+Other long-term asset:
+Other related parties                                          Note 19(h)
+                                                                         3,344      3,280
+
+Trade and other payables:                                        Note 10
+The Province (b)                                                        15,250     13,028
+Other related parties                                                   41,726     20,663
+
+Contract liability:
+Other related parties (c)                                                2,171     11,518
+
+For the year ended December 31 (thousands of Canadian dollars)          2024       2023
+
+Revenue:
+Other related parties (d)(e)(f)(g)                                   1,165,781    939,735
+
+Other revenue:
+Other related parties                                                      380        390
+
+Power purchased:
+Other related parties (h)                                                  850      8,217
+
+Additions to property, plant and equipment:
+Other related parties                                                        -      3,333
+
+Operating costs:
+Other related parties                                                   13,822     12,463
+
+Other expense:
+The Province (b)                                                        15,255     12,438
+Other related parties                                                        -     (1,592)
+
+(a) LIL LP has a non-interest bearing receivable from LIL Opco which is payable from LIL Opco upon demand as cash is required to fund final construction costs of the LIL assets.
+
+(b) Muskrat Falls is required to pay the Province a water rental fee based on megawatt hours of energy generated, which is payable on an annual basis, in the first quarter of the following fiscal year.
+
+(c) LIL LP has a contract liability with LIL Opco which represents the timing difference between the satisfaction of performance obligations to LIL Opco under the LIL Lease and the timing of commercial payments.
+
+(d) Muskrat Falls earned revenue from Nalcor and has contributed energy to Nalcor related to delivery of the Nova Scotia Block.
+
+(e) Muskrat Falls earned revenue from Hydro and Energy Marketing in relation to the PPA and Residual Block sales.
+
+(f) Muskrat Falls earned revenue from Churchill Falls related to an Energy Purchase Agreement for the sale of banked energy.
+
+(g) LIL LP earned revenue from LIL Opco in relation to the LIL Lease.
+
+(h) Muskrat Falls has an expense with Hydro and a contribution of power purchases from Nalcor related to delivery of the Nova Scotia Block.
+
+19. COMMITMENTS AND CONTINGENCIES
+
+(a) LIL LP is required to make mandatory distributions as determined by LIL GP in accordance with the Partnership Agreement.
+
+(b) As part of the LIL PFA, LIL LP has pledged its current and future assets as security to the Collateral Agent.
+
+(c) As part of the MF/LTA PFA, Labrador Transco and Muskrat Falls have pledged their present and future assets as security to the Collateral Agent
+
+(d) Under the terms and conditions of the Partnership Agreement and the NLDA, LIL Holdco has committed to fund its share of the capital expenditures of the LIL.
+
+(e) LIL LP has entered into the LIL Lease and the TFA with LIL Opco and Hydro, whereby LIL LP has committed to design, construct and sustain the LIL and LIL Opco operates and maintains the LIL and provides such other services as agreed to ensure safe and reliable transmission of electricity. Revenue allocated to the remaining performance obligation (unsatisfied or partially unsatisfied) related to transmission sales under the LIL Lease as at December 31, 2024 is $426 million (2023 - $425 million) within one year and $20,088 million (2023 - $20,469 million) in more than one year.
+
+(f) Muskrat Falls has entered into the PPA with Hydro, whereby Muskrat Falls and Labrador Transco have committed to design, construct, operate and maintain the MF Plant and LTA, and provide such other services as agreed to ensure safe and reliable transmission of electricity. Revenue allocated to the remaining performance obligation (unsatisfied or partially unsatisfied) related to energy and capacity sales under the PPA as at December 31, 2024 is $754 million (2023 - $616 million) within one year and $36,512 million (2023 - $37,111 million) in more than one year.
+
+(g) In July 2012, Nalcor entered into the Energy and Capacity Agreement with Emera Incorporated (Emera) providing for the sale and delivery of the Nova Scotia Block, being 0.986 TWh of energy annually for a term of 35 years. In October 2015 Nalcor assigned this agreement to Muskrat Falls. As a result of this assignment, Nalcor and Muskrat Falls are jointly liable for the delivery of the Nova Scotia Block to Emera.
+
+(h) The Water Management Agreement between Churchill Falls and Muskrat Falls provides for coordinated production for the efficient use of water on the Churchill River system by ensuring that water is available to meet delivery requirements and contractual commitments for both Churchill Falls and Muskrat Falls, while maximizing the energy produced from the water resource. As at December 31, 2024 Muskrat Falls has the equivalent of approximately 1.0 TWh (2023 – 2.0 TWh) of energy stored in the Churchill Falls reservoir.
+
+(i) The Project is subject to legal claims with respect to construction and other various matters. For some legal claims, it is not possible at this time to predict with any certainty the outcome of such litigation. Should these claims result in an unfavourable outcome for the Project, they may have a significant adverse effect on the Project's financial position.
+
+(j) Outstanding commitments for capital projects total approximately $25.2 million as at December 31, 2024 (2023 - $24.3 million).
+
+(k) On October 24, 2024, Nalcor and the Innu Nation amended the Lower Churchill Innu Impacts and Benefits Agreement (IBA) to reflect an agreement on rate mitigation. Under this agreement, Nalcor has committed with Muskrat Falls to pay the Innu Nation an annual amount of $12 million escalating at CPI, for a term of 50 years, replacing all other IBA payments associated with Muskrat Falls.
+
+20. CAPITAL MANAGEMENT
+
+Capital includes partner capital, share capital, shareholder contributions, retained earnings and long-term debt. The Project's objectives for managing capital are to maintain its ability to continue as a going concern and to ensure timely payment of its contractual obligations. Cash generated from operations will be sufficient to fund the operating, maintaining and sustaining activities of the MF Plant and the LTA. Partner contributions will be sufficient to ensure the availability of funding to sustain the LIL.
+
+21. SUPPLEMENTARY CASH FLOW INFORMATION
+
+For the year ended December 31 (thousands of Canadian dollars)                2024         2023
+
+Trade and other receivables                                                 (10,969)      13,828
+Inventories                                                                  (6,133)      (1,868)
+Prepayments                                                                     122          (3)
+Trade and other payables                                                     26,672     (19,517)
+Changes in non-cash working capital balances                                  9,692      (7,560)
+
+Related to:
+Operating activities                                                         10,184      14,502
+Investing activities                                                           (492)    (22,062)
+                                                                              9,692      (7,560)
+
+22. SUBSEQUENT EVENT
+
+Effective January 1, 2025, Hydro and Nalcor were legislatively amalgamated into a new legal corporation that will continue under the name "Newfoundland and Labrador Hydro". The amalgamated corporation holds the combined assets and liabilities of the former Hydro and Nalcor entities and is bound by any previously existing contracts and agreements from the former entities. As well, the legislation confirms the continuation of any security or guarantees provided by the Provincial Government to Nalcor with Hydro.
