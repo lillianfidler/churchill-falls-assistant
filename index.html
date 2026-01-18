@@ -768,6 +768,32 @@
                 
                 messageDiv.appendChild(metaDiv);
                 
+                // Add pause button for voice responses with audio
+                if (audio && mode === 'voice') {
+                    const audioControls = document.createElement('div');
+                    audioControls.style.marginTop = '10px';
+                    
+                    const pauseButton = document.createElement('button');
+                    pauseButton.textContent = '⏸️ Pause';
+                    pauseButton.style.cssText = 'padding: 6px 12px; background: #e2e8f0; border: none; border-radius: 6px; cursor: pointer; font-size: 14px;';
+                    pauseButton.id = 'pause-' + Date.now();
+                    
+                    pauseButton.addEventListener('click', () => {
+                        if (window.currentAudio) {
+                            if (window.currentAudio.paused) {
+                                window.currentAudio.play();
+                                pauseButton.textContent = '⏸️ Pause';
+                            } else {
+                                window.currentAudio.pause();
+                                pauseButton.textContent = '▶️ Resume';
+                            }
+                        }
+                    });
+                    
+                    audioControls.appendChild(pauseButton);
+                    messageDiv.appendChild(audioControls);
+                }
+                
                 // Add sources if available
                 if (sources && sources.length > 0) {
                     const sourcesDiv = document.createElement('div');
@@ -786,7 +812,13 @@
             }
             
             container.appendChild(messageDiv);
-            messageDiv.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            
+            // FIXED: Scroll with offset for sticky bar - use 'start' to ensure message is above sticky bar
+            setTimeout(() => {
+                messageDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                // Add extra scroll to account for sticky bar
+                window.scrollBy(0, -50);
+            }, 100);
         }
 
         function showProcessing() {
@@ -820,7 +852,19 @@
 
         function playAudio(base64Audio) {
             try {
+                // Stop any currently playing audio
+                if (window.currentAudio) {
+                    window.currentAudio.pause();
+                    window.currentAudio = null;
+                }
+                
                 const audio = new Audio('data:audio/mpeg;base64,' + base64Audio);
+                window.currentAudio = audio;
+                
+                audio.onended = () => {
+                    window.currentAudio = null;
+                };
+                
                 audio.play();
             } catch (error) {
                 console.error('Error playing audio:', error);

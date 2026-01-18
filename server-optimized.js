@@ -644,8 +644,8 @@ app.post('/api/chat', async (req, res) => {
 
                 response = await anthropic.messages.create({
                     model: 'claude-sonnet-4-20250514',
-                    max_tokens: 4096,
-                    system: TEXT_MODE_PROMPT,
+                    max_tokens: maxTokens,
+                    system: systemPrompt,
                     messages: currentMessages,
                     tools: toolsList
                 });
