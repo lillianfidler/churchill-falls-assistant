@@ -20,9 +20,32 @@ const path = require('path');
 // Document directory
 const CONTENT_DIR = path.join(__dirname, 'content');
 
-// SUPPLEMENTARY DOCUMENTS ONLY (22 documents)
-// Core documents (13) are loaded into Express server context for immediate access
+// ALL DOCUMENTS (36 total - complete set)
+// Documents are loaded into MCP for text mode AND Express for voice mode
 const DOCUMENTS = [
+  // PRIMARY MOU AND ANALYSIS (Core documents)
+  'MOU_Churchill_Falls_Dec_12_2024_clean_text.txt',
+  'LOCKE analysis of MOU CF.txt',
+  'Reassessing-the-Churchill-Falls-MOU.txt',
+  
+  // Doug May's Video Analysis (CRITICAL - needed for text mode)
+  'Doug-video-series-video1.txt',
+  'Doug-video-series-video2A.txt',
+  'Doug-video-series-video2B.txt',
+  'Doug-video-series-video3A.txt',
+  'Doug-video-series-video3B.txt',
+  'Doug-video-series-video4.txt',
+  
+  // 2024 Financial Statements
+  'Churchill-falls-consolidated-financial-statements-2024.txt',
+  'Lower-Churchill-Project-Combined-Financial-Statements-2024.txt',
+  
+  // Hydro-Quebec Exports
+  'HYDRO-QUEBECS-EXPORTS.txt',
+  
+  // 2023 Financial Statements
+  'Churchill-Falls-2023-financial-statement.txt',
+  
   // Analysis and Assessment Documents
   'Analyis-James-P-Feehan.txt',
   'Assessment-of-Proposed-Prices.txt',
@@ -112,9 +135,9 @@ async function initializeCache() {
     }
   }
   
-  console.error(`\n✓ Loaded ${loadedCount}/${DOCUMENTS.length} supplementary documents`);
+  console.error(`\n✓ Loaded ${loadedCount}/${DOCUMENTS.length} documents (complete set)`);
   console.error(`✓ Total size: ${(totalSize / 1024 / 1024).toFixed(2)} MB`);
-  console.error(`✓ Core documents (13) are in Express server context\n`);
+  console.error(`✓ All sources available for comprehensive text mode analysis\n`);
   
   if (loadedCount === 0) {
     console.error('❌ ERROR: No documents loaded! Check that /content/ directory exists with .txt files');
