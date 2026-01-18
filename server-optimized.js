@@ -358,7 +358,27 @@ GOOD EXAMPLE (DO THIS):
 
 Remember: You're TALKING to someone. Speak in natural flowing sentences. Stop after 2-3 sentences.`;
 
-const TEXT_MODE_PROMPT = `You are an expert AI assistant specializing in the Churchill Falls power project.
+const TEXT_MODE_FAST_PROMPT = `You are an expert AI assistant specializing in the Churchill Falls power project.
+
+Provide CONCISE, factual answers (2-3 paragraphs maximum, 150-250 words).
+
+CRITICAL INSTRUCTIONS:
+- Write in direct, factual third person voice
+- Start with the direct answer immediately
+- NEVER use: "Based on...", "According to...", "The analysis shows..."
+- Just state the facts directly
+- Include key dates, figures, and names
+- Keep it brief but informative
+
+Example of what NOT to do:
+"Based on the comprehensive analysis of available documents, the Churchill Falls agreement is controversial..."
+
+Example of what TO do:
+"The Churchill Falls agreement is controversial for several interconnected reasons..."
+
+Focus on the most essential information. If the user wants more detail, they can use Deep mode.`;
+
+const TEXT_MODE_DEEP_PROMPT = `You are an expert AI assistant specializing in the Churchill Falls power project.
 
 Provide comprehensive, well-researched answers using all available documents.
 
@@ -370,6 +390,7 @@ CRITICAL INSTRUCTIONS:
 - Include specific details, dates, and figures
 - Present multiple perspectives (Doug May, Wade Locke, other economists)
 - Structure responses with clear sections
+- Provide thorough analysis with supporting evidence
 
 Example of what NOT to do:
 "Based on the comprehensive analysis of available documents, the Churchill Falls agreement is controversial..."
@@ -387,22 +408,35 @@ app.post('/api/chat', async (req, res) => {
     const startTime = Date.now();
     
     try {
-        const { message, conversationHistory = [], isVoiceMode = false } = req.body;
+        const { 
+            message, 
+            conversationHistory = [], 
+            isVoiceMode = false,
+            textMode = 'deep' // 'fast' or 'deep' for text responses
+        } = req.body;
         
         if (!message?.trim()) {
             return res.status(400).json({ error: 'Message is required' });
         }
         
+        // Determine mode label for logging
+        let modeLabel = '📝 TEXT';
+        if (isVoiceMode) {
+            modeLabel = '🎤 VOICE (Doug)';
+        } else {
+            modeLabel = textMode === 'fast' ? '⚡ FAST TEXT' : '🔍 DEEP TEXT';
+        }
+        
         console.log(`\n${'='.repeat(60)}`);
-        console.log(`${isVoiceMode ? '🎤 VOICE (Doug)' : '📝 TEXT (Comprehensive)'}: "${message.substring(0, 50)}..."`);
+        console.log(`${modeLabel}: "${message.substring(0, 50)}..."`);
         console.log(`${'='.repeat(60)}`);
         
         // ============================================================================
         // CHECK CACHE FIRST (Optimization 2)
         // ============================================================================
         
-        const mode = isVoiceMode ? 'voice' : 'text';
-        const cachedResponse = getCachedResponse(message, mode);
+        const cacheMode = isVoiceMode ? 'voice' : `text-${textMode}`;
+        const cachedResponse = getCachedResponse(message, cacheMode);
         
         if (cachedResponse) {
             const responseTime = ((Date.now() - startTime) / 1000).toFixed(1);
@@ -479,20 +513,21 @@ app.post('/api/chat', async (req, res) => {
         }
         
         // ====================================================================
-        // TEXT MODE - Comprehensive Research
+        // TEXT MODE - Fast or Deep Research
         // ====================================================================
         
         else {
             if (!mcpClient) {
                 return res.status(503).json({
-                    error: 'Deep research mode unavailable. Please try voice mode.',
-                    text: 'The comprehensive research system is currently unavailable. Please use the conversational voice mode, or try again later.',
+                    error: 'Research mode unavailable. Please try voice mode.',
+                    text: 'The research system is currently unavailable. Please use the conversational voice mode, or try again later.',
                     audio: null,
                     voiceAvailable: false
                 });
             }
 
-            console.log('📚 Using MCP for comprehensive research...');
+            const isFastMode = textMode === 'fast';
+            console.log(`📚 Using MCP for ${isFastMode ? 'quick' : 'comprehensive'} research...`);
 
             const tools = await mcpClient.listTools();
             const toolsList = tools.tools.map(tool => ({
@@ -501,10 +536,14 @@ app.post('/api/chat', async (req, res) => {
                 input_schema: tool.inputSchema
             }));
 
+            // Choose prompt and token limit based on mode
+            const systemPrompt = isFastMode ? TEXT_MODE_FAST_PROMPT : TEXT_MODE_DEEP_PROMPT;
+            const maxTokens = isFastMode ? 1024 : 4096; // Fast: ~250 words, Deep: ~1000 words
+
             let response = await anthropic.messages.create({
                 model: 'claude-sonnet-4-20250514',
-                max_tokens: 4096,
-                system: TEXT_MODE_PROMPT,
+                max_tokens: maxTokens,
+                system: systemPrompt,
                 messages: messages,
                 tools: toolsList
             });
@@ -634,7 +673,7 @@ app.post('/api/chat', async (req, res) => {
             audio: audioData,
             voiceAvailable: !!(ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID),
             responseTime: parseFloat(responseTime),
-            mode: isVoiceMode ? 'voice' : 'text',
+            mode: isVoiceMode ? 'voice' : textMode, // 'voice', 'fast', or 'deep'
             cached: false
         };
         
@@ -648,7 +687,7 @@ app.post('/api/chat', async (req, res) => {
         // CACHE THE RESPONSE (Optimization 2)
         // ============================================================================
         
-        cacheResponse(message, mode, responseData);
+        cacheResponse(message, cacheMode, responseData);
         
         res.json(responseData);
 
