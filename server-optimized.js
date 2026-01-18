@@ -23,6 +23,61 @@ app.use(express.json({ limit: '50mb' }));
 app.use(express.static(__dirname));
 
 // ============================================================================
+// RESPONSE CACHE SYSTEM (Optimization 2)
+// ============================================================================
+
+const responseCache = new Map();
+const CACHE_DURATION = 3600000; // 1 hour in milliseconds
+
+function getCacheKey(message, mode) {
+    // Create a simple hash of the message + mode
+    const normalized = message.toLowerCase().trim();
+    return `${mode}:${normalized}`;
+}
+
+function getCachedResponse(message, mode) {
+    const key = getCacheKey(message, mode);
+    const cached = responseCache.get(key);
+    
+    if (!cached) return null;
+    
+    // Check if cache is still valid (within CACHE_DURATION)
+    const age = Date.now() - cached.timestamp;
+    if (age > CACHE_DURATION) {
+        responseCache.delete(key);
+        return null;
+    }
+    
+    console.log(`💾 Cache HIT! (age: ${Math.round(age / 1000)}s)`);
+    return cached.response;
+}
+
+function cacheResponse(message, mode, response) {
+    const key = getCacheKey(message, mode);
+    responseCache.set(key, {
+        response,
+        timestamp: Date.now(),
+        mode
+    });
+    console.log(`💾 Cached response (total cached: ${responseCache.size})`);
+}
+
+// Periodically clean expired cache entries
+setInterval(() => {
+    const now = Date.now();
+    let cleaned = 0;
+    for (const [key, value] of responseCache.entries()) {
+        if (now - value.timestamp > CACHE_DURATION) {
+            responseCache.delete(key);
+            cleaned++;
+        }
+    }
+    if (cleaned > 0) {
+        console.log(`🧹 Cleaned ${cleaned} expired cache entries`);
+    }
+}, 600000); // Clean every 10 minutes
+
+// ============================================================================
 // API SETUP
 // ============================================================================
 
@@ -342,6 +397,33 @@ app.post('/api/chat', async (req, res) => {
         console.log(`${isVoiceMode ? '🎤 VOICE (Doug)' : '📝 TEXT (Comprehensive)'}: "${message.substring(0, 50)}..."`);
         console.log(`${'='.repeat(60)}`);
         
+        // ============================================================================
+        // CHECK CACHE FIRST (Optimization 2)
+        // ============================================================================
+        
+        const mode = isVoiceMode ? 'voice' : 'text';
+        const cachedResponse = getCachedResponse(message, mode);
+        
+        if (cachedResponse) {
+            const responseTime = ((Date.now() - startTime) / 1000).toFixed(1);
+            console.log(`✅ Returned cached response: ${cachedResponse.text?.length || 0} chars`);
+            console.log(`⏱️ Cache response time: ${responseTime}s (INSTANT!)`);
+            console.log(`${'='.repeat(60)}`);
+            
+            // Return cached response with updated timestamp
+            return res.json({
+                ...cachedResponse,
+                cached: true,
+                responseTime: parseFloat(responseTime)
+            });
+        }
+        
+        console.log(`🔍 No cache - generating new response...`);
+        
+        // ============================================================================
+        // GENERATE NEW RESPONSE
+        // ============================================================================
+        
         const messages = [
             ...conversationHistory,
             { role: 'user', content: message }
@@ -552,7 +634,8 @@ app.post('/api/chat', async (req, res) => {
             audio: audioData,
             voiceAvailable: !!(ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID),
             responseTime: parseFloat(responseTime),
-            mode: isVoiceMode ? 'voice' : 'text'
+            mode: isVoiceMode ? 'voice' : 'text',
+            cached: false
         };
         
         // Add sources for text mode (if documents were accessed via MCP)
@@ -560,6 +643,12 @@ app.post('/api/chat', async (req, res) => {
             responseData.sources = Array.from(documentsAccessed);
             console.log(`📚 Sources used: ${documentsAccessed.size} documents`);
         }
+        
+        // ============================================================================
+        // CACHE THE RESPONSE (Optimization 2)
+        // ============================================================================
+        
+        cacheResponse(message, mode, responseData);
         
         res.json(responseData);
 
@@ -620,6 +709,10 @@ app.get('/api/health', (req, res) => {
         },
         textMode: {
             mcpConnected: !!mcpClient
+        },
+        cache: {
+            entries: responseCache.size,
+            maxAge: `${CACHE_DURATION / 60000} minutes`
         },
         timestamp: new Date().toISOString()
     });
