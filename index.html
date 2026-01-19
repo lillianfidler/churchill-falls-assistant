@@ -220,7 +220,13 @@
             color: var(--aqua);
             font-size: 18px;
             font-weight: 600;
-            margin: 20px 0 12px 0;
+            margin: 16px 0 8px 0;
+        }
+
+        /* First heading shouldn't have top margin */
+        .message-content h2:first-child,
+        .message-content h3:first-child {
+            margin-top: 0;
         }
 
         .message-content h3 {
