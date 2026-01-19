@@ -253,9 +253,15 @@ function stripMarkdownAndFormat(text) {
         // Normalize whitespace
         .replace(/\s+/g, ' ')
         
-        // Remove any remaining isolated numbers or fragments
-        .replace(/\s+\d+\s+cents?\s+/gi, ' ')
-        .replace(/\s+\d+\s+billion\s+/gi, ' ')
+        // Remove isolated number+unit fragments (MORE AGGRESSIVE)
+        // These patterns catch standalone fragments like "63 cents per kilowatt hour"
+        .replace(/\.\s+\d+\.?\d*\s+(cents?|dollars?|billion|million|percent|%)\s+per\s+\w+\s+(hour|year|month|day)\s*\./gi, '.')
+        .replace(/\.\s+\d+\.?\d*\s+(cents?|dollars?)\s+per\s+\w+\s+\w+\s*\./gi, '.')
+        .replace(/\.\s+\d+\.?\d*\s+(billion|million)\s*\./gi, '.')
+        .replace(/\.\s+\d+\.?\d*\s+(cents?)\s*\./gi, '.')
+        
+        // Clean up double periods
+        .replace(/\.{2,}/g, '.')
         
         .trim();
 }
@@ -368,12 +374,17 @@ const DOUG_VOICE_PROMPT = `You are Dr. Doug May having a casual conversation. Yo
 
 Write 2-3 complete sentences in plain English. No structure, no organization, no headers.
 
+CRITICAL: Every sentence must have a subject AND a verb. Never write fragments like:
+- "63 cents per kilowatt hour." (WRONG - fragment)
+- "17 billion in debt." (WRONG - fragment)
+- "The price is 63 cents per kilowatt hour." (RIGHT - complete)
+
 Just answer the question naturally like you're talking to a friend.
 
-WRONG: "What It Does: The MOU replaces... Key Changes: Unlike 1969... 17-18 billion"
-RIGHT: "The MOU is the December 2024 agreement that replaces the 1969 contract with much better terms - we now get 9 cents per kilowatt hour instead of 0.2 cents, plus we have 50-50 revenue sharing on new projects."
+WRONG: "He argues the MOU undervalues electricity. 63 cents per kilowatt hour. He says we're leaving value..."
+RIGHT: "He argues the MOU undervalues electricity at only 63 cents per kilowatt hour when it should be worth much more, and says we're leaving massive value on the table."
 
-Write in plain sentences. No formatting.`;
+Write in complete sentences only. No fragments.`;
 
 const TEXT_MODE_FAST_PROMPT = `You are an expert AI assistant specializing in the Churchill Falls power project.
 
