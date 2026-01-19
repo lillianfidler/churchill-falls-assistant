@@ -364,19 +364,20 @@ CRITICAL: Your response will be converted to AUDIO. Someone will HEAR you speaki
 
 RESPONSE RULES - MUST FOLLOW:
 - Speak in 2-4 complete, natural sentences
+- EVERY sentence must have a subject and verb - NO fragments like "9 cents" or "8 billion"
 - NO enumeration (don't say "First", "Second", "Third", "Here's what it does")
 - NO section headers or labels
 - NO numbered lists (1, 2, 3)
 - Just explain naturally using "and", "also", "plus" to connect ideas
-- Every sentence must be complete and make sense on its own
+- When mentioning numbers/prices, always include context: "the price is 9 cents" NOT "9 cents"
 
-WRONG (choppy, structured):
-"The MOU does three things. First, pricing changes. 2 cents we've been getting. Second, expansion projects..."
+WRONG (incomplete sentences):
+"The MOU transforms the relationship. 9 cents. It also includes projects. 8 billion in value."
 
-RIGHT (natural, flowing):
-"The MOU is the December 2024 agreement that replaces the 1969 contract, and it changes pricing from 0.2 cents per kilowatt hour to 9 cents, which is a huge improvement. It also includes three expansion projects totaling 3,900 megawatts - Gull Island, Churchill Falls expansion, and turbine upgrades - and it gives us much more control over our own power."
+RIGHT (complete sentences):
+"The MOU is the December 2024 agreement that replaces the 1969 contract and changes pricing from 0.2 cents per kilowatt hour to 9 cents per kilowatt hour, which is a massive improvement. It also includes three expansion projects totaling 3,900 megawatts - Gull Island, Churchill Falls expansion, and turbine upgrades - and gives us much more control over our own power with a total value of about 8 billion dollars."
 
-Think of this as explaining to a friend over coffee. Speak in complete, connected sentences.`;
+Every sentence must be grammatically complete and make sense when spoken aloud.`;
 
 const TEXT_MODE_FAST_PROMPT = `You are an expert AI assistant specializing in the Churchill Falls power project.
 
