@@ -202,7 +202,7 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            color: #a8a8a8;
+            color: var(--aqua);
             margin-bottom: 8px;
         }
 
@@ -212,6 +212,24 @@
             color: #e5e5e5;
             white-space: pre-wrap;
             word-wrap: break-word;
+        }
+
+        /* Style h2/h3 headings that appear in responses */
+        .message-content h2,
+        .message-content h3 {
+            color: var(--aqua);
+            font-size: 18px;
+            font-weight: 600;
+            margin: 20px 0 12px 0;
+        }
+
+        .message-content h3 {
+            font-size: 16px;
+        }
+
+        /* Style markdown-style headers */
+        .message-content strong:first-child {
+            color: var(--aqua);
         }
 
         .message.user .message-content {
@@ -711,7 +729,20 @@
             
             const contentDiv = document.createElement('div');
             contentDiv.className = 'message-content';
-            contentDiv.textContent = text;
+            
+            // Parse markdown headers and convert to HTML for proper styling
+            if (role === 'assistant') {
+                let formattedText = text
+                    // Convert ## headers to h2
+                    .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+                    // Convert ### headers to h3
+                    .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+                    // Preserve line breaks
+                    .replace(/\n/g, '<br>');
+                contentDiv.innerHTML = formattedText;
+            } else {
+                contentDiv.textContent = text;
+            }
             messageDiv.appendChild(contentDiv);
             
             if (role === 'assistant') {

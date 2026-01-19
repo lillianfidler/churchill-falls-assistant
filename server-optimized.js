@@ -211,9 +211,14 @@ initializeMCP();
 
 function stripMarkdownAndFormat(text) {
     return text
+        // Fix currency ranges FIRST (before other processing)
+        .replace(/\$(\d+)-(\d+)\s*billion/gi, '$1 to $2 billion dollars')
+        .replace(/\$(\d+)-(\d+)\s*million/gi, '$1 to $2 million dollars')
+        
         // Remove headers (with or without # symbols)
         .replace(/^#{1,6}\s+/gm, '')
-        .replace(/^[A-Z][A-Za-z\s]+:$/gm, '') // Remove "Title:" style headers
+        .replace(/^[A-Z][A-Za-z\s&]+:$/gm, '') // Remove "Title:" style headers including "Key Changes:"
+        .replace(/^[A-Z][A-Za-z\s&]+:\s/gm, '') // Remove inline headers like "What It Does: "
         
         // Remove bullet points and list items
         .replace(/^\s*[-*•]\s+/gm, '')
@@ -249,7 +254,8 @@ function stripMarkdownAndFormat(text) {
         .replace(/\s+/g, ' ')
         
         // Remove any remaining isolated numbers or fragments
-        .replace(/\s+\d+\s+cents?\s+/gi, ' low rates ')
+        .replace(/\s+\d+\s+cents?\s+/gi, ' ')
+        .replace(/\s+\d+\s+billion\s+/gi, ' ')
         
         .trim();
 }
@@ -358,26 +364,16 @@ async function generateVoice(text) {
 // SYSTEM PROMPTS
 // ============================================================================
 
-const DOUG_VOICE_PROMPT = `You are Dr. Doug May speaking conversationally to someone face-to-face.
+const DOUG_VOICE_PROMPT = `You are Dr. Doug May having a casual conversation. Your response will be read aloud as audio.
 
-CRITICAL: Your response will be converted to AUDIO. Someone will HEAR you speaking.
+Write 2-3 complete sentences in plain English. No structure, no organization, no headers.
 
-RESPONSE RULES - MUST FOLLOW:
-- Speak in 2-4 complete, natural sentences
-- EVERY sentence must have a subject and verb - NO fragments like "9 cents" or "8 billion"
-- NO enumeration (don't say "First", "Second", "Third", "Here's what it does")
-- NO section headers or labels
-- NO numbered lists (1, 2, 3)
-- Just explain naturally using "and", "also", "plus" to connect ideas
-- When mentioning numbers/prices, always include context: "the price is 9 cents" NOT "9 cents"
+Just answer the question naturally like you're talking to a friend.
 
-WRONG (incomplete sentences):
-"The MOU transforms the relationship. 9 cents. It also includes projects. 8 billion in value."
+WRONG: "What It Does: The MOU replaces... Key Changes: Unlike 1969... 17-18 billion"
+RIGHT: "The MOU is the December 2024 agreement that replaces the 1969 contract with much better terms - we now get 9 cents per kilowatt hour instead of 0.2 cents, plus we have 50-50 revenue sharing on new projects."
 
-RIGHT (complete sentences):
-"The MOU is the December 2024 agreement that replaces the 1969 contract and changes pricing from 0.2 cents per kilowatt hour to 9 cents per kilowatt hour, which is a massive improvement. It also includes three expansion projects totaling 3,900 megawatts - Gull Island, Churchill Falls expansion, and turbine upgrades - and gives us much more control over our own power with a total value of about 8 billion dollars."
-
-Every sentence must be grammatically complete and make sense when spoken aloud.`;
+Write in plain sentences. No formatting.`;
 
 const TEXT_MODE_FAST_PROMPT = `You are an expert AI assistant specializing in the Churchill Falls power project.
 
