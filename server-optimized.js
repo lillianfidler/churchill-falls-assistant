@@ -103,11 +103,23 @@ console.log('='.repeat(60));
 // ============================================================================
 
 const DOUG_DOCUMENTS = [
+    // Core MOU and Analysis (summaries)
     'MOU_Churchill_Falls_Dec_12_2024_summary.txt',
     'Doug-video-series-video1-summary.txt',
     'Doug-video-series-video2A-summary.txt',
     'Doug-video-series-video2B-summary.txt',
-    'LOCKE analysis of MOU CF-summary.txt'
+    'LOCKE analysis of MOU CF-summary.txt',
+    
+    // Doug's Additional Documents (full documents)
+    'Reassessing-the-Churchill-Falls-MOU.txt',
+    'HYDRO-QUEBECS-EXPORTS.txt',
+    'HYDRO-QUEBECS-IMPORTS.txt',
+    'quebecs-changing-import-picture.txt',
+    'quebecs-electricity-supply-problem.txt',
+    'Assessment-of-Proposed-Prices.txt',
+    'Proposed-Prices-for-Existing-Power.txt',
+    'The-Assessment-of-the-Proposed-Proj.txt',
+    'Understanding-Some-Financial-Concep.txt'
 ];
 
 const dougDocuments = new Map();
@@ -495,7 +507,7 @@ app.post('/api/chat', async (req, res) => {
         // ====================================================================
         
         if (isVoiceMode) {
-            console.log('📚 Using Doug\'s analysis (8 documents)...');
+            console.log('📚 Using Doug\'s analysis (17 documents)...');
             
             // Build context from Doug's documents
             let documentContext = '# Dr. Doug May\'s Analysis and Source Materials\n\n';

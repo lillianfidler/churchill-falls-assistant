@@ -11,6 +11,11 @@
             box-sizing: border-box;
         }
 
+        :root {
+            --aqua: #5eead4;
+            --aqua-dim: #2dd4bf;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Segoe UI Emoji', sans-serif;
             background: #1a1a1a;
@@ -42,7 +47,7 @@
         .logo {
             font-size: 16px;
             font-weight: 600;
-            color: #fff;
+            color: var(--aqua);
             letter-spacing: -0.2px;
         }
 
@@ -60,7 +65,7 @@
         }
 
         .nav-links a:hover {
-            color: #fff;
+            color: var(--aqua);
         }
 
         /* ===== MAIN CONTAINER ===== */
@@ -119,7 +124,7 @@
 
         .mode-card {
             background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--aqua);
             border-radius: 12px;
             padding: 24px;
             transition: all 0.2s;
@@ -127,8 +132,8 @@
         }
 
         .mode-card:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.2);
+            background: rgba(94, 234, 212, 0.08);
+            border-color: var(--aqua);
         }
 
         .mode-card-icon {
@@ -139,7 +144,7 @@
         .mode-card-title {
             font-size: 16px;
             font-weight: 600;
-            color: #fff;
+            color: var(--aqua);
             margin-bottom: 8px;
         }
 
@@ -147,6 +152,28 @@
             font-size: 14px;
             color: #a8a8a8;
             line-height: 1.5;
+        }
+
+        /* Info box */
+        .info-box {
+            max-width: 800px;
+            margin: 20px auto 0 auto;
+            padding: 16px 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+        }
+
+        .info-box p {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #a8a8a8;
+            margin: 0;
+        }
+
+        .info-box strong {
+            color: #e5e5e5;
+            font-weight: 500;
         }
 
         /* ===== CONVERSATION AREA ===== */
@@ -339,18 +366,18 @@
         }
 
         .mic-button.active {
-            background: rgba(16, 185, 129, 0.2);
-            border-color: rgba(16, 185, 129, 0.5);
+            background: rgba(94, 234, 212, 0.15);
+            border-color: var(--aqua);
         }
 
         .mic-button svg {
             width: 20px;
             height: 20px;
-            fill: #a8a8a8;
+            fill: var(--aqua);
         }
 
         .mic-button.active svg {
-            fill: #10b981;
+            fill: var(--aqua);
         }
 
         .send-button {
@@ -367,7 +394,8 @@
         }
 
         .send-button:hover {
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(94, 234, 212, 0.2);
+            border-color: var(--aqua);
         }
 
         .send-button svg {
@@ -398,8 +426,8 @@
         }
 
         .mode-toggle button.active {
-            background: rgba(255, 255, 255, 0.1);
-            color: #fff;
+            background: rgba(94, 234, 212, 0.15);
+            color: var(--aqua);
         }
 
         .mode-toggle button:hover:not(.active) {
@@ -497,6 +525,18 @@
                     <div class="mode-card-title">Deep</div>
                     <div class="mode-card-desc">Receive comprehensive analysis with multiple sources and detailed research.</div>
                 </div>
+            </div>
+            
+            <!-- Info Box -->
+            <div class="info-box">
+                <p>
+                    <strong>All responses are based exclusively on verified source documents.</strong> 
+                    Every answer draws from official documents including the December 12, 2024 MOU, 
+                    Dr. Doug May's comprehensive analysis, expert economic assessments by Wade Locke 
+                    and James Feehan, Churchill Falls Corporation financial statements, and historical 
+                    records dating to 1949. This assistant does not use internet searches or external 
+                    sources—only curated materials from the <a href="sources.html" style="color: var(--aqua); text-decoration: underline;">Sources page</a>.
+                </p>
             </div>
         </div>
 

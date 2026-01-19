@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videos - Churchill Falls Information Assistant</title>
+    <title>Videos - Churchill Falls Assistant</title>
     <style>
         * {
             margin: 0;
@@ -11,111 +11,137 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            min-height: 100vh;
-            padding: 20px;
+        :root {
+            --aqua: #5eead4;
+            --aqua-dim: #2dd4bf;
         }
 
-        .container {
-            max-width: 900px;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Segoe UI Emoji', sans-serif;
+            background: #1a1a1a;
+            color: #e5e5e5;
+            min-height: 100vh;
+        }
+
+        /* HEADER */
+        .header {
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 12px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
             margin: 0 auto;
         }
 
-        .header {
-            background: white;
-            padding: 30px;
-            border-radius: 12px 12px 0 0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .header h1 {
-            color: #1e3c72;
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-
-        .header p {
-            color: #64748b;
+        .logo {
             font-size: 16px;
+            font-weight: 600;
+            color: var(--aqua);
+            letter-spacing: -0.2px;
+            text-decoration: none;
         }
 
         .nav-links {
             display: flex;
-            gap: 12px;
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid #e2e8f0;
-            flex-wrap: wrap;
+            gap: 24px;
         }
 
         .nav-links a {
-            color: #1e3c72;
+            color: #a8a8a8;
             text-decoration: none;
-            font-size: 15px;
-            font-weight: 600;
-            padding: 10px 18px;
-            background: #f1f5f9;
-            border-radius: 8px;
-            transition: all 0.2s;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
         }
 
-        .nav-links a:hover {
-            background: #e0e7ff;
-            transform: translateY(-1px);
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--aqua);
+        }
+
+        /* MAIN CONTENT */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 400;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #fff 0%, #a8a8a8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #a8a8a8;
+            margin-bottom: 48px;
+            line-height: 1.6;
         }
 
         .content-section {
-            background: white;
-            padding: 40px 30px;
-            border-top: 1px solid #e2e8f0;
-        }
-
-        .content-section:last-child {
-            border-radius: 0 0 12px 12px;
+            margin-bottom: 60px;
         }
 
         .content-section h2 {
-            color: #1e3c72;
             font-size: 24px;
+            font-weight: 600;
+            color: #fff;
             margin-bottom: 20px;
-        }
-
-        .content-section h3 {
-            color: #1e3c72;
-            font-size: 18px;
-            margin-top: 30px;
-            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .content-section p {
-            color: #475569;
+            font-size: 15px;
             line-height: 1.8;
-            margin-bottom: 15px;
+            color: #e5e5e5;
+            margin-bottom: 16px;
         }
 
         .video-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 24px;
             margin-top: 30px;
         }
 
         .video-card {
-            background: #f8fafc;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--aqua);
             border-radius: 12px;
             padding: 20px;
-            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+
+        .video-card:hover {
+            background: rgba(94, 234, 212, 0.08);
+            transform: translateY(-2px);
         }
 
         .video-card h3 {
-            margin-top: 0;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--aqua);
             margin-bottom: 10px;
         }
 
         .video-card p {
             font-size: 14px;
+            color: #a8a8a8;
             margin-bottom: 15px;
         }
 
@@ -125,6 +151,7 @@
             height: 0;
             overflow: hidden;
             border-radius: 8px;
+            background: #000;
         }
 
         .video-wrapper iframe {
@@ -136,52 +163,69 @@
         }
 
         .highlight-box {
-            background: #eff6ff;
-            border-left: 4px solid #3b82f6;
+            background: rgba(94, 234, 212, 0.08);
+            border-left: 4px solid var(--aqua);
             padding: 20px;
-            margin: 20px 0;
+            margin: 30px 0;
             border-radius: 4px;
         }
 
+        .highlight-box p {
+            margin: 0;
+        }
+
+        .highlight-box strong {
+            color: var(--aqua);
+        }
+
+        .return-link {
+            display: inline-block;
+            color: var(--aqua);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        .return-link:hover {
+            color: var(--aqua-dim);
+        }
+
         @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-
-            .header {
-                padding: 20px;
-            }
-
-            .header h1 {
-                font-size: 24px;
-            }
-
-            .content-section {
-                padding: 25px 20px;
-            }
-
-            .nav-links {
-                flex-direction: column;
-                gap: 10px;
+            h1 {
+                font-size: 28px;
             }
 
             .video-grid {
                 grid-template-columns: 1fr;
             }
+
+            .nav-links {
+                gap: 16px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Video Analysis Series</h1>
-            <p>Dr. Doug May's comprehensive economic analysis of the Churchill Falls MOU</p>
+
+    <!-- HEADER -->
+    <div class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">Churchill Falls Assistant</a>
             <div class="nav-links">
-                <a href="index.html">← Churchill Falls Assistant</a>
-                <a href="about.html">About & Sources</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="sources.html">Sources</a>
+                <a href="history.html">History</a>
+                <a href="videos.html" class="active">Videos</a>
             </div>
-        </div>
+        </nav>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <h1>Video Analysis Series</h1>
+        <p class="subtitle">Dr. Doug May's comprehensive economic analysis of the Churchill Falls MOU</p>
 
         <div class="content-section">
             <h2>About Dr. Doug May</h2>
@@ -190,7 +234,7 @@
             <p>His video series on the December 2024 Churchill Falls MOU represents the most comprehensive independent economic assessment of the proposed agreement. Dr. May's methodology emphasizes transparency, accessibility, and balanced analysis while acknowledging the limitations of publicly available information.</p>
 
             <div class="highlight-box">
-                <p><strong>Note:</strong> All of Dr. May's video analyses and written documents are integrated into the Churchill Falls Information Assistant's knowledge base. You can ask questions about any aspect of his analysis through the chat interface.</p>
+                <p><strong>Note:</strong> All of Dr. May's video analyses and written documents are integrated into the Churchill Falls Assistant's knowledge base. You can ask questions about any aspect of his analysis through the chat interface.</p>
             </div>
         </div>
 
@@ -250,9 +294,10 @@
 
         <div class="content-section">
             <h2>Ask Questions About the Videos</h2>
-            <p>All content from Dr. May's video series is available through the Churchill Falls Information Assistant. You can ask specific questions about any topic covered in these videos, request comparisons between different analyses, or explore the economic implications discussed.</p>
-            <p><a href="index.html" style="color: #3b82f6; text-decoration: none; font-weight: 500;">← Return to Assistant to ask questions</a></p>
+            <p>All content from Dr. May's video series is available through the Churchill Falls Assistant. You can ask specific questions about any topic covered in these videos, request comparisons between different analyses, or explore the economic implications discussed.</p>
+            <p><a href="index.html" class="return-link">← Return to Assistant to ask questions</a></p>
         </div>
     </div>
+
 </body>
 </html>
