@@ -242,7 +242,13 @@ function stripMarkdownAndFormat(text) {
         .trim();
 }
 
-function truncateAtSentence(text, maxWords = 100) {
+function truncateAtSentence(text, maxWords = 150) {
+    // Clean up text first
+    text = text.trim();
+    
+    // If empty, return empty
+    if (!text) return '';
+    
     const words = text.split(/\s+/);
     
     // If already short enough, return as-is
@@ -250,19 +256,22 @@ function truncateAtSentence(text, maxWords = 100) {
         return text;
     }
     
-    // Split into sentences (better regex to handle abbreviations)
-    const sentences = text.match(/[^.!?]+[.!?]+(?:\s|$)/g) || [text];
+    // Split into sentences - improved regex to handle abbreviations and decimals
+    const sentences = text.match(/[^.!?]+[.!?]+(?:\s+|$)/g) || [text];
     
     let result = '';
     let wordCount = 0;
     let sentenceCount = 0;
     
     for (const sentence of sentences) {
-        const sentenceWords = sentence.trim().split(/\s+/).length;
+        const trimmedSentence = sentence.trim();
+        if (!trimmedSentence) continue;
         
-        // Always include at least 2 complete sentences
+        const sentenceWords = trimmedSentence.split(/\s+/).length;
+        
+        // Always include at least 2 complete sentences for coherent responses
         if (sentenceCount < 2) {
-            result += sentence;
+            result += (result ? ' ' : '') + trimmedSentence;
             wordCount += sentenceWords;
             sentenceCount++;
             continue;
@@ -270,19 +279,22 @@ function truncateAtSentence(text, maxWords = 100) {
         
         // After 2 sentences, only add more if under word limit
         if (wordCount + sentenceWords <= maxWords) {
-            result += sentence;
+            result += ' ' + trimmedSentence;
             wordCount += sentenceWords;
             sentenceCount++;
         } else {
+            // Stop here - we've reached the limit
             break;
         }
     }
     
     // Ensure we have at least one complete sentence
-    if (sentenceCount === 0 && sentences.length > 0) {
-        result = sentences[0];
+    if (!result && sentences.length > 0) {
+        result = sentences[0].trim();
     }
     
+    return result.trim();
+}
     return result.trim();
 }
 
@@ -498,7 +510,7 @@ app.post('/api/chat', async (req, res) => {
             
             const response = await anthropic.messages.create({
                 model: 'claude-sonnet-4-20250514',
-                max_tokens: 500,
+                max_tokens: 800, // Increased from 500 to allow longer responses
                 system: systemPrompt,
                 messages: messages
             });
@@ -512,7 +524,7 @@ app.post('/api/chat', async (req, res) => {
             
             // Post-process for natural voice
             responseText = stripMarkdownAndFormat(responseText);
-            responseText = truncateAtSentence(responseText, 100);
+            responseText = truncateAtSentence(responseText, 150); // Increased from 100 to 150 words
             
             const wordCount = responseText.split(/\s+/).length;
             console.log(`✅ Clean response: ${responseText.length} chars, ${wordCount} words`);
