@@ -295,8 +295,6 @@ function truncateAtSentence(text, maxWords = 150) {
     
     return result.trim();
 }
-    return result.trim();
-}
 
 // ============================================================================
 // VOICE GENERATION
