@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sources - Churchill Falls Assistant</title>
     <style>
-        :root {
-            --aqua: #5eead4;
-            --aqua-dim: #2dd4bf;
-        }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        :root {
+            --aqua: #5eead4;
+            --aqua-dim: #2dd4bf;
         }
 
         body {
@@ -70,7 +70,7 @@
 
         /* MAIN CONTENT */
         .container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 60px 20px;
         }
@@ -92,80 +92,95 @@
             line-height: 1.6;
         }
 
-        .source-category {
-            margin-bottom: 48px;
+        .content-section {
+            margin-bottom: 60px;
         }
 
-        .category-title {
+        .content-section h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(94, 234, 212, 0.3);
+        }
+
+        .content-section h3 {
             font-size: 20px;
             font-weight: 600;
-            color: #fff;
-            margin-bottom: 16px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--aqua);
+            margin-top: 30px;
+            margin-bottom: 15px;
         }
 
-        .source-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .source-item {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            padding: 16px;
-            transition: all 0.2s;
-        }
-
-        .source-item:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .source-title {
+        .content-section p {
             font-size: 15px;
-            font-weight: 600;
-            color: #fff;
-            margin-bottom: 4px;
-        }
-
-        .source-desc {
-            font-size: 13px;
-            color: #a8a8a8;
-            line-height: 1.5;
-        }
-
-        .video-section {
-            background: rgba(59, 130, 246, 0.1);
-            border: 1px solid rgba(59, 130, 246, 0.2);
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 32px;
-        }
-
-        .video-section h3 {
-            font-size: 18px;
-            font-weight: 600;
-            color: #fff;
+            line-height: 1.8;
+            color: #e5e5e5;
             margin-bottom: 16px;
         }
 
-        .video-section p {
-            font-size: 14px;
-            color: #a8a8a8;
-            line-height: 1.6;
-            margin-bottom: 16px;
+        .content-section ul {
+            color: #e5e5e5;
+            line-height: 1.8;
+            margin-left: 20px;
+            margin-bottom: 15px;
         }
 
-        .video-section a {
-            color: #60a5fa;
+        .content-section li {
+            margin-bottom: 12px;
+        }
+
+        .highlight-box {
+            background: rgba(94, 234, 212, 0.08);
+            border-left: 4px solid var(--aqua);
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box p {
+            margin: 0;
+        }
+
+        .highlight-box strong {
+            color: var(--aqua);
+        }
+
+        .highlight-box a {
+            color: var(--aqua);
             text-decoration: none;
+            font-weight: 500;
         }
 
-        .video-section a:hover {
-            color: #93c5fd;
+        .highlight-box a:hover {
+            color: var(--aqua-dim);
+        }
+
+        .document-list {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .document-list li {
+            margin-bottom: 12px;
+        }
+
+        .document-list strong {
+            color: var(--aqua);
+        }
+
+        .document-list p {
+            font-weight: 600;
+            margin-bottom: 12px;
+            margin-top: 20px;
+        }
+
+        .document-list p:first-child {
+            margin-top: 0;
         }
 
         @media (max-width: 768px) {
@@ -173,8 +188,12 @@
                 font-size: 28px;
             }
 
-            .category-title {
-                font-size: 18px;
+            .subtitle {
+                font-size: 14px;
+            }
+
+            .nav-links {
+                gap: 16px;
             }
         }
     </style>
@@ -191,162 +210,98 @@
                 <a href="sources.html" class="active">Sources</a>
                 <a href="history.html">History</a>
                 <a href="videos.html">Videos</a>
+                <a href="contact.html">Contact</a>
             </div>
         </nav>
     </div>
 
     <!-- MAIN CONTENT -->
     <div class="container">
-        <h1>Source Documents</h1>
-        <p class="subtitle">
-            All information provided by this assistant is drawn from the following authoritative sources.
-        </p>
+        <h1>Sources & Documentation</h1>
+        <p class="subtitle">Complete reference library for the Churchill Falls Assistant</p>
 
-        <div class="video-section">
-            <h3>🎥 Dr. Doug May's Video Analysis Series</h3>
-            <p>
-                Dr. Doug May has created a comprehensive video series analyzing the Churchill Falls agreements. 
-                These videos provide detailed economic analysis, cost comparisons, and strategic insights.
-            </p>
-            <p>
-                <strong>Watch the series:</strong> <a href="https://www.youtube.com/@dougmay" target="_blank">Dr. Doug May's YouTube Channel</a>
-            </p>
-        </div>
+        <div class="content-section">
+            <h2>Source Documents</h2>
+            <p>All documents below are integrated into the Churchill Falls Assistant's knowledge base. The assistant can answer questions, provide summaries, and make comparisons across all of these materials.</p>
 
-        <!-- PRIMARY DOCUMENTS -->
-        <div class="source-category">
-            <h2 class="category-title">📄 Primary Documents</h2>
-            <div class="source-list">
-                <div class="source-item">
-                    <div class="source-title">2024 Memorandum of Understanding (MOU)</div>
-                    <div class="source-desc">December 12, 2024 agreement between Newfoundland and Labrador and Quebec regarding Churchill Falls post-2041</div>
-                </div>
-                <div class="source-item">
-                    <div class="source-title">Churchill Falls Power Contract (1969)</div>
-                    <div class="source-desc">Original 65-year power contract between Churchill Falls Corporation and Hydro-Québec</div>
-                </div>
-                <div class="source-item">
-                    <div class="source-title">Gull Island Contract (2002)</div>
-                    <div class="source-desc">Agreement regarding the proposed Gull Island hydroelectric development</div>
-                </div>
+            <h3>Official Agreements and Documents</h3>
+            <div class="document-list">
+                <ul>
+                    <li><strong>December 12, 2024 Memorandum of Understanding (MOU)</strong> - The complete text of the proposed agreement between Newfoundland and Labrador and Quebec</li>
+                    <li><strong>1969 Churchill Falls Power Contract</strong> - The original agreement and its terms</li>
+                    <li><strong>2002 Gull Island Framework Agreement</strong> - Historical context for proposed developments</li>
+                    <li><strong>January 2025 NL Hydro MOU Documentation</strong> - Supporting provincial materials</li>
+                </ul>
+            </div>
+
+            <h3>Economic Analyses - Dr. Doug May</h3>
+            <div class="document-list">
+                <p><strong>Video Series Transcripts:</strong></p>
+                <ul>
+                    <li>Video 1: Quebec's Emerging Electricity Shortage (transcript)</li>
+                    <li>Video 2A: Electricity Pricing - Quebec's Costs (transcript)</li>
+                    <li>Video 2B: Electricity Pricing - Churchill Falls' Role (transcript)</li>
+                    <li>Video 3A: Hydro-Québec's Electricity Imports (transcript)</li>
+                    <li>Video 3B: Hydro-Québec's Electricity Exports (transcript)</li>
+                    <li>Video 4: Water Royalties and Resource Rents (transcript)</li>
+                </ul>
+                
+                <p><strong>Written Analyses:</strong></p>
+                <ul>
+                    <li>Assessment of Proposed Prices for Existing Power</li>
+                    <li>Assessment of the Proposed Projects (Gull Island, CF Expansion, CF Upgrade)</li>
+                    <li>Understanding Financial Concepts (Present Value, Discount Rates)</li>
+                    <li>Quebec's Electricity Supply Problem</li>
+                    <li>Quebec's Changing Import Picture</li>
+                    <li>Reassessing the Churchill Falls MOU</li>
+                    <li>Hydro-Québec's Exports and Imports Analysis</li>
+                </ul>
+            </div>
+
+            <h3>Economic Analyses - Other Economists</h3>
+            <div class="document-list">
+                <ul>
+                    <li><strong>Wade Locke's Economic Assessment (2024)</strong> - Critical analysis of the MOU's economic implications for Newfoundland and Labrador</li>
+                    <li><strong>James Feehan's Academic Research</strong> - Historical and economic context of Churchill Falls agreements</li>
+                    <li><strong>NL Debt and Fiscal Sustainability Analysis</strong> - Provincial fiscal context</li>
+                </ul>
+            </div>
+
+            <h3>Corporate and Government Reports</h3>
+            <div class="document-list">
+                <ul>
+                    <li><strong>Churchill Falls (Labrador) Corporation Annual Report 2024</strong> - Financial performance and operational data</li>
+                    <li><strong>Churchill Falls Consolidated Financial Statements (2021-2024)</strong> - Multi-year financial data</li>
+                    <li><strong>Hydro-Québec Annual Report 2024</strong> - Financial results, operations, and strategic direction</li>
+                    <li><strong>Hydro-Québec Action Plan 2035</strong> - Strategic plan for decarbonization and capacity expansion</li>
+                    <li><strong>Newfoundland and Labrador Hydro Reports</strong> - Provincial utility operations and planning</li>
+                    <li><strong>Lower Churchill Project Combined Financial Statements 2024</strong> - Muskrat Falls and Gull Island data</li>
+                    <li><strong>Hydro-Québec Production and Import/Export Data</strong> - Operational statistics</li>
+                </ul>
+            </div>
+
+            <h3>Historical Documentation</h3>
+            <div class="document-list">
+                <ul>
+                    <li><strong>History of Churchill River Hydro Development (1949-2007)</strong> - Comprehensive historical overview of the project's development</li>
+                    <li><strong>History of Churchill Falls Development</strong> - Detailed development timeline</li>
+                    <li><strong>Lower Churchill Projects Documentation</strong> - Historical context for Muskrat Falls and Gull Island</li>
+                    <li>Historical contract analyses and government documents</li>
+                </ul>
+            </div>
+
+            <div class="highlight-box">
+                <p><strong>Using These Sources:</strong> Instead of reading through all these documents, ask the assistant questions. It will synthesize information across multiple sources, cite specific documents, and provide clear answers based on this complete reference library.</p>
+                <p style="margin-top: 15px;"><a href="index.html">← Return to Assistant to ask questions</a></p>
             </div>
         </div>
 
-        <!-- DR. DOUG MAY'S ANALYSIS -->
-        <div class="source-category">
-            <h2 class="category-title">🎓 Dr. Doug May's Analysis</h2>
-            <div class="source-list">
-                <div class="source-item">
-                    <div class="source-title">Video Series: Parts 1-4</div>
-                    <div class="source-desc">Comprehensive analysis covering Quebec's electricity crisis, pricing structures, cost comparisons, and MOU implications</div>
-                </div>
-                <div class="source-item">
-                    <div class="source-title">Reassessing the Churchill Falls MOU</div>
-                    <div class="source-desc">Detailed critique and analysis of the 2024 Memorandum of Understanding</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ECONOMIC ANALYSIS -->
-        <div class="source-category">
-            <h2 class="category-title">📊 Economic Analysis</h2>
-            <div class="source-list">
-                <div class="source-item">
-                    <div class="source-title">Wade Locke's Analysis of the MOU</div>
-                    <div class="source-desc">Economic assessment including revenue projections, NPV calculations, and fiscal implications</div>
-                </div>
-                <div class="source-item">
-                    <div class="source-title">James P. Feehan - Churchill Falls and the Power Corridor</div>
-                    <div class="source-desc">Academic analysis of Churchill Falls history and strategic considerations</div>
-                </div>
-                <div class="source-item">
-                    <div class="source-title">Assessment of Proposed Prices</div>
-                    <div class="source-desc">Analysis of pricing structures and economic implications</div>
-                </div>
-                <div class="source-item">
-                    <div class="source-title">NL Debt and Fiscal Sustainability</div>
-                    <div class="source-desc">Analysis of provincial debt levels and fiscal implications</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- FINANCIAL STATEMENTS -->
-        <div class="source-category">
-            <h2 class="category-title">💰 Financial Statements</h2>
-            <div class="source-list">
-                <div class="source-item">
-                    <div class="source-title">Churchill Falls Consolidated Financial Statements (2021-2024)</div>
-                    <div class="source-desc">Annual financial reports from Churchill Falls Corporation</div>
-                </div>
-                <div class="source-item">
-                    <div class="source-title">Lower Churchill Project Combined Financial Statements (2024)</div>
-                    <div class="source-desc">Financial reports for the Muskrat Falls and Gull Island projects</div>
-                </div>
-                <div class="source-item">
-                    <div class="source-title">Churchill Falls Annual Report (2024)</div>
-                    <div class="source-desc">Comprehensive annual report including operations and financial performance</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- HYDRO-QUÉBEC DOCUMENTS -->
-        <div class="source-category">
-            <h2 class="category-title">⚡ Hydro-Québec Documents</h2>
-            <div class="source-list">
-                <div class="source-item">
-                    <div class="source-title">Hydro-Québec Annual Report (2024)</div>
-                    <div class="source-desc">HQ's annual financial and operational report</div>
-                </div>
-                <div class="source-item">
-                    <div class="source-title">HQ Action Plan 2035</div>
-                    <div class="source-desc">Hydro-Québec's strategic plan through 2035</div>
-                </div>
-                <div class="source-item">
-                    <div class="source-title">HQ Exports and Imports Data</div>
-                    <div class="source-desc">Detailed electricity export/import statistics and pricing</div>
-                </div>
-                <div class="source-item">
-                    <div class="source-title">Quebec's Electricity Supply Problem</div>
-                    <div class="source-desc">Analysis of Quebec's current and projected electricity needs</div>
-                </div>
-                <div class="source-item">
-                    <div class="source-title">Quebec's Changing Import Picture</div>
-                    <div class="source-desc">Analysis of Quebec's electricity import patterns and dependencies</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- HISTORICAL DOCUMENTS -->
-        <div class="source-category">
-            <h2 class="category-title">📚 Historical Documents</h2>
-            <div class="source-list">
-                <div class="source-item">
-                    <div class="source-title">History of Churchill River Hydro Development (1949-2007)</div>
-                    <div class="source-desc">Comprehensive historical account of Churchill Falls development</div>
-                </div>
-                <div class="source-item">
-                    <div class="source-title">History of Churchill Falls Development</div>
-                    <div class="source-desc">Detailed historical documentation of the project</div>
-                </div>
-                <div class="source-item">
-                    <div class="source-title">Lower Churchill Projects</div>
-                    <div class="source-desc">Documentation of Muskrat Falls and Gull Island project history</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- SUPPORTING DOCUMENTS -->
-        <div class="source-category">
-            <h2 class="category-title">📋 Supporting Documents</h2>
-            <div class="source-list">
-                <div class="source-item">
-                    <div class="source-title">Understanding Financial Concepts</div>
-                    <div class="source-desc">Explanatory document on key financial terminology and concepts</div>
-                </div>
-                <div class="source-item">
-                    <div class="source-title">HYDRO MOU GNL (January 2025)</div>
-                    <div class="source-desc">Additional MOU documentation and supplementary agreements</div>
-                </div>
+        <div class="content-section">
+            <h2>Dr. Doug May's Video Series</h2>
+            <p>All video content is also available on the <a href="videos.html" style="color: var(--aqua); text-decoration: underline;">Videos page</a> with embedded players. Dr. Doug May's comprehensive 6-part video series provides an independent economic assessment of the December 2024 Churchill Falls MOU.</p>
+            
+            <div class="highlight-box">
+                <p><strong>Note:</strong> All of Dr. May's video analyses and written documents are integrated into the assistant's knowledge base. You can ask questions about any aspect of his analysis through the chat interface.</p>
             </div>
         </div>
     </div>

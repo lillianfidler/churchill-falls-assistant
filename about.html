@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Churchill Falls Assistant</title>
+    <title>Videos - Churchill Falls Assistant</title>
     <style>
-        :root {
-            --aqua: #5eead4;
-            --aqua-dim: #2dd4bf;
-        }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        :root {
+            --aqua: #5eead4;
+            --aqua-dim: #2dd4bf;
         }
 
         body {
@@ -70,7 +70,7 @@
 
         /* MAIN CONTENT */
         .container {
-            max-width: 800px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 60px 20px;
         }
@@ -86,72 +86,109 @@
         }
 
         .subtitle {
-            font-size: 18px;
+            font-size: 16px;
             color: #a8a8a8;
             margin-bottom: 48px;
             line-height: 1.6;
         }
 
-        .content {
-            font-size: 15px;
-            line-height: 1.8;
-            color: #e5e5e5;
+        .content-section {
+            margin-bottom: 60px;
         }
 
-        .content h2 {
+        .content-section h2 {
             font-size: 24px;
             font-weight: 600;
             color: #fff;
-            margin: 48px 0 16px 0;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .content h2:first-child {
-            margin-top: 0;
-        }
-
-        .content p {
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #e5e5e5;
             margin-bottom: 16px;
         }
 
-        .content ul {
-            margin: 16px 0 16px 24px;
-        }
-
-        .content li {
-            margin-bottom: 8px;
-            color: #e5e5e5;
-        }
-
-        .feature-grid {
+        .video-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 32px 0;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 24px;
+            margin-top: 30px;
         }
 
-        .feature {
+        .video-card {
             background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--aqua);
             border-radius: 12px;
-            padding: 24px;
+            padding: 20px;
+            transition: all 0.2s;
         }
 
-        .feature-icon {
-            font-size: 32px;
-            margin-bottom: 12px;
+        .video-card:hover {
+            background: rgba(94, 234, 212, 0.08);
+            transform: translateY(-2px);
         }
 
-        .feature-title {
-            font-size: 16px;
+        .video-card h3 {
+            font-size: 18px;
             font-weight: 600;
-            color: #fff;
-            margin-bottom: 8px;
+            color: var(--aqua);
+            margin-bottom: 10px;
         }
 
-        .feature-desc {
+        .video-card p {
             font-size: 14px;
             color: #a8a8a8;
-            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            background: #000;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .highlight-box {
+            background: rgba(94, 234, 212, 0.08);
+            border-left: 4px solid var(--aqua);
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box p {
+            margin: 0;
+        }
+
+        .highlight-box strong {
+            color: var(--aqua);
+        }
+
+        .return-link {
+            display: inline-block;
+            color: var(--aqua);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        .return-link:hover {
+            color: var(--aqua-dim);
         }
 
         @media (max-width: 768px) {
@@ -159,12 +196,12 @@
                 font-size: 28px;
             }
 
-            .subtitle {
-                font-size: 16px;
+            .video-grid {
+                grid-template-columns: 1fr;
             }
 
-            .feature-grid {
-                grid-template-columns: 1fr;
+            .nav-links {
+                gap: 16px;
             }
         }
     </style>
@@ -177,97 +214,88 @@
             <a href="index.html" class="logo">Churchill Falls Assistant</a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="about.html" class="active">About</a>
+                <a href="about.html">About</a>
                 <a href="sources.html">Sources</a>
                 <a href="history.html">History</a>
-                <a href="videos.html">Videos</a>
+                <a href="videos.html" class="active">Videos</a>
             </div>
         </nav>
     </div>
 
     <!-- MAIN CONTENT -->
     <div class="container">
-        <h1>About This Assistant</h1>
-        <p class="subtitle">
-            Expert analysis and comprehensive information about Churchill Falls hydroelectric projects and energy agreements.
-        </p>
+        <h1>Video Analysis Series</h1>
+        <p class="subtitle">Dr. Doug May's comprehensive economic analysis of the Churchill Falls MOU</p>
 
-        <div class="content">
-            <p>
-                This assistant provides expert analysis and comprehensive information about Churchill Falls 
-                hydroelectric projects and energy agreements between Newfoundland and Labrador and Quebec. 
-                Ask questions using voice or text, and choose between quick summaries or in-depth research.
-            </p>
+        <div class="content-section">
+            <h2>About Dr. Doug May</h2>
+            <p>Dr. Doug May is Professor Emeritus in the Department of Economics at Memorial University of Newfoundland and Labrador. His research focuses on energy economics, regional economic development, and public policy analysis.</p>
+            
+            <p>His video series on the December 2024 Churchill Falls MOU represents the most comprehensive independent economic assessment of the proposed agreement. Dr. May's methodology emphasizes transparency, accessibility, and balanced analysis while acknowledging the limitations of publicly available information.</p>
 
-            <h2>Features</h2>
+            <div class="highlight-box">
+                <p><strong>Note:</strong> All of Dr. May's video analyses and written documents are integrated into the Churchill Falls Assistant's knowledge base. You can ask questions about any aspect of his analysis through the chat interface.</p>
+            </div>
+        </div>
 
-            <div class="feature-grid">
-                <div class="feature">
-                    <div class="feature-icon">🎤</div>
-                    <div class="feature-title">Voice Mode</div>
-                    <div class="feature-desc">
-                        Hear Dr. Doug May's expert analysis in his own voice. Press and hold the microphone 
-                        to ask your question.
+        <div class="content-section">
+            <h2>Video Series</h2>
+
+            <div class="video-grid">
+                <div class="video-card">
+                    <h3>Video 1: Quebec's Emerging Electricity Shortage</h3>
+                    <p>Analysis of Quebec's electricity supply challenges and the context for the proposed MOU.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/QJWWpT7Ip_Q" title="Quebec's Emerging Electricity Shortage" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
 
-                <div class="feature">
-                    <div class="feature-icon">⚡</div>
-                    <div class="feature-title">Fast Mode</div>
-                    <div class="feature-desc">
-                        Get quick written answers in 2-3 paragraphs. Perfect for straightforward questions 
-                        and rapid research.
+                <div class="video-card">
+                    <h3>Video 2A: Electricity Pricing - Quebec's Costs</h3>
+                    <p>Examination of Quebec's electricity cost structure and pricing considerations.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/j2GWirWVg48" title="Electricity Pricing - Quebec's Costs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
 
-                <div class="feature">
-                    <div class="feature-icon">🔍</div>
-                    <div class="feature-title">Deep Mode</div>
-                    <div class="feature-desc">
-                        Receive comprehensive analysis with multiple sources, detailed research, and 
-                        extensive citations.
+                <div class="video-card">
+                    <h3>Video 2B: Electricity Pricing - Churchill Falls' Role</h3>
+                    <p>Analysis of Churchill Falls' position in electricity pricing discussions.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/MJ91O1W358E" title="Electricity Pricing - Churchill Falls' Role" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Video 3A: Hydro-Québec's Electricity Imports</h3>
+                    <p>Review of Hydro-Québec's electricity import patterns and implications.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/ToKebHmN16s" title="Hydro-Québec's Electricity Imports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Video 3B: Hydro-Québec's Electricity Exports</h3>
+                    <p>Analysis of Hydro-Québec's export market and revenue generation.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/ToKebHmN16s" title="Hydro-Québec's Electricity Exports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Video 4: Water Royalties and Resource Rents</h3>
+                    <p>Examination of water royalty structures and resource rent considerations.</p>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/OFcA4-SlWTE" title="Water Royalties and Resource Rents" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <h2>About Dr. Doug May</h2>
-            <p>
-                Dr. Doug May is an economist and expert on Churchill Falls energy policy. His analysis provides 
-                critical insights into the economic and political dimensions of the Churchill Falls agreements, 
-                including detailed cost comparisons, revenue analysis, and strategic implications for 
-                Newfoundland and Labrador.
-            </p>
-
-            <h2>Source Material</h2>
-            <p>
-                The assistant draws from a comprehensive collection of documents including:
-            </p>
-            <ul>
-                <li>Dr. Doug May's video analysis series</li>
-                <li>The 2024 Memorandum of Understanding (MOU)</li>
-                <li>Economic analysis by Wade Locke and James Feehan</li>
-                <li>Historical agreements and contracts</li>
-                <li>Financial statements from Churchill Falls Corporation</li>
-                <li>Hydro-Québec reports and data</li>
-                <li>Academic research and policy analysis</li>
-            </ul>
-
-            <h2>How to Use</h2>
-            <p>
-                Choose your preferred interaction method:
-            </p>
-            <ul>
-                <li><strong>Voice:</strong> Press and hold the microphone button to speak your question. 
-                    Release to hear Dr. May's analysis.</li>
-                <li><strong>Text (Fast):</strong> Type your question and select Fast mode for a concise answer.</li>
-                <li><strong>Text (Deep):</strong> Select Deep mode for comprehensive research with sources.</li>
-            </ul>
-
-            <h2>Privacy</h2>
-            <p>
-                Your conversations are stored locally in your browser for the History feature. No personal data 
-                is collected or transmitted. You can clear your history at any time from the History page.
-            </p>
+        <div class="content-section">
+            <h2>Ask Questions About the Videos</h2>
+            <p>All content from Dr. May's video series is available through the Churchill Falls Assistant. You can ask specific questions about any topic covered in these videos, request comparisons between different analyses, or explore the economic implications discussed.</p>
+            <p><a href="index.html" class="return-link">← Return to Assistant to ask questions</a></p>
         </div>
     </div>
 
