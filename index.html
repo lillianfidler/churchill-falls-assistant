@@ -12,19 +12,20 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Segoe UI Emoji', sans-serif;
+            background: #1a1a1a;
+            color: #e5e5e5;
             min-height: 100vh;
-            padding-bottom: 200px; /* Space for sticky bottom */
-            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
         }
 
         /* ===== HEADER ===== */
         .header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 15px 30px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 12px 24px;
             position: sticky;
             top: 0;
             z-index: 100;
@@ -39,350 +40,325 @@
         }
 
         .logo {
-            font-size: 18px;
-            font-weight: 700;
-            color: #1e3c72;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: -0.2px;
         }
 
         .nav-links {
             display: flex;
-            gap: 30px;
+            gap: 24px;
         }
 
         .nav-links a {
-            color: #475569;
+            color: #a8a8a8;
             text-decoration: none;
+            font-size: 14px;
             font-weight: 500;
             transition: color 0.2s;
         }
 
         .nav-links a:hover {
-            color: #1e3c72;
+            color: #fff;
         }
 
-        /* ===== HERO SECTION ===== */
-        .hero {
+        /* ===== MAIN CONTAINER ===== */
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            max-width: 900px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        /* ===== WELCOME STATE ===== */
+        .welcome-state {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            padding: 60px 20px 40px;
-            color: white;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 15px;
-            font-weight: 800;
-        }
-
-        .hero p {
-            font-size: 20px;
-            opacity: 0.95;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        /* ===== EXPLANATION CARDS ===== */
-        .explanation {
-            max-width: 1200px;
-            margin: 0 auto;
             padding: 40px 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
+            min-height: 60vh;
         }
 
-        .card {
-            background: white;
-            border-radius: 16px;
-            padding: 30px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.2s;
+        .welcome-state.hidden {
+            display: none;
         }
 
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card-icon {
+        .welcome-title {
             font-size: 48px;
-            margin-bottom: 15px;
+            font-weight: 400;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #fff 0%, #a8a8a8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
-        .card-icon svg {
-            width: 48px;
-            height: 48px;
+        .welcome-subtitle {
+            font-size: 18px;
+            color: #a8a8a8;
+            margin-bottom: 48px;
+            max-width: 600px;
+            line-height: 1.5;
         }
 
-        .card-title {
-            font-size: 24px;
-            font-weight: 700;
-            color: #1e3c72;
-            margin-bottom: 10px;
+        .mode-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 32px;
         }
 
-        .card-subtitle {
+        .mode-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 24px;
+            transition: all 0.2s;
+            cursor: default;
+        }
+
+        .mode-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .mode-card-icon {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .mode-card-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .mode-card-desc {
             font-size: 14px;
-            color: #64748b;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 15px;
-        }
-
-        .card-description {
-            color: #475569;
-            line-height: 1.6;
+            color: #a8a8a8;
+            line-height: 1.5;
         }
 
         /* ===== CONVERSATION AREA ===== */
         .conversation {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            min-height: 400px;
+            flex: 1;
+            padding: 40px 0;
+            overflow-y: auto;
         }
 
-        .welcome-message {
-            background: white;
-            border-radius: 16px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        .conversation.hidden {
+            display: none;
         }
 
-        .welcome-message h2 {
-            color: #1e3c72;
-            margin-bottom: 15px;
-        }
-
-        .welcome-message p {
-            color: #475569;
-            line-height: 1.6;
-        }
-
-        /* Messages */
         .message {
-            background: white;
-            border-radius: 16px;
-            padding: 20px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            animation: slideIn 0.3s ease-out;
+            margin-bottom: 32px;
+            animation: fadeIn 0.3s ease-out;
         }
 
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        .message.user {
-            background: #e0e7ff;
-            margin-left: 60px;
-        }
-
-        .message.assistant {
-            margin-right: 60px;
+        .message-role {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #a8a8a8;
+            margin-bottom: 8px;
         }
 
         .message-content {
             font-size: 15px;
-            line-height: 1.6;
-            color: #1e293b;
+            line-height: 1.7;
+            color: #e5e5e5;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .message.user .message-content {
+            color: #fff;
         }
 
         .message-meta {
             margin-top: 12px;
             padding-top: 12px;
-            border-top: 1px solid #e2e8f0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 12px;
+            color: #a8a8a8;
+        }
+
+        .message-actions {
+            margin-top: 12px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .action-button {
+            padding: 6px 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            cursor: pointer;
             font-size: 13px;
-            color: #64748b;
+            color: #a8a8a8;
+            transition: all 0.2s;
+        }
+
+        .action-button:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.2);
         }
 
         .sources-section {
-            margin-top: 15px;
-            padding-top: 15px;
-            border-top: 1px solid #e2e8f0;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .sources-title {
+            font-size: 12px;
             font-weight: 600;
-            color: #1e3c72;
+            color: #a8a8a8;
             margin-bottom: 8px;
         }
 
         .sources-list {
-            color: #475569;
-            font-size: 14px;
+            font-size: 13px;
+            color: #a8a8a8;
             line-height: 1.6;
         }
 
-        /* Processing state */
         .processing {
-            background: white;
-            border-radius: 16px;
-            padding: 30px;
             text-align: center;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            margin-bottom: 15px;
+            padding: 40px;
+            color: #a8a8a8;
         }
 
         .processing-text {
-            color: #1e3c72;
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 10px;
+            font-size: 15px;
+            margin-bottom: 8px;
         }
 
-        .processing-subtext {
-            color: #64748b;
-            font-size: 14px;
-        }
-
-        /* ===== STICKY BOTTOM BAR ===== */
+        /* ===== INPUT BAR ===== */
         .input-bar {
-            position: fixed;
+            position: sticky;
             bottom: 0;
-            left: 0;
-            right: 0;
-            background: white;
-            border-top: 2px solid #e2e8f0;
-            box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
-            padding: 20px;
-            z-index: 100;
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px 0 32px 0;
         }
 
-        .input-container {
-            max-width: 1200px;
+        .input-wrapper {
+            max-width: 900px;
             margin: 0 auto;
-            display: grid;
-            grid-template-columns: 200px 1fr;
-            gap: 20px;
-            align-items: stretch;
+            padding: 0 20px;
         }
 
-        /* Voice section */
-        .voice-section {
+        .input-controls {
             display: flex;
-            flex-direction: column;
+            gap: 12px;
             align-items: center;
-            justify-content: center;
-            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .text-input {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 14px 16px;
+            font-size: 15px;
+            color: #fff;
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .text-input:focus {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .text-input::placeholder {
+            color: #666;
         }
 
         .mic-button {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            border: none;
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 20px rgba(30, 60, 114, 0.4);
             transition: all 0.2s;
             position: relative;
         }
 
         .mic-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 25px rgba(30, 60, 114, 0.5);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
         }
 
-        .mic-button:active {
-            transform: scale(0.95);
+        .mic-button:hover::after {
+            content: 'Press & hold to speak';
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 8px;
+            padding: 6px 12px;
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            font-size: 12px;
+            white-space: nowrap;
+            border-radius: 6px;
+            pointer-events: none;
+            animation: tooltipFade 0.2s ease-out;
+        }
+
+        @keyframes tooltipFade {
+            from { opacity: 0; transform: translateX(-50%) translateY(5px); }
+            to { opacity: 1; transform: translateX(-50%) translateY(0); }
         }
 
         .mic-button.active {
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-            animation: pulse-green 1.5s infinite;
-        }
-
-        @keyframes pulse-green {
-            0%, 100% {
-                box-shadow: 0 4px 20px rgba(16, 185, 129, 0.6);
-            }
-            50% {
-                box-shadow: 0 4px 35px rgba(16, 185, 129, 0.9);
-            }
+            background: rgba(16, 185, 129, 0.2);
+            border-color: rgba(16, 185, 129, 0.5);
         }
 
         .mic-button svg {
-            width: 50px;
-            height: 50px;
-            fill: white;
+            width: 20px;
+            height: 20px;
+            fill: #a8a8a8;
         }
 
-        .mic-instruction {
-            font-size: 12px;
-            color: #64748b;
-            text-align: center;
-        }
-
-        /* Text input section */
-        .text-section {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .text-input-wrapper {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-        }
-
-        .text-input {
-            flex: 1;
-            padding: 15px 20px;
-            border: 2px solid #e2e8f0;
-            border-radius: 12px;
-            font-size: 16px;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-
-        .text-input:focus {
-            border-color: #1e3c72;
-        }
-
-        .mode-toggle {
-            display: flex;
-            gap: 5px;
-            background: #f1f5f9;
-            padding: 4px;
-            border-radius: 8px;
-        }
-
-        .mode-toggle button {
-            padding: 8px 16px;
-            border: none;
-            background: transparent;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: 500;
-            color: #64748b;
-            transition: all 0.2s;
-            font-size: 14px;
-        }
-
-        .mode-toggle button.active {
-            background: white;
-            color: #1e3c72;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        .mic-button.active svg {
+            fill: #10b981;
         }
 
         .send-button {
-            width: 50px;
-            height: 50px;
+            width: 48px;
+            height: 48px;
             border-radius: 12px;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -391,83 +367,84 @@
         }
 
         .send-button:hover {
-            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.15);
         }
 
         .send-button svg {
-            width: 24px;
-            height: 24px;
-            fill: white;
+            width: 20px;
+            height: 20px;
+            fill: #fff;
         }
 
-        /* ===== MOBILE RESPONSIVE ===== */
+        .mode-toggle {
+            display: flex;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 4px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .mode-toggle button {
+            padding: 6px 12px;
+            border: none;
+            background: transparent;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            color: #a8a8a8;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+
+        .mode-toggle button.active {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        .mode-toggle button:hover:not(.active) {
+            color: #fff;
+        }
+
+        /* ===== MOBILE ===== */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 32px;
+            .welcome-title {
+                font-size: 36px;
             }
 
-            .hero p {
+            .welcome-subtitle {
                 font-size: 16px;
             }
 
-            .explanation {
+            .mode-cards {
                 grid-template-columns: 1fr;
             }
 
-            .input-container {
-                grid-template-columns: 1fr;
-                gap: 15px;
+            .input-controls {
+                flex-wrap: wrap;
             }
 
-            .voice-section {
-                flex-direction: row;
-                justify-content: center;
-            }
-
-            .mic-button {
-                width: 100px;
-                height: 100px;
-            }
-
-            .mic-button svg {
-                width: 40px;
-                height: 40px;
-            }
-
-            .nav-links {
-                gap: 15px;
-                font-size: 14px;
-            }
-
-            body {
-                padding-bottom: 280px;
-            }
-
-            .message.user {
-                margin-left: 20px;
-            }
-
-            .message.assistant {
-                margin-right: 20px;
+            .text-input {
+                width: 100%;
             }
         }
 
-        /* Hide scrollbar but keep functionality */
-        .conversation::-webkit-scrollbar {
+        /* Scrollbar */
+        ::-webkit-scrollbar {
             width: 8px;
         }
 
-        .conversation::-webkit-scrollbar-track {
+        ::-webkit-scrollbar-track {
             background: transparent;
         }
 
-        .conversation::-webkit-scrollbar-thumb {
-            background: rgba(255, 255, 255, 0.3);
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 4px;
         }
 
-        .conversation::-webkit-scrollbar-thumb:hover {
-            background: rgba(255, 255, 255, 0.5);
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
@@ -481,162 +458,114 @@
                 <a href="#home">Home</a>
                 <a href="about.html">About</a>
                 <a href="sources.html">Sources</a>
+                <a href="history.html">History</a>
             </div>
         </nav>
     </div>
 
-    <!-- HERO -->
-    <div class="hero">
-        <h1>Churchill Falls Information Assistant</h1>
-        <p>Expert analysis from Dr. Doug May and comprehensive research on Churchill Falls energy agreements</p>
-    </div>
-
-    <!-- EXPLANATION CARDS -->
-    <div class="explanation">
-        <div class="card">
-            <div class="card-icon">
-                <svg viewBox="0 0 24 24">
-                    <path fill="#1e3c72" d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
-                    <path fill="#1e3c72" d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
-                </svg>
+    <!-- CONTAINER -->
+    <div class="container">
+        <!-- WELCOME STATE -->
+        <div class="welcome-state" id="welcomeState">
+            <h1 class="welcome-title">Churchill Falls Assistant</h1>
+            <p class="welcome-subtitle">
+                This assistant provides expert analysis and comprehensive information about Churchill Falls 
+                hydroelectric projects and energy agreements between Newfoundland and Labrador and Quebec. 
+                Ask questions using voice or text, and choose between quick summaries or in-depth research.
+            </p>
+            
+            <div class="mode-cards">
+                <div class="mode-card">
+                    <div class="mode-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" style="fill: #a8a8a8;">
+                            <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+                            <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+                        </svg>
+                    </div>
+                    <div class="mode-card-title">Voice</div>
+                    <div class="mode-card-desc">Hear Dr. Doug May's analysis in his own voice. Press & hold the microphone button below to speak.</div>
+                </div>
+                
+                <div class="mode-card">
+                    <div class="mode-card-icon">⚡</div>
+                    <div class="mode-card-title">Fast</div>
+                    <div class="mode-card-desc">Get quick written answers in 2-3 paragraphs. Perfect for straightforward questions.</div>
+                </div>
+                
+                <div class="mode-card">
+                    <div class="mode-card-icon">🔍</div>
+                    <div class="mode-card-title">Deep</div>
+                    <div class="mode-card-desc">Receive comprehensive analysis with multiple sources and detailed research.</div>
+                </div>
             </div>
-            <div class="card-title">Voice</div>
-            <div class="card-subtitle">Doug's Perspective</div>
-            <p class="card-description">
-                Press and hold the microphone to ask a question. Hear Dr. Doug May's expert analysis 
-                in his own voice, drawn from decades of research on Churchill Falls energy policy.
-            </p>
         </div>
 
-        <div class="card">
-            <div class="card-icon">⚡</div>
-            <div class="card-title">Fast</div>
-            <div class="card-subtitle">Quick Text Answer</div>
-            <p class="card-description">
-                Get a concise 2-3 paragraph written response pulling from all available sources. 
-                Perfect for quick facts and straightforward questions.
-            </p>
-        </div>
-
-        <div class="card">
-            <div class="card-icon">🔍</div>
-            <div class="card-title">Deep</div>
-            <div class="card-subtitle">Comprehensive Analysis</div>
-            <p class="card-description">
-                Receive detailed analysis with multiple perspectives, citations, and in-depth research. 
-                Includes source documents consulted. Ideal for complex inquiries.
-            </p>
-        </div>
+        <!-- CONVERSATION AREA -->
+        <div class="conversation hidden" id="conversation"></div>
     </div>
 
-    <!-- CONVERSATION AREA -->
-    <div class="conversation" id="conversation">
-        <div class="welcome-message">
-            <h2>Ask About Churchill Falls</h2>
-            <p>
-                Choose your preferred method below: press and hold the microphone for voice response, 
-                or type your question and select Fast or Deep research mode.
-            </p>
-            <p style="margin-top: 15px; font-size: 14px; color: #64748b;">
-                <strong>Example questions:</strong> "What is the MOU?", "Why was the 1969 contract controversial?", 
-                "How does Quebec benefit from Churchill Falls?"
-            </p>
-        </div>
-    </div>
-
-    <!-- STICKY BOTTOM INPUT BAR -->
+    <!-- INPUT BAR -->
     <div class="input-bar">
-        <div class="input-container">
-            <!-- VOICE SECTION -->
-            <div class="voice-section">
+        <div class="input-wrapper">
+            <div class="input-controls">
+                <input 
+                    type="text" 
+                    class="text-input" 
+                    placeholder="Ask about Churchill Falls..."
+                    id="textInput"
+                >
                 <button class="mic-button" id="micButton">
                     <svg viewBox="0 0 24 24">
                         <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
                         <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
                     </svg>
                 </button>
-                <div class="mic-instruction">Press & hold to talk</div>
+                <button class="send-button" id="sendButton">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    </svg>
+                </button>
             </div>
-
-            <!-- TEXT SECTION -->
-            <div class="text-section">
-                <div class="text-input-wrapper">
-                    <input 
-                        type="text" 
-                        class="text-input" 
-                        placeholder="Type your question about Churchill Falls..."
-                        id="textInput"
-                    >
-                    <button class="send-button" id="sendButton">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
-                        </svg>
-                    </button>
-                </div>
-                <div class="mode-toggle">
-                    <button class="active" data-mode="fast">⚡ Fast</button>
-                    <button data-mode="deep">🔍 Deep</button>
-                </div>
+            <div class="mode-toggle">
+                <button class="active" data-mode="fast">⚡ Fast</button>
+                <button data-mode="deep">🔍 Deep</button>
             </div>
         </div>
     </div>
 
     <script>
-        // ============================================================================
-        // STATE
-        // ============================================================================
-        
+        // State
         let currentTextMode = 'fast';
         let isRecording = false;
         let recognition = null;
         let conversationHistory = [];
 
-        // ============================================================================
-        // MODE TOGGLE
-        // ============================================================================
-        
+        // Mode toggle
         document.querySelectorAll('.mode-toggle button').forEach(btn => {
             btn.addEventListener('click', () => {
                 document.querySelectorAll('.mode-toggle button').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 currentTextMode = btn.dataset.mode;
-                console.log('Mode selected:', currentTextMode);
             });
         });
 
-        // ============================================================================
-        // MICROPHONE - PRESS AND HOLD
-        // ============================================================================
-        
+        // Microphone
         const micButton = document.getElementById('micButton');
 
-        // Desktop events
         micButton.addEventListener('mousedown', startRecording);
         micButton.addEventListener('mouseup', stopRecording);
-        micButton.addEventListener('mouseleave', () => {
-            if (isRecording) stopRecording();
-        });
-
-        // Mobile events
-        micButton.addEventListener('touchstart', (e) => {
-            e.preventDefault();
-            startRecording();
-        });
-
-        micButton.addEventListener('touchend', (e) => {
-            e.preventDefault();
-            if (isRecording) stopRecording();
-        });
+        micButton.addEventListener('mouseleave', () => { if (isRecording) stopRecording(); });
+        micButton.addEventListener('touchstart', (e) => { e.preventDefault(); startRecording(); });
+        micButton.addEventListener('touchend', (e) => { e.preventDefault(); if (isRecording) stopRecording(); });
 
         function startRecording() {
             if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
-                alert('Speech recognition not supported in this browser. Please use Chrome, Edge, or Safari.');
+                alert('Speech recognition not supported');
                 return;
             }
 
             isRecording = true;
             micButton.classList.add('active');
-            console.log('Started recording');
 
             const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
             recognition = new SpeechRecognition();
@@ -645,12 +574,10 @@
 
             recognition.onresult = (event) => {
                 const transcript = event.results[0][0].transcript;
-                console.log('Transcript:', transcript);
-                sendMessage(transcript, true); // true = voice mode
+                sendMessage(transcript, true);
             };
 
-            recognition.onerror = (event) => {
-                console.error('Speech recognition error:', event.error);
+            recognition.onerror = () => {
                 isRecording = false;
                 micButton.classList.remove('active');
             };
@@ -668,18 +595,14 @@
                 recognition.stop();
                 isRecording = false;
                 micButton.classList.remove('active');
-                console.log('Stopped recording');
             }
         }
 
-        // ============================================================================
-        // TEXT INPUT
-        // ============================================================================
-        
+        // Text input
         document.getElementById('sendButton').addEventListener('click', () => {
             const text = document.getElementById('textInput').value.trim();
             if (text) {
-                sendMessage(text, false); // false = text mode
+                sendMessage(text, false);
                 document.getElementById('textInput').value = '';
             }
         });
@@ -690,25 +613,20 @@
             }
         });
 
-        // ============================================================================
-        // SEND MESSAGE
-        // ============================================================================
-        
+        // Send message
         async function sendMessage(message, isVoice) {
-            console.log(`Sending message: "${message}" | Mode: ${isVoice ? 'voice' : currentTextMode}`);
+            // Hide welcome, show conversation
+            document.getElementById('welcomeState').classList.add('hidden');
+            document.getElementById('conversation').classList.remove('hidden');
             
-            // Add user message
             addMessage('user', message);
             
-            // Show processing
             const processingId = showProcessing();
             
             try {
                 const response = await fetch('/api/chat', {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
+                    headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
                         message: message,
                         conversationHistory: conversationHistory,
@@ -725,7 +643,6 @@
                 } else {
                     addMessage('assistant', data.text, data.sources, data.audio, data.mode, data.cached);
                     
-                    // Update conversation history
                     conversationHistory.push(
                         { role: 'user', content: message },
                         { role: 'assistant', content: data.text }
@@ -735,49 +652,71 @@
             } catch (error) {
                 console.error('Error:', error);
                 removeProcessing(processingId);
-                addMessage('assistant', 'I apologize, but I encountered a connection error. Please try again.');
+                addMessage('assistant', 'Connection error. Please try again.');
             }
         }
 
-        // ============================================================================
-        // UI FUNCTIONS
-        // ============================================================================
-        
+        // UI functions
         function addMessage(role, text, sources, audio, mode, cached) {
             const container = document.getElementById('conversation');
             const messageDiv = document.createElement('div');
             messageDiv.className = `message ${role}`;
+            
+            const roleDiv = document.createElement('div');
+            roleDiv.className = 'message-role';
+            roleDiv.textContent = role === 'user' ? 'You' : 'Assistant';
+            messageDiv.appendChild(roleDiv);
             
             const contentDiv = document.createElement('div');
             contentDiv.className = 'message-content';
             contentDiv.textContent = text;
             messageDiv.appendChild(contentDiv);
             
-            // Add mode indicator for assistant messages
             if (role === 'assistant') {
                 const metaDiv = document.createElement('div');
                 metaDiv.className = 'message-meta';
-                
-                let modeLabel = '';
-                if (mode === 'voice') modeLabel = '🎤 Voice';
-                else if (mode === 'fast') modeLabel = '⚡ Fast';
-                else if (mode === 'deep') modeLabel = '🔍 Deep';
-                
+                let modeLabel = mode === 'voice' ? '🎤 Voice' : mode === 'fast' ? '⚡ Fast' : '🔍 Deep';
                 metaDiv.textContent = modeLabel;
                 if (cached) metaDiv.textContent += ' • 💾 Cached';
-                
                 messageDiv.appendChild(metaDiv);
                 
-                // Add pause button for voice responses with audio
+                const actionsDiv = document.createElement('div');
+                actionsDiv.className = 'message-actions';
+                
+                const copyButton = document.createElement('button');
+                copyButton.className = 'action-button';
+                copyButton.textContent = '📋 Copy';
+                copyButton.addEventListener('click', () => {
+                    navigator.clipboard.writeText(text).then(() => {
+                        const orig = copyButton.textContent;
+                        copyButton.textContent = '✅ Copied!';
+                        setTimeout(() => copyButton.textContent = orig, 2000);
+                    });
+                });
+                actionsDiv.appendChild(copyButton);
+                
+                const shareButton = document.createElement('button');
+                shareButton.className = 'action-button';
+                shareButton.textContent = '🔗 Share';
+                shareButton.addEventListener('click', async () => {
+                    const shareData = { title: 'Churchill Falls Response', text: text };
+                    if (navigator.share) {
+                        try { await navigator.share(shareData); } catch (err) {}
+                    } else {
+                        const shareText = `Churchill Falls Response:\n\n${text}`;
+                        navigator.clipboard.writeText(shareText).then(() => {
+                            const orig = shareButton.textContent;
+                            shareButton.textContent = '✅ Copied!';
+                            setTimeout(() => shareButton.textContent = orig, 2000);
+                        });
+                    }
+                });
+                actionsDiv.appendChild(shareButton);
+                
                 if (audio && mode === 'voice') {
-                    const audioControls = document.createElement('div');
-                    audioControls.style.marginTop = '10px';
-                    
                     const pauseButton = document.createElement('button');
+                    pauseButton.className = 'action-button';
                     pauseButton.textContent = '⏸️ Pause';
-                    pauseButton.style.cssText = 'padding: 6px 12px; background: #e2e8f0; border: none; border-radius: 6px; cursor: pointer; font-size: 14px;';
-                    pauseButton.id = 'pause-' + Date.now();
-                    
                     pauseButton.addEventListener('click', () => {
                         if (window.currentAudio) {
                             if (window.currentAudio.paused) {
@@ -789,34 +728,27 @@
                             }
                         }
                     });
-                    
-                    audioControls.appendChild(pauseButton);
-                    messageDiv.appendChild(audioControls);
+                    actionsDiv.appendChild(pauseButton);
                 }
                 
-                // Add sources if available
+                messageDiv.appendChild(actionsDiv);
+                
                 if (sources && sources.length > 0) {
                     const sourcesDiv = document.createElement('div');
                     sourcesDiv.className = 'sources-section';
                     sourcesDiv.innerHTML = `
-                        <div class="sources-title">📚 Documents consulted:</div>
+                        <div class="sources-title">📚 Documents consulted</div>
                         <div class="sources-list">${sources.map(s => `• ${cleanSourceName(s)}`).join('<br>')}</div>
                     `;
                     messageDiv.appendChild(sourcesDiv);
                 }
                 
-                // Play audio if available
-                if (audio) {
-                    playAudio(audio);
-                }
+                if (audio) playAudio(audio);
             }
             
             container.appendChild(messageDiv);
-            
-            // FIXED: Scroll with offset for sticky bar - use 'start' to ensure message is above sticky bar
             setTimeout(() => {
                 messageDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                // Add extra scroll to account for sticky bar
                 window.scrollBy(0, -50);
             }, 100);
         }
@@ -827,32 +759,23 @@
             processingDiv.className = 'processing';
             processingDiv.id = 'processing-' + Date.now();
             processingDiv.innerHTML = `
-                <div class="processing-text">🔍 Let me find that for you...</div>
-                <div class="processing-subtext">Please stand by</div>
+                <div class="processing-text">🔍 Researching...</div>
             `;
             container.appendChild(processingDiv);
-            processingDiv.scrollIntoView({ behavior: 'smooth', block: 'end' });
             return processingDiv.id;
         }
 
         function removeProcessing(id) {
-            const processingDiv = document.getElementById(id);
-            if (processingDiv) {
-                processingDiv.remove();
-            }
+            const div = document.getElementById(id);
+            if (div) div.remove();
         }
 
         function cleanSourceName(filename) {
-            return filename
-                .replace(/\.txt$/, '')
-                .replace(/_/g, ' ')
-                .replace(/-/g, ' ')
-                .trim();
+            return filename.replace(/\.txt$/, '').replace(/_/g, ' ').replace(/-/g, ' ').trim();
         }
 
         function playAudio(base64Audio) {
             try {
-                // Stop any currently playing audio
                 if (window.currentAudio) {
                     window.currentAudio.pause();
                     window.currentAudio = null;
@@ -860,23 +783,14 @@
                 
                 const audio = new Audio('data:audio/mpeg;base64,' + base64Audio);
                 window.currentAudio = audio;
-                
-                audio.onended = () => {
-                    window.currentAudio = null;
-                };
-                
+                audio.onended = () => { window.currentAudio = null; };
                 audio.play();
             } catch (error) {
-                console.error('Error playing audio:', error);
+                console.error('Audio error:', error);
             }
         }
 
-        // ============================================================================
-        // INITIALIZATION
-        // ============================================================================
-        
-        console.log('Churchill Falls Assistant initialized');
-        console.log('Ready for voice or text input');
+        console.log('Churchill Falls Assistant - Claude-inspired theme loaded');
     </script>
 
 </body>
