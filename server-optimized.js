@@ -382,6 +382,12 @@ const TEXT_MODE_DEEP_PROMPT = `You are an expert AI assistant specializing in th
 
 Provide comprehensive, well-researched answers using all available documents.
 
+RESEARCH STRATEGY:
+1. Use search_documents with max_results=10-15 to find ALL relevant documents
+2. For key documents found, use get_document to retrieve full content
+3. Synthesize information from MULTIPLE sources (aim for 5+ sources for complex questions)
+4. Present diverse perspectives (Doug May's analysis, Wade Locke's critique, official documents, etc.)
+
 CRITICAL INSTRUCTIONS:
 - Write in direct, factual third person voice
 - Start responses with the direct answer (e.g., "The Churchill Falls agreement is controversial because...")
@@ -392,6 +398,12 @@ CRITICAL INSTRUCTIONS:
 - Structure responses with clear sections
 - Provide thorough analysis with supporting evidence
 
+WHEN ANSWERING ABOUT DOUG MAY'S ANALYSIS:
+- Search for: "Doug video" or "Doug May analysis"
+- Retrieve ALL Doug video transcripts (video1, 2A, 2B, 3A, 3B, 4)
+- Synthesize his complete perspective across all videos
+- Include his economic frameworks, cost comparisons, and strategic analysis
+
 Example of what NOT to do:
 "Based on the comprehensive analysis of available documents, the Churchill Falls agreement is controversial..."
 
@@ -399,6 +411,7 @@ Example of what TO do:
 "The Churchill Falls agreement is controversial for several interconnected reasons..."
 
 Provide objective research presented as established facts, not as someone's analysis.`;
+
 
 // ============================================================================
 // MAIN CHAT ENDPOINT
@@ -602,22 +615,35 @@ app.post('/api/chat', async (req, res) => {
                                 arguments: block.input
                             });
 
-                            // Try to extract document name from result if get_document
-                            if (block.name === 'get_document' && result.content && result.content[0]) {
+                            // ENHANCED SOURCE TRACKING
+                            if (result && result.content && result.content[0]) {
                                 const resultText = result.content[0].text || '';
                                 
-                                // Try to extract filename from result text
-                                // Common patterns: "From: filename.txt", "Source: filename", etc.
-                                const filenameMatch = resultText.match(/(?:From|Source|File|Document):\s*([^\n]+\.txt)/i) ||
-                                                     resultText.match(/^([A-Za-z0-9_-]+\.txt)/m);
-                                
-                                if (filenameMatch && filenameMatch[1]) {
-                                    documentsAccessed.add(filenameMatch[1].trim());
-                                    console.log(`  ✓ Tracked from result: ${filenameMatch[1].trim()}`);
+                                // For search_documents: Parse JSON and extract ALL filenames
+                                if (block.name === 'search_documents') {
+                                    try {
+                                        const searchResults = JSON.parse(resultText);
+                                        if (Array.isArray(searchResults)) {
+                                            console.log(`  📚 Search returned ${searchResults.length} documents:`);
+                                            searchResults.forEach(result => {
+                                                if (result.filename) {
+                                                    documentsAccessed.add(result.filename);
+                                                    console.log(`     ✓ ${result.filename} (score: ${result.score})`);
+                                                }
+                                            });
+                                        }
+                                    } catch (e) {
+                                        console.log(`  ⚠ Could not parse search results as JSON`);
+                                    }
                                 }
                                 
-                                // Also log first 100 chars of result to see structure
-                                console.log(`  → Result preview: ${resultText.substring(0, 100)}...`);
+                                // For get_document: Track the specific document requested
+                                if (block.name === 'get_document' && block.input && block.input.filename) {
+                                    documentsAccessed.add(block.input.filename);
+                                    console.log(`  ✓ Retrieved: ${block.input.filename}`);
+                                }
+                                
+                                console.log(`  → Total sources tracked: ${documentsAccessed.size}`);
                             }
 
                             toolResults.push({
