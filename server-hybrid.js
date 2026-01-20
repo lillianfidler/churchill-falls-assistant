@@ -487,7 +487,7 @@ You are in FAST-FAST mode:
 
 const fastInstruction = `
 You are in FAST SUMMARY mode:
-- Use the core documents already in your context (Doug May, MOU, main analyses, financials, Hydro-Quebec exports).
+- Use the core documents already in your context (Doug May, the MOU, main analyses, financials, Hydro-Quebec exports).
 - Do NOT call MCP tools unless the user explicitly asks for detailed pre-2020 historical background.
 - Answer in 3–6 short paragraphs.
 - Keep the answer under about 400 words.
@@ -498,11 +498,11 @@ You are in FAST SUMMARY mode:
 
     const deepInstruction = `
 You are in DEEP ANALYSIS mode:
-- Use the core documents already in your context (Doug May, MOU, main analyses, financials, Hydro-Quebec exports).
-- Do NOT call MCP tools unless the user explicitly asks for detailed pre-2020 historical background.
-- Answer in 2–5 short paragraphs.
-- Keep the answer under about 400 words.
-- Focus on the most important numbers, conclusions, and trade-offs.
+- Use all core documents already in your context (Doug May, the MOU, main economic analyses, financials, Hydro-Quebec exports) and MCP tools for supplementary historical material when genuinely needed.
+- Present multiple perspectives clearly (e.g., benefits vs. risks, Newfoundland and Labrador vs. Quebec interests, and differences between Doug May, Wade Locke, and James Feehan where relevant).
+- Provide structured, well-organized answers with clear sections, and explain key assumptions and uncertainties.
+- Include the most important numbers, timeframes, and trade-offs, and briefly note major pros and cons rather than only one side.
+- Do not artificially shorten deep responses; be as detailed as necessary while avoiding repetition.
 - At the end, add a short "Documents consulted" section listing 3–8 key documents you relied on (by title only, one per line).
 `;
 
@@ -705,6 +705,7 @@ You are in FAST SUMMARY mode:
 - Do NOT call MCP tools unless the user explicitly asks for detailed pre-2020 historical background.
 - Answer in 2–5 short paragraphs.
 - Keep the answer under about 400 words.
+- When space allows, briefly note at least one major benefit and one major concern rather than only one side.
 `;
 
     const deepInstruction = `

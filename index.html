@@ -533,7 +533,7 @@
         <nav class="nav">
             <div class="logo">Churchill Falls Assistant</div>
             <div class="nav-links">
-                <a href="#home">Home</a>
+                <button id="homeButton" class="nav-link-button">Home</button>
                 <a href="about.html">About</a>
                 <a href="sources.html">Sources</a>
                 <a href="history.html">History</a>
@@ -842,17 +842,18 @@
                     actionsDiv.appendChild(pauseButton);
                     
                     // Add replay button
-                    const replayButton = document.createElement('button');
-                    replayButton.className = 'action-button';
-                    replayButton.textContent = '🔄 Replay';
-                    replayButton.addEventListener('click', () => {
-                        if (window.currentAudio) {
-                            window.currentAudio.currentTime = 0;
-                            window.currentAudio.play();
-                            pauseButton.textContent = '⏸️ Pause';
-                        }
-                    });
-                    actionsDiv.appendChild(replayButton);
+const replayButton = document.createElement('button');
+replayButton.className = 'action-button';
+replayButton.textContent = '🔄 Replay';
+replayButton.addEventListener('click', () => {
+    if (window.currentAudio) {
+        window.currentAudio.pause();
+        window.currentAudio.currentTime = 0;
+        window.currentAudio.play();
+        pauseButton.textContent = '⏸️ Pause';
+    }
+});
+actionsDiv.appendChild(replayButton);
                 }
                 
                 messageDiv.appendChild(actionsDiv);
@@ -915,6 +916,31 @@
         }
 
         console.log('Churchill Falls Assistant - Claude-inspired theme loaded');
+// Home button: reset conversation and scroll to top
+document.getElementById('homeButton')?.addEventListener('click', (event) => {
+    event.preventDefault(); // prevent any default navigation
+
+    // Clear conversation area
+    const container = document.getElementById('conversation');
+    if (container) {
+        container.innerHTML = '';
+    }
+
+    // Reset any stored conversation history if used
+    if (window.conversationHistory) {
+        window.conversationHistory = [];
+    }
+
+    // Stop any playing audio
+    if (window.currentAudio) {
+        window.currentAudio.pause();
+        window.currentAudio = null;
+    }
+
+    // Scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
     </script>
 
 </body>
