@@ -244,27 +244,25 @@
             margin-top: 0;
         }
 
-        /* Style for bold subheaders (like **Primary Purpose**) */
-        .message-content p strong {
-            color: #ffffff;
-            display: block;
-            margin: 12px 0 4px 0;
-            font-size: 15px;
-        }
+        /* Style for bold subheaders and markdown-style headers */
+.message-content p strong {
+    color: var(--aqua);      /* heading color */
+    display: inline;         /* keep inline to avoid big vertical gaps */
+    font-size: 15px;
+    font-weight: 600;
+}
 
-        /* Remove extra spacing after bold subheaders */
-        .message-content p:has(strong) {
-            margin-bottom: 0;
-        }
+/* Remove extra spacing around paragraphs that only contain a bold heading */
+.message-content p:has(strong) {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
 
-        .message-content p:has(strong) + p {
-            margin-top: 0;
-        }
+/* Paragraph immediately after a bold heading */
+.message-content p:has(strong) + p {
+    margin-top: 0;
+}
 
-        /* Style markdown-style headers */
-        .message-content strong:first-child {
-            color: var(--aqua);
-        }
 
         .message.user .message-content {
             color: #fff;
@@ -571,7 +569,7 @@
                 <div class="mode-card">
                     <div class="mode-card-icon">⚡</div>
                     <div class="mode-card-title">Fast</div>
-                    <div class="mode-card-desc">Quick text answers from <strong>Dr. Doug May's research and analysis</strong>. Type your question below.</div>
+                    <div class="mode-card-desc">Fast, focused answers using core documents and expert analysis, without deep historical detail. Type your question below.</div>
                 </div>
                 
                 <div class="mode-card">
