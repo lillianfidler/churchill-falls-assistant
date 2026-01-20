@@ -185,6 +185,11 @@ function prepareTextForSpeech(text) {
 processedText = processedText
   .replace(/(\d+\.?\d*)\s*c\s*\/\s*kWh/gi, '$1 cents per kilowatt hour')
   .replace(/(\d+\.?\d*)\s*c\s*\/\s*kwh/gi, '$1 cents per kilowatt hour');
+processedText = processedText
+  .replace(/(\d+\.?\d*)\s*MW\b/gi, '$1 megawatts')
+  .replace(/\bMW\b/gi, 'megawatts')
+  .replace(/(\d+\.?\d*)\s*MWh\b/gi, '$1 megawatt hours')
+  .replace(/\bMWh\b/gi, 'megawatt hours');
 
   // Fix "30x" style multipliers (e.g., "30x" → "30 times")
   processedText = processedText.replace(/(\d+)\s*x\b/gi, '$1 times');
@@ -214,7 +219,8 @@ processedText = processedText
     GWh: 'gigawatt hours',
     kWh: 'kilowatt hours',
     MW: 'megawatts',
-MWh: 'megawatt hours',
+    MWh: 'megawatt hours',
+
 
     // Financial
     NPV: 'net present value',
