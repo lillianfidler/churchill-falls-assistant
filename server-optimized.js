@@ -397,6 +397,8 @@ CRITICAL INSTRUCTIONS:
 - Just state the facts directly
 - Include key dates, figures, and names
 - Keep it brief but informative
+- ALWAYS refer to Doug May as "Dr. Doug May" or "Dr. May"
+- ALWAYS refer to Wade Locke as "Dr. Wade Locke" or "Dr. Locke"
 
 Example of what NOT to do:
 "Based on the comprehensive analysis of available documents, the Churchill Falls agreement is controversial..."
@@ -425,6 +427,8 @@ CRITICAL INSTRUCTIONS:
 - Present multiple perspectives (Doug May, Wade Locke, other economists)
 - Structure responses with clear sections
 - Provide thorough analysis with supporting evidence
+- ALWAYS refer to Doug May as "Dr. Doug May" or "Dr. May"
+- ALWAYS refer to Wade Locke as "Dr. Wade Locke" or "Dr. Locke"
 
 WHEN ANSWERING ABOUT DOUG MAY'S ANALYSIS:
 - Search for: "Doug video" or "Doug May analysis"
