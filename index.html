@@ -565,19 +565,19 @@
                         </svg>
                     </div>
                     <div class="mode-card-title">Voice</div>
-                    <div class="mode-card-desc">Hear Dr. Doug May's analysis in his own voice. Press & hold the microphone button below to speak.</div>
+                    <div class="mode-card-desc">Hear Dr. Doug May's analysis in his own voice. Press & hold the microphone button below to speak your question.</div>
                 </div>
                 
                 <div class="mode-card">
                     <div class="mode-card-icon">⚡</div>
                     <div class="mode-card-title">Fast</div>
-                    <div class="mode-card-desc">Get quick written answers in 2-3 paragraphs. Perfect for straightforward questions.</div>
+                    <div class="mode-card-desc">Quick text answers from <strong>Dr. Doug May's research and analysis</strong>. Type your question below.</div>
                 </div>
                 
                 <div class="mode-card">
                     <div class="mode-card-icon">🔍</div>
                     <div class="mode-card-title">Deep</div>
-                    <div class="mode-card-desc">Receive comprehensive analysis with deep research and longer answers.</div>
+                    <div class="mode-card-desc">Comprehensive research with text answers from <strong>all sources</strong> (<a href="/sources.html" style="color: var(--aqua); text-decoration: underline;">view sources</a>). Type your question below.</div>
                 </div>
             </div>
             
@@ -785,6 +785,12 @@
                 let modeLabel = mode === 'voice' ? '🎤 Voice' : mode === 'fast' ? '⚡ Fast' : '🔍 Deep';
                 metaDiv.textContent = modeLabel;
                 if (cached) metaDiv.textContent += ' • 💾 Cached';
+                
+                // Add sources link for Deep mode
+                if (mode === 'deep') {
+                    metaDiv.innerHTML += ' • <a href="/sources.html" style="color: var(--aqua); text-decoration: underline;">View all sources</a>';
+                }
+                
                 messageDiv.appendChild(metaDiv);
                 
                 const actionsDiv = document.createElement('div');
@@ -836,6 +842,19 @@
                         }
                     });
                     actionsDiv.appendChild(pauseButton);
+                    
+                    // Add replay button
+                    const replayButton = document.createElement('button');
+                    replayButton.className = 'action-button';
+                    replayButton.textContent = '🔄 Replay';
+                    replayButton.addEventListener('click', () => {
+                        if (window.currentAudio) {
+                            window.currentAudio.currentTime = 0;
+                            window.currentAudio.play();
+                            pauseButton.textContent = '⏸️ Pause';
+                        }
+                    });
+                    actionsDiv.appendChild(replayButton);
                 }
                 
                 messageDiv.appendChild(actionsDiv);
