@@ -66,9 +66,11 @@ const DOCUMENTS = [
   'HQ_Action_Plan_2035_clean_text.txt',
   'HQ_Production_July_2025_text.txt',
   'HQ-exports-electricity-price-escalation.txt',
+  'hq-quarterly-bulletin.txt',
   'HYDRO_MOU_GNL_Jan_2025.txt',
   'Hydro-quebec-annual-report-2024.txt',
   'HYDRO-QUEBECS-IMPORTS.txt',
+
   
   // MOU Supporting Documents
   'MOU_s_Societal_Values.txt',
