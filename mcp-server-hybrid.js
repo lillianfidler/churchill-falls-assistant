@@ -88,9 +88,8 @@ const DOCUMENTS = [
 ];
 
 // CORE DOCUMENTS (REMOVED FROM MCP - NOW IN EXPRESS SERVER CONTEXT)
-// These 19 documents are loaded into the Express server for immediate access:
+// These 15 documents are loaded into the Express server for immediate access:
 // - MOU_Churchill_Falls_Dec_12_2024_summary.txt
-// - LOCKE analysis of MOU CF-summary.txt
 // - Reassessing-the-Churchill-Falls-MOU.txt
 // - Doug-video-series-video1-summary.txt
 // - Doug-video-series-video2A-summary.txt
@@ -98,9 +97,6 @@ const DOCUMENTS = [
 // - Doug-video-series-video3A.txt
 // - Doug-video-series-video3B.txt
 // - Doug-video-series-video4.txt
-// - Churchill-falls-consolidated-financial-statements-2024.txt
-// - Churchill-Falls-2023-financial-statement.txt
-// - Lower-Churchill-Project-Combined-Financial-Statements-2024.txt
 // - HYDRO-QUEBECS-EXPORTS.txt
 // - HYDRO-QUEBECS-IMPORTS.txt
 // - Assessment-of-Proposed-Prices.txt
