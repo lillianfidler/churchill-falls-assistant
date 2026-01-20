@@ -88,13 +88,13 @@ const DOCUMENTS = [
 ];
 
 // CORE DOCUMENTS (REMOVED FROM MCP - NOW IN EXPRESS SERVER CONTEXT)
-// These 13 documents are loaded into the Express server for immediate access:
-// - MOU_Churchill_Falls_Dec_12_2024_clean_text.txt
-// - LOCKE analysis of MOU CF.txt
+// These 19 documents are loaded into the Express server for immediate access:
+// - MOU_Churchill_Falls_Dec_12_2024_summary.txt
+// - LOCKE analysis of MOU CF-summary.txt
 // - Reassessing-the-Churchill-Falls-MOU.txt
-// - Doug-video-series-video1.txt
-// - Doug-video-series-video2A.txt
-// - Doug-video-series-video2B.txt
+// - Doug-video-series-video1-summary.txt
+// - Doug-video-series-video2A-summary.txt
+// - Doug-video-series-video2B-summary.txt
 // - Doug-video-series-video3A.txt
 // - Doug-video-series-video3B.txt
 // - Doug-video-series-video4.txt
@@ -102,6 +102,13 @@ const DOCUMENTS = [
 // - Churchill-Falls-2023-financial-statement.txt
 // - Lower-Churchill-Project-Combined-Financial-Statements-2024.txt
 // - HYDRO-QUEBECS-EXPORTS.txt
+// - HYDRO-QUEBECS-IMPORTS.txt
+// - Assessment-of-Proposed-Prices.txt
+// - Proposed-Prices-for-Existing-Power.txt
+// - quebecs-changing-import-picture.txt
+// - quebecs-electricity-supply-problem.txt
+// - The-Assessment-of-the-Proposed-Proj.txt
+
 
 // Document cache
 let documentCache = {};
