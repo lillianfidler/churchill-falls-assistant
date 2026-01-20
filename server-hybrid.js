@@ -182,6 +182,9 @@ function prepareTextForSpeech(text) {
   processedText = processedText
     .replace(/(\d+\.?\d*)\s*¢\s*\/\s*kWh/gi, '$1 cents per kilowatt hour')
     .replace(/(\d+\.?\d*)\s*¢\s*\/\s*kwh/gi, '$1 cents per kilowatt hour');
+processedText = processedText
+  .replace(/(\d+\.?\d*)\s*c\s*\/\s*kWh/gi, '$1 cents per kilowatt hour')
+  .replace(/(\d+\.?\d*)\s*c\s*\/\s*kwh/gi, '$1 cents per kilowatt hour');
 
   // Fix "30x" style multipliers (e.g., "30x" → "30 times")
   processedText = processedText.replace(/(\d+)\s*x\b/gi, '$1 times');
@@ -211,6 +214,7 @@ function prepareTextForSpeech(text) {
     GWh: 'gigawatt hours',
     kWh: 'kilowatt hours',
     MW: 'megawatts',
+MWh: 'megawatt hours',
 
     // Financial
     NPV: 'net present value',
@@ -466,29 +470,34 @@ app.post('/api/chat', async (req, res) => {
     console.log(`${modeLabel}: "${message.substring(0, 50)}..."`);
     console.log(`${'='.repeat(60)}`);
 
-    const fastFastInstruction = `
+const fastFastInstruction = `
 You are in FAST-FAST mode:
 - Provide an ultra-concise answer.
 - Maximum 3 sentences OR about 120 words, whichever is shorter.
 - Focus ONLY on the most critical point(s).
 - Do NOT call any tools. Use only the core documents already in your context.
+- At the end, add a short "Documents consulted" section listing 3–6 key documents you relied on (by title only, one per line).
 `;
 
-    const fastInstruction = `
+const fastInstruction = `
 You are in FAST SUMMARY mode:
+- Use the core documents already in your context (Doug May, MOU, main analyses, financials, Hydro-Quebec exports).
+- Do NOT call MCP tools unless the user explicitly asks for detailed pre-2020 historical background.
+- Answer in 3–6 short paragraphs.
+- Keep the answer under about 400 words.
+- Be concise but complete, especially for short numbered lists (do not stop halfway through a list).
+- Focus on the most important numbers, conclusions, and trade-offs.
+- At the end, add a short "Documents consulted" section listing 3–8 key documents you relied on (by title only, one per line).
+`;
+
+    const deepInstruction = `
+You are in DEEP ANALYSIS mode:
 - Use the core documents already in your context (Doug May, MOU, main analyses, financials, Hydro-Quebec exports).
 - Do NOT call MCP tools unless the user explicitly asks for detailed pre-2020 historical background.
 - Answer in 2–5 short paragraphs.
 - Keep the answer under about 400 words.
 - Focus on the most important numbers, conclusions, and trade-offs.
-`;
-
-    const deepInstruction = `
-You are in DEEP ANALYSIS mode:
-- Use all core documents in context and MCP tools for supplementary documents as needed.
-- Provide full background, step-by-step reasoning, and multiple perspectives.
-- Include relevant numbers, calculations, and citations.
-- Longer answers are acceptable when helpful.
+- At the end, add a short "Documents consulted" section listing 3–8 key documents you relied on (by title only, one per line).
 `;
 
     let modeInstruction = fastInstruction;
@@ -669,6 +678,9 @@ app.post('/api/voice-chat', async (req, res) => {
     if (requestVoice) {
       responseStyleInstruction = `
 This response will be converted to audio. Please format appropriately:
+- Use clear section breaks with blank lines between sections.
+- Put section titles like "Main Objectives:" and "Three Development Projects:" on their own line.
+- Use numbered or bulleted lists for project details.
 - Use clear, natural language suitable for audio narration.
 - Avoid excessive markdown formatting.
 - Write as if explaining to someone out loud.
@@ -696,7 +708,7 @@ You are in DEEP ANALYSIS mode:
 `;
 
     let modeInstruction = isDeep ? deepInstruction : fastInstruction;
-    let maxTokens = isDeep ? 4096 : 1024;
+    let maxTokens = isDeep ? 4096 : 1600; // bump Fast from 1024 → 1600
 
     const modifiedSystemPrompt =
       systemPrompt + modeInstruction + responseStyleInstruction;
