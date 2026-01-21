@@ -783,26 +783,15 @@
             addMessage('assistant', 'I apologize, but I encountered an error. Please try again.');
           } else {
             const fullText = data.text || '';
-            console.log('fullText length', fullText.length);
+console.log('fullText length', fullText.length);
 
-            // simple fake streaming: word-by-word into preview, final message at end
-            const words = fullText.split(/\s+/);
-            let index = 0;
+// Immediately show the full answer
+addMessage('assistant', fullText, data.sources, data.audio, data.mode, data.cached);
+conversationHistory.push(
+  { role: 'user', content: message },
+  { role: 'assistant', content: fullText }
+);
 
-            const intervalId = setInterval(() => {
-              if (index >= words.length) {
-                clearInterval(intervalId);
-                addMessage('assistant', fullText, data.sources, data.audio, data.mode, data.cached);
-                conversationHistory.push(
-                  { role: 'user', content: message },
-                  { role: 'assistant', content: fullText }
-                );
-                return;
-              }
-              currentAnswerText = index === 0 ? words[index] : currentAnswerText + ' ' + words[index];
-              renderAnswer(currentAnswerText);
-              index += 1;
-            }, 30);
           }
         } catch (error) {
           console.error('Error in sendMessage', error);
@@ -959,19 +948,13 @@
       }
 
       function showProcessing() {
-        const container = conversationEl;
-        const processingDiv = document.createElement('div');
-        processingDiv.className = 'processing';
-        processingDiv.id = 'processing-' + Date.now();
-        processingDiv.innerHTML = `<div class="processing-text">Researching...</div>`;
-        container.appendChild(processingDiv);
-        return processingDiv.id;
-      }
+    // no separate processing element; we rely on the animated researching-indicator
+  return null;
+}
 
       function removeProcessing(id) {
-        const div = document.getElementById(id);
-        if (div) div.remove();
-      }
+  // nothing to remove
+}
 
       function cleanSourceName(filename) {
         return filename
