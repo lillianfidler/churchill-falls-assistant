@@ -659,17 +659,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const researchingIndicator = document.getElementById('researching-indicator');
     const researchAudio = document.getElementById('research-audio');
     let currentAnswerText = '';
+let researchAudioReady = false;
 
-    function showResearching() {
-        if (researchingIndicator) {
-            researchingIndicator.classList.remove('hidden');
-        }
-        if (researchAudio) {
-            researchAudio.loop = true;
-            researchAudio.currentTime = 0;
-            researchAudio.play().catch(() => {});
-        }
+document.addEventListener('click', () => {
+    if (!researchAudio || researchAudioReady) return;
+    researchAudio.play().then(() => {
+        researchAudio.pause();
+        researchAudio.currentTime = 0;
+        researchAudioReady = true;
+        console.log('researchAudio primed by user click');
+    }).catch(err => {
+        console.warn('Could not prime researchAudio', err);
+    });
+});
+
+
+function showResearching() {
+    if (researchingIndicator) {
+        researchingIndicator.classList.remove('hidden');
     }
+    if (researchAudio && researchAudioReady) {
+        researchAudio.loop = true;
+        researchAudio.currentTime = 0;
+        researchAudio.play().catch(err => {
+            console.warn('researchAudio play blocked', err);
+        });
+    }
+}
 
     function hideResearching() {
         if (researchingIndicator) {
