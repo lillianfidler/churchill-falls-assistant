@@ -653,64 +653,7 @@
         let recognition = null;
         let conversationHistory = [];
 
-        // Mode toggle
-        document.querySelectorAll('.mode-toggle button').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.mode-toggle button').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                currentTextMode = btn.dataset.mode;
-            });
-        });
-
-        // Microphone
-        const micButton = document.getElementById('micButton');
-
-        micButton.addEventListener('mousedown', startRecording);
-        micButton.addEventListener('mouseup', stopRecording);
-        micButton.addEventListener('mouseleave', () => { if (isRecording) stopRecording(); });
-        micButton.addEventListener('touchstart', (e) => { e.preventDefault(); startRecording(); });
-        micButton.addEventListener('touchend', (e) => { e.preventDefault(); if (isRecording) stopRecording(); });
-
-        function startRecording() {
-            if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
-                alert('Speech recognition not supported');
-                return;
-            }
-
-            isRecording = true;
-            micButton.classList.add('active');
-
-            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-            recognition = new SpeechRecognition();
-            recognition.continuous = false;
-            recognition.interimResults = false;
-
-            recognition.onresult = (event) => {
-                const transcript = event.results[0][0].transcript;
-                sendMessage(transcript, true);
-            };
-
-            recognition.onerror = () => {
-                isRecording = false;
-                micButton.classList.remove('active');
-            };
-
-            recognition.onend = () => {
-                isRecording = false;
-                micButton.classList.remove('active');
-            };
-
-            recognition.start();
-        }
-
-        function stopRecording() {
-            if (isRecording && recognition) {
-                recognition.stop();
-                isRecording = false;
-                micButton.classList.remove('active');
-            }
-        }
-
+                
         // Text input
         document.getElementById('sendButton').addEventListener('click', () => {
             const text = document.getElementById('textInput').value.trim();
