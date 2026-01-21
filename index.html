@@ -761,66 +761,75 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Send message with fake streaming + research audio
-    async function sendMessage(message, isVoice) {
-        document.getElementById('welcomeState').classList.add('hidden');
-        document.getElementById('conversation').classList.remove('hidden');
+    // Send message with fake streaming + research audio
+async function sendMessage(message, isVoice) {
+    console.log('sendMessage called with', { message, isVoice, currentTextMode });
 
-        addMessage('user', message);
+    document.getElementById('welcomeState').classList.add('hidden');
+    document.getElementById('conversation').classList.remove('hidden');
 
-        const processingId = showProcessing();
+    addMessage('user', message);
 
-        currentAnswerText = '';
-        renderAnswer('');
-        showResearching();
+    const processingId = showProcessing();
 
-        try {
-            const response = await fetch('/api/chat', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    message: message,
-                    conversationHistory: conversationHistory,
-                    isVoiceMode: isVoice,
-                    textMode: currentTextMode
-                })
-            });
+    currentAnswerText = '';
+    renderAnswer('');
+    showResearching();
 
-            const data = await response.json();
-            removeProcessing(processingId);
+    try {
+        const response = await fetch('/api/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                message: message,
+                conversationHistory: conversationHistory,
+                isVoiceMode: isVoice,
+                textMode: currentTextMode
+            })
+        });
 
-            if (data.error) {
-                hideResearching();
-                addMessage('assistant', 'I apologize, but I encountered an error. Please try again.');
-            } else {
-                const fullText = data.text || '';
-                const words = fullText.split(/\s+/);
-                let index = 0;
+        console.log('fetch /api/chat status', response.status);
 
-                const intervalId = setInterval(() => {
-                    if (index >= words.length) {
-                        clearInterval(intervalId);
-                        hideResearching();
+        const data = await response.json();
+        console.log('response data keys', Object.keys(data));
 
-                        addMessage('assistant', fullText, data.sources, data.audio, data.mode, data.cached);
-                        conversationHistory.push(
-                            { role: 'user', content: message },
-                            { role: 'assistant', content: fullText }
-                        );
-                        return;
-                    }
-                    currentAnswerText += (index === 0 ? '' : ' ') + words[index];
-                    index += 1;
-                    renderAnswer(currentAnswerText);
-                }, 30);
-            }
+        removeProcessing(processingId);
 
-        } catch (error) {
-            console.error('Error:', error);
-            removeProcessing(processingId);
+        if (data.error) {
             hideResearching();
-            addMessage('assistant', 'Connection error. Please try again.');
+            addMessage('assistant', 'I apologize, but I encountered an error. Please try again.');
+        } else {
+            const fullText = data.text || '';
+            console.log('fullText length', fullText.length);
+
+            const words = fullText.split(/\s+/);
+            let index = 0;
+
+            const intervalId = setInterval(() => {
+                if (index >= words.length) {
+                    clearInterval(intervalId);
+                    hideResearching();
+
+                    addMessage('assistant', fullText, data.sources, data.audio, data.mode, data.cached);
+                    conversationHistory.push(
+                        { role: 'user', content: message },
+                        { role: 'assistant', content: fullText }
+                    );
+                    return;
+                }
+                currentAnswerText += (index === 0 ? '' : ' ') + words[index];
+                index += 1;
+                renderAnswer(currentAnswerText);
+            }, 30);
         }
+
+    } catch (error) {
+        console.error('sendMessage error', error);
+        removeProcessing(processingId);
+        hideResearching();
+        addMessage('assistant', 'Connection error. Please try again.');
     }
+}
 
     function addMessage(role, text, sources, audio, mode, cached) {
         const container = document.getElementById('conversation');
