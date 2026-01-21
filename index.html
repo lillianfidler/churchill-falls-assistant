@@ -962,6 +962,13 @@ actionsDiv.appendChild(replayButton);
     const answerContainer = document.getElementById('answer-container');
     const researchingIndicator = document.getElementById('researching-indicator');
     const researchAudio = document.getElementById('research-audio');
+// Quick sanity check – logs will tell us if the audio element is found
+if (!researchAudio) {
+    console.warn('research-audio element not found');
+} else {
+    console.log('research-audio element ready; src =', researchAudio.src);
+}
+
     let currentAnswerText = '';
 
     function showResearching() {
