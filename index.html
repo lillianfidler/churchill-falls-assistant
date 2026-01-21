@@ -177,6 +177,26 @@
             color: #e5e5e5;
             font-weight: 500;
         }
+.hidden {
+  display: none;
+}
+
+.researching {
+  font-style: italic;
+}
+
+.researching .dots::after {
+  content: '';
+  animation: dots 1s steps(3, end) infinite;
+}
+
+@keyframes dots {
+  0% { content: ''; }
+  33% { content: '.'; }
+  66% { content: '..'; }
+  100% { content: '...'; }
+}
+
 
         /* ===== CONVERSATION AREA ===== */
         .conversation {
@@ -942,8 +962,18 @@ document.getElementById('homeButton')?.addEventListener('click', (event) => {
     // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+<!-- Researching indicator (initially hidden) -->
+<div id="researching-indicator" class="researching hidden">
+  Researching<span class="dots"></span>
+</div>
+
+<!-- Answer container -->
+<div id="answer-container"></div>
+
 
     </script>
+<audio id="research-audio" src="assets/WaitTimer.wav" preload="auto"></audio>
+<script src="server-optimized.js"></script> <!-- or whatever your front-end JS file is -->
 
 </body>
 </html>
