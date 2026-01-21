@@ -501,36 +501,41 @@
         This assistant provides expert analysis and comprehensive information about Churchill Falls hydroelectric projects and energy agreements between Newfoundland and Labrador and Quebec. Ask questions using voice or text, and choose between quick summaries or in-depth research.
       </p>
 
-      <div class="mode-cards">
-        <div class="mode-card">
-          <div class="mode-card-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" style="fill: #a8a8a8;">
-              <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"></path>
-              <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"></path>
-            </svg>
-          </div>
-          <div class="mode-card-title">Voice</div>
-          <div class="mode-card-desc">
-            Hear Dr. Doug May’s analysis in his own voice. Press and hold the microphone button below to speak your question.
-          </div>
-        </div>
+   <div class="mode-cards">
+  <div class="mode-card">
+    <div class="mode-card-icon">
+      <svg width="32" height="32" viewBox="0 0 24 24" style="fill: #a8a8a8;">
+        <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"></path>
+        <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"></path>
+      </svg>
+    </div>
+    <div class="mode-card-title">Voice</div>
+    <div class="mode-card-desc">
+      Hear Dr. Doug May’s analysis in his own voice. Press and hold the microphone button below to speak your question.
+    </div>
+  </div>
 
-        <div class="mode-card">
-          <div class="mode-card-icon"></div>
-          <div class="mode-card-title">Fast</div>
-          <div class="mode-card-desc">
-            Fast, focused answers using core documents and expert analysis, without deep historical detail. Type your question below.
-          </div>
-        </div>
+  <div class="mode-card">
+    <div class="mode-card-icon">
+      <img src="icons/fast.svg" alt="Fast mode" style="width:32px;height:32px;display:block;">
+    </div>
+    <div class="mode-card-title">Fast</div>
+    <div class="mode-card-desc">
+      Fast, focused answers using core documents and expert analysis, without deep historical detail. Type your question below.
+    </div>
+  </div>
 
-        <div class="mode-card">
-          <div class="mode-card-icon"></div>
-          <div class="mode-card-title">Deep</div>
-          <div class="mode-card-desc">
-            Comprehensive research with text answers from <strong>all sources</strong> (<a href="sources.html" style="color: var(--aqua); text-decoration: underline;">view sources</a>). Type your question below.
-          </div>
-        </div>
-      </div>
+  <div class="mode-card">
+    <div class="mode-card-icon">
+      <img src="icons/deep.svg" alt="Deep mode" style="width:32px;height:32px;display:block;">
+    </div>
+    <div class="mode-card-title">Deep</div>
+    <div class="mode-card-desc">
+      Comprehensive research with text answers from <strong>all sources</strong> (<a href="sources.html" style="color: var(--aqua); text-decoration: underline;">view sources</a>). Type your question below.
+    </div>
+  </div>
+</div>
+
 
       <div class="info-box">
         <p>
@@ -551,28 +556,40 @@
   </div>
 
   <!-- INPUT BAR -->
-  <div class="input-bar">
-    <div class="input-wrapper">
-      <div class="input-controls">
-        <input type="text" class="text-input" placeholder="Ask about Churchill Falls..." id="textInput">
-        <button class="mic-button" id="micButton">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"></path>
-            <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"></path>
-          </svg>
-        </button>
-        <button class="send-button" id="sendButton">
-          <svg viewBox="0 0 24 24">
-            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
-          </svg>
-        </button>
-      </div>
-      <div class="mode-toggle">
-        <button class="active" data-mode="fast">Fast</button>
-        <button data-mode="deep">Deep</button>
-      </div>
+<div class="input-bar">
+  <div class="input-wrapper">
+    <div class="input-controls">
+      <input type="text" class="text-input" placeholder="Ask about Churchill Falls..." id="textInput">
+      <button class="mic-button" id="micButton">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"></path>
+          <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"></path>
+        </svg>
+      </button>
+      <button class="send-button" id="sendButton">
+        <svg viewBox="0 0 24 24">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mode-toggle">
+      <button class="active" data-mode="fast">
+        <img src="icons/fast.svg"
+             alt=""
+             style="width:14px;height:14px;vertical-align:middle;margin-right:6px;">
+        Fast
+      </button>
+      <button data-mode="deep">
+        <img src="icons/deep.svg"
+             alt=""
+             style="width:14px;height:14px;vertical-align:middle;margin-right:6px;">
+        Deep
+      </button>
     </div>
   </div>
+</div>
+
 
   <!-- WAITTIMER AUDIO + TEST BUTTON -->
   <audio id="research-audio" src="WaitTimer.wav" preload="auto"></audio>
