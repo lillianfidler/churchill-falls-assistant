@@ -664,16 +664,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // New UI refs for research indicator + audio + fake streaming
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    // New UI refs for research indicator + audio + fake streaming
     const answerContainer = document.getElementById('answer-container');
     const researchingIndicator = document.getElementById('researching-indicator');
     const researchAudio = document.getElementById('research-audio');
-// Quick sanity check – logs will tell us if the audio element is found
-if (!researchAudio) {
-    console.warn('research-audio element not found');
-} else {
-    console.log('research-audio element ready; src =', researchAudio.src);
-}
+    if (!researchAudio) {
+        console.warn('research-audio element not found');
+    } else {
+        console.log('research-audio element ready; src =', researchAudio.src);
+    }
 
+    let currentTextMode = 'fast';
+    let isRecording = false;
+    let recognition = null;
+    let conversationHistory = [];
     let currentAnswerText = '';
 
     function showResearching() {
@@ -778,7 +784,6 @@ if (!researchAudio) {
 
     // Send message with fake streaming + research audio
     async function sendMessage(message, isVoice) {
-        // Hide welcome, show conversation
         document.getElementById('welcomeState').classList.add('hidden');
         document.getElementById('conversation').classList.remove('hidden');
 
@@ -786,7 +791,6 @@ if (!researchAudio) {
 
         const processingId = showProcessing();
 
-        // reset streaming preview + start researching UI
         currentAnswerText = '';
         renderAnswer('');
         showResearching();
@@ -819,7 +823,6 @@ if (!researchAudio) {
                         clearInterval(intervalId);
                         hideResearching();
 
-                        // Add final assistant message as before
                         addMessage('assistant', fullText, data.sources, data.audio, data.mode, data.cached);
                         conversationHistory.push(
                             { role: 'user', content: message },
@@ -841,7 +844,6 @@ if (!researchAudio) {
         }
     }
 
-    // UI functions
     function addMessage(role, text, sources, audio, mode, cached) {
         const container = document.getElementById('conversation');
         const messageDiv = document.createElement('div');
@@ -855,7 +857,6 @@ if (!researchAudio) {
         const contentDiv = document.createElement('div');
         contentDiv.className = 'message-content';
 
-        // Parse markdown headers and convert to HTML for proper styling
         if (role === 'assistant') {
             let formattedText = text
                 .replace(/^## (.+)$/gm, '<h2>$1</h2>')
@@ -1015,6 +1016,8 @@ if (!researchAudio) {
         }
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+});
 </script>
+
 </body>
 </html>
