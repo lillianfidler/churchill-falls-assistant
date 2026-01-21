@@ -661,6 +661,23 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentAnswerText = '';
 let researchAudioReady = false;
 
+if (researchAudio) {
+    document.addEventListener('click', () => {
+        if (researchAudioReady) return;
+        researchAudio.play().then(() => {
+            researchAudio.pause();
+            researchAudio.currentTime = 0;
+            researchAudioReady = true;
+            console.log('researchAudio primed by user click');
+        }).catch(err => {
+            console.warn('Could not prime researchAudio', err);
+        });
+    });
+}
+
+
+let researchAudioReady = false;
+
 document.addEventListener('click', () => {
     if (!researchAudio || researchAudioReady) return;
     researchAudio.play().then(() => {
