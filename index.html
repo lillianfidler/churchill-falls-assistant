@@ -650,36 +650,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     // State
     let currentTextMode = 'fast';
-    ...
-    // end of your script
-    console.log('Churchill Falls Assistant - Claude-inspired theme loaded');
-    document.getElementById('homeButton')?.addEventListener('click', (event) => {
-        ...
-    });
-});
-</script>
-
-
-   <script>
-
-
-    // New UI refs for research indicator + audio + fake streaming
-    <script>
-document.addEventListener('DOMContentLoaded', () => {
-    // New UI refs for research indicator + audio + fake streaming
-    const answerContainer = document.getElementById('answer-container');
-    const researchingIndicator = document.getElementById('researching-indicator');
-    const researchAudio = document.getElementById('research-audio');
-    if (!researchAudio) {
-        console.warn('research-audio element not found');
-    } else {
-        console.log('research-audio element ready; src =', researchAudio.src);
-    }
-
-    let currentTextMode = 'fast';
     let isRecording = false;
     let recognition = null;
     let conversationHistory = [];
+
+    // UI refs for research indicator + audio + fake streaming
+    const answerContainer = document.getElementById('answer-container');
+    const researchingIndicator = document.getElementById('researching-indicator');
+    const researchAudio = document.getElementById('research-audio');
     let currentAnswerText = '';
 
     function showResearching() {
@@ -1018,6 +996,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 </script>
-
 </body>
 </html>
