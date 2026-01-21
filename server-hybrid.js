@@ -175,6 +175,8 @@ function prepareTextForSpeech(text) {
     // Clean up extra whitespace
     .replace(/\n{3,}/g, '\n\n')
     .trim();
+  .replace(/\bDr\.\s*Dr\.\s*Doug\s+May\b/g, 'Dr. Doug May')
+  .replace(/\bDr\.\s*Doug\s+May\b/g, 'Doctor Doug May');
 
   // SECOND: Fix specific pronunciation issues BEFORE acronym replacement
 
