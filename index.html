@@ -1,4 +1,3 @@
-//new index file
 
 <!DOCTYPE html>
 <html lang="en">
@@ -937,43 +936,30 @@ actionsDiv.appendChild(replayButton);
             }
         }
 
-        console.log('Churchill Falls Assistant - Claude-inspired theme loaded');
-// Home button: reset conversation and scroll to top
-document.getElementById('homeButton')?.addEventListener('click', (event) => {
-    event.preventDefault(); // prevent any default navigation
-
-    // Clear conversation area
-    const container = document.getElementById('conversation');
-    if (container) {
-        container.innerHTML = '';
-    }
-
-    // Reset any stored conversation history if used
-    if (window.conversationHistory) {
-        window.conversationHistory = [];
-    }
-
-    // Stop any playing audio
-    if (window.currentAudio) {
-        window.currentAudio.pause();
-        window.currentAudio = null;
-    }
-
-    // Scroll to top
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-<!-- Researching indicator (initially hidden) -->
-<div id="researching-indicator" class="researching hidden">
-  Researching<span class="dots"></span>
-</div>
-
-<!-- Answer container -->
-<div id="answer-container"></div>
-
-
+               console.log('Churchill Falls Assistant - Claude-inspired theme loaded');
+        // Home button: reset conversation and scroll to top
+        document.getElementById('homeButton')?.addEventListener('click', (event) => {
+            event.preventDefault();
+            const container = document.getElementById('conversation');
+            if (container) container.innerHTML = '';
+            if (window.conversationHistory) window.conversationHistory = [];
+            if (window.currentAudio) {
+                window.currentAudio.pause();
+                window.currentAudio = null;
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
     </script>
-<audio id="research-audio" src="assets/WaitTimer.wav" preload="auto"></audio>
-<script src="server-optimized.js"></script> <!-- or whatever your front-end JS file is -->
 
+    <!-- Researching indicator (initially hidden) -->
+    <div id="researching-indicator" class="researching hidden">
+      Researching<span class="dots"></span>
+    </div>
+
+    <!-- Answer container -->
+    <div id="answer-container"></div>
+
+    <audio id="research-audio" src="assets/WaitTimer.wav" preload="auto"></audio>
+    <script src="server-optimized.js"></script>
 </body>
 </html>
