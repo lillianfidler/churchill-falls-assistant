@@ -1,749 +1,683 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Churchill Falls Information Assistant</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --aqua: #5eead4;
-            --aqua-dim: #2dd4bf;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Segoe UI Emoji', sans-serif;
-            background: #1a1a1a;
-            color: #e5e5e5;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* ===== HEADER ===== */
-        .header {
-            background: rgba(26, 26, 26, 0.8);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 12px 24px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .logo {
-            font-size: 16px;
-            font-weight: 600;
-            color: var(--aqua);
-            letter-spacing: -0.2px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 24px;
-        }
-
-        .nav-links a {
-            color: #a8a8a8;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-
-        .nav-links a:hover {
-            color: var(--aqua);
-        }
-
-        /* ===== MAIN CONTAINER ===== */
-        .container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            max-width: 900px;
-            margin: 0 auto;
-            width: 100%;
-            padding: 0 20px;
-        }
-
-        /* ===== WELCOME STATE ===== */
-        .welcome-state {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 40px 20px;
-            min-height: 60vh;
-        }
-
-        .welcome-state.hidden {
-            display: none;
-        }
-
-        .welcome-title {
-            font-size: 48px;
-            font-weight: 400;
-            margin-bottom: 16px;
-            background: linear-gradient(135deg, #fff 0%, #a8a8a8 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .welcome-subtitle {
-            font-size: 18px;
-            color: #a8a8a8;
-            margin-bottom: 48px;
-            max-width: 600px;
-            line-height: 1.5;
-        }
-
-        .mode-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 16px;
-            width: 100%;
-            max-width: 800px;
-            margin-bottom: 32px;
-        }
-
-        .mode-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid var(--aqua);
-            border-radius: 12px;
-            padding: 24px;
-            transition: all 0.2s;
-            cursor: default;
-        }
-
-        .mode-card:hover {
-            background: rgba(94, 234, 212, 0.08);
-            border-color: var(--aqua);
-        }
-
-        .mode-card-icon {
-            font-size: 32px;
-            margin-bottom: 12px;
-        }
-
-        .mode-card-title {
-            font-size: 16px;
-            font-weight: 600;
-            color: var(--aqua);
-            margin-bottom: 8px;
-        }
-
-        .mode-card-desc {
-            font-size: 14px;
-            color: #a8a8a8;
-            line-height: 1.5;
-        }
-
-        /* Info box */
-        .info-box {
-            max-width: 800px;
-            margin: 20px auto 0 auto;
-            padding: 16px 20px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-        }
-
-        .info-box p {
-            font-size: 13px;
-            line-height: 1.6;
-            color: #a8a8a8;
-            margin: 0;
-        }
-
-        .info-box strong {
-            color: #e5e5e5;
-            font-weight: 500;
-        }
-.hidden {
-  display: none;
-}
-
-.researching {
-  font-style: italic;
-}
-
-.researching .dots::after {
-  content: '';
-  animation: dots 1s steps(3, end) infinite;
-}
-
-@keyframes dots {
-  0% { content: ''; }
-  33% { content: '.'; }
-  66% { content: '..'; }
-  100% { content: '...'; }
-}
-
-
-        /* ===== CONVERSATION AREA ===== */
-        .conversation {
-            flex: 1;
-            padding: 40px 0;
-            overflow-y: auto;
-        }
-
-        .conversation.hidden {
-            display: none;
-        }
-
-        .message {
-            margin-bottom: 32px;
-            animation: fadeIn 0.3s ease-out;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .message-role {
-            font-size: 12px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: var(--aqua);
-            margin-bottom: 8px;
-        }
-
-        .message-content {
-            font-size: 15px;
-            line-height: 1.7;
-            color: #e5e5e5;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-        }
-
-        /* Style h2/h3 headings that appear in responses */
-        .message-content h2,
-        .message-content h3 {
-            color: var(--aqua);
-            font-size: 18px;
-            font-weight: 600;
-            margin: 16px 0 4px 0;
-            line-height: 1.3;
-        }
-
-        /* First heading shouldn't have top margin */
-        .message-content h2:first-child,
-        .message-content h3:first-child {
-            margin-top: 0;
-        }
-
-        .message-content h3 {
-            font-size: 16px;
-        }
-
-        /* Remove top margin from paragraphs/lists immediately after headings */
-        .message-content h2 + p,
-        .message-content h3 + p,
-        .message-content h2 + ul,
-        .message-content h3 + ul,
-        .message-content h2 + ol,
-        .message-content h3 + ol {
-            margin-top: 0;
-        }
-
-        /* Style for bold subheaders and markdown-style headers */
-.message-content p strong {
-    color: var(--aqua);      /* heading color */
-    display: inline;         /* keep inline to avoid big vertical gaps */
-    font-size: 15px;
-    font-weight: 600;
-}
-
-/* Remove extra spacing around paragraphs that only contain a bold heading */
-.message-content p:has(strong) {
-    margin-top: 4px;
-    margin-bottom: 4px;
-}
-
-/* Paragraph immediately after a bold heading */
-.message-content p:has(strong) + p {
-    margin-top: 0;
-}
-
-
-        .message.user .message-content {
-            color: #fff;
-        }
-
-        .message-meta {
-            margin-top: 12px;
-            padding-top: 12px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 12px;
-            color: #a8a8a8;
-        }
-
-        .message-actions {
-            margin-top: 12px;
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-
-        .action-button {
-            padding: 6px 12px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 13px;
-            color: #a8a8a8;
-            transition: all 0.2s;
-        }
-
-        .action-button:hover {
-            background: rgba(255, 255, 255, 0.1);
-            color: #fff;
-            border-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .sources-section {
-            margin-top: 16px;
-            padding-top: 16px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .sources-title {
-            font-size: 12px;
-            font-weight: 600;
-            color: #a8a8a8;
-            margin-bottom: 8px;
-        }
-
-        .sources-list {
-            font-size: 13px;
-            color: #a8a8a8;
-            line-height: 1.6;
-        }
-
-        .processing {
-            text-align: center;
-            padding: 40px;
-            color: #a8a8a8;
-        }
-
-        .processing-text {
-            font-size: 15px;
-            margin-bottom: 8px;
-        }
-
-        /* ===== INPUT BAR ===== */
-        .input-bar {
-            position: sticky;
-            bottom: 0;
-            background: rgba(26, 26, 26, 0.95);
-            backdrop-filter: blur(20px);
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 20px 0 32px 0;
-        }
-
-        .input-wrapper {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .input-controls {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-            margin-bottom: 12px;
-        }
-
-        .text-input {
-            flex: 1;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            padding: 14px 16px;
-            font-size: 15px;
-            color: #fff;
-            outline: none;
-            transition: all 0.2s;
-        }
-
-        .text-input:focus {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.3);
-        }
-
-        .text-input::placeholder {
-            color: #666;
-        }
-
-        .mic-button {
-            width: 48px;
-            height: 48px;
-            border-radius: 12px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.2s;
-            position: relative;
-        }
-
-        .mic-button:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .mic-button:hover::after {
-            content: 'Press & hold to speak';
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            margin-bottom: 8px;
-            padding: 6px 12px;
-            background: rgba(0, 0, 0, 0.9);
-            color: #fff;
-            font-size: 12px;
-            white-space: nowrap;
-            border-radius: 6px;
-            pointer-events: none;
-            animation: tooltipFade 0.2s ease-out;
-        }
-
-        @keyframes tooltipFade {
-            from { opacity: 0; transform: translateX(-50%) translateY(5px); }
-            to { opacity: 1; transform: translateX(-50%) translateY(0); }
-        }
-
-        .mic-button.active {
-            background: rgba(94, 234, 212, 0.15);
-            border-color: var(--aqua);
-        }
-
-        .mic-button svg {
-            width: 20px;
-            height: 20px;
-            fill: var(--aqua);
-        }
-
-        .mic-button.active svg {
-            fill: var(--aqua);
-        }
-
-        .send-button {
-            width: 48px;
-            height: 48px;
-            border-radius: 12px;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.2s;
-        }
-
-        .send-button:hover {
-            background: rgba(94, 234, 212, 0.2);
-            border-color: var(--aqua);
-        }
-
-        .send-button svg {
-            width: 20px;
-            height: 20px;
-            fill: #fff;
-        }
-
-        .mode-toggle {
-            display: flex;
-            gap: 6px;
-            background: rgba(255, 255, 255, 0.03);
-            padding: 4px;
-            border-radius: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .mode-toggle button {
-            padding: 6px 12px;
-            border: none;
-            background: transparent;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 13px;
-            color: #a8a8a8;
-            transition: all 0.2s;
-            font-weight: 500;
-        }
-
-        .mode-toggle button.active {
-            background: rgba(94, 234, 212, 0.15);
-            color: var(--aqua);
-        }
-
-        .mode-toggle button:hover:not(.active) {
-            color: #fff;
-        }
-
-        /* ===== MOBILE ===== */
-        @media (max-width: 768px) {
-            .welcome-title {
-                font-size: 36px;
-            }
-
-            .welcome-subtitle {
-                font-size: 16px;
-            }
-
-            .mode-cards {
-                grid-template-columns: 1fr;
-            }
-
-            .input-controls {
-                flex-wrap: wrap;
-            }
-
-            .text-input {
-                width: 100%;
-            }
-        }
-
-        /* Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: rgba(255, 255, 255, 0.2);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Churchill Falls Information Assistant</title>
+  <style>
+    /* ---------- GLOBAL ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      --aqua: #5eead4;
+      --aqua-dim: #2dd4bf;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", sans-serif;
+      background: #1a1a1a;
+      color: #e5e5e5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ---------- HEADER ---------- */
+    .header {
+      background: rgba(26, 26, 26, 0.8);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 12px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .logo {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--aqua);
+      letter-spacing: -0.2px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+    .nav-links a,
+    .nav-link-button {
+      color: #a8a8a8;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    .nav-links a:hover,
+    .nav-link-button:hover {
+      color: var(--aqua);
+    }
+
+    /* ---------- MAIN CONTAINER ---------- */
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      max-width: 900px;
+      margin: 0 auto;
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    /* ---------- WELCOME STATE ---------- */
+    .welcome-state {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      min-height: 60vh;
+    }
+    .welcome-state.hidden {
+      display: none;
+    }
+    .welcome-title {
+      font-size: 48px;
+      font-weight: 400;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #fff 0%, #a8a8a8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .welcome-subtitle {
+      font-size: 18px;
+      color: #a8a8a8;
+      margin-bottom: 48px;
+      max-width: 600px;
+      line-height: 1.5;
+    }
+    .mode-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      width: 100%;
+      max-width: 800px;
+      margin-bottom: 32px;
+    }
+    .mode-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--aqua);
+      border-radius: 12px;
+      padding: 24px;
+      transition: all 0.2s;
+      cursor: default;
+    }
+    .mode-card:hover {
+      background: rgba(94, 234, 212, 0.08);
+      border-color: var(--aqua);
+    }
+    .mode-card-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+    .mode-card-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--aqua);
+      margin-bottom: 8px;
+    }
+    .mode-card-desc {
+      font-size: 14px;
+      color: #a8a8a8;
+      line-height: 1.5;
+    }
+
+    /* ---------- INFO BOX ---------- */
+    .info-box {
+      max-width: 800px;
+      margin: 20px auto 0 auto;
+      padding: 16px 20px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+    }
+    .info-box p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #a8a8a8;
+      margin: 0;
+    }
+    .info-box strong {
+      color: #e5e5e5;
+      font-weight: 500;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    /* small “Researching…” line above conversation */
+    .researching-indicator {
+      font-size: 13px;
+      color: #a8a8a8;
+      font-style: italic;
+      margin-top: 12px;
+      text-align: left;
+    }
+
+    /* ---------- CONVERSATION AREA ---------- */
+    .conversation {
+      flex: 1;
+      padding: 40px 0;
+      overflow-y: auto;
+    }
+    .conversation.hidden {
+      display: none;
+    }
+    .message {
+      margin-bottom: 32px;
+      animation: fadeIn 0.3s ease-out;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .message-role {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--aqua);
+      margin-bottom: 8px;
+    }
+    .message-content {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #e5e5e5;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    /* headings in assistant content */
+    .message-content h2,
+    .message-content h3 {
+      color: var(--aqua);
+      font-size: 18px;
+      font-weight: 600;
+      margin: 16px 0 4px 0;
+      line-height: 1.3;
+    }
+    .message-content h3 {
+      font-size: 16px;
+    }
+    .message-content h2:first-child,
+    .message-content h3:first-child {
+      margin-top: 0;
+    }
+    .message-content h2 + p,
+    .message-content h3 + p,
+    .message-content h2 + ul,
+    .message-content h3 + ul,
+    .message-content h2 + ol,
+    .message-content h3 + ol {
+      margin-top: 0;
+    }
+
+    /* bold inline headers */
+    .message-content p strong {
+      color: var(--aqua);
+      display: inline;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .message.user .message-content {
+      color: #fff;
+    }
+
+    .message-meta {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 12px;
+      color: #a8a8a8;
+    }
+    .message-actions {
+      margin-top: 12px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .action-button {
+      padding: 6px 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      color: #a8a8a8;
+      transition: all 0.2s;
+    }
+    .action-button:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .sources-section {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .sources-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: #a8a8a8;
+      margin-bottom: 8px;
+    }
+    .sources-list {
+      font-size: 13px;
+      color: #a8a8a8;
+      line-height: 1.6;
+    }
+
+    .processing {
+      text-align: center;
+      padding: 40px;
+      color: #a8a8a8;
+    }
+    .processing-text {
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    /* ---------- INPUT BAR ---------- */
+    .input-bar {
+      position: sticky;
+      bottom: 0;
+      background: rgba(26, 26, 26, 0.95);
+      backdrop-filter: blur(20px);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 20px 0 32px 0;
+    }
+    .input-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .input-controls {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .text-input {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 14px 16px;
+      font-size: 15px;
+      color: #fff;
+      outline: none;
+      transition: all 0.2s;
+    }
+    .text-input:focus {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+    .text-input::placeholder {
+      color: #666;
+    }
+
+    .mic-button {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+      position: relative;
+    }
+    .mic-button:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+    .mic-button.active {
+      background: rgba(94, 234, 212, 0.15);
+      border-color: var(--aqua);
+    }
+    .mic-button svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--aqua);
+    }
+    .mic-button.active svg {
+      fill: var(--aqua);
+    }
+
+    .send-button {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+    .send-button:hover {
+      background: rgba(94, 234, 212, 0.2);
+      border-color: var(--aqua);
+    }
+    .send-button svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+    }
+
+    .mode-toggle {
+      display: flex;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 4px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .mode-toggle button {
+      padding: 6px 12px;
+      border: none;
+      background: transparent;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      color: #a8a8a8;
+      transition: all 0.2s;
+      font-weight: 500;
+    }
+    .mode-toggle button.active {
+      background: rgba(94, 234, 212, 0.15);
+      color: var(--aqua);
+    }
+    .mode-toggle button:hover:not(.active) {
+      color: #fff;
+    }
+
+    /* ---------- MOBILE ---------- */
+    @media (max-width: 768px) {
+      .welcome-title {
+        font-size: 36px;
+      }
+      .welcome-subtitle {
+        font-size: 16px;
+      }
+      .mode-cards {
+        grid-template-columns: 1fr;
+      }
+      .input-controls {
+        flex-wrap: wrap;
+      }
+      .text-input {
+        width: 100%;
+      }
+    }
+
+    /* ---------- SCROLLBAR ---------- */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  </style>
 </head>
 <body>
+  <!-- HEADER -->
+  <div class="header">
+    <nav class="nav">
+      <div class="logo">Churchill Falls Assistant</div>
+      <div class="nav-links">
+        <button id="homeButton" class="nav-link-button">Home</button>
+        <a href="about.html">About</a>
+        <a href="sources.html">Sources</a>
+        <a href="history.html">History</a>
+        <a href="videos.html">Videos</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
 
-    <!-- HEADER -->
-    <div class="header">
-        <nav class="nav">
-            <div class="logo">Churchill Falls Assistant</div>
-            <div class="nav-links">
-                <button id="homeButton" class="nav-link-button">Home</button>
-                <a href="about.html">About</a>
-                <a href="sources.html">Sources</a>
-                <a href="history.html">History</a>
-                <a href="videos.html">Videos</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
-    </div>
+  <!-- CONTAINER -->
+  <div class="container">
+    <!-- WELCOME STATE -->
+    <div class="welcome-state" id="welcomeState">
+      <h1 class="welcome-title">Churchill Falls Assistant</h1>
+      <p class="welcome-subtitle">
+        This assistant provides expert analysis and comprehensive information about Churchill Falls hydroelectric projects and energy agreements between Newfoundland and Labrador and Quebec. Ask questions using voice or text, and choose between quick summaries or in-depth research.
+      </p>
 
-    <!-- CONTAINER -->
-    <div class="container">
-        <!-- WELCOME STATE -->
-        <div class="welcome-state" id="welcomeState">
-            <h1 class="welcome-title">Churchill Falls Assistant</h1>
-            <p class="welcome-subtitle">
-                This assistant provides expert analysis and comprehensive information about Churchill Falls 
-                hydroelectric projects and energy agreements between Newfoundland and Labrador and Quebec. 
-                Ask questions using voice or text, and choose between quick summaries or in-depth research.
-            </p>
-            
-            <div class="mode-cards">
-                <div class="mode-card">
-                    <div class="mode-card-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" style="fill: #a8a8a8;">
-                            <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
-                            <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
-                        </svg>
-                    </div>
-                    <div class="mode-card-title">Voice</div>
-                    <div class="mode-card-desc">Hear Dr. Doug May's analysis in his own voice. Press & hold the microphone button below to speak your question.</div>
-                </div>
-                
-                <div class="mode-card">
-                    <div class="mode-card-icon">⚡</div>
-                    <div class="mode-card-title">Fast</div>
-                    <div class="mode-card-desc">Fast, focused answers using core documents and expert analysis, without deep historical detail. Type your question below.</div>
-                </div>
-                
-                <div class="mode-card">
-                    <div class="mode-card-icon">🔍</div>
-                    <div class="mode-card-title">Deep</div>
-                    <div class="mode-card-desc">Comprehensive research with text answers from <strong>all sources</strong> (<a href="/sources.html" style="color: var(--aqua); text-decoration: underline;">view sources</a>). Type your question below.</div>
-                </div>
-            </div>
-            
-            <!-- Info Box -->
-            <div class="info-box">
-                <p>
-                    <strong>All responses are based exclusively on verified source documents.</strong> 
-                    Every answer draws from official documents including the December 12, 2024 MOU, 
-                    Dr. Doug May's comprehensive analysis, expert economic assessments by Wade Locke 
-                    and James Feehan, Churchill Falls Corporation financial statements, and historical 
-                    records dating to 1949. This assistant does not use internet searches or external 
-                    sources—only curated materials from the <a href="sources.html" style="color: var(--aqua); text-decoration: underline;">Sources page</a>.
-                </p>
-            </div>
+      <div class="mode-cards">
+        <div class="mode-card">
+          <div class="mode-card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" style="fill: #a8a8a8;">
+              <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"></path>
+              <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"></path>
+            </svg>
+          </div>
+          <div class="mode-card-title">Voice</div>
+          <div class="mode-card-desc">
+            Hear Dr. Doug May’s analysis in his own voice. Press and hold the microphone button below to speak your question.
+          </div>
         </div>
 
-        <!-- CONVERSATION AREA -->
-        <div class="conversation hidden" id="conversation"></div>
-    </div>
-
-    <!-- INPUT BAR -->
-    <div class="input-bar">
-        <div class="input-wrapper">
-            <div class="input-controls">
-                <input 
-                    type="text" 
-                    class="text-input" 
-                    placeholder="Ask about Churchill Falls..."
-                    id="textInput"
-                >
-                <button class="mic-button" id="micButton">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
-                        <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
-                    </svg>
-                </button>
-                <button class="send-button" id="sendButton">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="mode-toggle">
-                <button class="active" data-mode="fast">⚡ Fast</button>
-                <button data-mode="deep">🔍 Deep</button>
-            </div>
+        <div class="mode-card">
+          <div class="mode-card-icon"></div>
+          <div class="mode-card-title">Fast</div>
+          <div class="mode-card-desc">
+            Fast, focused answers using core documents and expert analysis, without deep historical detail. Type your question below.
+          </div>
         </div>
+
+        <div class="mode-card">
+          <div class="mode-card-icon"></div>
+          <div class="mode-card-title">Deep</div>
+          <div class="mode-card-desc">
+            Comprehensive research with text answers from <strong>all sources</strong> (<a href="sources.html" style="color: var(--aqua); text-decoration: underline;">view sources</a>). Type your question below.
+          </div>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <p>
+          <strong>All responses are based exclusively on verified source documents.</strong>
+          Every answer draws from official documents including the December 12, 2024 MOU, Dr. Doug May’s comprehensive analysis, expert economic assessments by Wade Locke and James Feehan, Churchill Falls Corporation financial statements, and historical records dating to 1949. This assistant does not use internet searches or external sources—only curated materials from the
+          <a href="sources.html" style="color: var(--aqua); text-decoration: underline;">Sources page</a>.
+        </p>
+      </div>
     </div>
 
-    <script>
-document.addEventListener('DOMContentLoaded', () => {
-    // State
-    let currentTextMode = 'fast';
-    let isRecording = false;
-    let recognition = null;
-    let conversationHistory = [];
+    <!-- SMALL RESEARCHING INDICATOR ABOVE CONVERSATION -->
+    <div id="researching-indicator" class="researching-indicator hidden">
+      🔍 Researching…
+    </div>
 
-    // UI refs for research indicator + audio + fake streaming
-    const answerContainer = document.getElementById('answer-container');
-    const researchingIndicator = document.getElementById('researching-indicator');
-    const researchAudio = document.getElementById('research-audio');
-    let currentAnswerText = '';
-let researchAudioReady = false;
+    <!-- CONVERSATION AREA -->
+    <div class="conversation hidden" id="conversation"></div>
+  </div>
 
-if (researchAudio) {
-    document.addEventListener('click', () => {
-        if (researchAudioReady) return;
-        researchAudio.play().then(() => {
+  <!-- INPUT BAR -->
+  <div class="input-bar">
+    <div class="input-wrapper">
+      <div class="input-controls">
+        <input type="text" class="text-input" placeholder="Ask about Churchill Falls..." id="textInput">
+        <button class="mic-button" id="micButton">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"></path>
+            <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"></path>
+          </svg>
+        </button>
+        <button class="send-button" id="sendButton">
+          <svg viewBox="0 0 24 24">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="mode-toggle">
+        <button class="active" data-mode="fast">Fast</button>
+        <button data-mode="deep">Deep</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- WAITTIMER AUDIO + TEST BUTTON -->
+  <audio id="research-audio" src="assets/WaitTimer.mp3" preload="auto"></audio>
+  <button id="test-audio-btn" style="position: fixed; bottom: 8px; left: 8px; font-size: 11px;">
+    Test sound
+  </button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // State
+      let currentTextMode = 'fast';
+      let isRecording = false;
+      let recognition = null;
+      let conversationHistory = [];
+      let currentAnswerText = '';
+
+      // UI refs
+      const welcomeState = document.getElementById('welcomeState');
+      const conversationEl = document.getElementById('conversation');
+      const textInput = document.getElementById('textInput');
+      const sendButton = document.getElementById('sendButton');
+      const micButton = document.getElementById('micButton');
+      const researchingIndicator = document.getElementById('researching-indicator');
+
+      const researchAudio = document.getElementById('research-audio');
+      const testAudioBtn = document.getElementById('test-audio-btn');
+
+      console.log('research-audio element:', !!researchAudio, researchAudio ? researchAudio.src : null);
+
+      // ---------- Audio priming ----------
+      let researchAudioReady = false;
+
+      if (researchAudio) {
+        // One-time priming on first click
+        document.addEventListener('click', () => {
+          if (researchAudioReady) return;
+          researchAudio.currentTime = 0;
+          researchAudio.play().then(() => {
             researchAudio.pause();
             researchAudio.currentTime = 0;
             researchAudioReady = true;
             console.log('researchAudio primed by user click');
-        }).catch(err => {
+          }).catch(err => {
             console.warn('Could not prime researchAudio', err);
+          });
+        }, { once: true });
+      }
+
+      // Test button to verify file/element
+      if (testAudioBtn && researchAudio) {
+        testAudioBtn.addEventListener('click', () => {
+          researchAudio.currentTime = 0;
+          researchAudio.play().then(() => {
+            console.log('Test sound playing');
+          }).catch(err => {
+            console.error('Test sound failed', err);
+          });
         });
-    });
-}
+      }
 
-
-let researchAudioReady = false;
-
-document.addEventListener('click', () => {
-    if (!researchAudio || researchAudioReady) return;
-    researchAudio.play().then(() => {
-        researchAudio.pause();
-        researchAudio.currentTime = 0;
-        researchAudioReady = true;
-        console.log('researchAudio primed by user click');
-    }).catch(err => {
-        console.warn('Could not prime researchAudio', err);
-    });
-});
-
-
-function showResearching() {
-    if (researchingIndicator) {
-        researchingIndicator.classList.remove('hidden');
-    }
-    if (researchAudio && researchAudioReady) {
-        researchAudio.loop = true;
-        researchAudio.currentTime = 0;
-        researchAudio.play().catch(err => {
-            console.warn('researchAudio play blocked', err);
-        });
-    }
-}
-
-    function hideResearching() {
+      function showResearching() {
         if (researchingIndicator) {
-            researchingIndicator.classList.add('hidden');
+          researchingIndicator.classList.remove('hidden');
+        }
+        if (researchAudio && researchAudioReady) {
+          researchAudio.loop = true;
+          researchAudio.currentTime = 0;
+          researchAudio.play().then(() => {
+            console.log('researchAudio playing');
+          }).catch(err => {
+            console.warn('researchAudio play blocked', err);
+          });
+        }
+      }
+
+      function hideResearching() {
+        if (researchingIndicator) {
+          researchingIndicator.classList.add('hidden');
         }
         if (researchAudio) {
-            researchAudio.pause();
-            researchAudio.currentTime = 0;
+          researchAudio.pause();
+          researchAudio.currentTime = 0;
         }
-    }
+      }
 
-    function renderAnswer(text) {
-        if (answerContainer) {
-            answerContainer.textContent = text;
-        }
-    }
+      function renderAnswer(text) {
+        // simple preview for fake streaming
+        // could be expanded later if you want a separate preview area
+        // currently not wired to a separate container
+      }
 
-    // Mode toggle
-    document.querySelectorAll('.mode-toggle button').forEach(btn => {
+      // ---------- Mode toggle ----------
+      document.querySelectorAll('.mode-toggle button').forEach(btn => {
         btn.addEventListener('click', () => {
-            document.querySelectorAll('.mode-toggle button').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            currentTextMode = btn.dataset.mode;
+          document.querySelectorAll('.mode-toggle button').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentTextMode = btn.dataset.mode;
         });
-    });
+      });
 
-    // Microphone
-    const micButton = document.getElementById('micButton');
+      // ---------- Microphone ----------
+      micButton.addEventListener('mousedown', startRecording);
+      micButton.addEventListener('mouseup', stopRecording);
+      micButton.addEventListener('mouseleave', () => {
+        if (isRecording) stopRecording();
+      });
+      micButton.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        startRecording();
+      });
+      micButton.addEventListener('touchend', (e) => {
+        e.preventDefault();
+        if (isRecording) stopRecording();
+      });
 
-    micButton.addEventListener('mousedown', startRecording);
-    micButton.addEventListener('mouseup', stopRecording);
-    micButton.addEventListener('mouseleave', () => { if (isRecording) stopRecording(); });
-    micButton.addEventListener('touchstart', (e) => { e.preventDefault(); startRecording(); });
-    micButton.addEventListener('touchend', (e) => { e.preventDefault(); if (isRecording) stopRecording(); });
-
-    function startRecording() {
+      function startRecording() {
         if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
-            alert('Speech recognition not supported');
-            return;
+          alert('Speech recognition not supported');
+          return;
         }
-
         isRecording = true;
         micButton.classList.add('active');
 
@@ -753,108 +687,119 @@ function showResearching() {
         recognition.interimResults = false;
 
         recognition.onresult = (event) => {
-            const transcript = event.results[0][0].transcript;
-            sendMessage(transcript, true);
+          const transcript = event.results[0][0].transcript;
+          sendMessage(transcript, true);
         };
-
         recognition.onerror = () => {
-            isRecording = false;
-            micButton.classList.remove('active');
+          isRecording = false;
+          micButton.classList.remove('active');
         };
-
         recognition.onend = () => {
-            isRecording = false;
-            micButton.classList.remove('active');
+          isRecording = false;
+          micButton.classList.remove('active');
         };
 
         recognition.start();
-    }
+      }
 
-    function stopRecording() {
+      function stopRecording() {
         if (isRecording && recognition) {
-            recognition.stop();
-            isRecording = false;
-            micButton.classList.remove('active');
+          recognition.stop();
         }
-    }
+        isRecording = false;
+        micButton.classList.remove('active');
+      }
 
-    // Text input
-    document.getElementById('sendButton').addEventListener('click', () => {
-        const text = document.getElementById('textInput').value.trim();
+      // ---------- Text input ----------
+      sendButton.addEventListener('click', () => {
+        const text = textInput.value.trim();
         if (text) {
-            sendMessage(text, false);
-            document.getElementById('textInput').value = '';
+          sendMessage(text, false);
+          textInput.value = '';
         }
-    });
+      });
 
-    document.getElementById('textInput').addEventListener('keypress', (e) => {
+      textInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
-            document.getElementById('sendButton').click();
+          sendButton.click();
         }
-    });
+      });
 
-    // Send message with research audio (no word-by-word streaming)
-async function sendMessage(message, isVoice) {
-    console.log('sendMessage called with', { message, isVoice, currentTextMode });
+      // ---------- Core sendMessage with fake streaming + WaitTimer ----------
+      async function sendMessage(message, isVoice = false) {
+        console.log('sendMessage called with', { message, isVoice, currentTextMode });
 
-    document.getElementById('welcomeState').classList.add('hidden');
-    document.getElementById('conversation').classList.remove('hidden');
+        if (!message.trim()) return;
 
-    addMessage('user', message);
+        // Hide welcome, show conversation
+        welcomeState.classList.add('hidden');
+        conversationEl.classList.remove('hidden');
 
-    const processingId = showProcessing();
+        addMessage('user', message);
+        const processingId = showProcessing();
 
-    // start researching UI + audio
-    renderAnswer('');
-    showResearching();
+        // reset preview text
+        currentAnswerText = '';
+        renderAnswer(currentAnswerText);
 
-    try {
-        const response = await fetch('/api/chat', {
+        // start WaitTimer
+        showResearching();
+
+        try {
+          const response = await fetch('/api/chat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                message: message,
-                conversationHistory: conversationHistory,
-                isVoiceMode: isVoice,
-                textMode: currentTextMode
+              message,
+              conversationHistory,
+              isVoiceMode: isVoice,
+              textMode: currentTextMode
             })
-        });
+          });
 
-        console.log('fetch /api/chat status', response.status);
+          console.log('fetch /api/chat status', response.status);
+          const data = await response.json();
+          console.log('response data keys', Object.keys(data));
 
-        const data = await response.json();
-        console.log('response data keys', Object.keys(data));
+          removeProcessing(processingId);
+          hideResearching();
 
-        removeProcessing(processingId);
-        hideResearching();
-
-        if (data.error) {
+          if (data.error) {
             addMessage('assistant', 'I apologize, but I encountered an error. Please try again.');
-        } else {
+          } else {
             const fullText = data.text || '';
             console.log('fullText length', fullText.length);
 
-            // show full answer at once
-            renderAnswer('');
-            addMessage('assistant', fullText, data.sources, data.audio, data.mode, data.cached);
+            // simple fake streaming: word-by-word into preview, final message at end
+            const words = fullText.split(/\s+/);
+            let index = 0;
 
-            conversationHistory.push(
-                { role: 'user', content: message },
-                { role: 'assistant', content: fullText }
-            );
+            const intervalId = setInterval(() => {
+              if (index >= words.length) {
+                clearInterval(intervalId);
+                addMessage('assistant', fullText, data.sources, data.audio, data.mode, data.cached);
+                conversationHistory.push(
+                  { role: 'user', content: message },
+                  { role: 'assistant', content: fullText }
+                );
+                return;
+              }
+              currentAnswerText = index === 0 ? words[index] : currentAnswerText + ' ' + words[index];
+              renderAnswer(currentAnswerText);
+              index += 1;
+            }, 30);
+          }
+        } catch (error) {
+          console.error('Error in sendMessage', error);
+          removeProcessing(processingId);
+          hideResearching();
+          addMessage('assistant', 'Connection error. Please try again.');
         }
+      }
 
-    } catch (error) {
-        console.error('sendMessage error', error);
-        removeProcessing(processingId);
-        hideResearching();
-        addMessage('assistant', 'Connection error. Please try again.');
-    }
-}
-
-
-    function addMessage(role, text, sources, audio, mode, cached) {
-        const container = document.getElementById('conversation');
+      // ---------- UI helper functions ----------
+      function addMessage(role, text, sources, audio, mode, cached) {
+        const container = conversationEl;
         const messageDiv = document.createElement('div');
         messageDiv.className = `message ${role}`;
 
@@ -867,165 +812,195 @@ async function sendMessage(message, isVoice) {
         contentDiv.className = 'message-content';
 
         if (role === 'assistant') {
-            let formattedText = text
-                .replace(/^## (.+)$/gm, '<h2>$1</h2>')
-                .replace(/^### (.+)$/gm, '<h3>$1</h3>')
-                .replace(/\n/g, '<br>');
-            contentDiv.innerHTML = formattedText;
+          let formattedText = text || '';
+          formattedText = formattedText
+            .replace(/^## (.*)$/gm, '<h2>$1</h2>')
+            .replace(/^### (.*)$/gm, '<h3>$1</h3>')
+            .replace(/\n/g, '<br>');
+          contentDiv.innerHTML = formattedText;
         } else {
-            contentDiv.textContent = text;
+          contentDiv.textContent = text;
         }
         messageDiv.appendChild(contentDiv);
 
         if (role === 'assistant') {
-            const metaDiv = document.createElement('div');
-            metaDiv.className = 'message-meta';
-            let modeLabel = mode === 'voice' ? '🎤 Voice' : mode === 'fast' ? '⚡ Fast' : '🔍 Deep';
-            metaDiv.textContent = modeLabel;
-            if (cached) metaDiv.textContent += ' • 💾 Cached';
+          const metaDiv = document.createElement('div');
+          metaDiv.className = 'message-meta';
+          let modeLabel = '';
+          if (mode === 'voice') {
+            modeLabel = 'Voice';
+          } else if (mode === 'fast') {
+            modeLabel = 'Fast';
+          } else if (mode === 'deep') {
+            modeLabel = 'Deep';
+          }
+          metaDiv.textContent = modeLabel || '';
 
-            if (mode === 'deep') {
-                metaDiv.innerHTML += ' • <a href="/sources.html" style="color: var(--aqua); text-decoration: underline;">View all sources</a>';
-            }
+          if (cached) {
+            metaDiv.textContent = 'Cached';
+          }
 
-            messageDiv.appendChild(metaDiv);
+          if (mode === 'deep') {
+            metaDiv.innerHTML =
+              '<a href="sources.html" style="color: var(--aqua); text-decoration: underline;">View all sources</a>';
+          }
+          messageDiv.appendChild(metaDiv);
 
-            const actionsDiv = document.createElement('div');
-            actionsDiv.className = 'message-actions';
+          const actionsDiv = document.createElement('div');
+          actionsDiv.className = 'message-actions';
 
-            const copyButton = document.createElement('button');
-            copyButton.className = 'action-button';
-            copyButton.textContent = '📋 Copy';
-            copyButton.addEventListener('click', () => {
-                navigator.clipboard.writeText(text).then(() => {
-                    const orig = copyButton.textContent;
-                    copyButton.textContent = '✅ Copied!';
-                    setTimeout(() => copyButton.textContent = orig, 2000);
-                });
+          const copyButton = document.createElement('button');
+          copyButton.className = 'action-button';
+          copyButton.textContent = 'Copy';
+          copyButton.addEventListener('click', () => {
+            navigator.clipboard.writeText(text || '').then(() => {
+              const orig = copyButton.textContent;
+              copyButton.textContent = 'Copied!';
+              setTimeout(() => (copyButton.textContent = orig), 2000);
             });
-            actionsDiv.appendChild(copyButton);
+          });
+          actionsDiv.appendChild(copyButton);
 
-            const shareButton = document.createElement('button');
-            shareButton.className = 'action-button';
-            shareButton.textContent = '🔗 Share';
-            shareButton.addEventListener('click', async () => {
-                const shareData = { title: 'Churchill Falls Response', text: text };
-                if (navigator.share) {
-                    try { await navigator.share(shareData); } catch (err) {}
+          const shareButton = document.createElement('button');
+          shareButton.className = 'action-button';
+          shareButton.textContent = 'Share';
+          shareButton.addEventListener('click', async () => {
+            const shareData = {
+              title: 'Churchill Falls Response',
+              text: text || ''
+            };
+            if (navigator.share) {
+              try {
+                await navigator.share(shareData);
+              } catch (err) {
+                // ignore
+              }
+            } else {
+              const shareText = `Churchill Falls Response\n\n${text || ''}`;
+              navigator.clipboard.writeText(shareText).then(() => {
+                const orig = shareButton.textContent;
+                shareButton.textContent = 'Copied!';
+                setTimeout(() => (shareButton.textContent = orig), 2000);
+              });
+            }
+          });
+          actionsDiv.appendChild(shareButton);
+
+          if (audio && mode === 'voice') {
+            const pauseButton = document.createElement('button');
+            pauseButton.className = 'action-button';
+            pauseButton.textContent = 'Pause';
+            pauseButton.addEventListener('click', () => {
+              if (window.currentAudio) {
+                if (window.currentAudio.paused) {
+                  window.currentAudio.play();
+                  pauseButton.textContent = 'Pause';
                 } else {
-                    const shareText = `Churchill Falls Response:\n\n${text}`;
-                    navigator.clipboard.writeText(shareText).then(() => {
-                        const orig = shareButton.textContent;
-                        shareButton.textContent = '✅ Copied!';
-                        setTimeout(() => shareButton.textContent = orig, 2000);
-                    });
+                  window.currentAudio.pause();
+                  pauseButton.textContent = 'Resume';
                 }
+              }
             });
-            actionsDiv.appendChild(shareButton);
+            actionsDiv.appendChild(pauseButton);
 
-            if (audio && mode === 'voice') {
-                const pauseButton = document.createElement('button');
-                pauseButton.className = 'action-button';
-                pauseButton.textContent = '⏸️ Pause';
-                pauseButton.addEventListener('click', () => {
-                    if (window.currentAudio) {
-                        if (window.currentAudio.paused) {
-                            window.currentAudio.play();
-                            pauseButton.textContent = '⏸️ Pause';
-                        } else {
-                            window.currentAudio.pause();
-                            pauseButton.textContent = '▶️ Resume';
-                        }
-                    }
-                });
-                actionsDiv.appendChild(pauseButton);
+            const replayButton = document.createElement('button');
+            replayButton.className = 'action-button';
+            replayButton.textContent = 'Replay';
+            replayButton.addEventListener('click', () => {
+              if (window.currentAudio) {
+                window.currentAudio.pause();
+                window.currentAudio.currentTime = 0;
+                window.currentAudio.play();
+                pauseButton.textContent = 'Pause';
+              }
+            });
+            actionsDiv.appendChild(replayButton);
+          }
 
-                const replayButton = document.createElement('button');
-                replayButton.className = 'action-button';
-                replayButton.textContent = '🔄 Replay';
-                replayButton.addEventListener('click', () => {
-                    if (window.currentAudio) {
-                        window.currentAudio.pause();
-                        window.currentAudio.currentTime = 0;
-                        window.currentAudio.play();
-                        pauseButton.textContent = '⏸️ Pause';
-                    }
-                });
-                actionsDiv.appendChild(replayButton);
-            }
+          messageDiv.appendChild(actionsDiv);
 
-            messageDiv.appendChild(actionsDiv);
+          if (sources && sources.length > 0) {
+            const sourcesDiv = document.createElement('div');
+            sourcesDiv.className = 'sources-section';
+            sourcesDiv.innerHTML = `
+              <div class="sources-title">Documents consulted</div>
+              <div class="sources-list">
+                ${sources.map(cleanSourceName).join('<br>')}
+              </div>
+            `;
+            messageDiv.appendChild(sourcesDiv);
+          }
 
-            if (sources && sources.length > 0) {
-                const sourcesDiv = document.createElement('div');
-                sourcesDiv.className = 'sources-section';
-                sourcesDiv.innerHTML = `
-                    <div class="sources-title">📚 Documents consulted</div>
-                    <div class="sources-list">${sources.map(s => `• ${cleanSourceName(s)}`).join('<br>')}</div>
-                `;
-                messageDiv.appendChild(sourcesDiv);
-            }
-
-            if (audio) playAudio(audio);
+          if (audio) {
+            playAudio(audio);
+          }
         }
 
         container.appendChild(messageDiv);
         setTimeout(() => {
-            messageDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            window.scrollBy(0, -50);
+          messageDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          window.scrollBy(0, -50);
         }, 100);
-    }
+      }
 
-    function showProcessing() {
-        const container = document.getElementById('conversation');
+      function showProcessing() {
+        const container = conversationEl;
         const processingDiv = document.createElement('div');
         processingDiv.className = 'processing';
         processingDiv.id = 'processing-' + Date.now();
-        processingDiv.innerHTML = `
-            <div class="processing-text">🔍 Researching...</div>
-        `;
+        processingDiv.innerHTML = `<div class="processing-text">Researching...</div>`;
         container.appendChild(processingDiv);
         return processingDiv.id;
-    }
+      }
 
-    function removeProcessing(id) {
+      function removeProcessing(id) {
         const div = document.getElementById(id);
         if (div) div.remove();
-    }
+      }
 
-    function cleanSourceName(filename) {
-        return filename.replace(/\.txt$/, '').replace(/_/g, ' ').replace(/-/g, ' ').trim();
-    }
+      function cleanSourceName(filename) {
+        return filename
+          .replace('.txt', '')
+          .replace(/_/g, ' ')
+          .replace(/-/g, ' ')
+          .trim();
+      }
 
-    function playAudio(base64Audio) {
+      function playAudio(base64Audio) {
         try {
-            if (window.currentAudio) {
-                window.currentAudio.pause();
-                window.currentAudio = null;
-            }
+          if (window.currentAudio) {
+            window.currentAudio.pause();
+            window.currentAudio = null;
+          }
 
-            const audio = new Audio('data:audio/mpeg;base64,' + base64Audio);
-            window.currentAudio = audio;
-            audio.onended = () => { window.currentAudio = null; };
-            audio.play();
+          const audio = new Audio('data:audio/mpeg;base64,' + base64Audio);
+          window.currentAudio = audio;
+          audio.onended = () => {
+            window.currentAudio = null;
+          };
+          audio.play();
         } catch (error) {
-            console.error('Audio error:', error);
+          console.error('Audio error', error);
         }
-    }
+      }
 
-    console.log('Churchill Falls Assistant - Claude-inspired theme loaded');
-    document.getElementById('homeButton')?.addEventListener('click', (event) => {
+      // Home button reset
+      document.getElementById('homeButton')?.addEventListener('click', (event) => {
         event.preventDefault();
-        const container = document.getElementById('conversation');
+        const container = conversationEl;
         if (container) container.innerHTML = '';
         if (window.conversationHistory) window.conversationHistory = [];
         if (window.currentAudio) {
-            window.currentAudio.pause();
-            window.currentAudio = null;
+          window.currentAudio.pause();
+          window.currentAudio = null;
         }
+        welcomeState.classList.remove('hidden');
+        conversationEl.classList.add('hidden');
         window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      console.log('Churchill Falls Assistant - WaitTimer audio enabled');
     });
-});
-</script>
+  </script>
 </body>
 </html>
