@@ -241,7 +241,7 @@ display: flex;
     .message-content h3 + ul,
     .message-content h2 + ol,
     .message-content h3 + ol {
-      margin-top: 4px !important;
+      margin-top: 2px !important;
       padding-top: 0 !important;
     }
 
@@ -772,6 +772,20 @@ display: flex;
         conversationEl.classList.remove('hidden');
 
         addMessage('user', message);
+        
+        // Add "Researching..." as a temporary message
+        const researchingMsg = document.createElement('div');
+        researchingMsg.className = 'message assistant';
+        researchingMsg.id = 'temp-researching';
+        researchingMsg.innerHTML = `
+          <div class="message-role">Assistant</div>
+          <div class="message-content" style="color: #a8a8a8; font-style: italic;">
+            🔍 Researching<span class="dots"></span>
+          </div>
+        `;
+        conversationEl.appendChild(researchingMsg);
+        conversationEl.scrollTop = conversationEl.scrollHeight;
+
         const processingId = showProcessing();
 
         // reset preview text
@@ -799,6 +813,10 @@ display: flex;
 
           removeProcessing(processingId);
           hideResearching();
+          
+          // Remove the temporary "Researching..." message
+          const tempMsg = document.getElementById('temp-researching');
+          if (tempMsg) tempMsg.remove();
 
           if (data.error) {
             addMessage('assistant', 'I apologize, but I encountered an error. Please try again.');
@@ -818,6 +836,11 @@ conversationHistory.push(
           console.error('Error in sendMessage', error);
           removeProcessing(processingId);
           hideResearching();
+          
+          // Remove the temporary "Researching..." message
+          const tempMsg = document.getElementById('temp-researching');
+          if (tempMsg) tempMsg.remove();
+          
           addMessage('assistant', 'Connection error. Please try again.');
         }
       }
