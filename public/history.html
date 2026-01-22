@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History - Churchill Falls Assistant</title>
+    <style>
+        :root {
+            --aqua: #5eead4;
+            --aqua-dim: #2dd4bf;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Segoe UI Emoji', sans-serif;
+            background: #1a1a1a;
+            color: #e5e5e5;
+            min-height: 100vh;
+        }
+
+        /* HEADER */
+        .header {
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 12px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--aqua);
+            letter-spacing: -0.2px;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-links a {
+            color: #a8a8a8;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--aqua);
+        }
+
+        /* MAIN CONTENT */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 400;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #fff 0%, #a8a8a8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #a8a8a8;
+            margin-bottom: 48px;
+            line-height: 1.6;
+        }
+
+        .history-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .history-item {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.2s;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+        }
+
+        .history-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .history-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .history-meta {
+            font-size: 13px;
+            color: #a8a8a8;
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .history-date {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .history-count {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 80px 20px;
+            color: #a8a8a8;
+        }
+
+        .empty-icon {
+            font-size: 64px;
+            margin-bottom: 16px;
+            opacity: 0.3;
+        }
+
+        .empty-title {
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .empty-text {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .clear-button {
+            margin-top: 32px;
+            padding: 12px 24px;
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 8px;
+            color: #ef4444;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .clear-button:hover {
+            background: rgba(239, 68, 68, 0.2);
+            border-color: rgba(239, 68, 68, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .history-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">Churchill Falls Assistant</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="sources.html">Sources</a>
+                <a href="history.html" class="active">History</a>
+                <a href="videos.html">Videos</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <h1>Conversation History</h1>
+        <p class="subtitle">View and resume your past conversations with the Churchill Falls Assistant.</p>
+
+        <div id="historyList" class="history-list">
+            <!-- History items will be inserted here -->
+        </div>
+
+        <div id="emptyState" class="empty-state" style="display: none;">
+            <div class="empty-icon">💬</div>
+            <div class="empty-title">No conversations yet</div>
+            <p class="empty-text">
+                Your conversation history will appear here once you start asking questions.<br>
+                Head back to the <a href="index.html" style="color: #fff;">home page</a> to get started.
+            </p>
+        </div>
+
+        <button class="clear-button" id="clearButton" style="display: none;">
+            🗑️ Clear All History
+        </button>
+    </div>
+
+    <script>
+        // Load conversation history from localStorage
+        function loadHistory() {
+            const sessions = JSON.parse(localStorage.getItem('chatSessions') || '[]');
+            const historyList = document.getElementById('historyList');
+            const emptyState = document.getElementById('emptyState');
+            const clearButton = document.getElementById('clearButton');
+
+            if (sessions.length === 0) {
+                historyList.style.display = 'none';
+                emptyState.style.display = 'block';
+                clearButton.style.display = 'none';
+                return;
+            }
+
+            historyList.style.display = 'flex';
+            emptyState.style.display = 'none';
+            clearButton.style.display = 'block';
+
+            // Sort by date (newest first)
+            sessions.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+
+            historyList.innerHTML = sessions.map((session, index) => {
+                const date = new Date(session.timestamp);
+                const dateStr = date.toLocaleDateString('en-US', { 
+                    month: 'short', 
+                    day: 'numeric',
+                    year: 'numeric'
+                });
+                const timeStr = date.toLocaleTimeString('en-US', { 
+                    hour: 'numeric', 
+                    minute: '2-digit'
+                });
+
+                const messageCount = session.messages ? session.messages.length : 0;
+                const title = session.title || session.messages?.[0]?.content || 'Untitled Conversation';
+
+                return `
+                    <a href="index.html?session=${session.id}" class="history-item">
+                        <div class="history-title">${escapeHtml(title)}</div>
+                        <div class="history-meta">
+                            <span class="history-date">📅 ${dateStr} at ${timeStr}</span>
+                            <span class="history-count">💬 ${messageCount} messages</span>
+                        </div>
+                    </a>
+                `;
+            }).join('');
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Clear all history
+        document.getElementById('clearButton').addEventListener('click', () => {
+            if (confirm('Are you sure you want to clear all conversation history? This cannot be undone.')) {
+                localStorage.removeItem('chatSessions');
+                localStorage.removeItem('currentSessionId');
+                loadHistory();
+            }
+        });
+
+        // Load on page load
+        loadHistory();
+    </script>
+
+</body>
+</html>

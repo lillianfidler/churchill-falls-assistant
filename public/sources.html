@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sources - Churchill Falls Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --aqua: #5eead4;
+            --aqua-dim: #2dd4bf;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Segoe UI Emoji', sans-serif;
+            background: #1a1a1a;
+            color: #e5e5e5;
+            min-height: 100vh;
+        }
+
+        /* HEADER */
+        .header {
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 12px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--aqua);
+            letter-spacing: -0.2px;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-links a {
+            color: #a8a8a8;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--aqua);
+        }
+
+        /* MAIN CONTENT */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 400;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #fff 0%, #a8a8a8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #a8a8a8;
+            margin-bottom: 48px;
+            line-height: 1.6;
+        }
+
+        .content-section {
+            margin-bottom: 60px;
+        }
+
+        .content-section h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(94, 234, 212, 0.3);
+        }
+
+        .content-section h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--aqua);
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content-section p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #e5e5e5;
+            margin-bottom: 16px;
+        }
+
+        .content-section ul {
+            color: #e5e5e5;
+            line-height: 1.8;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .content-section li {
+            margin-bottom: 12px;
+        }
+
+        .highlight-box {
+            background: rgba(94, 234, 212, 0.08);
+            border-left: 4px solid var(--aqua);
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box p {
+            margin: 0;
+        }
+
+        .highlight-box strong {
+            color: var(--aqua);
+        }
+
+        .highlight-box a {
+            color: var(--aqua);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .highlight-box a:hover {
+            color: var(--aqua-dim);
+        }
+
+        .document-list {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .document-list li {
+            margin-bottom: 12px;
+        }
+
+        .document-list strong {
+            color: var(--aqua);
+        }
+
+        .document-list p {
+            font-weight: 600;
+            margin-bottom: 12px;
+            margin-top: 20px;
+        }
+
+        .document-list p:first-child {
+            margin-top: 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .subtitle {
+                font-size: 14px;
+            }
+
+            .nav-links {
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">Churchill Falls Assistant</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="sources.html" class="active">Sources</a>
+                <a href="history.html">History</a>
+                <a href="videos.html">Videos</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <h1>Sources & Documentation</h1>
+        <p class="subtitle">Complete reference library for the Churchill Falls Assistant</p>
+
+        <div class="content-section">
+            <h2>Source Documents</h2>
+            <p>All documents below are integrated into the Churchill Falls Assistant's knowledge base. The assistant can answer questions, provide summaries, and make comparisons across all of these materials.</p>
+
+            <h3>Official Agreements and Documents</h3>
+            <div class="document-list">
+                <ul>
+                    <li><strong>December 12, 2024 Memorandum of Understanding (MOU)</strong> - The complete text of the proposed agreement between Newfoundland and Labrador and Quebec</li>
+                    <li><strong>1969 Churchill Falls Power Contract</strong> - The original agreement and its terms</li>
+                    <li><strong>2002 Gull Island Framework Agreement</strong> - Historical context for proposed developments</li>
+                    <li><strong>January 2025 NL Hydro MOU Documentation</strong> - Supporting provincial materials</li>
+                </ul>
+            </div>
+
+            <h3>Economic Analyses - Dr. Doug May</h3>
+            <div class="document-list">
+                <p><strong>Video Series Transcripts:</strong></p>
+                <ul>
+                    <li>Video 1: Quebec's Emerging Electricity Shortage (transcript)</li>
+                    <li>Video 2A: Electricity Pricing - Quebec's Costs (transcript)</li>
+                    <li>Video 2B: Electricity Pricing - Churchill Falls' Role (transcript)</li>
+                    <li>Video 3A: Hydro-Québec's Electricity Imports (transcript)</li>
+                    <li>Video 3B: Hydro-Québec's Electricity Exports (transcript)</li>
+                    <li>Video 4: Water Royalties and Resource Rents (transcript)</li>
+                </ul>
+                
+                <p><strong>Written Analyses:</strong></p>
+                <ul>
+                    <li>Assessment of Proposed Prices for Existing Power</li>
+                    <li>Assessment of the Proposed Projects (Gull Island, CF Expansion, CF Upgrade)</li>
+                    <li>Understanding Financial Concepts (Present Value, Discount Rates)</li>
+                    <li>Quebec's Electricity Supply Problem</li>
+                    <li>Quebec's Changing Import Picture</li>
+                    <li>Reassessing the Churchill Falls MOU</li>
+                    <li>Hydro-Québec's Exports and Imports Analysis</li>
+                </ul>
+            </div>
+
+            <h3>Economic Analyses - Other Economists</h3>
+            <div class="document-list">
+                <ul>
+                    <li><strong>Wade Locke's Economic Assessment (2024)</strong> - Critical analysis of the MOU's economic implications for Newfoundland and Labrador</li>
+                    <li><strong>James Feehan's Academic Research</strong> - Historical and economic context of Churchill Falls agreements</li>
+                    <li><strong>NL Debt and Fiscal Sustainability Analysis</strong> - Provincial fiscal context</li>
+                </ul>
+            </div>
+
+            <h3>Corporate and Government Reports</h3>
+            <div class="document-list">
+                <ul>
+                    <li><strong>Churchill Falls (Labrador) Corporation Annual Report 2024</strong> - Financial performance and operational data</li>
+                    <li><strong>Churchill Falls Consolidated Financial Statements (2021-2024)</strong> - Multi-year financial data</li>
+                    <li><strong>Hydro-Québec Annual Report 2024</strong> - Financial results, operations, and strategic direction</li>
+                    <li><strong>Hydro-Québec Action Plan 2035</strong> - Strategic plan for decarbonization and capacity expansion</li>
+                    <li><strong>Newfoundland and Labrador Hydro Reports</strong> - Provincial utility operations and planning</li>
+                    <li><strong>Lower Churchill Project Combined Financial Statements 2024</strong> - Muskrat Falls and Gull Island data</li>
+                    <li><strong>Hydro-Québec Production and Import/Export Data</strong> - Operational statistics</li>
+                </ul>
+            </div>
+
+            <h3>Historical Documentation</h3>
+            <div class="document-list">
+                <ul>
+                    <li><strong>History of Churchill River Hydro Development (1949-2007)</strong> - Comprehensive historical overview of the project's development</li>
+                    <li><strong>History of Churchill Falls Development</strong> - Detailed development timeline</li>
+                    <li><strong>Lower Churchill Projects Documentation</strong> - Historical context for Muskrat Falls and Gull Island</li>
+                    <li>Historical contract analyses and government documents</li>
+                </ul>
+            </div>
+
+            <div class="highlight-box">
+                <p><strong>Using These Sources:</strong> Instead of reading through all these documents, ask the assistant questions. It will synthesize information across multiple sources, cite specific documents, and provide clear answers based on this complete reference library.</p>
+                <p style="margin-top: 15px;"><a href="index.html">← Return to Assistant to ask questions</a></p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Dr. Doug May's Video Series</h2>
+            <p>All video content is also available on the <a href="videos.html" style="color: var(--aqua); text-decoration: underline;">Videos page</a> with embedded players. Dr. Doug May's comprehensive 6-part video series provides an independent economic assessment of the December 2024 Churchill Falls MOU.</p>
+            
+            <div class="highlight-box">
+                <p><strong>Note:</strong> All of Dr. May's video analyses and written documents are integrated into the assistant's knowledge base. You can ask questions about any aspect of his analysis through the chat interface.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
