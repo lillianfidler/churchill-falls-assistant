@@ -105,30 +105,22 @@ console.log('='.repeat(60));
 // ============================================================================
 
 const DOUG_DOCUMENTS = [
-    // Core MOU summary
+    // Core MOU and Analysis (summaries)
     'MOU_Churchill_Falls_Dec_12_2024_summary.txt',
-    
-    // Doug May Video Series (all summaries)
     'Doug-video-series-video1-summary.txt',
     'Doug-video-series-video2A-summary.txt',
     'Doug-video-series-video2B-summary.txt',
-    'Doug-video-series-video3A-summary.txt',
-    'Doug-video-series-video3B-summary.txt',
-    'Doug-video-series-video4-summary.txt',
-    
-    // Doug May NEW MOU Analysis (January 2026)
-    'doug-may-assessment-of-proposed-prices-mou.txt',
-    'doug-may-CF-assessment-mou.txt',
-    'doug-point-summary-assessment-mou-prices.txt',
-    'doug-summary-video.txt',
+    'LOCKE analysis of MOU CF-summary.txt',
     
     // Doug's Additional Documents (full documents)
     'Reassessing-the-Churchill-Falls-MOU.txt',
     'HYDRO-QUEBECS-EXPORTS.txt',
     'HYDRO-QUEBECS-IMPORTS.txt',
+    'quebecs-changing-import-picture.txt',
     'quebecs-electricity-supply-problem.txt',
     'Assessment-of-Proposed-Prices.txt',
     'Proposed-Prices-for-Existing-Power.txt',
+    'The-Assessment-of-the-Proposed-Proj.txt',
     'Understanding-Some-Financial-Concep.txt'
 ];
 
