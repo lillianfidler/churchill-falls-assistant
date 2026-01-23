@@ -1,0 +1,249 @@
+QUEBEC'S ELECTRICITY LANDSCAPE AND HOW CHURCHILL FALLS AND THE PROJECTS PROPOSED UNDER THE MOU FIT INTO THAT LANDSCAPE
+Dr. Doug May
+Economist, Memorial University
+December 18, 2025
+
+WHAT WE FOUND!
+
+DECLINING HYDROELECTRIC GENERATION IN QUEBEC
+
+Hydroelectric generation in Quebec is currently falling due to drought in the northeastern part of Quebec around the James Bay Basin. In response to this fall, Hydro-Québec (HQ), consistent with its green energy strategy, has turned to using wind turbines. This has helped but the domestic production of electricity is still falling.
+
+THE CRITICAL ROLE OF CHURCHILL FALLS IMPORTS
+
+Traditionally, Quebec has had to rely heavily on imported power. The primary source of this power has come from the Churchill Falls hydro generation station at very low, long-term contractual prices.
+
+A rough calculation shows that the effective cost of this power to Hydro-Québec is about 0.312 cents per kWh. The contribution of Churchill Falls electricity to Quebec's available electricity is now around 17%.
+
+SHRINKING EXPORT CAPACITY
+
+With growing domestic demand, Hydro Quebec, even with its imports, has little surplus electricity for exports to its traditional markets.
+
+Surprisingly, because of the situation described above, Hydro-Québec's export markets are increasingly becoming the source for its imported power from the New York grid.
+
+QUEBEC'S LOW PRICES DEPEND ON CHURCHILL FALLS
+
+Now, Hydro-Quebec advertises that its electricity prices are the lowest in Canada and the lowest in the G7. They acknowledge that these low prices are due to its very heavy reliance on low-cost hydroelectric power available to it, which, of course, includes the imported power from Churchill Falls.
+
+CHURCHILL FALLS: INTEGRAL AND INEXPENSIVE
+
+For over half a century, hydroelectric power from Churchill Falls has been an integral part of the electricity available to HQ. It is also very inexpensive as a result of the 1969 contract with CFL(Co) and the fact that HQ is a major (34.2%) shareholder, which lowers the effective cost of electricity from Churchill Falls.
+
+HQ's increasing use of wind turbines attests that cheap hydroelectric sites capable of meeting its needs within Quebec are no longer available.
+
+THE MOU INFRASTRUCTURE STRATEGY
+
+A low-cost alternative for HQ is to turn to Churchill Falls to replace the older turbines with newer, more modern, efficient turbines. Hydro Quebec also proposes to enlarge the CF facilities by adding two new additional turbines.
+
+Using the generating model used along Quebec's rivers, HQ has also suggested developing new generating capacity at Gull Island on the Churchill River.
+
+Due to public grievances related to the pricing of the 1969 contract, Quebec has agreed to slightly increase the output prices charged by CFL(Co) in a new contract to end in 2075. This proposal is likely seen as being essential before beginning any new discussions on the new infrastructure projects outlined in the December MOU.
+
+HYDRO-QUEBEC'S DUAL STRATEGY: COST-MINIMIZER AND PROFIT-MAXIMIZER
+
+Hydro-Quebec is a very well-managed company whose strategies are consistent with its economic objectives. Overall, it is a cost-minimizer. It passes these cost savings on to users in Quebec as part of its efforts to increase the economic well-being of household users. Quebec also utilizes inexpensive power as part of an industrial strategy to foster competitive enterprises to locate there.
+
+With respect to exports, Hydro-Quebec is a profit-maximizer. Consistent with this objective, it takes advantage of price fluctuations in electricity demand on both a daily and seasonal basis in the competitive markets.
+
+EXPORT PRICING EXAMPLE
+
+The Canada Energy Regulator reported that Hydro-Québec received $193.43 CAD per MWh for its electricity in the NY market during July of this year. However, the price in April was only $38.14.
+
+The implication here is that the reservoirs associated with hydro generation can be thought of as large storage batteries in which water should be released to produce electricity for export markets when prices are the highest, typically in the winter months.
+
+QUEBEC'S WATER ROYALTY APPROACH
+
+Climate change and advances in economic modelling have highlighted the importance of considering potential negative environmental costs and the responsible efficient use of natural resources. This recognition requires the responsible calculation and implementation of water royalties and land rents associated with hydro generation.
+
+Hydro-Quebec has started down this path, setting a royalty rate of $9 per MWh of hydroelectric power. The revenue from this royalty goes directly to the Government of Quebec's "Generation" Fund to be used to reduce Quebec's debt.
+
+THE NEWFOUNDLAND AND LABRADOR ROYALTY GAP
+
+CF(L)Co does pay a royalty to the Government of Newfoundland and Labrador of about 25 cents per MWh or 1/36 of the royalty rate paid by HQ to Quebec for hydroelectricity generated in Quebec.
+
+The more traditional use of differential or scarcity rents related to water usage has, to our knowledge, not been calculated. The Government of Newfoundland and Labrador would directly set such rents linked to the Churchill River and would be an external input cost paid by CFL(Co).
+
+INFRASTRUCTURE PROJECTS: POTENTIAL BUT UNKNOWN
+
+The proposed infrastructure projects in the MOU have potential. While we know the total cost, the timing of those costs and others is unknown. Also unknown are the various scenarios related to output pricing over time. Without much more information, independent professional analyses of these projects are not possible.
+
+THE PRICING CONUNDRUM
+
+The pricing of the existing electricity under the current long-term contract ending in 2041 has been and continues to be a contentious issue under the MOU. The 1969 contract was set in unusual circumstances.
+
+CF(L)Co sells to a monopolist, which sets "transfer" prices, which are 34.2% paid to itself. While the contract is legally binding, economists cannot say that the prices are efficient or optimal from a well-being perspective.
+
+POLICY SUGGESTIONS
+
+These suggestions generally follow the management practices of HQ:
+
+WATER AS A VALUABLE RESOURCE
+
+Recognize water as a valuable resource and have the province determine socially optimal economic rents. The rents would flow directly to GNL and would represent an input cost to CFL(Co).
+
+Set water rents/royalties at approximately $35/MWh.
+
+MAXIMIZE ECONOMIC WELL-BEING OF NEWFOUNDLANDERS AND LABRADORIANS
+
+Maximize the economic well-being of NL'ers by allocating a portion of the rents directly to households at a lower price than faced by Montreal households, lowering electricity prices, extending the NL HST tax credit to reduce poverty, and following Alberta's lead in lowering the HST.
+
+Use rents as part of an industrial strategy. (Vardy)
+
+Use some of the rents as part of a "Generations Fund" to reduce debt costs. (The Quebec Model)
+
+LAND RENTS FOR LOCAL AND INDIGENOUS GOVERNMENTS
+
+Similar to Quebec, there would be a land rent for the land used by the generating station and its facilities, as well as for the land used for transmission lines. These rents would go to local or indigenous governments.
+
+The pricing of such rents would be based on the differential costs associated with the least cost alternative generation processes. Such costs typically vary by month due to seasonal fluctuations in demand and the resulting adjustments in supply costs required to meet that demand.
+
+SEPARATE INFRASTRUCTURE PROJECT HANDLING
+
+The four new proposed infrastructure projects could be handled separately, as David Vardy has suggested. One has to be aware that these projects will result in alternative scarcity rents.
+
+CONTRACT DURATION AND REVIEW PERIODS
+
+As others have noted, the contracts should be for a period of twenty years, with a thorough review every five years. This is consistent with Hydro-Québec's practices.
+
+PRICING FRAMEWORK
+
+Newfoundland and Labrador Hydro, along with Hydro-Québec, would determine the price of electricity charged by CFL(Co), taking into account the costs of its inputs. In this economic framework, the primary inputs are capital and labour and the purchased external inputs are purchased goods, purchased services, and purchased water resources.
+
+TRANSPARENCY REQUIREMENT
+
+All the data necessary to make an informed economic decision should be readily available. Mark Carney, in his book Value(s) argues for the application of cost-benefit analysis.
+
+KEY FINDINGS SUMMARY
+
+QUEBEC'S ELECTRICITY CRISIS
+- Hydroelectric generation falling due to James Bay Basin drought
+- Wind turbines helping but production still declining
+- Growing domestic demand reducing export capacity
+- Quebec now importing from New York grid (role reversal)
+
+CHURCHILL FALLS DEPENDENCY
+- Provides 17% of Quebec's available electricity
+- Effective cost to HQ: 0.312¢/kWh
+- Integral to Quebec's system for over 50 years
+- Enables Quebec's claim to lowest G7 electricity prices
+
+HQ'S STRATEGIC BEHAVIOR
+- Cost-minimizer for domestic supply
+- Profit-maximizer for exports
+- Uses reservoirs as "storage batteries"
+- Takes advantage of daily/seasonal price variations
+- Example: NY market prices range from $38.14/MWh (April) to $193.43/MWh (July)
+
+WATER ROYALTY COMPARISON
+- Quebec: $9/MWh royalty on hydroelectric power
+- Newfoundland and Labrador: $0.25/MWh (1/36 of Quebec rate)
+- Differential/scarcity rents not calculated for Churchill River
+- Quebec uses royalties for "Generation Fund" debt reduction
+
+MOU INFRASTRUCTURE RATIONALE
+- Turbine replacement/upgrade at Churchill Falls
+- Two additional turbines at CF
+- Gull Island development
+- Price increase to 2075 seen as prerequisite for infrastructure discussion
+- Cheap hydro sites within Quebec exhausted
+
+STRUCTURAL ISSUES
+- CF(L)Co sells to monopolist buyer (HQ)
+- HQ sets transfer prices, pays 34.2% to itself
+- Contract legally binding but not economically optimal
+- Insufficient data for independent project analysis
+
+POLICY RECOMMENDATIONS SUMMARY
+
+WATER VALUATION
+- Set water rents at ~$35/MWh (comparable to HQ approach)
+- Treat water as valuable provincial resource
+- Make rents external cost to CF(L)Co
+
+RENT ALLOCATION STRATEGY
+1. Direct benefits to NL households (lower than Montreal prices)
+2. Reduce electricity prices generally
+3. Extend HST tax credit to reduce poverty
+4. Consider HST reduction (Alberta model)
+5. Industrial attraction strategy
+6. Generations Fund for debt reduction
+
+LAND RENTS
+- Separate rents for generation facilities and transmission lines
+- Payments to local/indigenous governments
+- Based on differential costs vs. alternatives
+- Vary by month/season
+
+CONTRACT STRUCTURE
+- 20-year contract periods
+- Comprehensive review every 5 years
+- Separate handling of infrastructure projects
+- Recognition of alternative scarcity rents
+
+PRICING DETERMINATION
+- Joint NLH-HQ determination
+- Account for all input costs including water
+- Inputs: capital, labour, goods, services, water resources
+- Transparent, data-driven approach
+
+TRANSPARENCY
+- All data publicly available
+- Enable independent analysis
+- Apply cost-benefit analysis (Carney model)
+- Informed public decision-making
+
+IMPLICIT CRITIQUE OF MOU
+
+The policy suggestions implicitly highlight what the MOU lacks:
+
+1. No meaningful water rent/royalty ($0.25/MWh vs. suggested $35/MWh)
+2. No direct household benefits (Quebec model not followed)
+3. No industrial strategy component
+4. Contract extends to 2075 (not 20-year with 5-year reviews)
+5. Infrastructure projects bundled, not separate
+6. Transfer pricing continues (HQ pays itself)
+7. Insufficient transparency for independent analysis
+8. No cost-benefit analysis framework
+9. No differential/scarcity rent calculations
+10. Focus on government debt, not household well-being
+
+COMPARATIVE MODELS
+
+QUEBEC MODEL (What Works):
+- Water royalties ($9/MWh)
+- Cost minimization for households
+- Industrial attraction through low prices
+- Profit maximization on exports
+- Dynamic/seasonal pricing
+- Generations Fund for debt
+- 20-year contracts with reviews
+
+NEWFOUNDLAND AND LABRADOR CURRENT STATE:
+- Minimal water royalties ($0.25/MWh)
+- No household benefit strategy
+- Limited industrial strategy
+- Export pricing unclear
+- Fixed annual pricing
+- Revenue to government, not households
+- 50-year contract (2025-2075)
+
+SUGGESTED NL MODEL:
+- Meaningful water rents ($35/MWh)
+- Household electricity prices lower than Montreal
+- Active industrial strategy
+- Profit-maximizing exports
+- Seasonal/dynamic pricing
+- Multiple rent allocation purposes
+- 20-year contracts with 5-year reviews
+- Transparency and public analysis
+
+DOCUMENT METADATA
+Author: Dr. Doug May
+Affiliation: Economist, Memorial University
+Date: December 18, 2025
+Series: Churchill River Power Project Analysis
+Format: Summary video presentation / policy recommendations
+Focus: Quebec electricity context, Churchill Falls role, MOU critique, alternative policy framework
+Key Topics: Water rents, household benefits, HQ strategy, royalty comparisons, contract structure, transparency
+References: Mark Carney Value(s), David Vardy suggestions, Canada Energy Regulator data
+Purpose: Contextualize MOU within Quebec's electricity needs and propose alternative policy framework based on best practices

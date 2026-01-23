@@ -1,0 +1,636 @@
+AN ASSESSMENT OF THE DECEMBER 12, 2024 CHURCHILL FALLS MOU BETWEEN NEWFOUNDLAND AND LABRADOR AND QUEBEC
+Wade Locke Ph.D.
+Retired Professor of Economics, Memorial University
+Date: December 2024 (analysis document)
+
+INTRODUCTION
+
+On December 12, 2024, the Premier of Newfoundland and Labrador (Dr. Andrew Furey) and the Premier of Quebec (François Legault) signed, what has been described as an "historic" and "transformational" Memorandum of Understanding (MOU).
+
+This MOU accomplishes two stated goals:
+
+First, the definitive agreement (contract) that is expected to follow from the MOU, when finalized and signed, would replace the 1969 Upper Churchill Contract.
+
+Second, the finalized definitive agreement will commit both the Government of Newfoundland and Labrador and the Government of Quebec to the development of additional capacity on the Churchill River.
+
+This additional capacity includes:
+- The Gull Island hydroelectric project (an additional 2,250 MW of installed capacity)
+- An upgrade of 550 MW to the capacity at the existing Churchill Falls plant, which currently has a rated capacity 5,428 MW
+- An expansion of 1,100 MW of capacity to the Churchill Falls plant by adding a second powerhouse with two new turbines
+- 340 kilometres of additional 735kV AC transmission lines in Labrador and additional transmission lines in Quebec
+
+THE INFORMATION GAP PROBLEM
+
+The MOU document lacks sufficient detail needed to demonstrate that the deal or the contract that is expected to ensue from this MOU is better than the 1969 contract.
+
+There seems to be a genuine concern in Newfoundland and Labrador about whether this represents:
+- A good deal
+- A great deal
+- Even the best deal that Newfoundland and Labrador could have negotiated at the time
+
+Or whether the MOU is the start of another bad deal in which Newfoundland and Labrador has been snookered again, but this time in a more sophisticated way than in 1969.
+
+HISTORICAL CONTEXT: THE 1969 CONTRACT
+
+Recall that in 1969 Churchill Falls contract was comprised of two parts:
+
+The initial 40 years had a price 0.25 cents per kWh for electricity sold to Hydro Quebec (HQ) and Newfoundland and Labrador Hydro (NLH). This price continued to apply until 2016 when it was automatically renewed, but at the lower price of 0.2 cents per kWh.
+
+As part of this contract, Newfoundland and Labrador had access to two blocks of power:
+- 300 MW of recall power to meet the province's needs for electricity in Labrador
+- 225 MW of power through the Twinco block to meet the needs of the mining companies in Labrador
+
+The remaining electricity generated could be purchased by HQ, including any power that was excess to the needs of Newfoundland and Labrador.
+
+THE GWAC AGREEMENTS
+
+Newfoundland and Labrador had about 130 MW of its recall block that was surplus to its needs and in 1998, it signed a three-year agreement with HQ to sell the excess to HQ at a market price. It was assumed at the time that this contract would yield an estimated $68.5 million over the life of the contract.
+
+This agreement was renewed in 2001. Under this renewed agreement, HQ paid $23.9 per MWh, but revenue was capped at $97.5 M.
+
+In 2004 the agreement was renewed again, but the price would start at $36/MWh and escalate at 2% per annum with no revenue cap.
+
+Finally, in 2009, NLH could trade energy with customers outside of Quebec, subject to transmission tariffs.
+
+THE INEQUITY OF THE 1969 CONTRACT
+
+Given the extremely low price for electricity from Churchill Falls (0.2 cents per kWh after 2016), the length of the contract (65 years), the fact that HQ was exporting power at a price significantly higher than was being received by CF(L)Co, the inability to revise the contract through the political process and courts unwillingness to overturn the original contract, the 1969 Churchill Falls was the bane of the existence of Newfoundlanders and Labradorians.
+
+As of 2019, the deal has yielded close to $28 billion in profits to Quebec, and about $2 billion for Newfoundland and Labrador.
+
+Feehan and Baker (2010) in Policy Options suggest that "with revenues of $60 million annually during the life of the renewal contract, it is unlikely that CFLCo will cover its operating costs, making it necessary for it to cross-subsidize the arrangement with revenues from other sources."
+
+The anger and frustration influenced public policy decisions within Newfoundland and Labrador. It is fair to say that residents of the province needed some kind of redress for the inequitable contract and that any future long-term contracts for energy should include provisions that protected the interest of current and future residents of Newfoundland and Labrador.
+
+THE MOU: EXPECTATIONS FOR NEWFOUNDLAND AND LABRADOR
+
+The MOU, the associated press releases and the Fact Sheet released by the Government of Newfoundland and Labrador (GNL), on the surface, seem to generate significant benefits for the province and protects the interest of current and future Newfoundlanders and Labradorians.
+
+According to the GNL's Fact Sheet, the benefits that are expected to accrue to the province from the new power contracts and the new developments are:
+
+REVENUE CLAIMS
+
+The provincial treasury is estimated to receive more than $225 B in total revenue.
+
+From Churchill Falls alone, $17 billion over the next 17 years or $1 billion, starting in 2025.
+
+IMPORTANT CLARIFICATION: While it is the case that CF(L)Co will receive $19.8 B or $1.17 B on average to 2041, that is not money to treasury. It is money to CF(L)Co of which NLH owns 65.8%. As such, the amount that could flow to the provincial treasury is $13.1 B or an annual average of $768 M to 2041.
+
+BASELINE COMPARISON ISSUE: The GNL press release of December 12, 2024, indicates that the $1 billion in 2025 should be compared to "the $20 million we receive today." However, after adjusting for NLH 65.8% share of CF(L)Co revenues in 2023 were $103 million, with $40.5 million from HQ, $25.6 million from the Guaranteed Winter Availability Contract (GWAC), $34 million from NLH and $1.2 million from other sources. While not to diminish the significance of the increase in revenue, it is probably better to compare it to the $65 million from the GWAC and HQ, since these will be replaced by the new power purchase agreement in the MOU.
+
+PRICING STRUCTURE CLAIMS
+
+The effective average price is expected to increase from 0.2 cents per kWh to 5.9 cents per kWh, will escalate over time and will be tied to market prices.
+
+SCHEDULE F VAGUENESS: While Schedule F of the MOU does indicate that the forecast payments will be "reflective of wholesale electricity market value in Québec; replacement costs in Québec; and wholesale electricity market value in northeast export markets", there is no indication of the weights attached to either in the pricing mechanism.
+
+HQ will pay to CF(L)Co $33.8 billion in today's dollars, which is $180 billion to Newfoundland and Labrador expressed in nominal dollars.
+
+PRESENT VALUE CONFUSION: There is confusion as to talking about today's dollars versus nominal dollars. The $33.8 billion is the present value of the nominal revenue profile associated with the $195 billion. The $33.8 billion discounts the nominal cash flow using 5.822%, which presumably is the nominal weight average cost of capital that should incorporate an assumed inflation rate. To get the dollars of the day equivalent, you simply need to discount the cash flow profile using the assumed rate of inflation. The $33.8 billion is the amount of investment need today to generate the cash flow equivalent to the $195 billion assuming a nominal rate of return of 5.822%.
+
+PRICING INDEPENDENCE
+
+The new pricing agreement for the power from the existing plant is not contingent on the new capacity-enhancing development proceeding. As such, it is possible to analyze the new pricing agreement separately from the Gull Island, Churchill Falls upgrade, Churchill Fall expansion, and the increased transmission facilities.
+
+CAPACITY ALLOCATION
+
+An increased capacity of 3,900 MW on the Churchill River, giving NLH access to nearly four times as much energy for use in Labrador than is available today.
+
+CLARIFICATION ON CAPACITY: This is somewhat misleading in that 3,900 MW is the combined increased in installed capacity of Gull Island (2,250 MW), the expansion of the existing plant (1,100 MW) and the upgrades to the existing plant (550 MW). NLH has existing rights to 525 MW from the existing plant and that will continue. NLH will also have access to 605 MW of new recapture capacity after 2034, 250 MW of existing plant capacity after 2050 and another 500 MW of existing plant capacity after 2060 and it will be entitled to receive 360 MW from the new developments. In other words, the capacity available to NLH is 1,990 MW, which is 378% of the 525 MW to which it currently has access.
+
+RISK PROTECTION CLAIMS
+
+The province will be fully protected from the risk of construction and cost overruns.
+
+The construction will generate thousands of jobs and electricity will make industrial development in Labrador more feasible and more likely.
+
+The binding agreements associated with the MOU should be signed by April 2026.
+
+FINANCIAL STRUCTURE
+
+HQ will pay $3.5 billion in today's dollars for the right to co-develop the new capacity-enhancing projects. As indicated in the MOU, this is equivalent to $4.8 billion in nominal dollar terms.
+
+The Fact Sheet suggest that the combined project will cost $33 billion in spending, which appears to be in nominal dollars. However, the Fact Sheet does not indicate whether it is real (i.e., adjusted for inflation) or nominal dollars. The specific breakdown provided in the Fact Sheet is:
+
+- $29.4 billion for Gull Island, which includes financing costs
+- $4.6 billion for Churchill Falls expansion, which includes financing costs
+- $1.9 billion for Churchill Falls upgrade, which includes financing costs
+- $3.6 billion for new transmission lines, which includes financing costs
+- The total expected costs of construction is $35.0 billion
+
+OWNERSHIP STRUCTURE
+
+The ownership of Gull Island will be 60% NLH and 40% HQ, while the ownership structure of the existing plant, the upgrades and the expansion will remain as currently in CF(L)Co, which is 65.8% NLH and 34.2% HQ.
+
+PRICING FOR NEW DEVELOPMENTS
+
+The price of Gull Island power and power from the Churchill Falls expansion will cover all costs associated with the project, including a return on equity ranging between 8 and 9 percent.
+
+The power sales from the Churchill Falls upgrade will be part of the contract for the existing plant.
+
+The prices for Gull Island power, power from the Churchill Falls expansion and the Churchill Falls upgrade are expected to increase 2% annually.
+
+COST OVERRUN RESPONSIBILITY
+
+HQ will be responsible for any cost overruns for the Gull Island project and the Churchill Falls expansion project and it will be responsible for managing construction and completion for both projects.
+
+CF(L)Co will be responsible for any cost overruns for the Churchill Falls upgrade project.
+
+NLH will construct 340 km of 735kV AC transmission lines in Labrador and will be responsible for any cost over runs.
+
+Costs of the transmission lines are to be covered from power sales from the new developments, including a cost-of-service return.
+
+MOU ANALYSIS PART 1: AN ENHANCED REVENUE PROFILE FOR EXISTING CHURCHILL FALLS POWER
+
+The analysis of the MOU presented below consists of two parts:
+1. The revision to the prices paid for existing power, independent of the proposed new developments
+2. The implications for Newfoundland and Labrador of the new developments to enhance capacity on the Churchill River
+
+UNDERSTANDING THE MOU SCHEDULES
+
+It is important to appreciate that the MOU does not provide a specific profile for power available to either NLH or HQ. Nor is there a profile of prices to be paid for existing Churchill Falls power.
+
+However, there are two schedules that are helpful in assessing the new pricing agreement touted in the GNL's Fact Sheet. These are Schedule E and Schedule G.
+
+Schedule E, among other things, presents the allocations of the capacity of the existing plant for NLH and HQ from 2025 to 2075.
+
+Schedule G specifies the forecast payments from HQ to CF(L)Co that will be available with the proposed new purchase power agreement for existing CF production.
+
+It is helpful to think of Schedule G as revenue (i.e., price times quantity) and Schedule E as capacity, from which it is possible to estimate the quantity of electricity produced. Given quantity and revenue, then an estimate of the implied price is simply revenue divided by quantity.
+
+THE CAPACITY DISCREPANCY
+
+Interestingly, for some reason, not explained in the MOU or in the GNL Fact Sheet, the total capacity considered in the MOU for 2025 was 5,290 MW, not the rated capacity for Churchill Falls of 5,428 MW.
+
+While an explanation of the reduced capacity of 118 MW for the existing Churchill Falls rated capacity is warranted, the analysis below utilizes the specific estimates provided in Schedule E.
+
+ESTIMATING QUANTITY FROM THE MOU'S CAPACITY ESTIMATES
+
+ALLOCATION TO NLH
+
+The allocation of the existing capacity of Churchill Falls plant to NLH increases from 525 MW in 2025 to 1,630 MW in 2075.
+
+Average Allocation of Existing CF Capacity to NLH:
+
+Component | 2025-2075 Average (MW) | 2025-2041 Average (MW) | 2042-2075 Average (MW)
+---|---|---|---
+NLH Existing | 525 | 525 | 525
+NLH New Recapture Rights | 518 | 344 | 605
+Expiring Blocks Available to NLH | 196 | 0 | 294
+**Total Allocated to NLH** | **1,239** | **869** | **1,424**
+
+ALLOCATION TO HQ
+
+The allocation for HQ decreases from 4,765 MW in 2025 to 3,660 MW in 2075.
+
+Average Allocation of Existing CF Capacity to HQ:
+
+Component | 2025-2075 Average (MW) | 2025-2041 Average (MW) | 2042-2075 Average (MW)
+---|---|---|---
+HQ Existing | 4,051 | 4,421 | 3,866
+
+DERIVING THE CAPACITY FACTOR
+
+While the MOU illustrates how existing capacity gets allocated between NLH and HQ, it does not indicate the associated amount of electricity that is produced with this capacity. In other words, it does not show the quantity of electricity associated with the capacities outlined in the MOU. In addition, the MOU does not indicate the capacity factor that was utilized.
+
+Even though it was not provided in the MOU, it is possible to get a reasonable estimate of the capacity factor by utilizing the annual reports of NLH, Nalcor and CF(L)Co.
+
+CAPACITY FACTOR CALCULATION METHODOLOGY
+
+The implied capacity factor is derived by taking the actual electricity produced, as specified in the annual reports, and dividing it by the maximum potential energy, which itself is derived by taking the product of:
+- The installed capacity of Churchill Falls (5,428 MW)
+- The number of hours per day (24)
+- The number of days per year (365 or 366)
+
+Historical Capacity Factors from Annual Reports (2012-2023):
+
+Year | Installed Capacity (MW) | Max Potential Energy (GWh) | Electricity Produced (GWh) | Implied Capacity Factor
+---|---|---|---|---
+2012 | 5,428 | 47,680 | 35,661 | 74.8%
+2013 | 5,428 | 47,549 | 34,536 | 72.6%
+2014 | 5,428 | 47,549 | 32,192 | 67.7%
+2015 | 5,428 | 47,549 | 33,470 | 70.4%
+2016 | 5,428 | 47,680 | 33,806 | 70.9%
+2017 | 5,428 | 47,549 | 30,927 | 65.0%
+2018 | 5,428 | 47,549 | 35,598 | 74.9%
+2019 | 5,428 | 47,549 | 34,982 | 73.6%
+2020 | 5,428 | 47,680 | 32,731 | 68.6%
+2021 | 5,428 | 47,549 | 34,253 | 72.0%
+2022 | 5,428 | 47,549 | 34,500 | 72.6%
+2023 | 5,428 | 47,549 | 34,500 (est.) | 72.6% (est.)
+
+**Average capacity factor from 2012 to 2023: 71.19442%**
+
+This capacity factor is applied to capacity allocated to NLH and HQ from Schedule E in the MOU to illustrate the quantities of electricity available to both NLH and HQ from the existing Churchill Falls project.
+
+ELECTRICITY QUANTITIES ESTIMATED FOR NLH
+
+NLH is estimated to receive 394 TWh of electricity total:
+- 92 TWh occurring from 2025 to 2041
+- 302 TWh occurring after 2041
+- This implies that **77% of NLH's electricity comes after 2041**
+
+Electricity Estimated to be Available to NLH:
+
+Component | 2025-2075 Sum (TWh) | 2025-2041 Sum (TWh) | 2042-2075 Sum (TWh)
+---|---|---|---
+NLH Existing | 167 | 56 | 111
+NLH New Recapture Rights | 165 | 37 | 128
+Expiring Blocks Available to NLH | 62 | 0 | 62
+**Total to NLH** | **394** | **92** | **302**
+
+ELECTRICITY QUANTITIES ESTIMATED FOR HQ
+
+HQ is estimated to receive 1,289 TWh of electricity total:
+- 469 TWh coming from 2025 to 2041
+- 820 TWh being made available after 2041
+- This corresponds to **64% of HQ's electricity coming after 2041**
+
+Electricity Estimated to be Available to HQ:
+
+Component | 2025-2075 Sum (TWh) | 2025-2041 Sum (TWh) | 2042-2075 Sum (TWh)
+---|---|---|---
+HQ Existing (Adjusted for New Recapture & Expiring Blocks) | 1,289 | 469 | 820
+
+ESTIMATING PRICE FROM THE MOU'S REVENUE ESTIMATES
+
+Schedule G specifies the forecast payments of HQ to CF(L)Co with the proposed new purchase power agreement for existing CF production. That is, it specifies the revenue that CF(L)Co should expect to receive from the electricity available from the existing production at Churchill Falls.
+
+REVENUE PROFILE FROM SCHEDULE G
+
+In 2025, the proposed new power purchase agreement will commence at $475 M being paid by HQ to CF(L)Co and by 2041 this increases to $2 B.
+
+In 2050 and 2060, the revenue flowing to CF(L)Co from this source increases to $3.2 B and $5.8 B, respectively.
+
+By 2075, the annual revenue to CF(L)Co is estimated to be $8.4 B.
+
+Over the whole period considered by Schedule G, the revenue expected to flow to CF(L)Co from HQ for this source of funds is $195 B:
+- $20 B occurring in the period 2025 to 2041
+- $175 B being paid in the period 2042 to 2075
+
+THE EVALUATION QUESTION
+
+While these revenue estimates are significant and substantial, they do not indicate whether they are reasonable or even if they are as high as they could have been or should have been.
+
+In other words, do these revenue flows reflect the best possible deal that could be had at the time or will we be lamenting this deal in the future as is the case currently for the original 1969 deal.
+
+Proposed Revenue from HQ to CF(L)Co for Existing CF Electricity Generation:
+
+Period | Revenue Sum (Nominal $ M)
+---|---
+2025-2075 | $194,700
+2025-2041 | $19,835
+2042-2075 | $174,865
+
+PRESENT VALUE ANALYSIS
+
+One metric that can be utilized is to convert this revenue flow into its present value equivalent. This present value reflects the amount of money in 2024 (the base year for this calculation) that this revenue is worth in lump-sum terms.
+
+To convert the nominal series into a present value series, we will use the discount rate suggested in the MOU (i.e., 5.822%).
+
+PRESENT VALUE CALCULATION EXAMPLE: To convert a nominal estimate into its present value equivalent, we use the following formula: $2000 / (1.05822)^(2041-2024) = $764. In other words, $2,000 nominal dollars received in 2041 is equivalent to getting a lump sum payment in 2024 of $764 M.
+
+Present Value of Revenue from HQ to CF(L)Co for Existing CF Electricity Generation:
+
+Period | Present Value Sum ($ M)
+---|---
+2025-2075 | $33,752
+2025-2041 | $11,022
+2042-2075 | $22,730
+
+CONTEXTUALIZING THE PRESENT VALUE
+
+The present value of this revenue stream is $33.8 B, with $11 B occurring from 2025 to 2041 and $23 B occurring after 2041.
+
+To put this in perspective, Newfoundland and Labrador's GDP in 2023, expressed in current dollars, was $39 B. Hence, the proposed revenue flow corresponds to approximately 87% of the value added of all goods and services produced in Newfoundland and Labrador in 2023.
+
+As impressive as this statistic is, it does not reflect whether it is reasonable, credible and/or the best deal that was possible.
+
+DERIVING IMPLIED PRICES
+
+The next step is to convert these revenue and quantity estimates into prices which might be easier to interpret in terms of their credibility, reasonableness and whether Newfoundland and Labrador got the best deal.
+
+NOMINAL PRICES
+
+Over the period 2024 to 2075, the price is expected to average **15.98 cents per kWh**.
+
+For the period 2024 to 2041, the price is expected to average **4.34 cents per kWh**.
+
+For the period 2042 to 2075, the price is expected to average **21.8 cents per kWh**.
+
+PRESENT VALUE PRICES
+
+Converting these price estimates into their present value equivalents yields:
+
+- Average price of **2.64 cents per kWh** for the period 2025 to 2075
+- Average price of **2.38 cents per kWh** for the period 2025 to 2041
+- Average price of **2.77 cents per kWh** for the period 2042 to 2075
+
+Implied Prices for Power Purchased from CF(L)Co by HQ:
+
+Price Type | 2025-2075 Average | 2025-2041 Average | 2042-2075 Average
+---|---|---|---
+Implied Nominal Prices (cents per kWh) | 15.98 | 4.34 | 21.80
+PV of Implied Nominal Prices (cents per kWh) | 2.64 | 2.38 | 2.77
+
+INTERPRETING THE RESULTS
+
+The revenue profiles are substantial and are large relative to the size of the economy, and the provincial budget. The 2024-25 budget indicates a net debt for the province of $17.8 B and an expenditure of $10.4 B.
+
+Yet, when considering that the present value of prices are relatively flat, it might mean that a better deal is possible.
+
+If you believe that real electricity prices will grow faster than 5.822% (the discount rate used in this analysis), then you could make a case that a better deal might be possible.
+
+However, these calculations are so far in the future that it is impossible to know, or even to reasonably speculate, about the long-term growth rate of electricity prices.
+
+It is one thing to believe that electricity prices will rise over time. It is quite another to believe that the growth rate in electricity prices will exceed 5.822%. The simple fact is that no one knows.
+
+IS THERE A BETTER DEAL POSSIBLE FOR EXISTING CHURCHILL FALLS POWER THAN THE MOU'S REVENUE PROFILE?
+
+ESTABLISHING THE STATUS QUO
+
+Speculation on this issue requires an appreciation of the status quo and what would be available after the 1969 contract expires in 2041.
+
+The first step in this type of exercise is to consider what precisely is the status quo. It is possible to construct a revenue and expense profile for CF(L)Co for the most recent ten years for which public data were easily available.
+
+The average revenue currently available to CF(L)Co is **$148.5 M** (2014 to 2023). For the purpose of this analysis, it is assumed that this is a reasonable estimate for the annual revenue that CF(L)Co can expect to receive each year between 2025 and 2041 should the proposal negotiated in the MOU with HQ be turned down.
+
+CF(L)CO FINANCIAL HISTORY: NLH'S SHARE (65.8%)
+
+Revenue and Expense Summary 2014-2023 (Selected Years):
+
+**2014:**
+- Total Revenue: $72.90M
+- HQ Revenue: $46.22M
+- NLH Revenue: $5.47M
+- GWAC Revenue: $21.21M
+- Operating Costs: $41.40M
+- Depreciation: $13.80M
+- Net Finance Income: -$1.20M
+- Total Expenses: $52.70M
+- **Profit: $20.20M**
+
+**2019:**
+- Total Revenue: $94.00M
+- HQ Revenue: $38.00M
+- NLH Revenue: $31.00M
+- GWAC Revenue: $24.00M
+- Other Revenue: $17.00M
+- Operating Costs: $39.00M
+- Depreciation: $20.00M
+- Net Finance Income: -$1.00M
+- Total Expenses: $59.00M
+- **Profit: $35.00M**
+
+**2023:**
+- Total Revenue: $103.00M
+- HQ Revenue: $40.48M
+- NLH Revenue: $33.92M
+- GWAC Revenue: $25.59M
+- Other Revenue: $1.18M
+- Operating Costs: $47.00M
+- Depreciation: $26.00M
+- Net Finance Income: -$6.00M
+- Total Expenses: $66.00M
+- **Profit: $37.00M**
+
+KEY OBSERVATION: CF(L)Co has made a profit in each of the years examined from 2014 to 2023. It has done so even though the current price that Hydro-Québec pays CF(L)Co for electricity is well below its opportunity cost on open markets.
+
+Churchill Falls is what the industry knows as a "legacy" project. Its capital costs were repaid some time ago, and its primary energy source, water, is essentially free. A simple calculation of expenses relative to revenues shows that the cost-to-revenue ratio has fallen over the period examined.
+
+CF(L)CO COMBINED FINANCIAL HISTORY: NLH (65.8%) + HQ (34.2%) SHARES
+
+This perspective shows the total CF(L)Co picture:
+
+**Annual Average Combined Revenue 2014-2023:** Approximately $148.5M
+
+The profitability even at current low prices demonstrates the extraordinary economics of the Churchill Falls facility when water is essentially free.
+
+THE BREAKEVEN ANALYSIS: WAITING UNTIL 2042
+
+To mitigate some of the risk and uncertainty, consider what the price would have to be in 2042, assuming that price grew at 2% inflation between 2042 and 2075, to ensure that the revenue flowing to CF(L)Co had the same nominal revenue profile as being offered in the MOU for existing Churchill Falls power (i.e., $195 B).
+
+This exercise is also repeated in present value terms to ensure that the present value is equivalent to that in the MOU (i.e., $33.8 B).
+
+The prices derived from this exercise might help with interpreting how good the deal in the MOU is or is not. It might be easier to speculate on expected prices in 2041 than prices in 2075.
+
+BREAKEVEN PRICE WITH 2% ANNUAL GROWTH
+
+If Newfoundland and Labrador waited until after 2041 and the price in 2042 was expected to exceed **16.74 cents/kWh** and grew at 2% inflation, then that would generate more nominal revenue for CF(L)Co than revenue profile proposed under the MOU.
+
+On the other hand, if the price in 2042 falls short of 16.74 cents/kWh, then waiting may not be the best strategy for Newfoundland and Labrador.
+
+SENSITIVITY TO GROWTH RATE ASSUMPTION
+
+It is also important to recognize that if the price grew at a rate that exceeded 2% per annum, then the starting price would be less than 16.74 cents per kWh.
+
+This, of course, may change one's interpretation of the attractiveness of the deal. For example, if the growth rate were 4%, instead of 2%, then the breakeven price would drop to **11.61 cents per kWh**. This, in turn, would engender a different discussion about the attractiveness of the deal.
+
+The comparison shows that the MOU prices start lower but grow more slowly than a breakeven scenario starting at 16.74 cents/kWh in 2042. Whether waiting until 2042 to negotiate new prices would yield better results depends entirely on what market conditions will be at that time - which is impossible to predict with certainty.
+
+MOU ANALYSIS PART 2: IS THE TRANSFER OF GULL ISLAND EQUITY WORTH $4.8 B?
+
+HQ purchases 40% of the equity in Gull Island for $4.8 B nominal dollars, which is equivalent to $3.5 B in present value terms, with a 5.8% discount rate and 2024 as the base year.
+
+The debt equity structure for this project and the other development projects is 25% equity and 75% debt.
+
+HQ EQUITY PAYMENT SCHEDULE
+
+The payment of $4.8 B ($3.5 B in present value terms) was meant to help NLH cover its costs of Gull Island, Churchill Falls Expansion and possibly the cost of transmission.
+
+Payment Profile:
+- Payments begin in 2025
+- Concentrated heavily in 2030-2031 period
+- Final payment in 2035
+- Annual payments range from approximately $50M to $1,000M
+- Cumulative reaches $4.8B by 2035
+
+CONDITIONAL NATURE OF PAYMENTS
+
+This transfer of funds from HQ to NLH is not strictly an equity purchase. The first three years are unconditional, but the rest will be payments subject to certain conditions being met.
+
+NLH EQUITY OBLIGATIONS FOR NEW DEVELOPMENTS
+
+An estimate of the equity obligation that may be faced by NLH:
+
+Project | Capital Costs ($ B) | Equity (25% Share) | Implied NLH Equity | Debt (75% Share) | NL Debt
+---|---|---|---|---
+Gull Island Generating Station | $24.900 | $6.23 | $3.735 (60%) | $18.68 | $11.21
+Churchill Falls Expansion | $4.600 | $1.15 | $0.757 (65.8%) | $3.45 | $2.27
+Churchill Falls Upgrade | $1.900 | $0.48 | $0.313 (65.8%) | $1.43 | $0.94
+Churchill Falls Transmission | $3.600 | $0.90 | $0.900 (100%) | $2.70 | $2.70
+**Subtotal - New Developments** | **$35.000** | **$8.75** | **$5.704** | **$26.25** | **$17.11**
+
+Note: As noted in the GNL's Fact Sheet, the capital costs include financing costs.
+
+NLH share of equity is 60% for Gull Island, 65.8% for the Churchill Falls upgrade and expansion and 100% for Transmission.
+
+ANALYSIS OF THE EQUITY TRANSFER
+
+It appears that NLH equity obligations will total **$5.7 B**, which is **$0.9 B more** than HQ is transferring to NLH for equity.
+
+It is interesting that the difference is equal to the equity requirement for the Newfoundland and Labrador transmission lines.
+
+THE MISSING INFORMATION PROBLEM
+
+In order to evaluate this as a standalone equity purchase, it is necessary to calculate the net present value of the Gull Island project and determine whether 40% of the net present value is larger than $3.5 B in present value terms which were to be transferred from HQ.
+
+Unfortunately, the information needed for this calculation was omitted from the MOU. One would need:
+- The time profile of the capital costs
+- The time profile of operations and maintenance costs
+- The transmission costs
+- The production profile for electricity
+- The time profile price expected for the electricity flowing from Gull Island to HQ (equal to 84% of the output in the MOU) and NLH (16% of the output in the MOU)
+
+In fact, 16% is really 10% from Gull Island and the other would come from the other development projects. This makes it harder to assess whether the purchase of equity in Gull Island was a good deal or not.
+
+DEBT IMPLICATIONS
+
+It is good that the province received $4.8 billion to help with its equity obligations associated with the new developments. This means that the provincial debt requirements to develop Gull Island, Churchill Falls upgrade and extension and the associated transmission lines are actually reduced by $4.8 billion.
+
+It is important to recognize that the province will have additional borrowing in the range of **$17 to $18 billion** for the projects which is approximately equal to the net debt that the province has currently outstanding.
+
+COST OVERRUN EXPOSURE
+
+As well, the province is not fully insulated from cost over runs, being exposed to:
+- Cost over runs for the transmission lines (100% NLH responsibility)
+- 65.8% of the cost overruns on the Churchill Falls upgrade
+
+HOW DOES NEWFOUNDLAND AND LABRADOR FARE WITH THE NEW DEVELOPMENTS ON THE CHURCHILL RIVER?
+
+EMPLOYMENT CLAIMS
+
+The Fact Sheet suggest that 3,000 average, annual direct jobs. While the construction period will last between 5 and 11 years for all of the projects, implying 20,000 to 30,000 direct jobs, this level of employment should not strain credibility given that the investment cost of these developments is $35 billion.
+
+INCREASED POWER AVAILABILITY
+
+There will be additional power available for use in Labrador.
+
+In fact, under the current contract, Newfoundland and Labrador has access to 525 MW of capacity or **167 TWh** of electricity from 2025 to 2075.
+
+If everything proceeds as envisioned in the MOU, this increases to **474 TWh**, which represents an increase in power by **183%**.
+
+This increase in electricity available in Labrador should facilitate industrial development. There is no information in the MOU that would enable one to estimate the potential benefits that flow from this extra electricity.
+
+PRICING IMPLICATIONS FOR NLH
+
+Newfoundland and Labrador currently buys power from CF(L)Co at 0.2 cent per kWh and trades energy to markets outside of Quebec.
+
+The increase in prices to HQ will also apply to NLH. It would be interesting to know whether excess power in Labrador will still generate a profit and remain competitive with the new higher prices proposed in the in MOU.
+
+Also, it is important to recognize that the agreement will replace the Guaranteed Winter Availability Contract, which is worth $20 to $30 million dollars per annum to CF(L)Co.
+
+RETURN ON EQUITY PROJECTIONS
+
+While the information in MOU is not sufficient to calculate the net present value for either of the development projects, it is possible to estimate the income flow to NLH equity.
+
+From the equity table, the equity that NLH will have in all of the new developments is in the range of **$5 to $6 billion**.
+
+Given a target return on equity of between 8% to 9%, the return to equity should yield **$400 to $500 million annually**.
+
+CONCLUSION
+
+The revenues that will flow to the province are substantial and potentially transformative.
+
+While the province is protected from some risks associated with cost overruns and project delays, they are not protected from all.
+
+If all projects proceed as planned, the province will have to increase its borrowing something close to the current level of net debt, which is not insignificant.
+
+There is not sufficient information in the MOU to thoroughly evaluate all, or any, of the proposed new developments.
+
+This, in turn, has led to a number of analysts raising legitimate questions about the actual benefit that Newfoundland and Labrador can expect to receive or whether there was a better deal to be had from the perspective of Newfoundland and Labrador.
+
+Hopefully, the current debate and ongoing discussions will adequately address these questions to the satisfaction of the majority of Newfoundlanders and Labradorians.
+
+FINAL REFLECTIONS
+
+Recognizing that our level of analytical sophistication has increased within the province, we still need to be wary of being snookered by others with more sophistication but different long-term goals and interests.
+
+We should learn from our history, not be constrained by it.
+
+We ought not to be afraid to make a good deal that is in our interest, but we need to be wary given that we do not know the future with precision.
+
+KEY FINDINGS SUMMARY
+
+PRICING ANALYSIS
+- Nominal prices average 15.98¢/kWh over full period (4.34¢ to 2041, 21.8¢ after)
+- Present value prices relatively flat around 2.64¢/kWh
+- Parsons' 5.9¢/kWh "effective price" appears to be calculation error
+- Breakeven analysis: waiting until 2042 requires 16.74¢/kWh starting price (at 2% growth)
+
+REVENUE PROJECTIONS
+- $195B nominal revenue to CF(L)Co over 2025-2075
+- $33.8B in present value terms (87% of NL's 2023 GDP)
+- $13.1B could flow to provincial treasury to 2041 (65.8% of CF(L)Co revenue)
+- Not $17B to treasury as claimed - that's to CF(L)Co before NLH share calculated
+
+ELECTRICITY ALLOCATION
+- NLH receives 394 TWh total (77% after 2041)
+- HQ receives 1,289 TWh total (64% after 2041)
+- NLH capacity increases from 525 MW to 1,990 MW (378% increase)
+- Actual power increase 167 TWh to 474 TWh (183% increase)
+
+FINANCIAL STRUCTURE
+- Total capital costs $35B for all projects
+- NLH equity obligations $5.7B
+- HQ equity payment $4.8B (shortfall of $0.9B = transmission equity)
+- NL debt obligations $17-18B (approximately equal to current net debt)
+- Target return on equity 8-9% ($400-500M annually)
+
+COST OVERRUN EXPOSURE
+- HQ responsible: Gull Island and CF expansion overruns
+- NLH exposed: 100% of transmission overruns, 65.8% of CF upgrade overruns
+- Province not "fully protected" as claimed
+
+CAPACITY FACTOR
+- Historical average 71.19% (2012-2023)
+- Used to convert MW capacity allocations to TWh quantities
+- Wide variation year-to-year (65.0% to 74.9%)
+- Climate impacts on production not addressed in MOU
+
+COMPARATIVE CONTEXT
+- CF(L)Co profitable every year 2014-2023 despite 0.2¢/kWh price
+- Average annual revenue $148.5M under current contracts
+- Water essentially free (legacy project, capital costs repaid)
+- HQ earned ~$28B profit vs NL's ~$2B profit since 1969
+
+DATA GAPS
+- No production profiles provided
+- No detailed cost breakdowns by project
+- No pricing formulas for Gull Island or CF expansion
+- No contract duration specified for new developments
+- No scenario analysis despite 50-year timeframe
+- Missing: time profiles for costs, O&M, prices, electricity flows
+
+EVALUATION CHALLENGES
+- Impossible to calculate NPV without missing data
+- Cannot determine if deal is "best possible" or another bad deal
+- Breakeven analysis depends entirely on unprovable assumptions about 2042+ prices
+- If electricity price growth exceeds 5.822%, waiting might be better
+- If 4% growth instead of 2%, breakeven drops to 11.61¢/kWh
+
+EMPLOYMENT AND DEVELOPMENT
+- 3,000 average annual direct jobs claimed
+- 5-11 year construction period
+- 20,000-30,000 total direct jobs implied
+- Industrial development potential from increased power
+- But competitive at new higher prices? Unknown
+
+METHODOLOGICAL CONTRIBUTIONS
+
+This analysis demonstrates:
+1. How to derive quantity estimates from capacity allocations using historical capacity factors
+2. How to calculate implied prices from revenue and quantity data
+3. How to perform breakeven analysis for alternative scenarios
+4. How present value calculations can mask future uncertainties
+5. The importance of distinguishing CF(L)Co revenue from provincial treasury revenue
+
+DOCUMENT METADATA
+Author: Wade Locke, Ph.D.
+Affiliation: Retired Professor of Economics, Memorial University
+Date: December 2024 (assessment of December 12, 2024 MOU)
+Document Type: Comprehensive quantitative and qualitative analysis
+Methodology: Financial analysis, capacity factor derivation, present value calculations, breakeven analysis
+Data Sources: MOU Schedules E & G, CF(L)Co annual reports, NLH reports, Nalcor reports, GNL Fact Sheet
+Key Contribution: First detailed quantitative analysis translating MOU capacity allocations into electricity quantities and implied prices
+Critical Finding: Insufficient information in MOU to determine if deal is actually beneficial to NL

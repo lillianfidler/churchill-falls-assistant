@@ -1,0 +1,152 @@
+POINT SUMMARY ASSESSMENT OF THE MOU'S PROPOSED PRICES
+Dr. Doug May
+January 23, 2026
+
+A. CORE CONCLUSION: VALUE REMAINS UNCERTAIN
+
+1. The provincial government claims the MOU will create a "significant and immediate increase in value" for Newfoundland and Labrador. However, with the information currently available, the agreement's true value cannot be determined.
+
+2. Assertions that the value of existing power will increase nearly 30-fold are incorrect. Even using Locke's corrected estimate of 2.64¢/kWh, the actual gain cannot be calculated because essential data—particularly contract-by-contract power flows—is missing.
+
+3. Forecasted present-value revenue is not actual revenue. Cash may not materialize when needed, and costs could arise earlier than expected. Moreover, long-term cumulative revenue projections over a 50-year horizon—whether expressed in nominal, real, or present-value terms—can be misleading because they obscure the timing and uncertainty of cash flows.
+
+4. Although forecasted prices are repeatedly described as "illustrative," they are frequently treated in public communications as expected or quasi-guaranteed outcomes. In the absence of scenario analysis, this risks materially misleading the public about the certainty and magnitude of future benefits.
+
+B. MISSING INFORMATION AND STRUCTURAL GAPS
+
+5. When the GWAC winter price of 5.9¢/kWh ends under the MOU, all power effectively shifts to the current ~0.2¢/kWh rate. Determining the true average price paid by Hydro-Québec requires knowing how much power flows under each contract, information that is not publicly available.
+
+6. The MOU provides no pricing details for Gull Island or for electricity from the planned Churchill Falls enlargement.
+
+7. It is unclear why electricity from the upgraded turbines is included under the pricing structure for "existing power."
+
+8. Key data needed to estimate opportunity costs and differential rents is unavailable to the public, even though low load factors suggest these calculations have been performed internally.
+
+9. The MOU provides no alternative pricing, demand, or production scenarios (e.g., high-demand, low-water, or climate-stress cases), despite the long contract duration and acknowledged uncertainty.
+
+C. FORECASTING CHALLENGES AND PRICING UNCERTAINTY
+
+10. Prices outlined in the MOU are long-term forecasts for existing Churchill Falls power and for newly replaced turbine units.
+
+11. Future real values depend heavily on inflation assumptions and discount rates.
+
+12. The 2% inflation assumption aligns with the Bank of Canada's target, but recent inflation has been higher, raising the likelihood of long-term deviation.
+
+13. Real electricity prices are expected to rise significantly due to increasing demand—driven by AI, electrification, and EVs—and a transition away from low-cost traditional energy sources.
+
+14. Forecasting electricity prices beyond five years carries substantial uncertainty; beyond ten years it becomes extremely unreliable. Beyond fifteen years, only scenario-based approaches are credible.
+
+15. Statements that prices may rise due to replacement costs, export prices, or Quebec wholesale prices are general observations unsupported by formulas or quantitative evidence.
+
+16. Revenue depends on both price and quantity. Climate change could affect water flows and production levels. Without detailed production forecasts, revenue projections remain uncertain.
+
+17. Historical experience illustrates the importance of inflation effects: for example, electricity priced at approximately 2.5¢/kWh in the early 1970s would be equivalent to roughly 19¢/kWh today using the Canadian CPI. This example is illustrative, but it highlights the scale of real-value erosion under fixed nominal pricing.
+
+18. Given low water rentals and NLH's equity stake, Churchill Falls power remains very inexpensive for Hydro-Québec. This raises the question of whether Newfoundland and Labrador is effectively subsidizing HQ, particularly since Quebec households pay roughly half the electricity price of households in St. John's.
+
+D. CALCULATION ERRORS AND METHODOLOGICAL ISSUES
+
+19. Parsons's reference to a 5.9¢/kWh present-value average is based on an incorrect calculation. Locke's corrected value is 2.64¢/kWh.
+
+20. The discount rates used—5.822% for nominal prices and 3.822% for real prices—are not clearly explained. Their justification based on financing structure does not address the role of an appropriate social discount rate for public utilities.
+
+E. TRANSFER PRICING AND HYDRO-QUÉBEC'S OWNERSHIP STRUCTURE
+
+21. Prices paid by Hydro-Québec to CF(L)Co are internal transfer prices, not market prices. Because HQ owns 34.2% of CF(L)Co, a portion of any payment returns to HQ. The effective price paid by HQ is therefore only 65.8% of the stated price.
+
+22. Parsons's proposed 2025 price of 1.63¢/kWh becomes 1.07¢/kWh after adjusting for HQ's ownership share. Again, the absence of contract-flow data limits the ability to estimate true value.
+
+23. Quebec's wholesale electricity "market price" is also a transfer price set by regulation, not determined by competitive markets.
+
+24. Hydro-Québec operates as a cost-minimizing public utility monopolist and monopsonist. Potential economic rents are deliberately dissipated through low prices to households and industry and through fiscal transfers, rather than revealed through market pricing.
+
+25. Hydro-Québec's retail pricing serves broader policy goals: minimizing household costs, redistributing Crown-corporation revenue to residents, influencing equalization, and providing low-cost power to attract industry.
+
+F. PRICING PRACTICES IN THE MOU VS. INDUSTRY NORMS
+
+26. The MOU's fixed annual pricing for existing power does not reflect standard industry practice. Market-based prices—whether internal to HQ or in export/import markets—vary daily and seasonally. Even Quebec households face higher winter prices under the Flex D structure.
+
+27. Seasonal or time-variant pricing is widely used to promote efficient electricity use and better reflect system costs. The absence of any such mechanism for Churchill Falls power represents a significant deviation from accepted utility practice.
+
+G. BROADER POLICY AND STRATEGIC CONSIDERATIONS
+
+28. Extremely low Churchill Falls power costs result not only from historical cost pricing but also from very low water rentals—an issue acknowledged within HQ but not addressed in the MOU.
+
+29. Hydro-Québec's interest in further development on the Churchill River reflects the scarcity of comparable undeveloped hydroelectric sites within Quebec, increasing the strategic value of this resource.
+
+30. Hydro-Québec's willingness to revisit historic pricing concerns has been conditional on Newfoundland and Labrador agreeing to finance new generation projects, such as Gull Island, even though much of the resulting electricity would be exported at relatively low prices.
+
+31. The MOU frames increased provincial revenue as a way to reduce government debt. In contrast, Quebec markets its electricity strategy as a way to support households, industry, and promote green energy. Newfoundland and Labrador may need to consider whether a similar approach would yield greater long-term benefits.
+
+KEY THEMES SUMMARY
+
+UNCERTAINTY AND MISSING DATA
+- True value cannot be determined without contract-by-contract power flow data
+- No pricing details for Gull Island or CF enlargement
+- No scenario analysis despite 50-year horizon
+- Production forecasts missing despite climate risks
+
+CALCULATION AND METHODOLOGY PROBLEMS
+- "Effective price" of 5.9¢/kWh based on calculation error (correct: 2.64¢/kWh)
+- Discount rates inadequately explained
+- Forecasts beyond 5-10 years highly unreliable
+- Present value revenues not equivalent to actual cash
+
+TRANSFER PRICING DISTORTIONS
+- HQ-to-CF(L)Co payments are internal transfer prices
+- HQ's 34.2% ownership means it receives back portion of any price increase
+- Quebec "wholesale market" is regulated transfer pricing, not true market
+- Effective price to HQ is only 65.8% of stated price
+
+OPPORTUNITY COSTS
+- Extension to 2075 foregoes market pricing opportunities
+- Historical erosion: 2.5¢/kWh in early 1970s = 19¢/kWh today
+- NL households pay roughly double Quebec household rates
+- Water rentals remain very low, effectively subsidizing Quebec
+
+INDUSTRY PRACTICE DEVIATIONS
+- Fixed annual pricing contrary to industry norms
+- Market prices vary daily and seasonally
+- Even Quebec households have time-variant pricing (Flex D)
+- No mechanism for efficient resource allocation through pricing
+
+STRATEGIC ASYMMETRIES
+- Quebec strategy: support households, attract industry, promote green energy
+- NL strategy: reduce government debt
+- Quebec secures supply security through both existing contract extension and new projects
+- NL finances 60-65.8% of projects that primarily benefit Quebec
+- HQ right of first refusal limits NL industrial development options
+
+WATER RESOURCE VALUATION
+- Water from Smallwood Reservoir essentially free
+- Low water rentals acknowledged as problem even within HQ
+- Unlike oil resources, water not valued as provincial asset
+- Churchill River's unique characteristics recognized by Quebec
+
+POLITICAL VS. COMMERCIAL FRAMING
+- HQ CEO characterizes as "commercial agreement"
+- Yet serves Quebec societal and political values
+- NL frames as addressing historical unfairness
+- Yet perpetuates many structural problems through 2075
+
+IMPLICATIONS FOR PUBLIC UNDERSTANDING
+
+The summary identifies systematic problems with how the MOU has been communicated to the public:
+
+1. Forecasted revenues presented as more certain than warranted
+2. "Illustrative" prices treated as expected outcomes
+3. 30-fold value increase claim based on calculation error
+4. Present value concepts may mislead about actual cash timing
+5. Missing data prevents independent verification of claims
+6. No BATNA (Best Alternative) presented for comparison
+7. Opportunity costs after 2041 not adequately disclosed
+
+DOCUMENT METADATA
+Author: Dr. Doug May
+Date: January 23, 2026
+Series: Churchill River Power Project Analysis
+Format: Point-by-point summary assessment
+Focus: Critical evaluation of MOU pricing structure and communication
+Key Topics: Valuation uncertainty, calculation errors, transfer pricing, opportunity costs, water rents, industry practices
+Related Documents: Comprehensive MOU assessment, pricing methodology critique, Wade Locke corrections
+Purpose: Systematic enumeration of concerns for public and policymaker consideration
