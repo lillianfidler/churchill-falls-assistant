@@ -20,70 +20,60 @@ const path = require('path');
 // Document directory
 const CONTENT_DIR = path.join(__dirname, 'content');
 
-// ALL DOCUMENTS (36 total - complete set)
-// Documents are loaded into MCP for text mode AND Express for voice mode
+// ALL DOCUMENTS (39 total - CORRECTED to match actual /content folder)
+// Last updated: January 24, 2026
 const DOCUMENTS = [
-  // PRIMARY MOU AND ANALYSIS (Core documents)
+  // PRIMARY MOU DOCUMENTS (3 files)
   'MOU_Churchill_Falls_Dec_12_2024_clean_text.txt',
-  'LOCKE analysis of MOU CF.txt',
-  'Reassessing-the-Churchill-Falls-MOU.txt',
+  'MOU_Churchill_Falls_Dec_12_2024_summary.txt',
+  'HYDRO_MOU_GNL_Jan_2025.txt',
   
-  // Doug May's Video Analysis (CRITICAL - needed for text mode)
+  // DOUG MAY'S COMPLETE ANALYSIS (17 files - all his work)
+  'doug-may-assessment-of-proposed-prices-mou.txt',
+  'doug-may-CF-assessment-mou.txt',
+  'doug-point-summary-assessment-mou-prices.txt',
+  'Doug-Proposed_Prices_Under-MOU.txt',
+  'Doug-Proposed_Projects_Under-mou.txt',
+  'doug-summary-video.txt',
   'Doug-video-series-video1.txt',
+  'Doug-video-series-video1-summary.txt',
   'Doug-video-series-video2A.txt',
+  'Doug-video-series-video2A-summary.txt',
   'Doug-video-series-video2B.txt',
+  'Doug-video-series-video2B-summary.txt',
   'Doug-video-series-video3A.txt',
   'Doug-video-series-video3B.txt',
   'Doug-video-series-video4.txt',
   
-  // 2024 Financial Statements
+  // WADE LOCKE ANALYSIS (2 files)
+  'LOCKE analysis of MOU CF.txt',
+  'LOCKE analysis of MOU CF-summary.txt',
+  
+  // FINANCIAL STATEMENTS - 2024 ONLY (2 files)
   'Churchill-falls-consolidated-financial-statements-2024.txt',
   'Lower-Churchill-Project-Combined-Financial-Statements-2024.txt',
   
-  // Hydro-Quebec Exports
+  // HYDRO-QUEBEC MARKET ANALYSIS (6 files)
   'HYDRO-QUEBECS-EXPORTS.txt',
+  'HYDRO-QUEBECS-IMPORTS.txt',
+  'HQ-exports-electricity-price-escalation.txt',
+  'HQ_Action_Plan_2035_clean_text.txt',
+  'HQ_Production_July_2025_text.txt',
+  'Hydro-quebec-annual-report-2024.txt',
   
-  // 2023 Financial Statements
-  'Churchill-Falls-2023-financial-statement.txt',
-  
-  // Analysis and Assessment Documents
-  'Analyis-James-P-Feehan.txt',
-  'Assessment-of-Proposed-Prices.txt',
-  
-  // Churchill Falls Historical Documents
-  'Churchill_Falls_Annual_Report_2024.txt',
-  'Churchill-falls-consolidated-financial-statements-2022.txt',
-  'Churchill-falls-financial-statements-2021.txt',
+  // HISTORICAL CONTRACTS & DEVELOPMENT (5 files)
   'CHURCHILL-FALLS-POWER-CONTRACT.txt',
-  
-  // Historical and Academic Documents
   'Feehan, James P., Smallwood, Churchill Falls, and the Power Corridor through Quebec.txt',
   'Gull_Island_Contract_2002.txt',
   'History_Churchill_River_Hydro_Development_1949-2007.txt',
   'history-of-churchill-falls-development.txt',
   
-  // Hydro-Québec Documents
-  'HQ_Action_Plan_2035_clean_text.txt',
-  'HQ_Production_July_2025_text.txt',
-  'HQ-exports-electricity-price-escalation.txt',
-  'hq-quarterly-bulletin.txt',
-  'HYDRO_MOU_GNL_Jan_2025.txt',
-  'Hydro-quebec-annual-report-2024.txt',
-  'HYDRO-QUEBECS-IMPORTS.txt',
-
-  
-  // MOU Supporting Documents
-  'MOU_s_Societal_Values.txt',
-  
-  // Lower Churchill Project
-  'lower-churchill-projects.txt',
-  
-  // Additional Analysis Documents
+  // ADDITIONAL ANALYSIS (4 files)
+  'Analyis-James-P-Feehan.txt',
+  'Churchill_Falls_Annual_Report_2024.txt',
   'NL-Debt-Fiscal-Sustainability.txt',
   'Proposed-Prices-for-Existing-Power.txt',
-  'quebecs-changing-import-picture.txt',
   'quebecs-electricity-supply-problem.txt',
-  'The-Assessment-of-the-Proposed-Proj.txt',
   'Understanding-Some-Financial-Concep.txt'
 ];
 

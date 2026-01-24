@@ -112,15 +112,17 @@ const DOUG_DOCUMENTS = [
     'Doug-video-series-video2B-summary.txt',
     'LOCKE analysis of MOU CF-summary.txt',
     
-    // Doug's Additional Documents (full documents)
-    'Reassessing-the-Churchill-Falls-MOU.txt',
+    // Doug's Complete Analysis Collection (17 files total)
+    'doug-may-assessment-of-proposed-prices-mou.txt',
+    'doug-may-CF-assessment-mou.txt',
+    'doug-point-summary-assessment-mou-prices.txt',
+    'Doug-Proposed_Prices_Under-MOU.txt',
+    'Doug-Proposed_Projects_Under-mou.txt',
+    'doug-summary-video.txt',
     'HYDRO-QUEBECS-EXPORTS.txt',
     'HYDRO-QUEBECS-IMPORTS.txt',
-    'quebecs-changing-import-picture.txt',
     'quebecs-electricity-supply-problem.txt',
-    'Assessment-of-Proposed-Prices.txt',
     'Proposed-Prices-for-Existing-Power.txt',
-    'The-Assessment-of-the-Proposed-Proj.txt',
     'Understanding-Some-Financial-Concep.txt'
 ];
 
