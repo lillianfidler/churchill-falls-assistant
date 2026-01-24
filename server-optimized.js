@@ -291,10 +291,13 @@ function stripMarkdownAndFormat(text) {
         .replace(/\$(\d+)-(\d+)\s*billion/gi, '$1 to $2 billion dollars')
         .replace(/\$(\d+)-(\d+)\s*million/gi, '$1 to $2 million dollars')
         
-        // Remove headers (with or without # symbols)
-        .replace(/^#{1,6}\s+/gm, '')
-        .replace(/^[A-Z][A-Za-z\s&]+:$/gm, '') // Remove "Title:" style headers including "Key Changes:"
-        .replace(/^[A-Z][A-Za-z\s&]+:\s/gm, '') // Remove inline headers like "What It Does: "
+        // Remove markdown headers but preserve the text with pause
+        .replace(/^#{1,6}\s+(.+)$/gm, '$1.') // Convert headers to sentences with period
+        
+        // Convert section headers to natural pauses (for voice)
+        // Match patterns like "What It Does:" or "Key Changes:"
+        .replace(/^([A-Z][A-Za-z\s&]+):\s*$/gm, '$1.') // Standalone headers → sentence
+        .replace(/^([A-Z][A-Za-z\s&]+):\s+/gm, '$1. ') // Inline headers → sentence with pause
         
         // Remove bullet points and list items
         .replace(/^\s*[-*•]\s+/gm, '')
@@ -309,35 +312,27 @@ function stripMarkdownAndFormat(text) {
         // Remove blockquotes
         .replace(/^>\s+/gm, '')
         
-        // Remove multiple consecutive colons (often used in structured lists)
-        .replace(/:\s*\n/g, ': ')
+        // Convert double newlines to period for natural pause
+        .replace(/\n\n+/g, '. ')
         
-        // Remove standalone section markers
-        .replace(/^By \d{4}.*$/gm, '')
-        .replace(/^The [A-Z][a-z]+.*$/gm, (match) => {
-            // Only remove if it looks like a header (Title Case, short, ends sentence)
-            if (match.length < 50 && match.match(/^The [A-Z]/)) {
-                return '';
-            }
-            return match;
-        })
-        
-        // Collapse multiple newlines to single space
-        .replace(/\n\n+/g, ' ')
+        // Convert single newlines to space
         .replace(/\n/g, ' ')
         
-        // Normalize whitespace
+        // Fix duplicate sentence starts (like "The MOU is the MOU...")
+        .replace(/\b(The|A|An)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s+is\s+the\s+\2\b/gi, 'The $2')
+        
+        // Clean up multiple spaces
         .replace(/\s+/g, ' ')
         
-        // Remove isolated number+unit fragments (MORE AGGRESSIVE)
-        // These patterns catch standalone fragments like "63 cents per kilowatt hour"
-        .replace(/\.\s+\d+\.?\d*\s+(cents?|dollars?|billion|million|percent|%)\s+per\s+\w+\s+(hour|year|month|day)\s*\./gi, '.')
-        .replace(/\.\s+\d+\.?\d*\s+(cents?|dollars?)\s+per\s+\w+\s+\w+\s*\./gi, '.')
-        .replace(/\.\s+\d+\.?\d*\s+(billion|million)\s*\./gi, '.')
-        .replace(/\.\s+\d+\.?\d*\s+(cents?)\s*\./gi, '.')
+        // Clean up multiple periods (but keep intentional pauses)
+        .replace(/\.{3,}/g, '...') // Keep ellipsis
+        .replace(/\.{2}/g, '.') // Remove double periods
         
-        // Clean up double periods
-        .replace(/\.{2,}/g, '.')
+        // Ensure sentences end with proper punctuation
+        .replace(/\.\s*\./g, '.') // Remove accidental double periods after cleanup
+        
+        // Add natural pauses between major sections (detected by capital letter starts after periods)
+        .replace(/\.\s+([A-Z])/g, '. $1')
         
         .trim();
 }
@@ -448,19 +443,27 @@ async function generateVoice(text) {
 
 const DOUG_VOICE_PROMPT = `You are Dr. Doug May having a casual conversation. Your response will be read aloud as audio.
 
-Write 2-3 complete sentences in plain English. No structure, no organization, no headers.
+Write 2-4 complete sentences in plain English with NATURAL BREAKS between different topics.
+
+STRUCTURE for voice:
+- When covering multiple topics, add a line break between them
+- Example: "The MOU creates 50-50 revenue sharing.
+
+However, there are concerns about the pricing structure."
 
 CRITICAL: Every sentence must have a subject AND a verb. Never write fragments like:
 - "63 cents per kilowatt hour." (WRONG - fragment)
 - "17 billion in debt." (WRONG - fragment)
 - "The price is 63 cents per kilowatt hour." (RIGHT - complete)
 
-Just answer the question naturally like you're talking to a friend.
+Just answer the question naturally like you're talking to a friend, but add a pause (line break) when shifting to a new point.
 
 WRONG: "He argues the MOU undervalues electricity. 63 cents per kilowatt hour. He says we're leaving value..."
-RIGHT: "He argues the MOU undervalues electricity at only 63 cents per kilowatt hour when it should be worth much more, and says we're leaving massive value on the table."
+RIGHT: "He argues the MOU undervalues electricity at only 63 cents per kilowatt hour when it should be worth much more.
 
-Write in complete sentences only. No fragments.`;
+He says we're leaving massive value on the table."
+
+Write in complete sentences with natural breaks between distinct points.`;
 
 const TEXT_MODE_FAST_PROMPT = `You are an expert AI assistant specializing in the Churchill Falls power project.
 
