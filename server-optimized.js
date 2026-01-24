@@ -211,6 +211,78 @@ initializeMCP();
 // POST-PROCESSING (Clean up responses for voice)
 // ============================================================================
 
+// ============================================================================
+// ACRONYM EXPANSION FOR VOICE
+// ============================================================================
+
+function expandAcronyms(text) {
+    // Comprehensive Churchill Falls acronym dictionary
+    const acronyms = {
+        // Organizations
+        'HQ': 'Hydro-Québec',
+        'NLH': 'Newfoundland and Labrador Hydro',
+        'GNL': 'Government of Newfoundland and Labrador',
+        'CF(L)Co': 'Churchill Falls Labrador Corporation',
+        'CFLCo': 'Churchill Falls Labrador Corporation',
+        
+        // Energy Units
+        'kWh': 'kilowatt hours',
+        'KWh': 'kilowatt hours',
+        'kwh': 'kilowatt hours',
+        'TWh': 'terawatt hours',
+        'MWh': 'megawatt hours',
+        'MW': 'megawatts',
+        'GW': 'gigawatts',
+        
+        // Financial & Economic Terms
+        'NPV': 'Net Present Value',
+        'PV': 'Present Value',
+        'GDP': 'Gross Domestic Product',
+        'ROI': 'Return on Investment',
+        
+        // Contracts & Agreements
+        'MOU': 'Memorandum of Understanding',
+        'GWAC': 'Guaranteed Winter Availability Contract',
+        'PPA': 'Power Purchase Agreement',
+        
+        // Geographic & Projects
+        'CF': 'Churchill Falls',
+        'NL': 'Newfoundland and Labrador',
+        
+        // Markets & Systems
+        'ISO': 'Independent System Operator',
+        'NECEC': 'New England Clean Energy Connect',
+        'CHPE': 'Champlain Hudson Power Express',
+        
+        // Other Common Terms
+        'EA': 'Environmental Assessment',
+        'PME': 'Profit-Making Enterprise',
+        'BATNA': 'Best Alternative to a Negotiated Agreement',
+        'YTD': 'Year to Date',
+        'Q1': 'first quarter',
+        'Q2': 'second quarter',
+        'Q3': 'third quarter',
+        'Q4': 'fourth quarter'
+    };
+    
+    // Create regex patterns for each acronym
+    // Use word boundaries to avoid partial matches
+    for (const [acronym, expansion] of Object.entries(acronyms)) {
+        // Escape special regex characters in the acronym
+        const escapedAcronym = acronym.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        
+        // Match the acronym with word boundaries
+        // Also match when followed by 's for plurals (e.g., "HQ's" -> "Hydro-Québec's")
+        const regex = new RegExp(`\\b${escapedAcronym}('s)?\\b`, 'g');
+        
+        text = text.replace(regex, (match, possessive) => {
+            return expansion + (possessive || '');
+        });
+    }
+    
+    return text;
+}
+
 function stripMarkdownAndFormat(text) {
     return text
         // Fix currency ranges FIRST (before other processing)
@@ -545,6 +617,7 @@ app.post('/api/chat', async (req, res) => {
             console.log(`📊 Raw response: ${responseText.length} chars`);
             
             // Post-process for natural voice
+            responseText = expandAcronyms(responseText);  // Expand acronyms FIRST
             responseText = stripMarkdownAndFormat(responseText);
             responseText = truncateAtSentence(responseText, 150); // Increased from 100 to 150 words
             
