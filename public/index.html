@@ -479,7 +479,7 @@ display: flex;
       <div class="logo">Churchill Falls Assistant</div>
       <div class="nav-links">
         <button id="homeButton" class="nav-link-button">Home</button>
-        <button class="nav-link-button" id="newChatBtn">✨ New Chat</button>
+        <button class="nav-link-button" id="newChatBtn">Reset</button>
         <a href="about.html">About</a>
         <a href="sources.html">Sources</a>
         <a href="history.html">History</a>
@@ -612,14 +612,17 @@ display: flex;
               currentSessionId = sessionIdFromUrl;
               loadSession(sessionIdFromUrl);
           } else {
+              // Create new session ID but DON'T save until first message
               currentSessionId = 'session_' + Date.now();
-              saveSession();
           }
       }
 
       // Save current session to localStorage
       function saveSession() {
           if (!currentSessionId) return;
+          
+          // Don't save empty conversations
+          if (conversationHistory.length === 0) return;
           
           const sessions = JSON.parse(localStorage.getItem('chatSessions') || '[]');
           let sessionIndex = sessions.findIndex(s => s.id === currentSessionId);
