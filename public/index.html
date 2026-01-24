@@ -479,6 +479,7 @@ display: flex;
       <div class="logo">Churchill Falls Assistant</div>
       <div class="nav-links">
         <button id="homeButton" class="nav-link-button">Home</button>
+        <button class="nav-link-button" id="newChatBtn">✨ New Chat</button>
         <a href="about.html">About</a>
         <a href="sources.html">Sources</a>
         <a href="history.html">History</a>
@@ -596,6 +597,105 @@ display: flex;
       let recognition = null;
       let conversationHistory = [];
       let currentAnswerText = '';
+      let currentSessionId = null;
+
+      // ============================================================================
+      // CONVERSATION HISTORY STORAGE
+      // ============================================================================
+      
+      // Initialize or load session
+      function initializeSession() {
+          const urlParams = new URLSearchParams(window.location.search);
+          const sessionIdFromUrl = urlParams.get('session');
+          
+          if (sessionIdFromUrl) {
+              currentSessionId = sessionIdFromUrl;
+              loadSession(sessionIdFromUrl);
+          } else {
+              currentSessionId = 'session_' + Date.now();
+              saveSession();
+          }
+      }
+
+      // Save current session to localStorage
+      function saveSession() {
+          if (!currentSessionId) return;
+          
+          const sessions = JSON.parse(localStorage.getItem('chatSessions') || '[]');
+          let sessionIndex = sessions.findIndex(s => s.id === currentSessionId);
+          
+          const sessionData = {
+              id: currentSessionId,
+              timestamp: new Date().toISOString(),
+              title: getConversationTitle(),
+              messages: conversationHistory.map(msg => ({
+                  role: msg.role,
+                  content: msg.content
+              }))
+          };
+          
+          if (sessionIndex >= 0) {
+              sessions[sessionIndex] = sessionData;
+          } else {
+              sessions.push(sessionData);
+          }
+          
+          // Keep only last 50 sessions
+          if (sessions.length > 50) {
+              sessions.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+              sessions.splice(50);
+          }
+          
+          localStorage.setItem('chatSessions', JSON.stringify(sessions));
+          localStorage.setItem('currentSessionId', currentSessionId);
+      }
+
+      // Load a session from localStorage
+      function loadSession(sessionId) {
+          const sessions = JSON.parse(localStorage.getItem('chatSessions') || '[]');
+          const session = sessions.find(s => s.id === sessionId);
+          
+          if (!session) return;
+          
+          conversationHistory = [];
+          conversationEl.innerHTML = '';
+          
+          if (session.messages && session.messages.length > 0) {
+              welcomeState.classList.add('hidden');
+              conversationEl.classList.remove('hidden');
+              
+              session.messages.forEach(msg => {
+                  conversationHistory.push(msg);
+                  addMessage(msg.role, msg.content);
+              });
+          }
+      }
+
+      // Get conversation title
+      function getConversationTitle() {
+          const firstUserMsg = conversationHistory.find(msg => msg.role === 'user');
+          if (!firstUserMsg) return 'New Conversation';
+          
+          const title = firstUserMsg.content.trim();
+          return title.length > 60 ? title.substring(0, 60) + '...' : title;
+      }
+
+      // Start new conversation
+      function startNewConversation() {
+          if (conversationHistory.length > 0) {
+              saveSession();
+          }
+          
+          currentSessionId = 'session_' + Date.now();
+          conversationHistory = [];
+          conversationEl.innerHTML = '';
+          welcomeState.classList.remove('hidden');
+          conversationEl.classList.add('hidden');
+          textInput.value = '';
+          
+          window.history.pushState({}, '', window.location.pathname);
+          saveSession();
+      }
 
       // UI refs
       const welcomeState = document.getElementById('welcomeState');
@@ -817,6 +917,7 @@ conversationHistory.push(
   { role: 'user', content: message },
   { role: 'assistant', content: fullText }
 );
+saveSession(); // Save conversation after each exchange
 
           }
         } catch (error) {
@@ -1030,6 +1131,15 @@ conversationHistory.push(
         conversationEl.classList.add('hidden');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
+
+      // Initialize conversation history system
+      initializeSession();
+      
+      // Wire up New Chat button
+      const newChatBtn = document.getElementById('newChatBtn');
+      if (newChatBtn) {
+        newChatBtn.addEventListener('click', startNewConversation);
+      }
 
       console.log('Churchill Falls Assistant - WaitTimer audio enabled');
     });
