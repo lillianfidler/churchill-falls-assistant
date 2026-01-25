@@ -218,6 +218,16 @@ initializeMCP();
 // ============================================================================
 
 function expandAcronyms(text) {
+    // First, handle currency and special symbols for voice
+    text = text
+        // Cent symbol
+        .replace(/¢/g, ' cents')
+        // Dollar amounts with cent symbol (e.g., "2.5¢" → "2.5 cents")
+        .replace(/(\d+\.?\d*)\s*¢/g, '$1 cents')
+        // Dollar symbol with numbers (keep as-is, will sound natural)
+        // e.g., "$5" already sounds fine, but we can spell out if needed
+        .replace(/\$(\d+)([BbMm])\b/g, '$$$1 $2') // Keep $5B, $10M format
+    
     // Comprehensive Churchill Falls acronym dictionary
     const acronyms = {
         // Organizations
@@ -351,14 +361,51 @@ function truncateAtSentence(text, maxWords = 150) {
         return text;
     }
     
-    // Split into sentences - improved regex to handle abbreviations and decimals
-    const sentences = text.match(/[^.!?]+[.!?]+(?:\s+|$)/g) || [text];
+    // Split into sentences - IMPROVED regex that handles abbreviations
+    // This regex looks for sentence endings (. ! ?) but NOT after common abbreviations
+    const sentences = text.match(/(?:^|[^A-Z][.!?])\s*[A-Z][^.!?]*[.!?]+(?:\s|$)|[^.!?]+[.!?]+$/g) || [];
+    
+    // Fallback: if regex fails, split more simply but protect common abbreviations
+    let sentenceList = sentences;
+    if (sentenceList.length === 0) {
+        // Temporarily replace abbreviations
+        const protected = text
+            .replace(/Dr\./g, 'Dr~')
+            .replace(/Mr\./g, 'Mr~')
+            .replace(/Mrs\./g, 'Mrs~')
+            .replace(/Ms\./g, 'Ms~')
+            .replace(/Prof\./g, 'Prof~')
+            .replace(/Sr\./g, 'Sr~')
+            .replace(/Jr\./g, 'Jr~')
+            .replace(/vs\./g, 'vs~')
+            .replace(/etc\./g, 'etc~')
+            .replace(/e\.g\./g, 'e~g~')
+            .replace(/i\.e\./g, 'i~e~');
+        
+        // Split on sentence boundaries
+        sentenceList = protected.match(/[^.!?]+[.!?]+/g) || [protected];
+        
+        // Restore abbreviations
+        sentenceList = sentenceList.map(s => s
+            .replace(/Dr~/g, 'Dr.')
+            .replace(/Mr~/g, 'Mr.')
+            .replace(/Mrs~/g, 'Mrs.')
+            .replace(/Ms~/g, 'Ms.')
+            .replace(/Prof~/g, 'Prof.')
+            .replace(/Sr~/g, 'Sr.')
+            .replace(/Jr~/g, 'Jr.')
+            .replace(/vs~/g, 'vs.')
+            .replace(/etc~/g, 'etc.')
+            .replace(/e~g~/g, 'e.g.')
+            .replace(/i~e~/g, 'i.e.')
+        );
+    }
     
     let result = '';
     let wordCount = 0;
     let sentenceCount = 0;
     
-    for (const sentence of sentences) {
+    for (const sentence of sentenceList) {
         const trimmedSentence = sentence.trim();
         if (!trimmedSentence) continue;
         
@@ -384,8 +431,8 @@ function truncateAtSentence(text, maxWords = 150) {
     }
     
     // Ensure we have at least one complete sentence
-    if (!result && sentences.length > 0) {
-        result = sentences[0].trim();
+    if (!result && sentenceList.length > 0) {
+        result = sentenceList[0].trim();
     }
     
     return result.trim();
