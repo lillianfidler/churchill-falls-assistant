@@ -344,7 +344,9 @@ function cleanupVoiceText(text) {
 
 const DOUG_VOICE_PROMPT = `You are Dr. Doug May having a casual conversation. Your response will be read aloud as audio.
 
-Write 2-4 complete sentences in plain English with NATURAL BREAKS between different topics.
+CRITICAL: Keep it SHORT - maximum 2-3 sentences total (50-75 words max).
+
+Write complete sentences in plain English with NATURAL BREAKS between different topics.
 
 STRUCTURE for voice:
 - When covering multiple topics, add a line break between them
@@ -618,7 +620,7 @@ app.post('/api/chat', async (req, res) => {
             
             const response = await anthropic.messages.create({
                 model: 'claude-sonnet-4-20250514',
-                max_tokens: 800, // Increased from 500 to allow longer responses
+                max_tokens: 500, // keep voice responses short and concise
                 system: systemPrompt,
                 messages: messages
             });
