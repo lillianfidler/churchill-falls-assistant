@@ -342,6 +342,10 @@ display: flex;
     .text-input::placeholder {
       color: #666;
     }
+    .text-input.listening {
+      border-color: var(--aqua);
+      background: rgba(94, 234, 212, 0.1);
+    }
 
     .mic-button {
       width: 48px;
@@ -421,37 +425,6 @@ display: flex;
     .mode-toggle button:hover:not(.active) {
       color: #fff;
     }
-
-    /* ========== TESTING ONLY: Voice Selection Buttons ========== */
-    .voice-select {
-      display: flex;
-      gap: 6px;
-      background: rgba(255, 255, 255, 0.03);
-      padding: 4px;
-      border-radius: 8px;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      margin-top: 8px;
-    }
-    .voice-select button {
-      padding: 6px 12px;
-      border: none;
-      background: transparent;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 13px;
-      color: #a8a8a8;
-      transition: all 0.2s;
-      font-weight: 500;
-    }
-    .voice-select button.active {
-      background: rgba(94, 234, 212, 0.15);
-      color: var(--aqua);
-    }
-    .voice-select button:hover:not(.active) {
-      color: #fff;
-    }
-    /* ========== END TESTING SECTION ========== */
-
 .dots::after {
   display: inline-block;
   margin-left: 4px;
@@ -570,7 +543,7 @@ display: flex;
           <strong>All responses are based exclusively on verified source documents.</strong>
           Every answer draws from official documents including the December 12, 2024 MOU, Dr. Doug May’s comprehensive analysis, expert economic assessments by Wade Locke and James Feehan, Churchill Falls Corporation financial statements, and historical records dating to 1949. This assistant does not use internet searches or external sources—only curated materials from the
           <a href="sources.html" style="color: var(--aqua); text-decoration: underline;">Sources page</a>.<br><br>
-    <strong>🇫🇷 Français:</strong> Type in French and I'll respond in French automatically.
+    <strong>🇫🇷 Français:</strong> Type or speak in French for automatic French responses (text and voice).
   </p>
 </div>
     </div>
@@ -611,20 +584,6 @@ display: flex;
         Deep
       </button>
     </div>
-
-    <!-- ========== TESTING ONLY: Voice Selection Buttons ========== -->
-    <div class="voice-select">
-      <button class="active" id="dougVoice">🎤 Doug's Voice</button>
-      <button id="frenchVoice">🇫🇷 French Voice</button>
-    </div>
-    <!-- ========== END TESTING SECTION ========== -->
-    <!-- Audio Enable Checkbox -->
-    <div style="margin-top: 8px; display: flex; align-items: center; gap: 8px;">
-      <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 13px; color: #a8a8a8;">
-        <input type="checkbox" id="enableAudio" style="cursor: pointer;">
-        <span>🔊 Enable Audio (hear responses even when typing)</span>
-      </label>
-    </div>
   </div>
 </div>
 
@@ -644,32 +603,6 @@ display: flex;
       let conversationHistory = [];
       let currentAnswerText = '';
       let currentSessionId = null;
-
-      // ========== TESTING ONLY: Voice Selection ==========
-      let voicePreference = 'doug'; // 'doug' or 'french'
-      
-      document.getElementById('dougVoice')?.addEventListener('click', () => {
-        voicePreference = 'doug';
-        document.getElementById('dougVoice').classList.add('active');
-        document.getElementById('frenchVoice').classList.remove('active');
-        console.log('Voice preference: Doug');
-      });
-      
-      document.getElementById('frenchVoice')?.addEventListener('click', () => {
-        voicePreference = 'french';
-        document.getElementById('frenchVoice').classList.add('active');
-        document.getElementById('dougVoice').classList.remove('active');
-        console.log('Voice preference: French');
-      });
-      // ========== END TESTING SECTION ==========
-
-      // Audio enable checkbox
-      let audioEnabled = false;
-      document.getElementById('enableAudio')?.addEventListener('change', (e) => {
-        audioEnabled = e.target.checked;
-        console.log('Audio enabled:', audioEnabled);
-      });
-
 
       // ============================================================================
       // CONVERSATION HISTORY STORAGE
@@ -856,11 +789,14 @@ display: flex;
         });
       });
 
-      // ---------- Microphone ----------
+      // ---------- IMPROVED MICROPHONE WITH REAL-TIME TRANSCRIPTION ----------
+      let stopRecordingTimeout = null;
+      let finalTranscript = '';
+      
       micButton.addEventListener('mousedown', startRecording);
-      micButton.addEventListener('mouseup', stopRecording);
+      micButton.addEventListener('mouseup', scheduleStopRecording);
       micButton.addEventListener('mouseleave', () => {
-        if (isRecording) stopRecording();
+        if (isRecording) scheduleStopRecording();
       });
       micButton.addEventListener('touchstart', (e) => {
         e.preventDefault();
@@ -868,44 +804,93 @@ display: flex;
       });
       micButton.addEventListener('touchend', (e) => {
         e.preventDefault();
-        if (isRecording) stopRecording();
+        if (isRecording) scheduleStopRecording();
       });
 
       function startRecording() {
         if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
-          alert('Speech recognition not supported');
+          alert('Speech recognition not supported in this browser');
           return;
         }
+        
+        // Clear any existing timeout
+        if (stopRecordingTimeout) {
+          clearTimeout(stopRecordingTimeout);
+          stopRecordingTimeout = null;
+        }
+        
         isRecording = true;
+        finalTranscript = '';
         micButton.classList.add('active');
+        textInput.classList.add('listening');
+        
+        // Store original placeholder to restore later
+        if (!textInput.dataset.originalPlaceholder) {
+          textInput.dataset.originalPlaceholder = textInput.placeholder;
+        }
+        textInput.placeholder = '🎤 Listening...';
 
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
         recognition = new SpeechRecognition();
-        recognition.continuous = false;
-        recognition.interimResults = false;
+        recognition.continuous = true; // Keep listening
+        recognition.interimResults = true; // Show real-time transcription
 
         recognition.onresult = (event) => {
-          const transcript = event.results[0][0].transcript;
-          sendMessage(transcript, true);
+          let interimTranscript = '';
+          
+          for (let i = event.resultIndex; i < event.results.length; i++) {
+            const transcript = event.results[i][0].transcript;
+            if (event.results[i].isFinal) {
+              finalTranscript += transcript + ' ';
+            } else {
+              interimTranscript += transcript;
+            }
+          }
+          
+          // Show real-time transcription in the input box
+          textInput.value = (finalTranscript + interimTranscript).trim();
         };
-        recognition.onerror = () => {
-          isRecording = false;
-          micButton.classList.remove('active');
+
+        recognition.onerror = (event) => {
+          console.error('Speech recognition error:', event.error);
+          stopRecordingImmediately();
         };
+
         recognition.onend = () => {
-          isRecording = false;
-          micButton.classList.remove('active');
+          // Only process if we have a final transcript
+          if (finalTranscript.trim()) {
+            textInput.value = finalTranscript.trim();
+            sendMessage(finalTranscript.trim(), true);
+          }
+          stopRecordingImmediately();
         };
 
         recognition.start();
       }
 
-      function stopRecording() {
-        if (isRecording && recognition) {
-          recognition.stop();
+      function scheduleStopRecording() {
+        // Add a 800ms delay before stopping to capture the last word
+        stopRecordingTimeout = setTimeout(() => {
+          if (isRecording && recognition) {
+            recognition.stop();
+          }
+        }, 800); // 800ms delay to capture last word
+      }
+
+      function stopRecordingImmediately() {
+        if (stopRecordingTimeout) {
+          clearTimeout(stopRecordingTimeout);
+          stopRecordingTimeout = null;
         }
+        
         isRecording = false;
         micButton.classList.remove('active');
+        textInput.classList.remove('listening');
+        
+        // Restore original placeholder
+        if (textInput.dataset.originalPlaceholder) {
+          textInput.placeholder = textInput.dataset.originalPlaceholder;
+        }
       }
 
       // ---------- Text input ----------
@@ -964,9 +949,8 @@ display: flex;
             body: JSON.stringify({
               message,
               conversationHistory,
-              isVoiceMode: isVoice || audioEnabled,  // Voice mode OR audio checkbox
-              textMode: currentTextMode,
-              voicePreference: voicePreference  // TESTING ONLY: Voice selection
+              isVoiceMode: isVoice,
+              textMode: currentTextMode
             })
           });
 
