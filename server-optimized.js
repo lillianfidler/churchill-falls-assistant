@@ -294,7 +294,7 @@ function postProcessForVoice(text) {
     text = expandAcronyms(text);
     
     // 2. Then add pauses at section breaks (double newline → triple newline = longer pause)
-    //text = text.replace(/\n\n/g, '\n\n\n');
+    text = text.replace(/\n\n/g, '\n\n\n');
     
     // 3. Make currency more voice-friendly
     text = text
@@ -552,7 +552,8 @@ app.post('/api/chat', async (req, res) => {
             message, 
             conversationHistory = [], 
             isVoiceMode = false,
-            textMode = 'deep' // 'fast' or 'deep' for text responses
+            textMode = 'deep', // 'fast' or 'deep' for text responses
+            voicePreference = 'auto' // TESTING ONLY: 'auto', 'doug', or 'french'
         } = req.body;
         
         if (!message?.trim()) {
@@ -650,8 +651,20 @@ app.post('/api/chat', async (req, res) => {
             
             responseText = cleanedText; // Use the cleaned version
             
-            // Select voice based on language
-            const voiceId = language === 'fr' && ELEVENLABS_VOICE_ID_FR ? ELEVENLABS_VOICE_ID_FR : ELEVENLABS_VOICE_ID;
+            // ========== TESTING ONLY: Voice Selection Override ==========
+            // TO REVERT: Delete this entire section and uncomment the line below
+            let voiceId;
+            if (voicePreference === 'doug') {
+                voiceId = ELEVENLABS_VOICE_ID; // Always use Doug's voice
+            } else if (voicePreference === 'french') {
+                voiceId = ELEVENLABS_VOICE_ID_FR || ELEVENLABS_VOICE_ID; // French voice or fallback
+            } else {
+                // Auto mode - use language detection (original behavior)
+                voiceId = language === 'fr' && ELEVENLABS_VOICE_ID_FR ? ELEVENLABS_VOICE_ID_FR : ELEVENLABS_VOICE_ID;
+            }
+            // TO REVERT TO AUTO MODE, UNCOMMENT THIS LINE AND DELETE THE ABOVE:
+            // const voiceId = language === 'fr' && ELEVENLABS_VOICE_ID_FR ? ELEVENLABS_VOICE_ID_FR : ELEVENLABS_VOICE_ID;
+            // ========== END TESTING SECTION ==========
             
             // Generate audio if available
             if (ELEVENLABS_API_KEY && voiceId) {
