@@ -89,7 +89,7 @@ const anthropic = new Anthropic({
 
 const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY;
 const ELEVENLABS_VOICE_ID = process.env.ELEVENLABS_VOICE_ID;
-const ELEVENLABS_VOICE_ID_FR = process.env.ELEVENLABS_VOICE_ID_FR;
+const ELEVENLABS_VOICE_ID_FR = process.env.ELEVENLABS_VOICE_ID_FR; // French voice
 
 let monthlyVoiceUsage = 0;
 const MONTHLY_VOICE_LIMIT = 500000;
@@ -344,29 +344,28 @@ function cleanupVoiceText(text) {
 
 const DOUG_VOICE_PROMPT = `You are Dr. Doug May having a casual conversation. Your response will be read aloud as audio.
 
-CRITICAL: Keep it SHORT - maximum 2-3 sentences total (50-75 words max).
-
-Write complete sentences in plain English with NATURAL BREAKS between different topics.
+CRITICAL BREVITY RULES:
+- MAXIMUM 2-3 sentences TOTAL (40-60 words absolute max)
+- ONE main point only
+- No lists, no multiple topics
+- If asked complex question, give ONE key takeaway
 
 STRUCTURE for voice:
-- When covering multiple topics, add a line break between them
-- Example: "The MOU creates 50-50 revenue sharing.
+- Answer the question directly in 1-2 sentences
+- Add ONE additional sentence if needed for context
+- Stop immediately after that
 
-However, there are concerns about the pricing structure."
+CRITICAL: Every sentence must have a subject AND a verb. Never write fragments.
 
-CRITICAL: Every sentence must have a subject AND a verb. Never write fragments like:
-- "63 cents per kilowatt hour." (WRONG - fragment)
-- "17 billion in debt." (WRONG - fragment)
-- "The price is 63 cents per kilowatt hour." (RIGHT - complete)
+EXAMPLES:
 
-Just answer the question naturally like you're talking to a friend, but add a pause (line break) when shifting to a new point.
+Q: "What is Churchill Falls?"
+A: "Churchill Falls is a massive hydroelectric facility in Labrador that generates 5,428 megawatts. It's been operating since 1971 under a controversial contract with Hydro-Québec."
 
-WRONG: "He argues the MOU undervalues electricity. 63 cents per kilowatt hour. He says we're leaving value..."
-RIGHT: "He argues the MOU undervalues electricity at only 63 cents per kilowatt hour when it should be worth much more.
+Q: "What's the MOU about?"
+A: "The 2024 MOU creates 50-50 revenue sharing between Newfoundland and Quebec when the original contract expires in 2041. However, critics argue the pricing undervalues the electricity."
 
-He says we're leaving massive value on the table."
-
-Write in complete sentences with natural breaks between distinct points.`;
+Write in complete sentences. Keep it SHORT - maximum 3 sentences.`;
 
 const TEXT_MODE_FAST_PROMPT = `You are an expert AI assistant specializing in the Churchill Falls power project.
 
@@ -432,22 +431,28 @@ Provide objective research presented as established facts, not as someone's anal
 
 const DOUG_VOICE_PROMPT_FR = `Vous êtes le Dr Doug May en conversation informelle. Votre réponse sera lue à voix haute.
 
-Écrivez 2 à 4 phrases complètes en français naturel avec des PAUSES NATURELLES entre les différents sujets.
+RÈGLES CRITIQUES DE BRIÈVETÉ:
+- MAXIMUM 2-3 phrases TOTALES (40-60 mots maximum absolu)
+- UN seul point principal
+- Pas de listes, pas de sujets multiples
+- Si question complexe, donnez UN point clé
 
 STRUCTURE pour la voix:
-- Lorsque vous couvrez plusieurs sujets, ajoutez un saut de ligne entre eux
-- Exemple: "Le PE crée un partage de revenus 50-50.
+- Répondez directement à la question en 1-2 phrases
+- Ajoutez UNE phrase supplémentaire si nécessaire pour le contexte
+- Arrêtez immédiatement après
 
-Cependant, il y a des préoccupations concernant la structure de prix."
+CRITIQUE: Chaque phrase doit avoir un sujet ET un verbe. N'écrivez jamais de fragments.
 
-CRITIQUE: Chaque phrase doit avoir un sujet ET un verbe. N'écrivez jamais de fragments comme:
-- "63 cents par kilowatt-heure." (MAUVAIS - fragment)
-- "17 milliards de dette." (MAUVAIS - fragment)
-- "Le prix est de 63 cents par kilowatt-heure." (BON - complet)
+EXEMPLES:
 
-Répondez simplement à la question naturellement comme si vous parliez à un ami, mais ajoutez une pause (saut de ligne) lorsque vous passez à un nouveau point.
+Q: "Qu'est-ce que Churchill Falls?"
+A: "Churchill Falls est une installation hydroélectrique massive au Labrador qui génère 5 428 mégawatts. Elle fonctionne depuis 1971 sous un contrat controversé avec Hydro-Québec."
 
-Écrivez en phrases complètes avec des pauses naturelles entre les points distincts.`;
+Q: "De quoi parle le PE?"
+A: "Le PE de 2024 crée un partage de revenus 50-50 entre Terre-Neuve et le Québec lorsque le contrat original expire en 2041. Cependant, les critiques soutiennent que le prix sous-évalue l'électricité."
+
+Écrivez en phrases complètes. Restez BREF - maximum 3 phrases.`;
 
 const TEXT_MODE_FAST_PROMPT_FR = `Vous êtes un assistant IA expert spécialisé dans le projet hydroélectrique de Churchill Falls.
 
@@ -496,19 +501,23 @@ INSTRUCTIONS CRITIQUES:
 Fournissez une recherche objective présentée comme des faits établis, pas comme l'analyse de quelqu'un.`;
 
 // ============================================================================
-// LANGUAGE DETECTION
+// LANGUAGE DETECTION - IMPROVED
 // ============================================================================
 
 function detectLanguage(text) {
     const textLower = text.toLowerCase();
     
-    // French indicators - common French words and Quebec-specific terms
+    // French indicators - including variations without accents
     const frenchIndicators = [
-        'québec', 'qu\'est-ce', 'qu\'est', 'quelle', 'quel', 'quels', 'quelles',
-        'comment', 'pourquoi', 'électricité', 'entente', 'protocole',
-        'combien', 'où', 'quand', 'est-ce que', 'parle', 'parlez',
+        // Full words
+        'québec', 'quebec', 'qu\'est-ce', 'qu\'est', 'quelle', 'quel', 'quels', 'quelles',
+        'comment', 'pourquoi', 'électricité', 'electricite', 'entente', 'protocole',
+        'combien', 'où', 'ou', 'quand', 'est-ce que', 'parle', 'parlez',
         'explique', 'expliquez', 'dis', 'dites', 'peux-tu', 'pouvez-vous',
-        'hydro-québec', 'terre-neuve', 'labrador'
+        'hydro-québec', 'hydro-quebec', 'terre-neuve', 'labrador',
+        // Partial matches for speech recognition
+        'francais', 'français', 'franca', 'franc ',
+        'en francais', 'on francais', 'on franca', 'en franca'
     ];
     
     // Count French indicators
@@ -519,8 +528,9 @@ function detectLanguage(text) {
         }
     }
     
-    // If we find 2 or more French indicators, it's likely French
-    const detectedLang = frenchCount >= 2 ? 'fr' : 'en';
+    // If we find 1 or more French indicators, it's likely French
+    // Lowered threshold from 2 to 1 to catch more cases
+    const detectedLang = frenchCount >= 1 ? 'fr' : 'en';
     
     if (detectedLang === 'fr') {
         console.log(`🇫🇷 French detected (${frenchCount} indicators)`);
@@ -620,7 +630,7 @@ app.post('/api/chat', async (req, res) => {
             
             const response = await anthropic.messages.create({
                 model: 'claude-sonnet-4-20250514',
-                max_tokens: 500, // keep voice responses short and concise
+                max_tokens: 400, // Reduced from 500 to force brevity
                 system: systemPrompt,
                 messages: messages
             });
@@ -640,10 +650,10 @@ app.post('/api/chat', async (req, res) => {
             
             responseText = cleanedText; // Use the cleaned version
             
-            // Generate audio if available
-          // Generate audio if available
+            // Select voice based on language
             const voiceId = language === 'fr' && ELEVENLABS_VOICE_ID_FR ? ELEVENLABS_VOICE_ID_FR : ELEVENLABS_VOICE_ID;
             
+            // Generate audio if available
             if (ELEVENLABS_API_KEY && voiceId) {
                 try {
                     console.log(`🔊 Generating audio in ${language === 'fr' ? 'French' : 'English'}...`);
