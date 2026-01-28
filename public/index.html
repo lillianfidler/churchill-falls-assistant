@@ -618,6 +618,13 @@ display: flex;
       <button id="frenchVoice">🇫🇷 French Voice</button>
     </div>
     <!-- ========== END TESTING SECTION ========== -->
+    <!-- Audio Enable Checkbox -->
+    <div style="margin-top: 8px; display: flex; align-items: center; gap: 8px;">
+      <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 13px; color: #a8a8a8;">
+        <input type="checkbox" id="enableAudio" style="cursor: pointer;">
+        <span>🔊 Enable Audio (hear responses even when typing)</span>
+      </label>
+    </div>
   </div>
 </div>
 
@@ -655,6 +662,13 @@ display: flex;
         console.log('Voice preference: French');
       });
       // ========== END TESTING SECTION ==========
+
+      // Audio enable checkbox
+      let audioEnabled = false;
+      document.getElementById('enableAudio')?.addEventListener('change', (e) => {
+        audioEnabled = e.target.checked;
+        console.log('Audio enabled:', audioEnabled);
+      });
 
 
       // ============================================================================
@@ -950,7 +964,7 @@ display: flex;
             body: JSON.stringify({
               message,
               conversationHistory,
-              isVoiceMode: isVoice,
+              isVoiceMode: isVoice || audioEnabled,  // Voice mode OR audio checkbox
               textMode: currentTextMode,
               voicePreference: voicePreference  // TESTING ONLY: Voice selection
             })
