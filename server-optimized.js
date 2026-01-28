@@ -675,7 +675,7 @@ app.post('/api/chat', async (req, res) => {
                         `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`,
                         {
                             text: cleanedText,
-                            model_id: 'eleven_monolingual_v1',
+                            model_id: 'eleven_turbo_v2',
                             voice_settings: {
                                 stability: 0.5,
                                 similarity_boost: 0.75
