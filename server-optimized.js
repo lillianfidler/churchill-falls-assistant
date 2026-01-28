@@ -294,7 +294,7 @@ function postProcessForVoice(text) {
     text = expandAcronyms(text);
     
     // 2. Then add pauses at section breaks (double newline → triple newline = longer pause)
-    **text = text.replace(/\n\n/g, '\n\n\n');
+    //text = text.replace(/\n\n/g, '\n\n\n');
     
     // 3. Make currency more voice-friendly
     text = text
