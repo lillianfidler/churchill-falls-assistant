@@ -89,6 +89,7 @@ const anthropic = new Anthropic({
 
 const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY;
 const ELEVENLABS_VOICE_ID = process.env.ELEVENLABS_VOICE_ID;
+const ELEVENLABS_VOICE_ID_FR = process.env.ELEVENLABS_VOICE_ID_FR;
 
 let monthlyVoiceUsage = 0;
 const MONTHLY_VOICE_LIMIT = 500000;
@@ -638,12 +639,15 @@ app.post('/api/chat', async (req, res) => {
             responseText = cleanedText; // Use the cleaned version
             
             // Generate audio if available
-            if (ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID) {
+          // Generate audio if available
+            const voiceId = language === 'fr' && ELEVENLABS_VOICE_ID_FR ? ELEVENLABS_VOICE_ID_FR : ELEVENLABS_VOICE_ID;
+            
+            if (ELEVENLABS_API_KEY && voiceId) {
                 try {
-                    console.log('🔊 Generating audio...');
+                    console.log(`🔊 Generating audio in ${language === 'fr' ? 'French' : 'English'}...`);
                     
                     const elevenLabsResponse = await axios.post(
-                        `https://api.elevenlabs.io/v1/text-to-speech/${ELEVENLABS_VOICE_ID}`,
+                        `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`,
                         {
                             text: cleanedText,
                             model_id: 'eleven_monolingual_v1',
@@ -904,9 +908,11 @@ app.post('/api/voice-chat', async (req, res) => {
 
 app.get('/api/voice-status', (req, res) => {
     const available = !!(ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID);
+    const frenchAvailable = !!(ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID_FR);
     
     res.json({
         available,
+        frenchAvailable,
         creditsUsed: monthlyVoiceUsage,
         monthlyLimit: MONTHLY_VOICE_LIMIT,
         percentUsed: ((monthlyVoiceUsage / MONTHLY_VOICE_LIMIT) * 100).toFixed(1),
@@ -945,7 +951,8 @@ app.listen(PORT, () => {
     console.log(`\n📊 System Status:`);
     console.log(`   Voice Mode: ${dougDocuments.size}/${DOUG_DOCUMENTS.length} Doug's documents`);
     console.log(`   Text Mode: ${mcpClient ? 'MCP connected ✓' : 'MCP disconnected ✗'}`);
-    console.log(`   ElevenLabs: ${ELEVENLABS_API_KEY ? 'Enabled ✓' : 'Disabled ✗'}`);
+    console.log(`   ElevenLabs (EN): ${ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID ? 'Enabled ✓' : 'Disabled ✗'}`);
+    console.log(`   ElevenLabs (FR): ${ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID_FR ? 'Enabled ✓' : 'Disabled ✗'}`);
     console.log(`   🇫🇷 French: Automatic language detection enabled`);
     console.log('\n' + '='.repeat(60));
 });
