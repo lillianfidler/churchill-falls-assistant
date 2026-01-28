@@ -258,230 +258,83 @@ function expandAcronyms(text) {
         'PPA': 'Power Purchase Agreement',
         
         // Geographic & Projects
-        'CF': 'Churchill Falls',
         'NL': 'Newfoundland and Labrador',
+        'QC': 'Quebec',
+        'LIL': 'Labrador-Island Link',
+        'ML': 'Maritime Link',
         
-        // Markets & Systems
-        'ISO': 'Independent System Operator',
-        'NECEC': 'New England Clean Energy Connect',
-        'CHPE': 'Champlain Hudson Power Express',
+        // Technical Terms
+        'AC': 'Alternating Current',
+        'DC': 'Direct Current',
+        'HVDC': 'High-Voltage Direct Current',
         
-        // Other Common Terms
-        'EA': 'Environmental Assessment',
-        'PME': 'Profit-Making Enterprise',
-        'BATNA': 'Best Alternative to a Negotiated Agreement',
-        'YTD': 'Year to Date',
-        'Q1': 'first quarter',
-        'Q2': 'second quarter',
-        'Q3': 'third quarter',
-        'Q4': 'fourth quarter'
+        // Time Periods
+        'FY': 'Fiscal Year',
+        'Q1': 'First Quarter',
+        'Q2': 'Second Quarter',
+        'Q3': 'Third Quarter',
+        'Q4': 'Fourth Quarter'
     };
     
-    // Create regex patterns for each acronym
-    // Use word boundaries to avoid partial matches
+    // Replace each acronym with its full form
+    // Use word boundaries to avoid partial replacements
     for (const [acronym, expansion] of Object.entries(acronyms)) {
         // Escape special regex characters in the acronym
         const escapedAcronym = acronym.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        
-        // Match the acronym with word boundaries
-        // Also match when followed by 's for plurals (e.g., "HQ's" -> "Hydro-Québec's")
-        const regex = new RegExp(`\\b${escapedAcronym}('s)?\\b`, 'g');
-        
-        text = text.replace(regex, (match, possessive) => {
-            return expansion + (possessive || '');
-        });
+        const regex = new RegExp(`\\b${escapedAcronym}\\b`, 'g');
+        text = text.replace(regex, expansion);
     }
     
     return text;
 }
 
-function stripMarkdownAndFormat(text) {
-    return text
-        // Fix currency ranges FIRST (before other processing)
-        .replace(/\$(\d+)-(\d+)\s*billion/gi, '$1 to $2 billion dollars')
-        .replace(/\$(\d+)-(\d+)\s*million/gi, '$1 to $2 million dollars')
-        
-        // Remove markdown headers but preserve the text with pause
-        .replace(/^#{1,6}\s+(.+)$/gm, '$1.') // Convert headers to sentences with period
-        
-        // Convert section headers to natural pauses (for voice)
-        // Match patterns like "What It Does:" or "Key Changes:"
-        .replace(/^([A-Z][A-Za-z\s&]+):\s*$/gm, '$1.') // Standalone headers → sentence
-        .replace(/^([A-Z][A-Za-z\s&]+):\s+/gm, '$1. ') // Inline headers → sentence with pause
-        
-        // Remove bullet points and list items
-        .replace(/^\s*[-*•]\s+/gm, '')
-        .replace(/^\s*\d+\.\s+/gm, '')
-        
-        // Remove bold/italic
-        .replace(/\*\*(.+?)\*\*/g, '$1')
-        .replace(/\*(.+?)\*/g, '$1')
-        .replace(/__(.+?)__/g, '$1')
-        .replace(/_(.+?)_/g, '$1')
-        
-        // Remove blockquotes
-        .replace(/^>\s+/gm, '')
-        
-        // Convert double newlines to period for natural pause
-        .replace(/\n\n+/g, '. ')
-        
-        // Convert single newlines to space
-        .replace(/\n/g, ' ')
-        
-        // Fix duplicate sentence starts (like "The MOU is the MOU...")
-        .replace(/\b(The|A|An)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s+is\s+the\s+\2\b/gi, 'The $2')
-        
-        // Clean up multiple spaces
-        .replace(/\s+/g, ' ')
-        
-        // Clean up multiple periods (but keep intentional pauses)
-        .replace(/\.{3,}/g, '...') // Keep ellipsis
-        .replace(/\.{2}/g, '.') // Remove double periods
-        
-        // Ensure sentences end with proper punctuation
-        .replace(/\.\s*\./g, '.') // Remove accidental double periods after cleanup
-        
-        // Add natural pauses between major sections (detected by capital letter starts after periods)
-        .replace(/\.\s+([A-Z])/g, '. $1')
-        
-        .trim();
-}
-
-function truncateAtSentence(text, maxWords = 150) {
-    // Clean up text first
-    text = text.trim();
+function postProcessForVoice(text) {
+    // 1. First expand acronyms
+    text = expandAcronyms(text);
     
-    // If empty, return empty
-    if (!text) return '';
+    // 2. Then add pauses at section breaks (double newline → triple newline = longer pause)
+    text = text.replace(/\n\n/g, '\n\n\n');
     
-    const words = text.split(/\s+/);
-    
-    // If already short enough, return as-is
-    if (words.length <= maxWords) {
-        return text;
-    }
-    
-    // Split into sentences - IMPROVED regex that handles abbreviations
-    // This regex looks for sentence endings (. ! ?) but NOT after common abbreviations
-    const sentences = text.match(/(?:^|[^A-Z][.!?])\s*[A-Z][^.!?]*[.!?]+(?:\s|$)|[^.!?]+[.!?]+$/g) || [];
-    
-    // Fallback: if regex fails, split more simply but protect common abbreviations
-    let sentenceList = sentences;
-    if (sentenceList.length === 0) {
-        // Temporarily replace abbreviations
-        const protected = text
-            .replace(/Dr\./g, 'Dr~')
-            .replace(/Mr\./g, 'Mr~')
-            .replace(/Mrs\./g, 'Mrs~')
-            .replace(/Ms\./g, 'Ms~')
-            .replace(/Prof\./g, 'Prof~')
-            .replace(/Sr\./g, 'Sr~')
-            .replace(/Jr\./g, 'Jr~')
-            .replace(/vs\./g, 'vs~')
-            .replace(/etc\./g, 'etc~')
-            .replace(/e\.g\./g, 'e~g~')
-            .replace(/i\.e\./g, 'i~e~');
-        
-        // Split on sentence boundaries
-        sentenceList = protected.match(/[^.!?]+[.!?]+/g) || [protected];
-        
-        // Restore abbreviations
-        sentenceList = sentenceList.map(s => s
-            .replace(/Dr~/g, 'Dr.')
-            .replace(/Mr~/g, 'Mr.')
-            .replace(/Mrs~/g, 'Mrs.')
-            .replace(/Ms~/g, 'Ms.')
-            .replace(/Prof~/g, 'Prof.')
-            .replace(/Sr~/g, 'Sr.')
-            .replace(/Jr~/g, 'Jr.')
-            .replace(/vs~/g, 'vs.')
-            .replace(/etc~/g, 'etc.')
-            .replace(/e~g~/g, 'e.g.')
-            .replace(/i~e~/g, 'i.e.')
-        );
-    }
-    
-    let result = '';
-    let wordCount = 0;
-    let sentenceCount = 0;
-    
-    for (const sentence of sentenceList) {
-        const trimmedSentence = sentence.trim();
-        if (!trimmedSentence) continue;
-        
-        const sentenceWords = trimmedSentence.split(/\s+/).length;
-        
-        // Always include at least 2 complete sentences for coherent responses
-        if (sentenceCount < 2) {
-            result += (result ? ' ' : '') + trimmedSentence;
-            wordCount += sentenceWords;
-            sentenceCount++;
-            continue;
-        }
-        
-        // After 2 sentences, only add more if under word limit
-        if (wordCount + sentenceWords <= maxWords) {
-            result += ' ' + trimmedSentence;
-            wordCount += sentenceWords;
-            sentenceCount++;
-        } else {
-            // Stop here - we've reached the limit
-            break;
-        }
-    }
-    
-    // Ensure we have at least one complete sentence
-    if (!result && sentenceList.length > 0) {
-        result = sentenceList[0].trim();
-    }
-    
-    return result.trim();
-}
-
-// ============================================================================
-// VOICE GENERATION
-// ============================================================================
-
-async function generateVoice(text) {
-    if (!ELEVENLABS_API_KEY || !ELEVENLABS_VOICE_ID) {
-        console.log('⚠ Voice disabled (no credentials)');
-        return null;
-    }
-    
-    try {
-        if (text.length > 5000) {
-            console.log(`⚠ Text too long (${text.length} chars), truncating...`);
-            text = text.substring(0, 5000);
-        }
-        
-        console.log(`🎙️ Generating Doug's voice (${text.length} chars)...`);
-        
-        const response = await axios({
-            method: 'POST',
-            url: `https://api.elevenlabs.io/v1/text-to-speech/${ELEVENLABS_VOICE_ID}`,
-            headers: {
-                'Accept': 'audio/mpeg',
-                'Content-Type': 'application/json',
-                'xi-api-key': ELEVENLABS_API_KEY
-            },
-            data: {
-                text: text,
-                model_id: 'eleven_monolingual_v1',
-                voice_settings: {
-                    stability: 0.5,
-                    similarity_boost: 0.75
-                }
-            },
-            responseType: 'arraybuffer'
+    // 3. Make currency more voice-friendly
+    text = text
+        // "$5 million" → "5 million dollars"
+        .replace(/\$(\d+(?:\.\d+)?)\s*(billion|million|thousand)/gi, '$1 $2 dollars')
+        // "$5B" → "5 billion dollars"
+        .replace(/\$(\d+(?:\.\d+)?)\s*([BbMm])\b/g, (match, num, unit) => {
+            const unitMap = {'B': 'billion', 'b': 'billion', 'M': 'million', 'm': 'million'};
+            return `${num} ${unitMap[unit]} dollars`;
         });
-        
-        monthlyVoiceUsage += text.length;
-        
-        return Buffer.from(response.data).toString('base64');
-    } catch (error) {
-        console.error('❌ Voice generation failed:', error.message);
-        return null;
-    }
+    
+    // 4. Make percentages more natural
+    text = text.replace(/(\d+(?:\.\d+)?)\s*%/g, '$1 percent');
+    
+    // 5. Handle large numbers with commas (e.g., "1,000" → "1 thousand")
+    text = text.replace(/\b(\d{1,3}),(\d{3}),(\d{3}),(\d{3})\b/g, '$1 billion $2 million'); // billions
+    text = text.replace(/\b(\d{1,3}),(\d{3}),(\d{3})\b/g, '$1 million $2 thousand'); // millions
+    
+    // 6. Expand common abbreviations
+    text = text.replace(/\be\.g\./gi, 'for example');
+    text = text.replace(/\bi\.e\./gi, 'that is');
+    text = text.replace(/\betc\./gi, 'and so on');
+    text = text.replace(/\bvs\./gi, 'versus');
+    
+    return text;
+}
+
+function cleanupVoiceText(text) {
+    return text
+        // Remove markdown headers
+        .replace(/^#+\s+/gm, '')
+        // Remove bold/italic markers
+        .replace(/\*\*/g, '')
+        .replace(/\*/g, '')
+        // Remove bullet points but keep the content
+        .replace(/^\s*[-•]\s+/gm, '')
+        // Clean up multiple spaces
+        .replace(/  +/g, ' ')
+        // Clean up multiple newlines but preserve intentional breaks
+        .replace(/\n{4,}/g, '\n\n\n')
+        .trim();
 }
 
 // ============================================================================
@@ -570,6 +423,109 @@ Example of what TO do:
 
 Provide objective research presented as established facts, not as someone's analysis.`;
 
+// ============================================================================
+// FRENCH SYSTEM PROMPTS (Automatic Language Detection)
+// ============================================================================
+
+const DOUG_VOICE_PROMPT_FR = `Vous êtes le Dr Doug May en conversation informelle. Votre réponse sera lue à voix haute.
+
+Écrivez 2 à 4 phrases complètes en français naturel avec des PAUSES NATURELLES entre les différents sujets.
+
+STRUCTURE pour la voix:
+- Lorsque vous couvrez plusieurs sujets, ajoutez un saut de ligne entre eux
+- Exemple: "Le PE crée un partage de revenus 50-50.
+
+Cependant, il y a des préoccupations concernant la structure de prix."
+
+CRITIQUE: Chaque phrase doit avoir un sujet ET un verbe. N'écrivez jamais de fragments comme:
+- "63 cents par kilowatt-heure." (MAUVAIS - fragment)
+- "17 milliards de dette." (MAUVAIS - fragment)
+- "Le prix est de 63 cents par kilowatt-heure." (BON - complet)
+
+Répondez simplement à la question naturellement comme si vous parliez à un ami, mais ajoutez une pause (saut de ligne) lorsque vous passez à un nouveau point.
+
+Écrivez en phrases complètes avec des pauses naturelles entre les points distincts.`;
+
+const TEXT_MODE_FAST_PROMPT_FR = `Vous êtes un assistant IA expert spécialisé dans le projet hydroélectrique de Churchill Falls.
+
+Fournissez des réponses CONCISES et factuelles (2-3 paragraphes maximum, 150-250 mots).
+
+INSTRUCTIONS CRITIQUES:
+- Écrivez à la troisième personne de façon directe et factuelle
+- Commencez par la réponse directe immédiatement
+- N'UTILISEZ JAMAIS: "Selon...", "D'après...", "L'analyse montre..."
+- Énoncez simplement les faits directement
+- Incluez les dates clés, les chiffres et les noms
+- Restez bref mais informatif
+- Référez-vous TOUJOURS à Doug May comme "Dr Doug May" ou "Dr May"
+- Référez-vous TOUJOURS à Wade Locke comme "Dr Wade Locke" ou "Dr Locke"
+
+Exemple de ce qu'il NE FAUT PAS faire:
+"Selon l'analyse complète des documents disponibles, l'entente de Churchill Falls est controversée..."
+
+Exemple de ce qu'il FAUT faire:
+"L'entente de Churchill Falls est controversée pour plusieurs raisons interconnectées..."
+
+Concentrez-vous sur l'information la plus essentielle. Si l'utilisateur veut plus de détails, il peut utiliser le mode Deep.`;
+
+const TEXT_MODE_DEEP_PROMPT_FR = `Vous êtes un assistant IA expert spécialisé dans le projet hydroélectrique de Churchill Falls.
+
+Fournissez des réponses complètes et bien documentées en utilisant tous les documents disponibles.
+
+STRATÉGIE DE RECHERCHE:
+1. Utilisez search_documents avec max_results=10-15 pour trouver TOUS les documents pertinents
+2. Pour les documents clés trouvés, utilisez get_document pour récupérer le contenu complet
+3. Synthétisez l'information de MULTIPLES sources (visez 5+ sources pour les questions complexes)
+4. Présentez diverses perspectives (analyse de Doug May, critique de Wade Locke, documents officiels, etc.)
+
+INSTRUCTIONS CRITIQUES:
+- Écrivez à la troisième personne de façon directe et factuelle
+- Commencez les réponses par la réponse directe (par exemple, "L'entente de Churchill Falls est controversée parce que...")
+- N'UTILISEZ JAMAIS: "Selon...", "D'après...", "L'analyse montre...", "La recherche indique..."
+- Énoncez simplement les faits directement
+- Incluez des détails spécifiques, dates et chiffres
+- Présentez plusieurs perspectives (Doug May, Wade Locke, autres économistes)
+- Structurez les réponses avec des sections claires
+- Fournissez une analyse approfondie avec des preuves à l'appui
+- Référez-vous TOUJOURS à Doug May comme "Dr Doug May" ou "Dr May"
+- Référez-vous TOUJOURS à Wade Locke comme "Dr Wade Locke" ou "Dr Locke"
+
+Fournissez une recherche objective présentée comme des faits établis, pas comme l'analyse de quelqu'un.`;
+
+// ============================================================================
+// LANGUAGE DETECTION
+// ============================================================================
+
+function detectLanguage(text) {
+    const textLower = text.toLowerCase();
+    
+    // French indicators - common French words and Quebec-specific terms
+    const frenchIndicators = [
+        'québec', 'qu\'est-ce', 'qu\'est', 'quelle', 'quel', 'quels', 'quelles',
+        'comment', 'pourquoi', 'électricité', 'entente', 'protocole',
+        'combien', 'où', 'quand', 'est-ce que', 'parle', 'parlez',
+        'explique', 'expliquez', 'dis', 'dites', 'peux-tu', 'pouvez-vous',
+        'hydro-québec', 'terre-neuve', 'labrador'
+    ];
+    
+    // Count French indicators
+    let frenchCount = 0;
+    for (const indicator of frenchIndicators) {
+        if (textLower.includes(indicator)) {
+            frenchCount++;
+        }
+    }
+    
+    // If we find 2 or more French indicators, it's likely French
+    const detectedLang = frenchCount >= 2 ? 'fr' : 'en';
+    
+    if (detectedLang === 'fr') {
+        console.log(`🇫🇷 French detected (${frenchCount} indicators)`);
+    }
+    
+    return detectedLang;
+}
+
 
 // ============================================================================
 // MAIN CHAT ENDPOINT
@@ -590,12 +546,15 @@ app.post('/api/chat', async (req, res) => {
             return res.status(400).json({ error: 'Message is required' });
         }
         
+        // Detect language from user's message
+        const language = detectLanguage(message);
+        
         // Determine mode label for logging
         let modeLabel = '📝 TEXT';
         if (isVoiceMode) {
-            modeLabel = '🎤 VOICE (Doug)';
+            modeLabel = `🎤 VOICE (Doug) [${language.toUpperCase()}]`;
         } else {
-            modeLabel = textMode === 'fast' ? '⚡ FAST TEXT' : '🔍 DEEP TEXT';
+            modeLabel = `${textMode === 'fast' ? '⚡ FAST TEXT' : '🔍 DEEP TEXT'} [${language.toUpperCase()}]`;
         }
         
         console.log(`\n${'='.repeat(60)}`);
@@ -652,7 +611,9 @@ app.post('/api/chat', async (req, res) => {
                 documentContext += `## ${filename}\n${content}\n\n---\n\n`;
             }
             
-            const systemPrompt = DOUG_VOICE_PROMPT + '\n\n' + documentContext;
+            // Select prompt based on detected language
+            const basePrompt = language === 'fr' ? DOUG_VOICE_PROMPT_FR : DOUG_VOICE_PROMPT;
+            const systemPrompt = basePrompt + '\n\n' + documentContext;
             
             const response = await anthropic.messages.create({
                 model: 'claude-sonnet-4-20250514',
@@ -666,35 +627,61 @@ app.post('/api/chat', async (req, res) => {
                 .map(block => block.text)
                 .join('\n');
             
-            console.log(`📊 Raw response: ${responseText.length} chars`);
+            console.log(`✅ Response generated: ${responseText.length} chars`);
             
-            // Post-process for natural voice
-            responseText = expandAcronyms(responseText);  // Expand acronyms FIRST
-            responseText = stripMarkdownAndFormat(responseText);
-            responseText = truncateAtSentence(responseText, 150); // Increased from 100 to 150 words
+            // Post-process for voice (acronym expansion, cleanup, etc.)
+            const processedText = postProcessForVoice(responseText);
+            const cleanedText = cleanupVoiceText(processedText);
             
-            const wordCount = responseText.split(/\s+/).length;
-            console.log(`✅ Clean response: ${responseText.length} chars, ${wordCount} words`);
+            console.log(`🎯 After post-processing: ${cleanedText.length} chars`);
             
-            // Generate voice
-            audioData = await generateVoice(responseText);
+            responseText = cleanedText; // Use the cleaned version
             
-            if (audioData) {
-                console.log(`🎙️ Voice generated: ${monthlyVoiceUsage.toLocaleString()}/${MONTHLY_VOICE_LIMIT.toLocaleString()} chars used`);
+            // Generate audio if available
+            if (ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID) {
+                try {
+                    console.log('🔊 Generating audio...');
+                    
+                    const elevenLabsResponse = await axios.post(
+                        `https://api.elevenlabs.io/v1/text-to-speech/${ELEVENLABS_VOICE_ID}`,
+                        {
+                            text: cleanedText,
+                            model_id: 'eleven_monolingual_v1',
+                            voice_settings: {
+                                stability: 0.5,
+                                similarity_boost: 0.75
+                            }
+                        },
+                        {
+                            headers: {
+                                'xi-api-key': ELEVENLABS_API_KEY,
+                                'Content-Type': 'application/json'
+                            },
+                            responseType: 'arraybuffer'
+                        }
+                    );
+                    
+                    audioData = Buffer.from(elevenLabsResponse.data).toString('base64');
+                    monthlyVoiceUsage += cleanedText.length;
+                    
+                    console.log(`✅ Audio generated (${cleanedText.length} chars)`);
+                    console.log(`   Monthly usage: ${monthlyVoiceUsage}/${MONTHLY_VOICE_LIMIT}`);
+                } catch (audioError) {
+                    console.error('⚠️  Audio generation failed:', audioError.message);
+                }
             }
         }
         
         // ====================================================================
-        // TEXT MODE - Fast or Deep Research
+        // TEXT MODE - MCP Research
         // ====================================================================
         
         else {
             if (!mcpClient) {
-                return res.status(503).json({
-                    error: 'Research mode unavailable. Please try voice mode.',
-                    text: 'The research system is currently unavailable. Please use the conversational voice mode, or try again later.',
-                    audio: null,
-                    voiceAvailable: false
+                console.log('⚠️  MCP not connected - cannot provide text response');
+                return res.status(500).json({ 
+                    error: 'Text mode temporarily unavailable. Please try voice mode.',
+                    text: 'Text mode requires MCP connection. Please try voice mode instead.'
                 });
             }
 
@@ -708,8 +695,14 @@ app.post('/api/chat', async (req, res) => {
                 input_schema: tool.inputSchema
             }));
 
-            // Choose prompt and token limit based on mode
-            const systemPrompt = isFastMode ? TEXT_MODE_FAST_PROMPT : TEXT_MODE_DEEP_PROMPT;
+            // Select prompt based on detected language and mode
+            let systemPrompt;
+            if (language === 'fr') {
+                systemPrompt = isFastMode ? TEXT_MODE_FAST_PROMPT_FR : TEXT_MODE_DEEP_PROMPT_FR;
+            } else {
+                systemPrompt = isFastMode ? TEXT_MODE_FAST_PROMPT : TEXT_MODE_DEEP_PROMPT;
+            }
+            
             const maxTokens = isFastMode ? 1024 : 4096; // Fast: ~250 words, Deep: ~1000 words
 
             let response = await anthropic.messages.create({
@@ -748,13 +741,11 @@ app.post('/api/chat', async (req, res) => {
                         }
                         
                         // Track document access - try ALL possible field names
-                        if (block.name === 'get_document' && block.input) {
-                            // Try every possible field that might contain the document name
+                        if (block.name === 'get_document') {
                             const possibleDocName = 
-                                block.input.name || 
-                                block.input.document || 
-                                block.input.document_name ||
                                 block.input.filename || 
+                                block.input.document || 
+                                block.input.name ||
                                 block.input.file ||
                                 block.input.path ||
                                 block.input.uri ||
@@ -955,5 +946,6 @@ app.listen(PORT, () => {
     console.log(`   Voice Mode: ${dougDocuments.size}/${DOUG_DOCUMENTS.length} Doug's documents`);
     console.log(`   Text Mode: ${mcpClient ? 'MCP connected ✓' : 'MCP disconnected ✗'}`);
     console.log(`   ElevenLabs: ${ELEVENLABS_API_KEY ? 'Enabled ✓' : 'Disabled ✗'}`);
+    console.log(`   🇫🇷 French: Automatic language detection enabled`);
     console.log('\n' + '='.repeat(60));
 });
