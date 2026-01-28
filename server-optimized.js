@@ -1,5 +1,5 @@
 // ============================================================================
-// Churchill Falls Assistant - OPTIMIZED Backend
+// Churchill Falls Assistant - OPTIMIZED Backend new
 // ============================================================================
 // Voice Mode: Dr. Doug May's analysis only (FAST & AUTHENTIC)
 // Text Mode: Full comprehensive research (all 36 docs via MCP)
