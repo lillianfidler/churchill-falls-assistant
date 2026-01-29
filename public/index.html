@@ -753,8 +753,9 @@ display: flex;
         if (researchingIndicator) {
           researchingIndicator.classList.remove('hidden');
         }
-        if (researchAudio && researchAudioReady) {
+         if (researchAudio && researchAudioReady) {
           researchAudio.loop = true;
+          researchAudio.volume = 0.2;  // Set volume (0.0 to 1.0)
           researchAudio.currentTime = 0;
           researchAudio.play().then(() => {
             console.log('researchAudio playing');
