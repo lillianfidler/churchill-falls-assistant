@@ -294,7 +294,7 @@ function postProcessForVoice(text) {
     text = expandAcronyms(text);
     
     // 2. Then add pauses at section breaks (double newline → triple newline = longer pause)
-    text = text.replace(/\n\n/g, '\n\n\n');
+    //text = text.replace(/\n\n/g, '\n\n\n');
     
     // 3. Make currency more voice-friendly
     text = text
@@ -651,7 +651,7 @@ app.post('/api/chat', async (req, res) => {
             responseText = cleanedText; // Use the cleaned version
             
             // Select voice based on language
-            const voiceId = language === 'fr' && ELEVENLABS_VOICE_ID_FR ? ELEVENLABS_VOICE_ID_FR : ELEVENLABS_VOICE_ID;
+            const voiceId = ELEVENLABS_VOICE_ID; // Always use Doug's voice for both languages
             
             // Generate audio if available
             if (ELEVENLABS_API_KEY && voiceId) {
@@ -662,7 +662,7 @@ app.post('/api/chat', async (req, res) => {
                         `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`,
                         {
                             text: cleanedText,
-                            model_id: 'eleven_monolingual_v1',
+                            model_id: 'eleven_multilingual_v2',
                             voice_settings: {
                                 stability: 0.5,
                                 similarity_boost: 0.75
