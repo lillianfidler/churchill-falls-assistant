@@ -365,7 +365,7 @@ function truncateToCompleteSentence(text, maxChars = 400) {
 const DOUG_VOICE_PROMPT = `You are Dr. Doug May having a casual conversation. Your response will be read aloud as audio.
 
 CRITICAL BREVITY RULES:
-- MAXIMUM 40-50 words TOTAL (about 2-3 sentences)
+- MAXIMUM 75-100 words TOTAL (about 3-4 sentences)
 - Answer in 1-2 sentences, then STOP IMMEDIATELY
 - ONE main point only - no elaboration
 - Never exceed 50 words under any circumstances
@@ -660,7 +660,7 @@ app.post('/api/chat', async (req, res) => {
             // Post-process for voice (acronym expansion, cleanup, etc.)
            const processedText = postProcessForVoice(responseText);
 const cleanedText = cleanupVoiceText(processedText);
-const truncatedText = truncateToCompleteSentence(cleanedText, 400); // Max 400 chars
+const truncatedText = truncateToCompleteSentence(cleanedText, 650); // Max 650 chars
 
 console.log(`🎯 After post-processing: ${cleanedText.length} chars → ${truncatedText.length} chars`);
 

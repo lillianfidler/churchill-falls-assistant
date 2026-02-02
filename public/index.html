@@ -1119,6 +1119,17 @@ saveSession(); // Save conversation after each exchange
 
           messageDiv.appendChild(actionsDiv);
 
+          // Add "Learn More" link after voice responses
+          if (audio && mode === 'voice') {
+            const learnMoreDiv = document.createElement('div');
+            learnMoreDiv.style.cssText = 'margin-top: 12px; padding: 12px; background: rgba(94, 234, 212, 0.08); border-radius: 8px; font-size: 13px;';
+            learnMoreDiv.innerHTML = `
+              💡 <strong>Want more detail?</strong> Switch to Deep mode for comprehensive analysis, or 
+              <a href="https://www.youtube.com/@dougmay" target="_blank" style="color: var(--aqua); text-decoration: underline;">watch Dr. Doug May's video series</a>
+            `;
+            messageDiv.appendChild(learnMoreDiv);
+          }
+
           if (sources && sources.length > 0) {
             const sourcesDiv = document.createElement('div');
             sourcesDiv.className = 'sources-section';
