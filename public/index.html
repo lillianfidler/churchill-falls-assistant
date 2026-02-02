@@ -1151,15 +1151,14 @@ if (audio && mode === 'voice') {
       document.querySelectorAll('.mode-toggle button').forEach(b => b.classList.remove('active'));
       document.querySelector('.mode-toggle button[data-mode="deep"]')?.classList.add('active');
       
-      // Fill text input with last question
-      const textInput = document.getElementById('textInput');
-      if (textInput && lastUserQuestion) {
-        textInput.value = lastUserQuestion;
-        textInput.focus();
-      }
-      
-      // Scroll to input
-      textInput?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+// Fill text input and automatically send
+const textInput = document.getElementById('textInput');
+if (textInput && lastUserQuestion) {
+  textInput.value = lastUserQuestion;
+  
+  // Automatically send the message for Deep analysis
+  sendMessage(lastUserQuestion, false);
+}
     });
   }, 100);
 }

@@ -337,19 +337,22 @@ function cleanupVoiceText(text) {
         .replace(/\n{4,}/g, '\n\n\n')
         .trim();
 }
-function truncateToCompleteSentence(text, maxChars = 400) {
-    // If text is already short enough, return as-is
+ffunction truncateToCompleteSentence(text, maxChars = 650) {
     if (text.length <= maxChars) return text;
     
-    // Find the last sentence ending before maxChars
     const truncated = text.substring(0, maxChars);
-    const lastPeriod = truncated.lastIndexOf('.');
-    const lastQuestion = truncated.lastIndexOf('?');
-    const lastExclamation = truncated.lastIndexOf('!');
     
-    const lastSentenceEnd = Math.max(lastPeriod, lastQuestion, lastExclamation);
+    // Find sentence endings (., ?, !) followed by space and capital letter or end of text
+    // This avoids cutting at numbers like "2.5" or abbreviations
+    const sentencePattern = /[.!?](?=\s+[A-Z]|$)/g;
+    let lastSentenceEnd = -1;
+    let match;
     
-    // If we found a sentence ending, cut there
+    while ((match = sentencePattern.exec(truncated)) !== null) {
+        lastSentenceEnd = match.index;
+    }
+    
+    // If we found a proper sentence ending, cut there
     if (lastSentenceEnd > 0) {
         return text.substring(0, lastSentenceEnd + 1).trim();
     }
