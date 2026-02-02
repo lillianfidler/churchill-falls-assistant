@@ -677,7 +677,7 @@ responseText = truncatedText; // Use the truncated version
                     const elevenLabsResponse = await axios.post(
                         `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`,
                         {
-                            text: cleanedText,
+                            text: truncatedText,
                             model_id: 'eleven_multilingual_v2',
                             voice_settings: {
                                 stability: 0.5,
