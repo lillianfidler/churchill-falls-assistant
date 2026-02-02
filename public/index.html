@@ -603,6 +603,7 @@ display: flex;
       let conversationHistory = [];
       let currentAnswerText = '';
       let currentSessionId = null;
+let lastUserQuestion = '';
 
       // ============================================================================
       // CONVERSATION HISTORY STORAGE
@@ -920,6 +921,8 @@ display: flex;
         conversationEl.classList.remove('hidden');
 
         addMessage('user', message);
+lastUserQuestion = message;  // ADD THIS NEW LINE
+conversationHistory.push({ role: 'user', content: message });
         
         // Add "Researching..." as a temporary message
         const researchingMsg = document.createElement('div');
@@ -1119,16 +1122,47 @@ saveSession(); // Save conversation after each exchange
 
           messageDiv.appendChild(actionsDiv);
 
-          // Add "Learn More" link after voice responses
-          if (audio && mode === 'voice') {
-            const learnMoreDiv = document.createElement('div');
-            learnMoreDiv.style.cssText = 'margin-top: 12px; padding: 12px; background: rgba(94, 234, 212, 0.08); border-radius: 8px; font-size: 13px;';
-            learnMoreDiv.innerHTML = `
-              💡 <strong>Want more detail?</strong> Switch to Deep mode for comprehensive analysis, or 
-              <a href="https://www.youtube.com/@dougmay" target="_blank" style="color: var(--aqua); text-decoration: underline;">watch Dr. Doug May's video series</a>
-            `;
-            messageDiv.appendChild(learnMoreDiv);
-          }
+// Add "Learn More" with Deep Mode button
+if (audio && mode === 'voice') {
+  const learnMoreDiv = document.createElement('div');
+  learnMoreDiv.style.cssText = 'margin-top: 12px; padding: 12px; background: rgba(94, 234, 212, 0.08); border-radius: 8px; font-size: 13px;';
+  learnMoreDiv.innerHTML = `
+    💡 <strong>Want more detail?</strong> 
+    <button id="deepModeBtn" style="
+      padding: 6px 12px;
+      background: var(--aqua);
+      color: #1a1a1a;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      margin: 0 4px;
+    ">Get Detailed Analysis (text)</button>
+    or <a href="https://www.youtube.com/@dougmay" target="_blank" style="color: var(--aqua); text-decoration: underline;">watch Dr. Doug May's videos</a>
+  `;
+  messageDiv.appendChild(learnMoreDiv);
+  
+  // Add click handler for Deep Mode button
+  setTimeout(() => {
+    document.getElementById('deepModeBtn')?.addEventListener('click', () => {
+      // Switch to Deep mode
+      currentTextMode = 'deep';
+      document.querySelectorAll('.mode-toggle button').forEach(b => b.classList.remove('active'));
+      document.querySelector('.mode-toggle button[data-mode="deep"]')?.classList.add('active');
+      
+      // Fill text input with last question
+      const textInput = document.getElementById('textInput');
+      if (textInput && lastUserQuestion) {
+        textInput.value = lastUserQuestion;
+        textInput.focus();
+      }
+      
+      // Scroll to input
+      textInput?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  }, 100);
+}
 
           if (sources && sources.length > 0) {
             const sourcesDiv = document.createElement('div');
