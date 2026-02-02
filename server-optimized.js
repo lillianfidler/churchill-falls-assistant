@@ -337,7 +337,7 @@ function cleanupVoiceText(text) {
         .replace(/\n{4,}/g, '\n\n\n')
         .trim();
 }
-ffunction truncateToCompleteSentence(text, maxChars = 650) {
+function truncateToCompleteSentence(text, maxChars = 650) {
     if (text.length <= maxChars) return text;
     
     const truncated = text.substring(0, maxChars);
