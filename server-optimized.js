@@ -530,7 +530,7 @@ function detectLanguage(text) {
     
     // If we find 1 or more French indicators, it's likely French
     // Lowered threshold from 2 to 1 to catch more cases
-    const detectedLang = frenchCount >= 1 ? 'fr' : 'en';
+    const detectedLang = frenchCount >= 2 ? 'fr' : 'en';
     
     if (detectedLang === 'fr') {
         console.log(`🇫🇷 French detected (${frenchCount} indicators)`);
