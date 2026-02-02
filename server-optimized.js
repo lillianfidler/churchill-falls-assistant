@@ -337,6 +337,26 @@ function cleanupVoiceText(text) {
         .replace(/\n{4,}/g, '\n\n\n')
         .trim();
 }
+function truncateToCompleteSentence(text, maxChars = 400) {
+    // If text is already short enough, return as-is
+    if (text.length <= maxChars) return text;
+    
+    // Find the last sentence ending before maxChars
+    const truncated = text.substring(0, maxChars);
+    const lastPeriod = truncated.lastIndexOf('.');
+    const lastQuestion = truncated.lastIndexOf('?');
+    const lastExclamation = truncated.lastIndexOf('!');
+    
+    const lastSentenceEnd = Math.max(lastPeriod, lastQuestion, lastExclamation);
+    
+    // If we found a sentence ending, cut there
+    if (lastSentenceEnd > 0) {
+        return text.substring(0, lastSentenceEnd + 1).trim();
+    }
+    
+    // Otherwise return the truncated text
+    return truncated.trim();
+}
 
 // ============================================================================
 // SYSTEM PROMPTS
@@ -345,17 +365,12 @@ function cleanupVoiceText(text) {
 const DOUG_VOICE_PROMPT = `You are Dr. Doug May having a casual conversation. Your response will be read aloud as audio.
 
 CRITICAL BREVITY RULES:
-- MAXIMUM 2-3 sentences TOTAL (40-60 words absolute max)
-- ONE main point only
-- No lists, no multiple topics
-- If asked complex question, give ONE key takeaway
+- MAXIMUM 40-50 words TOTAL (about 2-3 sentences)
+- Answer in 1-2 sentences, then STOP IMMEDIATELY
+- ONE main point only - no elaboration
+- Never exceed 50 words under any circumstances
 
-STRUCTURE for voice:
-- Answer the question directly in 1-2 sentences
-- Add ONE additional sentence if needed for context
-- Stop immediately after that
-
-CRITICAL: Every sentence must have a subject AND a verb. Never write fragments.
+Write complete sentences with natural breaks. Stop after answering the core question.
 
 EXAMPLES:
 
@@ -643,12 +658,13 @@ app.post('/api/chat', async (req, res) => {
             console.log(`✅ Response generated: ${responseText.length} chars`);
             
             // Post-process for voice (acronym expansion, cleanup, etc.)
-            const processedText = postProcessForVoice(responseText);
-            const cleanedText = cleanupVoiceText(processedText);
-            
-            console.log(`🎯 After post-processing: ${cleanedText.length} chars`);
-            
-            responseText = cleanedText; // Use the cleaned version
+           const processedText = postProcessForVoice(responseText);
+const cleanedText = cleanupVoiceText(processedText);
+const truncatedText = truncateToCompleteSentence(cleanedText, 400); // Max 400 chars
+
+console.log(`🎯 After post-processing: ${cleanedText.length} chars → ${truncatedText.length} chars`);
+
+responseText = truncatedText; // Use the truncated version
             
             // Select voice based on language
             const voiceId = ELEVENLABS_VOICE_ID; // Always use Doug's voice for both languages
