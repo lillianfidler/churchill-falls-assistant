@@ -340,22 +340,38 @@ function truncateToCompleteSentence(text, maxChars = 650) {
     
     const truncated = text.substring(0, maxChars);
     
-    // Find sentence endings (., ?, !) followed by space and capital letter or end of text
-    // This avoids cutting at numbers like "2.5" or abbreviations
-    const sentencePattern = /[.!?](?=\s+[A-Z]|$)/g;
+    // Find proper sentence endings, avoiding:
+    // - Numbers like "1." "2.5" 
+    // - Abbreviations like "Dr." "Mr."
     let lastSentenceEnd = -1;
-    let match;
     
-    while ((match = sentencePattern.exec(truncated)) !== null) {
-        lastSentenceEnd = match.index;
+    for (let i = truncated.length - 1; i >= 0; i--) {
+        const char = truncated[i];
+        
+        // Check if this is sentence-ending punctuation
+        if (char === '.' || char === '!' || char === '?') {
+            // Skip if preceded by digit (like "1." or "2.5")
+            const prevChar = i > 0 ? truncated[i - 1] : '';
+            if (/\d/.test(prevChar)) {
+                continue;
+            }
+            
+            // Check what comes after
+            const nextChar = i < truncated.length - 1 ? truncated[i + 1] : '';
+            const nextNextChar = i < truncated.length - 2 ? truncated[i + 2] : '';
+            
+            // Valid if: end of string OR space + capital letter
+            if (i === truncated.length - 1 || (nextChar === ' ' && /[A-Z]/.test(nextNextChar))) {
+                lastSentenceEnd = i;
+                break;
+            }
+        }
     }
     
-    // If we found a proper sentence ending, cut there
     if (lastSentenceEnd > 0) {
         return text.substring(0, lastSentenceEnd + 1).trim();
     }
     
-    // Otherwise return the truncated text
     return truncated.trim();
 }
 
@@ -888,9 +904,9 @@ responseText = truncatedText; // Use the truncated version
         
         // Add sources
         if (isVoiceMode) {
-            // Voice mode - include Doug May's documents
-            responseData.sources = Array.from(dougDocuments.keys());
-            console.log(`📚 Sources used: ${dougDocuments.size} Doug May documents`);
+            // Voice mode - don't show sources (always Doug May's complete analysis)
+            // Listing all 22 files isn't helpful - users know it's Doug's analysis
+            console.log(`📚 Used: ${dougDocuments.size} Doug May documents (complete analysis)`);
         } else if (typeof documentsAccessed !== 'undefined' && documentsAccessed.size > 0) {
             // Text mode - include MCP accessed documents
             responseData.sources = Array.from(documentsAccessed);
