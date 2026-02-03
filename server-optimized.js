@@ -954,8 +954,7 @@ app.get('/api/health', (req, res) => {
     res.json({
         status: 'healthy',
         voiceMode: {
-            documents: dougDocuments.size,
-            totalDocs: DOUG_DOCUMENTS.length
+            documents: dougDocuments.size
         },
         textMode: {
             mcpConnected: !!mcpClient
@@ -978,7 +977,7 @@ app.listen(PORT, () => {
     console.log('='.repeat(60));
     console.log(`🌐 Server running on port ${PORT}`);
     console.log(`\n📊 System Status:`);
-    console.log(`   Voice Mode: ${dougDocuments.size}/${DOUG_DOCUMENTS.length} Doug's documents`);
+    console.log(`   Voice Mode: ${dougDocuments.size} Doug's documents loaded`);
     console.log(`   Text Mode: ${mcpClient ? 'MCP connected ✓' : 'MCP disconnected ✗'}`);
     console.log(`   ElevenLabs (EN): ${ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID ? 'Enabled ✓' : 'Disabled ✗'}`);
     console.log(`   ElevenLabs (FR): ${ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID_FR ? 'Enabled ✓' : 'Disabled ✗'}`);
