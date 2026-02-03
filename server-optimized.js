@@ -886,8 +886,13 @@ responseText = truncatedText; // Use the truncated version
             cached: false
         };
         
-        // Add sources for text mode (if documents were accessed via MCP)
-        if (!isVoiceMode && typeof documentsAccessed !== 'undefined' && documentsAccessed.size > 0) {
+        // Add sources
+        if (isVoiceMode) {
+            // Voice mode - include Doug May's documents
+            responseData.sources = Array.from(dougDocuments.keys());
+            console.log(`📚 Sources used: ${dougDocuments.size} Doug May documents`);
+        } else if (typeof documentsAccessed !== 'undefined' && documentsAccessed.size > 0) {
+            // Text mode - include MCP accessed documents
             responseData.sources = Array.from(documentsAccessed);
             console.log(`📚 Sources used: ${documentsAccessed.size} documents`);
         }

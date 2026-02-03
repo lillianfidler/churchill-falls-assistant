@@ -22,60 +22,12 @@ const CONTENT_DIR = path.join(__dirname, 'content');
 
 // ALL DOCUMENTS (39 total - CORRECTED to match actual /content folder)
 // Last updated: January 24, 2026
-const DOCUMENTS = [
-  // PRIMARY MOU DOCUMENTS (3 files)
-  'MOU_Churchill_Falls_Dec_12_2024_clean_text.txt',
-  'MOU_Churchill_Falls_Dec_12_2024_summary.txt',
-  'HYDRO_MOU_GNL_Jan_2025.txt',
-  
-  // DOUG MAY'S COMPLETE ANALYSIS (17 files - all his work)
-  'doug-may-assessment-of-proposed-prices-mou.txt',
-  'doug-may-CF-assessment-mou.txt',
-  'doug-point-summary-assessment-mou-prices.txt',
-  'Doug-Proposed_Prices_Under-MOU.txt',
-  'Doug-Proposed_Projects_Under-mou.txt',
-  'doug-summary-video.txt',
-  'Doug-video-series-video1.txt',
-  'Doug-video-series-video1-summary.txt',
-  'Doug-video-series-video2A.txt',
-  'Doug-video-series-video2A-summary.txt',
-  'Doug-video-series-video2B.txt',
-  'Doug-video-series-video2B-summary.txt',
-  'Doug-video-series-video3A.txt',
-  'Doug-video-series-video3B.txt',
-  'Doug-video-series-video4.txt',
-  
-  // WADE LOCKE ANALYSIS (2 files)
-  'LOCKE analysis of MOU CF.txt',
-  'LOCKE analysis of MOU CF-summary.txt',
-  
-  // FINANCIAL STATEMENTS - 2024 ONLY (2 files)
-  'Churchill-falls-consolidated-financial-statements-2024.txt',
-  'Lower-Churchill-Project-Combined-Financial-Statements-2024.txt',
-  
-  // HYDRO-QUEBEC MARKET ANALYSIS (6 files)
-  'HYDRO-QUEBECS-EXPORTS.txt',
-  'HYDRO-QUEBECS-IMPORTS.txt',
-  'HQ-exports-electricity-price-escalation.txt',
-  'HQ_Action_Plan_2035_clean_text.txt',
-  'HQ_Production_July_2025_text.txt',
-  'Hydro-quebec-annual-report-2024.txt',
-  
-  // HISTORICAL CONTRACTS & DEVELOPMENT (5 files)
-  'CHURCHILL-FALLS-POWER-CONTRACT.txt',
-  'Feehan, James P., Smallwood, Churchill Falls, and the Power Corridor through Quebec.txt',
-  'Gull_Island_Contract_2002.txt',
-  'History_Churchill_River_Hydro_Development_1949-2007.txt',
-  'history-of-churchill-falls-development.txt',
-  
-  // ADDITIONAL ANALYSIS (4 files)
-  'Analyis-James-P-Feehan.txt',
-  'Churchill_Falls_Annual_Report_2024.txt',
-  'NL-Debt-Fiscal-Sustainability.txt',
-  'Proposed-Prices-for-Existing-Power.txt',
-  'quebecs-electricity-supply-problem.txt',
-  'Understanding-Some-Financial-Concep.txt'
-];
+// ============================================================================
+// DYNAMIC DOCUMENT LOADING
+// Automatically scans /content folder for all .txt files
+// No hardcoded list needed!
+// ============================================================================
+let DOCUMENTS = [];  // Will be populated dynamically
 
 // CORE DOCUMENTS (REMOVED FROM MCP - NOW IN EXPRESS SERVER CONTEXT)
 // These 15 documents are loaded into the Express server for immediate access:
@@ -103,7 +55,18 @@ let documentCache = {};
  * Initialize document cache
  */
 async function initializeCache() {
-  console.error('Initializing Churchill Falls MCP supplementary document cache...');
+  console.error('Initializing Churchill Falls MCP document cache...');
+  console.error('Scanning content directory for .txt files...');
+  
+  // Dynamically scan content directory for all .txt files
+  try {
+    const files = await fs.readdir(CONTENT_DIR);
+    DOCUMENTS = files.filter(file => file.toLowerCase().endsWith('.txt'));
+    console.error(`Found ${DOCUMENTS.length} documents in content folder`);
+  } catch (error) {
+    console.error(`Error reading content directory: ${error.message}`);
+    return;
+  }
   
   let loadedCount = 0;
   let totalSize = 0;
