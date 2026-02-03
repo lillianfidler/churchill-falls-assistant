@@ -1,0 +1,71 @@
+TOTAL: 42 FILES IN CONTENT DIRECTORY
+
+NEW FILES TO ADD (Not yet in folder):
+1. Doug-Some_Questions_Jan_24_2026.txt
+2. Doug-Value_of_Water_Jan_24_2026.txt
+3. doug-The-Value-of-the-Water.txt
+4. doug-Some-Questions-for-NLH.txt
+5. quebecs-electricity-supply-problem.txt
+6. HQ_Production_July_2025_text.txt
+7. HQ-exports-electricity-price-escalation.txt
+8. HYDRO-QUEBECS-IMPORTS.txt
+9. HYDRO-QUEBECS-EXPORTS.txt
+10. Doug-Proposed_Prices_Under-MOU.txt
+11. Doug-Proposed_Projects_Under-mou.txt
+12. doug-may-assessment-of-proposed-prices-mou.txt
+13. doug-point-summary-assessment-mou-prices.txt
+14. doug-summary-video.txt
+15. LOCKE analysis of MOU CF-summary.txt
+16. Doug-video-series-video2B-summary.txt
+17. Doug-video-series-video2A-summary.txt
+18. Doug-video-series-video1-summary.txt
+19. MOU_Churchill_Falls_Dec_12_2024_summary.txt
+20. Churchill-falls-consolidated-financial-statements-2024.txt
+21. Lower-Churchill-Project-Combined-Financial-Statements-2024.txt
+22. NL-Debt-Fiscal-Sustainability.txt
+23. HQ_Action_Plan_2035_clean_text.txt
+24. Hydro-quebec-annual-report-2024.txt
+25. Churchill_Falls_Annual_Report_2024.txt
+26. Doug-video-series-video4.txt
+27. Doug-video-series-video3B.txt
+28. Doug-video-series-video3A.txt
+29. Doug-video-series-video2B.txt
+30. Doug-video-series-video2A.txt
+31. Doug-video-series-video1.txt
+32. CHURCHILL-FALLS-POWER-CONTRACT.txt
+33. history-of-churchill-falls-development.txt
+34. Understanding-Some-Financial-Concep.txt
+35. Proposed-Prices-for-Existing-Power.txt
+36. Gull_Island_Contract_2002.txt
+37. LOCKE analysis of MOU CF.txt
+38. Analyis-James-P-Feehan.txt
+39. Feehan, James P., Smallwood, Churchill Falls, and the Power Corridor through Quebec.txt
+40. History_Churchill_River_Hydro_Development_1949-2007.txt
+41. HYDRO_MOU_GNL_Jan_2025.txt
+42. MOU_Churchill_Falls_Dec_12_2024_clean_text.txt
+
+================================================================================
+DOUG MAY FILES (24 total):
+- Doug-Some_Questions_Jan_24_2026.txt (NEW)
+- Doug-Value_of_Water_Jan_24_2026.txt (NEW)
+- doug-The-Value-of-the-Water.txt
+- doug-Some-Questions-for-NLH.txt
+- quebecs-electricity-supply-problem.txt
+- HQ_Production_July_2025_text.txt
+- HQ-exports-electricity-price-escalation.txt
+- HYDRO-QUEBECS-IMPORTS.txt
+- HYDRO-QUEBECS-EXPORTS.txt
+- Doug-Proposed_Prices_Under-MOU.txt
+- Doug-Proposed_Projects_Under-mou.txt
+- doug-may-assessment-of-proposed-prices-mou.txt
+- doug-point-summary-assessment-mou-prices.txt
+- doug-summary-video.txt
+- Doug-video-series-video1.txt
+- Doug-video-series-video1-summary.txt
+- Doug-video-series-video2A.txt
+- Doug-video-series-video2A-summary.txt
+- Doug-video-series-video2B.txt
+- Doug-video-series-video2B-summary.txt
+- Doug-video-series-video3A.txt
+- Doug-video-series-video3B.txt
+- Doug-video-series-video4.txt

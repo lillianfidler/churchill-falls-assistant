@@ -1,0 +1,457 @@
+NEWFOUNDLAND AND LABRADOR DEBT, FISCAL SUSTAINABILITY AND THE CHURCHILL FALLS MOU
+Source: Presentation by Wade Locke and Doug May to the Atlantic Association of Applied Economists (Canadian Association of Business Economics), St. John's, April 15, 2025
+
+EXECUTIVE SUMMARY
+Newfoundland and Labrador faces a unique fiscal challenge: it has the highest per capita revenues, expenditures, debt, and debt servicing costs of any Canadian province. Since the oil transformation period (2006-2012), the province has run consistent deficits, accumulating a net debt of $19.4B ($32,782 per capita vs. national average of $21,000).
+The Churchill Falls MOU presents a significant opportunity for fiscal stabilization. With projected average annual revenues of $2.5B from existing Churchill Falls power over the next 50 years, the province could allocate $500M annually for 30 years to reduce per capita debt to the national average.
+However, demographic pressures (oldest population in Canada, 32.4% projected to be over 65 by 2049) will continue to strain healthcare spending and limit revenue growth potential.
+
+1. CURRENT FISCAL STATE
+KEY FISCAL INDICATORS (2023-24)
+Indicator	NL Value	National Average	NL Rank
+Revenue per capita	~$19,000	~$14,000	Highest
+Expenditure per capita	~$19,000	~$14,000	Highest
+Net debt per capita	$32,782	$20,973	Highest
+Debt charges per capita	~$2,100	~$850	Highest
+BUDGET 2025 SNAPSHOT
+    • Net Debt: $19.4 billion 
+    • Projected Deficit: $372 million 
+    • Government Position: "It was not the year for us to force going back to balance this year" - Minister Siobhan Coady 
+CRITICAL OBSERVATION: NL is a fiscal enigma - simultaneously having the highest revenues AND highest debt among provinces.
+
+2. HISTORICAL CONTEXT
+DEFICIT PATTERN SINCE 2006
+Since the oil transformation period (2006-2012), the Government of Newfoundland and Labrador has run persistent deficits:
+Revenue vs. Expenditure Trend (2007-2023):
+    • 2007: Revenues exceeded expenditures during oil boom 
+    • 2008-2012: Surplus period driven by high oil prices 
+    • 2013-present: Consistent deficits with expenditures exceeding revenues 
+    • Gap has widened significantly since 2015 
+FEDERAL VS. PROVINCIAL FISCAL BALANCE IN NL (2007-2023)
+Period	Federal Balance in NL	GNL Balance
+2007-2012	Moderate surplus	Strong surplus
+2013-2015	Increasing deficit	Growing deficit
+2016-2020	Large deficit	Large deficit
+2021-2023	Deficit declining	Persistent deficit
+Note: Rising federal net expenditures have partially supported the provincial economy through transfers to individuals, promoting household expenditures.
+
+3. COMPARATIVE PROVINCIAL ANALYSIS
+REVENUE PER CAPITA COMPARISON
+NL has maintained the highest per capita provincial revenues since the early 2000s:
+Historical Revenue Per Capita (Selected Years):
+    • 1994-95: NL ~$6,500 | Canada ~$6,000 
+    • 2007-08: NL ~$12,000 | Canada ~$8,000 (oil boom peak) 
+    • 2015-16: NL ~$11,000 | Canada ~$9,000 
+    • 2023-24: NL ~$19,000 | Canada ~$14,000 
+NL's revenues per capita exceed even Alberta's, making the debt situation more paradoxical.
+EXPENDITURE PER CAPITA COMPARISON
+Expenditure patterns mirror revenue patterns:
+Historical Expenditure Per Capita (Selected Years):
+    • 1994-95: NL ~$7,000 | Canada ~$6,500 
+    • 2007-08: NL ~$10,000 | Canada ~$8,500 
+    • 2015-16: NL ~$12,000 | Canada ~$9,500 
+    • 2023-24: NL ~$19,000 | Canada ~$14,000 
+Main expenditure categories: Healthcare and education Outcome paradox: Despite highest per capita spending, NL has the lowest outcomes in healthcare and education among Canadian provinces.
+NET DEBT PER CAPITA BY PROVINCE (2023-24)
+Province	Debt Per Capita
+Alberta	$8,830
+Saskatchewan	$11,864
+British Columbia	$12,882
+New Brunswick	$14,214
+Prince Edward Island	$15,242
+Nova Scotia	$17,526
+Manitoba	$22,214
+Quebec	$24,866
+Ontario	$26,113
+Newfoundland & Labrador	$32,782
+Canada Average	$20,973
+NL's per capita debt is 56% higher than the national average.
+
+4. DEBT BURDEN DETAILS
+THE HARBINGERS OF DEBT PROBLEMS
+A. Credit Ratings
+Average Credit Rating by Bond Rating Agencies (out of 30 points):
+Province	Rating Score
+British Columbia	27
+Saskatchewan	23
+Alberta	22
+Ontario	21
+Quebec	20
+New Brunswick	20
+Nova Scotia	20
+Manitoba	19
+Prince Edward Island	17
+Newfoundland & Labrador	15
+KEY FACT: NL has the lowest credit rating of any province, which directly impacts borrowing costs.
+B. Borrowing Costs
+Relationship Between Credit Rating and Borrowing Rate:
+    • Lower credit ratings result in higher interest rates 
+    • NL pays premium rates compared to higher-rated provinces 
+    • Correlation formula: y = 0.0001x + 0.0389 (R² = 0.6048) 
+Provincial Borrowing Rates (10-year bonds, Sept 2024):
+    • British Columbia: ~3.58% 
+    • Alberta/Saskatchewan: ~3.59% 
+    • Ontario/Quebec: ~3.60% 
+    • New Brunswick/Nova Scotia/Manitoba: ~3.62-3.64% 
+    • Prince Edward Island: ~3.68% 
+    • Newfoundland & Labrador: ~3.72% 
+C. Interest Rate Trends
+Weighted-Average Interest Rate for NL Debentures:
+Period	Interest Rate
+1985	12.31%
+1990-2000	Declining from ~8% to ~6%
+2005	4.60%
+2020	3.33%
+2024	6.67%
+2024-2027 projection	3.50%-4.60%
+CRITICAL POINT: Interest rates have declined dramatically from historical highs but are now rising again, making rollover of debt more costly.
+D. Outstanding Debt to Mature
+As of 2025-26, there is $20B in outstanding debentures:
+Average NL Outstanding Debt by Five-Year Periods:
+Period	Amount ($ millions)
+1981-1985	$179
+1986-1990	$3,825
+1991-1995	$5,026
+1996-2000	$5,835
+2001-2005	$5,909
+2006-2010	$5,460
+2011-2015	$13,231
+2016-2020	$17,855
+2021-2025	$19,071
+2026-2030	$11,179
+2031-2035	$9,498
+2036-2040	$8,550
+2041-2045	$6,270
+2046-2050	$2,250
+2051-2055	$0
+E. Debt Coming Due
+NL Outstanding Debt Due to Mature by Five-Year Periods:
+Period	Amount ($ millions)	Average/Year ($ billions)
+2026-2030	$7,100	$1.4
+2031-2035	$5,200	$1.0
+2036-2040	$900	$0.2
+2041-2045	$3,400	$0.7
+2046-2050	$900	$0.2
+2051-2055	$4,150	$0.8
+2056-2060	$900	$0.2
+In next 10 years: $12.3B in debt coming due ($1.5B per year average)
+    • 2026-30: $7.1B ($1.4B per year) 
+    • 2031-35: $5.2B ($1.0B per year) 
+MAJOR CONCERN: Large amounts of debt must be refinanced at potentially higher interest rates.
+DEBT CHARGES PER CAPITA TREND
+Debt Charges Per Capita - NL vs. Canada (1995-2024):
+Year	NL Debt Charge PC	Canada Debt Charge PC
+1995-96	~$1,700	~$750
+2000-01	~$1,850	~$850
+2007-08	~$1,500	~$750
+2012-13	~$1,600	~$700
+2015-16	~$1,650	~$800
+2019-20	~$1,850	~$800
+2023-24	~$2,100	~$850
+NL's debt servicing costs are approximately 2.5 times the national average.
+
+5. DEBT REDUCTION CALCULATION
+PATH TO NATIONAL AVERAGE DEBT
+Current Situation:
+    • All-province per capita debt: ~$21,000 
+    • NL per capita debt: $35,896 ($19.45B ÷ 541,820 people) 
+    • Gap to close: $14,896 per capita 
+Total Debt Reduction Required: $8.1 billion
+Debt Reduction Strategy:
+    • Timeline: 30-40 years 
+    • Assumed interest rate: 4.6% (provincial borrowing cost) 
+    • Annual payment required: $500 million for 30 years 
+    • Total investment needed: $11.4 billion to eliminate $8.1 billion in debt (accounting for interest) 
+Target Result: Reduce NL debt to $11.4B total, or $21,000 per capita (matching national average)
+
+6. CHURCHILL FALLS MOU FINANCIAL ANALYSIS
+PROPOSED PROJECTS AND CHANGES
+The MOU with Quebec includes:
+    1. Upgrading existing 11 turbines at Churchill Falls 
+    2. Enlarging existing structure with two new turbines 
+    3. Creation of new generating facilities at Gull Island on the Churchill River 
+    4. New transmission lines 
+    5. New price for existing power and reallocation of existing power capacity toward NL Hydro 
+EXISTING CHURCHILL FALLS POWER ALLOCATION
+MW Capacity Allocated to NLH Under MOU
+Block Type	2025	2031	2035	2041	2051	2061	2069
+Recapture Block	525	525	525	525	1,130	1,380	1,630
+Twinco Block	-	-	-	-	-	-	-
+New Recapture Rights	-	-	-	-	-	-	-
+Expiring Block 2051	-	-	-	-	-	-	-
+Expiring Block 2061	-	-	-	-	-	-	-
+Total Existing Capacity	525	525	525	525	1,130	1,380	1,630
+Growth pattern: Capacity to NLH increases significantly after 2041, reaching 1,630 MW by 2069.
+Energy Available to NLH from Existing Churchill Falls
+Year	Energy (TWh)
+2025	4.3
+2031	4.3
+2041	8.0
+2051	9.6
+2061	9.6
+2071	11.1
+2025-75 Total: 406 TWh over 50 years (24% of total NLH & HQ energy from existing Churchill Falls plant, which produces 1,674 TWh)
+Critical calculations:
+    • 2025-41: 110 TWh (27%) 
+    • 2042-75: 297 TWh (75%) 
+MW Capacity Allocated to HQ Under MOU
+Year	Capacity (MW)
+2025	4,765
+2031	4,160
+2041	3,910
+2051	3,660
+2069	3,660
+HQ's capacity decreases over time as NLH's increases.
+Energy Available to HQ from Existing Churchill Falls
+Year	Energy (TWh)
+2025	29.2
+2031	25.5
+2041	24.0
+2061	22.5
+2073	22.5
+2025-75 Total: 1,268 TWh (76% of total NLH & HQ energy from existing Churchill Falls plant)
+Critical calculations:
+    • 2025-41: 461 TWh (36%) 
+    • 2042-75: 806 TWh (64%) 
+Combined Existing Capacity Allocation
+Year	Total MW	NLH MW	HQ MW
+2025	5,290	525	4,765
+2031	4,685	525	4,160
+2041	4,435	525	3,910
+2051	4,790	1,130	3,660
+2061	5,040	1,380	3,660
+2069	5,290	1,630	3,660
+Combined existing capacity to be allocated: 5,290 MW
+REVENUE PROJECTIONS FROM EXISTING POWER
+Nominal Revenue to CF(L)Co from HQ ($ millions)
+Year	Annual Revenue	Cumulative Notes
+2025	$475	Early years
+2027	$785	
+2031	$1,845	Increasing
+2035	$3,175	
+2041	$5,960	Significant growth
+2051	$7,415	Peak period begins
+2061	$8,355	Near peak
+2075	$8,355	Sustained high revenue
+Total 2025-2075: $194.7B in nominal revenue paid by HQ to CF(L)Co
+Cumulative Present Value (2024 @ 5.822%): $33.8B
+KEY FACT: Average annual payment approximately $2.5 billion over 50-year period.
+Revenue Calculation Methodologies
+Two Different Approaches:
+    1. PVAP (Present Value of Average Prices) - NL Hydro's method 
+        ? Calculation: 5.9 cents/kWh 
+        ? Method: Average the present values of forecasted prices 
+    2. APVP (Average Present Value of Prices) - Wade Locke's method 
+        ? Calculation: 2.64 cents/kWh 
+        ? Method: Present value of average forecasted prices 
+        ? This is the relevant economic measure 
+Implied Revenue using 5.9 cents/kWh:
+    • 2025: $1.75B 
+    • 2035: $3.20B 
+    • 2045: $5.96B 
+    • 2055: $7.42B 
+    • 2065: $3.55B 
+    • 2075: $3.55B 
+Contractual Payments from MOU:
+    • 2025: $0.475B (save $2.4B vs. 5.9¢ calculation) 
+    • 2035: $2.06B 
+    • 2045: $3.20B 
+    • 2055: $5.96B (save $3.8B) 
+    • 2065: $7.42B 
+    • 2075: $7.42B 
+Total contractual nominal payments: $195B (save $3.8B vs. 5.9¢ calculation)
+Price Comparison Analysis
+Nominal Price for Energy Purchased by HQ from CF(L)Co:
+Year	MOU Implied Price (¢/kWh)	5.9¢/kWh Baseline
+2025	1.62	5.9
+2031	5.71	5.9
+2041	7.84	7.84
+2051	12.44	12.44
+2061	24.84	24.84
+2071	34.02	34.02
+2075	37.20	37.20
+Weighted average MOU price: 15.36 cents/kWh Weighted average 5.9 price: 9.69 cents/kWh Cumulative PV: $33.8B for both (at 5.822% discount rate)
+Inflation-Adjusted Analysis
+Real (Inflation-Adjusted) Payments for Existing Power:
+Contractual Payments from MOU (inflation-adjusted to 2024 dollars):
+    • 2025: $0.313B 
+    • 2035: $0.859B 
+    • 2045: $1.273B 
+    • 2055: $1.961B 
+    • 2065: $2.001B (save $1.3B) 
+    • 2075: $2.043B 
+Total: $128B in 2024 dollars (save $2.5B vs. inflation-adjusted 5.9¢)
+Inflation-Adjusted Contractual Price:
+    • 2025: 1.07¢/kWh 
+    • 2041: 5.71¢/kWh 
+    • 2051: 7.58¢/kWh 
+    • 2061: 12.42¢/kWh 
+    • 2071: 13.54¢/kWh 
+    • 2075: 13.82¢/kWh 
+Weighted average nominal price: 10.1 cents/kWh (save $2.0B) Weighted average real price: 7.97 cents/kWh
+IMPORTANT PRICING NOTES
+    1. These projections relate to existing CF power ONLY, not additional power from: 
+        ? CF extension 
+        ? Gull Island development 
+    2. Forecasted electricity prices for CF extension and Gull Island have NOT been made public 
+    3. Price escalation process exists but details not available: 
+        ? NL Hydro notes future prices may be higher than published forecasts 
+        ? Specific escalation methodology not disclosed 
+    4. APVP vs. PVAP: The Average Present Value of Prices (2.64¢/kWh) is the economically relevant measure, not the Present Value of Average Prices (5.9¢/kWh) 
+
+7. DEMOGRAPHIC CHALLENGES
+AGING POPULATION TRENDS
+Since Confederation (1949):
+    • NL has gone from the youngest median age to the oldest median age in Canada 
+    • NL now has the highest proportion of population over 65 years of age 
+FUTURE DEMOGRAPHIC PROJECTIONS (2049)
+Population Over 65 Years of Age:
+    • Newfoundland & Labrador: 32.4% 
+    • Canada: 23.6% 
+Based on Statistics Canada M6 forecast scenario
+HEALTHCARE COST IMPLICATIONS
+    • Per capita healthcare costs are already the highest in Canada 
+    • Aging population will drive healthcare costs even higher 
+    • With reduced working-age population, revenue generation capacity will decline 
+    • Same tax rates applied to older, smaller workforce = lower total revenues 
+FISCAL PRESSURE SUMMARY
+Increasing Pressures:
+    1. Rising healthcare costs (aging population) 
+    2. Declining revenue potential (shrinking workforce) 
+    3. High existing debt servicing costs 
+    4. Large debt refinancing requirements 
+Limited Flexibility:
+    • Already highest income tax rates in Canada 
+    • Limited room to increase taxes further 
+    • Expenditure outcomes (health, education) already poorest despite highest spending 
+
+8. HISTORICAL SURPLUS CONTEXT
+RARE FISCAL SURPLUSES SINCE 1949
+Since joining Canada in 1949, NL has achieved only 10 fiscal surpluses:
+6 surpluses due to oil revenues:
+    • Peak period: 2006-2012 
+    • High oil prices drove temporary surpluses 
+4 surpluses due to federal transfers:
+    • Various federal payment agreements 
+    • Example: 2019 Accord payments 
+KEY OBSERVATION: Structural deficits are the norm; surpluses require extraordinary circumstances (resource booms or federal bailouts)
+
+9. THE FISCAL ENIGMA EXPLAINED
+WHY NL IS A FISCAL PARADOX
+Simultaneous Extremes:
+    1. Highest revenues per capita - More money coming in than any other province 
+    2. Highest expenditures per capita - Spending more per person than any other province 
+    3. Highest debt per capita - Owing more per person than any other province 
+    4. Highest debt servicing costs per capita - Paying more interest per person than any other province 
+Yet Also:
+    • Lowest healthcare outcomes despite highest healthcare spending 
+    • Lowest education outcomes despite high education spending 
+THE SPENDING-OUTCOME DISCONNECT
+Main Expenditure Categories:
+    1. Healthcare 
+    2. Education 
+Evidence on outcomes:
+    • Healthcare performance metrics: Lowest among Canadian provinces 
+    • Education performance metrics: Lowest among Canadian provinces 
+The paradox: Highest input (spending) ? Lowest output (results)
+POLITICAL AND CULTURAL FACTORS
+Quote from Minister Siobhan Coady (Budget 2025):
+"In the global economic chaos caused by tariffs and changing alliances, we will be calm, strategic, steadfast, and determined. Always remember that superb sailors are made by turbulent seas."
+Also stated:
+"It was not the year for us to force going back to balance this year. Every year it is a balance of where we are with the economy."
+Perpetual Theme: "In balancing the budget and ensuring fiscal stability, if this is not the year, then we can always hope and plan for next year or the following year or the year after that."
+Cultural Pattern Since Confederation:
+    • Political culture of incurring provincial government deficits 
+    • Persistent hope that "next year" will be different 
+    • Lack of sustained commitment to fiscal balance 
+    • Limited political or electoral concern about debt levels 
+
+10. KEY TAKEAWAYS
+THE THREE MAIN CONCLUSIONS
+1. HISTORICAL LACK OF FISCAL STABILITY
+    • Historically and into the present, there has generally been a lack of success in achieving fiscal stability 
+    • Pattern of deficits since Confederation, with only brief interruptions 
+    • Cultural and political acceptance of deficit financing 
+2. NL IS A FISCAL ENIGMA
+    • Unique combination of highest revenues AND highest debt 
+    • Spending more but achieving less than other provinces 
+    • Paradoxical situation not seen in any other Canadian jurisdiction 
+3. CHURCHILL FALLS PRESENTS AN OPPORTUNITY
+    • Using existing power from CF with proposed new rate structure 
+    • Opportunity to reduce provincial government debt per capita to Canadian average 
+    • Requires discipline to allocate $500M annually for 30 years 
+    • Total CF revenues could support this while maintaining services 
+CRITICAL CONDITIONS FOR SUCCESS
+What Must Happen:
+    1. Political Will: Commitment to debt reduction over multiple election cycles 
+    2. Fiscal Discipline: Actual allocation of $500M/year to debt retirement 
+    3. Revenue Protection: Ensuring CF revenues flow to debt reduction, not new spending 
+    4. Demographic Management: Containing healthcare cost growth despite aging population 
+What Could Derail Success:
+    1. Political pressure to spend CF revenues on programs instead of debt 
+    2. Economic shocks requiring deficit spending 
+    3. Higher-than-expected interest rates on debt refinancing 
+    4. Faster-than-projected healthcare cost increases 
+THE STAKES
+If NL Succeeds:
+    • Debt per capita reduced to national average by 2055 
+    • Lower borrowing costs due to improved credit rating 
+    • Reduced vulnerability to interest rate increases 
+    • More fiscal flexibility for future challenges 
+    • Breaking the cycle of perpetual deficits 
+If NL Fails:
+    • Continued highest debt burden in Canada 
+    • Increasing debt servicing costs 
+    • Potential credit rating downgrades 
+    • Reduced capacity to respond to crises 
+    • Intergenerational burden on shrinking population 
+
+11. UNANSWERED QUESTIONS
+INFORMATION NOT YET PUBLIC
+    1. CF Extension Pricing: 
+        ? What will power from the upgraded/enlarged Churchill Falls facility cost? 
+        ? Revenue projections not disclosed 
+    2. Gull Island Pricing: 
+        ? What will power from new Gull Island facility cost? 
+        ? Financial analysis not available 
+    3. Price Escalation Details: 
+        ? Specific methodology for price increases over time 
+        ? Trigger mechanisms and formulas 
+    4. Total Project Costs: 
+        ? Capital costs for CF upgrades 
+        ? Capital costs for Gull Island development 
+        ? Transmission infrastructure investments 
+    5. Risk Allocation: 
+        ? How are construction cost overruns handled? 
+        ? What happens if projected power prices don't materialize? 
+        ? Environmental or regulatory delays 
+CRITICAL ANALYSIS NEEDED
+Questions for Further Investigation:
+    1. Why do highest expenditures produce lowest outcomes? 
+        ? System inefficiencies? 
+        ? Geographic challenges and costs? 
+        ? Management and governance issues? 
+        ? Demographic factors? 
+    2. Is $500M/year politically feasible? 
+        ? Historical spending patterns suggest challenges 
+        ? Electoral pressures for program spending 
+        ? Multi-decade commitment required 
+    3. What if CF revenues are lower than projected? 
+        ? Sensitivity analysis needed 
+        ? Alternative scenarios 
+        ? Contingency plans 
+    4. Can healthcare costs be contained? 
+        ? Given aging demographics 
+        ? International best practices 
+        ? System reform requirements 
+
+CONCLUSION
+Newfoundland and Labrador stands at a fiscal crossroads. The province's unique position as having both the highest revenues and highest debt per capita in Canada reflects decades of spending patterns that have not been matched by fiscal discipline or outcomes.
+The Churchill Falls MOU represents a potentially transformative opportunity—projected revenues of approximately $2.5B annually over 50 years could enable systematic debt reduction while maintaining services. However, success requires breaking from historical patterns of deficit financing and demonstrating sustained political will to allocate $500M annually to debt retirement for 30 years.
+The demographic reality—becoming Canada's oldest population by 2049—will place additional strain on healthcare spending and reduce revenue-generation capacity. This makes the current opportunity even more critical: the province must address its debt burden now, while CF revenues provide the means, before demographic pressures make the challenge even more difficult.
+The question remains: Will the political culture that has historically accepted deficits embrace the discipline required for fiscal sustainability? The answer will determine whether NL can transform its fiscal trajectory or continue its pattern of perpetual hope for "next year."
+
+END OF DOCUMENT
+Source: Wade Locke and Doug May, "NL Debt, Fiscal Sustainability and the Churchill Falls MOU Initiatives," Presentation to Atlantic Association of Applied Economists, St. John's, April 15, 2025
+
+

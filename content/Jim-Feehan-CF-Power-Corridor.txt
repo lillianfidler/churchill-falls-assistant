@@ -1,0 +1,1046 @@
+Acadiensis: Journal of the History of the Atlantic Region
+
+Smallwood, Churchill Falls, and the Power Corridor through Quebec
+Author(s): JAMES P. FEEHAN
+Source: Acadiensis, Vol. 40, No. 2 (SUMMER/AUTUMN-ÉTÉ/AUTOMNE 2011), pp. 112-127
+Published by: Acadiensis: Journal of the History of the Atlantic Region
+Stable URL: https://www.jstor.org/stable/41803321
+Accessed: 23-08-2018 15:13 UTC
+JSTOR is a not-for-profit service that helps scholars, researchers, and students discover, use, and build upon a wide
+range of content in a trusted digital archive. We use information technology and tools to increase productivity and
+facilitate new forms of scholarship. For more information about JSTOR, please contact support@jstor.org.
+Your use of the JSTOR archive indicates your acceptance of the Terms & Conditions of Use, available at
+https://about.jstor.org/terms
+
+Acadiensis: Journal of the History of the Atlantic Region is collaborating with JSTOR to
+digitize, preserve and extend access to Acadiensis
+
+This content downloaded from 99.253.56.188 on Thu, 23 Aug 2018 15:13:04 UTC
+All use subject to https://about.jstor.org/terms
+
+Smallwood, Churchill Falls, and the
+Power Corridor through Quebec
+THE PERSISTENT ANIMOSITY IN NEWFOUNDLAND towards Quebec over
+the 1969 Churchill Falls contract is well known.1 That contract is between Hydro-
+
+Quebec and the Churchill Falls Labrador Corporation (CFLCo); the former is a
+Quebec Crown corporation and the latter was a private sector entity at the time (but
+has been under Newfoundland government majority ownership since 1974). What is
+
+involved is the sale by CFLCo of a huge amount of electricity to Hydro-Quebec
+under increasingly onerous terms until 2041 . But this essay is not about those terms.2
+
+Rather, it is about one theory that has been put forward to explain why those terms
+
+turned out to be so one-sided. Specifically, there is a general perception in
+Newfoundland that the federal government failed the province by not intervening to
+permit the transmission of electricity from Churchill Falls across Quebec to markets
+elsewhere.
+
+This indictment of the federal government has surfaced in a number of forums.
+In an extensive study, for instance, of the evolution of federal government electricity
+
+policy and its relationship to the Churchill Falls negotiations during the 1960s, Jason
+Churchill concluded: "The Newfoundland government was unable to convince the
+federal government to invoke relevant sections of the British North America Act
+(BNA Act) to secure access through Quebec territory."3 In 2003, Newfoundland's
+provincial Royal Commission on Renewing and Strengthening Our Place in Canada
+agreed with that perspective. In its final report, the commission stated:
+
+The federal government placed Hydro-Québec in a monopolistic
+position during the Churchill Falls negotiations of the 1960s by not
+enacting legislation that would have allowed for a power corridor
+
+through Québec. Without such legislation, negotiations on the
+Churchill Falls project took place in a situation in which virtually
+
+all of the power and energy had to be sold to Hydro-Québec.
+Consequently, it was in a position to dictate a low price, an
+insignificant recall of power for use in Newfoundland and Labrador
+and an unprecedented time frame (65 years) governing the power
+contract.4
+
+1 Herein "Newfoundland" refers to the Province of Newfoundland and Labrador. I am grateful to
+Melvin Baker, Douglas M. Brown, Christopher Dunn, Stephen Tomblin, and three anonymous
+referees for helpful comments. Any errors or omissions remain my responsibility solely.
+2 For a recent perspective in that regard, see James P. Feehan and Melvin Baker, "The Renewal
+Clause in the Churchill Falls Contract," Dalhousie Law Journal 30, no.l (Spring 2007): 207-57 .
+
+3 Jason L. Churchill, "Pragmatic Federalism: The Politics Behind the 1969 Churchill Falls
+Contract," Newfoundland Studies 15, no. 2 (Fall 1999): 215.
+4 Report of the Royal Commission on Renewing and Strengthening Our Place in Canada (St.
+John's, NL: The Queen's Printer, 2003), 123.
+
+James P. Feehan, "Smallwood, Churchill Falls, and the Power Corridor through
+
+Quebec," Acadiensis XL, no. 2 (Summer/Autumn 2011): 112-27.
+
+This content downloaded from 99.253.56.188 on Thu, 23 Aug 2018 15:13:04 UTC
+All use subject to https://about.jstor.org/terms
+
+Smallwood, Churchill Falls , and Quebec 113
+Additionally, there is a long-standing belief that during the 1960s a planned
+Newfoundland government request to the federal government for a power corridor
+was thwarted by a personal appeal from Canada's prime minister not to do so for the
+good of national unity. Former premier Danny Williams put it as follows: "At the
+time of the Upper Churchill contract, the Prime Minister of the day told our Premier
+that the price of doing otherwise could have been civil unrest in Quebec. Sounds
+extreme. But the reality is that we made the sacrifice for the sake of national unity."5
+
+Given the significance of the Churchill Falls contract in both Newfoundland's
+recent history and its political landscape, and considering the substantial amount of
+
+archival material that is available, it is surprising that there has been so little
+scholarly research on the validity of these claims of federal government complicity.
+That research void was the impetus for this paper. To that end, this research note
+addresses two key questions. First, did the Newfoundland government ever call for
+federal intervention under the constitution? Secondly, did the prime minister of
+Canada actually undercut such a request?
+
+Background and context
+Due to the efforts of Premier J.R. (Joey) Smallwood, during the early 1950s a group
+of major financial and industrial interests formed a consortium known as the British
+
+Newfoundland Corporation (Brinco).6 Smallwood had lobbied in the United
+Kingdom for such a group to be the catalyst for economic development in
+Newfoundland. At the time Newfoundland, like Quebec, had a province-building
+agenda - albeit with different strategies. The former sought from outside what it
+
+lacked internally - expertise and capital - whereas the latter drew from the
+indigenous strength of the Quiet Revolution, which provided new Québécois
+
+political leadership, technical expertise, and institutions.
+As incentives, Brinco received extensive land and mineral rights. One asset with
+
+great hydro-electric potential was the waterfalls on the upper portion of the
+
+Churchill River, known as the Hamilton River at the time. The falls were located in
+
+the then very isolated and unpopulated western Labrador region of the province. The
+cost of developing that hydro-electric project was so huge that Brinco would need a
+customer willing to make a long-term commitment to purchase a substantial amount
+of the energy before the project was built. Otherwise, lenders would not be willing
+to provide financing. Initially, there were three main possibilities: exporting to
+Ontario, exporting to Quebec, or selling to the energy-intensive aluminum industry.7
+These were explored in the early-to-late 1950s, but little progress was made.
+
+In 1958, Brinco created CFLCo as a subsidiary. It was 80 per cent owned by
+
+Brinco while Quebec-based Shawinigan Engineering Company held the remaining
+
+20 per cent. CFLCo's mandate was to develop Churchill Falls. CFLCo officials
+generally held positions in Brinco as well, so references to either are generally
+interchangeable. CFLCo made efforts to attract Hydro-Quebec as a buyer, and in
+
+5 Premier Danny Williams, Speech to the Economic Club of Toronto, 3 May 2007,
+www .releases .gov .nl .ca/releases/speeches/2007/premiermay 3 .htm .
+
+6 A far more extensive and detailed account is available in Philip Smith, Brinco: The Story of
+Churchill Falls (Toronto: McClelland and Stewart, 1975).
+7 Smith, Brinco , 64.
+
+This content downloaded from 99.253.56.188 on Thu, 23 Aug 2018 15:13:04 UTC
+All use subject to https://about.jstor.org/terms
+
+114 Acadiensis
+
+1961 the latter did consider an offer but opted for development of a new sou
+within Quebec. However, new possibilities arose the following year. In Septem
+
+1962, in the speech from the throne, the federal government announced that it woul
+
+permit long-term contracts for exports of electricity from Canada. This was
+encourage major power projects that were too large for domestic markets to abs
+For CFLCo and Small wood this new federal export policy was welcome new
+made the United States market an option for the first time, and the Consolid
+Edison Company of New York was soon found to be interested.
+Based on these new prospects, CFLCo and Hydro-Quebec discussed various sal
+configurations. One early idea was for CFLCo to build a transmission line thro
+Quebec to New York State. Electricity in excess of Quebec's needs would be
+under long-term contract to Consolidated Edison, a rental fee for the route wou
+paid to Quebec, and Quebec would have an option to purchase the transmission
+
+Smallwood discussed this approach with Quebec Premier Jean Lesage on
+December 1962, and emphasized that Quebec would "remain the boss" over
+
+transmission line within its borders.8 Smallwood was, therefore, seeking Queb
+approval for crossing that province with the transmission line. He was far fro
+presuming an automatic right-of-way, was not demanding one, and was me
+suggesting a means of development that Lesage might find attractive.9
+
+In January 1963, Lesage indicated his preferred approach at a meeting w
+
+Brinco chairman H. Greville Smith. He told Smith that he wanted Hydro-Queb
+to buy the power at the provincial border and re-sell any surplus.10 The Queb
+premier publicly reiterated his position in the Quebec legislature on 30 April 1
+
+He stated that Hydro-Quebec would buy all the power at the Newfoundl
+Quebec border, and export whatever amount of it was surplus to Quebec
+needs." Apparently, Smallwood and the Brinco/CFLCo leadership were agre
+to this approach. In August 1963, the president of Hydro-Quebec, Jean-Cla
+Lessard, told A.W. Southam, Brinco's president, that Lesage was convinced
+Smallwood and others had "firmly agreed that Hydro-Quebec would alone
+
+with Con. Ed. and other potential purchasers of power surplus to Quebec's nee
+Lessard went on to suggest that this would not be a problem for CFLCo as lon
+
+Hydro-Quebec paid CFLCo in enough US dollars to allow it to meet its US
+
+obligations arising from the project. Southam replied to Lessard: "I w
+
+personally be surprised if this problem developed into a stumbling block.
+
+Implicit in this arrangement was the notion that Hydro-Quebec would build, o
+and operate the transmission lines from the border across Quebec. That was m
+
+8 Smith, Brinco, 151.
+
+9 Lesage did not make any commitment at that meeting with Smallwood. Smith, in Brinco (151
+suggests that this was because 1 1 days later, on 29 December, Lesage would be announcing
+nationalization of all private electricity companies in Quebec and the take-over of Shawini
+interest in CFLCo.
+
+10 "Note on Discussion between Premier Lesage and H. Greville Smith, Quebec City - January
+29th, 1963," Newfoundland and Labrador Hydro Corporation Records, GY-116, Premier of
+Quebec, 1963, vol. VI, The Rooms Provincial Archives Division (TRPAD).
+11 Smith, Brinco, 157.
+
+12 "Note by A WS on a talk with J-C Lessard on Tuesday 6 August 1963," CFLCo Papers, MG 28,
+III, vol. 37, file 8, Library and Archives Canada (LAC).
+
+This content downloaded from 99.253.56.188 on Thu, 23 Aug 2018 15:13:04 UTC
+All use subject to https://about.jstor.org/terms
+
+Smallwood , Churchill Falls , and Quebec 115
+
+explicit in early September 1963 in Clause 12 of CFLCo's first presentation of a
+draft proposed letter of intent to Hydro-Quebec.13
+Talks on finalizing the letter of intent would take more than three years, and they
+
+turned out to be very difficult negotiations. They were also complicated by politics.
+
+One such problem was Smallwood's anger over the decision by the Quebec
+
+government to compel Shawinigan Engineering to sell its shares in CFLCo as part
+of that province's 1962 nationalization plan for its private electricity utilities; those
+shares were vested with Hydro-Quebec. Another touchy political matter was the
+border between Newfoundland and Quebec in the Labrador Peninsula; suggestions
+by Lesage to link changes in that boundary to the letter of intent created very public
+problems between him and Smallwood from time to time.14 Finally, Hydro-Quebec
+
+was required to have Quebec government authorization before it could sign any
+
+agreement. This brought the Quebec premier closely into the commercial
+
+negotiations and thus politicized the process for Hydro-Quebec more so than for
+
+CFLCo, which was not a Crown corporation and did not need Newfoundland
+authorization to sign an agreement.
+The search for alternatives
+
+In July 1964 the negotiations came to a particularly difficult impasse. The price of
+electricity was the key problem. CFLCo could not bring its price down to what was
+being demanded. At the same time, the two premiers were on poor terms. On 13
+April 1963 Smallwood was questioned in the provincial legislature about whether he
+had had discussions with Quebec about the border. He replied that an exchange of
+territory had been discussed, but insisted that it was "no more than a thought" and
+that he had told Lesage that this matter and the Churchill Falls development were
+separate matters.15 Then, on 23 April in the Quebec legislature, Lesage announced
+
+that he expected to soon present a resolution on a territorial exchange. No such
+resolution was ever presented, but the whole episode was embarrassing for
+Smallwood and further worsened the relationship with Lesage.16
+
+Considering the political situation and the commercial terms demanded by
+Hydro-Quebec, Brinco determined that the conditions needed to reach an agreement
+did not exist. It decided that other alternatives should be explored and that, in light
+of interest expressed by Ontario Hydro and the continuing interest of Consolidated
+Edison, there should be "an attempt to secure permission to transmit the power
+
+13 "Proposal by Hamilton Falls Power Corporation Limited to the Quebec Hydro-Electric
+Commission" (draft of 3 September 1963), CFLCo Papers, MG 28, III 73, vol. 37, file 2.04.003,
+LAC. Note that CFLCo was initially known as the Hamilton Falls Power Corporation, but the
+name was changed when the Hamilton River was renamed the Churchill River.
+14 At one point the idea was to swap portions of southern Labrador for Quebec territory adjacent to
+northern Labrador. This border issue turned nasty at times, with the two premiers trading barbs
+through the media. Smith, in Brinco , provides extensive background on the timing and nature of
+those clashes.
+
+15 "Smallwood-Lesage Talks: May Swap Territory With Quebec," Moncton Daily Times , 14 April
+1964.
+
+16 Debates of the Quebec Legislative Assembly, 3rd-Session, 27th Legislature, Wednesday, 8 July
+1964, vol.1 , no. 103, p. 4523, CFLCo Papers, MG 28, III, 73, vol. 37, file 2.04.003, LAC.
+
+This content downloaded from 99.253.56.188 on Thu, 23 Aug 2018 15:13:04 UTC
+All use subject to https://about.jstor.org/terms
+
+116 Acadiensis
+
+across the Province of Quebec."17 Negotiations on a sale agreement with Hydr
+
+Quebec were considered to be at an end. Any talks now would be limited
+
+obtaining a route through Quebec.
+At this time Brinco's chairman and chief executive officer was Robert Win
+who had been a Liberal cabinet minister in the 1950s. Following Brinco's decisi
+to explore other alternatives, he wrote to his former Liberal Party colleague and
+prime minister, Lester Pearson, in order to give an update on the situation. Win
+confirmed that negotiations had ended and mentioned the possible alternative
+
+transmitting power through Quebec, either with Hydro-Quebec building
+
+operating the line under contract or with CFLCo building its own line, or goin
+around Quebec entirely. Winters made no formal request and his letter closed
+saying that he would welcome a chance to discuss any suggestions that Pea
+might have as to how to proceed.18
+The next month two of Brinco's directors met with Lesage to review the situa
+and gauge his position. When they asked him about the possibility of a right-ofthrough Quebec, Lesage "replied very emphatically that he would never agree to
+a proposal."19 This response appears to be inconsistent with the Section 92.10(a) o
+British North America Act of 1867, now known as the Constitution Act, 1867.
+states that in any province, the federal government has jurisdiction over "Lin
+
+Steam or other Ships, Railways, Canals, Telegraphs, and other Works
+
+Undertakings connecting the Province with any other or others of the Province
+
+extending beyond the Limits of the Province." Yet, Lesage's refusal to agree to a righ
+
+of-way through his province was hardly vacuous. He also had constitutional card
+play. Under Section 92.13 of the Constitution Act, property rights within a prov
+fall under provincial jurisdiction. Thus, at the practical level, without the Que
+government agreeing to use its power of expropriation it would have likely b
+impossible or prohibitively expensive for CFLCo to acquire all the land needed fo
+transmission lines. Additionally, Quebec's position at the time was that electri
+
+transmission was under provincial jurisdiction.21 Indeed, in the early 1960s the feder
+
+government had not exerted its authority with respect to interprovincial power
+and provincial governments did dominate the field. The National Energy Board (
+had only been created by the federal government in 1959, at which time the NEB
+had been "deliberately designed to avoid the assertion of inter-provincial contro
+electricity by the Board, because of provincial susceptibilities."22
+
+17 "Minutes of the Thirty-ninth Meeting of the Board of Directors of Brinco," 15 July 1964, C
+
+Papers, MG 28, III, 73, vol. 37, p. 6, LAC.
+18 Robert Winters to L.B. Pearson ("Personal"), 29 July 1964, Robert Winters Papers, MG 32
+LAC.
+
+19 "Memorandum of a Meeting between Premier Lesage and Messrs Bourget and Monast at
+Prime Minister's Office, On Thursday, 27th of August 1964," CFLCo Papers, MG 28, III, 73,
+
+37, file 2.04.003, LAC.
+20 Canada, Department of Justice, A Consolidation of The Constitution Acts 1867 to 1982 (Ottawa,
+ON: Supply and Services Canada, 1983), 32.
+21 Churchill, "Pragmatic Federalism," 224.
+22 R.G. Robertson, "Memorandum for the Prime Minister, Action by the Federal Government with
+regard to electric power," 15 January 1965, Lester Pearson Papers, MG 26, N3, vol. 206, file 558.1
+Conf., p. 1 , LAC.
+
+This content downloaded from 99.253.56.188 on Thu, 23 Aug 2018 15:13:04 UTC
+All use subject to https://about.jstor.org/terms
+
+Smallwood , Churchill Falls , and Quebec 117
+Despite this jurisdictional ambiguity, the federal government did possess a tool to
+settle the matter. It was Section 92.10 (c) of the Constitution Act, which gives the
+Parliament of Canada the authority to override provincial governments in areas of
+exclusive provincial jurisdiction when it comes to "Such Works as, although wholly
+situate within the Province, are before or after their Execution declared by the
+Parliament of Canada to be for the general Advantage of Canada or for the Advantage
+of Two or more of the Provinces."23 The use of Parliament's declaratory power in an
+area that had been conceded to the provinces up to that time, however, would likely
+have angered a number of provincial governments and particularly provoked Quebec.
+Still, it was an option to which the federal government was not totally blind. In May
+of 1964, the clerk of the Privy Council advised Pearson that in any effort to help
+resolve the Churchill Falls impasse he should not refer to constitutional action, not
+even to say that the federal government did not intend to use it, because the mention
+of it might be interpreted as an implicit threat by Quebec and because the government
+
+might have to turn to it "as a last resort and therefore should not be given away in
+advance."24 And, around this time, the federal government was also doing some related
+
+technical investigation. Specifically, following a discussion between the chairman of
+
+the NEB and the federal minister of Trade and Commerce, the NEB studied the
+economic and engineering feasibility of the federal government developing the
+
+Churchill Falls project itself in a possible scenario where 92.10(c) was invoked.25
+Where did Smallwood stand in all of this? According to Philip Smith in Brinco : The
+Story of Churchill Falls , the negotiations were deteriorating during the spring of 1964
+and Brinco's Robert Winters had a conversation with federal Minister of Finance Walter
+
+Gordon.26 Gordon said that as an agreement had become more unlikely, he expected
+that Brinco might have proposed that the federal government build the line across
+Quebec and buy the power from Brinco. Winters replied by saying Quebecers would
+never tolerate such action and that this was an impractical approach. More interestingly,
+
+Winters recounted that conversation to Smallwood who responded by dismissing the
+idea entirely, telling Winters that he would be opposed to such action in Quebec just as
+
+he would if it were contemplated for Newfoundland.27 This view is consistent with
+Smallwood's memoirs in which he writes: "Property and civil rights, under Canada's
+written constitution, are of exclusive provincial jurisdiction. Accordingly, Quebec
+would be within its rights to forbid the use of its soil for a transmission line."28
+
+23 Department of Justice, Consolidation of The Constitution Acts , 32.
+
+24 R.G. Robertson, "Memorandum for the Prime Minister: Hamilton Falls," 26 May 1964, Lester
+Pearson Papers, MG 26, N3, vol. 80, file 3.31 .2.02 Winters, LAC.
+25 The letter concluded that federal government development of the project appeared to be feasible
+in terms of engineering and economics. See R. Howland, vice-chairman of the NEB, to Mitchell
+Sharp, federal minister of Trade and Commerce, "Development of Churchill (Hamilton) Falls as
+
+a Federal Government Project," 25 May 1965, RG20, Department of Trade and Commerce,
+Mitchell Sharp, vol. 1525, file Development of Hamilton Falls, LAC.
+26 Gordon was familiar with the negotiations. Earlier in the year. Winters had written him to
+advocate for the exemption of CFLCo from federal corporate tax so that a lower price could be
+offered to Hydro-Quebec; see Robert Winters to Walter Gordon, 12 February 1964, Walter
+Gordon Papers, MG 32, B44, vol. 21 , Taxation, 1963-65, LAC.
+27 Smith, Brinco, 183.
+
+28 Joseph R. Smallwood, / Chose Canada: The Memoirs of the Honourable Joseph R. " Joey "
+Smallwood (Toronto: Macmillan of Canada, 1973), 454.
+
+This content downloaded from 99.253.56.188 on Thu, 23 Aug 2018 15:13:04 UTC
+All use subject to https://about.jstor.org/terms
+
+118 Acadiensis
+
+Nevertheless, Small wood bitterly resented Quebec's refusal to allow any power
+from Churchill Falls to be transmitted across that province for sale to customers
+elsewhere.29 He had a solution, but it did not involve the use of Parliament's
+
+declaratory power. It was an entirely different approach. Small wood strongly
+advocated that Quebec territory be bypassed altogether. To that end, he favoured the
+so-called Anglo-Saxon or Maritime route, which would use subsea cables to deliver
+
+power to the island of Newfoundland and then to the Maritimes Provinces and
+subsequently to the US northeast. As negotiations dragged on, and probably also
+motivated by the boundary issues raised by Lesage, Smallwood's government and
+Brinco funded a preliminary study of this option. Its results were encouraging
+enough for the Newfoundland government to pay for a more extensive investigation
+
+and, by May of 1964, Small wood was making public statements about the
+attractiveness of the Maritime route.30 Over the remaining months of 1964,
+Smallwood continued to push this alternative and was quite explicit about his
+resentment of Quebec. In one interview, he stated that Newfoundland was now free,
+
+"having escaped the clutches of Quebec," and went on to say that he viewed
+Lesage 's proposals for a sale of power to Quebec "with contempt" and ruled out any
+negotiations with Quebec.31 As he put it to Edmund de Rothschild, Brinco's deputy
+chairman, only if this alternate route proved impractical would he "crawl on his
+belly" back to Quebec.32
+By early 1965, it was clear that Smallwood's cherished Maritime route was not
+practical. It was technologically feasible but uneconomic.33 Brinco/CFLCo ruled it
+out and refocused on either going through Quebec or pursuing a sale agreement with
+Hydro-Quebec. The federal government was sounded out about possible relief from
+federal corporate income tax, and attempts were made to reconcile Smallwood with
+
+the idea of dealing with Quebec. With respect to the latter, with Smallwood's
+agreement, in February Winters began quietly assessing Quebec's willingness to
+discuss allowing power across its territory for sale elsewhere.34 In addition to
+Winters 's attempts to bring Smallwood on side, the federal government came into
+the picture. On 26 February 1965, Smallwood met in Ottawa with Prime Minister
+
+Pearson and two federal cabinet ministers, Walter Gordon and Jack Pickersgill
+(whose parliamentary seat was in Newfoundland). In his daybook, Smallwood wrote
+
+29 Smallwood did not place much importance on whether CFLCo would actually own the
+transmission lines. This was because he recognized that the Quebec government could always
+expropriate them.
+
+30 "Smallwood Says Cable Feasible," Montreal Star , 12 May 1964.
+31 "Hydro Line in Spring Joey Says," Montreal Star , 28 November 1964.
+32 "Memorandum of a meeting with J.R. Smallwood," attached to Edmund de Rothschild to Robert
+Winters, 26 October 1964, Newfoundland and Labrador Hydro Corporation Records, GY113,
+
+Premier 1964, TRP AD.
+33 "Review of pertinent considerations on alternates for the development of Hamilton Falls Power,"
+
+January 1965, CFLCo Papers, MG 28, III, 73, vol. 46, file 12.400.201 , LAC.
+34 Winters assured Smallwood that he would act "informally and with the utmost delicacy," and
+would avoid making direct overtures to the Quebec government; see Robert Winters to Hon. J.R.
+Smallwood, 3 February 1965, Joseph R. Smallwood Papers, Collection 285, file 14.06.105, Centre
+
+for Newfoundland Studies Archive at Queen Elizabeth II Library, Memorial University of
+Newfoundland (CNSA).
+
+This content downloaded from 99.253.56.188 on Thu, 23 Aug 2018 15:13:04 UTC
+All use subject to https://about.jstor.org/terms
+
+Smallwood , Churchill Falls , and Quebec 119
+
+that during the meeting Pearson and Gordon told him that Canada was anxious to
+see the development of Churchill Falls. Smallwood's memoir and daybook do not
+mention any discussion of the use of Parliament's declaratory power at that time, but
+he does record that the next day he phoned Winters to come to St. John's for talks.35
+On 10 March, following Smallwood's invitation, Winters met with Smallwood
+and his cabinet and argued for a return to negotiations with Hydro-Quebec.36 After
+that meeting, Smallwood announced in the House of Assembly that Brinco and the
+provincial government were in agreement. In his statement Smallwood said that
+there would be transmission to the island part of the province, but he did not mention
+
+a link to the Maritimes. He simply said that Brinco would investigate the most
+economic way of transmitting power to other provinces. Thus, without admitting it
+explicitly, Smallwood was no longer ruling out a Quebec deal. Accordingly, on 1
+
+May 1965, Winters made a proposal to Hydro-Quebec to return to negotiations
+based on either an arrangement to sell all of the power through Quebec if it did not
+
+want to purchase any of it or a direct sale agreement in which CFLCo would be
+allowed to transmit some power across Quebec for sale to other customers.37
+While Hydro-Quebec and CFLCo negotiated, the month of May was fraught with
+
+very public disagreements between Lesage and Smallwood. Smallwood had
+
+announced publicly that a new deal would entail sales to customers other than
+Quebec, but Lesage countered this. He asserted that Quebec would never permit
+anyone to build a transmission line or let others transport electricity from Churchill
+Falls through Quebec. Speaking to the media, the Quebec premier put his position
+as follows: "The absolute first condition since the beginning of negotiations, and this
+has never changed, is that Hydro-Quebec shall become the owner of all electricity
+from Churchill Falls that travels through the Province of Quebec at its entry point
+into the Province of Quebec. We will negotiate on no other ground than this."38 It is
+
+worthwhile to note, however, that this position was inconsistent with the
+Constitution Act. In particular, Section 121 states "All Articles of the Growth,
+Produce, or Manufacture of any one of the Provinces shall, from and after the Union,
+be admitted free into each of the other Provinces."39 Instead, Lesage was asserting
+that if there was a transmission line in place to the border then Churchill Falls power
+would not be admitted free into Quebec; it had to be sold to Hydro-Quebec.40
+
+35 Smallwood, I Chose Canada , 461 .
+36 Technically, Winters did not need the permission of the Newfoundland government to return to
+negotiations; but there would have been enormous practical difficulties in proceeding without
+
+Smallwood's approval. The project was in Newfoundland and subject to its provincial laws. At
+times, Smallwood had even threatened Brinco with expropriation; see Smallwood, / Chose
+Canada , 467.
+
+37 Robert Winters to The President and Commissioners, Quebec Hydro-Electric Power Commission,
+1 May 1965, Supreme Court of Newfoundland, Court of Appeal, 1983 no. 120, Record Submitted
+on Behalf of the Second Defendant-Respondent, Quebec-Hydro Electric Commission, vol. I, tab
+25, pp. 206-9.
+38 "Brinco Seizure by Smallwood Quebec Rumor," Globe and Mail , 5 May 1965.
+39 Department of Justice, Consolidation of The Constitution Acts , 43.
+40 Following the breakdown in negotiations in 1964, Winters pointed out to Pearson that Lesage s
+position was contrary to Section 121; see Robert Winters to L.B. Pearson, 10 September 1964,
+Lester Pearson Papers, MG 26, N3, vol. 80, file 3.13.2.02, LAC.
+
+This content downloaded from 99.253.56.188 on Thu, 23 Aug 2018 15:13:04 UTC
+All use subject to https://about.jstor.org/terms
+
+120 Acadiensis
+
+Lesage's statement was also much to the chagrin of Small wood, who understood
+that Winters's re-opening of negotiations with Hydro-Quebec was based on th
+principle that CFLCo would be permitted to transmit some power through Quebec
+
+for sale to customers elsewhere. Small wood was further aggravated some days later
+when Lesage stated publicly that he wanted an exchange of territory before he would
+
+authorize any final commercial agreement; Smallwood responded that he woul
+
+never tolerate any change to the provincial border.41
+Everything came very close to breaking down in mid-May. On 14 May Winters
+wrote to Smallwood, advising him that an agreement was near. Winters also informe
+Smallwood that Lesage would be telephoning him in a few days; the implied topic wa
+the border. The Newfoundland premier immediately replied with a lengthy and very
+
+angry letter in which he chided Winters for deviating from Smallwood's ow
+understanding of Brinco's negotiating position. Smallwood's letter went on to denounce
+
+Lesage's recent public statements, making clear that Lesage should not contact him.42
+Prospects were bleak at this point, but a flurry of activity followed. Winters
+
+immediately telephoned Smallwood to allay his fears of a sell-out. The next da
+Lesage made a phone call to Smallwood, a call that the Newfoundland premier
+
+described as conciliatory.43 Thereafter, more communications followed involving
+these and other players, including federal cabinet ministers. Everyone gave ground.
+
+Lesage agreed to back off on the border issue; it was replaced with the idea of
+
+allowing Quebec some access to the headwaters of some rivers.44 Winters reassure
+Smallwood that CFLCo's profits and Newfoundland revenues and other interests
+were not being sacrificed in the new arrangements.45 Smallwood accepted the notion
+of a sale of all the power at the border, which made the issue of Lesage's conflict
+with Section 121 moot. Additionally, the federal government provided a financial
+
+incentive; it agreed to make corporate income tax concessions that would allow
+
+CFLCo to offer an even lower price to Hydro-Quebec.
+With a consensus taking shape, Smallwood met with Lesage on 7 June and then
+proceeded to Ottawa for a meeting with Pearson. He informed the prime minister
+that all was agreed. In consultation with Pearson and Pickersgill, Smallwood wrote
+a letter to Pearson to confirm that everything had been resolved.46 Smallwood's
+letter was dated 7 June 1965 47 The next day, probably reflecting more harmoniou
+
+41 "Labrador Land Trade Holds Key," Montreal Star , 13 May 1965.
+
+42 J.R. Smallwood to Robert Winters, 15 May 1965, Newfoundland and Labrador Hydro
+Corporation Records, GY-1 13, Premier 1964-66, TRPAD.
+
+43 Smallwood, / Chose Canada , 463.
+
+44 The five rivers in question have their headwaters in southern Labrador but flow south through
+Quebec's North Shore. To develop their hydro-electric potential, Hydro-Quebec needed access to
+the headwaters. Ultimately, there was no formal agreement on this matter. The issue appears to
+have receded as negotiations moved from the letter of intent to a final contract.
+45 Smallwood's concern was that if Hydro-Quebec took all the power then it would be able to sell
+whatever was surplus to its needs to other markets at a substantial profit. Smallwood wanted
+
+CFLCo to share in that profit because Newfoundland revenues from Churchill Falls were
+
+proportional to CFLCo's profits.
+46 Smallwood, I Chose Canada , 464.
+47 J.R. Smallwood to prime minister, 7 June 1965, Lester Pearson Papers, MG 26, N3, vol. 205, file
+552, LAC.
+
+This content downloaded from 99.253.56.188 on Thu, 23 Aug 2018 15:13:04 UTC
+All use subject to https://about.jstor.org/terms
+
+Smallwood, Churchill Falls , and Quebec 121
+relations at the commercial level, Hydro-Quebec sent a complete draft of a letter of
+intent to Brinco for consideration.48 In July the federal government announced there
+would be tax rebate for private electric utilities, which was the tax policy change that
+
+Brinco had advocated for CFLCo. Thus, by the summer of 1965, the political
+conflicts appeared resolved and the commercial negotiations looked promising.
+It is important to emphasize that throughout the acrimony of the preceding 14
+months or so, the Newfoundland government had made no request for the use of
+
+Parliament's declaratory power. The idea of doing so seems to have been far
+
+removed from Small wood's thinking during this time. Throughout this period and
+earlier, he had not been shy in making public comments about the project, Quebec,
+Brinco, the border, exports beyond Quebec, Quebec cabinet ministers such as René
+
+Lévesque, the Maritime route, and Lesage, but he made no mention of the
+declaratory power.49 His reaction to Winters 's conversation with Gordon about
+approaching the federal government to build a line across Quebec, and his opinion
+about provincial jurisdiction over property rights, imply that Smallwood did not see
+that approach as having any merit at the time. The next year, however, things
+changed.
+
+The Smallwood gambit
+Despite the positive atmosphere of June 1965, negotiations to finalize an agreement
+on the letter of intent went slowly. This made Smallwood impatient. In January of
+
+1966, according to notes made in his daybook, Smallwood told Winters that he
+would consider provincial nationalization of the Churchill Falls project if another
+year was to be lost.50 However, by April 1966 Hydro-Quebec and CFLCo had a letter
+of intent agreement. Hydro-Quebec strongly supported the agreement, but Lesage
+decided to delay authorizing it until that year's provincial election was over. That
+election took place in June; Lesage lost to the Union Nationale, and Daniel Johnson
+became premier. On 6 July, Hydro-Quebec's Jean-Claude Lessard asked the newly
+elected government for permission to proceed. Two weeks later, he wrote again and,
+after highlighting the substantial benefits to Quebec of the agreement, he urged
+
+Johnson to allow Hydro-Quebec to sign as soon as possible.51 Instead, the new
+government decided to institute its own review process.
+
+This additional delay provided Lesage, now the opposition leader, with the
+opportunity to attack Johnson. At the end of August, Lesage criticized the
+government for its procrastination and indecision. He warned the provincial
+
+48 J.-C. Lessard to M.F. Nicholson, vice-president and general manager of Brinco, both the 21 -page
+
+draft dated 31 May 1965 and a covering letter dated 8 June 1965, Supreme Court of
+Newfoundland, Court of Appeal, 1983 no. 120, Record Submitted on Behalf of the Second
+Defendant-Respondent, Quebec-Hydro Electric Commission, vol. I, tab 32, pp. 257-78.
+49 Hugh Whalen, formerly of Memorial University's Department of Political Science, kept an
+extensive private collection of press clippings from a cross-section of Canadian newspapers
+dealing with Churchill Falls that appeared from 1964 to 1969. A large number contain remarks by
+Smallwood, but in none does he even hint at the use of the declaratory power.
+50 Smallwood, I Chose Canada , 465.
+51 J.-C. Lessard to Premier Daniel Johnson, 22 July 1966, Supreme Court of Newfoundland, Court
+
+of Appeal, 1983 no. 120, Record Submitted on Behalf of the Second Defendant-Respondent,
+Quebec-Hydro Electric Commission, vol. II, tab 48, pp. 529-35.
+
+This content downloaded from 99.253.56.188 on Thu, 23 Aug 2018 15:13:04 UTC
+All use subject to https://about.jstor.org/terms
+
+122 Acadiensis
+
+government that unless it could make a decision, the federal government might
+intervene. In an interview with the Globe and Mail newspaper, Lesage explicitly
+referred to the possibility of federal intervention contained within Section 92.10(c
+and said that he always had this in the back of his mind in regard to the project. H
+also went on to state that neither Pearson nor Smallwood had ever suggested the
+possibility of such federal intervention.52
+This whole delay had further frustrated Smallwood, and he, too, now saw a use
+for Section 92.10(c). On 13 September 1966 his cabinet passed an order-in-council
+to authorize him to make a formal request to the federal government to declare th
+project "to be in the national interest and to take such action as may be necessary t
+
+enable such development to be commenced without delay" if the Quebe
+
+government did not authorize Hydro-Quebec to sign the letter of intent by 2
+September.53 Once the order-in-council was passed, Smallwood phoned Donal
+
+McParland, CFLCo's president and CEO, to tell him of this development
+
+McParland was now the key negotiator for the project as Winters had returned t
+
+federal politics in late 1965. He told Smallwood that he would get word of
+Smallwood's deadline to Johnson.54 Thus, Smallwood was using the threat o
+
+constitutional confrontation to add to the pressure on Johnson to authorize the lette
+of intent.55
+
+Despite the trigger date of 22 September, Smallwood did not make any request
+to the federal government at that time. It was not until 28 September, one day before
+
+he was to leave the country on a vacation to destinations in Asia, that Smallwood
+drafted - but did not send - his request letter to Pearson. In it, he wrote that an
+agreement was not possible and went on to make the following specific appeal:
+
+The Government of Newfoundland requests the Government of
+Canada to invoke Paragraph (c) of Clause 10 of Section 92 of the
+
+British North America Act. If the Government of Canada would
+
+proceed forthwith to build a transmission line from Churchill Falls
+to a point where it would tie in with power grids in Eastern Canada
+it would ensure an immediate start on the construction of the
+Churchill Falls power project itself.56
+There is little doubt that if the federal government had asked Parliament to make
+
+such a declaration, it would have been seen in Quebec - especially at a time of
+growing nationalism there - as highly provocative. Some other provinces, too,
+
+would have been alarmed at, and opposed to, such heavy-handed use by the federal
+
+52 "Urges Quebec Decision, Ottawa may move in on Brinco deal: Lesage," Globe and Mail , 1
+September 1966.
+
+53 Government of Newfoundland and Labrador, Executive Council, Order-in-Council 661- 66, 13th
+
+September 1966.
+54 Daybook of J.R. Smallwood, 13 September 1966, Joseph R. Smallwood Papers, Collection 075,
+CNSA.
+
+55 Roland Grioux, an advisor to Johnson, warned McParland that if any word of Smallwood's orde
+in-council leaked out then it would ruin the deal; see Smith, Brinco , 246.
+56 J.R. Smallwood to L.B. Pearson (unsigned and undated), Joseph R. Smallwood Papers, Collect
+075, file 3.10.061, CNSA.
+
+This content downloaded from 99.253.56.188 on Thu, 23 Aug 2018 15:13:04 UTC
+All use subject to https://about.jstor.org/terms
+
+Smallwood , Churchill Falls , and Quebec 123
+
+government of its constitutional powers. A serious federal-provincial conflict would
+have likely ensued, and perhaps the matter would have been brought before the
+
+Supreme Court of Canada. These possible scenarios alone would surely have
+deterred the federal government from concluding that acting on Smallwood's
+request would be to the general advantage of Canada. Additionally, Section 92.10(c)
+requires an explicit declaration by Parliament.57 At the time, Pearson led a minority
+
+government and almost half of his Liberal members in the House of Commons
+
+represented ridings in Quebec.
+In any case, Smallwood's letter was never sent. Why it was never sent has been
+a matter of some historical ambiguity, but there is enough evidence to clear that up.58
+
+According to one explanation, the Smallwood letter was never sent because Pearson
+asked Smallwood not to do so. This account was reported in 1996 by Cabot Martin,
+a former policy advisor to Newfoundland Premier Brian Peckford during the 1980s.
+It stems from a visit Martin made to Smallwood in October 1984. Smallwood was
+
+retired by that time, and his provincial Liberal Party government had been replaced
+
+by the Progressive Conservative Party in 1972. Martin met with Smallwood
+
+following the ruling by the Supreme Court of Canada that Newfoundland's Water
+Rights Reversion Act, which was an attempt to overturn the Churchill Falls contract,
+was ultra vires. He asked the former premier why he had not delivered the formal
+request to the federal government to intervene.
+Smallwood's answer, as recounted by Martin, starts with him being in Montreal,
+driving from there to Ottawa by car with his letter, and then meeting Pearson and
+two unnamed cabinet ministers. Martin reports that, according to Smallwood, at the
+start of the meeting, the prime minister said:
+
+Joe, I know why you are here and if you ask me I'll have to say yes,
+otherwise we would not really have a country. But I'm asking you
+not to ask me because we will not be able to keep the towers up.
+Martin's account then returns to his discussion with Smallwood and continues:
+
+Joey paused, then looked at me as if to ask, "What would you
+have done?" and said, "So I didn't ask him."
+After the shock passed, I could only sympathize. Today, it's easy
+to say Joey should have demanded that Mr. Pearson discharge his
+responsibility to protect Newfoundland and remind him that he
+couldn't run a country on fear and threats.
+But back in 1966, the bombs in Quebec had started exploding
+even while Canada still saw itself as the "peaceable kingdom." The
+
+War Measures Act had not yet conditioned us to accept the
+
+possibility of using force to combat violence. Can Newfoundlanders
+fault Joey for refusing the mantle of national leadership that Mr.
+
+Pearson wouldn't wear?
+
+57 Peter Hogg, Constitutional Law of Canada, student ed. (Toronto: Thomson Carswell, 2004), 561 .
+58 Churchill, in "Pragmatic Federalism" (231-2), dutifully reports the two different explanations for
+why the letter was never sent, but does not attempt to determine whether either explanation is valid.
+
+This content downloaded from 99.253.56.188 on Thu, 23 Aug 2018 15:13:04 UTC
+All use subject to https://about.jstor.org/terms
+
+124 Acadiensis
+
+And he concludes as follows:
+
+From what Joey told me, Newfoundland had greatly weakened its
+Upper Churchill position in response to a solemn request from the
+prime minister of Canada.
+Joey did it in the interests of national unity, while Quebec flouted
+
+the most basic rules of a federation. Doesn't fairness and the
+national interest count for anything at all?59
+
+The preceding account of events puts the federal government in a particularly bad
+light. It implies that Pearson believed Smallwood was in the right but still pleaded with
+
+Smallwood not to ask for action under Section 92.10(c). The picture of Smallwood
+backing down, sacrificing Newfoundland's interest for the sake of national unity, is
+striking political imagery. It is accepted as fact by many people and it continues to
+influence Newfoundland's view of federal governments and the province's place in
+Canada. For instance, in a tributary volume on Smallwood, William Callahan, a former
+Smallwood cabinet minister and loyalist, echoes this story of a last-minute appeal from
+
+Pearson and states that there has been no federal compensation to Newfoundland for
+having protected Canada from "total disintegration."60
+There is another explanation, however, for why Smallwood's letter to Pearson was
+never delivered. According to Philip Smith in Brinco, Smallwood traveled to Montreal
+
+on 29 September. He telephoned the CFLCo office in Montreal and left a message
+asking for a meeting. In response, three senior officials from Brinco and CFLCo met
+with Smallwood, who also had an entourage of three. It took place early that evening
+at Smallwood's suite at the Holiday Inn on Sherbrooke Street in Montreal. The premier
+read the letter to his visitors and threatened to send it, but they were successful in
+convincing him to hold off - arguing that their information was that the Quebec
+government's decision would be made by 6 October. Smallwood agreed, but warned
+them that if the Quebec government did not decide by 7 October then "Churchill Falls
+would be taken out of the hands of Brinco and Quebec and would become a national
+
+project." Smith further reports that, in spite of some political opposition, Johnson
+announced on 6 October that the Quebec government had authorized Hydro-Quebec
+to sign the letter of intent. When a Time magazine reporter asked Smallwood for a
+reaction, he replied "Glory Allelujah!"61 In his daybook, he wrote "Praise be to God!"62
+
+This account of events and those reported by Martin are clearly at odds. In one,
+Smallwood went to Ottawa to see Pearson and was asked to acquiesce for the good
+of Canada, whereas in the other there is no such meeting and Smallwood succeeded
+in using his threat as a tactic to get what he and both CFLCo and Hydro-Quebec
+wanted. As it turns out, there is substantial corroborating evidence in favour of one
+of these accounts and no such evidence for the other.
+
+59 Cabot Martin, "Footnote to History: The Truth Behind Churchill Falls," Globe and Mail, 23
+November 1996, reprinted in The Sunday Telegram (St. John's). 8 December 1996.
+60 William R. Callahan, Joseph Roberts Smallwood: Journalist, Premier, Newfoundland Patriot (St.
+John's, NL: Flanker Press, 2003), 64-5.
+61 Smith, Brinco, 246-9.
+
+62 Daybook of J.R. Smallwood, 7 October 1966, Joseph R. Smallwood Papers, Collection 285, file
+1.10.006, CNSA.
+
+This content downloaded from 99.253.56.188 on Thu, 23 Aug 2018 15:13:04 UTC
+All use subject to https://about.jstor.org/terms
+
+Smallwood , Churchill Falls , and Quebec 125
+It never happened
+A good starting point is Smallwood's own daybook in which he made handwritten
+notes of the day's events. According to the entry for 28 September, he drafted his
+letter to Pearson. He records that he then phoned Jack Pickersgill, the Newfoundland
+representative in the federal cabinet, and read it to him. His last entry for the day was
+
+"Hope I don't have to send it!" 63 The next day Smallwood was in Corner Brook, on
+Newfoundland's west coast, where he opened a new shopping centre at 11 am and
+then met with a harbour development committee.64 Later in the day, he flew to
+Montreal. His hand-written account of the remainder of the day is as follows:
+
+Holiday Inn - Henry Borden, Val Duncan, McParland. Told me
+details of Johnson's cabinet meeting - Johnson sent me a message.
+Wants me wait til 6 th. I agreed.
+Phoned JWP and told him.
+
+LRC OLV ARL and I left by BO AC 1 1 pm for London.65
+JWP refers to Pickersgill, and LRC, OLV and ARL are the initials of Smallwood's
+
+associates: Leslie Curtis, O.L. Vardy, and Arthur Lundrigan. Henry Borden was
+
+chairman of Brinco at the time and Val Duncan was a member of its board of directors.
+
+The preceding excerpt is in accord with Smith's account of that meeting. It is also
+
+consistent with the recollections of events given by Borden in his personal
+memoirs.66 Yet, one might speculate that Smallwood could have changed his mind
+after the meeting, reneged on what he had just agreed to, and decided to go see
+Pearson with his letter. But doing so would seem to have been self-defeating. He had
+just been assured that Quebec authorization of the letter of intent was only days
+
+away, and Smallwood wanted that to happen. If it became known that he had
+requested federal intervention, then the subsequent political ramifications in Quebec
+would have made authorization much less likely. Still, his account to Martin implies
+
+that this is what he did. But did he?
+
+The available evidence supports the hypothesis that Smallwood did not take his
+letter to Pearson and that there was no meeting between them on that day. First, there
+
+was practically no opportunity for a meeting. Smith places Smallwood and his
+entourage in Montreal at the Sherbrooke Street Holiday Inn in the early evening of
+29 September, and the premier's own daybook notes that his flight from Montreal to
+the UK left at 11 pm.67 Once the meeting with Borden and the others was over, that
+left very little time to arrange a car and make a return drive to Ottawa. He would
+also have had to locate and set up an evening meeting with Pearson. Any discussion
+between them would have to have been extremely brief in order to allow enough
+
+63 Daybook of J.R. Smallwood, 28 September 1966, Joseph R. Smallwood Papers, Collection 285,
+file 1.10.006, CNSA.
+
+64 Reports from the Corner Brook newspaper, The Western Star , 30 September 1966, confirm
+Smallwood's activities in Corner Brook on that day.
+65 Daybook of J.R. Smallwood, 29 September 1966, Joseph R. Smallwood Papers, Collection 285,
+
+file 1.10.006, CNSA.
+66 Henry Borden, Recollections , Henry Borden Papers, MG 30, A86, vol. 4, p. 166, LAC.
+
+67 Smith, Brinco, 246.
+
+This content downloaded from 99.253.56.188 on Thu, 23 Aug 2018 15:13:04 UTC
+All use subject to https://about.jstor.org/terms
+
+126 Acadiensìs
+
+time for Smallwood to drive to the Montreal airport for his 1 1 pm flight departure
+
+that took him out of Canada until 1 8 October.68
+
+Not only was there practically no opportunity for a meeting, but there is also
+more compelling evidence: Smallwood's daybook and Pearson's appointment book.
+The contents of both do not jibe with there being a Smallwood-Pearson rendezvous.
+In his daybook Smallwood's entries for 29 September included the meeting with
+Borden, Duncan, and McParland in Montreal, the phone call to Pickersgill, and even
+the departure time and airline for his flight out of the country, but there is no entry
+
+for something as significant as a meeting with the prime minister. Also, in his own
+memoirs, Smallwood recalled the Montreal meeting with Borden and his agreement
+not to send the letter, giving an account that is consistent with Smith's. In addition,
+his memoirs even admit that his letter was a threat that would be "more effectual
+
+than the reality."69 Then there is Pearson's appointment book. Its one-page agenda
+for 29 September lists his meetings and appointments from 9:45 am until 7:30 pm,
+at which time he was to attend a dinner hosted by the US Ambassador.70 Nowhere is
+
+there an item to do with Smallwood.
+
+In sum, Smallwood drafted his letter to Pearson on 28 September, was in
+Newfoundland until the afternoon of the next day, and arrived in Montreal later that
+day for a flight out of the country in the evening. In the short time that he was in
+Montreal he met with Brinco officials, leaving practically no opportunity for a return
+
+trip to Ottawa for a meeting with Pearson. Neither Smallwood's daybook nor
+Pearson's appointment book recorded any contact between the two men. There is no
+corroborating evidence that a meeting took place, and such a meeting at that time
+would have been contrary to Smallwood's interests. The logical conclusion is that it
+never happened. Smallwood's letter was never sent, but not because of a national
+unity appeal from Pearson. Rather, it was not sent because the Quebec government
+authorized the letter of intent, which is what Smallwood wanted.71
+Aftermath
+
+The letter of intent was signed on 13 October 1966. It was a comprehensive and
+extensive document that took a form very similar to a contract. Once signed, the
+notion of a power corridor or right-of-way through Quebec ceased to be relevant
+and, in order to deliver power according to Hydro-Quebec's needs, substantial work
+on the Churchill Falls development began almost immediately.
+Yet it was not until May of 1969 that the definitive contract was signed. During
+the time in between there were extensive negotiations on the contract as well as
+
+68 Daybook of J.R. Smallwood, 18 October 1966, Joseph Smallwood Papers, Collection 285, file
+
+1. 10.006, CNSA.
+69 Smallwood, I Chose Canada , 468.
+
+70 Appointment Book, July-December 1966, Lester Pearson Papers, MG 26, N8, vol. 6, LAC.
+71 It seems odd that the "Pearson Appeal" account has gained such widespread acceptance, given
+that it was based on a private conversation that took place about 18 years after the fact. In
+reporting that conversation, another 12 years later, Martin stated that he believed what Smallwood
+had told him but, to his credit, suggested that it should be checked, and pointed out there must be
+
+evidence in federal memos and Smallwood's own papers. Until now that fact-checking had not
+been done. One might speculate that the readiness of many Newfoundlanders to believe that those
+events took place reflected frustration with how the province was faring in the federation.
+
+This content downloaded from 99.253.56.188 on Thu, 23 Aug 2018 15:13:04 UTC
+All use subject to https://about.jstor.org/terms
+
+Smallwood, Churchill Falls , and Quebec 127
+intertwined financial arrangements. It was at this stage that the most controversial
+
+aspects of the contract and related financial arrangements came about (i.e., an
+automatic 25-year renewal contract with a reduced price was added to the term that
+had been agreed to in the letter of intent, and mechanisms were put in place that
+could allow Hydro-Quebec to take over ownership of CFLCo if certain milestones
+were not achieved). Feehan and Baker argue that Hydro-Quebec took advantage of
+CFLCo's financial circumstances in 1968 in order to obtain these concessions,
+especially the extraordinary renewal clause.72 However, that debate is beyond the
+
+scope of this essay. It suffices here to point out that neither CFLCo nor the
+Newfoundland government ever reverted to the idea of a power corridor for
+
+Churchill Falls power during the negotiations after October 1966. 73
+
+Summary and conclusion
+The matter of a power corridor is part of the history of the Churchill Falls contract. It
+
+was especially relevant during the breakdown in negotiations in 1964. In response to
+inquiries from Brinco at the time, Quebec premier Lesage indicated that he would
+never agree to a right-of-way and that all power had to be sold to Hydro-Quebec at
+the border - a position he had taken consistently and publicly throughout his entire
+time in office. Thus the option of a power corridor, even in the form of permission to
+
+sell some power across Quebec, was denied to CFLCo by Quebec and not the federal
+government. There is no corroborating evidence that at the time the Newfoundland
+
+government ever tried to convince the federal government to use Parliament's
+declaratory power to create a power corridor through Quebec. Newfoundland made
+no formal request for a parliamentary declaration that would allow the federal
+government to take over the project, nor would such a request have obligated the
+federal government to act, and there is no evidence that Smallwood, as much as he
+resented Lesage's position, ever seriously contemplated such action. In September
+1966, Smallwood did threaten to make such a request to the federal government.
+However, that was a short-lived tactic. He used the threat of a request to pressure the
+Quebec government to agree to Hydro-Quebec's request that it authorize the letter of
+intent. Finally, and very importantly, there is the story that Pearson asked Smallwood,
+for the good of Canada, not to request the federal government to seek a parliamentary
+
+declaration. Despite its powerful imagery and its on-going influence on
+
+Newfoundland political culture, that story is no more than a legend.
+JAMES P. FEEHAN
+
+72 Feehan and Baker, "The Renewal Clause."
+
+73 This observation does not apply to the possible transmission of electricity from the potential
+projects at Gull Island and Muskrat Falls on the lower portion of the Churchill River. It is well
+known that there have been disagreements between the two provinces for decades in this regard,
+and at times the Newfoundland government has appealed to the federal government to strengthen
+
+provisions for interprovincial transmission of electricity; see Karl Froschauer, White Gold:
+Hydroelectric Power In Canada (Vancouver: UBC Press, 1999). As of 2010, disagreements were
+still in play; see, for example, the Newfoundland governments press release, "Quebec's Refusal
+of Transmission Access Once Again Demonstrates Its Arrogance and Discriminatory Business
+Practices ," www .releases .gov .nl .ca/releases/20 1 0/exec/05 1 2n09 .htm .
+
+This content downloaded from 99.253.56.188 on Thu, 23 Aug 2018 15:13:04 UTC
+All use subject to https://about.jstor.org/terms
+
+

@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Churchill Falls Information Assistant</title>
+  <style>
+    /* ---------- GLOBAL ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      --aqua: #5eead4;
+      --aqua-dim: #2dd4bf;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", sans-serif;
+      background: #1a1a1a;
+      color: #e5e5e5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ---------- HEADER ---------- */
+    .header {
+      background: rgba(26, 26, 26, 0.8);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 12px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .logo {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--aqua);
+      letter-spacing: -0.2px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+    .nav-links a,
+    .nav-link-button {
+      color: #a8a8a8;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    .nav-links a:hover,
+    .nav-link-button:hover {
+      color: var(--aqua);
+    }
+
+    /* ---------- MAIN CONTAINER ---------- */
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      max-width: 900px;
+      margin: 0 auto;
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    /* ---------- WELCOME STATE ---------- */
+    .welcome-state {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      min-height: 60vh;
+    }
+    .welcome-state.hidden {
+      display: none;
+    }
+    .welcome-title {
+      font-size: 48px;
+      font-weight: 400;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #fff 0%, #a8a8a8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .welcome-subtitle {
+      font-size: 18px;
+      color: #a8a8a8;
+      margin-bottom: 48px;
+      max-width: 600px;
+      line-height: 1.5;
+    }
+    .mode-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      width: 100%;
+      max-width: 800px;
+      margin-bottom: 32px;
+    }
+    .mode-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--aqua);
+      border-radius: 12px;
+      padding: 24px;
+      transition: all 0.2s;
+      cursor: default;
+    }
+    .mode-card:hover {
+      background: rgba(94, 234, 212, 0.08);
+      border-color: var(--aqua);
+    }
+    .mode-card-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+display: flex;
+  align-items: center;
+  justify-content: center;
+    }
+    .mode-card-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--aqua);
+      margin-bottom: 8px;
+    }
+    .mode-card-desc {
+      font-size: 14px;
+      color: #a8a8a8;
+      line-height: 1.5;
+    }
+
+    /* ---------- INFO BOX ---------- */
+    .info-box {
+      max-width: 800px;
+      margin: 20px auto 0 auto;
+      padding: 16px 20px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+    }
+    .info-box p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #a8a8a8;
+      margin: 0;
+    }
+    .info-box strong {
+      color: #e5e5e5;
+      font-weight: 500;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    /* small “Researching…” line above conversation */
+    .researching-indicator {
+      font-size: 13px;
+      color: #a8a8a8;
+      font-style: italic;
+      margin-top: 12px;
+      text-align: left;
+    }
+
+    /* ---------- CONVERSATION AREA ---------- */
+    .conversation {
+      flex: 1;
+      padding: 40px 0;
+      overflow-y: auto;
+    }
+    .conversation.hidden {
+      display: none;
+    }
+    .message {
+      margin-bottom: 32px;
+      animation: fadeIn 0.3s ease-out;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .message-role {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--aqua);
+      margin-bottom: 8px;
+    }
+    .message-content {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #e5e5e5;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    /* headings in assistant content */
+    .message-content h2,
+    .message-content h3 {
+      color: var(--aqua);
+      font-size: 18px;
+      font-weight: 600;
+      margin: 16px 0 0 0;
+      line-height: 1.2;
+      padding-bottom: 0;
+    }
+    .message-content h3 {
+      font-size: 16px;
+    }
+    .message-content h2:first-child,
+    .message-content h3:first-child {
+      margin-top: 0;
+    }
+
+    /* bold inline headers */
+    .message-content p strong {
+      color: var(--aqua);
+      display: inline;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .message.user .message-content {
+      color: #fff;
+    }
+
+    .message-meta {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 12px;
+      color: #a8a8a8;
+    }
+    .message-actions {
+      margin-top: 12px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .action-button {
+      padding: 6px 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      color: #a8a8a8;
+      transition: all 0.2s;
+    }
+    .action-button:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .sources-section {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .sources-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: #a8a8a8;
+      margin-bottom: 8px;
+    }
+    .sources-list {
+      font-size: 13px;
+      color: #a8a8a8;
+      line-height: 1.6;
+    }
+
+    .processing {
+      text-align: center;
+      padding: 40px;
+      color: #a8a8a8;
+    }
+    .processing-text {
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    /* ---------- INPUT BAR ---------- */
+    .input-bar {
+      position: sticky;
+      bottom: 0;
+      background: rgba(26, 26, 26, 0.95);
+      backdrop-filter: blur(20px);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 20px 0 32px 0;
+    }
+    .input-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .input-controls {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .text-input {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 14px 16px;
+      font-size: 15px;
+      color: #fff;
+      outline: none;
+      transition: all 0.2s;
+    }
+    .text-input:focus {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+    .text-input::placeholder {
+      color: #666;
+    }
+
+    .mic-button {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+      position: relative;
+    }
+    .mic-button:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+    .mic-button.active {
+      background: rgba(94, 234, 212, 0.15);
+      border-color: var(--aqua);
+    }
+    .mic-button svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--aqua);
+    }
+    .mic-button.active svg {
+      fill: var(--aqua);
+    }
+
+    .send-button {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+    .send-button:hover {
+      background: rgba(94, 234, 212, 0.2);
+      border-color: var(--aqua);
+    }
+    .send-button svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+    }
+
+    .mode-toggle {
+      display: flex;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 4px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .mode-toggle button {
+      padding: 6px 12px;
+      border: none;
+      background: transparent;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      color: #a8a8a8;
+      transition: all 0.2s;
+      font-weight: 500;
+    }
+    .mode-toggle button.active {
+      background: rgba(94, 234, 212, 0.15);
+      color: var(--aqua);
+    }
+    .mode-toggle button:hover:not(.active) {
+      color: #fff;
+    }
+.dots::after {
+  display: inline-block;
+  margin-left: 4px;
+  animation: researching-dots steps(4, end) 1s infinite;
+  content: '';
+}
+
+@keyframes researching-dots {
+  0%   { content: ''; }
+  25%  { content: '.'; }
+  50%  { content: '..'; }
+  75%  { content: '...'; }
+  100% { content: ''; }
+}
+
+
+    /* ---------- MOBILE ---------- */
+    @media (max-width: 768px) {
+      .welcome-title {
+        font-size: 36px;
+      }
+      .welcome-subtitle {
+        font-size: 16px;
+      }
+      .mode-cards {
+        grid-template-columns: 1fr;
+      }
+      .input-controls {
+        flex-wrap: wrap;
+      }
+      .text-input {
+        width: 100%;
+      }
+    }
+
+    /* ---------- SCROLLBAR ---------- */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <div class="header">
+    <nav class="nav">
+      <div class="logo">Churchill Falls Assistant</div>
+      <div class="nav-links">
+        <button id="homeButton" class="nav-link-button">Home</button>
+        <button class="nav-link-button" id="newChatBtn">✨ Reset</button>
+        <a href="about.html">About</a>
+        <a href="sources.html">Sources</a>
+        <a href="history.html">History</a>
+        <a href="videos.html">Videos</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- CONTAINER -->
+  <div class="container">
+    <!-- WELCOME STATE -->
+    <div class="welcome-state" id="welcomeState">
+      <h1 class="welcome-title">Churchill Falls Assistant</h1>
+      <p class="welcome-subtitle">
+        This assistant provides expert analysis and comprehensive information about Churchill Falls hydroelectric projects and energy agreements between Newfoundland and Labrador and Quebec. Ask questions using voice or text, and choose between quick summaries or in-depth research.
+      </p>
+
+   <div class="mode-cards">
+  <div class="mode-card">
+    <div class="mode-card-icon">
+      <svg width="32" height="32" viewBox="0 0 24 24" style="fill: #a8a8a8;">
+        <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"></path>
+        <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"></path>
+      </svg>
+    </div>
+    <div class="mode-card-title">Voice</div>
+    <div class="mode-card-desc">
+      Hear Dr. Doug May’s analysis in his own voice. Press and hold the microphone button below to speak your question.
+    </div>
+  </div>
+
+  <div class="mode-card">
+    <div class="mode-card-icon">
+      <img src="icons/fast.svg" alt="Fast mode" style="width:32px;height:32px;display:block;">
+    </div>
+    <div class="mode-card-title">Fast</div>
+    <div class="mode-card-desc">
+      Fast, focused answers using core documents and expert analysis, without deep historical detail. Type your question below.
+    </div>
+  </div>
+
+  <div class="mode-card">
+    <div class="mode-card-icon">
+      <img src="icons/deep.svg" alt="Deep mode" style="width:32px;height:32px;display:block;">
+    </div>
+    <div class="mode-card-title">Deep</div>
+    <div class="mode-card-desc">
+      Comprehensive research with text answers from <strong>all sources</strong> (<a href="sources.html" style="color: var(--aqua); text-decoration: underline;">view sources</a>). Type your question below.
+    </div>
+  </div>
+</div>
+
+
+      <div class="info-box">
+        <p>
+          <strong>All responses are based exclusively on verified source documents.</strong>
+          Every answer draws from official documents including the December 12, 2024 MOU, Dr. Doug May’s comprehensive analysis, expert economic assessments by Wade Locke and James Feehan, Churchill Falls Corporation financial statements, and historical records dating to 1949. This assistant does not use internet searches or external sources—only curated materials from the
+          <a href="sources.html" style="color: var(--aqua); text-decoration: underline;">Sources page</a>.
+        </p>
+      </div>
+    </div>
+
+    <!-- CONVERSATION AREA -->
+    <div class="conversation hidden" id="conversation"></div>
+  </div>
+
+  <!-- INPUT BAR -->
+<div class="input-bar">
+  <div class="input-wrapper">
+    <div class="input-controls">
+      <input type="text" class="text-input" placeholder="Ask about Churchill Falls..." id="textInput">
+      <button class="mic-button" id="micButton">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"></path>
+          <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"></path>
+        </svg>
+      </button>
+      <button class="send-button" id="sendButton">
+        <svg viewBox="0 0 24 24">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mode-toggle">
+      <button class="active" data-mode="fast">
+        <img src="icons/fast.svg"
+             alt=""
+             style="width:14px;height:14px;vertical-align:middle;margin-right:6px;">
+        Fast
+      </button>
+      <button data-mode="deep">
+        <img src="icons/deep.svg"
+             alt=""
+             style="width:14px;height:14px;vertical-align:middle;margin-right:6px;">
+        Deep
+      </button>
+    </div>
+  </div>
+</div>
+
+
+  <!-- WAITTIMER AUDIO + TEST BUTTON -->
+  <audio id="research-audio" src="WaitTimer.wav" preload="auto"></audio>
+  <button id="test-audio-btn" style="position: fixed; bottom: 8px; left: 8px; font-size: 11px;">
+    Test sound
+  </button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // State
+      let currentTextMode = 'fast';
+      let isRecording = false;
+      let recognition = null;
+      let conversationHistory = [];
+      let currentAnswerText = '';
+      let currentSessionId = null;
+
+      // ============================================================================
+      // CONVERSATION HISTORY STORAGE
+      // ============================================================================
+      
+      // Initialize or load session
+      function initializeSession() {
+          const urlParams = new URLSearchParams(window.location.search);
+          const sessionIdFromUrl = urlParams.get('session');
+          
+          if (sessionIdFromUrl) {
+              currentSessionId = sessionIdFromUrl;
+              loadSession(sessionIdFromUrl);
+          } else {
+              // Create new session ID but DON'T save until first message
+              currentSessionId = 'session_' + Date.now();
+          }
+      }
+
+      // Save current session to localStorage
+      function saveSession() {
+          if (!currentSessionId) return;
+          
+          // Don't save empty conversations
+          if (conversationHistory.length === 0) return;
+          
+          const sessions = JSON.parse(localStorage.getItem('chatSessions') || '[]');
+          let sessionIndex = sessions.findIndex(s => s.id === currentSessionId);
+          
+          const sessionData = {
+              id: currentSessionId,
+              timestamp: new Date().toISOString(),
+              title: getConversationTitle(),
+              messages: conversationHistory.map(msg => ({
+                  role: msg.role,
+                  content: msg.content
+              }))
+          };
+          
+          if (sessionIndex >= 0) {
+              sessions[sessionIndex] = sessionData;
+          } else {
+              sessions.push(sessionData);
+          }
+          
+          // Keep only last 50 sessions
+          if (sessions.length > 50) {
+              sessions.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+              sessions.splice(50);
+          }
+          
+          localStorage.setItem('chatSessions', JSON.stringify(sessions));
+          localStorage.setItem('currentSessionId', currentSessionId);
+      }
+
+      // Load a session from localStorage
+      function loadSession(sessionId) {
+          const sessions = JSON.parse(localStorage.getItem('chatSessions') || '[]');
+          const session = sessions.find(s => s.id === sessionId);
+          
+          if (!session) return;
+          
+          conversationHistory = [];
+          conversationEl.innerHTML = '';
+          
+          if (session.messages && session.messages.length > 0) {
+              welcomeState.classList.add('hidden');
+              conversationEl.classList.remove('hidden');
+              
+              session.messages.forEach(msg => {
+                  conversationHistory.push(msg);
+                  addMessage(msg.role, msg.content);
+              });
+          }
+      }
+
+      // Get conversation title
+      function getConversationTitle() {
+          const firstUserMsg = conversationHistory.find(msg => msg.role === 'user');
+          if (!firstUserMsg) return 'New Conversation';
+          
+          const title = firstUserMsg.content.trim();
+          return title.length > 60 ? title.substring(0, 60) + '...' : title;
+      }
+
+      // Start new conversation
+      function startNewConversation() {
+          if (conversationHistory.length > 0) {
+              saveSession();
+          }
+          
+          currentSessionId = 'session_' + Date.now();
+          conversationHistory = [];
+          conversationEl.innerHTML = '';
+          welcomeState.classList.remove('hidden');
+          conversationEl.classList.add('hidden');
+          textInput.value = '';
+          
+          window.history.pushState({}, '', window.location.pathname);
+          saveSession();
+      }
+
+      // UI refs
+      const welcomeState = document.getElementById('welcomeState');
+      const conversationEl = document.getElementById('conversation');
+      const textInput = document.getElementById('textInput');
+      const sendButton = document.getElementById('sendButton');
+      const micButton = document.getElementById('micButton');
+      const researchingIndicator = document.getElementById('researching-indicator');
+
+      const researchAudio = document.getElementById('research-audio');
+      const testAudioBtn = document.getElementById('test-audio-btn');
+
+      console.log('research-audio element:', !!researchAudio, researchAudio ? researchAudio.src : null);
+
+      // ---------- Audio priming ----------
+      let researchAudioReady = false;
+
+      if (researchAudio) {
+        // One-time priming on first click
+        document.addEventListener('click', () => {
+          if (researchAudioReady) return;
+          researchAudio.currentTime = 0;
+          researchAudio.play().then(() => {
+            researchAudio.pause();
+            researchAudio.currentTime = 0;
+            researchAudioReady = true;
+            console.log('researchAudio primed by user click');
+          }).catch(err => {
+            console.warn('Could not prime researchAudio', err);
+          });
+        }, { once: true });
+      }
+
+      // Test button to verify file/element
+      if (testAudioBtn && researchAudio) {
+        testAudioBtn.addEventListener('click', () => {
+          researchAudio.currentTime = 0;
+          researchAudio.play().then(() => {
+            console.log('Test sound playing');
+          }).catch(err => {
+            console.error('Test sound failed', err);
+          });
+        });
+      }
+
+      function showResearching() {
+        if (researchingIndicator) {
+          researchingIndicator.classList.remove('hidden');
+        }
+        if (researchAudio && researchAudioReady) {
+          researchAudio.loop = true;
+          researchAudio.currentTime = 0;
+          researchAudio.play().then(() => {
+            console.log('researchAudio playing');
+          }).catch(err => {
+            console.warn('researchAudio play blocked', err);
+          });
+        }
+      }
+
+      function hideResearching() {
+        if (researchingIndicator) {
+          researchingIndicator.classList.add('hidden');
+        }
+        if (researchAudio) {
+          researchAudio.pause();
+          researchAudio.currentTime = 0;
+        }
+      }
+
+      function renderAnswer(text) {
+        // simple preview for fake streaming
+        // could be expanded later if you want a separate preview area
+        // currently not wired to a separate container
+      }
+
+      // ---------- Mode toggle ----------
+      document.querySelectorAll('.mode-toggle button').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.mode-toggle button').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentTextMode = btn.dataset.mode;
+        });
+      });
+
+      // ---------- Microphone ----------
+      micButton.addEventListener('mousedown', startRecording);
+      micButton.addEventListener('mouseup', stopRecording);
+      micButton.addEventListener('mouseleave', () => {
+        if (isRecording) stopRecording();
+      });
+      micButton.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        startRecording();
+      });
+      micButton.addEventListener('touchend', (e) => {
+        e.preventDefault();
+        if (isRecording) stopRecording();
+      });
+
+      function startRecording() {
+        if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+          alert('Speech recognition not supported');
+          return;
+        }
+        isRecording = true;
+        micButton.classList.add('active');
+
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        recognition = new SpeechRecognition();
+        recognition.continuous = false;
+        recognition.interimResults = false;
+
+        recognition.onresult = (event) => {
+          const transcript = event.results[0][0].transcript;
+          sendMessage(transcript, true);
+        };
+        recognition.onerror = () => {
+          isRecording = false;
+          micButton.classList.remove('active');
+        };
+        recognition.onend = () => {
+          isRecording = false;
+          micButton.classList.remove('active');
+        };
+
+        recognition.start();
+      }
+
+      function stopRecording() {
+        if (isRecording && recognition) {
+          recognition.stop();
+        }
+        isRecording = false;
+        micButton.classList.remove('active');
+      }
+
+      // ---------- Text input ----------
+      sendButton.addEventListener('click', () => {
+        const text = textInput.value.trim();
+        if (text) {
+          sendMessage(text, false);
+          textInput.value = '';
+        }
+      });
+
+      textInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          sendButton.click();
+        }
+      });
+
+      // ---------- Core sendMessage with fake streaming + WaitTimer ----------
+      async function sendMessage(message, isVoice = false) {
+        console.log('sendMessage called with', { message, isVoice, currentTextMode });
+
+        if (!message.trim()) return;
+
+        // Hide welcome, show conversation
+        welcomeState.classList.add('hidden');
+        conversationEl.classList.remove('hidden');
+
+        addMessage('user', message);
+        
+        // Add "Researching..." as a temporary message
+        const researchingMsg = document.createElement('div');
+        researchingMsg.className = 'message assistant';
+        researchingMsg.id = 'temp-researching';
+        researchingMsg.innerHTML = `
+          <div class="message-role">Assistant</div>
+          <div class="message-content" style="color: #a8a8a8; font-style: italic;">
+            🔍 Researching<span class="dots"></span>
+          </div>
+        `;
+        conversationEl.appendChild(researchingMsg);
+        conversationEl.scrollTop = conversationEl.scrollHeight;
+
+        const processingId = showProcessing();
+
+        // reset preview text
+        currentAnswerText = '';
+        renderAnswer(currentAnswerText);
+
+        // start WaitTimer
+        showResearching();
+
+        try {
+          const response = await fetch('/api/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              message,
+              conversationHistory,
+              isVoiceMode: isVoice,
+              textMode: currentTextMode
+            })
+          });
+
+          console.log('fetch /api/chat status', response.status);
+          const data = await response.json();
+          console.log('response data keys', Object.keys(data));
+
+          removeProcessing(processingId);
+          hideResearching();
+          
+          // Remove the temporary "Researching..." message
+          const tempMsg = document.getElementById('temp-researching');
+          if (tempMsg) tempMsg.remove();
+
+          if (data.error) {
+            addMessage('assistant', 'I apologize, but I encountered an error. Please try again.');
+          } else {
+            const fullText = data.text || '';
+console.log('fullText length', fullText.length);
+
+// Immediately show the full answer
+addMessage('assistant', fullText, data.sources, data.audio, data.mode, data.cached);
+conversationHistory.push(
+  { role: 'user', content: message },
+  { role: 'assistant', content: fullText }
+);
+saveSession(); // Save conversation after each exchange
+
+          }
+        } catch (error) {
+          console.error('Error in sendMessage', error);
+          removeProcessing(processingId);
+          hideResearching();
+          
+          // Remove the temporary "Researching..." message
+          const tempMsg = document.getElementById('temp-researching');
+          if (tempMsg) tempMsg.remove();
+          
+          addMessage('assistant', 'Connection error. Please try again.');
+        }
+      }
+
+      // ---------- UI helper functions ----------
+      function addMessage(role, text, sources, audio, mode, cached) {
+        const container = conversationEl;
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `message ${role}`;
+
+        const roleDiv = document.createElement('div');
+        roleDiv.className = 'message-role';
+        roleDiv.textContent = role === 'user' ? 'You' : 'Assistant';
+        messageDiv.appendChild(roleDiv);
+
+        const contentDiv = document.createElement('div');
+        contentDiv.className = 'message-content';
+
+        if (role === 'assistant') {
+          let formattedText = text || '';
+          formattedText = formattedText
+            .replace(/^## (.*)$/gm, '<h2>$1</h2>')
+            .replace(/^### (.*)$/gm, '<h3>$1</h3>')
+            .replace(/\n/g, '<br>')
+            // Remove <br> tags immediately after closing h2 or h3 tags
+            .replace(/<\/h2><br>/g, '</h2>')
+            .replace(/<\/h3><br>/g, '</h3>');
+          contentDiv.innerHTML = formattedText;
+        } else {
+          contentDiv.textContent = text;
+        }
+        messageDiv.appendChild(contentDiv);
+
+        if (role === 'assistant') {
+          const metaDiv = document.createElement('div');
+          metaDiv.className = 'message-meta';
+          let modeLabel = '';
+          if (mode === 'voice') {
+            modeLabel = 'Voice';
+          } else if (mode === 'fast') {
+            modeLabel = 'Fast';
+          } else if (mode === 'deep') {
+            modeLabel = 'Deep';
+          }
+          metaDiv.textContent = modeLabel || '';
+
+          if (cached) {
+            metaDiv.textContent = 'Cached';
+          }
+
+          if (mode === 'deep') {
+            metaDiv.innerHTML =
+              '<a href="sources.html" style="color: var(--aqua); text-decoration: underline;">View all sources</a>';
+          }
+          messageDiv.appendChild(metaDiv);
+
+          const actionsDiv = document.createElement('div');
+          actionsDiv.className = 'message-actions';
+
+          const copyButton = document.createElement('button');
+          copyButton.className = 'action-button';
+          copyButton.textContent = 'Copy';
+          copyButton.addEventListener('click', () => {
+            navigator.clipboard.writeText(text || '').then(() => {
+              const orig = copyButton.textContent;
+              copyButton.textContent = 'Copied!';
+              setTimeout(() => (copyButton.textContent = orig), 2000);
+            });
+          });
+          actionsDiv.appendChild(copyButton);
+
+          const shareButton = document.createElement('button');
+          shareButton.className = 'action-button';
+          shareButton.textContent = 'Share';
+          shareButton.addEventListener('click', async () => {
+            const shareData = {
+              title: 'Churchill Falls Response',
+              text: text || ''
+            };
+            if (navigator.share) {
+              try {
+                await navigator.share(shareData);
+              } catch (err) {
+                // ignore
+              }
+            } else {
+              const shareText = `Churchill Falls Response\n\n${text || ''}`;
+              navigator.clipboard.writeText(shareText).then(() => {
+                const orig = shareButton.textContent;
+                shareButton.textContent = 'Copied!';
+                setTimeout(() => (shareButton.textContent = orig), 2000);
+              });
+            }
+          });
+          actionsDiv.appendChild(shareButton);
+
+          if (audio && mode === 'voice') {
+            const pauseButton = document.createElement('button');
+            pauseButton.className = 'action-button';
+            pauseButton.textContent = 'Pause';
+            pauseButton.addEventListener('click', () => {
+              if (window.currentAudio) {
+                if (window.currentAudio.paused) {
+                  window.currentAudio.play();
+                  pauseButton.textContent = 'Pause';
+                } else {
+                  window.currentAudio.pause();
+                  pauseButton.textContent = 'Resume';
+                }
+              }
+            });
+            actionsDiv.appendChild(pauseButton);
+
+            const replayButton = document.createElement('button');
+            replayButton.className = 'action-button';
+            replayButton.textContent = 'Replay';
+            replayButton.addEventListener('click', () => {
+              if (window.currentAudio) {
+                window.currentAudio.pause();
+                window.currentAudio.currentTime = 0;
+                window.currentAudio.play();
+                pauseButton.textContent = 'Pause';
+              }
+            });
+            actionsDiv.appendChild(replayButton);
+          }
+
+          messageDiv.appendChild(actionsDiv);
+
+          if (sources && sources.length > 0) {
+            const sourcesDiv = document.createElement('div');
+            sourcesDiv.className = 'sources-section';
+            sourcesDiv.innerHTML = `
+              <div class="sources-title">Documents consulted</div>
+              <div class="sources-list">
+                ${sources.map(cleanSourceName).join('<br>')}
+              </div>
+            `;
+            messageDiv.appendChild(sourcesDiv);
+          }
+
+          if (audio) {
+            playAudio(audio);
+          }
+        }
+
+        container.appendChild(messageDiv);
+        setTimeout(() => {
+          messageDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          window.scrollBy(0, -50);
+        }, 100);
+      }
+
+      function showProcessing() {
+    // no separate processing element; we rely on the animated researching-indicator
+  return null;
+}
+
+      function removeProcessing(id) {
+  // nothing to remove
+}
+
+      function cleanSourceName(filename) {
+        return filename
+          .replace('.txt', '')
+          .replace(/_/g, ' ')
+          .replace(/-/g, ' ')
+          .trim();
+      }
+
+      function playAudio(base64Audio) {
+        try {
+          if (window.currentAudio) {
+            window.currentAudio.pause();
+            window.currentAudio = null;
+          }
+
+          const audio = new Audio('data:audio/mpeg;base64,' + base64Audio);
+          window.currentAudio = audio;
+          audio.onended = () => {
+            window.currentAudio = null;
+          };
+          audio.play();
+        } catch (error) {
+          console.error('Audio error', error);
+        }
+      }
+
+      // Home button reset
+      document.getElementById('homeButton')?.addEventListener('click', (event) => {
+        event.preventDefault();
+        const container = conversationEl;
+        if (container) container.innerHTML = '';
+        if (window.conversationHistory) window.conversationHistory = [];
+        if (window.currentAudio) {
+          window.currentAudio.pause();
+          window.currentAudio = null;
+        }
+        welcomeState.classList.remove('hidden');
+        conversationEl.classList.add('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Initialize conversation history system
+      initializeSession();
+      
+      // Wire up New Chat button
+      const newChatBtn = document.getElementById('newChatBtn');
+      if (newChatBtn) {
+        newChatBtn.addEventListener('click', startNewConversation);
+      }
+
+      console.log('Churchill Falls Assistant - WaitTimer audio enabled');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,2429 @@
+Nfld.
+KE
+951
+QU9
+1969
+c.1
+POWER CONTRACT
+BETWEEN
+QUEBEC HYDRO-ELECTRIC COMMISSION
+AND
+[CONFORMED COPY]
+CHURCHILL FALLS (LABRADOR) CORPORATION LIMITED
+May 12, 1969
+NHId, AE 451 QU9 1969C.1
+14511
+1.1 Definitions
+Legislative
+INDEX Newfoundland and Labrador)
+ARTICLE I Library
+INTERPRETATION
+1.2 Applicable Law
+1.3 Number and Gender
+1.4 Headings
+1.5 Schedules
+1.6 Successors and Assigns
+1.7 Letter of Intent
+1.8 Payments and Loans
+ARTICLE II
+ОBJECT
+2.1 Object
+3.1 Term
+3.2 Renewal
+Page
+1
+6
+6
+6
+6
+7
+7
+7
+7
+ARTICLE III
+TERM AND RENEWAL
+7
+7
+ARTICLE IV
+CONSTRUCTION AND OPERATION OF THE PLANT
+4.1 Construction 7
+4.2 Operation 8
+4.3 Interruptions 9
+4.4 Communications System 10
+4.5 Metering and Measurement 10
+4.6 Method of Calculating Spillage and Inventory 11
+ARTICLE V
+COMPLETION GUARANTEE
+5.1 Provision for Additional Funds Required 11
+5.2 General Provisions Applicable to Debentures 12
+5.3 Dívidend Restrictions 13
+5.4 Right of Hydro-Quebec to cure events of default under certain Debt
+Obligations of CFLCo.. 13
+ii
+ARTICLE VI
+ENERGY, FIRM CAPACITY AND REGAPTURE
+Page
+6.1 Energy Characteristics 14
+6.2 Sale and Purchase of Power and Energy 14
+6.3 Prior to Effective Date 14
+6.4 Firm Capacity 15
+6.5 Firm Capacity Schedules 15
+6.6 Recapture 15
+6.7 Recapture Adjustments 15
+ARTICLE VII
+DELIVERY
+7.1 Delivery Point 16
+7.2 Transmission Facilities 16
+ARTICLE VIII
+RATE AND PRICE
+8.1 Base Rate
+8.2 Applicable Rates
+8.3 Price Prior to Effective Date
+8.4 Price After the Effective Date
+8.5 Direct Price Adjustments
+8.5.1 Recapture Notice Period
+16
+16
+17
+17
+17
+17
+8.5.2 Resulting from Variations between Annual Energy Base and
+the annual average Energy Payable
+ARTICLE IX
+ADJUSTMENT OF ANNUAL ENERGY BASE
+18
+9.1 Adjustment Intervals 18
+9.2 Basis for Adjustment 19
+9.3 Limitations on Adjustment of Annual Energy Base 19
+9.4 Conditions under which Annual Energy Base may be adjusted 19
+9.5 No Adjustment 19
+9.6 Effect of Changing Annual Energy Base 19
+ARTICLE X
+FIRM CAPACITY PENALTY
+10.1 Extent of Penalty 20
+10.2 Rules Applicable 20
+10.3 No Penalty 20
+iii
+ARTICLE XI
+REFINANCINGS
+Page
+21
+21
+11.1 Prior Approval
+11.2 Costs and Benefits
+ARTICLE XII
+DEBT SERVICE REQUIREMENT AND EXPENSE CHARGES
+12.1 Advances by Hydro-Quebeс 21
+12.2 Consideration for Advances 21
+12.3 Duration of Obligation to Make Advances 21
+12.4 Advances During Restoration 22
+12.5 Estimate 22
+12.6 Insurance Proceeds 22
+ARTICLE XIII
+ACCESS TO RECORDS
+13.1 Audit by Hydro-Quebec 22
+13.2 Questions Arising 22
+13.3 Sharing of Expenses 23
+13.4 Annual Review 23
+ARTICLE XIV
+U. S. DoLLAR TRANSACTIONS
+14.1 Variations in Exchange Rate 23
+14.2 Deemed Conversion 23
+14.3 U. S. Refinancing of U. S. Debt Obligations 23
+14.4 Subsequent U. S. Debt Obligations 24
+ARTICLE XV
+INTEREST CHARGES
+15.1 Portions of Interest to be borne by Hydro-Quebec 24
+15.2 Method of Payment 24
+15.3 Forecasts 24
+15.4 Acknowledgment 24
+15.5 Exemption 24
+ARTICLE XVI
+PAYMENT
+16.1 Monthly Accounts
+16.1.1 Prior to the Effective Date
+16.1.2 From the Effective Date
+16.2 Method of Payment
+24
+25
+25
+25
+17.1 Contract Not Terminated
+iv
+ARTICLE XVII
+FORCE MAJEURE
+Page
+25
+17.2 Effect of Force Majeure on Payment Obligations 25
+17.3 Obligations Suspended or Abated 26
+17.4 Assignment of Indemnification 26
+ARTICLE XVIII
+INDEMNIFICATION AND LIABILITY
+18.1 Of Hydro-Quebec by CFLCo
+18.2 Of CFLCo by Hydro-Quebeс
+18.3 Reciprocal Release of Claim
+ARTICLE XIX
+ASSIGNMENT
+26
+26
+26
+19.1 Prohibition
+19.1.1 Exception in Respect of Assignment to Successor Corporation
+19.1.2 Exception in Respect of Assignment as Security
+19.1.3 Exception in Respect of Assignment to Wholly-Owned Sub- sidiary
+19.2 Protection of Trustee
+19.3 Assignment to Trustee for First Mortgage Bondholders
+26
+26
+27
+27
+27
+27
+ARTICLE XX
+USE OF QUEBEC PERSONNEL, SERVICES AND MATERIALS
+20.1 Preference Concerning Quebec Equipment, Services and Personnel 27
+20.2 Preference to Other Canadian Manufacturers 27
+20.3 Liaison Committees 27
+20.4 Management Rights of CFLCo 28
+ARTICLE XXI
+CASE OF CFLCO BEING UNABLE TO COMPLETE PROJECT
+21.1 Cooperation
+ARTICLE XXII
+28
+FINANCING CONSULTATION
+22.1 Financing 28
+23.1 How Given
+23.2 When Effective
+23.3 Change of Address
+ARTICLE XXIII
+NOTICES
+28
+29
+29
+THIS POWER CONTRACT made as of the 12th day of the month of May in the year
+one thousand nine hundred and sixty-nine (1969), between QUEBEC HYDRO-ELECTRIC COMMISSION
+(hereinafter called "Hydro-Quebec"), a body politic and corporate, duly incorporated and regulated
+by the Hydro-Quebec Act (R.S.Q. 1964, chapter 86 as amended) and having its head office at the
+City of Montreal, in the Province of Quebec, of the first part, and CHURCHILL FALLS (LABRADOR)
+CORPORATION LIMITED (hereinafter called "CFLCo") a company incorporated under the laws of
+Canada and having its head office at the City of St. John's in the Province of Newfoundland, of the
+second part, who hereby agree:
+ARTICLE I
+INTERPRETATION
+1.1 Definitions
+The following words and phrases whenever used in this Power Contract shall have the following
+meanings:
+All
+І- ТЕCHNICAL TERMS:
+"Billion" means one thousand million.
+"Energy" means electrical energy measured in kilowatthours.
+"Excessive Corona Losses" means, expressed in kilowatts, that part of corona losses experienced at any time which is in excess of 14 kilowatts per circuit mile.
+"Load Factor" means, for any period, the ratio, expressed as a percentage, of the average
+power over that period to the highest peak power in that period.
+"Mill' means 1/1000 of a dollar in lawful money of Canada.
+"Month" means, unless the context otherwise requires, a calendar month.
+"Power" means the rate at which energy is transferred at any point measured in kilowatts
+or multiples thereof.
+"Power Factor" means at a given point at any instant of time the number of kilowatts divided
+by the number of kilovolt-amperes.
+other technical terms employed in this Power Contract shall have the meanings, respectively,
+attributed thereto by American Standard Deinitions of Electrical Terms Number ASA C42 published
+1957 by American Institute of Electrical Engineers and, to the extent not thereby defined, by The
+International Electro-Technical Vocabulary, second edition, 1956, published by The Central Office
+of The International Electro-Technical Commission.
+II-CONCERNING CONSTRUCTION OF THE PLANT:
+"Completion Date" means the first day of the first month on or after the Effective Date by
+which all of the following shall have occurred:
+(a) the eleven units at the Plant contemplated by Schedule I and all associated generating, transformation and transmission facilities shall have been installed;
+(b) the Plant shall have become capable of delivering energy at the Delivery Point at
+a rate of 2625 million kilowatthours per month of 730 hours;
+(c) the Plant shall have become capable of making available at the Delivery Point at
+least 4,382,600 kilowatts in months other than June, July, August or September or, in June.
+July, August or September, at least 4,163,500 kilowatts;
+II
+(d) Hydro-Quebec shall have furnished to CFLCo or CFLCo shall have furnished to
+Hydro-Quebec a certificate of an independent engineer stating that the Plant has been completed to the extent mentioned in (a) above and that, in his opinion, the Plant has the
+capabilities referred toin (b) and (c) above.
+"Effective Date" means:
+(a) if, by the date specified in Schedule II for completion of the eleventh unit, the
+eleven units of the Plant and all associated generating, transformation and transmission
+facilities are installed and each unit is ready to deliver or has delivered energy at the Delivery
+Point, and not more than three units are then inoperative, the date so specified in Schedule II,
+or failing that
+(b) if earlier than December 31, 1978, the first day of the month following the date by
+which completion to the extent referred to in (a) above is achieved, or failing that
+(c) December 31, 1978.
+"Delivery Date" means, respectively, each of the ten dates specified in Column 1 of Schedule
+as one on and from which capacity and energy are to be available to Hydro-Quebec at the
+Delivery Point to the relevant extents contemplated by said Schedule II; the whole subject to
+revision as provided in Section 6.3 hereof.
+"Delivery Point" means, in respect of each circuit of the transmission lines, the point at
+which delivery of the energy is to be made hereunder and also means, collectively, all of such points.
+"Plant" means the Hydro-Electric Plant (as referred to in the Engineering Report and in the
+Construction Cost Estimate, each prepared by Acres Canadian Bechtel of Churchill Falls, copies
+of each of which have been furnished to Hydro-Quebec by CFLCo) to be constructed by CFLCo
+pursuant to Section 4.1 hereof at a site near Churchill Falls on the Upper Churchill River, having,
+when completed, at least those technical characteristics set forth in Schedule I hereto, or as may
+be varied pursuant to Section 4.1 hereof, and all facilities, properties and rights obtained by
+CFLCo for the construction and operation thereof and the generation, transformation, transmission and delivery of power and energy therefrom including, without limiting the generality of
+the foregoing,
+(a) all access roads
+(b) airports and runways
+(c) all construction camps
+(d) permanent townsite and services therefor
+(e) all transport and communication facilities
+(f) all water control and water storage works and facilities
+(g) all buildings and structures and their appurtenances
+(h) all machinery and equipment, whether moveable or immoveable
+(i) all spare parts
+(j) all tools and maintenance material and
+(k) all transmission circuits of CFLCo and all such circuits, to or from the said Plant,
+of any company which, under the present text of Section 121B of the Canada Corporations
+Act, would be a subsidiary of CFLCo, provided such circuits are required to be used either
+2
+to supply energy to Hydro-Quebec pursuant hereto or to supply energy to Twin Falls Power
+Corporation Limited in satisfaction of CFLCo's obligations referred to in Section 4.2,2 hereof.
+"Stage of Construction" means, in respect of the construction of the Plant, the respective
+periods between the Delivery Dates, commencing with the first Delivery Date and treating as a
+final stage the period between the ninth Delivery Date and the Effective Date.
+III - Concerning Capacity:
+"Deficiency" means, in respect of any request by Hydro-Quebec made pursuant to Section 6.5
+hereof for the supply at any given time of capacity, that number of megawatts out of the total
+megawatts so requested which (exclusive of capacity in excess of Firm Capacity) CFLCo fails
+to make available at the Delivery Point at such time.
+"Deficiency Period" means the period of duration of a Deficiency, it being understood that
+the extent of a Deficiency can vary during a Deficiency Period.
+at
+"Firm Capacity" means, subject to reduction by adjustment pursuant to Section 6.7 hereof,
+any time:
+(a) after the first Delivery Date and prior to the Effective Date, the number of kilowatts,
+to be available to Hydro-Quebec at the Delivery Point, as indicated in Column 5 of Schedule
+II with reference to, and to be available to Hydro-Quebec by, the dates shown in Column
+1 of Schedule II; and
+(b) after the Effective Date,
+(i) at any time in the months of October, November, December, January, February,
+March, April and May: 4,382,600 kilowatts at the Delivery Point
+(ii) at any time in the months of June, July, August and September: 4,163,500
+kilowatts at the Delivery Point.
+"Minimum Capacity" means, after the sixth Delivery Date and subject to the provisions of
+Section 4.3 and to reduction, if any, pursuant to Section 6.7, 1,200,000 kilowatts.
+IV-CONCERNING ENERGY:
+"Annual Energy Base" means 31.50 billion kilowatthours per year or, in the event of an
+adjustment pursuant to Section 6.7 or to Article IX hereof, the number of kilowatthours per year
+established as a result of such adjustment, calculated to the nearest 1/100 of a billion kilowatthours.
+"Basic Contract Demand" means, in respect of any month, the number of kilowatthours obtainable, calculated to the nearest 1/100 of a billion kilowatthours, when the Annual Energy Base is
+multiplied by the number which corresponds to the number of days in the month concerned and
+the result is then divided by the number which corresponds to the number of days in the year concerned.
+"Energy Payable" means
+(a) in respect of any month after the first Delivery Date and prior to the Effective
+Date, the amount of energy taken by Hydro-Quebec or made available to it up to the
+amount indicated in Column 6 of Schedule II hereof as available during the stage of construction applying to such month as shown in Column 1 of Schedule II hereof, plus any
+excess energy taken by Hydro-Quebec;
+(b) in respect of any month commencing on or after the Effective Date, (i) the amount
+of energy which is taken by Hydro-Quebec during such month plus (ii) the amount of
+3
+energy equivalent to water spilled during such month, as determined pursuant to Sections
+4.2.6 and 4.6 and after excluding spillages attributable to the fact that CFLCo has, during
+the 12 months preceding the spillage, either incurred any penalty under Article X or avoided
+such penalty only by virtue of Sections 10.3.4 or 10.3.6. Such spillage shall not cause the
+total Energy Payable for the 12 month period which terminates with the cessation of spilling
+to exceed the amount obtained when the total amount of all prior recaptures is deducted from
+35.4 billion kilowatthours.
+V-CONCERNING RECAPTURE:
+"Recapture" means any withholding from the power and energy agreed to be sold hereunder
+which may be made by CFLCo in accordance with the provisions of, and within the limits stipulated by, Section 6.6 hereof. All references herein to the amount of recaptures of energy are to the
+aggregate amount of kilowatt-hours per year referred to in all Recapture Notices which have been
+given up to that date which is three years prior to the date as of which the amount of recaptures
+of energy is being determined.
+"Recapture Notice" means any notice given by CFLCo to Hydro-Quebec in accordance with
+the provisions of Section 6.6 hereof of CFLCo's election to effect a recapture.
+VI- CONCERNING RATES AND RATE ADJUSTMENTS:
+"Applicable Rate" means the Base Rate, as adjusted pursuant to Section 8.2 hereof, calculated
+to the nearest 1/10,000 of a mill.
+"Base Rate" means at any time, the unadjusted mill rate applicable to such time as stipulated
+by Section 8.1 hereof.
+"Final Capital Cost of the Plant" means, without duplication, the sum (less net salvage
+recoveries realized by CFLCo on equipment purchased for, or used in, construction) of all
+amounts at any time paid or payable directly or indirectly by CFLCo in respect of the construction
+and bringing into operation of the Plant, and incurred prior to the first anniversary of the Completion Date, including without limiting the generality of the foregoing:
+(a) the aggregate net amounts paid or legally payable by CFLCo to architects, manufacturers, engineers, surveyors, contractors, subcontractors, carriers, workmen and suppliers of material and services;
+(b) that portion of the interest paid and payable in respect of monies borrowed by
+CFLCo which does not exceed 51/2% per annum on First Mortgage Bonds and 6% per
+annum on other Debt Obligations (including General Mortgage Bonds, debentures and bank
+loans) but exclusive of any amount thereof which, as hereinafter contemplated, CFLCO
+shall charge from time to time to the expenses of operations;
+(c) all other amounts not included under items (a) and (b) paid or payable by CFLCo
+for salaries, wages, insurance costs, casualty liabilities, rentals, royalties, costs of outside consultants and all applicable overhead, general, operating and administration costs, but exclusive
+of any amount thereof, which, as hereinafter contemplated, CFLCo shall charge from time
+to time to the expenses of operations;
+(d) the first $25,000,000 of the overall financing costs and expenses incurred by CFLCo, including professional fees related thereto.
+For the purposes of items (b) and (c) above, CFLCo shall, from the commencement of
+revenue from sales of energy hereunder, charge to operations 2/10 of the amounts payable for
+such items and, cumulatively, after each additional unit installed thereafter produces revenue,
+4
+charge to operations an additional 1/10 of said amounts, provided that CFLCo may so charge
+to operations from any earlier dates, if it so elects.
+The Final Capital Cost of the Plant shall, however, exclude specifically the following:
+(i) all professional fees and expenses incurred by CFLCo in respect of the entering into
+of this Power Contract; and
+(ii) any management fees or liabilities arising out of management contracts between
+CFLCo and any parent, affiliate or subsidiary company as said terms are defined in the
+present text of section 121B of the Canada Corporations Act, or any other company under
+the same effective control as CFLCo.
+Any grant received from any governmental authority, provincial or federal to help defray
+all or any part of the Final Capital Cost of the Plant or which is applicable to same shall be
+deducted from the Final Capital Cost of the Plant. The assistance which may be furnished by
+Hydro-Quebec pursuant to Articles XIV and XV shall not be considered as such a grant.
+VII -CONCERNING DEBT SERVICE AND EXPENSE CHARGES
+"Debt Service Requirement" means, in respect of any period, the sum of the aggregate amount
+required to be paid by CFLCo in such period on account of principal, interest, mandatory sinking
+fund instalments (applicable premium included), indemnification payments, applicable federal
+and provincial tax payments, and all other mandatory payments in such period on all outstanding
+Debt Obligations incurred by CFLCo for the financing of the construction and bringing into
+operation of the Plant or for the refinancing from time to time of Debt Obligations originally
+incurred to finance or refinance such construction and bringing into operation, except that as
+regards any such outstanding Debt Obligations the maturity of which shall be or have become
+accelerated, only as if such acceleration had not occurred.
+For the purposes of this definition, any such payments as aforesaid falling due on or in
+respect of the General Mortgage Bonds of CFLCo shall be considered as amounts required to
+be paid as they fall due notwithstanding that the subordination provisions with respect to the
+General Mortgage Bonds may restrict the sources of funds from which such payments may be made.
+"Expense Charges" means, in respect of any period, all cash payments made or to be made
+by CFLCo (whether of a capital or revenue nature) in or for such period on account of the
+ownership, occupancy, maintenance, operation, replacement, repair and restoration of the Plant,
+including without limiting the generality of the foregoing, all administrative expenses directly
+related to the construction, bringing into operation, operation and maintenance of the Plant,
+insurance, rentals, royalties, licenses and taxes, but excluding dividend payments, directors' fees,
+depreciation, deferred taxes, CFLCo's Debt Service Requirement for such period and any expenses
+incurred in such period exclusively for the purpose of supplying recaptured energy hereunder
+to customers other than Hydro-Quebec.
+VIII -CONCERNING EXCHANGE TRANSACTIONS:
+"U.S. Dollars", "U.S. funds", "U.S. currency" and similar expressions mean coin or currency
+of the United States of America which at the time of payment shall be legal tender for the payment
+of public and private debts in the United States of America.
+"Weighted Average Exchange Rate" means at any time the average relationship of a Canadian
+dollar to a U.S. dollar, when, in respect of all of any class of Debt Obligations then incurred by
+CFLCo on which CFLCo obtains U.S. dollars, an amount equal to the amount of Canadian dollars
+obtained on the conversion of such U.S. dollars is divided into an amount equal to the amount of
+U.S. dollars obtained.
+5
+IX- CONCERNING INTEREST CHARGES:
+"Effective Interest Rate" means, in respect of any Debt Obligation, the rate per annum of
+the interest payable thereon expressed in relation to the gross proceeds to CFLCo of such Debt
+Obligation after taking into account discounts and premiums, if any, but without taking into
+account underwriting commisisons, commitment fees, indemnification payments, placement fees,
+financial advisory fees, the value of any conversion right attaching to such Debt Obligation and
+the value of any other additional right or security issued to the lender with such Debt Obligation.
+X- GENERAL:
+"Debt Obligation" means any bond, debenture, note or other promise or obligation to pay
+which is issued by CFLCo, provided however that the issue was made with the knowledge of
+Hydro-Quebec and in compliance with Section 22.1 hereof.
+"Force Majeure" means:
+(a) any fortuitous event, act of governmental authority, act of public enemies, war,
+invasion or insurrection, riot, civil disturbance, labour trouble, strike, and
+(b) any flood, fire, shortage of labour, or of materials or of transport or other cause of
+inability to perform or delay in performing obligations hereunder which, in each such event,
+is beyond the reasonable control of the party or parties affected.
+Failure of equipment to perform adequately, or improper operation of equipment, shall not
+constitute Force Majeure.
+"Project" means (i) the construction and bringing into operation of the Plant and (ii) the
+satisfying of all requirements to achieve the Completion Date, as herein defined and also as said
+term or a corresponding term may be defined in each of the Trust Deed securing the First Mortgage Bonds of CFLCo and in every other Debt Obligation of CFLCo, for the financing or
+refinancing of (i), which defines a date of completion and imposes requirements in such respect.
+1.2 Applicable Law
+This Power Contract shall at all times and in all respects be governed by, and interpreted in
+accordance with, the laws of the Province of Quebec. The only courts competent to adjudge disputes
+between the parties hereto arising out of this Contract are, subject to appeal to the Supreme Court
+of Canada when such appeal lies, the Courts of the Judicial District of Montreal, where, for purposes
+of litigation only as aforesaid, CFLCo elects domicile for service at One Westmount Square in the
+City of Westmount, District of Montreal or at such other place in the said District of Montreal of
+which CFLCo may from time to time give written notice to Hydro-Quebec.
+1.3 Number and Gender
+References herein to the singular shall, where the context requires, include the plural and viceversa and references herein to the masculine, feminine or neuter genders shall, where the context
+requires, include any other of such genders.
+1.4 Headings
+The headings to Articles, Sections, subsections and Schedules which are employed herein are for
+convenience of reference only and form no part of this Power Contract.
+1.5 Schedules
+Schedules I, II and III hereto annexed are an integral part of this Power Contract.
+6
+1.6 Successors and Assigns
+Subject as provided in Article XIX hereof, this Power Contract shall enure to the benefit of and
+be binding upon each party hereto and its respective successors and assigns.
+1.7 Letter of Intent
+The Letter of Intent executed between the parties hereto under date of October 13, 1966 is
+hereby fully superseded and replaced.
+1.8 Payments and Loans
+Payments made by Hydro-Quebec pursuant to Articles XIV and XV are not loans and are not
+subject to the provisions of Articles V and ХІI.
+2.1 Object
+ARTICLE II
+ОBJECT
+During the existence of the present Power Contract Hydro-Quebec agrees to purchase from
+CFLCo and CFLCo agrees to sell to Hydro-Quebec each month (i) prior to the Effective Date at
+least the amount of energy indicated in Column 7 of Schedule II hereof as available during the stage
+of construction applying to such month and the Firm Capacity and (ii) from and after the Effective
+Date, the Energy Payable and the Firm Capacity; all at the prices, on the terms and conditions, and
+in accordance with the provisions, set forth herein.
+3.1 Term
+ARTICLE III
+TERM AND RENEWAL
+This Power Contract shall, subject to renewal as herein provided, expire on that date which is
+the later of
+(a) the 44th anniversary of the first Delivery Date, and
+(b) the 40th anniversary of the Effective Date.
+3.2 Renewal of Contract
+This Power Contract shall be renewed on the basis stated in this Section, for a further term of
+25 years from the expiry date hereof.
+The renewed Power Contract shall be that set forth in Schedule III hereof, which shall come
+into force automatically without any further signature being required.
+Any or all Articles or Sections of this Power Contract, other than this Section 3.2, as well as any
+or all undertakings or promises not specifically contained in Schedule III shall have no force and
+effect beyond the expiry date hereof and shall not thereafter be binding upon the parties to the renewed Power Contract.
+4.1 Construction
+ARTICLE IV
+CONSTRUCTION AND OPERATION OF THE PLANT
+In the interest of overall system compatibility, Hydro-Quebec shall furnish design characteristics
+and criteria for the construction by CFLCo of the necessary transmission facilities to the Delivery
+Point. Components of the Plant which may affect the economy or reliability of Hydro-Quebec's
+7
+transmission facilities shall have characteristics mutually agreed after joint consultation. To facilitate
+the implementation of this Section, Hydro-Quebec may, at its expense, provide engineers and other
+liaison personnel who will be accommodated at the appropriate offices of CFLCo, either on the site
+of construction or elsewhere. Hydro-Quebec engineers may also participate, at Hydro-Quebec's
+expense, in all phases of the testing and commissioning of the generating station and of the substation
+and Hydro-Quebec shall be notified in due time of such testing and commissioning.
+CFLCo shall cause the Plant to be constructed in accordance with sound utility practice and
+with those characteristics and following those directives set forth in Schedule I hereto, provided that:
+(i) nothing in said Schedule I shall relieve CFLCo of its obligation to correct, or replace
+with reliable equipment, in accordance with sound utility practice, any equipment which is
+found to be faulty or defective;
+(ii) such characteristics, as well as those covering the components of the Plant which may
+affect the economy or reliability of Hydro-Quebec's system and which are not referred to in
+Schedule I, may be varied by mutual agreement between the parties hereto and such variations
+may be made without reference to any assignee of this Power Contract as security.
+4.2 Operation
+4.2.1 Operational Flexibility
+The parties hereto acknowledge that it is desirable for Hydro-Quebec to have the benefit
+operational flexibility of CFLCo's facilities in relation to the Hydro-Quebec system. Accordingly:
+II
+of
+(i) Hydro-Quebec may request CFLCo to operate the Plant so as to supply Hydro-Quebec's
+schedule of power requirements, provided that no such request shall be less than the Minimum
+Capacity or, except as provided in Section 6.4, more than the Firm Capacity;
+(ii) Hydro-Quebec may require deliveries which have the effect of varying the amount of
+water to be carried in storage at any time, provided that, in so doing, sufficient water is left in
+storage so that Minimum Capacity can always be maintained.
+(ii) CFLCo agrees to make available to Hydro-Quebec information relating to the hydrology
+of the drainage basin and the levels of the reservoirs and the measurement and metering of any
+spillage from the reservoir; and to co-operate fully with Hydro-Quebec in the forecasting of energy
+which can be made available.
+4.2.2 Existing Obligations
+Hydro-Quebec acknowledges and agrees that CFLCo has existing obligations to supply power and
+energy in respect of the Twin Falls Power Corporation Limited loads referred to in Note 1 of Schedule
+of the present Power Contract, that no provision hereof shall operate to hinder or prevent the fulfilment by CFLCo of its said obligations to Twin Falls Power Corporation Limited covering 225,000
+kilowatts at 100% load factor and that the fulfilment of such obligation shall not constitute recapture
+under Section 6.6.
+4.2.3 Protection of Recapture
+Hydro-Quebec shall not request CFLCo to operate the Plant in a manner which would prevent
+CFLCo from having available any power and energy which CFLCo may recapture pursuant to Section 6.6.
+4.2.4 Maintenance
+CFLCO shall maintain serviceable and in good repair, in accordance with sound utility practice,
+all necessary facilities of the Plant. To enable Hydro-Quebec to verify compliance with this obligaS
+tion, CFLCo shall afford access to the Plant to Hydro-Quebec personnel who will be accommodated
+on the site of the Plant at Hydro-Quebec's 'expense.
+Should Hydro-Quebec notify CFLCo of any condition which may prevent delivery of Firm Capacity and energy, CFLCo shall, not later than 15 days after receipt of such notice, either (a) proceed diligently with the work of maintenance or repair called for by such notice and complete the
+same with all reasonable despatch or (b) inform Hydro-Quebec that, for reasons which CFLCo shall
+state, such work is not necessary to maintain said facilities serviceable in accordance with sound utility
+practice and undertake that, if a penalty or penalties are incurred as a result of such work not being performed, then such penalty or penalties will apply at 110% of the amounts otherwise payable under
+Article X. Moreover, Hydro-Quebec in such event shall retain all legal recourses otherwise available
+to it for damages suffered in excess of the penalty or penalties.
+4.2.5 Right of Hydro-Quebec to Operate
+Should CFLCo, not being prevented by any event of Force Majeure, be unwilling at any time to
+operate the Plant, and should the Plant then be operable, Hydro-Quebec, if not then in default here- under, shall have the right to cause the Plant to be operated for the account of CFLCo in accordance
+with sound utility practice until CFLCo itself resumes such operation.
+4.2.6 Spinning Reserve
+Hydro-Quebec may request CFLCo from time to time to employ such unit or units as are then
+available for such purpose to provide spinning reserve. In such case the amount of water required to.
+so operate such unit or units, as calculated from the turbine rating and flow curves, will be considered
+as Energy Payable on the same basis as if such water had been spilled, but after allowing for energy delivered from the unit or units on spinning reserve.
+4.2.7 Орeration of Reservoir
+Hydro-Quebec shall not request CFLCo to operate the Plant in such a manner as to imperil the
+equipment or facilities thereof or so that the security of the reservoir structures is endangered, and
+shall not request operation which would require that water levels be carried higher than those established by engineering criteria for freeboard as contained in Schedule I.
+4.2.8 Operating Manual
+For the purpose of the present Power Contract the parties shall, by mutual agreement, establish,
+revise and maintain up to date in the light of the experience gained in operating the Plant a detailed
+operating manual covering all procedures of interrelated operations. The establishment, revision and maintaining up to date of the operating manual shall be the sole responsibility of the parties hereto
+without reference to any assignee of this Power Contract as security.
+4.2.9 Control of Frequency and Power
+For the purpose of the present Power Contract Hydro-Quebec shall be responsible for regulating frequency and CFLCo shall be responsible for power and reactive flows in the transmission circuits
+of the Plant, to meet the schedules to be provided by Hydro-Quebec pursuant hereto. Each party shall so operate its system as to minimize voltage and power swings transmitted to the system of the
+other party.
+4.3 Interruptions
+(i) Either party may at any time, for the purpose of safeguarding human life or protecting from
+major damage the storage, generating or transmission facilities of CFLCo or the Hydro-Quebec system,
+discontinue or reduce, but only to the extent necessary, the supply or taking of power and energy hereunder.
+9
+Each party shall be prompt and diligent in removing the cause of any such discontinuance or
+reduction and to this end shall maintain an adequate reserve of spare parts and apparatus.
+The party on whose system the cause of an interruption shall have occurred shall inform the
+other of such cause as soon as possible after the interruption has occurred and, when feasible, shall
+state the estimated duration of such interruption. Any such information conveyed verbally shall be
+confirmed in writing without delay.
+(ii) If CFLCo should find it necessary or advisable to take out of service, for the purposes of
+making repairs, renewals or replacements, two or more units or their associated equipment, HydroQuebec will cooperate in estimating, to the best of its knowledge, what might be the most suitable
+time for CFLCo to do so in order to reduce or eliminate the penalty which CFLCo might incur for
+failure to provide Firm Capacity. All such discontinuances and reductions in the supply of power and
+energy, total or partial, shall be of minimum duration and, when possible, arranged for at a time least
+objectionable to Hydro-Quebec.
+4.4. Communications System
+The parties shall establish and maintain such continuous and reliable communications between
+their respective power systems as may be required for operation, protection, automatic computer
+control, data transmission, telemetering and voice channels. Subject to the provisions of Section 4.1
+hereof, the initial communications system shall have the characteristics contemplated by Schedule I.
+CFLCo shall, at its sole expense, construct, own, operate and maintain that part of the communications system which is at the Plant or which is on the Plant side of the Delivery Point. Hydro-Quebec
+shall, at its sole expense, construct, own, operate and maintain the remainder of said system.
+Subject to the foregoing provisions of this Section 4.4, the specifications for the said communications system shall be those furnished by Hydro-Quebec and Hydro-Quebec shall have the right to
+carry out the acceptance tests upon completion of the construction of such system.
+4.5 Metering and Measurement
+The parties shall establish and maintain adequate and reliable metering facilities to measure
+power and energy and to give such other measurements as may be required by the parties. The
+initial facilities so eştablished shall have the characteristics contemplated by Schedule I, subject to
+possible revision pursuant to the provisions of Section 4.1.
+The metering and measuring facilities of Hydro-Quebec shall, at its sole expense, be installed,
+maintained and operated by Hydro-Quebec at the intermediate station on its system nearest the
+Delivery Point and, subject to such adjustments as are required to reflect delivery at the Delivery
+Point, shall be used for billing purposes. Hydro-Quebec shall communicate to CFLCo all information
+on measurement from said facilities.
+The metering and measuring facilities of CFLCo shall, at its sole expense, be installed, maintained
+and operated by CFLCo at the Plant. Hydro-Quebec may from time to time, at its sole option and
+expense, install, maintain and operate duplicates of all or any such facilities of CFLCo and CFLCo
+shall furnish the space and access reasonably necessary for such purpose. Hydro-Quebec may at any
+time, at its expense, remove, with or without replacement, all or any of such duplicate facilities.
+All meters and measuring facilities, to be used or which may be used for billing, shall be periodically tested and such meters calibrated if necessary in accordance with agreed standards at least as
+high as those established by the Department of Trade and Commerce of Canada. Each party shall
+give adequate prior notice to the other of any test which it intends to conduct and the other may send
+authorized representatives who shall be entitled to attend and witness the test. Any meter or other
+measuring facility which fails to function or which functions incorrectly, shall be promptly adjusted,
+10
+repaired or replaced by a like facility having the required accuracy. Each party shall, promptly on
+request from the other, test its metering and measuring facilities.
+Should any meter or other measuring facility used for billing purposes break down or be found
+not to have the required accuracy, CFLCo and Hydro-Quebec shall determine (from CFLCo's own
+facilities and from such information as Hydro-Quebec may supply, and Hydro-Quebec shall be entitled
+to do so) the amount of power and energy supplied during the period of failure or inaccuracy and the
+duration of such period. In making such determinations the parties hereto shall rely on that data and
+information available to them as aforesaid which the parties consider most conducive to as accurate
+determination as the circumstances may permit.
+4.6 Method of Calculating Spillage and Inventory
+The number of kilowatthours equivalent at the Delivery Point to any volume of water shall
+determined as follows:
+(i) Spillway Gauges and Records
+a
+be
+The spillway structures of the Plant shall be rated by tests, carried out under both summer
+and winter conditions, which may be witnessed by representatives of Hydro-Quebec and shall be
+equipped with gauges to record water levels and gate positions so as to provide a permanent
+record from which shall be determined the volume of water spilled at any time.
+(ii) Reservoir Levels and Records
+The reservoirs shall be equipped with water level gauges to record water levels so as to provide a permanent record, and graphs satisfactory to Hydro-Quebec showing water storage in
+relation to water level shall be prepared in order to permit the establishment of usable water
+inventory for any reservoir level.
+(iii) Basis of Determination
+When converting spillage from the reservoirs or inventory of usable water in the reservoirs
+to kilowatthours at the Delivery Point, the volume of water shall be determined from said records
+in (i) and (ii) above and the number of kilowatthours equivalent at the Delivery Point to the
+water volume shall be determined on the basis of 1,000 cubic feet of water representing 21 kilowatthours at the Delivery Point.
+(iv) Review
+The parties shall review the said basis of conversion of water volume to kilowatthours as
+outlined in (ii) above on the first anniversary of the Effective Date so as to establish as precisely
+as is practicable, under plant operating conditions as they actually exist, the conversion facto
+which permits accurate calculation of the equivalent number of kilowatthours at the Delivery
+Point. Either party shall have the right to request a further review at every four year interval
+after the Effective Date.
+ARTICLE V
+COMPLETION GUARANTEE
+5.1 Provisions for Additional Funds Required
+Should CFLCo, after having obtained or having arranged to obtain from equity investments and
+from Debt Obligations at least seven hundred million dollars in the aggregate in Canadian funds or
+the equivalent in Canadian and U.S. funds for the costs of construction and bringing into operation
+of the Plant, determine that it does not have available sufficient funds, which CFLCo is not
+restricted by any provision of any Debt Obligation from using for the purpose, to complete the
+Plant, to bring it into full operation and to provide for Debt Service Requirement and Expense
+Charges in respect of the period prior to the Completion Date (additional funds so needed for such
+purposes being herein referred to as "the additional funds required") then such additional funds
+11
+required shall be provided to CFLCo, in accordance with the provisions of this Article V, if, as and
+to the extent from time to time requested by CFLCo.
+of
+to
+of
+The additional funds required shall be provided whenever required and, to the extent and within
+the jurisdictions where it is legally possible to do so, shall be provided by offering at a price
+$1,000 per unit to all the shareholders of CFLCo who hold at least 5% of its outstanding common
+shares pro rata to their then respective holdings of such common shares of CFLCo in relation
+the aggregate of their said holdings (provided that they shall have previously subscribed and paid for
+in full, if and when ofered to them, all the Units comprising General Mortgage Bonds and shares of
+CFLCo to which they were then entitled) said units each consisting of $1,000 principal amount
+Debentures of CFLCo and 10 fully paid and non-assessable no par value common shares of CFLCo.
+CFLCo shall promptly take all action within its power to satisfy all legal requirements necessary to
+permit each such offering to be made. The shareholders to whom the units are offered shall have
+days to subseribe and pay for the said units and Hydro-Quebec shall always subscribe and pay for its
+pro rata share of the offering. Failing full subscription and payment by the other offerees CFLCO
+shall give Hydro-Quebec notice of the amount of units which have not been subscribed and paid for
+and Hydro-Quebec shall be bound to take, or in any event to pay for, within the next 60 days, all units
+not subscribed and paid for by the other offerees. Any units for which Hydro-Quebec has made payment before delivery shall be delivered to Hydro-Quebec with all despatch as soon as legally possible.
+If for any reason, CFLCo shall be prevented from making the offering available in whole or in part
+to Hydro-Quebec, Hydro-Quebec shall nevertheless be bound to provide the additional funds required
+whenever required and after giving effect to subseriptions and payments under offers, if any, which it
+was legally possible to make.
+30
+Should CFLCo have previously elected not to offer to its shareholders other than Hydro-Quebec
+units comprising General Mortgage Bonds and shares of CFLCo then the shareholders of CFLCO
+other than Hydro-Quebec shall have no right to subscribe for units as provided for in the present Section 5.1 and in such event Hydro-Quebec alone shall provide the additional funds required under the
+present Section 5.1 whenever required and, to the extent where it is legally possible to do so, shall
+receive the units provided for in the present Section 5.1 and CFLCo shall in each case promptly take
+all action within its power to satisfy all legal requirements necessary to allow it to deliver to HydroQuebec units as afore-described.
+In order to keep Hydro-Quebec advised of CFLCo's expenditures and requirements for funds,
+CFLCo shall henceforth furnish to Hydro-Quebec periodically, not less often than once every three months, a statement showing source and application of funds to the date of such report and as
+projected to the Completion Date.
+Unless it becomes evident that construction delays will prevent or have prevented full intended availability of capacity and energy by the relevant Delivery Dates, CFLCo undertakes that it will
+not require Hydro-Quebec under the provisions of this Section 5.1:
+(a) to purchase more than $75 million of units in any twelve month period,
+(b) to purchase any units prior to January 1, 1971,
+(c) to purchase units in excess of $100 million prior to June 30, 1972, or
+(d) to purchase units in excess of $200 million prior to June 30, 1974.
+5.2 General Provisions applicable to Debentures
+The Debentures to be offered as aforesaid, as part of units, shall without limitation.
+(a) be issued under an Indenture in form and content satisfactory to Hydro-Quebec, who shall have the choice of the Trustee for the Debentureholders, said Indenture also to be satis- factory to counsel for the purchasers of the First Mortgage Bonds;
+12
+(b) be fully subordinated to both the First Mortgage Bonds and General Mortgage Bonds
+of CFLCo, referred to in Section 5.4, and to the bank loans of CFLCo incurred prior to the
+Completion Date and shall be unsecured;
+(c) bear interest at Hydro-Quebec's last borrowing cost, taking into account premium
+or discount, if any, and commissions payable by Hydro-Quebec, at the time of issue of the unit
+of which they shall form part, such interest to be a priority call on CFLCo's monies otherwise
+available for dividends;
+(d) be entitled to a sinking fund commencing one year after the commencement of the
+sinking fund on the General Mortgage Bonds, of 2% of the amount of Debentures outstanding
+at the commencement of each year, such sinking fund to be a call on said monies available for
+dividends second only to interest;
+(e) provide that CFLCo's interest and sinking fund obligations on the Debentures will be
+subject to availability of said monies available for dividends, no default occurring if payments
+must be deferred because of non-availability of funds;
+(f) provide that no dividend may be declared on any shares of CFLCo unless and until
+all past sinking fund and interest payments on the Debentures shall have been paid or set aside
+or otherwise provided for;
+(g) except when otherwise required and agreed in respect of any Debt Service Requirement
+resulting from the refinancing of any Debt Obligation under the provisions of Article XI hereof,
+mature two years after the maturity of the General Mortgage Bonds;
+to
+(h) be redeemable at CFLCo's option at par and accrued interest or, if this involves loss
+Hydro-Quebec because of its own borrowings to cover being non-call or delayed call, at
+premium sufficient to prevent such loss;
+(i) not be entitled to exercise any remedies under the Debentures or under the Indenture
+or Trust Deed creating the Debentures while the First Mortgage Bonds are outstanding.
+5.3 Dividend Restrictions
+So long as any loan by Hydro-Quebec pursuant to Section 5.1 remains outstanding Hydro-Quebec
+shall be entitled to require CFLCo to undertake that until the earlier of the Completion Date or that
+date upon which Hydro-Quebec ceases to be a lender of the additional funds required as aforesaid
+no dividend shall be declared or paid by CFLCo on its shares.
+Subsequent to the Completion Date the dividend restrictions set forth in the Indenture relating
+to Debentures issued pursuant to Section 5.1 shall apply, subject to any dividend restrictions in the
+Trust Deeds covering the First Mortgage and General Mortgage Bonds of CFLCo.
+5.4 Right of Hydro-Quebec to cure events of default under certain Debt Obligations of CFLCO
+It is contemplated that CFLCo's principal sources of borrowed funds for the Project will be its
+First Mortgage Bonds issued under a Trust Deed, its General Mortgage Bonds issued under a Trust Deed, its Debentures issued under an Indenture as provided in the present Article V and bank loans
+made under loan agreements with banks.
+Each such Trust Deed, Indenture or bank loan agreement shall provide that:
+(a) the trustee or trustees thereunder or the bank, as the case may be, shall give notice
+to Hydro-Quebec at the same time as it gives such notice to CFLCo of the occurrence of an
+event of default or of a default under such instrument which with notice or lapse of time would
+become an event of default under such instrument;
+(b) Hydro-Quebec shall have the same rights as CFLCo, which rights shall be exercisable
+within the same period of time as may be afforded CFLCo by such instrument, to cure any such default or any event of default;
+(c) the cure by Hydro-Quebec of any such default or event of default or action taken by Hydro-Quebec to cure such a default or event of default shall have the same effect, under such
+13
+instrument, insofar as such cure or action relates to suspending, waiving or terminating any rights or remedies exercisable by the trustee, trustees or bank in consequence of the occurrence of such default or event of default as would such cure or action if effected or taken at the same
+time by CFLCo; and
+(d) such trustee, trustees or bank, as the case may be, shall give both Hydro-Quebec and
+CFLCo the prior written notice specified in any such instrument prior to exercising his rights accelerate maturity or take possession of the Plant. to
+Hydro-Quebec may immediately on receipt of such notice exercise its right to cure default or events of default under any such Trust Deed, Indenture or bank loan agreement except in circum- stances where CFLCo is able promptly (not later than midway through the period of time referred
+to in (b) of the preceding paragraph) to demonstrate to the satisfaction of Hydro-Quebec that such default or event of default either (i) arose from inadvertence or error and can be, and is being, cured by CFLCo or (ii) is merely technical and CFLCo can obtain, and is obtaining, a waiver of the same.
+Hydro-Quebec shall, except where the event of default arose as a result of Hydro-Quebec's failure to perform any of its obligations hereunder, have the option to cure any event of default under any such Trust Deed, Indenture or bank loan agreement and if Hydro-Quebec elects to do so it shall be entitled to take any and all action required to effect such cure in its own name or the name of CFLCo.
+of
+In such case, CFLCo shall cooperate fully with Hydro-Quebec and shall carry out all reasonable
+instructions of Hydro-Quebec within the power of CFLCo and related to the curing of such event default. In effecting any such cure Hydro-Quebec shall not take any action or instruct CFLCo to take
+any action which would violate any binding obligations of CFLCo to others. Any amounts paid expended by Hydro-Quebec in effecting such cure shall be deemed to be advances to CFLCO within
+the meaning of Section 5.1 entitling Hydro-Quebec to receive 10 common shares of CFLCo with every $1000 principal amount of Debentures.
+or
+In order to secure its rights under the Trust Deed covering the First Mortgage Bonds of CFLCo, Hydro-Quebec shall be an Intervenant to the said Deed.
+6.1 Energy Characteristics
+ARTICLE VI
+ENERGY, FIRM CAPACITY AND RECAPTURE
+of The energy to be made available under this Power Contract, as evidenced by the maintenance normal voltage and frequency at the Delivery Point, shall be three phase 60 hertz (i.e. 60 cycle per second) alternating current at a voltage at the Delivery Point of approximately 735,000 volts under normal operating conditions. Such voltage will be varied in accordance with Hydro-Quebec's system requirements and sound utility practice.
+6.2 Sale and Purchase of Power and Energy
+CFLCo shall deliver to Hydro-Quebec at the Delivery Point such power and energy as Hydro- Quebec may request, subject to the provisions of Sections 4.2 and 4.3.
+Hydro-Quebec, in purchasing power and energy hereunder, shall have no obligation to purchase, prior to the Effective Date, during any stage of construction, energy in excess of that contemplated by Column 6 of Schedule II as intended to be then available.
+6.3 Prior to Effective Date
+Column 1 of Schedule II sets forth the Delivery Dates and Column 6 of Schedule II sets forth the
+amounts of energy to be available on such Delivery Dates for the period prior to the Effective Date.
+14
+By mutual agreement such Delivery Dates may be advanced, in which event said Schedule II shall be
+deemed to have been revised to conform.
+6.4 Firm Capacity
+The Firm Capacity shall be available at all times when Hydro-Quebec has requested it. In addition whenever additional capacity can, in the opinion of CFLCo, be made available, such capacity
+shall also be available to Hydro-Quebec on request.
+In the event of a Deficiency occurring in the making available by CFLCo of capacity, the pro- visions of Article X hereof shall apply.
+Subject to the provisions of Sections 4.3 and 6.7 hereof, at no time after the sixth Delivery Date
+shall the power taken by Hydro-Quebec be less than Minimum Capacity.
+6.5 Firm Capacity Schedules
+At least seven days in advance of the first Delivery Date and at weekly intervals thereafter Hydro- Quebec shall furnish to CFLCo:
+(a) an hourly schedule of its proposed capacity requirements over the week following, and (b) an estimate of what Hydro-Quebec is likely to schedule over the three weeks thereafter.
+Each such seven day schedule shall constitute Hydro-Quebec's request for availability of such capacity
+over the period scheduled to the various extents and at the various times indicated by the schedule,
+but subject to Hydro-Quebec's right to make further requests for changes in capacity during the period within the limits of Firm Capacity and Minimum Capacity. Any such request shall be con- sidered as revising the schedule to the required extent and for the required time.
+6.6 Recapture
+CFLCo may, on not less than three years prior written notice to Hydro-Quebec, elect to withhold
+from the power and energy agreed to be sold hereunder blocks at a specified load factor per month,
+to be stated in said notice, of not less than 60% nor more than 90%, which blocks in the aggregate
+shall not exceed during the term hereof 300,000 kilowatts for a maximum withholding of 2.362 billion kilowatthours per year provided that:
+(i) energy so withheld is sold by CFLCo only for consumption outside the Province Quebec; of
+(ii) any part of the energy so withheld which, from time to time may become available for
+purchase by Hydro-Quebec, may be purchased by Hydro-Quebec, if before the Effective Date, as
+part of Energy Payable priced in accordance with Section 8.3, and, if on or after the Effective Date, at the price of 33.33% of the Applicable Rate multiplied by the number of kilowatthours so
+purchased, and to this end Hydro-Quebec shall have access to the pertinent sales records of CFLCo; and
+(iii) any part of the pewer and energy so withheld before the seventh Delivery Date shall
+not relieve CFLCo from its commitment to deliver power and energy in accordance with Schedule
+II of the present Power Contract.
+6.7 Recapture Adjustments
+Immediately upon any recapture becoming effective, the Annual Energy Base shall be reduced by the same amount of kilowatthours per year as are recaptured and Firm Capacity and Minimum
+Capacity shall be reduced by the same amount of kilowatts as are recaptured. Should such recapture
+occur prior to the seventh Delivery Date, Schedule II shall not be revised. Should such recapture
+occur on or after the seventh Delivery Date, Schedule II shall be revised accordingly.
+15
+7.1 Delivery Point
+ARTICLE VII
+DELIVERY
+The Delivery Point shail at all times and notwithstanding any other provisions of this Power
+Contract be at such point on the transmission circuits as will enable CFLCo to sell the energy
+generated by the Plant without forfeiting any direct or indirect tax benefits or rebates now available
+to CFLCo. Any facilities of the Plant which may at any time be found to be located on the Quebec
+side of the Delivery Point shall be and are hereby acknowledged always to have been the property of,
+and to have been purchased for the account of, Hydro-Quebec. Subject always as aforesaid, and to
+any further adjustments which may be made by mutual consent, the Delivery Point for each circuit
+shall be at the height of land, about opposite present Mile 148.8 on the Quebec North Shore and
+Labrador Railway, which is the presumed watershed between the St. Lawrence River and the
+Churchill River.
+7.2 Transmission Facilities
+The construction, operation and maintenance of the necessary transmission facilities up to the
+Delivery Point will be the exclusive responsibility of, and at the sole cost of, CFLCo and onwards
+from the Delivery Point will be the exclusive responsibility of, and at the sole cost of, Hydro-Quebec.
+8.1 Base Rate
+ARTICLE VIII
+RATE AND PRICE
+The Base Rate shall be, after the Effective Date:
+for the frst 5 years, 2.7734 mills per kilowatthour;
+thereafter for the next 5 years, 2.7110 mills per kilowatthour;
+thereafter for the next 5 years, 2.6591 mills per kilowatthour;
+thereafter for the next 10 years, 2.5449 mills per kilowatthour; and
+thereafter 2.3787 mills per kilowatthour.
+8.2 Applicable Rates
+The Base Rate shall be subject to adjustment as follows:
+If the Final Capital Cost of the Plant is less than $728,000,000 each Base Rate shall be
+reduced by one-half of the same fraction thereof as is, of $723,000,000, the diference between
+$728,000,000 and the Final Capital Cost of the Plant.
+If the Final Capital Cost of the Plant is more than $791,000,000 each Base Rate shall be
+increased by one-half of the same fraction thereof as is, of $791,000,000, the difference between
+$791,000,000 and the lesser of the Final Capital Cost of the Plant or $900,000,000.
+For the purpose of any such adjustment, CFLCo shall furnish to Hydro-Quebec, not later
+than the frst Delivery Date hereunder CFLCo's reasonable estimate of what the Final Capital
+Cost of the Plant is likely to be and such estimate shall be the basis of adjustment until full
+determination of the Final Capital Cost of the Plant whereupon the Applicable Rates shall be
+recalculated as a final adjustment under this Section 8.2. Any overpayment or underpayment resulting from a difference between the Applicable Rates based on such estimate and the
+Applicabie Rates based on the Final Capital Cost of the Plant shall be promptly provided for
+16
+with interest to the date of adjustment at 7% per annum by, as the case may be, a refund by
+CFLCo to Hydro-Quebec or a supplementary payment by Hydro-Quebec to CFLCo.
+8.3 Price Prior to Effective Date
+After the first Delivery Date and prior to the Effective Date, the monthly price for Energy
+Payable shall be:
+(i) for that portion of the amount of energy indicated in Column 6 of Schedule II which,
+whether or not taken, CFLCo makes available to Hydro-Quebec:
+plus
+2.8253 mills per kilowatthour for 90% of such energy made available, and
+1.0000 mill per kilowatthour for the remaining 10% of such energy made available,
+(ii) for energy CFLCo may be willing to supply in excess of the amount indicated in
+Column 6 of Schedule II:
+0.5000 mill per kilowatthour for that portion of such energy which is taken by Hydro-Quebec.
+The aforesaid rates of 2.8253 mills per kilowatthour and 1.0000 mill per kilowatthour are subject to
+adjustment under the provisions of Section 8.2, but such adjustments will only apply to amounts of
+energy made available by CFLCo up to the amounts indicated by Column 7 of Schedule II, which
+Column 7 amounts shall be considered to include firstly that energy made available which is payable
+at the 2.8253 rate.
+In reckoning the amount of energy shown in Schedule II to be available in any month adjustment shall be made to reconcile the actual number of hours in the month with the fact that said
+Schedule has been prepared on the basis of a 730 hour month.
+Payments for power and energy made by Hydro-Quebec to CFLCo prior to the Effective Date
+shall be used by CFLCo towards satisfaction of current payments to be made by CFLCo on account
+of Final Capital Cost of the Plant, Expense Charges and Debt Service Requirement and maintenance
+of such working capital or other similar requirements as may be stipulated in any outstanding Debt Obligation.
+8.4 Price After the Effective Date
+After the Effective Date the monthly price for power and energy shall be:
+(i) the product of the Basic Contract Demand multiplied by 66.67% of the Applicable Rate
+(earned whether or not taken or made available), plus
+(ii) the product of Energy Payable as calculated for the month then ended multiplied by
+33.33% of the Applicable Rate.
+Such price shall be subject to adjustment as provided in Section 8.5.
+8.5 Direct Price Adjustments
+Direct adjustments of the price payable by Hydro-Quebec for energy hereunder shall be made
+the circumstances following:
+8.5.1-Recapture Notice Period
+in
+During any notice period prior to the recaptures contemplated by Section 6.6 hereof the
+price for Energy Payable, each month after the first Delivery Date, by Hydro-Quebec to CFLCo
+shall be reduced by 0.27 mill per kilowatthour for 1/12 of the number of kilowatthours per year
+in respect of which a Recapture Notice has been given.
+17
+8.5.2-Resulting from Variations between Annual Energy Base and the annual average Energy Payable
+(i) Any difference, in the period between the Effective Date and the eighth anniversary
+thereof or in any four-year period thereafter ending on an anniversary of the Effective Date,
+between the annual average of the total of all Energy Payable during such period ("the annual average") and the Annual Energy Base in effect during such period, shall be adjusted by a refund
+from CFLCo to Hydro-Quebec if the annual average is less than the Annual Energy Base or by
+a supplementary payment from Hydro-Quebec to CFLCo if the annual average exceeds the
+Annual Energy Base, provided that there shall be excluded from the calculation that part of such
+annual average which exceeds the amount obtained when the total amount of all recaptures of
+energy is deducted from 32.2 billion killowatthours.
+(ii) Such payment shall be computed by:
+(a) adding the total of all Energy Payable during the period,
+(b) dividing (a) by the number of years in the period and making any exclusion required under (i) above,
+(c) establishing the difference between (b) and the Annual Energy Base in effect during
+the period,
+(d) multiplying (c) by 66.67% of the Applicable Rate or Rates in the period as
+separate computation for each year,
+a
+(e) the amount of the adjustment will then be the sum of the yearly products from
+(d) plus the net amount of any interest provided for in (iii) following.
+(iii) For interest calculation purposes, the difference, if any, between the Annual Energy
+Base and the total Energy Payable for such year, in each of the years of the period for which
+adjustment is made, shall be separately calculated. Each such annual difference shall be multi- plied by 66.67% of the Applicable Rate or Rates in effect for such year and interest shall accrue
+thereon at 7% per annum from the commencement of such year to the end of the eight-year or
+four-year period concerned, at which time the interest accrued shall, by addition or subtraction or
+both, be consolidated into, and form part of, the adjustment payment to be made.
+(iv) Any adjustment payment in respect of the first eight year period shall be made in
+equal monthly instalments payable over the next eight years concurrently with the monthly
+payments contemplated by Article XVI hereof, and any adjusting payment in respect of any
+subsequent four-year period shall be made in equal monthly instalments payable over the next
+four years concurrently with said monthly payments; provided that at the end of the term hereof
+any such payment shall be made in one lump sum payable within three months of such end of
+term and provided also that if the aggregate amount to be paid on any one adjustment is less
+than $1,000,000 it shall be paid forthwith.
+(v) Any such adjustment payment shall itself bear interest at 7% per annum from the date
+adjustment is calculated and such interest shall be payable concurrently with each instalment
+lump sum payment aforesaid.
+or
+9.1 Adjustment Intervals
+ARTICLE IX
+ADJUSTMENT OF ANNUAL ENERGY BASE
+The number of kilowatthours per year comprising the Annual Energy Base may be adjusted during
+the term hereof as of the eighth anniversary of the Effective Date, and thereafter as of the end of each
+subsequent four year period.
+18
+9.2 Basis for Adjustment
+If an adjustment takes place, the Annual Energy Base previously in effect shall be increased or
+decreased, subject to the provisions of Section 9.3, in accordance with the difference between (a) the
+Annual Energy Base previously in effect and (b) the total of the following divided by the number
+of years since the Effective Date:
+(i) the actual energy deliveries measured in kilowatthours taken by Hydro-Quebec at the
+Delivery Point since the Effective Date, plus
+(ii) the equivalent kilowatthours of any water spilled since the Effective Date, and
+(iii) if the reservoir level is higher than it was at the Effective Date adding the equivalent
+number of kilowatthours represented by the change in reservoir level as compared to the reservoir
+level at the Effective Date, or
+(iv) if the reservoir level is lower than it was at the Effective Date subtracting the equivalent
+number of kilowatthours represented by the change in reservoir level as compared to the reservoir
+level at the Effective Date.
+9.3 Limitations on Adjustment of Annual Energy Base
+(i) No adjustment of the Annual Energy Base at the end of any eight year or four year period
+shall alter the then existing Annual Energy Base by more than 3/½% thereof.
+(ii) No adjustment or adjustments of the Annual Energy Base shall ever cause it to exceed the
+amount obtained when the amount of all recaptures of energy is deducted from 32.2 billion kilowatthours per annum.
+9.4 Conditions under which Annual Energy Base may be Adjusted
+(i) Either party without the consent of the other party being required may require a change
+the Annual Energy Base of up to 31/½% provided
+in
+(a) the revised Annual Energy Base is equal to the cumulative experience from the Effective
+Date to the adjustment date calculated as outlined in Section 9.2, or
+(b) if the said cumulative experience differs from the Annual Energy Base by more than
+3½% of the latter, the adjustment results in a revised Annual Energy Base which is different by
+3/½% from the existing Annual Energy Base and is closer to the said cumulative experience than
+said existing Annual Energy Base.
+(ii) Without reference to the said cumulative experience, the parties may agree to any adjustment
+in the Annual Energy Base which does not alter the existing Annual Energy Base by more than
+313% thereof.
+9.5 No Adjustment
+Failing the request of either party for an adjustment of the Annual Energy Base as provided
+above within the six months period following the date as of which the Annual Energy Base may be adjusted, the Annual Energy Base shall continue for a further period of four years as was last established.
+9.6 Effect of Changing Annual Energy Base
+If the Annual Energy Base is changed in accordance with this Article IX, the revised Annual
+Energy Base shall be employed forthwith for purposes of calculating the Basic Contract Demand.
+19
+10.1 Extent of Penalty
+ARTICLE X
+FIRM CAPACITY PENALTY
+Should a Deficiency occur, then CFLCo shall be subject to the applicable penalty outlined below,
+which penalty Hydro-Quebec shall be entitled, subject as hereinafter provided in Article XVI, to
+deduct from the payments next to be made by it to CFLCo hereunder:
+(i) when the Deficiency Period is more than 30 minutes and not more than 4 hours there
+shall be a penalty of $10 per megawatt for the maximum megawatts of such Deficiency lasting
+continuously for 30 minutes, calculated to the nearest full megawatt;
+(ii) when the Deficiency Period is more than 4 hours and not more than 10 hours there shall
+be a penalty of $20 per megawatt for the maximum megawatts of such Deficiency lasting continuously for 30 minutes, calculated to the nearest full megawatt;
+(iii) when the Deficiency Period is, or is deemed to be, 24 hours or more there shall be a
+penalty of $40 per megawatt day for the maximum megawatts of such Deficiency lasting continuously for 30 minutes, calculated to the nearest full megawatt.
+10.2 Rules Applicable
+For the purpose of computing penalties as aforesaid:
+10.2.1- any Deficiency Period in excess of 10 continuous hours and not exceeding 24 con- tinuous hours will be considered as a full 24 hours;
+10.2.2 separate Deficiency Periods each lasting more than 30 minutes within a 24 hour time
+span shall never result in a penalty greater than that which would have resulted if the maximum
+of the Deficiencies had lasted for the full 24 hour period; and
+10.2.3- if a Deficiency Period lasts for more than twenty-four hours, it may be divided into
+any such four hour, ten hour and twenty-four hour periods as CFLCo may designate which would
+cover the total Deficiency Period and separate penalties for each period so designated shall be determined as in Section 10.1.
+10.3 No Penalty
+There shall be no penalty applicable:
+10.3.1- to any Deficiency which is less than one per cent of the capacity at the time requested by Hydro-Quebec;
+10.3.2- to any part of any Deficiency which is due to Excessive Corona Losses;
+10.3.3-during any period when CFLCo is unable to provide service due to disturbances
+on the Hydro-Quebec system, such period to include not only the duration of the disturbance but
+also the time required by CFLCo to restore service;
+10.3.4- in any month in respect of which an advance was made to CFLCo by Hydro-Quebec
+pursuant to Section 12.1 hereof;
+10.3.5- during the period of, and to the extent of, the Deficiency resulting from any interruption for the safeguarding of human life permitted by paragraph (i) of Section 4.3 hereof;
+10.3.6- to any Deficiency for which Hydro-Quebec is able to substitute capacity from its
+own system, without using its reserve capacity and without impairing the reliability of service from
+its system, at, in its sole judgment, no material increase in Hydro-Quebec's costs of operation; and
+20
+10.3.7- to any Deficiency resulting from a lack of water other than by reason of the failure
+of impounding structures on any section of the reservoirs.
+11.1 Prior Approval
+ARTICLE XI
+REFINANCINGS
+Refinancings of CFLCo's Debt Obligations and revisions of existing Debt Obligation agreements
+to permit the same shall be subject to the prior approval of both parties hereto.
+11.2 Costs and Benefits
+All costs and any benefits of any refinancing of any of CFLCo's Debt Obligations in respect of
+which Hydro-Quebec had been making interest charge payments under Article XV shall be shared
+equally by the parties hereto.
+ARTICLE XII
+DEBT SERVICE REQUIREMENT AND EXPENSE CHARGES
+12.1 Advances by Hydro-Quebec
+If, in respect of any month during the period contemplated by Section 12.3 hereof, CFLCo will
+be required to make any payment on account of Debt Service Requirement or in respect of Expense
+Charges and CFLCo determines that, taking into account any restrictions to which CFLCo may be
+subject regarding the employment of its funds, CFLCo will lack sufficient unrestricted funds to enable
+it to make when due the required payment, CFLCo shall give at least 15 days prior notice of the
+anticipated shortage to Hydro-Quebec, whereupon Hydro-Quebec shall advance to CFLCo in respect
+of that month the full amount of the shortage in time to permit such payment to be made at due
+date and CFLCo shall make such payment accordingly. If any Expense Charges, whether or not
+of a capital nature, are non-recurring expenditures, Hydro-Quebec shall advance the sums required
+at the times required upon notice from CFLCo as aforesaid.
+12.2 Consideration for Advances
+Hydro-Quebec shall receive from CFLCo, for each advance made to CFLCo by Hydro-Quebec
+under this Article XII, units comprising unsecured subordinated Debentures, having the attributes
+referred to in Article V hereof, and common shares of CFLCo. Save as otherwise provided in Section 12.4 and in the following paragraph, for each $1000 advanced by Hydro-Quebec it shall receive
+one Debenture in the principal amount of $1,000 and five fully paid and non-assessable common
+shares of CFLCo.
+Such units shall not include common shares if and to the extent that the requirement for such
+advances has resulted from a decrease in the revenue of CFLCo as the result of Hydro-Quebec having
+taken during the three months immediately previous to the time such advance takes place less than
+the amount obtained when one-fourth of all recaptures is deducted from 7.1 billion kilowatthours,
+provided such reduced taking is not caused by Plant deficiencies.
+If, for any reason CFLCo shall be prevented from making the aforesaid Debentures and shares
+available in whole or in part to Hydro-Quebec, Hydro-Quebec shall nevertheless be bound to make the
+advances required under this Article XII whenever required.
+12.3 Duration of Obligation to Make Advances
+Hydro-Quebec's obligation to make advances to CFLCo pursuant to Section 12.1 hereof shall
+commence on the Completion Date and continue during the term of this Power Contract for so long
+as any Debt Service Requirement exists.
+21
+12.4 Advances during Restoration
+If the Plant becomes so damaged or destroyed as to render it inoperative CFLCo shall proceed
+diligently with the work of restoration and resumption of operations, it being acknowledged by the
+parties hereto that such is the desirable course to follow in the circumstances, and Hydro-Quebec
+shall continue to make advances under Section 12.1, if, as, and to such extent as, may be required.
+However, advances then made by Hydro-Quebec, in any circumstance contemplated by the next
+paragraph of this Section, for Expense Charges related to such restoration and resumption of operations shall entitle Hydro-Quebec to receive 10 shares per $1,000 principal amount of Debentures instead
+of the 5 shares per $1,000 principal amount of Debentures contemplated by Section 12.2.
+If the Plant is so damaged as to reduce its Firm Capacity by at least 40% for a continuous period
+of 6 months or more any advances by Hydro-Quebec for Expense Charges related to restoration and
+resumption of operations shall be deemed advances for the purposes of this Section 12.4.
+12.5 Estimate
+Should CFLCo at any time call upon Hydro-Quebec for an advance under this Article XII, CFLCo
+shall furnish to Hydro-Quebec for the latter's guidance CFLCo's estimate of the amounts and due
+dates of all Debt Service Requirement and Expense Charges of CFLCo known to it which will become
+payable in the next twelve months and CFLCo's estimate of the unrestricted funds expected to be
+available to it at the times payments thereof will fall due.
+12.6 Insurance Proceeds
+Any proceeds of insurance which CFLCo may have on hand at the time any advance from HydroQuebec under Sections 12.1 and 12.4 hereof is required shall, to the extent CFLCo has the unrestricted
+disposition thereof, free from other commitments, be considered as part of CFLCo's unrestricted funds
+to be applied against the payment of CFLCo's Debt Service Requirement and Expense Charges.
+13.1 Audit by Hydro-Quebec
+ARTICLE XIII
+ACCESS TO RECORDS
+The Final Capital Cost of the Plant and any other item affecting payments to be made by HydroQuebec shall be subject to verification and audit by Hydro-Quebec which, for such purpose, shall at
+all reasonable times have free access to the construction site and to the books, records and other documents relating to the costs, the Schedules and other pertinent data in the possession of CFLCo in
+connection with the proposed power development. CFLCo shall make available to Hydro-Quebec, as
+they are available, regular reports and other relevant information respecting the cost of the Plant, the
+progress of construction, and all items affecting payments to be made by Hydro-Quebec or which
+Hydro-Quebec may reasonably require for the purposes of this section.
+13.2 Questions Arising
+Any question which may arise as to the status, under the provisions of this Power Contract, of
+any item affecting payments to be made by Hydro-Quebec, shall be jointly discussed by Hydro-Quebec
+and CFLCo and, failing resolution by them, shall be referred to the independent auditors of CLFCo
+for interpretation. Should Hydro-Quebec or CLFCo be unwilling to accept the interpretation of the
+independent auditors of CFLCo on any such question, joint reference shall be made by Hydro-Quebec
+and CFLCo to an independent auditor acceptable to each but whom neither otherwise employs,
+retains or consults and shall be subject to determination by said independent auditor in accordance
+with the applicable provisions of this Power Contract. Should Hydro-Quebec and CLFCo be unable
+to agree on the appointment of such an independent auditor, they shall jointly request the President of
+the Institute of Chartered Accountants of Quebec to make the appointment on their behalf and shall
+22
+then refer the question to the independent auditor so appointed. Such decisions shall always remain
+subject to review by the Courts of competent jurisdiction.
+13.3 Sharing of Expenses
+The fees and expenses of any independent auditor, other than the independent auditors of CFLCo,
+referred to in Section 13.2 and, if applicable, of the President of the Institute of Chartered Accountants
+of Quebec shall be borme equally by Hydro-Quebec and CFLCo.
+13.4 Annual Review
+At the time of each annual audit of the affairs of CFLCo, all such items then known with respect
+to Effective Interest Rates, Final Capital Cost of the Plant, Debt Service Requirement, Expense
+Charges and U.S. dollar-Canadian dollar exchange transactions and any other items affecting payments
+to be made by Hydro-Quebec shall be referred to Hydro-Quebec for concurrence. All agreement of
+such items by Hydro-Quebec shall be final and binding.
+14.1 Variations in Exchange Rate
+ARTICLE XIV
+U.S. DOLLAR TRANSACTIONS
+In the event of any difference between (i) the Weighted Average Exchange Rate on the
+converting into Canadian dollars of the U.S. dollar proceeds of all of any class of Debt: Obligations
+repayable in U.S. dollars incurred by CFLCo to finance the construction and bringing into operation
+of the Plant or for the refinancing from time to time of Debt Obligations originally incurred to finance
+or refinance such construction and bringing into operation and (ii) the exchange rate applicable upon
+any purchase of U.S. dollars by CFLCo for current servicing of each such Debt Obligation of such
+class then, on each purchase of U.S. dollars for servicing of any such Debt Obligation, the difference
+experienced shall be for the respective accounts of CFLCo and Hydro-Quebec on the following
+basis:
+14.1.1 Where the Weighted Average Exchange Rate was .925 or less, the difference aforesaid shall be for the accounts equally of CFLCo and Hydro-Quebec to the extent of 4¢ U.S. for
+each U.S. dollar purchased and beyond that solely for the account of Hydro-Quebec;
+but less than 14.1.2 Where the Weighted Average Exchange Rate was more than .925 but less
+.965, the difference aforesaid shall be for the accounts equally of CFLCo and Hydro-Quebec to
+the extent of 5¢ U.S. for each U.S. dollar purchased and beyond that solely for the account of
+Hydro-Quebec; and
+14.1.3 Where the Weighted Average Exchange Rate was .965 or more, the difference
+aforesaid shall be for the accounts equally of CFLCo and Hydro-Quebec to the extent of 6¢ U.S.
+for each U.S. dollar purchased and beyond that solely for the account of Hydro-Quebec.
+14.2 Deemed Conversion
+Any U.S. funds which CFLCo may receive free of escrow or pledge in respect of any Debt Obligation referred to in Section 14.1 which CFLCo employs without converting them to Canadian dollars
+shall, for the purpose of Section 14.1, be deemed to have been converted to Canadian dollars at the
+exchange rate for sales of U.S. dollars quoted by the Bank of Canada in effect at noon on the day
+CFLCo would first have been free to convert such U.S. funds into Canadian funds.
+14.3 U. S. Refinancing of U. S. Debt Obligations
+Any U.S. Debt Obligation incurred by CFLCo, the proceeds of which are employed to repay an
+earlier U.S. Debt Obligation of CFLCo, shall, to the extent so employed, be deemed for the purposes
+23
+of Section 14.1(i) to be a continuation of such earlier U.S. Debt Obligation and to have already been
+converted into Canadian dollars at the time such earlier U.S. Debt Obligation was so converted or
+deemed to have been converted.
+14.4 Subsequent U. S. Debt Obligations
+Subject to Section 14.3 should CFLCo, after any calculation of Weighted Average Exchange
+Rate for the purposes of this Article, thereafter incur any additional Debt Obligation repayable in
+U.S. dollars the Weighted Average Exchange Rate will be recalculated but without retroactive effect.
+ARTICLE XV
+INTEREST CHARGES
+15.1 Portion of Interest to be borne by Hydro-Quebec
+Should the Effective Interest Rate payable by CFLCo on its First Mortgage Bonds exceed 5½%
+per annum, or should the Effective Interest Rate payable by CFLCo on its other Debt Obligations (including its General Mortgage Bonds, Debentures and bank loans) exceed 6% per annum then the portion of each interest payment thereon attributable to such excess in Effective Interest Rate shall be borne
+by Hydro-Quebec, which shall furnish to CFLCo, as required, the sums necessary to provide for such
+part of such interest payment (whether the interest be payable separately and distinctly or be a part
+of a blended payment of principal and interest). In the event of recapture of power and energy by
+CFLCo pursuant to Section 6.6, payments to be made by Hydro-Quebec under this Section shall be
+reduced in the same proportion as such recapture bears to the Annual Energy Base or, if recapture
+occurs prior to the Efective Date, to 31.50 billion kilowatthours.
+15.2 Method of Payment
+The sums payable to CFLCo by Hydro-Quebec pursuant to this Article shall be made available
+to CFLCo, at its address referred to in Article XXIII, not later than three business days prior to
+each date upon which interest on the Debt Obligation or Debt Obligations concerned is required to
+be paid, whether this be monthly, quarterly, half-yearly or yearly.
+15.3 Forecasts
+CFLCo shall furnish to Hydro-Quebec at the commencement of each quarter of each year in which
+CFLCo has Debt Obligations outstanding, CFLCo's best forecast of the interest payments which
+CFLCo will be required to make for the twelve-month period next ensuing and of the portions thereof,
+if any, to be borne by Hydro-Quebec. CFLCo shall promptly advise Hydro-Quebec of any signifcant
+variations in any such forecast.
+15.4 Acknowledgment
+Payments made hereunder by Hydro-Quebec are, to the extent that they relate to interest which
+CFLCo capitalizes pursuant to the provisions hereof, acknowledged to be in aid of construction.
+15.5 Exemption
+CFLCo may, in respect of any Debt Obligation maturing within five years of the date of issue
+and issued prior to the Completion Date, exempt Hydro-Quebec from all obligation to make payments
+for interest charges under this Article XV and such Debt Obligation shall not be classified as one
+involving Hydro-Quebec in the making of any such payments.
+ARTICLE XVI
+PAYMENT
+16.1 Monthly Accounts
+CFLCo shall render an account to Hydro-Quebec monthly covering:
+24
+16.1.1 Prior to the Effective Date
+and
+(i) the Energy Payable, priced in accordance with Section 8.3 hereof;
+(ii) the credit, if any, available to Hydro-Quebec under Section 8.5.1;
+(iii) the amount of penalty which Hydro-Quebec is entitled to withhold pursuant to Article X,
+(iv) the equivalent in Canadian funds of the amount of any adjustment required to be
+made, whether as a credit or a debit, pursuant to Section 14.1 hereof, in respect of purchases
+of U.S. funds by CFLCo in the month preceding, for the purpose of current servicing of U.S.
+dollar debt.
+16.1.2 From the Effective Date
+(i) the Energy Payable priced in accordance with Section 8.4 and, if applicable, Section
+6.6 hereof;
+(ii) the amount, if any, payable pursuant to Section 4.2.6 hereof in respect of such month;
+(iii) the credit, if any, available to Hydro-Quebec under Section 8.5.1;
+(iv) the amount, if any, attributable to such month, whether as a debit or a credit, in
+respect of any adjustment pursuant to Section 8.5.2;
+and
+(v) the amount of penalty which Hydro-Quebec is entitled to withhold pursuant to Article X;
+(vi) the equivalent in Canadian funds of the amount of any adjustment required to be made,
+whether as a credit or a debit, pursuant to Section 14.1 hereof, in respect of purchases of U.S.
+funds by CFLCo in the month preceding for the purpose of current servicing of U.S. dollar debt.
+Any account rendered under this Section must be in accordance with the provisions of this Power
+Contract.
+16.2 Method of Payment
+All accounts rendered shall be payable in lawful money of Canada at the address of CFLCO
+referred to in Article XXIII hereof or at such other address within Canada as CFLCo may from
+time to time designate. All such accounts shall be payable within 15 days of their receipt without
+abatement or set-off whatsoever except for the credits and adjustments, if any, included in the
+account.
+Any inaccuracy in any account may be corrected by appropriate adjustment to a subsequent
+account.
+17.1 Contract Not Terminated
+ARTICLE XVII
+FORCE MAJEURE
+No event of Force Majeure or of default hereunder shall give rise to, or result in, the termination
+of this Power Contract.
+17.2 Effect of Force Majeure on Payment Obligations
+Events of Force Majeure shall have the effect of abating to the extent thereby not earned any
+payments provided for in the present Power Contract with the exception that, notwithstanding Force
+Majeure or default hereunder, Hydro-Quebec must still make advances required of it under and
+otherwise comply with the provisions of Articles V and ХІI.
+25
+17.3 Obligations Suspended or Abated
+Subject to the provisions of Sections 17.1 and 17.2 hereof, should either or both parties hereto
+by reason of Force Majeure be prevented or delayed in the performance of any of its or their
+obligations hereunder, such party or parties shall thereby be subject to no penalty under the provisions
+hereof or incur any other liability to the other, but shall nonetheless perform such obligation as
+soon as possible and to as full an extent as possible.
+17.4 Assignment of Indemnification
+Should either party hereto be prevented by any act of governmental authority from performing
+any of its obligations hereunder and be thereby entitled to claim indemnification from such governmental authority, such party shall, to the extent of the damages thereby occasioned to the other party,
+ipso facto assign to such other party the right to receive such indemnity. Notwithstanding such
+assignment, the party prevented shall, at the option of the other party, itself attend to the claiming
+and receiving of such indemnity but at the expense of both parties in proportion to the damages collected by each.
+18.1 Of Hydro-Quebec by CFLCo
+ARTICLE XVIII
+INDEMNIFICATION AND LIABILITY
+CFLCo shall assume all obligations, risks and responsibility for, and shall forever indemnify and
+save Hydro-Quebec harmless from and against, any and all claims that may be made by third persons for injuries or damages to persons or property caused in any manner by electric current on or induced
+from the transmission circuits of CFLCo up to and including the Delivery Point or by the presence
+or use of CFLCo's equipment, unless such injuries or damages are caused by negligence on the part
+of Hydro-Quebec or any of its employees.
+18.2 Of CFLCo by Hydro-Quebec
+Hydro-Quebec shall assume all obligations, risks and responsibility for, and shall forever indem- nify and save CFLCo harmless from and against, any and all claims that may be made by third persons
+for injuries or damages to persons or property caused in any manner by electric current on or induced
+from the transmission circuits of Hydro-Quebec beyond the Delivery Point or by the presence or use
+of Hydro-Quebec's equipment, unless such injuries or damages are caused by negligence on the part of CFLCo or any of its employees.
+18.3 Reciprocal Release of Claim
+Subject to and as provided in Section 4.2.4 and under reserve of Hydro-Quebec's rights under
+Article X, neither party shall make any claim upon the other by reason of one party's circuits and
+system being damaged or rendered inoperative for any period as a result of an occurrence on the
+circuits and system of the other party.
+19.1 Prohibition
+ARTICLE XIX
+ASSIGNMENT
+Neither party to this Power Contract may assign its rights and obligations hereunder except that:
+19.1.1 Еxсeption in Respect of Assignment to Successor Corporation
+Either party may assign its rights and obligations hereunder to any successor corporation with
+which such party may have merged or with which it may have become amalgamated or to which,
+as part of a corporate reorganization or reconstruction, it may transfer all or substantially all of its assets;
+26
+19.1.2 Exception in Respect of Assignment as Security
+CFLCo may assign its'rights hereunder as security to any trustee for the holders of any Debt
+Obligations which CFLCo may issue in connection with the financing of the construction and
+bringing into operation of the Plant or for the refinancing from time to time of Debt Obligations
+originally incurred to finance or refinance such construction and bringing into operation, and any
+such assignee shall be entitled to further assign such rights by way of realization of such security
+should such security become enforceable; and
+19.1.3 Exсeption in Respect of Assignment to Wholly-Owned Subsidiary
+CFLCo may assign its rights and obligations hereunder to a wholly-owned subsidiary of
+CFLCo provided such assignment is made with the prior written consent of Hydro-Quebec, which
+shall not be unreasonably withheld.
+19.2 Protection of Trustee
+No assignment to a trustee pursuant to Section 19.1.2 above shall relieve CFLCo of its obligations
+hereunder or operate to impose such obligations on the trustee or on any such assignee of the trustee.
+19.3 Assignment to Trustee for First Mortgage Bondholders
+If the rights of CFLCo hereunder are assigned as security to the Trustee for the holders of the
+First Mortgage Bonds of CFLCo then, in respect to all Debt Service Requirement of CFLCo relating
+to such First Mortgage Bonds:
+(i) such Trustee may, by not less than 15 days prior notice to Hydro-Quebec, require HydroQuebec to advance to such Trustee, and Hydro-Quebec shall advance to such Trustee, in sufficient
+time to permit payment at due date of such Debt Service Requirement, all funds necessary to
+make such payment when due;
+(ii) the funds so advanced to such Trustee by Hydro-Quebec shall be applied by such
+Trustee against such payment only to the extent that CFLCo itself has not made, or provided funds
+for the making of, such payment, and any balance of funds so advanced to such Trustee by HydroQuebec shall be refunded without delay by such Trustee to Hydro-Quebec;
+(iii) such advances by Hydro-Quebec shall, to the extent not refunded pursuant to (ii) above,
+be governed by the applicable provisions of Articles V and XII hereof.
+ARTICLE XX
+USE OF QUEBEC PERSONNEL, SERVICES AND MATERIALS
+20.1 Preference concerning Quebec Equipment, Services and Personnel
+CFLCo will, in the procurement of materials, services and equipment and in the employment of
+personnel, extend or cause to be extended by its contractors, sub-contractors and agents preference
+to Quebec labour, personnel and services and to materials and equipment manufactured in Quebec.
+20.2 Preference to other Canadian manufacturers
+In the purchase of major items of equipment, such as turbines, generators, transformers and the
+like, CFLCo will, subject to the prior preference stipulated in Section 20.1, give the next preference
+to other Canadian manufacturers.
+20.3 Liaison Committees
+CFLCo will cause to be set up, in cooperation with Hydro-Quebec, liaison committees to deal
+with matters concerning the supply of services, materials and equipment. In order to ensure that the
+27
+available personnel in Quebec will be utilized on the Project where possible, CFLCo will avail itself
+of the services of the Quebec Provincial Employment Offices and, if necessary, is prepared to cause
+employment offices to be established in Quebec.
+20.4 Management Rights of CFLCO
+Nothing in the above provisions shall be construed to require CFLCo to make any changes in
+its selection of managers of construction or engineering services for the Project or to prevent fulilment
+of CFLCo's obligations under paragraph 4 of Part II of the Statutory Lease held by CFLCo and
+dated May 16, 1961, or any similar provision contained in any other lease to CFLCo given pursuant to
+such Statutory Lease.
+21.1 Cooperation
+ARTICLE XXI
+CASE OF CFLCO BEING UNABLE TO COMPLETE PROJECT
+If it becomes evident, at any stage, that CFLCo will not be able to complete the Project in such
+a manner as to ensure that electrical energy will be made available as provided in Schedule II of
+the present Contract, then Hydro-Quebec shall have the right to require CFLCo to cooperate with
+Hydro-Quebec with the view of permitting Hydro-Quebec to implement the Project on behalf of
+CFLCo, provided however that Hydro-Quebec may not avail itself of such right if CFLCo's inability
+to implement the Project as aforesaid shall be due to Hydro-Quebec having failed to act with due
+diligence in the carrying out of its undertakings hereunder or having unreasonably withheld its
+consent, agreement or approval of any request by CFLCo contemplated by this Power Contract.
+ARTICLE XXII
+FINANCING CONSULTATION
+22.1 Financing
+CFLCo will not issue or sell any Debt Obligations or make any commitments for the issue
+sale of such Debt Obligations without prior consultation with Hydro-Quebec.
+or
+Prior approval by Hydro-Quebec will be required in the case of a financing or refinancing that
+involves Hydro-Quebec in making payments for interest charges pursuant to Article XV hereof.
+ARTICLE XXIII
+NOTICES
+23.1 How Given
+Any notice or other communication required or permitted to be given by either party hereto to
+the other shall be in writing and shall be validly given if personally delivered to a senior executive
+officer of the addressee or if sent by prepaid registered post addressed:
+if to Hydro-Quebec,
+at: 75, Dorchester Boulevard West, Montreal 1, P.Q.
+and
+if to CFLCo
+at: One Westmount Square, Westmount 6, P.Q.
+28
+23.2 When Effective
+Any notice or other communication personally delivered shall be taken as having been received
+on the date of delivery. Any notice or other communication sent by post shall be taken as having
+been received on the second business day following the date of mailing.
+23.3 Change of Address
+Either party may, by notice to the other, designate a new address to which notices and other
+communications to it shall, until further notice, be given.
+IN WITNESS WHEREOF the parties hereto have executed this Power Contract.
+QUEBEC HYDRO-ELECTRIC COMMISSION
+J.-C. LESSARD
+Y. DEGUISE
+CHURCHILL FALLS (LABRADOR) CORPORATION
+LIMITED
+D. J. MCPARLAND
+E. G. LAMBERT
+29
+SCHEDULE I
+MAIN TECHNICAL CHARACTERISTICS OF THE PRINCIPAL ENERGY
+PRODUCTION AND TRANSMISSION FACILITIES
+1. Reservoirs and Forebay
+2. Hydraulic Structures
+3. Intake and Penstocks
+4. Manifold Surge Chamber
+5. Tailrace Tunnels
+6. Turbines
+7. Generators
+8. Governor and Excitation Systems
+9. Switching and Transformer Facilities
+10. Transformers
+11. Shunt Reactors
+12. Lightning Arresters
+13. Circuit Breakers
+14. Bus Work and Auxiliary Equipment
+15. Transmission Lines
+16. Communications
+17. Control, Protection, Billing Metering and Measurement
+As used in this Schedule
+NEMA refers to the standards of the National Electrical Manufacturers Association;
+ASTM refers to the standard specifications of the American Society for Testing Materials; and
+CSA refers to the standards of the Canadian Standards Association;
+each such reference being to the edition of the applicable Section current at the date of execution hereof.
+The energy production and transmission facilities will include the reservoirs and forebay, the
+power installations immediately adjacent to the forebay and comprising an intake structure, eleven penstocks, an underground powerhouse (containing eleven generating units), a manifold surge chamber and tailrace tunnels, all associated switching and transformation facilities and transmission lines.
+1. Reservoirs and Forebay
+The following data consists of design criteria and of anticipated characteristics based on field
+information available at the date of this Contract. Such criteria and characteristics are necessarily approximate and may be altered to conform to actual site conditions.
+1
+(a) MAIN RESERVOIR
+(i). Sandgirt and Lobstick Lakes:
+Maximum Water Elevation
+Minimum Water Elevation
+Maximum Drawdown
+Live Storage
+Minimum Freeboard
+(ii) Michikamau, Orma and Sail Lakes:
+Maximum Water Elevation
+Minimum Water Elevation
+Maximum Drawdown
+Live Storage
+Minimum Freeboard
+(b) OssOKMANUAN RESERVOIR
+Maximum Water Elevation
+Minimum Water Elevation
+Live Storage
+Minimum Freeboard*
+(C) FOREBAY
+Maximum Water Elevation
+Minimum Water Elevation
+Maximum Drawdown
+Live Storage
+Minimum Freeboard
+1,551 ft. above mean sea level
+1,522.5 ft. above mean sea level
+28.5 ft.
+400 billion cubic ft.
+8 ft.
+1,551 ft. above mean sea level
+1,532.5 ft. above mean sea level
+18.5 ft.
+600 billion cubic ft.
+8 ft.
+1,572 ft. above mean sea level
+1,558.5 ft. above mean sea level
+100 billion cubic ft.
+6 ft.
+1,471.5 ft. above mean sea level
+1,468.5 ft. above mean sea level
+3 ft.
+3.4 billion cubic ft.
+S ft.
+• Under probable maximum foods, exceeding the 1:10,000 flood, dyke freeboard on the Main Reservoir could be
+diminished by 3 feet, and on Ossokmanuan Reservoir by 6 feet. Freeboard dykes, ie. those whose bases are above normal high water level, may have less freeboard than the minimum freeboard stated above. There may be saddles around the reservoir rim, which will be less in elevation above normal high water level than the stated miaimum freeboard.
+to
+in
+This refers only to the East Forebay located downstream of the Whitefish Control Structure and extending
+the intake structure. The West Forebay located upstream of the Whitefish Control Structure has no live storage winter.
+The location of all reservoirs, forebays, spillway structures and control structures are shown
+on Plate 1 titled "Churchill Falls Hydroelectric Power Development, Plan of Reservoirs and
+Structures" attached to, and forming part of, this schedule.
+2. Hydraulic Structures
+The following data consists of design criteria and of anticipated characteristics relating to the
+stage of design reached at the date of this Contract. The stage of design varies from one structure
+to the other; the criteria and characteristics listed are therefore only approximate and may be altered
+to conform to actual site conditions.
+(a) Main Reservoir Structure: Lobstick Control Structure.
+Design Flood Flow: 230,000 cubic feet per second (once in 10,000 years).
+2
+Full Gate Discharges and Corresponding Upstream Lobstick Structure Water Levels:
+230,000 cfs.
+200,000 cfs.
+170,000 cfs.
+117,000 cfs.
+80,000 cfs.
+1,551 ft.
+1,545 ft.
+1,540 ft.
+1,530 ft.
+1,522.5 ft.
+(b) Ossokmanuan Reservoir Structures.
+Design Flood Flow from the Ossokmanuan Reservoir: 179,000 cfs. (once in 10,000 years).
+This flow will be shared between the Ossokmanuan Control Structure and the Gabbro Control Structure. The Ossokmanuan Control Structure will pass its maximum full gate discharge
+of 115,000 cfs. while the Gabbro Control Structure will release a controlled flow equal to the
+difference of 64,000 cfs.
+(i) Ossokmanuan Control Structure:
+Full Gate Discharges and Corresponding Upstream Ossokmanuan Structure Water
+Levels:
+115,000 cfs.
+90,000 cfs.
+82,000 cfs.
+52,500 cfs.
+1,572 ft.
+1,568.5 ft.
+1,567 ft.
+1,562 ft.
+(ii) Gabbro Control Structure:
+Full Gate Discharges and Corresponding Upstream Gabbro Structure Water Levels:
+72,000 cfs.
+55,000 cfs.
+39,000 cfs.
+21,000 cfs.
+1,572 ft.
+1,568 ft.
+1,564 ft.
+1,558.5 ft.
+(c) Forebay Structures.
+Design Flood Flow from the West Forebay: 240,000 cfs. (once in 10,000 years).
+This flow will be divided according to varying requirements between Jacopie Spillway and
+Whitefish Falls Control Structure. The discharge from Whitefish Falls Control Structure will be
+passed through the Power Installations and/or released through the Forebay Spillway.
+(i) Jacopie Spillway:
+Full Gate Discharges and Corresponding Upstream Jacopie Spillway Water Levels:
+195,000 cfs.
+170,000 cfs.
+1,486 ft.
+1,482 ft.
+(ii) Whitefish Falls Control Structure:
+Full Gate Discharges and Corresponding Upstream Whitefish Falls Structure Water
+Levels:
+75,000 cfs.
+60,000 cfs.
+3
+1,486 ft.
+1,482 ft.
+(iii) Forebay Spillway:
+Full Gate Discharges and Corresponding Upstream Forebay Spillway Water Levels:
+75,000 cfs.
+68,000 cfs.
+3. Intake and Penstocks
+1,471.5 ft.
+1,468.5 ft.
+The intake will be a conventional surface structure with a separate head gate for each of the eleven penstocks. Trash racks will be provided upstream of the head gates and provision will be
+made for the installation of sectional bulkhead gates for maintenance purposes.
+The approximate dimensions of each of the penstocks are:
+Upstream Concrete-Lined Section
+Downstream Steel-Lined Section
+4. Manifold Surge Chamber
+Length: 1,160 feet
+Internal Diameter: 240 inches
+Length: 300 feet
+Internal Diameter: 175 inches
+The tailrace manifold surge chamber will be located at the outlets of the draft tubes and will have
+the following approximate dimensions:
+Width
+Length
+Height
+varying from 40 feet at the bottom
+to 64 feet at the top of the wall
+760 feet
+150 feet
+The surge chamber will be sized to allow full load rejection without powerhouse flooding.
+5. Tailrace Tunnels
+There will be two unlined tailrace tunnels each having the following approximate dimensions:
+Length
+Height
+Width
+5,500 feet
+60 feet
+45 feet
+6. Turbines
+Type Vertical Shaft Francis
+Rated Capacity 648,000 Horsepower at 1,025 feet net head
+Speed 200 revolutions per minute
+7. Generators
+Speed
+Frequency
+Rated Capacity
+Power Factor (over excited)
+500,000 kilovolt amperes with cooling water
+temperature not higher than 15° C
+0.95
+200 revolutions per minute
+60 Hertz
+The generator reactances expressed as a function of the unit rating will be:
+Direct-Axis Synchronous Reactance (Xa)
+Direct-Axis Transient Reactance (Xa)
+not greater than 1.0
+not greater than 0.33
+The inertia Constant (H) will be greater than 3.5.
+8. Governor and Excitation Systems
+CFLCo shall submit to Hydro-Quebec for approval the specifications, supplier proposals' and drawings for the govermor and excitation systems of the generating units. The governor and excitation
+systems shall be modifted, should the need arise, at the request or with the consent of Hydro-Quebec,
+to incorporate technical improvements that may be made in this field.
+The governors will be oil-pressure operated and of the electro-hydraulic, cabinet actuator type. The electrical part of the governor will be fully transistorized. They will be provided with temporary speed droop, accelerometric compensation, speed regulation using load feedback, and watt joint control
+equipment suitable for future connection to supervisory and load frequency control systems.
+The governing system should be of such a type as to allow the use of batteries for starting and
+emergency only assuming full oil pressure on the governor at all times. The rest of the time, the
+governor should take its power from a permanent magnet generator or from the station service. The
+speed switches should not be affected by emergeney conditions on the station service.
+The principal characteristics of the governors will be:
+(a) gain and time constant of temporary speed droop, fully adjustable.
+(b) amount of speed regulation, adjustable from 0 to 10%.
+(c) width of the dead-band, adjustable from 0 to 0.25 Hertz,
+The excitation system will consist of solid state controlled rectifiers protected from surge over voltages by suitably chosen surge protective devices and supplied from transformers connected to
+the generator terminals.
+The rating of the excitation system will be not less than the excitation required for the generator
+when delivering 110 per cent rated capacity at 105 per cent rated voltage. The system will have a
+ceiling of 6.4 per unit based on the no load air gap line feld voltage, and will operate satisfactorily
+over the following range:
+Voltage
+Frequency
+30 per cent -150 per cent rated
+90 per cent -150 per cent rated
+Negative field current will not be required. Var joint control equipment similar to watt control
+equipment should be provided.
+The excitation system will be provided with a stabilizing signal which has been proven able
+to damp in a minimum time the oscillations that can happen on the system. This stabilizing signal
+shall be automatically cancelled in the event of total load rejection in order to prevent dangerous
+dynamic over-voltages. The regulator time constant will be less than 0.03 seconds and the regulator gain will be adjustable up to 200.
+The settings for the adjustable characteristics of the governor and excitation systems will be
+established by Hydro-Quebec and shall be used by CFLCo. To ensure reliable system operation and
+system stability, these settings will be modified by CFLCo when required with the consent of Hydro- Quebec or at the request of Hydro-Quebec.
+Hydro-Quebec's representatives may, at their option, assist at the acceptance tests on the governor
+and excitation systems. CFLCo shall perform certain tests on the governor and excitation systems
+at the request of Hydro-Quebec or permit Hydro-Quebec to perform these tests in order to obtain
+characteristics required by Hydro-Quebec for system studies.
+9. Switching and Transformer Facilities
+The extent and arrangement of the switching and transformation facilities located at the Churchill
+Falls generating station, including the associated switchyard are to be as shown on Plate 2 titled
+5
+"Churchill Falls Generating Station, Schematic Single Line Diagram" attached to, and forming part
+of, this schedule.
+10. Main Power Transformers
+Overall no-load voltage ratio (kV rms line-to-line) (from the generator voltage level to the 735 kV system voltage level)
+Off-load taps
+Rated capacity
+Overall transformer reactance (from the generator voltage
+level to the 735 kV system voltage level)
+(a) Intermediate Voltage System Level
+15 kV-740 kV
+± 5% in steps of 2.5%
+sufficient to carry the full
+generator output
+not greater than 25% based
+on generator rating
+Rated voltage (kV rms line-to-line) 230 kV
+Basic impulse insulation level (kV crest):
+Line terminal of winding 900 kV
+Line terminal bushings 900 kV
+Neutral terminal of winding 150 kV
+Neutral bushings 150 kV
+Power frequeney withstand voltages (kV rms):
+Line terminal of winding 395 kV
+Line terminal bushings (dry and wet) 395 kV
+Neutral terminal of winding 50 kV
+Neutral bushings (dry and wet) 50 kV
+Wet switching surge withstand voltage (kV crest):
+Line terminal bushings 600 kV
+Chopped wave test (kV crest) 1,035 kV
+Minimum time to flashover 3 microseconds
+External radio noise (R.I.V.) of bushing fitted with its own
+connectors measured according to NEMA standards at
+160 kV rms line-to-ground 200 microvolts
+(b) High Voltage System Level
+Rated voltage (kV rms line-to-line) 700 kV
+Maximum operating voltage (kV rms line-to-line):
+at full load 735 kV
+at no load 770 kV
+Basic impulse insulation level (kV crest):
+Line terminal of winding 2,050 kV
+Line terminal bushings 2,175 kV
+Neutral terminal of winding 150 kV
+Neutral bushings 150 kV
+6
+Power frequency withstand voltages (kV rms):
+Line terminal of winding 920 kV
+Line terminal bushings- dry 970 kV
+-wet 850 kV
+Neutral terminal of winding 50 kV
+Neutral bushings 50 kV
+Wet switching surge withstand voltage (kV crest):
+Line terminal bushings 1,350 kV
+Chopped wave test (kV crest) 2,360 kV
+Minimum time to flashover 3 microseconds
+External radio noise (R.I.V.) of bushing fitted with its own
+connectors measured according to NEMA standards at
+465 kV rms line-to-ground 200 microvolts
+Power transformers should have suitable delta tertiary winding.
+11. Shunt Reactors
+Maximum operating voltage (kV rms line-to-ground) 770//3 kV
+Rated voltage (kV rms line-to-ground) 735/3 kV
+Rated capacity at rated voltage 55 MVA per phase
+Type of cooling ONS
+Basic impulse insulation level (kV crest):
+Line terminal of winding 2,050 kV
+Line terminal bushings 2,175 kV
+Neutral terminal of winding 150 kV
+Neutral bushings 150 kV
+Power frequency withstand voltages (kV rms):
+Line terminal of winding (not tested)
+Line terminal bushings- dry
+920 kV
+970 kV
+--wet 850 kV
+Neutral terminal of winding 50 kV
+Neutral bushings (dry and wet) 50 kV
+Wet switching surge withstand voltage (kV crest):
+Line terminal bushing 1,350 kV
+Chopped wave test (kV crest)
+Minimum time to flashover
+Linearity - Reactance linear up to
+Vibration level at rated voltage
+External radio noise of bushing fitted with its own connector measured according to NEMA standards at 465 kV rms
+line-to-ground
+Two spare shunt reactors will be provided.
+12. Lightning Arresters on Power Transformers and Reactors
+Nominal voltage (kV rms line-to-ground)
+Maximum low-frequency sparkover voltage (including 60
+Hertz and switching surges) (kV crest)
+7
+2,380 kV
+3 microseconds
+150% of rated voltage
+100 microns peak to peak
+200 microvolts
+678 kV
+1,500 kV
+Maximum impulse sparkover (kV crest)
+IR Discharge voltage at 10,000 amperes (kV crest)....
+Thermal capability: the arresters should be able to discharge
+without damage a line 275 miles long charged at a voltage
+of 2.1 times nominal voltage.
+Lightning arresters are to be installed adjacent to all 735 kV
+transformers and reactors.
+13. Circuit Breakers
+Normal operating voltage (kV rms line-to-line)
+Power frequency withstand voltage (kV rms line-to-ground) -dry
+1,500 kV
+1,500 kV
+735 kV
+970 kV
+wet 850 kV
+Minimum wet switching surge withstand voltage (kV crest line-to-ground) 1,350 kV
+Basic impulse insulation level (kV crest) 2,175 kV
+Rated current - summer 2,000 A
+-winter 2,500 A
+25,000 MVA
+Minimum symmetrical rupturing capacity from 700 kV to 735 kV
+Operating times:
+Maximum total breaking time
+Dead time
+Duty cycles: number of complete operations
+Maximum spread between closing of first and last poles
+Capacitive switching:
+maximum rms line-to-line voltage at which an unloaded
+735 kV circuit up to 275 miles may be switched
+restrike-free
+Inductive switching:
+maximum rms line-to-ground voltage to be produced
+with an initial voltage of 735 kV rms line-to-line
+Switching during out-of-phase conditions:
+0.050 second
+0.40 second
+2
+0.008 second
+1,200 kV
+850 kV
+rms voltage across breaker pole
+current
+Resistor insertion:
+opening resistor
+closing resistor
+Ambient temperature:
+Radio noise (R.I.V.) measured on a breaker pole fîtted with
+its connectors at 465 kV rms line-to-ground
+850 kV
+5,000 A
+10,000 ohms or less for 20
+milliseconds
+between 300 and 450 ohms
+for 4 to 6 milliseconds
+maximum 100° F
+minimum -65° F
+1,500 microvolts
+8
+14. Bus Work and Auxiliary Equipment
+(a) Disconnecting switches:
+-Type
+- Nominal Voltage (kV rms line-to-line)
+- Nominal continuous current (A rms)
+NEMA Typе А
+735 kV
+2,500 A
+-Short time current rating (A rms) -momentary 48,000 A
+-4 seconds 30,000 A
+- Basic impulse insulation level (kV crest) 2,175 kV
+- Spark gap withstand voltage of switches in the open position (kV crest) 2,400 kV
+- Wet switching surge withstand voltage (kV crest) 1,350 kV
+- Power frequency withstand voltage (kV rms) - dry 970 kV
+-wet 850 kV
+- Radio-noise (R.I.V.) measured according to NEMA stand- ards at 465 kV rms line-to-ground 500 microvolts
+- No visible corona up to 500 kV line-to-ground under fair weather conditions
+(b) Electrical clearances for 735 kV bus work:
+- Minimum phase-to-phase clearance between live parts
+-- Minimum clearance to ground
+... 35 feet
+18 feet
+(15 feet acceptable if tested and approved by Hydro- Quebec)
+15. Transmission Line
+Minimum diameter of conductor
+Number of conductors per phase
+Bundle cross-section
+Number of ground wires
+Ground wire shielding angle
+Minimum clearance, live parts to ground
+Minimum phase spacing
+1.195 inches
+4
+18" square
+2
+20° maximum
+200 inches
+45 feet
+Continuous counterpoise wires are to be installed except in muskegs where tests acceptable to Hydro- Quebec indicate a tower footing resistance less than 30 ohms.
+(a) Insulator strings
+Suspension
+Strain
+Jumper
+(b) Tower material and factors of safety
+Structural steel
+Double Vee strings of 33-534" X 10"
+4 strings of 33-64" X 10"
+Single Vee string and double
+verticle strings of 33-53/4" X 10"
+Tower bolts, nuts and washers
+9
+CSA G.40.12 and ASTM A-36
+or agreed equivalent steel
+having equal or improved
+cold temperature properties.
+ASTM A-394-61T' or ASTM
+A-325-61T
+Anchor bolts, nuts and washers
+Overload factor of safety on tower
+Factors of safety on connecting hardware at the tower, based
+on conditions of use, material, material stress limitations..
+Factor of safety on footing resistance to maximum calculated
+uplift based on conditions of use, material, material stress limitations
+(c) Loadings
+1. Vertical and transverse loadings on any towers
+Ice on conductor and accessories
+Wind on conductors and ground wires
+Wind on accessories and structure
+Effect on the angle in the line conductor and ground wire
+at maximum tension
+ASTM A-36 or ASTM A-325-
+61T
+1.375
+2 and 3
+1.5
+1/2"
+8 lb/sq. ft.
+30 lb./sq. ft.
+conductor 13,000 lb.
+ground wire 6,500 lb.
+2. Longitudinal loading
+(i) Suspension towers (0° and 5° angle)
+-Any one broken conductor at maximum tension
+-or any one broken ground wire at maximum tension
+-also construction load applied at any one conductor attachment point
+(ii) Angle towers and long span tangent tower (15°, 30°, 45°)
+-Any one broken phase group of conductors at
+maximum tension
+13,000 lb.
+6,500 lb.
+20,000 lb.
+52,000 lb.
+- or any one broken ground wire at maximum tension 6,500 lb.
+(iii) Angle and anchor tower and long span tangent and
+anchor tower (45°, 60°, 90°)
+-Any combination of broken phase group of con- ductors at maximum tension 52,000 lb.
+-or ground wire at maximum loaded tension 6,500 1b.
+also uplift load per conductor strain attachment
+point 8,000 lb.
+-and ground wire point 2,000 lb.
+(iv) Transposition tower
+Same loadings as suspension tower
+Three transpositions will be installed on the CFLCo portion of each 735 kV circuit
+such that each conductor bundle occupies each of the three possible relative positions on the line for one third of the distance between the plant switchyard and the first intermediate switching station and that the conductor bundles enter the
+first intermediate switching station in the same relative positions as when leaving the plant switchyard.
+10
+16. Communication
+A private telecommunication system will be installed linking the first intermediate switching
+station of Hydro-Quebec and the Powerhouse at Churchill Falls. The installation will consist of power
+line carrier and microwave radio systems.
+17. Control, Protection, Billing Metering and Measurement
+CFLCo shall submit to Hydro-Quebec for approval the schematic diagrams for the control, protection and metering of the Switchyard and of the Generating Station. The protection system for the
+transmission line shall be compatible with the Hydro-Quebec protection system.
+(a) Protection
+The relay settings to be utilized for the transmission line protection will be determined by
+Hydro-Quebec and supplied to CFLCo. All other relay settings necessary for reliable system
+operation shall be jointly agreed upon. These settings will be modifed when required to comply with
+changing conditions of the Hydro-Quebec system.
+Lines shall be equipped with high speed distance protection with fast reclosing and permissive
+under- or overreaching transfer trip via communication links. For increased reliability two independent
+groups of line relays fed from different instrument transformer secondaries will operate with separate
+transfer trip channels.
+(b) Billing Metering
+The following minimum metering installations and standards shall apply for the billing metering
+systems at both the Switching Station on the Hydro-Quebec system nearest the Delivery Point and
+at the Switchyard at the Plant.
+Potential Transformers
+Nominal voltage line-to-ground
+Maximum voltage line-to-ground
+Basic impulse insulation level
+Low frequency potential test
+Accuracy class - each
+Current Transformers
+total
+Nominal voltage line-to-ground
+Maximum voltage line-to-ground
+Basic impulse insulation level
+Low frequency potential test
+Accuracy class
+Energy Metering Measurement System
+700/v3 kV rms
+770/v3 kV rms
+2,175 kV crest
+970 kV rms
+0.6 wxyz
+0.6 zz
+700/v3 kV rms
+770/v3 kV rms
+2,175 kV crest
+970 kV rms
+0.3 B-2.0
+One watthour meter per 735 kV transmission line shall be provided.
+Capacity Metering Measurement System
+One recording instrument totalizing simultaneously the power transmitted on all 735 kV
+transmission lines in service from the plant shall be provided. This recording instrument shall
+indicate not less than 90% of any change in power transmitted from the plant in not more than
+one minute.
+11
+PLAN OF RESERVOIRS AND STRUCTURES 121 MLES FROM PO
+PLATE 1- CHURCHILL FALLS HYDRO-ELECTRIC POWER DEVELOPMENT
+12 SANDGIRT-LOBSTICK DYKES
+ORMAS
+WEST FOREBAY
+CHURCHILL
+16 RINERJACORE WHITEFISH FALLS CONTROL STRUCTURE
+COPIE
+TANF
+OREB
+CHURCILL
+VIN FALLST
+EAST FOREBAY
+DYK DYKES
+CRMA
+ACCESS ROAD
+FOREBAY SPILLWAY
+CHURCHILL FALLS
+RIVER
+POWER INSTALLATIONS
+FOK CLARIEY OF PRESEUTATION, UNLY
+LEGEND
+MAIN RESERVOIR
+MAXIMUM LEVEL EL 15510
+OSSOKMANUAN RESERVOIR
+WEST FOREBAYL EL ARGO EL. 1486.0
+ANTUM LEVEL EL. 171.s
+CONTROL STRUCTURES
+0000 DYKES
+-EXISTING 230KV TRANSMISSION LINE
+-- PROPOSED 230KY TRANSMISSION LINE
+- PROPOSED 735KV TRANSMISSION LINE
+GABBRO CONTROL STRUCTURE
+CHJALHILL FALLS ROAD
+TO WABUSH AND LABRADOR CITY
+OSSOKMANUAN
+COCTURE
+コ
+}1)
+tweet
+3
+735 kV
+enta
+to
+230kV
+२८ 8
+BE 3
+CHURCHILL FALLS GENERATING STATION
+SCHEMATIC SINGLE LINE DIAGRAM
+PLATE NO2
+PLATE 2- CHURCHILL FALLS GENERATING STATION, SCHEMATIC SINGLE LINE DIAGRAM
+13
+5 kV 8
+수
+230 kV
+TWIN FALLS
+용
+SCHEDULE II
+INTENDED AVAILABILITY OF CAPACITY AND ENERGY
+Column 1 Column 2 Column 3 Column 4 Column 5 Column 6 Column 7
+Date
+Cumula- tive
+number of
+TurbineGenerator
+Units
+Capacity at
+Generator Terminals
+Firm
+Capacity
+at DelivCapacity at ery Point Energy at
+Energy at Delivery Point
+Delivery (One Unit Delivery (One Unit Point Deducted) Point Deducted)
+Kilowatts Kilowatts Kilowatts Million Million
+Kilowatt- Kilowatthours per hours per month month
+May 1, 1972 2 940,000 910,800 448,200 676.05 332.66
+December 1, 1972 3 1,410,000 1,373,100 910,800 1,017.13 676.05
+September 1, 1973 4 1,880,000 1,836,100 1,373,100 1,358.59 1,017.13
+December 1, 1973 5 2,350,000 2,297,500 1,836,100 1,699.01 1,358.59
+September 1, 1974 6 2,820,000 2,757,900 2,297,500 2,038.57 1,699.01
+December 1, 1974 7 3,290,000 3,223,000 2,757,900 2,381.72 2,038.57
+September 1, 1975 8 3,760,000 3,462,800 3,223,000 2,559.56 2.381.72
+December 1, 1975 9 4,230,000 3,923,600 3,462,800 2,625.00 2,559.56
+April 1, 1976 10 4,700,000 4,382,600 3,923,600 2,625.00 2,625.00
+September 1, 1976 11 5,170,000 4,841,500 4,382,600 2,625.00 2,625.00
+Notes:
+(1) All amounts referred to in Columns 4 to 7 inclusive are after the deduction of local loads and of transformation
+and transmission losses. The local load deductions respecting Twin Falls Power Corporation Limited have been calculated at 225,000 kilowatts for capacity and 164.95 million kilowatthours per month for energy.
+(2) Columns 6 and 7 are calculated on the basis of a month of 730 hours.
+(3) All references to the Delivery Point assume the same to be as referred to in the last sentence of Section 7.1.
+(4) Estimated allowances with eleven units on line of 17,500 kilowatts and 8,270,000 kilowatthours per month
+for station service and townsite load, and assumed transmission and transformer losses of approximately 1.6% have
+been deducted from generator output in preparing this Schedule.
+(5) This Schedule is subject to adjustment in the event contemplated by Section 6.3.
+(6) Hydro-Quebec has the right to elect prior to June 1, 1969 to reduce by 40% its commitment under Sections
+2.1 and 6.2 with respect to Column 6 during the period from May 1, 1972 to September 1, 1972.
+1
+SCHEDULE II
+ARTICLE I
+INTERPRETATION
+1.1 Definitions
+The following words and phrases whenever used in this Renewed Power Contract shall have the
+following meanings:
+I-TECHNICAL TERMS:
+"Billion" means one thousand million.
+"Energy" means electrical energy measured in kilowatthours.
+"Excessive Corona Losses" means, expressed in kilowatts, that part of corona losses experienced
+at any time which is in excess of 14 kilowatts per circuit mile.
+"Load Factor" means, for any period, the ratio, expressed as a percentage, of the average
+power over that period to the highest peak power in that period.
+"Mill" means 1/1000 of a dollar in lawful money of Canada.
+"Month" means unless the context otherwise requires a calendar month.
+"Power" means the rate at which energy is transferred at any point measured in kilowatts
+multiples thereof.
+or
+"Power Factor" means at a given point at any instant of time the number of kilowatts divided
+by the number of kilovolt-amperes.
+All other technical terms employed in this Power Contract shall have the meanings, respectively attributed thereto by American Standard Definitions of Electrical Terms Number ASA C42 published
+1957 by American Institute of Electrical Engineers and, to the extent not thereby defined, by The
+International Electro-Technical Vocabulary, second edition, 1956, published by the Central Office of
+the International Electro-Technical Commission.
+II- CONCERNING DELIVERY, ENERGY AND CAPACITY:
+"Annual Energy Base" means the number of kilowatthours per year represented by the Annual
+Energy Base in effect at the time of expiry of the Power Contract which is hereby renewed.
+"Continuous Energy" means, in respect of any month, the number of kilowatthours obtainable,
+calculated to the nearest 1/100 of a billion kilowatthours, when the Annual Energy Base is multiplied by the number which corresponds to the number of days in the month concerned and the
+result is then divided by the number which corresponds to the number of days in the year concerned.
+"Deficiency" means, in respect of any request by Hydro-Quebec made pursuant to Section
+5.3 hereof for the supply at any given time of capacity, that number of megawatts out of the total
+megawatts so requested which (exclusive of capacity in excess of Firm Capacity) CFLCo fails
+to make available at the Delivery Point at such time.
+"Delivery Point" means, in respect of each circuit of the transmission lines, the point at which
+delivery of the energy is to be made hereunder and also means, collectively, all of such points.
+1
+"Deficiency Period" means the period of duration of a Deficiency, it being understood that the
+extent of a defciency can vary during a Deficiency Period.
+"Firm Capacity" means, subject to such reductions as may have occurred under the original
+Power Contract and to reduction by adjustment pursuant to Section 5.5 hereof:
+(a) at any time in the months of October, November, December, January, February, March, April and May: 4,382,600 kilowatts at the Delivery Point.
+(b) at any time in the months of June, July, August and September: 4,163,500 Kilowatts
+at the Delivery Point.
+"Minimum Capacity" means, subject to such reductions as may have occurred under the
+original Power Contract and to reduction, if any, pursuant to Section 5.5, 1,200,000 kilowatts.
+"Plant" means the Hydro-Electric Plant constructed by CFLCo at a site near Churchill Falls
+on the Upper Churchill River and all facilities, properties and rights obtained by CFLCo for the
+construction and operation thereof and the generation, transformation, transmission and delivery
+of power and energy therefrom including, without limiting the generality of the foregoing
+(a) all access roads
+(b) airports and runways
+(c) all construction camps
+(d) permanent townsite and services therefor
+(e) all transport and communication facilities
+(f) all water control and water storage works and facilities
+(g) all buildings and structures and their appurtenances
+(h) all machinery and equipment, whether moveable or immoveable
+(i) all spare parts
+(j) all tools and maintenance material and
+(k) all transmission circuits of CFLCo and all such circuits to or from the said Plant, of
+any company which, under Section 121B of the Canada Corporations Act, was, as at May 1, 1968, a subsidiary of CFLCo, provided such circuits are required to be used either to supply
+energy to Hydro-Quebec pursuant hereto or to supply energy to Twin Falls Power Corporation Limited in satisfaction of CFLCo's obligations referred to in Section 4.1.2 hereof.
+III -CoNCERNING RECAPTURE:
+"Recapture" means any withholding from the power and energy agreed to be sold hereunder which may be made by CFLCo in accordance with the provisions of, and within the limits stipu- lated by, Section 5.4 hereof.
+"Recapture Notice" means any notice given by CFLCo to Hydro-Quebec in accordance with
+the provisions of Section 5.4 hereof of CFLCo's election to effect a recapture.
+IV-GENERAL
+"Force Majeure" means:
+(a) any fortuitous event, act of governmental authority, act of public enemies, war, invasion or insurrection, riot, civil disturbance, labour trouble, strike and
+2
+(b) any flood, fire, shortage of labour, or of materials or of transport or other cause of
+inability to perform or delay in performing obligations hereunder which, in each such event, is
+beyond the reasonable control of the party or parties affected.
+Failure of equipment to perform adequately, or improper operation of equipment, shall not
+constitute Force Majeure.
+1.2 Applicable Law
+of
+This Power Contract shall at all times and in all respects be governed by, and interpreted in
+accordance with, the laws of the Province of Quebec. The only courts competent to adjudge disputes
+between the parties hereto arising out of this Contract are, subject to appeal to the Supreme Court of
+Canada when such appeal lies, the Courts of the Judicial District of Montreal, where, for purposes
+litigation only as aforesaid, CFLCo elects domicile for service at One Westmount Square in the City
+of Westmount, District of Montreal or at such other place in the said District of Montreal of which
+CFLCo may from time to time give written notice to Hydro-Quebec, either prior to the present renewal
+becoming effective or from time to time thereafter.
+1.3 Number and Gender
+References herein to the singular shall, where the context requires, include the plural and vice-versa
+and references herein to the masculine, feminine or neuter genders shall, where the context requires,
+include any other of such genders.
+1.4 Headings
+The headings to Articles, Sections, subsections and Schedules which are employed herein are for
+convenience of reference only and form no part of this Power Contract.
+1.5 Schedule
+Schedule I of the original Power Contract, which contract is hereby renewed, is an integral Part
+of this Contract.
+1.6 Successors and Assigns
+Subject as provided in Article XII hereof, this renewed Power Contract shall enure to the benefit of
+and be binding upon each party hereto and its respective successors and assigns.
+ARTICLE II
+OBJECT
+2.1 Object
+During the entire term hereof, Hydro-Quebec agrees to purchase from CFLCo and CFLCo agrees
+to sell to Hydro-Quebec each month the Continuous Energy and the Firm Capacity, at the price, on the
+terms and conditions, and in accordance with the provisions, set forth herein.
+ARTICLE III
+TERM
+3.1 Term
+This Power Contract shall expire on the 25th anniversary of the date of expiry of the original
+Power Contract hereby renewed.
+3
+4.1 Operation
+4.1.1 Operational Flexibility
+ARTICLE IV
+OPERATION OF THE PLANT
+The parties hereto acknowledge that it is desirable for Hydro-Quebec to have the benefit of operational flexibility of CFLCo's facilities in relation to the Hydro-Quebec system. Accordingly:
+(i) Hydro-Quebec may request CFLCo to operate the Plant so as to supply Hydro-Quebec's
+schedule of power requirements, provided that no such request shall be less than the Minimum
+Capacity or, except as provided in Section 5.2, more than the Firm Capacity;
+(ii) Hydro-Quebec may require deliveries which have the effect of varying the amount of
+water to be carried in storage at any time, provided that, in so doing, sufficient water is left in
+storage so that Minimum Capacity can always be maintained;
+(iii) CFLCo agrees to make available to Hydro-Quebec information relating to the hydrology
+of the drainage basin and the levels of the reservoirs and the measurement and metering of any
+spillage from the reservoirs, and to co-operate fully with Hydro-Quebec in the forecasting of
+energy which can be made available.
+4.1.2 Existing Obligations
+Hydro-Quebec acknowledges and agrees that CFLCo has existing obligations to supply power and
+energy in respect of the Twin Falls Power Corporation Limited loads, that no provision hereof shall
+operate to hinder or prevent the fulfilment by CFLCo of its said obligations to Twin Falls Power
+Corporation Limited covering 225,000 kilowatts at 100% load factor and that the fulflment of such
+obligation shall not constitute recapture under Section 5.4.
+4.1.3 Protection of Recapture
+Hydro-Quebec shall not request CFLCo to operate the Plant in a manner which would prevent
+CFLCo from having available any power and energy which CFLCo may recapture pursuant to Section 5.4.
+4.1.4 Maintenance
+CFLCo shall maintain serviceable and in good repair, in accordance with sound utility practice,
+all necessary facilities of the Plant. To enable Hydro-Quebec to verify compliance with this obligation,
+CFLCo shall afford full access to the Plant to Hydro-Quebec personnel who will be accommodated
+on the site of the Plant at Hydro-Quebec's expense. Should Hydro-Quebec notify CFLCo of any condition which may prevent delivery of Firm Capacity and energy, CFLCo shall, not later than 15 days after receipt of such notice, either (a) proceed diligently with the work of maintenance or repair
+called for by such notice and complete the same with all reasonable despatch or (b) inform Hydro- Quebec that, for reasons which CFLCo shall state, such work is not necessary to maintain said
+facilities serviceable in accordance with sound utility practice and undertake that, if a penalty or
+penalties are incurred as a result of such work not being performed, then such penalty or penalties
+will apply at 110% of the amounts otherwise payable under Article VIII. Moreover, Hydro-Quebec
+in such event shall retain all legal recourses otherwise available to it for damages suffered in excess
+of the penalty or penalties.
+to
+4.1.5 Right of Hydro-Quebec to Operate
+Should CFLCo, not being prevented by any event of Force Majeure, be unwilling at any time
+operate the Plant, and should the Plant then be operable, Hydro-Quebec, if not then in default
+4
+hereunder, shall have the right to cause the Plant to be operated for the account of CFLCo
+accordance with sound utility practice until CFLCo itself resumes such operation.
+4.1.6 Operation of Reservoir
+in
+Hydro-Quebec shall not request CFLCo to operate the Plant in such a manner as to imperil
+the equipment or facilities thereof or so that the security of the reservoir structures is endangered,
+and shall not request operation which would require that water levels be carried higher than those
+established by engineering criteria for free-board as contained in Schedule I.
+4.1.7 Operating Manual
+For the purpose of the present Power Contract the parties shall, by mutual agreement, revise
+and maintain up to date in the light of the experience gained in operating the Plant the detailed
+operating manual which they have established covering all procedures of interrelated operations. The
+revision and maintaining up to date of such operating manual shall be the sole responsibility of the
+parties hereto without reference to any assignee of this Power Contract as security.
+4.1.8 Control of Frequency and Power
+For the purpose hereof, Hydro-Quebec shall be responsible for regulating frequency and CFLCO
+shall be responsible for power and reactive flows in the transmission circuits of the Plant, to meet
+the schedules to be provided by Hydro-Quebec pursuant hereto. Each party shall so operate its
+system as to minimize voltage and power swings transmitted to the system of the other party.
+4.2 Interruptions
+(i) Either party may at any time, for the purpose of safeguarding human life or protecting from
+major damage the storage, generating or transmission facilities of CFLCo or the Hydro-Quebec
+system, discontinue or reduce, but only to the extent necessary, the supply or taking of power and
+energy hereunder.
+Each party shall be prompt and diligent in removing the cause of any such discontinuance
+reduction and to this end shall maintain an adequate reserve of spare parts and apparatus.
+or
+The party on whose system the cause of an interruption shall have occurred shall inform the
+other of such cause as soon as possible after the interruption has occurred and, when feasible, shall
+state the estimated duration of such interruption. Any such information conveyed verbally shall be
+confirmed in writing without delay.
+(ii) If CFLCo should find it necessary or advisable to take out of service, for the purposes
+of making repairs, renewals, or replacements, two or more units or their associated equipment, HydroQuebec will cooperate in estimating, to the best of its knowledge, what might be the most suitable
+time for CFLCo to do so in order to reduce or eliminate the penalty which CFLCo might incur for
+failure to provide Firm Capacity. All such discontinuances and reductions in the supply of power
+and energy, total or partial, shall be of minimum duration and, when possible, arranged for at a time
+least objectionable to Hydro-Quebec.
+4.3 Communications System
+The parties shall maintain such continuous and reliable communications between their respective
+power systems as may be required for operation, protection, automatic computer control, data transmission, telemetering and voice channels.
+CFLCo shall, at its sole expense construct, own, operate and maintain that part of the communications system which is at the Plant or which is on the Plant side of the Delivery Point. Hydro-Quebec
+shall, at its sole expense, construct, own, operate and maintain the remainder of said system.
+5
+4.4 Metering and Measurement
+The parties shall maintain adequate and reliable metering facilities to measure power and
+energy and to give such other measurements as may be required by the parties.
+The metering and measuring facilities of Hydro-Quebec shall, at its sole expense, be installed,
+maintained and operated by Hydro-Quebec at the intermediate station on its system nearest the
+Delivery Point and, subject to such adjustments as are required to reflect delivery at the Delivery
+Point, shall be used for billing purposes. Hydro-Quebec shall communicate to CFLCo all information
+on measurement from said facilities.
+The metering and measuring facilities of CFLCo shall, at its sole expense, be installed, maintained
+and operated by CFLCo at the Plant. Hydro-Quebec may from time to time, at its sole option and
+expense, install, maintain and operate duplicates of all or any such facilities of CFLCo and CFLCo
+shall furnish the space and access reasonably necessary for such purpose. Hydro-Quebec may at any
+time, at its expense, remove, with or without replacement, all or any of such duplicate facilities.
+All meters and measuring facilities, to be used or which may be used for billing, shall be
+periodically tested and such meters calibrated if necessary in accordance with agreed standards at
+least as high as those established by the Department of Trade and Commerce of Canada. Each
+party shall give adequate prior notice to the other of any test which it intends to conduct and the
+other may send authorized representatives who shall be entitled to attend and witness the test.
+Any meter or other measuring facility which fails to function or which functions incorrectly, shall
+be promptly adjusted, repaired or replaced by a like facility having the required accuracy. Each
+party shall, promptly on request from the other, test its metering and measuring facilities.
+Should any meter or other measuring facility used for billing purposes break down or be found
+not to have the required accuracy, CFLCo and Hydro-Quebec shall determine (from CFLCo's own
+facilities and from such information as Hydro-Quebec may supply, and Hydro-Quebec shall be
+entitled to do so) the amount of power and energy supplied during the period of failure or inaccuracy
+and the duration of such period. In making such determinations the parties hereto shall rely on that
+data and information available to them as aforesaid which the parties consider most conducive
+as accurate a determination as the circumstances may permit.
+to
+5.1 Energy Characteristics
+ARTICLE V
+ENERGY, FIRM CAPACITY AND RECAPTURE
+The energy to be made available under this Power Contract, as evidenced by the maintenance
+of normal voltage and frequency at the Delivery Point, shall be three phase 60 hertz (i.e. 60 cycle per second) alternating current at a voltage at the Delivery Point of approximately 735,000 volts under
+normal operating conditions. Such voltage will be varied in accordance with Hydro-Quebec's system
+requirements and sound utility practice.
+5.2 Firm Capacity
+The Firm Capacity shall be available at all times when Hydro-Quebec has requested it. In
+addition whenever additional capacity can, in the opinion of CFLCo, be made available, such capacity shall also be available to Hydro-Quebec on request.
+In the event of a Deficiency occurring in the making available by CFLCo of capacity, the provisions of Article VIII hereof shall apply.
+Subject to the provisions of Sections 4.2 and 5.5 hereof, at no time shall the power taken by Hydro-Quebec be less than Minimum Capacity.
+6
+5.3 Firm Capacity Schedules
+At least seven days in advance of the date upon which this renewed Power Contract shall take
+effect and at weekly intervals thereafter Hydro-Quebec shall furnish to CFLCO:
+(a) an hourly schedule of its proposed capacity requirements over the week following, and
+(b) an estimate of what Hydro-Quebec is likely to schedule over the three weeks thereafter.
+Each such seven-day schedule shall constitute Hydro-Quebec's request for availability of such capacity
+over the period scheduled to the various extents and at the various times indicated by the schedule,
+but subject to Hydro-Quebec's right to make further requests for changes in capacity during the period
+within the limits of Firm Capacity and Minimum Capacity. Any such request shall be considered as
+revising the schedule to the required extent and for the required time.
+5.4 Recapture
+CFLCo may, on not less than three years prior written notice to Hydro-Quebec, elect to withhold
+from the power and energy agreed to be sold hereunder blocks at a specified load factor per month,
+to be stated in said notice, of not less than 60% nor more than 90%, which blocks in the aggregate shall
+not exceed, during the term hereof and after taking into account recaptures made by CFLCo under
+the original Power Contract, 300,000 kilowatts for a maximum withholding thereunder and hereunder
+of 2.362 billion kilowatthours per year provided that:
+(i) energy so withheld is sold by CFLCo only for consumption outside the Province of
+Quebec; and
+(ii) any part of the energy so withheld which, from time to time may become available for
+purchase by Hydro-Quebec may be purchased by Hydro-Quebec at the price of one mill per
+kilowatthour, and to this end Hydro-Quebec shall have access to the pertinent sales records.
+5.5 Recapture Adjustments
+Immediately upon any recapture becoming effective, the Annual Energy Base shall be reduced
+by the same amount of kilowatthours per year as are recaptured and Firm Capacity and Minimum
+Capacity shall be reduced by the same amount of kilowatts as are recaptured.
+ARTICLE VI
+DELIVERY
+6.1 Delivery Point
+The Delivery Point shall be as it was at the time of expiry of the original Power Contract.
+6.2 Transmission Facilities
+The operation and maintenance of the necessary transmission facilities up to the Delivery Point
+will be the exclusive responsibility of, and at the sole cost of, CFLCo and onwards from the Delivery
+Point will be the exclusive responsibility of, and at the sole cost of, Hydro-Quebec.
+ARTICLE VII
+PRICE AND PRICE ADJUSTMENT
+7.1 For all Continuous Energy, Hydro-Quebec shall pay CFLCo 2.0 mills per kilowatthour.
+In the event that in any month CFLCo is unable due to Plant deficiencies to make available at
+least 90% of the Continuous Energy, the price payable by Hydro-Quebec for such month shall be 2.0
+mills per kilowatthour for that part only of the Continuous Energy which is made available.
+7
+7.2 Direct Price Adjustment
+During any notice period prior to the recapture contemplated by Section 5.4 hereof the monthly
+price for Continuous Energy shall be reduced by 0.27 mill per kilowatthour for 1/12 of the number
+of kilowatthours per year in respect of which a Recapture Notice has been given.
+ARTICLE VIII
+FIRM CAPACITY PENALTY
+8.1 Extent of Penalty
+Should a Deficiency occur, then CFLCo shall be subject to the applicable penalty outlined below,
+which penalty Hydro-Quebec shall be entitled, subject as hereinafter provided, to deduct from the
+payments next to be made by it to CFLCo hereunder:
+(i) when the Deficiency Period is more than 30 minutes and not more than 4 hours there
+shall be a penalty of $10 per megawatt for the maximum megawatts of such Deficiency lasting continuously for 30 minutes, calculated to the nearest full megawatt;
+(ii) when the Deficiency Period is more than 4 hours and not more than 10 hours there shall
+be a penalty of $20 per megawatt for the maximum megawatts of such Deficiency lasting contin- uously for 30 minutes, calculated to the nearest full megawatt;
+(iii) when the Deficiency Period is, or is deemed to be, 24 hours or more there shall be a
+penalty of $40 per megawatt day for the maximum megawatts of such Deficiency lasting contin- uously for 30 minutes, calculated to the nearest full megawatt.
+8.2 Rules Applicable
+For the purpose of computing penalties as aforesaid:
+8.2.1- any Deficiency Period in excess of 10 continuous hours and not exceeding 24 continuous hours will be considered as a full 24 hours;
+8.2.2- separate Deficiency Periods each lasting more than 30 minutes within a 24 hour time
+span shall never result in a penalty greater than that which would have resulted if the maximum
+of the Deficiencies had lasted for the full 24 hour period; and
+8.2.3- if a Deficiency Period lasts for more than twenty-four hours, it may be divided into
+any such four hour, ten hour and twenty-four hour periods as CFLCo may designate which would
+cover the total Deficiency Period and separate penalties for each period so designated shall be determined as in Section 8.1.
+8.3 No Penalty
+There shall be no penalty applicable:
+8.3.1-to any Deficiency which is less than one per cent of the capacity at the time requested by Hydro-Quebec;
+8.3.2- to any part of any Deficiency which is due to Excessive Corona Losses;
+8.3.3- during any period when CFLCo is unable to provide service due to disturbances on
+the Hydro-Quebec system, such period to include not only the duration of the disturbance but also the time required by CFLCo to restore service;
+8.3.4- during the period of, and to the extent of, the Deficiency resulting from any interrup- tion for the safeguarding of human life permitted by paragraph (i) of Section 4.2 hereof;
+8
+i.
+8.3.5- to any Deficiency for which Hydro-Quebec is able to substitute capacity from its own
+system, without using its reserve capacity and without impairing the reliability of service from
+its system, at, in its sole judgment, no material increase in Hydro-Quebec's costs of operation; and
+8.3.6- to any Deficiency resulting from a lack of water other than by reason of the failure of impounding structures on any section of the reservoirs.
+ARTICLE IX
+PAYMENT
+9.1 Monthly Accounts
+CFLCo shall render an account to Hydro-Quebec monthly covering:
+(i) the Continuous Energy, priced in accordance with Section 7.1 hereof and, if applicable, Sections 5.4 and 7.2 hereof;
+(ii) the amount of penalty which Hydro-Quebec is entitled to withhold pursuant to Article VIII;
+Any account rendered under this Section must be in accordance with the provisions of this renewed
+Power Contract.
+9.2 Method of Payment
+All accounts rendered shall be payable in lawful money of Canada at the address of CFLCo referred to in Article XIV hereof or at such other address within Canada as CFLCo may from time to
+time designate. All such accounts shall be payable within 15 days of their receipt without abatement
+or set-off whatsoever except for the credits and adjustments, if any, included in the account.
+Any inaccuracy in any account may be corrected by appropriate adjustment to a subsequent account.
+10.1 Contract not Terminated
+ARTICLE X
+FORCE MAJEURE
+No event of Force Majeure or of default hereunder shall give rise to or result in the termination of this renewed Power Contract.
+10.2 Obligations Suspended or Abated
+Subject to the provisions of Section 10.1 hereof, should either or both parties hereto by reason of
+Force Majeure be prevented or delayed in the performance of any of its or their obligations hereunder,
+such party or parties shall thereby be subject to no penalty under the provisions hereof or incur any
+other liability to the other, but shall nonetheless perform such obligation as soon as possible and to as
+full an extent as possible.
+10.3 Assignment of Indemnification
+Should either party hereto be prevented by any act of governmental authority from performing
+any of its obligations hereunder and be thereby entitled to claim indemnification from such governmental authority, such party shall, to the extent of the damages thereby occasioned to the other party,
+ipso facto, assign to such other party the right to receive such indemnity. Notwithstanding such assignment, the party prevented shall, at the option of the other party, itself attend to the claiming and receiving of such indemnity but at the expense of both parties in proportion to the damages collected by each.
+9
+11.1 Of Hydro-Quebec by CFLCO
+ARTICLE XI
+INDEMNIFICATION AND LIABILITY
+CFLCo shall assume all obligations, risks and responsibility for, and shall forever indemnify and
+save Hydro-Quebec harmless from and against, any and all claims that may be made by third persons
+for injuries or damages to persons or property caused in any manner by electric current on or induced
+from the transmission circuits of CFLCo up to and including the Delivery Point or by the presence or
+use of CFLCo's equipment, unless such injuries or damages are caused by negligence on the part of
+Hydro-Quebec or any of its employees.
+11.2 Of CFLCo by Hydro-Quebec
+Hydro-Quebec shall assume all obligations, risks and responsibility for, and shall forever indemnify
+and save CFLCo harmless from and against, any and all claims that may be made by third persons for
+injuries or damages to persons or property caused in any manner by electric current on or induced
+from the transmission circuits of Hydro-Quebec beyond the Delivery Point or by the presence or use of
+Hydro-Quebec's equipment, unless such injuries or damages are caused by negligence on the part of
+CFLCo or any of its employees.
+11.3 Reciprocal Release of Claim
+Subject as provided in Section 4.1.4 hereof, neither party shall make any claim upon the other by
+reason of one party's cirouits and system being damaged or rendered inoperative for any period as a
+result of an occurrence on the circuits and system of the other party.
+12.1 Prohibition
+ARTICLE XII
+ASSIGNMENT
+Neither party to this renewed Power Contract may assign its rights and obligations hereunder
+except that:
+12.1.1 Exception in Respect of Assignment to Successor Corporation
+Either party may assign its rights and obligations hereunder to any successor corporation with
+which such party may have merged or with which it may have become amalgamated or to which,
+as part of a corporate reorganization or reconstruction, it may transfer all or substantially all of its
+assets;
+12.1.2 Exception in Respect of Assignment as Security
+CFLCo may assign its rights hereunder as security to any trustee for the holders of any debt
+obligations which CFL.Co may issue in connection with any refinancing from time to time of debt
+obligations incurred during the term of the original Power Contract or with the reconstruction,
+renewal or repair of any part of the Plant and any such assignee shall be entitled to further assign
+such rights by way of realization of such security should such security become enforceable; and
+12.1.3 Еxсеeption in Respect of Assignment to Wholly Owned Subsidiary
+CFLCo may assign its rights and obligations hereunder to a wholly-owned subsidiary of
+CFLCo provided such assignment is made with the prior written consent of Hydro-Quebec, which
+shall not be unreasonably withheld..
+12.2 Protection of Trustee
+No assignment to a trustee pursuant to Section 12.1.2 above shall relieve CFLCo of its obligations
+hereunder or operate to impose such obligations on the trustee.
+10
+ARTICLE XIII
+USE OF QUEBEC PERSONNEL, SERVICES AND MATERIALS
+13.1 Preference Concerning Quebec Equipment, Services and Personnel
+CFLCo will, in the procurement of materials, services and equipment and in the employment of
+personnel, extend or cause to be extended by its contractors, sub-contractors and agents preference to
+Quebec labour, personnel and services and to materials and equipment manufactured in Quebec.
+13.2 Preference to other Canadian Manufacturers
+In the purchase of major items of equipment, such as turbines, generators, transformers and the
+like, CFLCo will, subject to the prior preference stipulated in Section 13.1, give the next preference to
+other Canadian manufacturers.
+13.3 Liaison Committees
+CFLCo will cause to be set up, in cooperation with Hydro-Quebec, liaison committees to deal with
+all matters concerning the supply of services, materials, and equipment which may be of common
+interest relating to this renewed Power Contract.
+13.4 Management Rights of CFLCo
+Nothing in the above provisions shall be construed to require CFLCo to make any changes in its
+selection of managers of construction or engineering services for the Plant or to prevent fulfillment of
+CFLCo's obligations under paragraph 4 of Part II of the Statutory Lease held by CFLCo and dated
+May 16th, 1961.
+ARTICLE XIV
+NOTICES
+14.1 How Given
+Any notice or other communication required or permitted to be given by either party hereto to
+the other shall be in writing and shall be validly given if personally delivered to a senior executive
+officer of the addressee or if sent by prepaid registered post addressed:
+if to Hydro-Quebec, at: 75 Dorchester Boulevard West,
+Montreal 1, P. Q.
+if to CFLCo, at: One Westmount Square,
+Westmount 6, P. Q.
+14.2 When Effective
+Any notice or other communication personally delivered shall be taken as having been received
+on the date of delivery. Any notice or other communication sent by post shall be taken as having been
+received on the second business day following the date of mailing.
+14.3 Change of Address
+Either party may, by notice to the other, designate a new address to which notices and other
+communications to it shall, until further notice, be given.
+11

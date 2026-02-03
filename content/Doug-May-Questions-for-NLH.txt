@@ -1,0 +1,64 @@
+Some Questions for NLH
+Related to the MOU
+Doug May
+
+Some Questions for NHL, HQ, &GNL
+• The general understanding is that CF electricity is about 15% of HQ’s
+total available electricity.
+• Is this true?
+• For each month since January 2015, what amount of electricity has CF(L)Co sold to HQ,
+and for how much?
+• When HQ reported that the cost of imported power for the first half of
+2025 at five cents per kWh, did that include the low-cost electricity
+from CF? HQ would know the details.
+• Which other provinces does HQ import power from? How much for
+each month and what does HQ pay for the power?
+• What is the AC of power from CF? How has the AC changed over the
+past 20 years?
+• What are the transmission costs per MWh for CF power going to the NE
+grid and to the NY grid?
+
+• Does HQ own part of the transmission system in NY and NE through
+which this power is transferred to the wholesale markets in NE and
+NY? If so, what are the transmission costs per MWh?
+• Has drought affected the water levels of the Smallwood Reservoir?
+• How will the proposed generating projects in the MOU affect the
+volume of water in the Smallwood Reservoir?
+• Does the cost of producing power at CF increase during those
+months when more power is produced? (Economist speak for
+estimates of marginal costs)
+• What are CF(L)Co’s estimates of depreciation and maintenance
+costs for the existing plant at CF (no upgrades) for each year in the
+period 2025-2071?
+
+• Are there outstanding capital asset costs or debt costs associated
+with the existing plant at CF?
+• A Quebec electricity expert noted that in 2022, about 12% of the
+electricity available to HQ was exported, which was close to the
+amount imported from CF. Is there a connection?
+• HQ states in its 2025 mid-year report that sales of about 6 TWh (6
+million megawatts) occurred in the first 6 months, roughly equal to
+the volume of purchases. Details?
+• NHL informed me that water rental rates and royalties were being
+“modernized”. Has an agreement been reached? If yes, how were
+these rates determined?
+•
+
+• To find the implicit rental value of water from CF, determine the average cost
+per MWh of electricity generated there. This aggregate cost would include
+capital (K), labour (L), purchased materials (M) directly needed for production,
+and services (S) directly required for production. Water royalties and rents
+would NOT be included. What are these AC for CF power? NHL has the answer.
+• Walter Parsons (NHL) emphasizes that 5.9¢/kWh is the base price for
+determining new prices for existing power in the MOU. His original explanation
+of how this price was determined has changed. Where does this price come
+from? The GNL seems to suggest that it is tied to electricity prices in the New
+England and New York markets. Is it?
+
+• What is the life-expectancy of the CF dam, knowing that the
+normal range is 50-100 years?
+• In its third Quarterly Bulletin, Third Quarter 2025, Hydro-Quebec
+states that it manages “its large reservoirs prudently and
+dynamically” p.3. What does this mean in terms of hydroelectric
+generation? How is this management approach applied to the
+Smallwood Reservoir?

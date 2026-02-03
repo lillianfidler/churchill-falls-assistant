@@ -1,0 +1,62 @@
+Understanding Some Financial Concepts:
+Present Value (PV) and Net Present Value (NPV), Payback Period, Nominal and Real Dollars
+
+Why do we use them and how are they calculated?
+
+Why Use and How to Calculate Present Values (PV)
+
+Why use the concept? The MOU is proposing new infrastructure projects that have long lifetimes, say 50 years. Spread out, over their expected lifetime the projects will earn revenues, but once development starts, these projects will incur costs.
+
+We realize that a dollar today may not be worth the same to us a dollar tomorrow. This difference may be due to inflation. In any event, if we decide to forego consumption now and save our money, we hope that the group using our savings (e.g. bank or other business) will give us a return (interest rate) that will make us better off in the future by allowing us to consume more.
+
+For example, if I gave the bank a $100 and they said the interest rate was 5%, then, next year, I would expect to get to get $105. If the bank said that you had to keep your money with them for two years in the bank, then at the end of the second year I would have $110.25, that is my $105 from the first year plus the 5% interest on my $105 during the second year or $5.25.
+
+But say, the bank told you that they would give you $110.25 in two years and they would pay you 5% interest. You might ask what would I have to invest NOW, today/the present to get that money then the answer we know is $100.
+
+We are able to know the PV (present value) what we would have to invest now of $110.25, two years from now, if we know the interest rate that the bank used.
+
+When do we refer to the interest rate as the "discount rate"? We call the rate of interest the discount rate, when we know the future value ($110.25) and the interest rate (5%) but want to know the present values.
+
+The "discount rate" is the rate to convert future cash flows into today's values.
+
+Why Use Net Present Value (NPV)?
+
+In most cases, to earn money (generate revenue) you have to incur costs.
+
+Profit is simply equal to revenue – costs.
+
+In many situations, you incur costs now (build a dam to produce electricity) and then obtain revenue later when the dam is operating by selling electricity.
+
+Let's return to our bank example. Assume that you did not have the $100 in your pocket to invest, Instead, you borrowed the money from a friend, who would lend you the $100, but you would have to pay your friend 4% each year. The friend says that you don't have to actually pay me until the bank pays you. In this case, at the end of two years you have to pay him back $108.16.
+
+Your profit at the end of two years is $2.09, which is the revenue from the bank of $10.25 minus the cost of borrowing money from your friend of $8.16. Happily, the bank gave you back $100, that you could return to your friend.
+
+So, the Net Present Value (NPV) of your investment is $1.90 or what the $2.09 that you would receive two years from now is worth to you today. We used a discount rate of 5%. Note, that in our simple example, we noted that you received the money and paid your friend back at the end of two years. 1.90 = 2.09/ (1.05x1.05)
+
+Be careful! If you friend wants you to pay him interest at the end of the year, then you have a cash flow problem since you have to find the $4 in your budget. The payback period in our bank example was two years.
+
+Be Careful!
+
+Be careful! Future cash inflows (revenue) may be converted to a present value BUT that does not mean they have the cash flow this year. Don't spend the money now using your VISA card while expecting money in the future if you are required to make payments before you get the money. Same principle applies to governments or businesses.
+
+Caution: Any PV is only as reliable as the forecasted amount.
+
+Caution: Using the same discount rate, such as 5.82% throughout the life of a project assumes that the risk does not change over time.
+
+Real Dollars and Nominal Dollars
+
+Real dollars versus nominal dollars. Nominal dollars are dollars in terms of the year in which they occur. Goods and services may change value because of inflation (normal) or deflation.
+
+Real dollars adjust for changes in the purchasing power due to inflation/deflation. Normally one would use the "present" to determine real dollars by assuming annual inflation rates going forward, for example, 2% annually.
+
+The real discount rate is the nominal discount rate less the inspected rate of inflation. Either way, you get the same present value amount.
+
+The Payback Period
+
+In the real world, you also have to be careful since once you invest in a fixed asset, you may not be able to get the money that you invested back immediately or the amount of money that you invested without selling your fixed assets (buildings and or machinery) at a loss. It may take some years earning cash before you cover the costs of your investment over the years. The number of years it takes you to recover your costs is called the "payback period".
+
+Thanks for watching
+
+We would encourage you to discuss with others and share your opinions and insights.
+
+Don't understand something? No problem. Just ask me!

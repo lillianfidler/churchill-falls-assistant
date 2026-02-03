@@ -1,0 +1,446 @@
+===================================
+DR. DOUG MAY VIDEO ANALYSIS - VIDEO 2A OF 6
+Electricity Pricing in Quebec - Part A: Quebec's Costs
+===================================
+VIDEO: https://youtu.be/j2GWirWVg48
+
+
+AUTHOR: Dr. Doug May, Economist, Memorial University of Newfoundland
+
+SERIES: Video 2A of 6 examining Quebec's electricity landscape
+
+FOCUS: How electricity prices for Quebec households and businesses are determined, and why they are so cheap
+
+NOTE: This is Part A focusing on Quebec's contribution. Part B (Video 2B) will examine Churchill Falls' role.
+
+---
+
+## RECAP FROM VIDEO 1
+
+- Most electricity imports to Quebec come from Newfoundland and Labrador
+- Recently, imports have increased from the United States
+- Reason: Drought around James Bay area of Quebec
+- Today's focus: Pricing mechanisms and cost structures
+
+---
+
+## CURRENT ELECTRICITY PRICES TO HOUSEHOLDS
+
+### Montreal Residential Rates (As of April 2025)
+
+**Tiered pricing structure:**
+- First 1,200 kWh per month: 6.678 cents per kWh
+- Above 1,200 kWh per month: 10.153 cents per kWh
+- Plus: Monthly basic charge
+
+**Average household calculation:**
+- Assumption: 1,550 kWh per month (average Quebec household usage)
+- **Effective rate: 8.30 cents per kWh** (including basic charge)
+
+### Comparative Analysis: Montreal vs. St. John's
+
+**St. John's, NL (same 1,550 kWh usage):**
+- **Effective rate: 15.022 cents per kWh** (including basic charge)
+- Actual per-kWh rate slightly less, but basic charge brings total to 15.022 cents
+
+**Price differential: St. John's is 80% more expensive than Montreal**
+
+### Future Pricing Agreement
+- Under new agreement with Quebec government
+- Prices can increase up to 3% annually over next 5 years
+- After 5 years: mandatory review required
+
+---
+
+## DYNAMIC PRICING CONCEPT
+
+### What is Dynamic Pricing?
+**Definition:** Pricing that varies based on time of day and/or season
+
+**Daily variation:**
+- Higher prices during peak hours (morning breakfast time, evening dinner time)
+- Lower prices during off-peak hours
+- Encourages consumers to shift usage to off-peak periods
+
+**Seasonal variation:**
+- Similar to Airbnb prices increasing in summer (high demand)
+- Similar to airline tickets costing more at Christmas
+- Electricity prices higher in winter, lower in spring/summer
+
+**Hydro-Québec is actively promoting this dynamic pricing model**
+
+---
+
+## COMPARATIVE PRICING: CANADA AND G7
+
+### Price Index Comparison (Montreal = 100)
+
+**Canadian Cities (2024-2025 data):**
+- Montreal: 100 (baseline)
+- Winnipeg: 131
+- St. John's: 180 (80% more expensive)
+- Toronto: 187
+
+**U.S. Cities:**
+- Boston: Significantly higher than Montreal
+- San Francisco: Highest of all cities examined
+
+**KEY FINDING: Montreal has the cheapest electricity prices in Canada and among the G7 countries**
+
+**Strategic importance:** Cheap electricity prices are a core part of Quebec's industrial strategy
+
+---
+
+## WHY ARE QUEBEC PRICES SO LOW?
+
+### Hydro-Québec's Corporate Structure and Strategy
+
+**Ownership:** Government-owned Crown Corporation
+
+**Primary objective:** Cost minimizer (not profit maximizer)
+
+**Operational model:**
+- Regulated monopolist (only supplier)
+- Set prices for residential consumers
+- Variable/negotiated prices for industrial customers based on:
+  - Size of customer
+  - Timing of electricity usage
+  - Other factors
+
+**Essential service mandate:**
+- Provides essential good (electricity) to households who need it
+- Public interest takes priority over profit maximization
+
+### The Equalization Payment Strategy
+
+**Key economic consideration:**
+- Any profit from Crown Corporation counts as provincial revenue
+- Provincial revenue affects federal equalization payments under Federal-Provincial Fiscal Arrangements Act
+
+**Quebec economist analysis (late 1990s):**
+- Quebec's advantage: "Dissipate the rents"
+- Strategy: Keep prices as low as possible
+- Goal: Don't make substantial profit (to maximize equalization payments from federal government)
+- Result: Lower provincial revenue = higher equalization payments
+
+**Economic term:** "Rent dissipation" strategy
+
+---
+
+## ELECTRICITY GENERATION IN QUEBEC
+
+### Hydroelectric Dominance
+- **Over 90% of power generated comes from hydroelectric stations**
+- This percentage is decreasing due to continuing drought (into 2025)
+- Still above 90%, but trending downward
+- Wind power plays increasingly larger role (filling the gap)
+
+---
+
+## ROBERT-BOURASSA GENERATING STATION
+
+### Scale and Capacity
+**Location:** La Grande Rivière (formerly called LG-2)
+
+**Capacity:**
+- Slightly higher rated capacity than Churchill Falls
+- However, doesn't run at full capacity year-round
+
+### Capacity Utilization Analysis
+
+**Churchill Falls:**
+- Typically runs at 72% capacity utilization over the year
+
+**Robert-Bourassa:**
+- Runs at approximately 78% capacity utilization
+- Actual annual output: 29,600 [units]
+- **Less total output than Churchill Falls despite higher rated capacity**
+
+### The Reservoir as "Storage Battery" Concept
+**Industry perspective:**
+- Reservoirs (Robert-Bourassa, Smallwood at Churchill Falls) viewed as huge storage batteries
+- Water release can be timed strategically
+- Release more water during high-demand/high-price periods
+- Conserve water during low-demand/low-price periods
+
+---
+
+## COST STRUCTURE CONSIDERATIONS
+
+### Average Cost Variation
+- **Average cost of electricity varies from station to station**
+- Plus: Transmission costs must be added
+
+### The CF(L)Co Ownership Factor
+
+**Critical pricing consideration:**
+- CF(L)Co owns and operates Churchill Falls
+- Hydro-Québec owns 34.2% of CF(L)Co
+
+**Effective price calculation:**
+- When media discusses prices CF(L)Co receives, must remember:
+- Hydro-Québec's perspective: Effective price it pays
+- **To the extent of 34.2%, Hydro-Québec is "paying itself"**
+
+**Some characterize this as:** Hydro-Québec has "captured" or is "holding hostage" CF(L)Co
+
+---
+
+## LA GRANDE RIVIÈRE COMPLEX
+
+### Multiple Dams on La Grande
+- Robert-Bourassa (LG-2)
+- LG-2A (adjacent to Robert-Bourassa, essentially same dam)
+- LG-3
+- LG-1
+- Multiple other dams along La Grande Rivière
+
+**Drought location:** Occurring in this James Bay area where these dams are located
+
+---
+
+## TRANSMISSION AND DISTRIBUTION
+
+### Historical Context: Churchill Falls Transmission
+- Originally hoped to get transmission line through Quebec
+- Premier Joey Smallwood sought this route
+- Quebec wouldn't allow it
+- Could have been forced under British North America Act
+- Ottawa discouraged Smallwood from pursuing this
+
+### Cost Components
+**Three levels of electricity delivery costs:**
+
+1. **Generation costs:** At the dam/station
+2. **Transmission costs:** Large high-voltage lines (e.g., from Muskrat Falls to Soldiers Pond distribution site in St. John's area)
+3. **Distribution costs:** Local delivery to neighborhoods and individual homes
+   - Poles on property or underground lines
+   - Local distribution infrastructure
+   - In St. John's: Handled by Newfoundland Power (Fortis subsidiary)
+
+---
+
+## ECONOMIC COST ANALYSIS
+
+### Why Hydro-Québec Achieves Low Prices
+
+**Official Hydro-Québec answer:**
+- Use of hydropower (not fossil fuels)
+- **"Cheap green energy"**
+
+**Environmental caveat:**
+- Once operating, hydroelectric is clean
+- However: Cement in dams not environmentally friendly during construction
+
+---
+
+## PRODUCTION FUNCTION AND COST MINIMIZATION
+
+### Economic Framework (Microeconomics)
+
+**Production Function:**
+Q = f(K, L, E, M, S, W)
+
+Where:
+- Q = Output (electricity)
+- K = Capital stock (dams, turbines, infrastructure)
+- L = Labor services
+- E = Purchased energy
+- M = Purchased materials
+- S = Purchased supplies (phone services, etc.)
+- **W = WATER** (the critical input for hydro)
+
+### Key Difference from Manufacturing
+**Standard production:** Labor and capital are primary inputs
+
+**Hydroelectric production:**
+- **Water (W) is the key input that makes hydro viable**
+- Capital provides "flow of services" (not consumed)
+- Labor provides services (not "used up")
+- **Critical point:** Flow of services from capital (dams/turbines) decreases during drought
+- Less water through turbines = lower utilization = decreased productivity
+
+### Economic Costs vs. Accounting Costs
+
+**Economic costs (used by economists):**
+- Include return on capital as a cost
+- Broader than traditional accounting costs
+- Include opportunity cost of capital
+
+**Components with prices:**
+- PK = Price of capital services
+- PL = Price of labor services
+- PE = Price of energy
+- PM = Price of materials
+- PS = Price of supplies
+- **PW = Price of water** (royalty/rent)
+
+**Total Economic Cost = (PK × K) + (PL × L) + (PE × E) + (PM × M) + (PS × S) + (PW × W)**
+
+**Average Cost = Total Cost / Q (Quantity of output)**
+
+### Return to Capital
+- Included in economic costs (not in accounting costs)
+- Could be bonds
+- Could be shareholder expectations
+- Could be other entrepreneurial investment returns
+
+---
+
+## WATER PRICING IN QUEBEC
+
+### Historical Context
+- Before ~2015: Water may have been considered a "free good" in Quebec
+
+### Modern Environmental Economics Perspective
+**Recognition of scarcity:**
+- Water is a scarce resource
+- Apparently not sustainable (drought demonstrates this)
+- Environmental cost to using water
+- **Social cost:** If electricity too cheap, encourages inefficient use (households use too much)
+
+### Current Water Royalty System
+
+**Quebec's water royalty rate:**
+- **0.75% of total revenue generated from sale of hydro-electricity**
+- Applied to electricity generated and sold in Quebec
+- Recognizes water as a resource with value
+
+---
+
+## COST CALCULATIONS FOR GENERATING STATIONS
+
+### La Grande Complex Average Accounting Cost
+
+**Robert-Bourassa and other La Grande stations:**
+- Average accounting cost: **$50-70 per megawatt-hour**
+- Equivalent to: **5-7 cents per kilowatt-hour**
+
+**Dr. May's note:** "Seems relatively high to me"
+
+### Cost Structure by Type
+**Ranking (low to high cost):**
+1. Large hydro stations (La Grande complex): Relatively inexpensive
+2. Other hydro facilities: Moderate
+3. Wind farms: More expensive than hydro
+
+### Impact of Drought on Average Costs
+
+**Fixed costs remain constant:**
+- Capital costs (dams, turbines already built)
+- Labor costs (can't send workers home for a month during low production)
+- Other purchased costs
+
+**Variable input decreases:**
+- Water availability going down
+
+**Result: Average cost per kWh INCREASES**
+- Same fixed costs ÷ lower output = higher average cost
+- This is happening at Robert-Bourassa and other La Grande dams
+
+---
+
+## CHURCHILL FALLS COST COMPARISON
+
+### Churchill Falls Average Cost
+
+**Calculation basis:**
+- Average cost: **$2.95 per megawatt-hour**
+- Equivalent to: **0.295 cents per kilowatt-hour**
+
+**Assumption for Quebec:**
+- 90% of Churchill Falls power goes to Quebec
+- 10% used by Newfoundland and Labrador
+
+**Imported energy from Churchill Falls to Quebec:**
+- **31,050,000 megawatt-hours annually** (the 90% portion)
+
+### Comparative Analysis: Churchill Falls vs. La Grande
+
+**La Grande complex:** 5-7 cents per kWh
+**Churchill Falls:** 0.295 cents per kWh
+
+**Churchill Falls is approximately 17-24 times cheaper than La Grande generation**
+
+---
+
+## DYNAMIC PRICING IN PRACTICE
+
+### Seasonal Price Variation
+- Costs relatively fixed (capital, labor, infrastructure)
+- **Prices vary up and down seasonally**
+- Higher in winter (peak demand)
+- Lower in summer (lower demand)
+
+**Note:** Dr. May acknowledges diagram may not be optimal but illustrates the concept
+
+**Full dynamic pricing analysis:** Will be covered in Video 3 (dealing with import/export prices rather than set domestic prices)
+
+---
+
+## AGGREGATE COST CALCULATION METHOD
+
+### Total System Cost Calculation
+
+**Formula:**
+1. Add up costs from ALL generating stations
+2. Sum = Grand Total Cost
+3. Divide by total power generated (total Q)
+4. Result = Average cost per kWh for entire system
+
+### Fixed Cost Reality
+**Key economic point:**
+- Costs from generating stations are relatively fixed
+- Dam exists whether running or not
+- Turbines exist whether running or not
+- **Cannot lay off workers seasonally** ("You can't say: now you guys can go off and do something else... Take a month off because it's now March")
+- **Costs still incurred even when producing less electricity**
+
+---
+
+## KEY MESSAGE FROM VIDEO 2A
+
+### Answer to Central Question: Why Are Electricity Costs So Low?
+
+**Primary reason:** Use of hydro-generated electricity
+
+**Specifically:**
+- Most productive hydro stations in Quebec are on La Grande Rivière
+- Robert-Bourassa is the "really big one"
+- Large generating stations benefit from **economies of scale**
+- More water flow capacity = lower per-unit costs
+- Even somewhat smaller hydro stations benefit from the inherent cost advantages of hydroelectric generation
+
+**Bottom line:** It's hydroelectricity that provides the fundamental cost advantage
+
+---
+
+## TRANSITION TO VIDEO 2B
+
+**Next video will address:**
+1. What role does Churchill Falls play in this cost structure?
+2. Why does Hydro-Québec need:
+   - The Churchill Falls upgrade?
+   - The Churchill Falls enlargement?
+   - The new Gull Island facility?
+
+---
+
+## KEY STATISTICS SUMMARY
+
+- Montreal electricity: 8.30 cents/kWh (average household)
+- St. John's electricity: 15.022 cents/kWh (80% more expensive)
+- Montreal = cheapest in Canada and G7
+- Quebec generation: >90% hydroelectric
+- Churchill Falls capacity utilization: 72%
+- Robert-Bourassa capacity utilization: 78%
+- La Grande average cost: 5-7 cents/kWh
+- Churchill Falls average cost: 0.295 cents/kWh (17-24× cheaper)
+- Churchill Falls to Quebec: 31,050,000 MWh annually
+- Hydro-Québec owns: 34.2% of CF(L)Co
+- Quebec water royalty: 0.75% of hydro electricity revenue
+- Future price increases: Up to 3% annually for 5 years
+
+---
+
+**CONTEXT:** This is Video 2A of a 6-part series. Video 2B will continue the pricing analysis with focus on Churchill Falls' role.

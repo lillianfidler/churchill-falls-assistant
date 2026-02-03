@@ -105,39 +105,37 @@ console.log('='.repeat(60));
 // Using concise summaries instead of full documents for faster responses
 // ============================================================================
 
-const DOUG_DOCUMENTS = [
-    // Core MOU and Analysis (summaries)
-    'MOU_Churchill_Falls_Dec_12_2024_summary.txt',
-    'Doug-video-series-video1-summary.txt',
-    'Doug-video-series-video2A-summary.txt',
-    'Doug-video-series-video2B-summary.txt',
-    'LOCKE analysis of MOU CF-summary.txt',
-    
-    // Doug's Complete Analysis Collection (17 files total)
-    'doug-may-assessment-of-proposed-prices-mou.txt',
-    'doug-may-CF-assessment-mou.txt',
-    'doug-point-summary-assessment-mou-prices.txt',
-    'Doug-Proposed_Prices_Under-MOU.txt',
-    'Doug-Proposed_Projects_Under-mou.txt',
-    'doug-summary-video.txt',
-    'HYDRO-QUEBECS-EXPORTS.txt',
-    'HYDRO-QUEBECS-IMPORTS.txt',
-    'quebecs-electricity-supply-problem.txt',
-    'Proposed-Prices-for-Existing-Power.txt',
-    'Understanding-Some-Financial-Concep.txt'
-];
+// ============================================================================
+// DYNAMIC DOUG DOCUMENT LOADING
+// Automatically loads all files starting with "doug-may" (case-insensitive)
+// No hardcoded list needed - just name files with doug-may prefix!
+// ============================================================================
 
 const dougDocuments = new Map();
 
 function loadDougDocuments() {
-    console.log('\n📚 Loading Dr. Doug May\'s analysis SUMMARIES for voice mode...');
-    console.log('   (Using optimized summaries for faster responses)');
+    console.log('\n📚 Loading Dr. Doug May\'s analysis for voice mode...');
+    console.log('   (Dynamically loading all files starting with "doug-may")');
     
     const contentDir = path.join(__dirname, 'content');
     let loadedCount = 0;
     let totalSize = 0;
     
-    for (const filename of DOUG_DOCUMENTS) {
+    // Dynamically find all Doug May files (case-insensitive)
+    let dougFiles = [];
+    try {
+        const allFiles = fs.readdirSync(contentDir);
+        dougFiles = allFiles.filter(file => 
+            file.toLowerCase().startsWith('doug-may') && 
+            file.toLowerCase().endsWith('.txt')
+        );
+        console.log(`   Found ${dougFiles.length} Doug May documents`);
+    } catch (err) {
+        console.error('   ⚠️ Error reading content directory:', err.message);
+        return;
+    }
+    
+    for (const filename of dougFiles) {
         const filepath = path.join(contentDir, filename);
         
         try {
@@ -159,7 +157,7 @@ function loadDougDocuments() {
     const totalSizeMB = (totalSize / (1024 * 1024)).toFixed(2);
     const estimatedTokens = Math.round(totalSize / 3.5);
     
-    console.log(`\n✅ Loaded ${loadedCount}/${DOUG_DOCUMENTS.length} summary documents`);
+    console.log(`\n✅ Loaded ${loadedCount}/${dougFiles.length} Doug May documents`);
     console.log(`   Size: ${totalSizeMB} MB (~${estimatedTokens.toLocaleString()} tokens)`);
     console.log(`   💡 93% smaller than full documents - faster & more efficient!`);
 }

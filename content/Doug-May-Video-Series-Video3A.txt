@@ -1,0 +1,385 @@
+===================================
+DR. DOUG MAY VIDEO ANALYSIS - VIDEO 3A OF 6
+Hydro-Québec's Electricity Imports
+===================================
+VIDEO: https://youtu.be/ToKebHmN16s
+
+
+AUTHOR: Dr. Doug May, Economist, Memorial University of Newfoundland
+
+SERIES: Video 3A of 6 examining Quebec's electricity landscape
+
+FOCUS: Import volumes and prices paid by Hydro-Québec for electricity
+
+NOTE: Part A focuses on imports. Part B (Video 3B) will examine exports, particularly to the United States.
+
+---
+
+## OVERVIEW: QUEBEC'S ELECTRICITY SUPPLY PICTURE
+
+### Total Available Electricity = Domestic Production + Imports
+
+**Visual representation in data:**
+- Blue line: Domestic electricity produced in Quebec
+  - Follows expected seasonal patterns
+  - Shows slight downward slope due to drought
+  
+- Green line: Total electricity available to Quebec
+  - Gap between green and blue = imports
+
+**Import sources (shown in chart):**
+- Red: Imports from other provinces (main source)
+  - Seasonal variation with summer bumps
+- Blue tip: Imports from United States
+  - Gap between blue and red lines
+  - Increasing in recent years
+
+---
+
+## IMPORT SOURCES: THREE PROVINCES
+
+### Source Provinces
+1. Ontario
+2. New Brunswick  
+3. Newfoundland and Labrador
+
+---
+
+## IMPORTS FROM ONTARIO
+
+### 2024 Import Activity
+
+**Volume:**
+- Significant amounts purchased in 2024
+- Example period: 97,464 megawatts in very short time period
+- Possibly around Christmas time (peak demand)
+
+**Pricing characteristics:**
+- **Dynamic pricing in effect** (not set prices)
+- Price depends on market conditions of supply and demand
+- Varies month to month
+- Varies day to day
+- Can even vary during the day in various markets
+- **Set prices are NOT the norm in these markets**
+
+**Actual price paid:**
+- **$32.63 per megawatt-hour**
+- Equivalent: **3.23 cents per kilowatt-hour**
+
+(Note: Industry uses megawatt-hours; household prices expressed in kilowatt-hours)
+
+---
+
+## WHY HYDRO-QUÉBEC IMPORTS
+
+### Optimization Strategy
+
+**Simultaneous import/export:**
+- May import AND export during same month
+- May even happen partially during same day
+
+**Strategic goal:**
+- Optimize use of reservoirs as "storage batteries"
+- Optimize power use to help minimize costs
+- Key objective: **Cost minimization**
+
+**Reservoir management strategy:**
+- Save water when can import cheaply
+- Release water (generate power) when can sell at high prices
+- Arbitrage across time and price variations
+
+---
+
+## IMPORTS FROM NEW BRUNSWICK
+
+### Trading Relationship
+
+**Nature of trade:**
+- Hydro-Québec trades electricity with New Brunswick
+- Both exports AND imports occur
+- Connection point: Eel River high-voltage direct current (HVDC) converter station
+
+**Pricing:**
+- Consistent with dynamic pricing model
+- Common price range: **8-10 cents per kilowatt-hour**
+- Equivalent: **$80-100 per megawatt-hour**
+
+**Recent trend:**
+- Imports from New Brunswick (and possibly Ontario) have increased
+- **Reason:** Decreasing hydro generation in Quebec due to drought over past couple of years
+
+---
+
+## IMPORTS FROM NEWFOUNDLAND AND LABRADOR (CHURCHILL FALLS)
+
+### Volume and Importance
+
+**Assumption:** 90% of Churchill Falls electricity goes to Quebec
+
+**Market share:**
+- Churchill Falls contributed approximately **86-88% of provincial imports into Quebec**
+- Years: 2023 and 2024
+- **"This is where the main action is in terms of imports for Hydro-Québec"**
+
+### Pricing Structure
+
+**Approximate price to Quebec from CF(L)Co:**
+- **0.475 cents per kilowatt-hour** (about half a cent)
+- This includes guaranteed winter availability premium
+
+**CRITICAL ADJUSTMENT - Effective Price:**
+- Since Hydro-Québec owns 34.2% of CF(L)Co
+- Effective price after ownership adjustment: **0.308 cents per kilowatt-hour**
+- "That's pretty small"
+
+**Cost of production:**
+- Cost of power: **0.294 cents per kilowatt-hour in 2024**
+
+**Data source:** Downloaded from Newfoundland and Labrador Hydro - CF(L)Co financial statements for 2024
+
+### Price Comparison Summary
+
+**Churchill Falls effective price:** 0.308¢/kWh
+**Ontario imports:** 3.23¢/kWh  
+**New Brunswick imports:** 8-10¢/kWh
+
+**Churchill Falls is 10-33 times cheaper than other provincial imports**
+
+---
+
+## IMPORTS FROM THE UNITED STATES
+
+### Source Specification
+- Primarily from New York State
+- Hydro-Québec doesn't appear to import from other states
+- Has transmission lines to Maine and New York
+- Has transmission lines into New England ISO
+
+### Historical Import Patterns (2015-2025)
+
+**2015-2021:**
+- Very little import activity from U.S.
+- Some action in January (power shortages)
+- Can identify January months by "little bumps" in data
+- Big bump in January 2022 for some reason
+
+**Recent years (2023-2025):**
+- **Big increases in imports from U.S.**
+- Now a significant feature on the map
+- **Reason:** Climate change and drought reducing Quebec's own generation
+
+---
+
+## U.S. IMPORT PRICING DYNAMICS
+
+### Market Characteristics
+- **Free market exchange**
+- Market changes month to month
+- Presumably can change on daily basis
+- Data source: Canada Energy Regulator
+
+**Data quality note:**
+Dr. May's observation: "Sometimes the data just doesn't seem to be that consistent. That's a nice way of putting it."
+- Has emailed Canada Energy Regulator several times
+- Has not received response
+- Requests viewers share any information they can obtain about data consistency
+
+### Historical Price Patterns
+
+**January 2022 (high import volume period):**
+- Price: **$200 per megawatt-hour**
+- Equivalent: **20 cents per kilowatt-hour**
+- Very high due to extreme demand
+
+**Pattern observations:**
+- Big price increases in January months
+- Big price increases in winter generally
+- **Increasing trend over time** due to:
+  - Climate change
+  - Technological change
+  - Growing populations
+  - Other U.S. factors
+
+**Expected trend:** Upward price trajectory
+
+**Most recent data - July 2025:**
+- Import price from New York: **$70.40 per megawatt-hour**
+- Equivalent: **7.4 cents per kilowatt-hour**
+- "Still a fair amount of money"
+- **Certainly a lot more expensive than Churchill Falls imports**
+
+---
+
+## SUPPLY-DEMAND GAP ANALYSIS
+
+### The Tightening Situation
+
+**Diagram interpretation:**
+- Green line: Total electricity available (supply)
+- Domestic demand line
+- Gap between them = available for export
+
+**Historical pattern (before 2023):**
+- Fair gap between supply and demand
+- Excess available for export
+
+**2023:** 
+- Gap closed down
+- "They really thought they had a problem"
+
+**2024:**
+- "Got more of a problem"
+
+**2025 (April-July period):**
+- "Seems to have even more of a problem"
+- **Demand meets supply**
+- "Basically have nothing available for export"
+
+### The Export Dilemma
+
+**Quebec's objective:** Be a net exporter
+
+**Requirements to achieve this:**
+- Must find extra power available
+- Want green energy (part of long-term plan to 2035)
+- Promoting green energy strategy
+
+**Infrastructure investments:**
+- New transmission lines into New England through Maine
+- New transmission lines into New York
+- **Want to export to New York** because of high free-market prices
+
+---
+
+## WHERE CHURCHILL RIVER PROJECTS FIT IN
+
+### Primary Purpose of Proposed Projects
+
+**Main function:**
+1. **Cheap source of imported power to Quebec**
+2. **Meeting peak load demands**
+
+### Strategic Reservoir Management
+
+**The arbitrage opportunity:**
+- Save water in Quebec's reservoirs when can import cheaply from Churchill Falls
+- Export Quebec's reservoir water when prices are highest
+
+**When to export for maximum profit:**
+- January and February (highest prices)
+- July and August (secondary peaks, lesser extent)
+
+### Business Certainty vs. Market Volatility
+
+**Business preference:** Set annual prices (certainty)
+
+**Free market reality:** Highly uncertain
+- Prices vary month to month (somewhat predictable pattern)
+- Prices vary day to day (somewhat predictable pattern)
+- **Big unknown:** Next 5 years outlook
+
+**U.S. projections:**
+- Demand for renewable electricity could increase by approximately **25% over next 5 years**
+- This would drive prices even higher
+
+---
+
+## EMPLOYMENT CONSIDERATIONS
+
+### Construction Jobs
+
+**Historical context:**
+- Jobs during construction projects = historical issue
+- Goes back century or more in Newfoundland and Labrador
+
+**Specific historical reference:**
+- Beginning of Second World War
+- Canadian and American war effort came to Newfoundland and Labrador
+- Bases to be built, airfields to be built
+- Construction employment was significant
+
+**Implication:** MOU projects would provide similar construction employment benefits
+
+---
+
+## KEY TAKEAWAYS (STORYLINE SUMMARY)
+
+### Import Price Hierarchy
+
+**From cheapest to most expensive:**
+1. Churchill Falls: 0.308¢/kWh effective (0.475¢/kWh nominal)
+2. Ontario: 3.23¢/kWh (10× more than Churchill Falls)
+3. U.S. (July 2025): 7.4¢/kWh (24× more than Churchill Falls)
+4. New Brunswick: 8-10¢/kWh (26-32× more than Churchill Falls)
+5. U.S. (peak periods): Up to 20¢/kWh (65× more than Churchill Falls)
+
+### Supply Crisis Worsening
+
+2. Quebec's domestic generation declining due to drought
+3. Gap between supply and demand closing rapidly
+4. By 2025, virtually nothing available for export
+5. Must import to meet domestic demand
+
+### Churchill Falls' Critical Value
+
+6. Provides 86-88% of provincial imports
+7. By far the cheapest import source
+8. Allows Quebec to save its reservoir water for high-price export opportunities
+9. Essential for Quebec to maintain its export business model
+
+### Market Dynamics
+
+10. All non-Churchill Falls sources use dynamic pricing
+11. Prices highly variable and trending upward
+12. U.S. demand expected to rise 25% in next 5 years
+13. This makes Churchill Falls' low, stable pricing increasingly valuable
+
+### Strategic Importance of MOU Projects
+
+14. Proposed Churchill River projects = cheap imported power for Quebec
+15. Allow Quebec to continue exporting at peak prices
+16. Provide certainty in uncertain free markets
+17. Essential for Quebec's long-term strategy as net exporter
+
+---
+
+## TRANSITION TO VIDEO 3B
+
+**Next video focus:** Exports from Hydro-Québec
+
+**Specific emphasis:** Exports to the United States
+- Free market pricing
+- Both NL Hydro and Hydro-Québec act as profit maximizers in export markets
+- Hydro-Québec reports making "a lot of profit" from U.S. sales
+- However, profit declining because export volume declining "fairly rapidly"
+
+---
+
+## KEY STATISTICS SUMMARY
+
+**Import prices (per kWh):**
+- Churchill Falls effective: 0.308¢
+- Churchill Falls nominal: 0.475¢
+- Churchill Falls cost: 0.294¢
+- Ontario: 3.23¢
+- New Brunswick: 8-10¢
+- U.S. (July 2025): 7.4¢
+- U.S. (peak/January): up to 20¢
+
+**Import volumes:**
+- Churchill Falls share of provincial imports: 86-88%
+- Ontario example: 97,464 MW in short period
+- U.S. imports: Dramatically increased in 2023-2025
+
+**Market outlook:**
+- U.S. renewable electricity demand: +25% projected over 5 years
+- Quebec supply-demand gap: Closed by 2025
+- Export capacity: Virtually eliminated by 2025
+
+**Ownership factor:**
+- Hydro-Québec ownership of CF(L)Co: 34.2%
+- This reduces effective Churchill Falls price by 34.2%
+
+---
+
+**CONTEXT:** This is Video 3A of a 6-part series. Video 3B will examine Hydro-Québec's export business and pricing dynamics.
