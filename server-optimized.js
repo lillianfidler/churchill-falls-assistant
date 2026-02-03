@@ -356,12 +356,17 @@ function truncateToCompleteSentence(text, maxChars = 650) {
                 continue;
             }
             
-            // Check what comes after
-            const nextChar = i < truncated.length - 1 ? truncated[i + 1] : '';
-            const nextNextChar = i < truncated.length - 2 ? truncated[i + 2] : '';
+            // Look ahead past any whitespace to find next non-whitespace character
+            let nextNonWhitespace = '';
+            for (let j = i + 1; j < truncated.length; j++) {
+                if (!/\s/.test(truncated[j])) {
+                    nextNonWhitespace = truncated[j];
+                    break;
+                }
+            }
             
-            // Valid if: end of string OR space + capital letter
-            if (i === truncated.length - 1 || (nextChar === ' ' && /[A-Z]/.test(nextNextChar))) {
+            // Valid if: end of string OR followed by whitespace then capital letter
+            if (i === truncated.length - 1 || /[A-Z]/.test(nextNonWhitespace)) {
                 lastSentenceEnd = i;
                 break;
             }
