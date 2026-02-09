@@ -1043,10 +1043,6 @@ saveSession(); // Save conversation after each exchange
             metaDiv.textContent = 'Cached';
           }
 
-          if (mode === 'deep') {
-            metaDiv.innerHTML =
-              '<a href="sources.html" style="color: var(--aqua); text-decoration: underline;">View all sources</a>';
-          }
           messageDiv.appendChild(metaDiv);
 
           const actionsDiv = document.createElement('div');
@@ -1170,6 +1166,9 @@ if (textInput && lastUserQuestion) {
               <div class="sources-title">Documents consulted</div>
               <div class="sources-list">
                 ${sources.map(cleanSourceName).join('<br>')}
+              </div>
+              <div style="margin-top: 12px; text-align: right;">
+                <a href="sources.html" style="color: var(--aqua); text-decoration: underline; font-size: 14px;">→ View all sources</a>
               </div>
             `;
             messageDiv.appendChild(sourcesDiv);
