@@ -417,6 +417,7 @@ CRITICAL INSTRUCTIONS:
 - Keep it brief but informative
 - ALWAYS refer to Doug May as "Dr. Doug May" or "Dr. May"
 - ALWAYS refer to Wade Locke as "Dr. Wade Locke" or "Dr. Locke"
+- ALWAYS refer to Jim Feehan as "Dr. Jim Feehan" or "Dr. Feehan"
 
 Example of what NOT to do:
 "Based on the comprehensive analysis of available documents, the Churchill Falls agreement is controversial..."
@@ -447,6 +448,7 @@ CRITICAL INSTRUCTIONS:
 - Provide thorough analysis with supporting evidence
 - ALWAYS refer to Doug May as "Dr. Doug May" or "Dr. May"
 - ALWAYS refer to Wade Locke as "Dr. Wade Locke" or "Dr. Locke"
+- ALWAYS refer to Jim Feehan as "Dr. Jim Feehan" or "Dr. Feehan"
 
 WHEN ANSWERING ABOUT DOUG MAY'S ANALYSIS:
 - Search for: "Doug video" or "Doug May analysis"
