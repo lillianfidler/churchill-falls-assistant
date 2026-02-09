@@ -8,6 +8,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const rateLimit = require('express-rate-limit');
 const Anthropic = require('@anthropic-ai/sdk');
 const { Client } = require('@modelcontextprotocol/sdk/client/index.js');
 const { StdioClientTransport } = require('@modelcontextprotocol/sdk/client/stdio.js');
@@ -22,6 +23,27 @@ app.use(cors());
 app.use(express.json({ limit: '50mb' }));
 const staticDir = path.join(__dirname, 'public');
 app.use(express.static(staticDir));
+
+
+// ============================================================================
+// RATE LIMITING (Prevent Abuse & Control Costs)
+// ============================================================================
+
+const chatLimiter = rateLimit({
+  windowMs: 60 * 60 * 1000, // 1 hour window
+  max: 20, // Limit each IP to 20 requests per hour
+  message: {
+    error: 'Too many requests',
+    text: 'You have reached the hourly limit of 20 questions. Please wait before asking more questions.',
+    voiceAvailable: false
+  },
+  standardHeaders: true, // Return rate limit info in headers
+  legacyHeaders: false,
+  // Skip rate limiting for health checks
+  skip: (req) => req.path === '/api/health' || req.path === '/api/voice-status'
+});
+
+console.log('🛡️ Rate limiting enabled: 20 requests/hour per IP');
 
 
 // ============================================================================
@@ -583,7 +605,7 @@ function detectLanguage(text) {
 // MAIN CHAT ENDPOINT
 // ============================================================================
 
-app.post('/api/chat', async (req, res) => {
+app.post('/api/chat', chatLimiter, async (req, res) => {
     const startTime = Date.now();
     
     try {
@@ -1011,4 +1033,3 @@ app.listen(PORT, () => {
     console.log(`   ElevenLabs (FR): ${ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID_FR ? 'Enabled ✓' : 'Disabled ✗'}`);
     console.log(`   🇫🇷 French: Automatic language detection enabled`);
     console.log('\n' + '='.repeat(60));
-});
