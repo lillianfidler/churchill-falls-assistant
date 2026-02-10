@@ -19,7 +19,15 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 10000;
 
-app.use(cors());
+app.use(cors({
+    origin: [
+        'https://churchillfalls.info',
+        'https://www.churchillfalls.info',
+        'http://localhost:3000', // for local testing
+        'https://churchill-falls.onrender.com' // allow self
+    ],
+    credentials: true
+}));
 app.use(express.json({ limit: '50mb' }));
 const staticDir = path.join(__dirname, 'public');
 app.use(express.static(staticDir));
@@ -1033,5 +1041,3 @@ app.listen(PORT, () => {
     console.log(`   ElevenLabs (FR): ${ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID_FR ? 'Enabled ✓' : 'Disabled ✗'}`);
     console.log(`   🇫🇷 French: Automatic language detection enabled`);
     console.log('\n' + '='.repeat(60));
-});
-// End of file - nothing after this
