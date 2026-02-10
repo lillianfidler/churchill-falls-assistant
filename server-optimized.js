@@ -1033,3 +1033,5 @@ app.listen(PORT, () => {
     console.log(`   ElevenLabs (FR): ${ELEVENLABS_API_KEY && ELEVENLABS_VOICE_ID_FR ? 'Enabled ✓' : 'Disabled ✗'}`);
     console.log(`   🇫🇷 French: Automatic language detection enabled`);
     console.log('\n' + '='.repeat(60));
+});
+// End of file - nothing after this
