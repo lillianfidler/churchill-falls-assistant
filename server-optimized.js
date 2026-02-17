@@ -370,9 +370,10 @@ function truncateToCompleteSentence(text, maxChars = 650) {
     
     const truncated = text.substring(0, maxChars);
     
-    // Find proper sentence endings, avoiding:
-    // - Numbers like "1." "2.5" 
-    // - Abbreviations like "Dr." "Mr."
+    // Common abbreviations that should NOT be treated as sentence endings
+    const abbreviations = ['Dr', 'Mr', 'Mrs', 'Ms', 'Prof', 'Sr', 'Jr', 'St', 'Gov', 'Gen', 'Rep', 'Sen', 'Rev', 'Vol', 'vs', 'etc', 'Inc', 'Ltd', 'Corp', 'Jan', 'Feb', 'Mar', 'Apr', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    
+    // Find proper sentence endings
     let lastSentenceEnd = -1;
     
     for (let i = truncated.length - 1; i >= 0; i--) {
@@ -385,6 +386,25 @@ function truncateToCompleteSentence(text, maxChars = 650) {
             if (/\d/.test(prevChar)) {
                 continue;
             }
+            
+            // Skip if this is an abbreviation (e.g., "Dr.", "Mr.", "St.")
+            let isAbbreviation = false;
+            if (char === '.') {
+                for (const abbr of abbreviations) {
+                    const start = i - abbr.length;
+                    if (start >= 0) {
+                        const candidate = truncated.substring(start, i);
+                        if (candidate === abbr) {
+                            // Also check it's a word boundary (start of string or preceded by space/punctuation)
+                            if (start === 0 || /[\s,;:(]/.test(truncated[start - 1])) {
+                                isAbbreviation = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+            if (isAbbreviation) continue;
             
             // Look ahead past any whitespace to find next non-whitespace character
             let nextNonWhitespace = '';
