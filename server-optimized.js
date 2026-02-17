@@ -28,7 +28,7 @@ app.use(cors({
     ],
     credentials: true
 }));
-app.use(express.json({ limit: '50mb' }));
+app.use(express.json({ limit: '1mb' }));
 const staticDir = path.join(__dirname, 'public');
 app.use(express.static(staticDir));
 
@@ -86,6 +86,15 @@ function getCachedResponse(message, mode) {
 
 function cacheResponse(message, mode, response) {
     const key = getCacheKey(message, mode);
+    
+    // Limit cache to 100 entries to prevent memory issues on Render's 512MB
+    if (responseCache.size >= 100) {
+        // Remove oldest entry
+        const oldestKey = responseCache.keys().next().value;
+        responseCache.delete(oldestKey);
+        console.log(`💾 Cache full - evicted oldest entry`);
+    }
+    
     responseCache.set(key, {
         response,
         timestamp: Date.now(),
@@ -199,6 +208,7 @@ loadDougDocuments();
 // ============================================================================
 
 let mcpClient = null;
+let cachedToolsList = null; // Cache tools list since it doesn't change
 
 async function initializeMCP() {
     console.log('\n🔌 Initializing MCP for comprehensive text mode...');
@@ -226,14 +236,27 @@ async function initializeMCP() {
         await mcpClient.connect(transport);
         
         const tools = await mcpClient.listTools();
-        console.log(`✅ MCP connected: ${tools.tools.length} tools available`);
+        cachedToolsList = tools.tools.map(tool => ({
+            name: tool.name,
+            description: tool.description,
+            input_schema: tool.inputSchema
+        }));
+        console.log(`✅ MCP connected: ${cachedToolsList.length} tools available (cached)`);
         
         return true;
     } catch (error) {
         console.error('❌ MCP initialization failed:', error.message);
         mcpClient = null;
+        cachedToolsList = null;
         return false;
     }
+}
+
+// Auto-reconnect MCP if it drops
+async function ensureMCP() {
+    if (mcpClient && cachedToolsList) return true;
+    console.log('🔄 MCP disconnected - attempting reconnection...');
+    return await initializeMCP();
 }
 
 initializeMCP();
@@ -707,7 +730,7 @@ app.post('/api/chat', chatLimiter, async (req, res) => {
         // ============================================================================
         
         const messages = [
-            ...conversationHistory,
+            ...conversationHistory.slice(-20), // Limit to last 20 messages to control token usage
             { role: 'user', content: message }
         ];
         
@@ -779,7 +802,8 @@ responseText = truncatedText; // Use the truncated version
                                 'xi-api-key': ELEVENLABS_API_KEY,
                                 'Content-Type': 'application/json'
                             },
-                            responseType: 'arraybuffer'
+                            responseType: 'arraybuffer',
+                            timeout: 30000 // 30 second timeout
                         }
                     );
                     
@@ -799,7 +823,12 @@ responseText = truncatedText; // Use the truncated version
         // ====================================================================
         
         else {
-            if (!mcpClient) {
+            // Try to reconnect MCP if it's down
+            if (!mcpClient || !cachedToolsList) {
+                await ensureMCP();
+            }
+            
+            if (!mcpClient || !cachedToolsList) {
                 console.log('⚠️  MCP not connected - cannot provide text response');
                 return res.status(500).json({ 
                     error: 'Text mode temporarily unavailable. Please try voice mode.',
@@ -810,12 +839,7 @@ responseText = truncatedText; // Use the truncated version
             const isFastMode = textMode === 'fast';
             console.log(`📚 Using MCP for ${isFastMode ? 'quick' : 'comprehensive'} research...`);
 
-            const tools = await mcpClient.listTools();
-            const toolsList = tools.tools.map(tool => ({
-                name: tool.name,
-                description: tool.description,
-                input_schema: tool.inputSchema
-            }));
+            const toolsList = cachedToolsList;
 
             // Select prompt based on detected language and mode
             let systemPrompt;
@@ -856,10 +880,9 @@ responseText = truncatedText; // Use the truncated version
                     if (block.type === 'tool_use') {
                         console.log(`  → ${block.name}`);
                         
-                        // Enhanced logging - show the actual input structure
+                        // Log input keys only (avoid JSON.stringify of full content under load)
                         if (block.input) {
                             console.log(`  → Input keys:`, Object.keys(block.input));
-                            console.log(`  → Full input:`, JSON.stringify(block.input, null, 2));
                         }
                         
                         // Track document access - try ALL possible field names
@@ -925,6 +948,15 @@ responseText = truncatedText; // Use the truncated version
                             });
                         } catch (error) {
                             console.error(`  ✗ ${block.name} error:`, error.message);
+                            
+                            // If MCP disconnected, try to reconnect
+                            if (error.message.includes('closed') || error.message.includes('disconnected')) {
+                                console.log('🔄 MCP appears disconnected, attempting reconnect...');
+                                mcpClient = null;
+                                cachedToolsList = null;
+                                await ensureMCP();
+                            }
+                            
                             toolResults.push({
                                 type: 'tool_result',
                                 tool_use_id: block.id,
@@ -1059,6 +1091,20 @@ app.get('/api/health', (req, res) => {
         },
         timestamp: new Date().toISOString()
     });
+});
+
+// ============================================================================
+// CRASH PREVENTION
+// ============================================================================
+
+process.on('uncaughtException', (error) => {
+    console.error('⚠️ Uncaught Exception:', error.message);
+    // Don't exit - keep server running
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('⚠️ Unhandled Rejection:', reason);
+    // Don't exit - keep server running
 });
 
 // ============================================================================
