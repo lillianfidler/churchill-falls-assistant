@@ -576,17 +576,24 @@ Fournissez une recherche objective présentée comme des faits établis, pas com
 function detectLanguage(text) {
     const textLower = text.toLowerCase();
     
-    // French indicators - including variations without accents
+    // French grammar/sentence indicators ONLY
+    // Excludes proper nouns (Quebec, Hydro-Quebec, Labrador, etc.) 
+    // that appear constantly in English questions about Churchill Falls
+    // Also excludes short words that could match inside English words
     const frenchIndicators = [
-        // Full words
-        'québec', 'quebec', 'qu\'est-ce', 'qu\'est', 'quelle', 'quel', 'quels', 'quelles',
-        'comment', 'pourquoi', 'électricité', 'electricite', 'entente', 'protocole',
-        'combien', 'où', 'ou', 'quand', 'est-ce que', 'parle', 'parlez',
-        'explique', 'expliquez', 'dis', 'dites', 'peux-tu', 'pouvez-vous',
-        'hydro-québec', 'hydro-quebec', 'terre-neuve', 'labrador',
-        // Partial matches for speech recognition
-        'francais', 'français', 'franca', 'franc ',
-        'en francais', 'on francais', 'on franca', 'en franca'
+        // French question words & grammar (uniquely French)
+        'qu\'est-ce', 'qu\'est', 'quelle', 'quel ', 'quels', 'quelles',
+        'pourquoi', 'combien', 'est-ce que', 'peux-tu', 'pouvez-vous',
+        // French verbs & commands
+        'parlez', 'expliquez', 'dites-moi',
+        // French-specific vocabulary (not proper nouns)
+        'électricité', 'electricite', 'entente', 'protocole',
+        // Explicit French language requests
+        'en francais', 'en français',
+        'on francais', 'on franca', 'en franca',
+        // Multi-word French phrases (high confidence)
+        'je veux', 'je voudrais', 'il y a', 'ce que', 'est-ce',
+        'de la', 'c\'est', 'n\'est', 'qu\'il', 'qu\'elle'
     ];
     
     // Count French indicators
@@ -597,8 +604,7 @@ function detectLanguage(text) {
         }
     }
     
-    // If we find 1 or more French indicators, it's likely French
-    // Lowered threshold from 2 to 1 to catch more cases
+    // Need at least 2 French grammar indicators to confirm French
     const detectedLang = frenchCount >= 2 ? 'fr' : 'en';
     
     if (detectedLang === 'fr') {
