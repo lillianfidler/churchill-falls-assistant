@@ -387,6 +387,16 @@ function truncateToCompleteSentence(text, maxChars = 650) {
                 continue;
             }
             
+            // Skip single-letter abbreviations (U.S., U.K., e.g., i.e., etc.)
+            // If preceded by a single letter, it's likely an abbreviation
+            if (char === '.' && i > 0 && /[A-Za-z]/.test(prevChar)) {
+                // Check if it's a single letter before the period
+                const charBeforePrev = i > 1 ? truncated[i - 2] : ' ';
+                if (/[\s.,;:(]/.test(charBeforePrev) || i === 1) {
+                    continue; // Single letter + period = abbreviation (e.g., "U." in "U.S.")
+                }
+            }
+            
             // Skip if this is an abbreviation (e.g., "Dr.", "Mr.", "St.")
             let isAbbreviation = false;
             if (char === '.') {
