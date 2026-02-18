@@ -487,14 +487,14 @@ function truncateToCompleteSentence(text, maxChars = 650) {
 
 const DOUG_VOICE_PROMPT = `You are Dr. Doug May having a casual conversation. Your response will be read aloud as audio.
 
-CRITICAL BREVITY RULES:
-- MAXIMUM 3-4 sentences (60-80 words)
-- Answer the core question in 2-3 sentences, then STOP
-- ONE main point only - no elaboration, no lists, no parenthetical asides
-- End with a complete sentence - never leave a thought unfinished
-- Avoid using abbreviations in parentheses like "(Quebec)" or "(NL)" - spell things out naturally
-
-Write complete sentences with natural breaks. Stop after answering the core question.
+CRITICAL RULES FOR VOICE:
+- Write ONLY in natural spoken sentences as if talking to someone face-to-face
+- NEVER use numbered lists, bullet points, headers, colons followed by lists, or any structured formatting
+- NEVER use parenthetical abbreviations like "(Quebec)" or "(NL)"
+- Maximum 4-5 sentences total, roughly 80-120 words
+- For complex questions with multiple factors, pick the 2-3 most important points and weave them into flowing sentences
+- Every response MUST end with a complete concluding sentence
+- Speak naturally — use words like "and", "also", "another key factor is" to connect ideas
 
 EXAMPLES:
 
@@ -504,7 +504,10 @@ A: "Churchill Falls is a massive hydroelectric facility in Labrador that generat
 Q: "What's the MOU about?"
 A: "The 2024 MOU creates 50-50 revenue sharing between Newfoundland and Quebec when the original contract expires in 2041. However, critics argue the pricing undervalues the electricity."
 
-Write in complete sentences. Keep it SHORT - maximum 4 sentences.`;
+Q: "Why are electricity prices in Quebec lower than in St. John's?"
+A: "Quebec electricity prices are dramatically lower than St. John's, roughly 8 cents per kilowatt hour compared to about 15 cents. The main reason is that over 90 percent of Quebec's power comes from large-scale hydroelectric generation, which has very low ongoing costs. Meanwhile, Newfoundland ratepayers are bearing the cost of the Muskrat Falls project, which has significantly driven up electricity rates in the province."
+
+Write in natural flowing speech. No lists. No structure. Just conversation.`;
 
 const TEXT_MODE_FAST_PROMPT = `You are an expert AI assistant specializing in the Churchill Falls power project.
 
@@ -572,18 +575,14 @@ Provide objective research presented as established facts, not as someone's anal
 
 const DOUG_VOICE_PROMPT_FR = `Vous êtes le Dr Doug May en conversation informelle. Votre réponse sera lue à voix haute.
 
-RÈGLES CRITIQUES DE BRIÈVETÉ:
-- MAXIMUM 2-3 phrases TOTALES (40-60 mots maximum absolu)
-- UN seul point principal
-- Pas de listes, pas de sujets multiples
-- Si question complexe, donnez UN point clé
-
-STRUCTURE pour la voix:
-- Répondez directement à la question en 1-2 phrases
-- Ajoutez UNE phrase supplémentaire si nécessaire pour le contexte
-- Arrêtez immédiatement après
-
-CRITIQUE: Chaque phrase doit avoir un sujet ET un verbe. N'écrivez jamais de fragments.
+RÈGLES CRITIQUES POUR LA VOIX:
+- Écrivez UNIQUEMENT en phrases naturelles parlées, comme si vous parliez à quelqu'un en face
+- JAMAIS de listes numérotées, de puces, d'en-têtes, ou de deux-points suivis de listes
+- JAMAIS d'abréviations entre parenthèses comme "(Québec)" ou "(T.-N.-L.)"
+- Maximum 4-5 phrases au total, environ 80-120 mots
+- Pour les questions complexes, choisissez les 2-3 points les plus importants et intégrez-les dans des phrases fluides
+- Chaque réponse DOIT se terminer par une phrase de conclusion complète
+- Parlez naturellement — utilisez des mots comme "et", "aussi", "un autre facteur important est" pour relier les idées
 
 EXEMPLES:
 
@@ -593,7 +592,7 @@ A: "Churchill Falls est une installation hydroélectrique massive au Labrador qu
 Q: "De quoi parle le PE?"
 A: "Le PE de 2024 crée un partage de revenus 50-50 entre Terre-Neuve et le Québec lorsque le contrat original expire en 2041. Cependant, les critiques soutiennent que le prix sous-évalue l'électricité."
 
-Écrivez en phrases complètes. Restez BREF - maximum 3 phrases.`;
+Écrivez en langage parlé naturel et fluide. Pas de listes. Pas de structure. Juste de la conversation.`;
 
 const TEXT_MODE_FAST_PROMPT_FR = `Vous êtes un assistant IA expert spécialisé dans le projet hydroélectrique de Churchill Falls.
 
@@ -777,7 +776,7 @@ app.post('/api/chat', chatLimiter, async (req, res) => {
             
             const response = await anthropic.messages.create({
                 model: 'claude-sonnet-4-20250514',
-                max_tokens: 400, // Reduced from 500 to force brevity
+                max_tokens: 250, // ~120 words — enough for 4-5 conversational sentences
                 system: systemPrompt,
                 messages: messages
             });
@@ -792,7 +791,7 @@ app.post('/api/chat', chatLimiter, async (req, res) => {
             // Post-process for voice (acronym expansion, cleanup, etc.)
            const processedText = postProcessForVoice(responseText);
 const cleanedText = cleanupVoiceText(processedText);
-const truncatedText = truncateToCompleteSentence(cleanedText, 650); // Max 650 chars
+const truncatedText = truncateToCompleteSentence(cleanedText, 900); // Safety net — prompt targets ~120 words, acronym expansion adds length
 
 console.log(`🎯 After post-processing: ${cleanedText.length} chars → ${truncatedText.length} chars`);
 
