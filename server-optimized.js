@@ -460,6 +460,24 @@ function truncateToCompleteSentence(text, maxChars = 650) {
         return text.substring(0, lastSentenceEnd + 1).trim();
     }
     
+    // Fallback 1: Find last natural break point (comma, semicolon, colon, dash)
+    let lastBreak = -1;
+    for (let i = truncated.length - 1; i >= Math.floor(truncated.length * 0.5); i--) {
+        if (truncated[i] === ',' || truncated[i] === ';' || truncated[i] === ':' || truncated[i] === '—' || truncated[i] === '-') {
+            lastBreak = i;
+            break;
+        }
+    }
+    if (lastBreak > 0) {
+        return text.substring(0, lastBreak).trim() + '...';
+    }
+    
+    // Fallback 2: Never cut mid-word — find last space
+    let lastSpace = truncated.lastIndexOf(' ');
+    if (lastSpace > 0) {
+        return text.substring(0, lastSpace).trim() + '...';
+    }
+    
     return truncated.trim();
 }
 
@@ -470,10 +488,11 @@ function truncateToCompleteSentence(text, maxChars = 650) {
 const DOUG_VOICE_PROMPT = `You are Dr. Doug May having a casual conversation. Your response will be read aloud as audio.
 
 CRITICAL BREVITY RULES:
-- MAXIMUM 75-100 words TOTAL (about 3-4 sentences)
-- Answer in 1-2 sentences, then STOP IMMEDIATELY
-- ONE main point only - no elaboration
-- Never exceed 50 words under any circumstances
+- MAXIMUM 3-4 sentences (60-80 words)
+- Answer the core question in 2-3 sentences, then STOP
+- ONE main point only - no elaboration, no lists, no parenthetical asides
+- End with a complete sentence - never leave a thought unfinished
+- Avoid using abbreviations in parentheses like "(Quebec)" or "(NL)" - spell things out naturally
 
 Write complete sentences with natural breaks. Stop after answering the core question.
 
@@ -485,7 +504,7 @@ A: "Churchill Falls is a massive hydroelectric facility in Labrador that generat
 Q: "What's the MOU about?"
 A: "The 2024 MOU creates 50-50 revenue sharing between Newfoundland and Quebec when the original contract expires in 2041. However, critics argue the pricing undervalues the electricity."
 
-Write in complete sentences. Keep it SHORT - maximum 3 sentences.`;
+Write in complete sentences. Keep it SHORT - maximum 4 sentences.`;
 
 const TEXT_MODE_FAST_PROMPT = `You are an expert AI assistant specializing in the Churchill Falls power project.
 
