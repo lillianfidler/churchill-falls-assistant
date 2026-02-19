@@ -776,7 +776,7 @@ app.post('/api/chat', chatLimiter, async (req, res) => {
             
             const response = await anthropic.messages.create({
                 model: 'claude-sonnet-4-20250514',
-                max_tokens: 250, // ~120 words — enough for 4-5 conversational sentences
+                max_tokens: 500, // Generate full thought, then truncate to complete sentences after
                 system: systemPrompt,
                 messages: messages
             });
@@ -791,7 +791,7 @@ app.post('/api/chat', chatLimiter, async (req, res) => {
             // Post-process for voice (acronym expansion, cleanup, etc.)
            const processedText = postProcessForVoice(responseText);
 const cleanedText = cleanupVoiceText(processedText);
-const truncatedText = truncateToCompleteSentence(cleanedText, 900); // Safety net — prompt targets ~120 words, acronym expansion adds length
+const truncatedText = truncateToCompleteSentence(cleanedText, 1200); // Safety net — acronym expansion inflates text, needs room for complete sentences
 
 console.log(`🎯 After post-processing: ${cleanedText.length} chars → ${truncatedText.length} chars`);
 
