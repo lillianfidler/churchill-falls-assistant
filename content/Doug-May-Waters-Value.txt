@@ -1,0 +1,59 @@
+DOCUMENT TITLE: The Value of the Water in the Churchill River
+AUTHOR: Dr. Doug May
+DOCUMENT TYPE: Economic Analysis / Presentation
+TOPIC: Economic valuation of water as the primary energy resource powering the Churchill Falls generating station, using production function analysis and differential (Ricardian) rents
+
+---
+
+THE PRODUCTION PROCESS
+
+The output of electricity from the Churchill Falls Generating Station can be expressed as a production function: Q = f(K, L, E, M, S, W), where K = capital asset services coming from the machinery (e.g., turbines) and structures (and buildings); L = Labour Services; E = Energy, which would be some oil and internally produced electricity; M = Purchased Materials; S = Purchased Services, such as insurance and communications; and W = The natural resource water from the Smallwood Reservoir.
+
+This production function is associated with and dual to a cost function: qQ = pX, where q is the price of the output electricity and p is the price of the ith input described in the equation above. The price of capital services would include a normal rate of return on those capital services. The problem is that we do not have a market-determined price for water. The owners of the water may determine a price.
+
+---
+
+DIFFERENTIAL (RICARDIAN) RENTS
+
+The Government of Newfoundland and Labrador has stated that the major benefit of the proposals under the MOU for NL is that it unlocks the "value." The question arises of how to determine the value of a natural resource. In the case of CF, the natural resource is the "water" that powers the turbines that produce electricity.
+
+May defines rent loosely as the difference between the price the output would have in an open market and the cost of producing and transmitting that output. Costs for this purpose would include operating costs plus depreciation and amortization plus any other expenses directly related to production, other than existing water rents.
+
+---
+
+CALCULATING VALUE FOR IMPORTS USING DIFFERENTIAL RENTS
+
+If the market for CF electricity were not restricted by the 1969 contract with Quebec and the stranding of CF so that it must run through Quebec to reach provinces and states beyond, then differential rents for CF electricity could be determined.
+
+If Quebec imports power for its own domestic use, then the rent would be equal to the price of a MWh of electricity at the border, minus transmission costs, minus the cost of producing a MWh of electricity at the CF generating plant.
+
+May's rough calculations of costs in 2024, using data from CF(L)Co's Consolidated Statement of Comprehensive Income, estimate the cost for CF at the station at 0.33¢/kWh. Since HQ's power cost is 0.2¢/kWh, this would imply a loss. However, the 2024 audited statement reported a profit of $81.5 million. May's estimates of the average cost are too high. NLH could calculate the cost per kWh.
+
+A crude estimate of the differential rent per kWh would be equal to 4.1¢ minus 0.33¢ minus transmission costs. NLH can provide an accurate estimate of the average cost and transmission costs, as it exports electricity to the USA.
+
+---
+
+ADDITIONAL OBSERVATIONS
+
+Depreciation and amortization expenses decline as the capital assets (the dam and buildings) age. Such expenses are less than the operating costs.
+
+The free-market price of electricity in New England in 2025 has already increased by 48%. As experts predicted, this increase reflects rising demand for electricity, for example from digital hubs.
+
+Electricity prices vary throughout the year primarily due to shifts in demand. Setting annual wholesale prices is not the norm.
+
+---
+
+KEY DATA POINTS:
+- CF station production cost estimate (2024): 0.33¢/kWh (May's rough calculation; may be too high)
+- HQ's current power cost from CF: 0.2¢/kWh
+- CF(L)Co profit in 2024: $81.5 million
+- New England electricity price increase in 2025: 48%
+- Crude differential rent estimate: 4.1¢ minus 0.33¢ minus transmission costs per kWh
+
+ACRONYMS:
+CF — Churchill Falls Generating Station
+CF(L)Co — Churchill Falls (Labrador) Corporation
+NLH — Newfoundland and Labrador Hydro
+HQ — Hydro-Québec
+NL — Newfoundland and Labrador
+MOU — Memorandum of Understanding (December 12, 2024)

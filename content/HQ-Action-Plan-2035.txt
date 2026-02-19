@@ -1,375 +1,108 @@
-HYDRO-QUÉBEC ACTION PLAN 2035 - COMPREHENSIVE FACTUAL SUMMARY
-Towards a Decarbonized and Prosperous Québec
+DOCUMENT TITLE: Hydro-Quebec Action Plan 2035 - Comprehensive Factual Summary: Towards a Decarbonized and Prosperous Quebec
+PUBLISHED: November 2023
+SOURCE: www.hydroquebec.com/about/action-plan.html
+LEGAL DEPOSIT: Bibliotheque et Archives nationales du Quebec
+ISBN: Print English 978-2-550-96176-5, PDF English 978-2-550-96178-9
+NOTE: This summary contains only factual information as stated in Hydro-Quebec's Action Plan 2035 document. No analysis, interpretation, or connections to Churchill Falls negotiations are included.
 
-Document: Action Plan 2035
-Published: November 2023
-Source: www.hydroquebec.com/about/action-plan.html
-Legal Deposit: Bibliothèque et Archives nationales du Québec
+---
 
-===== GLOBAL AND QUÉBEC CONTEXT =====
+GLOBAL AND QUEBEC CONTEXT
 
-GLOBAL CONTEXT STATED BY HQ:
-- "The global race has begun" - countries rapidly accelerating decarbonization investments
-- 2022: $1.6 trillion invested in energy transition globally
-- By 2030: Over $40 trillion announced worldwide
-- United States alone: Over $660 billion per year from now to 2035
+Hydro-Quebec states that the global race has begun, with countries rapidly accelerating decarbonization investments. In 2022, $1.6 trillion was invested in energy transition globally, with over $40 trillion announced worldwide by 2030 and the United States alone committing over $660 billion per year from now to 2035.
 
-QUÉBEC'S POSITION:
-- HQ states Québec has "a head start in this race" due to hydropower investments
-- Residential electricity rates: "Lowest in the G7"
-- Industrial rates: "At least two times lower than virtually all western countries"
-- Current energy mix: 42% electricity, 50% fossil fuels, 8% biofuel
-- 50% of Québec's consumption still uses fossil fuel-based energy
-- Goal: Carbon neutral by 2050
+Hydro-Quebec states Quebec has a head start in this race due to hydropower investments. Residential electricity rates are the lowest in the G7, and industrial rates are at least two times lower than virtually all western countries. Quebec's current energy mix is 42% electricity, 50% fossil fuels, and 8% biofuel, meaning 50% of Quebec's consumption still uses fossil fuel-based energy. The goal is carbon neutrality by 2050.
 
-ELECTRIFICATION CHALLENGE:
-- Over 90% of cars consume gas
-- Many thousands of buildings heated with gas or oil
-- Some factories still use coal
-- All must be converted to electricity for carbon neutrality
+The electrification challenge is significant: over 90% of cars consume gas, many thousands of buildings are heated with gas or oil, and some factories still use coal. All must be converted to electricity for carbon neutrality.
 
-===== ENERGY TRANSITION OBJECTIVES =====
+---
 
-OVERALL ELECTRICITY DEMAND:
-- HQ projects Québec's electricity consumption will double by 2050
-- Current demand trajectory: 150-200 TWh total increase by 2050
-- 75% of new generation dedicated to decarbonization
-- 25% for economic growth
+ENERGY TRANSITION OBJECTIVES
 
-BREAKDOWN OF ADDITIONAL USE BY 2035:
-- 40% for transportation electrification and building decarbonization
-- 35% for industrial decarbonization
-- 25% for economic growth
+Hydro-Quebec projects Quebec's electricity consumption will double by 2050, with a total increase of 150-200 TWh. Of new generation, 75% would be dedicated to decarbonization and 25% for economic growth.
 
-WHY ELECTRIFICATION IS KEY:
-- HQ states: "Clean electricity will be the driving force of the energy transition"
-- Purpose: "Decarbonization and economic growth can only be achieved through a major effort to expand the use of electricity"
-- Energy transition described as "Québec's next big society-wide endeavor"
+By 2035, additional use breaks down as 40% for transportation electrification and building decarbonization, 35% for industrial decarbonization, and 25% for economic growth. Hydro-Quebec states that clean electricity will be the driving force of the energy transition, describing it as Quebec's next big society-wide endeavour.
 
-===== SPECIFIC ENERGY AND CAPACITY NEEDS BY 2035 =====
+---
 
-ADDITIONAL ENERGY NEEDED: +60 TWh by 2035
-(Note: In addition to 13 TWh or 1,800 MW already included in November 2022 Electricity Supply Plan)
+SPECIFIC ENERGY AND CAPACITY NEEDS BY 2035
 
-ADDITIONAL CAPACITY NEEDED: +8,000-9,000 MW by 2035
+Additional energy needed is 60 TWh by 2035, in addition to 13 TWh or 1,800 MW already included in the November 2022 Electricity Supply Plan. Additional capacity needed is 8,000-9,000 MW by 2035. Hydro-Quebec compares this to the installed capacity of three of their largest hydropower facilities: Robert-Bourassa (LG-2), Manic-5, and the Romaine complex.
 
-COMPARISON STATED BY HQ:
-"That's equivalent to the installed capacity of three of our largest hydropower facilities: Robert-Bourassa (LG-2), Manic-5 and the Romaine complex"
+Planned sources for additional energy by 2035: improved consumption and efficiency at 7-9 TWh, wind power at 30-35 TWh, hydropower at 6-8 TWh, and other sources including imports, solar, battery, and renewable natural gas at 6-10 TWh, totalling 60 TWh.
 
-BREAKDOWN OF PLANNED SOURCES (by 2035):
+Planned sources for additional capacity by 2035: improved consumption and efficiency at 1,600-1,800 MW, wind power at 1,500-1,700 MW, hydropower at 3,800-4,200 MW, other sources including imports, solar, and battery at 500-1,000 MW, and renewable natural gas at 400-600 MW, totalling 8,000-9,000 MW.
 
-Energy (TWh):
-- Improved consumption (efficiency): 7-9 TWh
-- Wind power: 30-35 TWh
-- Hydropower: 6-8 TWh
-- Other (imports, solar, battery, renewable natural gas): 6-10 TWh
-Total: +60 TWh
+---
 
-Capacity (MW):
-- Improved consumption (efficiency): 1,600-1,800 MW
-- Wind power: 1,500-1,700 MW
-- Hydropower: 3,800-4,200 MW
-- Other (imports, solar, battery): 500-1,000 MW
-- Renewable natural gas: 400-600 MW
-Total: +8,000-9,000 MW
+CRITICAL STATEMENTS ABOUT ENERGY SOURCES
 
-===== CRITICAL STATEMENTS ABOUT ENERGY SOURCES =====
+On wind and solar as variable generation, Hydro-Quebec states these are the most advantageous options for rapid rollout, cost, and social acceptability. However, electricity generated by variable sources fluctuates as it depends on weather conditions such as wind force and sunlight, and these solutions alone are not enough because wind and customer behaviour cannot be controlled.
 
-ON WIND AND SOLAR (Variable Generation):
-HQ states: "Of the different options available to increase energy in Québec, these choices are the most advantageous in terms of rapid rollout, cost and social acceptability"
+On hydropower as firm generation, Hydro-Quebec states it is the best choice by far, defining firm generation as sufficient electricity from sources like hydropower that can be mobilized as needed to ensure reliability of power supply especially during peak periods. They provide the scenario of a cold and windless winter day when thousands of households turn up the heat and start preparing supper, when capacity needs are at their highest.
 
-However, HQ notes limitations:
-- "The electricity generated by variable sources, such as wind and solar, fluctuates as it is dependent on weather conditions (such as wind force and sunlight)"
-- "We can't control the wind or the behavior of our customers, these solutions alone are not enough"
+The strategic statement is that the strategy must include sufficient hydropower capacity to meet demand when energy efficiency and wind power are not enough.
 
-ON HYDROPOWER (Firm Generation):
-HQ provides definition: "To ensure the reliability of the power supply, especially during peak periods, Hydro-Québec must include in its energy and capacity balances a sufficient quantity of electricity from firm generation sources like hydropower, which can be mobilized as needed"
+---
 
-HQ states: "The best choice by far at times like these is hydropower"
+THE FIVE PRIORITIES
 
-PEAK DEMAND SCENARIO:
-HQ provides example: "We need only imagine a cold and windless winter day, when thousands of households turn up the heat and start preparing supper. It is in cases like these, when a high number of customers are consuming a lot of electricity at the same time, that capacity needs are at their highest"
+Priority 1 is to improve service quality by increasing investments in the power grid for reliable, high-quality service at an affordable price. Hydro-Quebec acknowledges that 2023 was one of the worst years in the last 15 for power outages, and time to connect new customers increased nearly 70% since 2019.
 
-HQ concludes: "By managing our reservoirs optimally, we can ensure that we have enough water to produce the electricity we need, when we need it"
+Priority 2 is to help customers use electricity wisely by innovating to encourage customers to treat electricity as a valuable resource, focusing on energy efficiency measures, peak demand management, and customer behaviour modification.
 
-STRATEGIC STATEMENT:
-"That's why our strategy must include sufficient hydropower capacity to meet demand when energy efficiency and wind power are not enough"
+Priority 3 is to increase power generation capacity by identifying and launching the best projects to generate more electricity while remaining open to all available options. This encompasses the 60 TWh and 8,000-9,000 MW targets.
 
-===== THE FIVE PRIORITIES =====
+Priority 4 is to partner with Indigenous communities by working towards economic reconciliation with First Nations and Inuit. Key initiatives include financial partnerships in new energy projects, economic participation of Indigenous communities in infrastructure on ancestral lands, collaboration in project development phases, and increased Indigenous representation. The Hertel-New York Interconnection Line partnership with the Mohawk Council of Kahnawake is provided as an example.
 
-PRIORITY 1 - IMPROVE SERVICE QUALITY:
-Objective: "Increase our investments in the power grid to offer our customers reliable, high-quality service at an affordable price"
+Priority 5 is to become agile, innovative, and transparent by transforming ways of doing things, simplifying processes, accelerating project development, finding innovative solutions, addressing labour shortage and supply problems, and collaborating with some of the largest companies in the global energy sector.
 
-Context provided:
-- "2023 was one of the worst in the last 15 years" for power outages
-- Time to connect new customers increased by nearly 70% since 2019
-- Service quality described as declining
+---
 
-Commitment: "Reliable, simple and affordable" service
+FINANCIAL OUTLOOK
 
-PRIORITY 2 - HELP CUSTOMERS USE ELECTRICITY WISELY:
-Objective: "Innovate to encourage our customers to treat electricity as a valuable resource that should be used wisely"
+Total required investments and expenses to 2035: investments for reliability projects at $90-110 billion ($7-9 billion annually), investments for growth projects at $45-50 billion ($4-5 billion annually), and additional operating expenses at $20-25 billion ($1-2 billion annually), for a total of $155-185 billion ($12-16 billion annually). Hydro-Quebec states this is three to four times higher than the annual average of the past five years.
 
-Focus areas:
-- Energy efficiency measures
-- Peak demand management
-- Customer behavior modification
+The stated economic impact will mobilize an average of 35,000 construction workers per year until 2035, and the positive impact of the energy sector on Quebec's GDP could exceed $100 billion by 2035.
 
-PRIORITY 3 - INCREASE POWER GENERATION CAPACITY:
-Objective: "Identify and launch the best projects that will enable us to generate more electricity to support Québec's ambitions and remain open to all options available to us"
+Hydro-Quebec commits to work with government to limit rate increases while maintaining affordable rates for households and competitive rates for businesses worldwide.
 
-This encompasses the 60 TWh and 8,000-9,000 MW targets detailed above
+---
 
-PRIORITY 4 - PARTNER WITH INDIGENOUS COMMUNITIES:
-Objective: "Work towards economic reconciliation with First Nations and Inuit, in collaboration with the Québec government"
+POWER GRID CRISIS AND URGENT INFRASTRUCTURE NEEDS
 
-Key initiatives stated:
-- Financial partnerships in new energy projects
-- Economic participation of Indigenous communities in infrastructure on ancestral lands
-- Collaboration in project development phases
-- Increased Indigenous representation in workforce and governance
-- Example provided: Hertel-New York Interconnection Line partnership with Mohawk Council of Kahnawà:ke
+Hydro-Quebec acknowledges that climate change is having a very real impact on the power grid and affecting customers' daily lives, with declining service quality and 2023 being one of the worst years in the last 15 for power outages. Causes include extreme weather events such as ice storms and forest fires causing more frequent and longer outages, aging infrastructure commissioned decades ago approaching end of useful life, and climate change testing the resilience of facilities.
 
-PRIORITY 5 - BECOME AGILE, INNOVATIVE AND TRANSPARENT:
-Objective: "Transform our ways of doing things to better meet our customers' needs and support Québec's decarbonization and economic prosperity"
+Hydro-Quebec is determined to reduce power outages by 35% over the next 7 to 10 years. Grid investment of $45-50 billion between now and 2035 is required, representing $4-5 billion annually and almost doubling annual investments made in network sustainability over the last three years.
 
-Focus areas stated:
-- Simplify processes
-- Accelerate project development
-- Find innovative solutions
-- Address labor shortage and supply problems
-- Collaborate with "some of the largest companies in the global energy sector"
+Specific improvements planned include deploying new equipment in the distribution system such as composite poles and conductor covers, adopting innovative practices like direct or light burial of power lines, stepping up vegetation control to reduce outages by 30% by 2028 since 40% of outages are caused by vegetation contact with power lines, enhanced grid robustness and modernization, and building a strong foundation to handle growing demand.
 
-===== FINANCIAL OUTLOOK =====
+---
 
-TOTAL REQUIRED INVESTMENTS AND EXPENSES (to 2035):
+CUSTOMER BASE AND COMMERCIAL OPERATIONS
 
-Investments for reliability projects: $90-110 billion ($7-9 billion annually)
-Investments for growth projects: $45-50 billion ($4-5 billion annually)
-Additional operating expenses: $20-25 billion ($1-2 billion annually)
+For residential customers, the focus is on energy efficiency equipment such as heat pumps and smart thermostats, with a goal of 700,000 high-efficiency systems installed by 2035, increasing from 3% to 25% of Quebec homes with such equipment. Rate offerings will encourage behaviour changes.
 
-TOTAL: $155-185 billion ($12-16 billion annually)
+Business and commercial customers receive customized advice and support from commercial delegates and engineers. Small and medium-sized businesses will receive help to reduce energy consumption by 10%.
 
-HQ states: "The projected average annual investments and additional expenses from now until 2035 are three to four times higher than those of the past five years"
+Large industrial customers benefit from customized advice and support for high-performance industrial processes and building automation systems, with industrial rates at least two times lower than virtually all western countries.
 
-ECONOMIC IMPACT STATED:
-- Will mobilize average of 35,000 construction workers per year until 2035
-- "Positive impact of the energy sector on Québec's gross domestic product (GDP) could exceed $100 billion by 2035"
+Hydro-Quebec's customer expansion goal is recruiting one million new users within five years for business customer tools.
 
-RATE COMMITMENT:
-HQ commits to work with government to "limit rate increases" while maintaining:
-- Affordable rates for households
-- Competitive rates for businesses worldwide
+---
 
-===== CUSTOMER SERVICE COMMITMENTS =====
+TECHNOLOGY AND INNOVATION
 
-CURRENT CHALLENGES ACKNOWLEDGED:
-- Power outage frequency increased
-- Connection times increased 70% since 2019
-- Bills described as "overcrowded and hard to follow"
-- Notifications during outages "not precise"
-- New connections involve "too many different representatives"
+Hydro-Quebec plans to make better use of digital technologies for more proactive, user-friendly customer communications adapted to preferences, including better user interfaces, enriched content on platforms, additional communication channels such as text messages and email notifications, targeted notices regarding possible outages, anticipated service restoration times in the Outage Tracker, and regular updates about service restoration.
 
-COMMITMENT:
-"We therefore commit to providing our customers with quality service that can be defined in three words: reliable, simple and affordable"
+Hydro-Quebec commits to collaborate with peers, the academic community, and the private sector to identify and rapidly integrate innovations. Priority will be targeting innovations that reduce pressure on energy and capacity balances. The possible use of locally developed technologies will allow Quebec businesses to showcase their skills.
 
-===== POWER GRID CRISIS AND URGENT INFRASTRUCTURE NEEDS =====
+Technology options Hydro-Quebec will remain open to include wind farms, hydroelectric generating stations, solar power, battery storage, pumped-storage generating stations, renewable thermal energy including biofuels, green hydrogen, and renewable natural gas, small modular reactors currently under development, and imports from neighbouring markets.
 
-CRITICAL STATE OF POWER DELIVERY SYSTEM:
+---
 
-HQ STATEMENT ON DECLINING SERVICE QUALITY:
-"Climate change is having a very real impact on our power grid and affecting the daily lives of our customers. We know that the quality of the service we provide our customers has been declining. In terms of power outages, 2023 was one of the worst in the last 15 years."
+CONTEXT FOR CHURCHILL FALLS (IMPLICIT)
 
-CAUSES OF GRID DETERIORATION:
-1. Extreme weather events: Ice storms, forest fires causing "more frequent and longer power outages"
-2. Aging infrastructure: "Many of them were commissioned decades ago and are approaching the end of their useful life"
-3. Climate change impacts: Testing "the resilience of our facilities"
+While Churchill Falls is not explicitly mentioned in the Action Plan 2035, the document establishes Hydro-Quebec's specific need for 3,800-4,200 MW of new hydropower capacity by 2035, its stated preference for hydropower as the best choice by far for reliability, its identification of hydropower as firm generation that can be mobilized as needed, its strategic challenge with variable generation from wind and solar not being sufficient alone, its massive investment requirements of $155-185 billion to 2035, its commitment to maintaining competitive rates while meeting growing demand, and its positioning in global energy markets.
 
-HQ COMMITMENT TO ADDRESS GRID CRISIS:
-"Hydro-Québec is determined to correct this tendency and reduce the number of power outages by 35% over the next 7 to 10 years"
-
-MASSIVE GRID INVESTMENT REQUIRED:
-"The investments needed to make the power grid more durable over the long term will amount to $45 to $50 billion between now and 2035. In other words, we plan to invest on average between $4 and $5 billion a year in the reliability of our assets"
-
-This represents "almost doubling the annual investments we have made in network sustainability over the last three years"
-
-SPECIFIC GRID IMPROVEMENTS PLANNED:
-- Deploy new equipment in distribution system (composite poles, conductor covers)
-- Adopt "innovative practices like the direct, or 'light,' burial of power lines"
-- Step up vegetation control to reduce outages by 30% by 2028
-- 40% of outages caused by vegetation contact with power lines
-- Enhanced grid robustness, modernization, and equipment replacement
-- Build "a strong foundation to handle growing demand"
-
-===== TECHNOLOGY AND INNOVATION IMPERATIVE =====
-
-NEED FOR MODERNIZATION AND NEW TECHNOLOGY:
-
-DIGITAL TECHNOLOGY ADOPTION:
-HQ states: "We will make better use of digital technologies to make communications with our customers more proactive, more user-friendly and better adapted to their preferences"
-
-Planned improvements:
-- Better user interfaces
-- Enriched content on existing platforms
-- Additional communication channels (text messages, email notifications)
-- Targeted notices regarding possible outages
-- Anticipated service restoration times in Outage Tracker
-- Regular updates about service restoration
-
-INNOVATION STRATEGY:
-HQ commits to: "Collaborate with our peers, the academic community and the private sector to identify and rapidly integrate innovations that will allow us to reach our goals faster"
-
-COLLABORATION WITH GLOBAL ENERGY SECTOR:
-"We will work closely with all players in the sector—including established companies and startups, universities, associations, research centers, customers and some of the largest companies in the global energy sector—in order to quickly integrate the innovations that are the most likely to help us meet the challenges of the energy transition head-on"
-
-PRIORITY FOR INNOVATION:
-"Our first priority will be to target the innovations that will help reduce pressure on our energy and capacity balances"
-
-LOCAL TECHNOLOGY DEVELOPMENT:
-"The possible use of locally developed technologies will also allow Québec businesses to showcase their skills"
-
-RESPONDING TO REAL ISSUES:
-HQ must "find innovative solutions to respond to real issues, such as:
-- The scarcity of qualified workers
-- Supply problems for parts and materials"
-
-SECURING GLOBAL SUPPLY CHAIN:
-"We must work with the business community to secure our global supply chain"
-
-===== CUSTOMER BASE AND COMMERCIAL OPERATIONS =====
-
-TYPES OF CUSTOMERS SERVED:
-
-RESIDENTIAL CUSTOMERS:
-- Focus on energy efficiency equipment (heat pumps, smart thermostats)
-- Goal: 700,000 high-efficiency systems installed by 2035
-- Increase from 3% to 25% of Québec homes with such equipment
-- Rate offerings to encourage behavior changes
-
-BUSINESS AND COMMERCIAL CUSTOMERS:
-- "Commercial delegates and engineers" provide customized advice
-- Support to "large business and industrial customers"
-- "Residential and commercial customers" receive customized support
-- Small and medium-sized businesses: Help reduce energy consumption by 10%
-
-LARGE INDUSTRIAL CUSTOMERS:
-- "Renowned team" of commercial delegates and engineers
-- "Customized advice and support"
-- Support for "high-performance industrial processes"
-- "Building automation systems by our business customers, especially industrial customers"
-- "Energy-intensive businesses" specifically mentioned
-- HQ provides industrial rates "at least two times lower than virtually all western countries"
-
-CUSTOMER EXPANSION GOAL:
-"Recruiting one million new users within five years" for business customer tools
-
-===== GLOBAL MARKET POSITIONING AND ASPIRATIONS =====
-
-HQ'S COMPETITIVE POSITIONING:
-
-COMPETITIVE ADVANTAGE STATED:
-- Residential rates: "Lowest in the G7"
-- Industrial rates: "At least two times lower than virtually all western countries"
-- "This clean energy contributes to Québec's ability to compete with the world's largest economies"
-
-GLOBAL RACE CONTEXT:
-HQ states: "The global race has begun" and "Québec needs to act now if it is to remain a leader"
-
-ATTRACTING GLOBAL BUSINESS:
-"More and more companies want to operate with the lowest possible carbon footprint"
-This provides opportunity to "establish new industries" and "create stimulating jobs across Québec"
-
-WORKING WITH GLOBAL ENERGY COMPANIES:
-HQ emphasizes collaboration with "some of the largest companies in the global energy sector" (mentioned multiple times)
-
-INTERNATIONAL COMPETITIVENESS IMPERATIVE:
-HQ must maintain rates that are "competitive worldwide" for businesses
-Goal to remain competitive while countries globally invest "$40 trillion" by 2030 in energy transition
-
-ECONOMIC PROSPERITY THROUGH ENERGY:
-"Québec's next big society-wide endeavor is to decarbonize while also creating wealth. Building a sustainable future requires doing both at the same time"
-
-SUPPLY SECURITY FOR COMPETITIVE POSITIONING:
-At a time where "electricity will play an increasingly important role in all spheres of activity, like transportation and industrial processes," HQ must provide reliable supply to maintain competitive advantage
-
-===== ORGANIZATIONAL TRANSFORMATION =====
-
-EXPERTISE AND INNOVATION:
-- Create center of expertise to develop roadmap with Québec government
-- Collaborate with "universities, associations, research centers, customers and some of the largest companies in the global energy sector"
-- Target innovations to "reduce pressure on our energy and capacity balances"
-
-AGILITY:
-- Simplify and streamline practices and governance
-- Accelerate decision-making
-- Address labor shortage pressures
-- Secure global supply chain
-
-TALENT AND CULTURE:
-- Implement staff improvement proposals
-- Adopt calculated risk-taking approach
-- Professional development for executives
-- Focus on occupational health and safety
-
-===== KEY STRATEGIC CONCEPTS DEFINED =====
-
-FIRM GENERATION:
-"To ensure the reliability of the power supply, especially during peak periods, Hydro-Québec must include in its energy and capacity balances a sufficient quantity of electricity from firm generation sources like hydropower, which can be mobilized as needed"
-
-VARIABLE (INTERMITTENT) GENERATION:
-"The electricity generated by variable sources, such as wind and solar, fluctuates as it is dependent on weather conditions (such as wind force and sunlight). However, these energy sources have a distinct advantage in that they can be deployed on the grid more quickly than firm generation sources like hydropower"
-
-PEAK DEMAND PERIODS:
-"Between 6 and 9 a.m. and between 4 and 8 p.m. during cold winter days"
-
-===== TECHNOLOGY OPTIONS MENTIONED =====
-
-HQ states it will "remain open to all options available to us" including:
-- Wind farms
-- Hydroelectric generating stations
-- Solar power
-- Battery storage
-- Pumped-storage generating stations
-- Renewable thermal energy (biofuels, green hydrogen, renewable natural gas)
-- Small modular reactors (noted as "currently under development")
-- Imports from neighboring markets
-
-===== COLLABORATION AND DIALOGUE =====
-
-HQ COMMITMENT:
-"In the coming months, we will launch a focused dialogue with our stakeholders to refine with them the means for implementing this action plan"
-
-STAKEHOLDERS MENTIONED:
-- Customers
-- Suppliers
-- Partners
-- Elected representatives
-- Communities
-- Indigenous peoples
-- Universities and research centers
-- Private sector companies
-- International energy companies
-
-===== CONTEXT FOR CHURCHILL FALLS (Implicit) =====
-
-While Churchill Falls is not explicitly mentioned in the Action Plan 2035, the document establishes:
-
-1. HQ's specific need for 3,800-4,200 MW of NEW HYDROPOWER CAPACITY by 2035
-2. HQ's stated preference for hydropower as "the best choice by far" for reliability
-3. HQ's identification of hydropower as "firm generation" that can be "mobilized as needed"
-4. HQ's strategic challenge with variable generation (wind/solar) not being sufficient alone
-5. HQ's massive investment requirements ($155-185 billion to 2035)
-6. HQ's commitment to maintaining competitive rates while meeting growing demand
-7. HQ's positioning in global energy markets with "some of the largest companies in the global energy sector"
-
-NOTE: Churchill Falls provides approximately 5,400 MW of hydropower capacity, which exceeds HQ's entire identified need for new hydropower capacity (3,800-4,200 MW) by 2035.
-
-===== DOCUMENT INFORMATION =====
-
-Title: "Action Plan 2035 - Towards a Decarbonized and Prosperous Québec"
-Published: November 2023
-Legal Deposit: Bibliothèque et Archives nationales du Québec
-ISBN: 978-2-550-96176-5 (Print, English)
-ISBN: 978-2-550-96178-9 (PDF, English)
-
-NOTE: This summary contains only factual information as stated in Hydro-Québec's Action Plan 2035 document. No analysis, interpretation, or connections to Churchill Falls negotiations are included.
+Churchill Falls provides approximately 5,400 MW of hydropower capacity, which exceeds Hydro-Quebec's entire identified need for new hydropower capacity of 3,800-4,200 MW by 2035.

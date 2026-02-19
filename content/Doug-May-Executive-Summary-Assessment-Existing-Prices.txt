@@ -1,0 +1,63 @@
+DOCUMENT TITLE: Executive Summary — Proposed Prices for Existing Power Under the Churchill River MOU: Extended Evaluation
+AUTHOR: Dr. Doug May
+DOCUMENT TYPE: Executive Summary / Policy Analysis
+TOPIC: Assessment of proposed pricing framework for existing Churchill Falls power under the December 2024 MOU
+PURPOSE: To provide information to the public ahead of the referendum on the MOU proposals, encouraging informed dialogue and presenting alternative options where appropriate.
+
+---
+
+CONTEXT AND PURPOSE
+
+This submission provides a focused evaluation of the proposed pricing framework for existing Churchill Falls power under the MOU. The analysis examines present-value methodology, discount-rate selection, inflation assumptions, transfer pricing, ownership structure, long-term revenue interpretation, and procedural evaluation standards.
+
+---
+
+1. THE PRESENT-VALUE FRAMEWORK IS CENTRAL — AND MATERIALLY MISAPPLIED
+
+Public communications emphasize a present-value "effective price" of 5.9¢/kWh. Present-value analysis is appropriate when comparing revenue streams over time; however, its application must be methodologically correct. Averaging projected prices over a 50-year period and discounting that average misrepresents the time value of money. The corrected present-value approach yields a materially lower estimate than the widely cited 5.9¢/kWh figure. Because the 5.9¢ figure anchors public perception of improvement under the MOU, methodological misapplication materially affects how the proposal is understood.
+
+2. LONG-TERM FORECASTING EXTENDS BEYOND A REASONABLE PREDICTIVE HORIZON
+
+The proposed pricing path extends to 2075. Electricity markets are undergoing structural transformation driven by electrification, artificial intelligence, industrial transition, and climate variability. Forecasting price trajectories beyond 10–15 years carries substantial uncertainty; beyond that horizon, scenario-based analysis is generally more credible than single-path projections. The absence of transparent stress-test or scenario analysis limits confidence in the reliability of long-term pricing projections.
+
+3. DISCOUNT RATE SELECTION REQUIRES TRANSPARENT JUSTIFICATION
+
+Present-value outcomes are highly sensitive to the chosen discount rate. The discount rate applied in related analyses has not been fully justified relative to public-resource evaluation principles. A financing-based discount rate may not reflect an appropriate social discount rate for evaluating a multi-generational public asset. Modest adjustments in discount-rate assumptions can materially alter projected value outcomes. Transparent justification is therefore essential to independent evaluation.
+
+4. INFLATION ASSUMPTIONS INTRODUCE STRUCTURAL SENSITIVITY
+
+Long-term projections assume sustained 2% inflation. Recent economic experience demonstrates that sustained deviations from target inflation are possible. Electricity prices may diverge from general CPI due to structural demand growth and supply constraints. Over a multi-decade horizon, even small inflation assumption errors materially affect projected real value.
+
+5. FIXED ANNUAL PRICING DIVERGES FROM MARKET PRACTICE
+
+The pricing framework establishes predetermined annual prices. Prices do not vary by season, time of day, or demand conditions. Competitive wholesale electricity markets incorporate peak pricing to reflect scarcity and winter demand intensity. The absence of seasonal or peak-responsive mechanisms limits Newfoundland and Labrador's ability to participate in potential future market upside. This represents a structural divergence from standard electricity market design.
+
+6. OWNERSHIP STRUCTURE MATERIALLY REDUCES THE EFFECTIVE ECONOMIC PRICE
+
+Hydro-Québec owns 34.2% of CF(L)Co. A portion of any increased payment for existing power flows back to Hydro-Québec through dividend entitlement. The effective net economic price paid by Hydro-Québec is therefore materially lower than the stated transfer price. Public presentation of price increases does not consistently reflect this ownership-adjusted reality. Evaluation of the MOU must account for ownership-adjusted effective pricing in order to assess actual economic gain.
+
+7. GWAC CONTEXT ALTERS COMPARATIVE CLAIMS
+
+Public statements emphasize that proposed prices are many times higher than the historical 1969 contract rate. However, winter pricing under the Guaranteed Winter Availability Contract (GWAC) has already materially exceeded the historic base rate. Under the MOU, GWAC pricing formulas would cease. Failure to incorporate the GWAC pricing context risks overstating the magnitude of improvement presented under the proposed framework.
+
+8. REVENUE TO CF(L)Co DOES NOT EQUAL FISCAL GAIN TO THE PROVINCE
+
+Revenue projections are reported at the CF(L)Co level. Only Newfoundland and Labrador Hydro's ownership share contributes to provincial fiscal capacity. Because Hydro-Québec is both a major shareholder and principal buyer, part of any revenue increase effectively recirculates. Cumulative 50-year totals may therefore overstate net fiscal benefit to the Province.
+
+9. REPLACEMENT COST AND MARKET ALIGNMENT CLAIMS LACK QUANTITATIVE PRECISION
+
+The MOU references alignment with replacement costs in Québec and wholesale electricity market values. No explicit weighting formula or quantitative pricing mechanism has been disclosed. General references to "market alignment" are insufficient without transparent calculation methodology. Independent verification requires disclosure of the underlying pricing formula.
+
+10. ATIPPA NON-DISCLOSURE RESTRICTS INDEPENDENT EVALUATION
+
+An ATIPPA request was submitted to Newfoundland and Labrador Hydro seeking sales and volume data that would enable calculation of effective overall sales prices by month and GWAC kWh pricing. The requested data have not been provided. This non-disclosure materially restricts the ability to independently calculate effective pricing and evaluate the price proposals in the MOU. Transparent evaluation requires access to the underlying sales and volume data.
+
+11. PROPER EVALUATION REQUIRES BATNA COMPARISON
+
+Sound negotiation analysis requires comparison to Newfoundland and Labrador's Best Alternative to a Negotiated Agreement (BATNA). The MOU and related public materials do not present a structured BATNA analysis. Without explicit comparison to credible alternatives — including market-indexed pricing, seasonal adjustment mechanisms, shorter review intervals, phased renegotiation, or delayed commitment — it is not possible to determine whether the proposed pricing model represents Newfoundland and Labrador's strongest available option. Evaluation against the 1969 contract alone is insufficient; the relevant comparison is to credible forward-looking alternatives. Absent BATNA disclosure, the economic strength of the proposed pricing framework cannot be fully assessed.
+
+---
+
+CONCLUDING OBSERVATIONS
+
+The proposed pricing framework exhibits material methodological sensitivities in present-value calculation, discount-rate selection, inflation assumptions, and ownership-adjusted pricing. Long-term projections extend well beyond a reasonable predictive horizon without scenario disclosure. Fixed annual pricing limits participation in market variability and potential upside. Ownership structure materially affects effective economic pricing. Key data necessary for independent verification remain undisclosed. No structured BATNA comparison has been provided. Based on currently available information, it is not possible to conclude that the proposed pricing methodology fully captures the long-term economic value of the resource. The withholding of data by a proponent (NLH) of the MOU following an ATIPPA request not only curtails analysis but also promotes distrust.

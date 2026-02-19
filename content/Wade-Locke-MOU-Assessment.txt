@@ -1,7 +1,5 @@
-===================================
 WADE LOCKE ECONOMIC ANALYSIS: CHURCHILL FALLS MOU ASSESSMENT
 December 12, 2024 MOU between Newfoundland and Labrador and Quebec
-===================================
 
 AUTHOR: Wade Locke, Ph.D. (retired Professor of Economics, Memorial University of Newfoundland)
 
@@ -13,682 +11,602 @@ PERSPECTIVE: Critical economic assessment examining whether MOU represents good 
 
 KEY THEME: "The MOU document lacks sufficient detail needed to demonstrate that the deal or the contract that is expected to ensue from this MOU is better than the 1969 contract."
 
----
+EXECUTIVE SUMMARY
 
-## EXECUTIVE SUMMARY
+Central Question
 
-### Central Question
+Is this a good deal, a great deal, or the best deal Newfoundland and Labrador could have negotiated? Or is the MOU "the start of another bad deal in which Newfoundland and Labrador has been snookered again, but this time in a more sophisticated way than in 1969?"
 
-**Is this a good deal, a great deal, or the best deal Newfoundland and Labrador could have negotiated?** Or is the MOU "the start of another bad deal in which Newfoundland and Labrador has been snookered again, but this time in a more sophisticated way than in 1969?"
+Locke's Overall Assessment
 
-### Locke's Overall Assessment
+Cautiously optimistic with significant concerns:
+Positives:
+Revenues substantial and potentially transformative
+Some protection from cost overruns and delays
+Significant increase in power available for Labrador (183% increase)
+Substantial immediate revenue increase
+Concerns:
+Insufficient information in MOU to thoroughly evaluate projects
+Province NOT protected from all risks
+Will require borrowing close to current level of net debt
+Many legitimate questions remain unanswered
+Lack of detail on key financial mechanisms
 
-**Cautiously optimistic with significant concerns:**
+Closing warning: "We still need to be wary of being snookered by others with more sophistication but different long-term goals and interests. We should learn from our history, not be constrained by it."
 
-✅ **Positives:**
-- Revenues substantial and potentially transformative
-- Some protection from cost overruns and delays
-- Significant increase in power available for Labrador (183% increase)
-- Substantial immediate revenue increase
+BACKGROUND: THE 1969 CONTRACT CONTEXT
 
-⚠️ **Concerns:**
-- Insufficient information in MOU to thoroughly evaluate projects
-- Province NOT protected from all risks
-- Will require borrowing close to current level of net debt
-- Many legitimate questions remain unanswered
-- Lack of detail on key financial mechanisms
+Original Churchill Falls Contract Terms
 
-**Closing warning:** "We still need to be wary of being snookered by others with more sophistication but different long-term goals and interests. We should learn from our history, not be constrained by it."
+Initial 40 years (1969-2016):
+Price: 0.25¢/kWh
 
----
+Renewal period (2016-2041):
+Price: 0.2¢/kWh (LOWER than original)
 
-## BACKGROUND: THE 1969 CONTRACT CONTEXT
+NL's Power Access Under 1969 Contract
 
-### Original Churchill Falls Contract Terms
+Two blocks of power:
+300 MW recall power - for Labrador electricity needs
+225 MW Twinco (Twin Falls) block - for Labrador mining companies
 
-**Initial 40 years (1969-2016):**
-- Price: **0.25¢/kWh**
+Remaining electricity: Could be purchased by Hydro-Québec, including any power excess to NL needs
 
-**Renewal period (2016-2041):**
-- Price: **0.2¢/kWh** (LOWER than original)
+Historical Context on Surplus Recall Block
 
-### NL's Power Access Under 1969 Contract
+1998-2001: NL had ~130 MW surplus from recall block
+Sold excess to HQ at market price
+Three-year agreement estimated at $68.5 million
+Renewed 2001: HQ paid $23.9/MWh, revenue capped at $97.5M
+Renewed 2004: Price started at $36/MWh, escalating 2% annually, no revenue cap
+2009: NLH could trade energy with customers outside Quebec (subject to transmission tariffs)
 
-**Two blocks of power:**
-1. **300 MW recall power** - for Labrador electricity needs
-2. **225 MW Twinco (Twin Falls) block** - for Labrador mining companies
+The Historic Inequity
 
-**Remaining electricity:** Could be purchased by Hydro-Québec, including any power excess to NL needs
+As of 2019:
+Quebec profits from Churchill Falls: ~$28 billion
+Newfoundland and Labrador profits: ~$2 billion
 
-### Historical Context on Surplus Recall Block
+Feehan and Baker (2010) assessment:
+With revenues of $60M annually during renewal contract
+"Unlikely that CF(L)Co will cover its operating costs"
+"Making it necessary to cross-subsidize the arrangement with revenues from other sources"
 
-**1998-2001:** NL had ~130 MW surplus from recall block
-- Sold excess to HQ at market price
-- Three-year agreement estimated at $68.5 million
-- **Renewed 2001:** HQ paid $23.9/MWh, revenue capped at $97.5M
-- **Renewed 2004:** Price started at $36/MWh, escalating 2% annually, no revenue cap
-- **2009:** NLH could trade energy with customers outside Quebec (subject to transmission tariffs)
+Result: "The 1969 Churchill Falls was the bane of the existence of Newfoundlanders and Labradorians"
 
-### The Historic Inequity
+MOU CLAIMED BENEFITS (GOVERNMENT OF NL FACT SHEET)
 
-**As of 2019:**
-- Quebec profits from Churchill Falls: **~$28 billion**
-- Newfoundland and Labrador profits: **~$2 billion**
+Overall Revenue Claims
 
-**Feehan and Baker (2010) assessment:**
-- With revenues of $60M annually during renewal contract
-- "Unlikely that CF(L)Co will cover its operating costs"
-- "Making it necessary to cross-subsidize the arrangement with revenues from other sources"
+Total revenue to NL: More than $225 billion
 
-**Result:** "The 1969 Churchill Falls was the bane of the existence of Newfoundlanders and Labradorians"
+Breakdown:
+Churchill Falls alone: $17 billion over next 17 years (2025-2041)
+Average: $1 billion/year starting 2025
+New developments: Additional revenue streams
 
----
+Pricing Changes
 
-## MOU CLAIMED BENEFITS (GOVERNMENT OF NL FACT SHEET)
+Price increase: 0.2¢/kWh → 5.9¢/kWh (effective average)
+30× higher than current price
+Will escalate over time
+Tied to market prices
 
-### Overall Revenue Claims
+Payment to CF(L)Co:
+$33.8 billion in today's dollars (present value)
+$180 billion in nominal dollars over term
 
-**Total revenue to NL:** More than $225 billion
+New Capacity
 
-**Breakdown:**
-1. **Churchill Falls alone:** $17 billion over next 17 years (2025-2041)
-   - **Average:** $1 billion/year starting 2025
-2. **New developments:** Additional revenue streams
+Total new capacity: 3,900 MW
+Gull Island: 2,250 MW
+Churchill Falls expansion: 1,100 MW
+Churchill Falls upgrades: 550 MW
 
-### Pricing Changes
+NL power access: Nearly 4× current allocation for Labrador use
 
-**Price increase:** 0.2¢/kWh → **5.9¢/kWh** (effective average)
-- **30× higher** than current price
-- Will **escalate over time**
-- **Tied to market prices**
+Risk Protection Claims
+"Fully protected" from construction risk and cost overruns
+New pricing NOT contingent on new projects proceeding
+Can analyze pricing separately from development projects
 
-**Payment to CF(L)Co:**
-- **$33.8 billion** in today's dollars (present value)
-- **$180 billion** in nominal dollars over term
+Construction and Economic Benefits
+Thousands of jobs during construction
+Enhanced industrial development potential in Labrador
+Binding agreements to be signed by April 2026
 
-### New Capacity
+HQ Payment for Development Rights
 
-**Total new capacity:** 3,900 MW
-- Gull Island: 2,250 MW
-- Churchill Falls expansion: 1,100 MW
-- Churchill Falls upgrades: 550 MW
+$3.5 billion (today's dollars) for right to co-develop new projects
+Equivalent to $4.8 billion in nominal dollars
 
-**NL power access:** Nearly 4× current allocation for Labrador use
+Project Costs
 
-### Risk Protection Claims
+Total construction costs: $35.0 billion (appears to be nominal dollars)
 
-- "Fully protected" from construction risk and cost overruns
-- New pricing NOT contingent on new projects proceeding
-- Can analyze pricing separately from development projects
+Breakdown:
+Gull Island: $29.4 billion (includes financing)
+Churchill Falls expansion: $4.6 billion (includes financing)
+Churchill Falls upgrade: $1.9 billion (includes financing)
+New transmission: $3.6 billion (includes financing)
 
-### Construction and Economic Benefits
+LOCKE'S CRITICAL ANALYSIS: KEY CONCERNS AND CORRECTIONS
 
-- Thousands of jobs during construction
-- Enhanced industrial development potential in Labrador
-- Binding agreements to be signed by April 2026
+Issue 1: Revenue to Treasury vs. Revenue to CF(L)Co
 
-### HQ Payment for Development Rights
+Government claim: "$17 billion to treasury" or "$1 billion/year"
 
-**$3.5 billion** (today's dollars) for right to co-develop new projects
-- Equivalent to **$4.8 billion** in nominal dollars
+Locke's correction:
+CF(L)Co will receive $19.8B or $1.17B average to 2041
+This is NOT money to treasury
+It's money to CF(L)Co, of which NLH owns 65.8%
+Amount to provincial treasury: $13.1B or $768M annual average to 2041
 
-### Project Costs
+Comparison baseline issue:
+GNL press release: Compare $1B to "$20 million we receive today"
+Locke's correction: CF(L)Co 2023 revenues were $103 million:
+$40.5M from HQ
+$25.6M from Guaranteed Winter Availability Contract (GWAC)
+$34M from NLH
+$1.2M from other sources
+Better comparison: $65M from GWAC and HQ (to be replaced by new PPA)
 
-**Total construction costs:** $35.0 billion (appears to be nominal dollars)
+Issue 2: Confusion About "Today's Dollars" vs "Nominal Dollars"
 
-**Breakdown:**
-- Gull Island: $29.4 billion (includes financing)
-- Churchill Falls expansion: $4.6 billion (includes financing)
-- Churchill Falls upgrade: $1.9 billion (includes financing)
-- New transmission: $3.6 billion (includes financing)
+The $33.8 billion figure:
+This is present value of nominal revenue profile
+Discounts nominal cash flow using 5.822% (presumably nominal weighted average cost of capital)
+$33.8B = amount of investment needed today to generate cash flow equivalent to $195B at 5.822% return
+NOT actual dollars of the day
 
----
+To get dollars of the day equivalent:
+Need to discount cash flow using assumed inflation rate
+MOU lacks clarity on this distinction
 
-## LOCKE'S CRITICAL ANALYSIS: KEY CONCERNS AND CORRECTIONS
+Issue 3: Misleading Capacity Access Claims
 
-### Issue 1: Revenue to Treasury vs. Revenue to CF(L)Co
+Claim: "3,900 MW... nearly four times as much energy for Labrador"
 
-**Government claim:** "$17 billion to treasury" or "$1 billion/year"
+Locke's clarification:
+3,900 MW is COMBINED increase from all projects
+NLH has existing rights to 525 MW (will continue)
+NLH will have access to:
+605 MW new recapture capacity after 2034
+250 MW existing plant capacity after 2050
+500 MW existing plant capacity after 2060
+360 MW from new developments
+Total NL capacity: 1,990 MW
+Actual increase: 378% of current 525 MW (not "four times" the energy)
 
-**Locke's correction:**
-- CF(L)Co will receive $19.8B or $1.17B average to 2041
-- **This is NOT money to treasury**
-- It's money to CF(L)Co, of which NLH owns 65.8%
-- **Amount to provincial treasury:** $13.1B or **$768M annual average** to 2041
+Issue 4: Insufficient Detail on Pricing Mechanism
 
-**Comparison baseline issue:**
-- GNL press release: Compare $1B to "$20 million we receive today"
-- **Locke's correction:** CF(L)Co 2023 revenues were $103 million:
-  - $40.5M from HQ
-  - $25.6M from Guaranteed Winter Availability Contract (GWAC)
-  - $34M from NLH
-  - $1.2M from other sources
-- **Better comparison:** $65M from GWAC and HQ (to be replaced by new PPA)
+MOU Schedule F states prices will be "reflective of:"
+Wholesale electricity market value in Quebec
+Replacement costs in Quebec
+Wholesale electricity market value in northeast export markets
 
-### Issue 2: Confusion About "Today's Dollars" vs "Nominal Dollars"
+Critical gap: "No indication of the weights attached to either in the pricing mechanism"
 
-**The $33.8 billion figure:**
-- This is **present value** of nominal revenue profile
-- Discounts nominal cash flow using 5.822% (presumably nominal weighted average cost of capital)
-- $33.8B = amount of investment needed today to generate cash flow equivalent to $195B at 5.822% return
-- **NOT actual dollars of the day**
+Implication: Cannot properly assess future revenue or compare to market alternatives
 
-**To get dollars of the day equivalent:**
-- Need to discount cash flow using assumed inflation rate
-- MOU lacks clarity on this distinction
+Issue 5: Cost Overrun Protection Is Partial, Not Complete
 
-### Issue 3: Misleading Capacity Access Claims
+Claim: "Fully protected from construction risk and cost overruns"
 
-**Claim:** "3,900 MW... nearly four times as much energy for Labrador"
+Locke's correction - NL IS exposed to:
+Cost overruns for transmission lines (100% NL responsibility)
+65.8% of cost overruns on Churchill Falls upgrade
+Only Gull Island and CF expansion have HQ accepting overruns
 
-**Locke's clarification:**
-- 3,900 MW is COMBINED increase from all projects
-- NLH has existing rights to 525 MW (will continue)
-- **NLH will have access to:**
-  - 605 MW new recapture capacity after 2034
-  - 250 MW existing plant capacity after 2050
-  - 500 MW existing plant capacity after 2060
-  - 360 MW from new developments
-- **Total NL capacity:** 1,990 MW
-- **Actual increase:** 378% of current 525 MW (not "four times" the energy)
+Issue 6: Missing Critical Financial Information
 
-### Issue 4: Insufficient Detail on Pricing Mechanism
+Cannot calculate net present value because MOU omits:
+Time profile of capital costs
+Time profile of operations and maintenance costs
+Production profile for electricity
+Time profile of expected prices for electricity
+Detailed breakdown of power flows (Gull Island: 84% HQ, 16% NLH)
 
-**MOU Schedule F states prices will be "reflective of:"**
-- Wholesale electricity market value in Quebec
-- Replacement costs in Quebec
-- Wholesale electricity market value in northeast export markets
+Result: "Not sufficient information in the MOU to thoroughly evaluate all, or any, of the proposed new developments"
 
-**Critical gap:** "No indication of the weights attached to either in the pricing mechanism"
+Issue 7: Provincial Debt Implications
 
-**Implication:** Cannot properly assess future revenue or compare to market alternatives
+NL will need additional borrowing: $17-18 billion
+Context: Approximately equal to current net provincial debt
+Even after $4.8B from HQ, still major borrowing requirement
+"Not insignificant" financial burden
 
-### Issue 5: Cost Overrun Protection Is Partial, Not Complete
+DETAILED PROJECT ANALYSIS
 
-**Claim:** "Fully protected from construction risk and cost overruns"
+Churchill Falls Power Purchase Agreement Replacement
 
-**Locke's correction - NL IS exposed to:**
-- Cost overruns for transmission lines (100% NL responsibility)
-- 65.8% of cost overruns on Churchill Falls upgrade
-- Only Gull Island and CF expansion have HQ accepting overruns
+Current Revenue (2023)
 
-### Issue 6: Missing Critical Financial Information
+CF(L)Co total revenue: $103 million
+HQ payments: $40.5M
+GWAC: $25.6M
+NLH: $34M
+Other: $1.2M
 
-**Cannot calculate net present value because MOU omits:**
-- Time profile of capital costs
-- Time profile of operations and maintenance costs
-- Production profile for electricity
-- Time profile of expected prices for electricity
-- Detailed breakdown of power flows (Gull Island: 84% HQ, 16% NLH)
+MOU Proposed Revenue
 
-**Result:** "Not sufficient information in the MOU to thoroughly evaluate all, or any, of the proposed new developments"
+Annual payments to CF(L)Co: Escalating from ~$1.17B (average)
 
-### Issue 7: Provincial Debt Implications
+NLH share (65.8%): ~$768M to treasury annually
 
-**NL will need additional borrowing:** $17-18 billion
-- **Context:** Approximately equal to current net provincial debt
-- Even after $4.8B from HQ, still major borrowing requirement
-- "Not insignificant" financial burden
+Price increase: 0.2¢/kWh → 5.9¢/kWh
 
----
+Important notes:
+New pricing NOT conditional on new projects
+Will replace GWAC (worth $20-30M annually to CF(L)Co)
+Higher prices to HQ will also apply to NLH purchases
+Question: Will excess Labrador power remain profitable and competitive at new prices?
 
-## DETAILED PROJECT ANALYSIS
+Gull Island Project (2,250 MW)
 
-### Churchill Falls Power Purchase Agreement Replacement
+Ownership Structure
 
-#### Current Revenue (2023)
+New entity:
+60% NL Hydro
+40% Hydro-Québec
 
-**CF(L)Co total revenue:** $103 million
-- HQ payments: $40.5M
-- GWAC: $25.6M
-- NLH: $34M
-- Other: $1.2M
+Financial Terms
 
-#### MOU Proposed Revenue
+Capital cost: $24.9 billion (including financing)
+Target commissioning: 2035
+Return on equity: 8.0-9.0% range
+Set every 5 years
+Based on Government of Canada 10-year bond yields plus 500 basis points
 
-**Annual payments to CF(L)Co:** Escalating from ~$1.17B (average)
+Power Purchase Agreement:
+Cost plus return
+50-year term
+Escalating price projected at 2%
+No automatic renewal rights
 
-**NLH share (65.8%):** ~$768M to treasury annually
+Construction and Cost Risk
 
-**Price increase:** 0.2¢/kWh → 5.9¢/kWh
+HQ responsibilities:
+Managing construction and completion
+Accepting cost overruns (will be included in PPA)
 
-**Important notes:**
-- New pricing NOT conditional on new projects
-- Will replace GWAC (worth $20-30M annually to CF(L)Co)
-- Higher prices to HQ will also apply to NLH purchases
-- Question: Will excess Labrador power remain profitable and competitive at new prices?
+Environmental and Benefits:
+Environmental Assessment completed 2012
+Innu Nation Impacts and Benefits Agreement in place
+Lower Churchill Construction Strategy Benefits Agreement part of EA
 
-### Gull Island Project (2,250 MW)
+Hiring protocol (in order):
+Innu Nation (qualified)
+Labrador residents (qualified)
+Provincial residents (qualified)
+Rest of Canada (qualified)
 
-#### Ownership Structure
+Employment: 13 million person-hours construction jobs
 
-**New entity:**
-- 60% NL Hydro
-- 40% Hydro-Québec
+Local procurement: "Full and fair opportunity" for NL contractors, service providers, consultants, suppliers
+Muskrat Falls precedent: Over $3.6B in expenditures to NL-based companies
 
-#### Financial Terms
+Operations:
+NL Hydro will operate facility
+NL Hydro has access to 225 MW
 
-**Capital cost:** $24.9 billion (including financing)
-**Target commissioning:** 2035
-**Return on equity:** 8.0-9.0% range
-- Set every 5 years
-- Based on Government of Canada 10-year bond yields plus 500 basis points
+Locke's Gull Island Assessment
 
-**Power Purchase Agreement:**
-- Cost plus return
-- 50-year term
-- Escalating price projected at 2%
-- **No automatic renewal rights**
+HQ payment for equity: $3.5B (present value) or $4.8B (nominal)
 
-#### Construction and Cost Risk
+Cannot fully evaluate because MOU lacks:
+Time profile of capital costs
+Time profile of O&M costs
+Transmission costs details
+Production profile
+Time profile of expected prices
+Detailed power flow breakdown (84% HQ, 16% NLH - actually 10% Gull Island, rest from other projects)
 
-**HQ responsibilities:**
-- Managing construction and completion
-- Accepting cost overruns (will be included in PPA)
+Key question: Is 40% of Gull Island NPV larger than $3.5B present value HQ is transferring?
 
-**Environmental and Benefits:**
-- Environmental Assessment completed 2012
-- Innu Nation Impacts and Benefits Agreement in place
-- Lower Churchill Construction Strategy Benefits Agreement part of EA
+Partial answer: "It is good that the province received $4.8 billion to help with its equity obligations"
 
-**Hiring protocol (in order):**
-1. Innu Nation (qualified)
-2. Labrador residents (qualified)
-3. Provincial residents (qualified)
-4. Rest of Canada (qualified)
+Churchill Falls Expansion Project (1,100 MW)
 
-**Employment:** 13 million person-hours construction jobs
+Project Description
 
-**Local procurement:** "Full and fair opportunity" for NL contractors, service providers, consultants, suppliers
-- Muskrat Falls precedent: Over $3.6B in expenditures to NL-based companies
+Second underground powerhouse:
+Near existing plant
+Using existing reservoir
 
-**Operations:**
-- NL Hydro will operate facility
-- NL Hydro has access to 225 MW
+Ownership
 
-#### Locke's Gull Island Assessment
+CF(L)Co ownership maintained:
+65.8% NL Hydro
+34.2% Hydro-Québec
 
-**HQ payment for equity:** $3.5B (present value) or $4.8B (nominal)
+Financial Terms
 
-**Cannot fully evaluate because MOU lacks:**
-- Time profile of capital costs
-- Time profile of O&M costs
-- Transmission costs details
-- Production profile
-- Time profile of expected prices
-- Detailed power flow breakdown (84% HQ, 16% NLH - actually 10% Gull Island, rest from other projects)
+Capital cost: $4.6 billion (including financing)
 
-**Key question:** Is 40% of Gull Island NPV larger than $3.5B present value HQ is transferring?
+Return on equity: 8.0-9.0% range
+Set every 5 years
+Government of Canada 10-year bond yields plus 500 basis points
 
-**Partial answer:** "It is good that the province received $4.8 billion to help with its equity obligations"
+Power Purchase Agreement:
+Cost plus return
+50-year term
+Escalating price projected at 2%
+No automatic renewal rights
 
-### Churchill Falls Expansion Project (1,100 MW)
+Construction and Risk
 
-#### Project Description
+HQ responsibilities:
+Managing construction and completion
+Accepting cost overruns (will be included in PPA)
 
-**Second underground powerhouse:**
-- Near existing plant
-- Using existing reservoir
+Operations:
+NL Hydro will operate facility
+NL Hydro has access to 135 MW (combined from upgrades)
 
-#### Ownership
+Environmental: Environmental Assessment to be undertaken
 
-**CF(L)Co ownership maintained:**
-- 65.8% NL Hydro
-- 34.2% Hydro-Québec
+Churchill Falls Upgrades Project (550 MW)
 
-#### Financial Terms
+Project Description
 
-**Capital cost:** $4.6 billion (including financing)
+Upgrade existing units at Churchill Falls
 
-**Return on equity:** 8.0-9.0% range
-- Set every 5 years
-- Government of Canada 10-year bond yields plus 500 basis points
+Ownership
 
-**Power Purchase Agreement:**
-- Cost plus return
-- 50-year term
-- Escalating price projected at 2%
-- **No automatic renewal rights**
+CF(L)Co ownership:
+65.8% NL Hydro
+34.2% Hydro-Québec
 
-#### Construction and Risk
+Financial Terms
 
-**HQ responsibilities:**
-- Managing construction and completion
-- Accepting cost overruns (will be included in PPA)
+Capital cost: $1.9 billion (including financing)
 
-**Operations:**
-- NL Hydro will operate facility
-- NL Hydro has access to 135 MW (combined from upgrades)
+Power Purchase Agreement:
+Cost plus
+Escalating at 2% annually
+Same term as CF PPA (2075)
+No automatic renewal rights
 
-**Environmental:** Environmental Assessment to be undertaken
+Construction and Risk
 
-### Churchill Falls Upgrades Project (550 MW)
+NL Hydro responsibilities:
+Responsible for construction and completion
+Cost overruns borne by CF(L)Co shareholders (65.8% NLH, 34.2% HQ)
 
-#### Project Description
+ Critical point: NL IS exposed to 65.8% of cost overruns on this project
 
-**Upgrade existing units** at Churchill Falls
+Operations:
+NL Hydro has access to 135 MW (combined with CF2 expansion)
 
-#### Ownership
+NL Transmission ($3.6 billion)
 
-**CF(L)Co ownership:**
-- 65.8% NL Hydro
-- 34.2% Hydro-Québec
+Ownership and Responsibility
 
-#### Financial Terms
+100% NL Hydro within NL
+HQ to construct corresponding transmission within Quebec
 
-**Capital cost:** $1.9 billion (including financing)
+Financial Terms
 
-**Power Purchase Agreement:**
-- Cost plus
-- Escalating at 2% annually
-- Same term as CF PPA (2075)
-- **No automatic renewal rights**
+Capital cost: $3.6 billion (including financing)
 
-#### Construction and Risk
+Cost recovery:
+Actual costs paid by off-takers
+Regulated rate of return on equity
 
-**NL Hydro responsibilities:**
-- Responsible for construction and completion
-- **Cost overruns borne by CF(L)Co shareholders** (65.8% NLH, 34.2% HQ)
+Construction risk:
+NL Hydro responsible for construction and completion
+NL exposed to transmission cost overruns
 
-**⚠️ Critical point:** NL IS exposed to 65.8% of cost overruns on this project
+EQUITY AND DEBT ANALYSIS
 
-**Operations:**
-- NL Hydro has access to 135 MW (combined with CF2 expansion)
+NLH Equity Obligations (Locke's Approximation)
 
-### NL Transmission ($3.6 billion)
+Project | Capital Costs | Equity (25% Share) | Implied NLH Equity | Debt (75% Share) | NL Debt
 
-#### Ownership and Responsibility
+Gull Island | $24.9B | $6.23B | $3.735B | $18.68B | $11.21B
+CF Expansion | $4.6B | $1.15B | $0.757B | $3.45B | $2.27B
+CF Upgrade | $1.9B | $0.48B | $0.313B | $1.43B | $0.94B
+CF Transmission | $3.6B | $0.90B | $0.900B | $2.70B | $2.70B
+Subtotal | $35.0B | $8.75B | $5.704B | $26.25B | $17.11B
 
-**100% NL Hydro within NL**
-- HQ to construct corresponding transmission within Quebec
+Notes:
+Capital costs include financing costs
+NLH equity share: 60% for Gull Island, 65.8% for CF projects, 100% for transmission
+HQ $4.8B transfer reduces NL borrowing requirement
+Net NL borrowing: ~$17-18 billion (approximately equal to current provincial net debt)
 
-#### Financial Terms
+HQ Equity Purchase Assessment
 
-**Capital cost:** $3.6 billion (including financing)
+HQ payment: $3.5B present value ($4.8B nominal) for Gull Island equity
 
-**Cost recovery:**
-- Actual costs paid by off-takers
-- Regulated rate of return on equity
+Transfer structure:
+First 3 years: Unconditional
+Remainder: Subject to certain conditions being met
+Not strictly an equity purchase
 
-**Construction risk:**
-- NL Hydro responsible for construction and completion
-- **⚠️ NL exposed to transmission cost overruns**
+Cannot fully evaluate without:
+Net present value calculation for Gull Island
+Comparison: Is 40% of Gull Island NPV > $3.5B present value?
+Missing information prevents this assessment
 
----
+EMPLOYMENT AND ECONOMIC IMPACTS
 
-## EQUITY AND DEBT ANALYSIS
+Construction Employment
 
-### NLH Equity Obligations (Locke's Approximation)
+Government claims:
+Average annual 3,000 direct jobs during construction
+Peak of 5,000 direct jobs
+Including indirect/induced: Average 5,000 jobs, peak 9,500 jobs
 
-| Project | Capital Costs | Equity (25% Share) | Implied NLH Equity | Debt (75% Share) | NL Debt |
-|---------|--------------|-------------------|-------------------|------------------|---------|
-| Gull Island | $24.9B | $6.23B | $3.735B | $18.68B | $11.21B |
-| CF Expansion | $4.6B | $1.15B | $0.757B | $3.45B | $2.27B |
-| CF Upgrade | $1.9B | $0.48B | $0.313B | $1.43B | $0.94B |
-| CF Transmission | $3.6B | $0.90B | $0.900B | $2.70B | $2.70B |
-| **Subtotal** | **$35.0B** | **$8.75B** | **$5.704B** | **$26.25B** | **$17.11B** |
+Locke's assessment:
+Construction period: 5-11 years across all projects
+Total direct jobs: 20,000-30,000
+"Should not strain credibility given $35 billion investment cost"
 
-**Notes:**
-- Capital costs include financing costs
-- NLH equity share: 60% for Gull Island, 65.8% for CF projects, 100% for transmission
-- HQ $4.8B transfer reduces NL borrowing requirement
-- **Net NL borrowing: ~$17-18 billion** (approximately equal to current provincial net debt)
+Skills required:
+Equipment operators
+Carpenters
+Electricians
+Crane operators
+Line workers
+Office workers
+Accommodations workers
 
-### HQ Equity Purchase Assessment
+Power Available for Labrador Development
 
-**HQ payment:** $3.5B present value ($4.8B nominal) for Gull Island equity
+Current access: 525 MW capacity = 167 TWh (2025-2075)
 
-**Transfer structure:**
-- First 3 years: Unconditional
-- Remainder: Subject to certain conditions being met
-- Not strictly an equity purchase
+Under MOU: 474 TWh
 
-**Cannot fully evaluate** without:
-- Net present value calculation for Gull Island
-- Comparison: Is 40% of Gull Island NPV > $3.5B present value?
-- Missing information prevents this assessment
+Increase: 183% more electricity available in Labrador
 
----
+Benefit: "Should facilitate industrial development"
 
-## EMPLOYMENT AND ECONOMIC IMPACTS
+Gap in analysis: "No information in the MOU that would enable one to estimate the potential benefits that flow from this extra electricity"
 
-### Construction Employment
+Return on NLH Equity in New Developments
 
-**Government claims:**
-- Average annual 3,000 direct jobs during construction
-- Peak of 5,000 direct jobs
-- Including indirect/induced: Average 5,000 jobs, peak 9,500 jobs
+NLH equity in new developments: $5-6 billion
 
-**Locke's assessment:**
-- Construction period: 5-11 years across all projects
-- Total direct jobs: 20,000-30,000
-- "Should not strain credibility given $35 billion investment cost"
+Target return on equity: 8-9%
 
-**Skills required:**
-- Equipment operators
-- Carpenters
-- Electricians
-- Crane operators
-- Line workers
-- Office workers
-- Accommodations workers
+Expected annual return: $400-500 million
 
-### Power Available for Labrador Development
+KEY UNRESOLVED QUESTIONS
 
-**Current access:** 525 MW capacity = 167 TWh (2025-2075)
+Financial Transparency Issues
+What are the weights in the pricing mechanism? (Quebec wholesale, replacement cost, export markets)
+What is the time profile of capital costs? (Cannot assess project viability)
+What is the production profile for electricity? (Cannot project revenues)
+What is the time profile of expected prices? (Cannot assess competitiveness)
+What are the detailed O&M costs? (Cannot assess operating margins)
 
-**Under MOU:** 474 TWh
+Risk and Protection Issues
+How exposed is NL to transmission cost overruns? (Potentially significant)
+What is the exposure to CF upgrade cost overruns? (65.8% of overruns)
+What conditions must be met for HQ payments? (After first 3 years)
+Will excess Labrador power remain competitive at new higher prices? (Affects industrial development)
+What happens to GWAC replacement revenue? ($20-30M annually)
 
-**Increase:** 183% more electricity available in Labrador
+Economic Assessment Issues
+What is the net present value of each project? (Cannot calculate with available info)
+Is the HQ equity purchase fair value? (Need Gull Island NPV to assess)
+What are the economic benefits from increased Labrador power? (No information provided)
+Is this better than alternative development scenarios? (Cannot compare without data)
+What is the opportunity cost of 50-year commitments? (Cannot assess)
 
-**Benefit:** "Should facilitate industrial development"
+COMPARISON TO ALTERNATIVE SCENARIOS
 
-**Gap in analysis:** "No information in the MOU that would enable one to estimate the potential benefits that flow from this extra electricity"
+What About Going It Alone?
 
-### Return on NLH Equity in New Developments
+Locke does not directly address this question due to insufficient information
 
-**NLH equity in new developments:** $5-6 billion
+Would need to know:
+Alternative markets and pricing
+Transmission costs for other routes
+Project financing costs without HQ partnership
+Risk profile for standalone development
 
-**Target return on equity:** 8-9%
+Historical context: Feehan article shows 1960s attempts at power corridor through Quebec were blocked
 
-**Expected annual return:** $400-500 million
+What About Different Partnership Structures?
 
----
+Cannot assess because MOU lacks detail on:
+Whether different ownership percentages were considered
+Whether alternative pricing mechanisms were evaluated
+Whether other potential partners were approached
+What negotiating leverage NL had
 
-## KEY UNRESOLVED QUESTIONS
+LOCKE'S OVERALL ASSESSMENT
 
-### Financial Transparency Issues
+Positive Elements
+Substantial revenue increase:
+From $65M (GWAC + HQ) to ~$768M annual average to NL treasury
+Potentially transformative for provincial finances
+Some risk protection:
+HQ managing and accepting overruns on Gull Island and CF expansion
+Pricing not conditional on new projects proceeding
+Significant power increase for Labrador:
+183% increase enables industrial development
+HQ equity payment helps:
+$4.8B reduces NL borrowing needs
+Makes projects more financially feasible
+No automatic renewal:
+Avoids 1969 contract mistake of perpetual renewal at lower price
 
-1. **What are the weights in the pricing mechanism?** (Quebec wholesale, replacement cost, export markets)
-2. **What is the time profile of capital costs?** (Cannot assess project viability)
-3. **What is the production profile for electricity?** (Cannot project revenues)
-4. **What is the time profile of expected prices?** (Cannot assess competitiveness)
-5. **What are the detailed O&M costs?** (Cannot assess operating margins)
+Concerns and Warnings
+Insufficient information:
+"Not sufficient information in the MOU to thoroughly evaluate all, or any, of the proposed new developments"
+Cannot calculate net present values
+Cannot assess whether deal is optimal
+Significant debt burden:
+$17-18B new borrowing ≈ current total net provincial debt
+Major fiscal implications for province
+Incomplete risk protection:
+NL exposed to transmission cost overruns (100%)
+NL exposed to CF upgrade cost overruns (65.8%)
+Not "fully protected" as claimed
+Lack of transparency on pricing:
+No weights given for pricing formula components
+Cannot assess whether prices will track market fairly
+Legitimate questions remain:
+"Led to a number of analysts raising legitimate questions about the actual benefit"
+"Whether there was a better deal to be had"
 
-### Risk and Protection Issues
+Final Warning
 
-6. **How exposed is NL to transmission cost overruns?** (Potentially significant)
-7. **What is the exposure to CF upgrade cost overruns?** (65.8% of overruns)
-8. **What conditions must be met for HQ payments?** (After first 3 years)
-9. **Will excess Labrador power remain competitive at new higher prices?** (Affects industrial development)
-10. **What happens to GWAC replacement revenue?** ($20-30M annually)
+Locke's closing statement:
 
-### Economic Assessment Issues
+"Recognizing that our level of analytical sophistication has increased within the province, we still need to be wary of being snookered by others with more sophistication but different long-term goals and interests. We should learn from our history, not be constrained by it. We ought not to be afraid to make a good deal that is in our interest, but we need to be wary given that we do not know the future with precision."
 
-11. **What is the net present value of each project?** (Cannot calculate with available info)
-12. **Is the HQ equity purchase fair value?** (Need Gull Island NPV to assess)
-13. **What are the economic benefits from increased Labrador power?** (No information provided)
-14. **Is this better than alternative development scenarios?** (Cannot compare without data)
-15. **What is the opportunity cost of 50-year commitments?** (Cannot assess)
+KEY NUMBERS SUMMARY
 
----
+Revenue Comparison
 
-## COMPARISON TO ALTERNATIVE SCENARIOS
+Metric | Current (2023) | MOU Average (to 2041) | Increase
 
-### What About Going It Alone?
+CF(L)Co revenue | $103M total | $1.17B | 11×
+Revenue from HQ + GWAC | $65M | $1.17B | 18×
+NL treasury (65.8% share) | ~$43M | $768M | 18×
+Price per kWh | 0.2¢ | 5.9¢ | 30×
 
-**Locke does not directly address** this question due to insufficient information
+New Capacity
 
-**Would need to know:**
-- Alternative markets and pricing
-- Transmission costs for other routes
-- Project financing costs without HQ partnership
-- Risk profile for standalone development
+Project | Capacity | NL Access | Ownership
 
-**Historical context:** Feehan article shows 1960s attempts at power corridor through Quebec were blocked
+Gull Island | 2,250 MW | 225 MW | 60% NLH / 40% HQ
+CF Expansion | 1,100 MW | 135 MW | 65.8% NLH / 34.2% HQ
+CF Upgrade | 550 MW | 135 MW | 65.8% NLH / 34.2% HQ
+Total New | 3,900 MW | 495 MW | Varies
+Existing access | 5,428 MW | 525 MW | 65.8% NLH / 34.2% HQ
 
-### What About Different Partnership Structures?
+Cost and Financing
 
-**Cannot assess** because MOU lacks detail on:
-- Whether different ownership percentages were considered
-- Whether alternative pricing mechanisms were evaluated
-- Whether other potential partners were approached
-- What negotiating leverage NL had
+Item | Amount | Notes
 
----
+Total project costs | $35.0B | Includes financing
+NLH equity obligations | $5.7B | Varies by project
+NL debt required | $17-18B | After HQ $4.8B payment
+HQ payment for equity | $4.8B nominal | $3.5B present value
+Current provincial net debt | ~$17-18B | For comparison
 
-## LOCKE'S OVERALL ASSESSMENT
+Employment
 
-### Positive Elements
+Type | Average | Peak
 
-✅ **Substantial revenue increase:**
-- From $65M (GWAC + HQ) to ~$768M annual average to NL treasury
-- Potentially transformative for provincial finances
+Direct jobs | 3,000 | 5,000
+Total (incl. indirect/induced) | 5,000 | 9,500
+Construction period | 5-11 years | Varies by project
 
-✅ **Some risk protection:**
-- HQ managing and accepting overruns on Gull Island and CF expansion
-- Pricing not conditional on new projects proceeding
-
-✅ **Significant power increase for Labrador:**
-- 183% increase enables industrial development
-
-✅ **HQ equity payment helps:**
-- $4.8B reduces NL borrowing needs
-- Makes projects more financially feasible
-
-✅ **No automatic renewal:**
-- Avoids 1969 contract mistake of perpetual renewal at lower price
-
-### Concerns and Warnings
-
-⚠️ **Insufficient information:**
-- "Not sufficient information in the MOU to thoroughly evaluate all, or any, of the proposed new developments"
-- Cannot calculate net present values
-- Cannot assess whether deal is optimal
-
-⚠️ **Significant debt burden:**
-- $17-18B new borrowing ≈ current total net provincial debt
-- Major fiscal implications for province
-
-⚠️ **Incomplete risk protection:**
-- NL exposed to transmission cost overruns (100%)
-- NL exposed to CF upgrade cost overruns (65.8%)
-- Not "fully protected" as claimed
-
-⚠️ **Lack of transparency on pricing:**
-- No weights given for pricing formula components
-- Cannot assess whether prices will track market fairly
-
-⚠️ **Legitimate questions remain:**
-- "Led to a number of analysts raising legitimate questions about the actual benefit"
-- "Whether there was a better deal to be had"
-
-### Final Warning
-
-**Locke's closing statement:**
-
-> "Recognizing that our level of analytical sophistication has increased within the province, we still need to be wary of being snookered by others with more sophistication but different long-term goals and interests. We should learn from our history, not be constrained by it. We ought not to be afraid to make a good deal that is in our interest, but we need to be wary given that we do not know the future with precision."
-
----
-
-## KEY NUMBERS SUMMARY
-
-### Revenue Comparison
-
-| Metric | Current (2023) | MOU Average (to 2041) | Increase |
-|--------|---------------|----------------------|----------|
-| CF(L)Co revenue | $103M total | $1.17B | 11× |
-| Revenue from HQ + GWAC | $65M | $1.17B | 18× |
-| NL treasury (65.8% share) | ~$43M | $768M | 18× |
-| Price per kWh | 0.2¢ | 5.9¢ | 30× |
-
-### New Capacity
-
-| Project | Capacity | NL Access | Ownership |
-|---------|----------|-----------|-----------|
-| Gull Island | 2,250 MW | 225 MW | 60% NLH / 40% HQ |
-| CF Expansion | 1,100 MW | 135 MW | 65.8% NLH / 34.2% HQ |
-| CF Upgrade | 550 MW | 135 MW | 65.8% NLH / 34.2% HQ |
-| **Total New** | **3,900 MW** | **495 MW** | **Varies** |
-| Existing access | 5,428 MW | 525 MW | 65.8% NLH / 34.2% HQ |
-
-### Cost and Financing
-
-| Item | Amount | Notes |
-|------|--------|-------|
-| Total project costs | $35.0B | Includes financing |
-| NLH equity obligations | $5.7B | Varies by project |
-| NL debt required | $17-18B | After HQ $4.8B payment |
-| HQ payment for equity | $4.8B nominal | $3.5B present value |
-| Current provincial net debt | ~$17-18B | For comparison |
-
-### Employment
-
-| Type | Average | Peak |
-|------|---------|------|
-| Direct jobs | 3,000 | 5,000 |
-| Total (incl. indirect/induced) | 5,000 | 9,500 |
-| Construction period | 5-11 years | Varies by project |
-
----
-
-## CRITICAL GAPS IN MOU (LOCKE'S IDENTIFIED)
-
-1. **Pricing mechanism weights** - Cannot assess fairness of formula
-2. **Time profile of capital costs** - Cannot assess project phasing
-3. **Time profile of O&M costs** - Cannot assess operating viability
-4. **Production profile** - Cannot project actual output
-5. **Price expectations over time** - Cannot assess revenue projections
-6. **Detailed power flow breakdown** - Cannot verify capacity claims
-7. **Net present value calculations** - Cannot assess overall deal value
-8. **Economic benefits of Labrador power** - Cannot quantify development impact
-9. **Alternative scenario comparisons** - Cannot assess if deal is optimal
-10. **Conditions for HQ payments** - Cannot assess payment certainty
-
----
-
-## CONTEXT FOR CHURCHILL FALLS AI AGENT
-
-### How to Use This Analysis
-
-**Locke provides:**
-- Independent economic critique from respected MUN economist
-- Detailed fact-checking of government claims
-- Identification of information gaps in MOU
-- Risk assessment of projects
-- Financial implications for NL
-
-**Important notes:**
-- This is ONE perspective (critical but constructive)
-- Locke is NOT saying deal is bad, just that insufficient info to fully assess
-- Analysis done with publicly available information only
-- More detailed assessment would require confidential negotiating information
-
-### Key Takeaway for Users
-
-When asked about MOU economic viability, AI agent should present:
-1. Government's claimed benefits
-2. Locke's corrections and concerns
-3. Information gaps that prevent full assessment
-4. Note that final evaluation requires more detail than MOU provides
-
-**Balance:** MOU represents significant revenue increase BUT lacks transparency needed for thorough independent economic assessment.
-
----
-
-**DOCUMENT INFORMATION:**
-- Author: Wade Locke, Ph.D. (retired Professor of Economics, Memorial University)
-- Date: December 2024
-- Type: Independent economic analysis
-- Scope: Assessment of publicly available MOU information
-- Limitation: Analysis constrained by lack of detail in MOU documents
+CRITICAL GAPS IN MOU (LOCKE'S IDENTIFIED)
+Pricing mechanism weights - Cannot assess fairness of formula
+Time profile of capital costs - Cannot assess project phasing
+Time profile of O&M costs - Cannot assess operating viability
+Production profile - Cannot project actual output
+Price expectations over time - Cannot assess revenue projections
+Detailed power flow breakdown - Cannot verify capacity claims
+Net present value calculations - Cannot assess overall deal value
+Economic benefits of Labrador power - Cannot quantify development impact
+Alternative scenario comparisons - Cannot assess if deal is optimal
+Conditions for HQ payments - Cannot assess payment certainty

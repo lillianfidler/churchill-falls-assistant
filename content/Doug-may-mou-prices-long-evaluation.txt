@@ -1,0 +1,156 @@
+DOCUMENT TITLE: Proposed Prices for Existing Power Under the MOU — Detailed Evaluation
+AUTHOR: Dr. Doug May
+DOCUMENT TYPE: Presentation / Detailed Analysis
+VERSION: 1.1
+TOPIC: In-depth evaluation of the proposed pricing framework for existing Churchill Falls power under the December 2024 MOU, including analysis of the 5.9¢/kWh baseline price, present value methodology, GWAC pricing, and price adjustment mechanisms
+
+---
+
+INITIAL STATEMENT ON PROPOSED PRICES FOR EXISTING CF POWER
+
+Dr. May understands Hydro-Québec's need for increased supply, given expanding demand and climate change, and the reduction in hydroelectric generation. From Quebec's cost-minimizing perspective, setting annual prices over long-term contracts would be ideal. The proposed prices in the MOU are higher than the existing ones but appear not to be tied to specific details, such as replacement rates or prices in external competitive export markets. Any of HQ's domestic prices seem to be based on the cost-minimizing principles of a public utility monopolist, in which potential rents are dissipated to increase equalization payments to the government.
+
+The reference to a forecast baseline price of 5.9¢/kWh is based on a faulty present-value calculation. Given significant structural changes on the demand side, forecasting beyond 5 years is risky. Any forecast beyond 10 years is, in May's opinion, unreasonable and inappropriate.
+
+The use of present-value analysis for the proposed forecasted prices, while ignoring potential changes in future costs, is misleading. One cost ignored is the almost non-existent water royalties under the current agreement. Given water scarcity and the need to turn to other energy sources such as wind power or gas, this oversight seems fatal to any proposed pricing scheme.
+
+According to the MOU, there appears to be no rationale for the proposed 5.822% discount rate for nominal prices.
+
+Presenting cumulative revenue projections over a 51-year period in nominal, real, or present-value dollars can be misleading to the public because it ignores the timing of cash receipts.
+
+May's suggestion is to either ignore the prices or treat them with great caution. The assurance of an adjustment process is so vague and lacking in detail that it can be ignored.
+
+QUOTE (Wade Locke): "Recognizing that our level of analytical sophistication has increased within the province, we still need to be wary of being snookered by others with more sophistication but different long-term goals and interests." — Wade Locke, An Assessment of the December 12, 2024, Churchill Falls MOU between Newfoundland and Labrador, and Quebec, January 2025, p.21
+
+---
+
+FORECASTED PRICES FOR EXISTING CF GENERATION UNDER THE MOU
+
+Walter Parsons (Vice President, Transmissions Interconnections and Business Development, Newfoundland and Labrador Hydro) produced a chart of forecasted annual prices in nominal dollars under the MOU. Key data points from the Forecast Average Price chart (CF PPA Existing Generation, nominal dollars): the price starts at 1.63¢/kWh in 2025 and rises to 37.24¢/kWh by 2075. Note: The prices noted comprise only the generation supply component of customers' bills. Other components on customers' bills include transmission and distribution costs.
+
+The prices are in "nominal" terms assuming an annual inflation rate of 2%. Converting to real/constant dollar (inflation-adjusted) prices yields a constant dollar price in 2041 of 5.62¢/kWh and 13.60¢/kWh in 2075.
+
+CRITICAL: The prices are paid to CF(L)Co by HQ, which owns 34.2% of CF. The effective price to HQ in 2041 would therefore be 3.69¢/kWh (adjusted for ownership).
+
+Parsons notes that the new prices are 30 times higher than the existing prices, but it should also be noted that current prices include the prices for electricity sold under the GWAC (Guaranteed Winter Availability Contract), estimated to be about 5.9¢/kWh for 2026.
+
+Parsons emphasizes that the prices are forecasted and that the inflation rate is assumed to be 2% annually. While Parsons does note that these are only forecasted prices, they are treated as expected prices, and many members of the public will treat them as "certainty" prices. Parsons acknowledges that other prices might occur, raising the question of why alternative scenarios are not presented.
+
+---
+
+FORECASTING BEST PRACTICES
+
+Forecasting periods should be broken into 1-3 years, 3-7 years, 10-20 years, and beyond 20 years. In the 1-3 year period, forecasts can be tricky because of winter demand. In the next period, structural changes begin to dominate. Beyond 20 years, scenario bands should be used and not point forecasts. Short-term forecasts should include a range and note the importance of winter and summer conditions on forecasts.
+
+---
+
+THE "BASELINE" PRICE OF 5.9¢/kWh — METHODOLOGY ERROR
+
+It is not clear how these prices were arrived at. May believes the baseline price was intended to be the present value of the average prices. The methodology used by Parsons: convert nominal prices to constant dollars, calculate the average value of these constant dollars, then convert this final value to present values using a discount rate of 3.822%.
+
+NOTE: It does not matter whether the present value was calculated using constant or current dollars, since changes in the discount rate yield the same present value.
+
+Open questions: Were the prices determined first, or was the baseline price set and the various annual prices determined from it? Why did Parsons calculate this present value average price of 5.9¢/kWh?
+
+THE RELATIVE IMPORTANCE OF THE BASELINE PRICE — The GNL presentation refers to the 5.9¢ as the "effective" price, implying that the price can be compared to other reference prices:
+
+REFERENCE PRICE COMPARISON TABLE:
+- New York ISO YTD: 4.3¢ per kWh
+- ISO New England YTD: 5.3¢ per kWh
+- New CF PPA: 5.9¢ per kWh
+- HQ Long-Term Contracts (NECEC and CHPE): 6.5¢ per kWh
+SOURCE: GNL, A New Chapter for Hydroelectric Generation in Labrador, Slide 20.
+
+---
+
+WADE LOCKE'S VERIFICATION OF FORECASTED PRICES
+
+Wade Locke's estimates in his Assessment paper verify Parsons' forecasted nominal prices. Locke's analysis (Figure 12) shows two lines: the implied nominal prices for power purchased from CF(L)Co by HQ (rising from approximately 1.51¢/kWh in 2025 to 36.60¢/kWh in 2075), and the present value of those prices (declining from about 1.51¢/kWh in 2025 to 2.04¢/kWh in 2075, peaking at 3.18¢/kWh around 2061).
+
+---
+
+THE CRITICAL PRESENT VALUE ERROR: 2.64¢/kWh vs. 5.9¢/kWh
+
+Wade Locke estimates the average present value price over the period from 2025 to 2075 to be 2.64¢/kWh. Parsons calculates the average price to be 5.9¢/kWh. Locke employs the correct methodology for calculating the PV for each of the 51 years. Parsons calculates the present value of the average price, effectively assuming that only 2050 is relevant. Parsons makes a serious error.
+
+TABLE: Implied Nominal and Present Value of Prices to HQ for Existing Electricity Generation from CF (cents per kWh):
+
+                                          | 2025-2075 Sum | 2025-2041 Sum | 2042-2075 Sum
+Implied Nominal Prices (cents per kWh)    |    15.98      |     4.34      |    21.80
+PV Implied Nominal Prices (cents per kWh) |     2.64      |     2.38      |     2.77
+
+The correct PV estimation of the base price is 2.64¢/kWh, NOT Parsons' 5.9¢/kWh.
+
+---
+
+MOU'S EXPECTED PRICES AND GNL REVENUE
+
+Wade Locke notes in footnote 4 of his paper that while CF(L)Co will receive $19.8 billion or $1.17 billion on average to 2041, that is not money to treasury. It is money to CF(L)Co of which NLH owns 65.8%. As such, the amount that could flow to the provincial treasury is $13.1 billion or an annual average of $768 million to 2041. The reference to CF(L)Co receipts seems to take attention away from the fact that to some degree HQ is paying itself.
+
+---
+
+MISLEADING PRICE COMPARISONS
+
+NLH's statement that the proposed price under the MOU is multiple times the existing price is misleading. The existing winter prices are covered by the Guaranteed Winter Availability Contract (GWAC), as Locke points out. Under the Contract conditions as reported by Locke, the price in 2026 should be $56.77/MWh or 5.7¢/kWh.
+
+Data from NLH for CF(L)Co could show the prices actually paid under the GWAC, but such data are available only quarterly.
+
+GWAC QUARTERLY DATA:
+- Q1 2025: GWAC revenue to CF(L)Co from HQ: $22.27 million
+- Q1 2025: HQ energy sales from CF(L)Co: $16.4 million
+
+NOTE: Price formulas under the GWAC disappear under the MOU.
+
+---
+
+PRICE ADJUSTMENTS FOR EXISTING POWER UNDER THE MOU
+
+Wade Locke wrote in his Assessment that while Schedule F of the MOU does indicate that the forecast payments will be "reflective of wholesale electricity market value in Québec; replacement costs in Québec; and wholesale electricity market value in northeast export markets," there is no indication of the weights attached to either in the pricing mechanism. May's response: This is an important fact.
+
+Moreover, the wholesale electricity market in Quebec is not competitive, but is set by HQ, which acts as a cost-minimizing monopolist when selling power in Quebec. Moreover, it acted as a monopsonist when transferring power from CF(L)Co, in which it is a substantial shareholder (34.2%).
+
+The replacement costs in Quebec would be a facility that could meet similar loads and power during peak winter months. Even if we had such information, the optimal strategy for CF(L)Co might be to sell its power in the more competitive northeast export markets, which reflect daily and seasonal price changes. Disclosure: Last spring, May asked NLH about replacement costs but has not received a reply.
+
+Electricity markets are undergoing major structural changes due to both demand and supply forces. Specific, not vague, adjustment procedures are needed to deal with these realities.
+
+---
+
+ASSESSMENT OF THE PROPOSED PRICING STRUCTURE FOR EXISTING POWER
+
+Wade Locke wrote: "The MOU document lacks sufficient detail needed to demonstrate that the deal or the contract that is expected to ensue from this MOU is better than the 1969 contract." (Page 1) May's assessment: Correct.
+
+Key findings:
+
+The baseline price of 5.9¢/kWh is calculated using an inappropriate concept and faulty procedures based on expected future prices that are too distant to be reasonable.
+
+The suggested price adjustment process is vague in the extreme, depending on the distribution of electricity to individuals, businesses, and public organizations in Quebec, and on cost-minimizing strategies. There is no "market" as generally understood by the concept. Replacement costs are unknown.
+
+Reporting revenue flows to CF(L)Co may be correct in one sense, but it is misleading because it does not point out that HQ is a substantial shareholder and the principal buyer.
+
+Reporting that the proposed power price under the MOU is X times the existing rate is misleading, as it ignores the revenue generated and the prices charged under the GWAC. Also note that the GWAC ends under the proposed MOU.
+
+The length of the proposed contract, to May's knowledge, is much longer than any other external (outside Quebec) contract that HQ has signed.
+
+May believes that the use of set prices as outlined in the MOU is also inconsistent with other contracts HQ has with parties outside Quebec. Seasonal pricing promotes the efficient use of electricity.
+
+The question of how a real discount rate of 3.822% was chosen remains unanswered.
+
+Coming back to Wade Locke's first point, that there is a lot of missing information in the MOU to basically evaluate the desirability, seems to often apply. The information which is provided is at times not reasonable or misleading.
+
+One last point: It is well known that Quebec's electricity prices are the lowest in Canada and the United States. The reason is that electricity is generated by hydraulic turbines. The productivity of these turbines depends on the volume of water in the river and the drop in water level as it hits the turbines. Regarding Churchill Falls, the Churchill River is unique. The cost of the water as an energy source is virtually nothing. It is probably this factor, coupled with HQ's strategy of minimizing costs to provide low-cost electricity and perhaps increasing the size of equalization payments, that accounts for the very low water rents.
+
+---
+
+ACRONYMS:
+MOU — Memorandum of Understanding (December 12, 2024, between Quebec and Newfoundland and Labrador)
+CF — Churchill Falls Generating Station
+CF(L)Co — Churchill Falls (Labrador) Corporation
+NLH — Newfoundland and Labrador Hydro
+GNL — Government of Newfoundland and Labrador
+HQ — Hydro-Québec
+NPV — Net Present Value
+PV — Present Value
+GWAC — Guaranteed Winter Availability Contract
+NECEC — New England Clean Energy Connect
+CHPE — Champlain Hudson Power Express
+PPA — Power Purchase Agreement

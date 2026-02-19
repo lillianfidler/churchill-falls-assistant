@@ -1,0 +1,63 @@
+DOCUMENT TITLE: Québec's Electricity Supply Problem
+AUTHOR: Dr. Doug May
+DOCUMENT TYPE: Presentation / Data Analysis (CRPP Series, follows Video #3-A on Imports)
+TOPIC: Analysis of Quebec's growing electricity supply deficit, falling domestic production, increasing import dependency, and implications for Churchill Falls negotiations
+
+---
+
+THE ROLE OF CHURCHILL FALLS IN QUEBEC'S ELECTRICITY PICTURE
+
+CF electricity is a necessary "import" to Hydro-Quebec (HQ). It guarantees Quebec a long-term, secure, and extremely cheap source of electricity to meet its domestic needs and to profitably export electricity to NB, particularly to the USA. CF electricity enables HQ to provide Quebec households and businesses with the cheapest power in Canada and the G7, including the USA. Some would say that NL "subsidizes" the low prices. The key to CF electricity's low price is the almost free cost of the vast water resources of the Churchill River. As the former Government of Newfoundland and Labrador wrote in its "Our Chapter" document, it hopes the MOU will unlock the "value" of CF.
+
+---
+
+HQ'S IMPORT PICTURE: 2022 AND EARLIER
+
+In 2022, 14.0% of the electricity available in Quebec came from imports. Of that, 13.7% of the available power came from other provinces, some from Ontario but the vast majority from Churchill Falls. Only 0.3% came from the USA. Before 2022, HQ rarely imported power from the USA.
+
+DATA SOURCE: Statistics Canada, Table 25-10-0016-01. According to CER, all imports by HQ from the USA are from NY state, though HQ says differently.
+
+---
+
+THE RESTRUCTURING OF HQ'S IMPORT PICTURE: 2024 AND 2025
+
+In the first eight months of 2025, total imports were down 4.2% from the same period the previous year. Imports from other provinces were down 13.6% during this period. Imports from the USA were up 111.4%.
+
+In the first eight months of 2025, imports from the USA exceeded exports. Traditionally, during this same time period, exports to the USA are greater than imports. This is an amazing change in electricity trading patterns with the USA.
+
+In 2024, 17.4% of the electricity available to Quebec came from imports. Of that, 15.7% came from other provinces. An approximate estimation is that about 31.5 TWh of electricity imported into Quebec in 2024 came from Churchill Falls, representing about 80.6% of the total imported power. The remaining 1.7% came from the USA.
+
+---
+
+DATA CAUTION
+
+Statistics Canada table 25-10-0016-01 on imports, exports, and domestic use concerns total electricity for Quebec, not solely Hydro-Québec. Hydro-Quebec's production is about 90% of the total generation in Quebec. Most imports and exports are believed to be through HQ. Non-HQ production is likely to be primarily for domestic industrial production.
+
+Statistics Canada considers CF's electricity to be an "import" into Quebec and an "export" from NL. Since HQ is a substantial shareholder of CF(L)Co, which owns the CF generating station, HQ does not include CF power as an "import" in its own publications.
+
+---
+
+CONCLUSIONS
+
+There is a growing dependency in Quebec on imported power, particularly relatively expensive electricity (about 25 times more expensive than CF electricity) from the USA.
+
+SPECIFIC PRICE DATA (per kWh, imported power from NY into Quebec):
+- First Quarter 2025: 10.25¢
+- Second Quarter 2025: 5.04¢
+- Year to date (September 2025): 7.15¢
+
+Churchill Falls, with its super cheap power, has reached its generating capacity and cannot export more power to Quebec.
+
+HQ has a long-term security problem with a cheap electricity supply.
+
+---
+
+ACRONYMS:
+CF — Churchill Falls Generating Station
+CF(L)Co — Churchill Falls (Labrador) Corporation
+HQ — Hydro-Québec
+NL — Newfoundland and Labrador
+NB — New Brunswick
+MOU — Memorandum of Understanding (December 12, 2024)
+CER — Canada Energy Regulator
+CRPP — Churchill River Power Project (video series)

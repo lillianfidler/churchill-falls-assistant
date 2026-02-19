@@ -1,250 +1,103 @@
-CHURCHILL FALLS (LABRADOR) CORPORATION LIMITED
-2024 ANNUAL REPORT - FACTUAL SUMMARY
-Facts as Reported in Audited Financial Statements
+DOCUMENT TITLE: Churchill Falls (Labrador) Corporation Limited - 2024 Annual Report Factual Summary
+DOCUMENT TYPE: Facts as reported in audited financial statements
+AUDITOR: Deloitte LLP, St. John's, NL
+AUDIT DATE: March 14, 2025
+AUDIT OPINION: Unqualified (clean opinion)
+ACCOUNTING STANDARDS: IFRS Accounting Standards (IASB)
+PERIOD COVERED: Year ended December 31, 2024
+OWNERSHIP: Newfoundland and Labrador Hydro 65.8%, Hydro-Quebec 34.2%
+NOTE: All figures in thousands of Canadian dollars unless otherwise stated. This summary contains only factual information from the audited 2024 Annual Report. No analysis or interpretation included.
 
-Document: CF(L)Co Consolidated Financial Statements - Year ended December 31, 2024
-Auditor: Deloitte LLP, St. John's, NL
-Audit Date: March 14, 2025
-Audit Opinion: Unqualified (clean opinion)
-Accounting Standards: IFRS Accounting Standards (IASB)
+---
 
-OWNERSHIP STRUCTURE:
-- Newfoundland and Labrador Hydro: 65.8%
-- Hydro-Québec: 34.2%
+FINANCIAL RESULTS 2024
 
-NOTE: All figures in thousands of Canadian dollars unless otherwise stated
+REVENUE
 
-===== FINANCIAL RESULTS (2024) =====
+Total revenue in 2024 was $195,496 thousand ($195.5 million), up from $164,573 thousand ($164.6 million) in 2023, an increase of $30,923 thousand or 18.8%.
 
-REVENUE:
-Total Revenue 2024: $195,496 thousand ($195.5 million)
-Total Revenue 2023: $164,573 thousand ($164.6 million)
-Change: +$30,923 thousand (+18.8%)
+Revenue breaks down as follows for 2024: energy sales at $125,542 thousand (64.2% of total revenue), guaranteed winter availability at $38,293 thousand (19.6%), other revenue at $22,615 thousand (11.6%), and net finance income at $9,046 thousand (4.6%).
 
-Revenue Breakdown 2024:
-- Energy sales: $125,542 thousand (64.2% of total revenue)
-- Guaranteed winter availability: $38,293 thousand (19.6%)
-- Other revenue: $22,615 thousand (11.6%)
-- Net finance income: $9,046 thousand (4.6%)
+For comparison, 2023 revenue was: energy sales at $113,070 thousand (68.7%), guaranteed winter availability at $38,897 thousand (23.6%), net finance income at $8,964 thousand (5.4%), and other revenue at $3,642 thousand (2.2%).
 
-Revenue Breakdown 2023:
-- Energy sales: $113,070 thousand (68.7%)
-- Guaranteed winter availability: $38,897 thousand (23.6%)
-- Net finance income: $8,964 thousand (5.4%)
-- Other revenue: $3,642 thousand (2.2%)
+Year-over-year changes: energy sales increased $12,472 thousand or 11.0%, guaranteed winter availability decreased $604 thousand or 1.6%, other revenue increased $18,973 thousand or 520.9%, and net finance income increased $82 thousand or 0.9%.
 
-Year-over-Year Revenue Changes:
-- Energy sales: +$12,472 thousand (+11.0%)
-- Guaranteed winter availability: -$604 thousand (-1.6%)
-- Other revenue: +$18,973 thousand (+520.9%)
-- Net finance income: +$82 thousand (+0.9%)
+PROFIT
 
-PROFIT:
-Profit for the year 2024: $81,533 thousand ($81.5 million)
-Profit for the year 2023: $54,099 thousand ($54.1 million)
-Change: +$27,434 thousand (+50.7%)
+Profit for the year 2024 was $81,533 thousand ($81.5 million), up from $54,099 thousand ($54.1 million) in 2023, an increase of $27,434 thousand or 50.7%. Total comprehensive income was $83,065 thousand in 2024 compared to $52,462 thousand in 2023, an increase of $30,603 thousand or 58.3%.
 
-Total comprehensive income 2024: $83,065 thousand
-Total comprehensive income 2023: $52,462 thousand
-Change: +$30,603 thousand (+58.3%)
+EXPENSES
 
-EXPENSES:
-Total Expenses 2024: $113,963 thousand
-Total Expenses 2023: $110,474 thousand
-Change: +$3,489 thousand (+3.2%)
+Total expenses in 2024 were $113,963 thousand, up from $110,474 thousand in 2023, an increase of $3,489 thousand or 3.2%. The breakdown for 2024: operating costs at $70,798 thousand (62.1% of total expenses), depreciation and amortization at $30,640 thousand (26.9%), and other expense at $12,525 thousand (11.0%).
 
-Expense Breakdown 2024:
-- Operating costs: $70,798 thousand (62.1% of total expenses)
-- Depreciation and amortization: $30,640 thousand (26.9%)
-- Other expense: $12,525 thousand (11.0%)
+Year-over-year changes: operating costs increased $125 thousand or 0.2%, depreciation and amortization decreased $6,783 thousand or 18.1%, and other expense increased $10,147 thousand or 426.7%.
 
-Expense Breakdown 2023:
-- Operating costs: $70,673 thousand (64.0%)
-- Depreciation and amortization: $37,423 thousand (33.9%)
-- Other expense: $2,378 thousand (2.2%)
+Specific operating costs from the notes include salaries and benefits over $43 million, maintenance at $12.7 million, and water royalties at $8.79 million.
 
-Year-over-Year Expense Changes:
-- Operating costs: +$125 thousand (+0.2%)
-- Depreciation and amortization: -$6,783 thousand (-18.1%)
-- Other expense: +$10,147 thousand (+426.7%)
+---
 
-SPECIFIC OPERATING COSTS (from notes):
-- Salaries and benefits: Over $43 million
-- Maintenance: $12.7 million
-- Water royalties: $8.79 million
+BALANCE SHEET AS AT DECEMBER 31 2024
 
-===== BALANCE SHEET (As at December 31, 2024) =====
+Total assets in 2024 were $1,294,705 thousand ($1.29 billion), up from $1,203,187 thousand ($1.20 billion) in 2023, an increase of $91,518 thousand or 7.6%.
 
-TOTAL ASSETS:
-2024: $1,294,705 thousand ($1.29 billion)
-2023: $1,203,187 thousand ($1.20 billion)
-Change: +$91,518 thousand (+7.6%)
+Current assets in 2024 totalled $234,234 thousand comprising cash at $138,670 thousand, trade and other receivables at $51,630 thousand, inventories at $22,970 thousand, current portion of reserve fund at $18,236 thousand, restricted cash at $298 thousand, and prepayments at $2,430 thousand.
 
-CURRENT ASSETS 2024: $234,234 thousand
-Breakdown:
-- Cash: $138,670 thousand
-- Trade and other receivables: $51,630 thousand
-- Inventories: $22,970 thousand
-- Current portion of reserve fund: $18,236 thousand
-- Restricted cash: $298 thousand
-- Prepayments: $2,430 thousand
+Non-current assets in 2024 comprised property, plant and equipment at $1,002,582 thousand (77.4% of total assets), reserve fund at $57,135 thousand, and intangible assets at $754 thousand.
 
-CURRENT ASSETS 2023: $197,991 thousand
-Breakdown:
-- Cash: $130,725 thousand
-- Trade and other receivables: $25,826 thousand
-- Inventories: $21,854 thousand
-- Current portion of reserve fund: $16,520 thousand
-- Restricted cash: $298 thousand
-- Prepayments: $2,768 thousand
+Total liabilities in 2024 were $177,698 thousand and total equity was $1,117,007 thousand. Current liabilities of $69,963 thousand comprised trade and other payables at $51,675 thousand, rental and royalty payable at $8,679 thousand, deferred revenue at $6,112 thousand, current portion of decommissioning and environmental liabilities at $1,486 thousand, current portion of deferred credits at $1,514 thousand, and current portion of deferred contributions at $497 thousand. Non-current liabilities were $107,735 thousand.
 
-NON-CURRENT ASSETS 2024:
-- Property, plant and equipment: $1,002,582 thousand (77.4% of total assets)
-- Reserve fund: $57,135 thousand
-- Intangible assets: $754 thousand
+---
 
-NON-CURRENT ASSETS 2023:
-- Property, plant and equipment: $945,487 thousand (78.6% of total assets)
-- Reserve fund: $58,905 thousand
-- Intangible assets: $804 thousand
+KEY FINANCIAL RATIOS
 
-LIABILITIES AND EQUITY:
-Total Liabilities 2024: $177,698 thousand
-Total Equity 2024: $1,117,007 thousand
+Profit margin in 2024 was 41.7% (profit $81.5 million divided by revenue $195.5 million), up from 32.9% in 2023. Equity ratio was 86.3% (equity $1,117 million divided by total assets $1,295 million), up from 85.9% in 2023. Current ratio was 3.35 (current assets $234 million divided by current liabilities $70 million), up from 2.83 in 2023.
 
-Total Liabilities 2023: $169,963 thousand
-Total Equity 2023: $1,033,224 thousand
+---
 
-CURRENT LIABILITIES 2024: $69,963 thousand
-Breakdown:
-- Trade and other payables: $51,675 thousand
-- Rental and royalty payable: $8,679 thousand
-- Deferred revenue: $6,112 thousand
-- Current portion of decommissioning/environmental liabilities: $1,486 thousand
-- Current portion of deferred credits: $1,514 thousand
-- Current portion of deferred contributions: $497 thousand
+YEAR-OVER-YEAR CHANGES
 
-NON-CURRENT LIABILITIES 2024: $107,735 thousand
+Cash holdings increased $7,945 thousand or 6.1%. Receivables increased $25,804 thousand or 99.9%. Property, plant and equipment increased $57,095 thousand or 6.0%.
 
-SHAREHOLDERS' EQUITY 2024: $1,117,007 thousand
-Components: Share capital, Contributed capital, Reserves, Retained earnings
+---
 
-===== KEY FINANCIAL RATIOS (Calculated from financial statements) =====
+WATER ROYALTIES
 
-PROFIT MARGIN:
-2024: 41.7% (Profit $81.5M ÷ Revenue $195.5M)
-2023: 32.9% (Profit $54.1M ÷ Revenue $164.6M)
+Payment to the NL government in 2024 was $8,790 thousand ($8.79 million) at a rate of 0.025 cents per kWh paid to the Government of Newfoundland and Labrador.
 
-EQUITY RATIO:
-2024: 86.3% (Equity $1,117M ÷ Total Assets $1,295M)
-2023: 85.9% (Equity $1,033M ÷ Total Assets $1,203M)
+---
 
-CURRENT RATIO:
-2024: 3.35 (Current Assets $234M ÷ Current Liabilities $70M)
-2023: 2.83 (Current Assets $198M ÷ Current Liabilities $70M)
+OWNERSHIP SHARE OF 2024 PROFIT
 
-===== YEAR-OVER-YEAR CHANGES =====
+NL Hydro's 65.8% share of $81,533 thousand profit equals $53,649 thousand ($53.6 million). Hydro-Quebec's 34.2% share equals $27,884 thousand ($27.9 million).
 
-CASH HOLDINGS:
-Change: +$7,945 thousand (+6.1%)
+---
 
-RECEIVABLES:
-Change: +$25,804 thousand (+99.9%)
+OWNERSHIP SHARE OF SHAREHOLDERS EQUITY
 
-PROPERTY, PLANT & EQUIPMENT:
-Change: +$57,095 thousand (+6.0%)
+Total shareholders' equity in 2024 was $1,117,007 thousand. NL Hydro's 65.8% share equals $734,991 thousand ($735.0 million). Hydro-Quebec's 34.2% share equals $382,016 thousand ($382.0 million).
 
-===== WATER ROYALTIES =====
+---
 
-PAYMENT TO NL GOVERNMENT (2024): $8,790 thousand ($8.79 million)
+TIMING CONTEXT
 
-RATE: 0.025¢/kWh paid to Government of Newfoundland and Labrador
+This report covers the final full year before MOU pricing takes effect. MOU pricing begins January 1, 2025.
 
-===== OWNERSHIP SHARE OF 2024 PROFIT =====
+---
 
-NL HYDRO SHARE (65.8%):
-65.8% of $81,533 thousand = $53,649 thousand ($53.6 million)
+FINANCIAL STATEMENT NOTES
 
-HYDRO-QUÉBEC SHARE (34.2%):
-34.2% of $81,533 thousand = $27,884 thousand ($27.9 million)
+The full annual report includes detailed notes covering accounting policies and IFRS compliance, property plant and equipment depreciation methods, revenue recognition and energy sales timing, related party transactions with NLH and HQ, commitments and contingencies including long-term obligations, water power lease terms with the NL government, power contract terms with customers, employee benefit pension and other obligations, decommissioning and environmental obligations, and financial instruments and risk management.
 
-===== OWNERSHIP SHARE OF SHAREHOLDERS' EQUITY =====
+---
 
-TOTAL SHAREHOLDERS' EQUITY 2024: $1,117,007 thousand
+KEY STATISTICS SUMMARY
 
-NL HYDRO SHARE (65.8%):
-65.8% of $1,117,007 thousand = $734,991 thousand ($735.0 million)
+Financial performance 2024: total revenue $195.5 million, energy sales $125.5 million, guaranteed winter availability $38.3 million, net profit $81.5 million, operating costs $70.8 million, profit margin 41.7%.
 
-HYDRO-QUÉBEC SHARE (34.2%):
-34.2% of $1,117,007 thousand = $382,016 thousand ($382.0 million)
+Financial position 2024: total assets $1.29 billion, property plant and equipment $1.00 billion, cash $138.7 million, total equity $1.12 billion, equity ratio 86.3%.
 
-===== TIMING CONTEXT =====
+Cash management 2024: cash holdings $138.7 million, current ratio 3.35, receivables $51.6 million.
 
-FISCAL YEAR: January 1, 2024 to December 31, 2024
+Ownership returns 2024: NL Hydro profit share at 65.8% equals $53.6 million, Hydro-Quebec profit share at 34.2% equals $27.9 million.
 
-AUDIT COMPLETION: March 14, 2025
-
-RELATION TO MOU: This report covers the final full year before MOU pricing takes effect (MOU pricing begins January 1, 2025)
-
-===== FINANCIAL STATEMENT NOTES =====
-
-The full annual report includes detailed notes covering:
-1. Accounting policies - IFRS compliance
-2. Property, plant and equipment - Depreciation methods
-3. Revenue recognition - Energy sales timing
-4. Related party transactions - Transactions with NLH and HQ
-5. Commitments and contingencies - Long-term obligations
-6. Water power lease - Terms with NL government
-7. Power contracts - Terms with customers
-8. Employee benefits - Pension and other obligations
-9. Decommissioning - Environmental obligations
-10. Financial instruments - Risk management
-
-===== AUDITOR'S OPINION =====
-
-OPINION TYPE: Unqualified (clean opinion)
-DATE ISSUED: March 14, 2025
-
-AUDITOR'S STATEMENT:
-Financial statements present fairly in all material respects, in accordance with IFRS Accounting Standards. No qualifications or concerns noted. Going concern basis appropriate.
-
-===== KEY STATISTICS SUMMARY =====
-
-Financial Performance (2024):
-- Total Revenue: $195.5 million
-- Energy Sales: $125.5 million
-- Guaranteed Winter Availability: $38.3 million
-- Net Profit: $81.5 million
-- Operating Costs: $70.8 million
-- Profit Margin: 41.7%
-
-Financial Position (2024):
-- Total Assets: $1.29 billion
-- Property, Plant & Equipment: $1.00 billion
-- Cash: $138.7 million
-- Total Equity: $1.12 billion
-- Equity Ratio: 86.3%
-
-Cash Management (2024):
-- Cash holdings: $138.7 million
-- Current ratio: 3.35
-- Receivables: $51.6 million
-
-Ownership Returns (2024):
-- NL Hydro profit share (65.8%): $53.6 million
-- Hydro-Québec profit share (34.2%): $27.9 million
-
-Government Payments (2024):
-- Water royalties to NL: $8.79 million (0.025¢/kWh)
-
-===== DOCUMENT INFORMATION =====
-
-Company: Churchill Falls (Labrador) Corporation Limited
-Report Type: Consolidated Financial Statements
-Period Covered: Year ended December 31, 2024
-Auditor: Deloitte LLP, St. John's, Newfoundland and Labrador
-Audit Completion Date: March 14, 2025
-Accounting Standards: IFRS Accounting Standards (International Accounting Standards Board)
-Audit Opinion: Unqualified (clean opinion)
-
-NOTE: This summary contains only factual information from Churchill Falls (Labrador) Corporation Limited's audited 2024 Annual Report. No analysis or interpretation included.
+Government payments 2024: water royalties to NL $8.79 million at 0.025 cents per kWh.

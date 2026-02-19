@@ -1,22 +1,17 @@
-CIMFP Exhibit P-00008 Page 1
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
+DOCUMENT TITLE: A History of Negotiations to Develop the Hydroelectric Resources of the Churchill River from 1949 to 2007
+AUTHOR: Jason L. Churchill, Cleo Research Associates
+SOURCE: Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
+DATE: August 16, 2018
+DOCUMENT TYPE: Historical research report commissioned for the Muskrat Falls Inquiry (CIMFP Exhibit P-00008)
+SCOPE: Comprehensive history of Churchill River hydroelectric development negotiations across seven premiers, from Confederation (1949) to Danny Williams' Energy Plan (2007)
+
+---
 
 A History of
 Negotiations to Develop the Hydroelectric Resources of the
 Churchill River from 1949 to 2007
 
-Cleo Research Associates Report for the Commission of Inquiry
-Respecting the Muskrat Falls Project
-16 August 2018
-
 By Jason L. Churchill
-
-
-CIMFP Exhibit P-00008 Page 2
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 Contents
 
 Introduction................................................................................................................................................... 1
@@ -50,12 +45,6 @@ The end of the beginning for the Williams' government...........................
 Conclusion ..................................................................................................................................................25
 Appendix: Additional Readings..................................................................................................................27
 Endnotes.....................................................................................................................................................29
-
-
-CIMFP Exhibit P-00008 Page 3
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 Introduction
 
 In September 2007, the government of Danny Williams released its much anticipated Focusing
@@ -99,12 +88,6 @@ Additional Reading has been included to point to more in-depth analysis.
 were renamed to honour recently deceased British Prime Minister W.S. Churchill. However, for the sake of clarity,
 this essay will refer to Churchill River and Falls through out, except where Hamilton River and Falls are in a quoted
 record.
-
-
-CIMFP Exhibit P-00008 Page 4
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 Overview of the Churchill River Watershed
 
 Deep in Labrador's vast interior, the 856 km long Churchill River, with its approximate 92,500
@@ -151,12 +134,6 @@ The Canadians contended that the Labrador coast referred to a strip of land exte
 back from the high water mark.8 The Canadian definition was rejected on two fronts. Testimony
 from medical practitioner and publicist, Sir Dr. Wilfred T. Grenfell,9 illustrated the inadequacy
 of the one-mile limit. After years of medical and philanthropic service to the people on the
-
-
-CIMFP Exhibit P-00008 Page 5
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 Labrador coast, Grenfell was considered to be an expert on the subject. He stated that the
 Canadian definition of a mile was insufficient, as Labrador fishermen would travel anywhere
 from three to five miles inland to get firewood.10 In addition, the proposed strip would have,
@@ -202,16 +179,10 @@ components were in place. However viability remained contingent on accessing Nor
 energy markets. Quebec insisted that if Churchill Falls electricity was to pass through its
 territory then it would set the terms of access. This insistence created three possible paths to
 development:
-
-
-CIMFP Exhibit P-00008 Page 6
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
-• develop Churchill Falls according to Quebec terms,
-• have the federal government use its constitutional powers under section 92 (10) (c) of the
+develop Churchill Falls according to Quebec terms,
+have the federal government use its constitutional powers under section 92 (10) (c) of the
 British North America Act (BNA Act) to enable market access, or
-• find an alternate route to the North American energy markets that did not include
+find an alternate route to the North American energy markets that did not include
 traversing Quebec territory.
 
 Quebec's key term - Nationalise BRINCO
@@ -253,12 +224,6 @@ delivered to Boston and New York terminals.22
 
 A further evaluation by another engineering firm, Acres Canadian Bechtel, concluded that the
 optimum price was expected to be in the area of 4 to 4.5 mils/kwh US. The high cost of
-
-
-CIMFP Exhibit P-00008 Page 7
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 transmission would mean the economic margin would be very small and would "depend on
 being able to provide non-profit transmission financed entirely by borrowing at very low rates of
 interest."23
@@ -304,12 +269,6 @@ Laurent's cabinet. As early as 1956, Lesage stated that the development and "tra
 power from Labrador to any other province...[was] purely a provincial responsibility."29
 Smallwood did not wish to jeopardise talks with Quebec and decided to send civil servant
 Gordon F. Pushie to represent the province as an observer at Diefenbaker's conference.30
-
-
-CIMFP Exhibit P-00008 Page 8
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 Diefenbaker had been encouraged by some Members of Parliament (MPs) to push ahead with the
 grid without taking the time to consult and seek provincial agreement in advance. However,
 Diefenbaker decided instead to establish the Committee on Long Distance Transmission (CLDT)
@@ -357,12 +316,6 @@ It was not evident during the CLDT deliberations, or in the subsequent decades, 
 government favoured using its jurisdictional authority to declare transmissions lines from
 Labrador, through Quebec and to the markets to be in the national interest. Such a declaration
 could have been an important step in nullifying provincial objections.39
-
-
-CIMFP Exhibit P-00008 Page 9
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 There is a great deal of controversy over to what extent Smallwood pursued the Section
 92(10)(c) option. There are indications that the offer may have been informally discussed, and it
 was certainly a topic of consideration at both the provincial and federal levels.
@@ -409,12 +362,6 @@ Rene Levesque explained that without Churchill Falls, Hydro-Quebec would have ha
 financing large projects and borrowing money from the international financial markets where
 money was "rare and expensive." While Hydro-Quebec could have "[lived] without Churchill
 Falls...it [could not] live without them if it [wanted] to live the easy life."46
-
-
-CIMFP Exhibit P-00008 Page 10
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 Beyond the lucrative sales to the Northeastern United States, having access to Churchill Falls
 power became an integral part of Hydro-Quebec's domestic operations. For example, one of the
 key advantages to Hydro-Quebec was the flexibility it gained during the winter months. HydroQuebec secured the ability to take more electricity from Churchill Falls during the winter months
@@ -460,12 +407,6 @@ government was having serious misgivings about the contract's terms. The greates
 problem was the lack of an escalation clause which meant when energy prices began to
 significantly increase in response to energy crises in the 1970s and 1980s, Newfoundland did not
 share in the resulting windfall profits. One of the most strident critics of the 1969 Contract,
-
-
-CIMFP Exhibit P-00008 Page 11
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 Newfoundland Premier Brian Peckford, conceded that no one quarrelled with the contract at the
 time; the problem with the contract was the fact that it was signed "for such a long time without
 any reopeners or escalation clause."53
@@ -512,12 +453,6 @@ contract. In addition, BRINCO sought exemptions and the tax rebate as before.61 
 Smallwood's regime, the Moores government refused to accept the similar terms. In 1974, after
 two years of failed negotiations, Moores decided to nationalise BRINCO. Moores said that it
 was "the most important resource development decision ever made by a Newfoundland
-
-
-CIMFP Exhibit P-00008 Page 12
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 Government."62 The endeavour was presented as a matter of principle - government needed
 control over resources in order to control the province's future.63
 
@@ -565,12 +500,6 @@ available the additional power there should be a change in the Labrador boundary
 suggested that alternatively, in order to give Quebec control over the headwaters, the
 Newfoundland government could sell between seven to ten thousand square miles of territory to
 Quebec. While sovereignty would remain with Newfoundland, Quebec would be able to develop
-
-
-CIMFP Exhibit P-00008 Page 13
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 the rivers that emptied into the St. Lawrence. Moores' government rejected both the idea of
 paying more for electricity that Hydro-Quebec paid in the 1969 Contract, and it firmly rejected
 any changes with regards to the Labrador boundary.72 As a result, there were no further
@@ -617,12 +546,6 @@ Recall
 In 1979, Newfoundland and Labrador elected Brian Peckford as Premier. His approach to
 furthering hydroelectric development on Churchill River was to pursue legislative and judicial
 levers to overcoming the obstacles faced by his predecessors. As explained by his Minister of
-
-
-CIMFP Exhibit P-00008 Page 14
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 Mines and Energy, Leo Barry, Peckford's government had a line in the sand over future
 hydroelectric developments in Labrador. Barry stated that the government had, "premised all
 [their] negotiations with the province of Quebec on resolution of the Upper Churchill
@@ -669,12 +592,6 @@ proclaimed that with Bill 108's passage Newfoundland "finally had the guarantee 
 corridor" and the Bill had passed despite strong opposition from the Quebec provincial
 government.90 Rompkey's optimism appeared to have been misplaced. Newfoundland's Minister
 of Mines and Energy, William Marshall, stated that the onerous provisions and tests that would
-
-
-CIMFP Exhibit P-00008 Page 15
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 have to be met in advance of expropriation, made Bill 108 of little pragmatic use. Marshall
 stated that the Bill did not improve Newfoundland's bargaining position regarding hydroelectric
 developments in Labrador. 91 When Bill 108 passed, Minister Lalonde announced a six-month
@@ -721,12 +638,6 @@ the SCC. 99
 While discussions on further developing sites on the Churchill River occurred during the SCC's
 deliberations, no progress was made. Shortly before the SCC's May decision, Quebec contacted
 Newfoundland with an offer of some changes to the terms of the 1969 Contract as part of a
-
-
-CIMFP Exhibit P-00008 Page 16
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 broader package for developing sites on the Lower Churchill, where it would once again be the
 sole broker for the electricity produced. Quebec's offer consisted of an additional $2.5 million
 from the lease and access to 380 to 500 MW of power. The additional power would be
@@ -772,12 +683,6 @@ Control Act (EPCA).
 
 There was a substantial opportunity for progress early in Wells' mandate. Hydro-Quebec had
 been experiencing substantial difficulties as a series of power outages between 1987 and 1989
-
-
-CIMFP Exhibit P-00008 Page 17
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 that harmed the utility's reputation. As a result, it was asked by the Quebec government in March
 1990 to prepare a five-year improvement plan.105 The difficulties were part of the motivation
 behind Hydro-Quebec, in November 1989, taking the rare move of initiating negotiations related
@@ -823,12 +728,6 @@ company. It further stipulated that the PUB had the ability to require an electr
 make its production infrastructures available on terms dictated by the PUB, including rates,
 duration and amounts of energy. Furthermore, EPCA Section 10 relieved a supplier from any
 liability for failure to supply power in previous contracts due to compliance with a PUB order.114
-
-
-CIMFP Exhibit P-00008 Page 18
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 However, in the end the legislative changes did not lead to any further progress on hydroelectric
 development in Labrador.
 
@@ -863,24 +762,18 @@ Hydro.117
 The Tobin government had three objectives related to hydroelectric developments on the
 Churchill River:
 
-• Address the inequities of the 1969 Contract
-• Negotiate an agreement to enable the development of sites on the Lower Churchill for
+Address the inequities of the 1969 Contract
+Negotiate an agreement to enable the development of sites on the Lower Churchill for
 both domestic use and international sales
-• Secure provincial supply at a competitive price118
+Secure provincial supply at a competitive price118
 
 In October 1997, the Minister of Mines and Energy, Charles Furey, proposed instructing
 Newfoundland and Labrador Hydro to commence discussions with Hydro-Quebec based on
 three principles:
 
-• Any resulting projects were to provide "unbalanced benefits" for the province
-• Projects needed to be able to meet future anticipated power needs in the province
-
-
-CIMFP Exhibit P-00008 Page 19
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
-• The province was to receive royalties119
+Any resulting projects were to provide "unbalanced benefits" for the province
+Projects needed to be able to meet future anticipated power needs in the province
+The province was to receive royalties119
 
 In January 1998, Tobin went public with the following six key principles which were necessary
 to conclude successful negotiations:
@@ -927,12 +820,6 @@ months. In contrast to the 1969 Contract, there is an escalation clause and afte
 of a few years, the price paid by Hydro-Quebec will automatically be tied to inflation.124 By the
 time the GWAC was renewed for a second time in 2004 it was expected that the renewal would
 net the province $230 million over the subsequent five year term.125 With GWAC, CFL Co's
-
-
-CIMFP Exhibit P-00008 Page 20
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 future financial stability was secured and the province expected to net an additional $1 billion
 dollars over the contract in additional revenues from the Upper Churchill.126
 
@@ -978,12 +865,6 @@ or Muskrat falls sites was Tobin's Minister of Mines and Resources, Roger Grimes
 Premier Roger Grimes came to power in 2001 at a time of significant change and opportunity for
 the further development of hydroelectric power. The American energy markets were undergoing
 a transformation and international concerns with limiting greenhouse gas (GHG) emissions were
-
-
-CIMFP Exhibit P-00008 Page 21
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 heightened. This section provides a brief overview of the broader circumstances that created
 opportune timing for the further development of hydroelectric power in Labrador.
 
@@ -1031,12 +912,6 @@ In 1997, the United Nations Convention on Climate Change met in Kyoto, Japan, an
 the Kyoto Accord which committed Canada and 36 other industrialised countries to reduce their
 carbon emissions by 5.2% below 1997 levels by 2012. A year later Prime Minister Jean Chretien
 signed the Accord and pledged that Canada would reduce its GHG emissions by 6% below 1990
-
-
-CIMFP Exhibit P-00008 Page 22
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 levels by 2012. To accomplish that feat, Canada would have to find the means to cut emissions
 by 240 megatonnes (MT) over what was expected to be emitted in 2010 if no action were
 taken.140
@@ -1060,12 +935,12 @@ It is within the broader context that Premier Grimes and his Quebec counterpart,
 Bernard Landry, restarted the Gull Island negotiations. The Grimes government set five
 conditions for the negotiations:
 
-• Newfoundland and Labrador would wholly own the project
-• There would be an escalation clause
-• The province would have the right to recall power when industrial or other demands
+Newfoundland and Labrador would wholly own the project
+There would be an escalation clause
+The province would have the right to recall power when industrial or other demands
 required
-• Project benefits were to be maximised for both the province and Quebec
-• The Innu had to be partners144
+Project benefits were to be maximised for both the province and Quebec
+The Innu had to be partners144
 
 The first two points were clearly aimed at reminding the people of the province the contrast with
 the 1969 Contract. However, the draft agreement also contained measures which caused
@@ -1077,17 +952,11 @@ The provisions that caused the most concern included that Hydro-Quebec was to be
 broker of Gull Island`s electricity, and it was to fully finance the entire project.146 The draft
 contract was to be for 45 years and the recall provisions were also heavily restricted:
 
-• 150MW once the project was in operation and subject to Hydro-Quebec being given five
+150MW once the project was in operation and subject to Hydro-Quebec being given five
 years advanced notice
-• a further 150MW would only be available ten years after operations began and
-• an additional 200MW being able to be recalled after twenty years with a five year
+a further 150MW would only be available ten years after operations began and
+an additional 200MW being able to be recalled after twenty years with a five year
 advance notice to Hydro-Quebec
-
-
-CIMFP Exhibit P-00008 Page 23
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 Project detractors, including then Opposition Leader Danny Williams, thought the amounts
 insufficient for the province's future needs. In addition, the absences of Muskrat Falls and a
 transmission line across the Strait of Belle Isle meant that the island would not receive any direct
@@ -1134,12 +1003,6 @@ resources was viewed as key to a sustainable prosperous future.156
 While in opposition, part of Williams' criticisms of Grimes proposed Gull Island agreement was
 that it was negotiated in the absence of "a coherent energy plan" for the province.157 From the
 outset, the new government believed that an extensive examination on multiple fronts had to be
-
-
-CIMFP Exhibit P-00008 Page 24
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 conducted to glean the lessons from previous attempts to develop the Churchill River's
 hydroelectric resources and to best position the province to maximise the benefits of all its
 natural resources going forward.158 As a result, the Williams' government did not immediately
@@ -1187,12 +1050,6 @@ incorporated lessons learned. For example, in granting the "energy corporation" 
 was noted that this would not interfere with existing contracts. That statement acknowledges the
 Supreme Court Decision in the previously mentioned Water Rights Revision Act. The Supreme
 Court had decided against Newfoundland and Labrador, in part, on the belief that the intent of
-
-
-CIMFP Exhibit P-00008 Page 25
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 the Act was to interfere with the 1969 Contract.165 Similarly, Premier Clyde Wells' enactment of
 the Electrical Power Control Act (EPCA) had an analogous aim, but it did not lead to any
 advances on the Churchill Falls front. The Williams' government amended the EPCA in 2007 to
@@ -1240,12 +1097,6 @@ since the 1960s a multitude of economic and technical reports have shown "that t
 economic long-term alternative" for electricity supply on the island portion of the province was
 through a transmission line from Labrador, especially through the development of the Gull Island
 and Muskrat Falls sites.173 By 2007, 35% of the province's electricity was thermal-generated
-
-
-CIMFP Exhibit P-00008 Page 26
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 which had associated with it fuel price volatility as well as 1.3 million tonnes of GHG emissions
 and other emissions sulphur dioxide and particulate matter. Moreover, it was expected that by
 2015 the province would be looking for additional sources of supply.174 The construction of the
@@ -1293,12 +1144,6 @@ information to present a comprehensive long-term energy plan that was expected t
 role in shaping the future of the province. However, the determination to develop the Lower
 Churchill on its own terms and the lack of clarity on the best path forward were evident in
 Focusing Our Energy.
-
-
-CIMFP Exhibit P-00008 Page 27
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 It was hoped that by understanding the full energy picture, the province would be in the best
 possible position to benefit from its vast hydroelectric resources in Labrador. The inclusion of a
 transmission line linking Labrador to the island, through the Maritimes and to the US markets
@@ -1345,12 +1190,6 @@ to major energy demand centres, such as in Southern Ontario, was periodically di
 
 Meanwhile, the Northeastern United States consistently increased imports of Canadian energy.
 As well, American energy markets evolved to embrace open access principles where, in order to
-
-
-CIMFP Exhibit P-00008 Page 28
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 sell into the US markets, utilities would have to allow other electricity generators to access their
 transmission infrastructures to access the markets.184 There were times, such as during the
 energy crises of the early 1970s and 1980s, and the push for non-green-house gas emitting
@@ -1370,12 +1209,6 @@ River. The inclusion of the Labrador-Island Transmission link has added a new wr
 established narrative. Time will tell if it means that things have changed utterly, or if the goals of
 Newfoundland and Labrador premiers since Confederation to have the province reap the full
 rewards of the Churchill River's hydroelectric resources will remain elusive.
-
-
-CIMFP Exhibit P-00008 Page 29
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 Appendix: Additional Readings
 
 This report has provided a general overview of the history of negotiations to develop the
@@ -1384,7 +1217,7 @@ listed below provide greater details on specific aspects of the Churchill Falls 
 
 Baker, Melvin. The Power of Commitment: A History of the Newfoundland and Labrador
 Hydro-electric Corporation 1954-1999. St. John's: Silver Lights Club, 2000.
-• While not the explicit focus of the book, The Power of Commitment does an exceptional
+While not the explicit focus of the book, The Power of Commitment does an exceptional
 job putting the negotiations to develop Churchill River hydroelectric resources within the
 broader setting of the electricity supply challenges faced on the island from the 1950s to
 the end of the century. During that time the province was fundamentally transformed
@@ -1394,7 +1227,7 @@ province's inability to access Labrador electricity.
 
 Blue, Ian. "Off the Grid: Jurisdiction and the Canadian Electricity Sector," The Dalhousie Law
 Journal, Volume 32, 2007.
-• This article is highly recommended as it provides an in-depth analysis of the profound
+This article is highly recommended as it provides an in-depth analysis of the profound
 impact on the Canadian electricity sector of changes brought in the US energy markets.
 Author Blue also warns of the perils of domestic jurisdictional and regulatory structures
 which prevent the Canadian electricity sector from fully capitalizing on domestic and
@@ -1404,54 +1237,42 @@ renewable energy sources and reducing greenhouse-gas emissions at the national l
 
 Bourassa, Robert. Power from the North. Scarborough: Prentice-Hall Canada Incorporated,
 1985.
-• This book provides a Quebec perspective on the Churchill Falls negotiations and
+This book provides a Quebec perspective on the Churchill Falls negotiations and
 operations. The book puts the Churchill Falls story into the broader context of the
 evolution of Quebec's hydroelectric system.
 
 Churchill, Jason L. Power Politics and Questions of Political Will: A History of Hydroelectric
 Development in Labrador's Churchill River Basin, 1949-2002. St. John's: Royal Commission on
 Renewing and Strengthening Our Place in Canada, 2003.
-• This report provides some additional details on Churchill River negotiations from the
+This report provides some additional details on Churchill River negotiations from the
 time of Premier Joseph Smallwood up to Premier Brian Tobin. In particular additional
 detail and context is provided on the deregulation of the US energy markets under FERC
 and the potential new associated opportunities created. It also addresses other issues not
 address in this paper such as failed attempts to negotiations Chapter 12, of the Agreement
 on Internal Trade which has become known as the "missing energy chapter".
-
-
-CIMFP Exhibit P-00008 Page 30
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 Feehan, James P., Melvin Baker. "The Renewal Clause in the Churchill Falls Contract: The
 Origins of a Coming Crisis." Political Economy Research Group. Papers in Political Economy,
 96. London, ON: Department of Economics, University of Western Ontario, 2005.
-• This article provides a detailed analysis of the events and circumstances that led to the
+This article provides a detailed analysis of the events and circumstances that led to the
 inclusion of the controversial 25-year renewal clause in the 1969 Churchill Falls
 Contract. The main forus of the paper is during the three year period from the singing of
 the Letter of Intent in 1966 to the final contract in 1969.
 
 --- Forces: Churchill Falls, No. 57-58, Summer 1982.
-• This Quebec publication contains a number of articles related to Churchill Falls
+This Quebec publication contains a number of articles related to Churchill Falls
 negotiations and the development of the project including from Douglas Fullerton who
 once was an advisor to the Quebec government and went on to Chair Newfoundland and
 Labrador Hydro. There are also articles from Robert A. Boyd who was head of HydroQuebec and led much of the Churchill Falls negotiations.
 
 Smith, Philip. BRINCO The Story of Churchill Falls. Toronto: McCelland and Stewart Limited,
 1975.
-• This large book provides an in-depth history of the British Newfoundland Corporation
+This large book provides an in-depth history of the British Newfoundland Corporation
 (BRINCO) from its founding in 1953 through to the official start of official operations at
 the Upper Churchill Falls facility. The book provides a broader understanding of
 BRINCO's challenges at various points during negotiations and provides portraits of
 some key individuals involved with Churchill Falls negotiations. Included is the story of
 the impact of the plane crash death of then BRINCO President Donald McParland and
 four other management team members.
-
-
-CIMFP Exhibit P-00008 Page 31
-Cleo Research Associates Background Report for Commission of Inquiry Respecting the Muskrat Falls Project
-August 2018
-
 Endnotes
 
 [Endnotes 1-184 continue with detailed citations and references...]

@@ -1,0 +1,61 @@
+DOCUMENT TITLE: Executive Summary — The Churchill River MOU
+AUTHOR: Dr. Doug May
+DOCUMENT TYPE: Executive Summary / Policy Analysis
+TOPIC: Economic evaluation of the proposed Churchill River Memorandum of Understanding (MOU) and its value to the multi-generational well-being of Newfoundlanders and Labradorians
+PURPOSE: To provide information to the public ahead of the referendum on the MOU proposals, encouraging informed dialogue and presenting alternative options where appropriate.
+
+---
+
+CONTEXT AND PURPOSE
+
+This submission evaluates the economic structure of the proposed Churchill River Memorandum of Understanding (MOU), focusing on the value of the proposals to the multi-generational well-being of Newfoundlanders and Labradorians. The analysis centers on pricing design, financing obligations, and risk allocation. It advocates evaluation through a modern cost-benefit and public value framework, as discussed by Mark Carney in his book Value(s). The analysis relies on publicly available information. Where essential data are unavailable, those gaps are identified because they materially affect the ability to evaluate the agreement. Proper evaluation requires comparing the MOU not only to the 1969 contract, but to Newfoundland and Labrador's credible alternatives — its Best Alternative to a Negotiated Agreement (BATNA).
+
+---
+
+CORE STRUCTURAL CONCERN: LONG-TERM FIXED PRICING IN A VARIABLE MARKET
+
+The MOU establishes predetermined annual prices for existing Churchill Falls power extending to 2075. These prices do not vary by season, month, or time of day. In competitive wholesale electricity markets, prices fluctuate hourly and seasonally to reflect demand conditions, peak loads, and scarcity. Winter peak prices in northeastern U.S. markets are materially higher than annual averages. By contrast, the MOU embeds a fixed annual pricing structure in a market environment characterized by increasing volatility, electrification, climate variability, and structural demand growth. Locking in long-term fixed pricing under these conditions constrains Newfoundland and Labrador's ability to capture future market value and respond to evolving market signals.
+
+THE BASELINE "EFFECTIVE" PRICE OF 5.9¢/kWh IS FUNDAMENTALLY MISSTATED
+
+Public communications emphasize a baseline "effective" price of 5.9¢/kWh for existing power. This figure is derived using an incorrect present-value methodology. The corrected calculation produces a materially lower estimate. The issue is not technical. The 5.9¢ figure anchors public perception of a dramatic increase in value under the MOU. If the foundational calculation is flawed, the perceived magnitude of improvement is overstated.
+
+DEBT EXPOSURE AND STRUCTURAL RISK ALLOCATION
+
+The MOU contemplates substantial debt financing for new infrastructure, with Newfoundland and Labrador Hydro responsible for a significant share. That debt is effectively guaranteed by the Government of Newfoundland and Labrador. The scale of potential debt exposure is large relative to the province's fiscal capacity and existing public debt obligations. Long-term fixed pricing and uncertain revenue projections must be evaluated alongside binding debt-service obligations.
+
+A central structural issue must be addressed directly: Newfoundland and Labrador is being asked to increase its public debt in order to continue supplying electricity at prices that support Quebec's low-cost electricity model for households and industrial development. In effect, the agreement risks institutionalizing a structure in which Newfoundland and Labrador assumes financial risk while Quebec retains a structural pricing advantage. The MOU does not clearly demonstrate that the economic risks assumed by Newfoundland and Labrador are proportionate to the benefits it receives.
+
+SIGNIFICANT OPPORTUNITY COSTS BEYOND 2041
+
+In exchange for higher prices prior to 2041, the MOU extends pricing arrangements through 2075. This extension exposes Newfoundland and Labrador to opportunity cost risk if electricity prices rise materially in export markets. Demand for electricity is expected to increase due to electrification, artificial intelligence data centres, electric vehicles, and industrial restructuring. Seasonal winter peak prices in northeastern export markets already substantially exceed annual averages. The absence of transparent, market-responsive adjustment mechanisms limits Newfoundland and Labrador's ability to participate in potential future price upside.
+
+PRICES PAID UNDER THE MOU ARE NOT COMPETITIVE MARKET PRICES
+
+Payments for existing power are made by Hydro-Québec to CF(L)Co, in which Hydro-Québec owns 34.2%. As a result, a portion of any increased payment effectively returns to Hydro-Québec. The Quebec wholesale "market" referenced in the MOU is not competitive; it is a regulated internal transfer price set by a cost-minimizing public utility. Hydro-Québec's institutional objective is to minimize electricity costs to Quebec households and industry, not to maximize the price paid for imported power. The pricing structure therefore reflects policy design rather than competitive market valuation.
+
+EVALUATION REQUIRES COMPARISON TO CREDIBLE ALTERNATIVES (BATNA)
+
+The MOU should be evaluated against Newfoundland and Labrador's credible alternatives — not solely against the historical 1969 contract. A proper BATNA analysis would assess whether alternative pricing structures, phased renegotiation strategies, market-based mechanisms, or different development sequencing could yield superior long-term outcomes. Without explicit comparison to alternatives, it is not possible to determine whether the MOU represents the best attainable long-term option.
+
+ABSENCE OF AN ARTICULATED PROVINCIAL DEVELOPMENT FRAMEWORK
+
+The MOU is evaluated primarily in terms of projected revenue. Revenue generation alone is an incomplete metric for assessing a multi-generational natural resource agreement. A long-term water or resource agreement should ideally be assessed within a broader provincial development framework grounded in economic development, social development, and the general well-being of residents. In the absence of a clearly articulated provincial energy or resource development plan, it is difficult to determine whether long-term pricing commitments, debt exposure, and allocation decisions align with broader public objectives.
+
+REVENUE TO CF(L)Co DOES NOT EQUAL FISCAL GAIN TO THE PROVINCE
+
+Revenues flow to CF(L)Co, not directly to the provincial treasury. Only Newfoundland and Labrador Hydro's ownership share contributes to provincial fiscal capacity. Cumulative 50-year nominal or present-value revenue projections can obscure timing, risk, and distribution of benefits. Present-value projections are not guaranteed cash receipts and may not align with debt-service timing.
+
+CRITICAL DATA REQUIRED FOR INDEPENDENT EVALUATION ARE NOT AVAILABLE
+
+No detailed pricing formulas or weighting mechanisms are provided. No contract-by-contract electricity flow data are publicly available. No seasonal or monthly production forecasts are disclosed. Without these data, rigorous net present value or cost-benefit analysis cannot be independently performed. The inability to verify core assumptions materially limits proper evaluation of the agreement.
+
+INTERGENERATIONAL CONSIDERATIONS
+
+The pricing extension runs approximately to the expected lifespan of the Churchill Falls generating station. Potential refurbishment or decommissioning costs near the end of the contract period should be incorporated into evaluation. The duration of the agreement raises legitimate intergenerational equity considerations.
+
+---
+
+CONCLUDING OBSERVATION
+
+The MOU embeds long-term fixed pricing, substantial public debt exposure, structural pricing asymmetries, and limited transparency. It asks Newfoundland and Labrador to assume material financial risk in order to sustain a pricing structure that continues to advantage Quebec's cost-minimization model. Based on currently available information, it is not possible to conclude that the agreement clearly represents Newfoundland and Labrador's best available long-term option. A fully informed decision requires comparison to credible alternatives, alignment with a broader provincial development framework, and greater disclosure of pricing formulas, production forecasts, and financing assumptions.
