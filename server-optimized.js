@@ -537,9 +537,9 @@ const TEXT_MODE_DEEP_PROMPT = `You are an expert AI assistant specializing in th
 Provide comprehensive, well-researched answers using all available documents.
 
 RESEARCH STRATEGY:
-1. Use search_documents with max_results=10-15 to find ALL relevant documents
-2. For key documents found, use get_document to retrieve full content
-3. Synthesize information from MULTIPLE sources (aim for 5+ sources for complex questions)
+1. Use search_documents with max_results=8 to find the most relevant documents
+2. For the top 2-3 most relevant documents found, use get_document to retrieve full content
+3. Synthesize information from multiple sources
 4. Present diverse perspectives (Doug May's analysis, Wade Locke's critique, official documents, etc.)
 
 CRITICAL INSTRUCTIONS:
@@ -775,9 +775,15 @@ app.post('/api/chat', chatLimiter, async (req, res) => {
             const systemPrompt = basePrompt + '\n\n' + documentContext;
             
             const response = await anthropic.messages.create({
-                model: 'claude-sonnet-4-20250514',
+                model: 'claude-haiku-4-5-20251001', // Haiku: 1/3 cost of Sonnet, faster, plenty smart for voice summaries
                 max_tokens: 500, // Generate full thought, then truncate to complete sentences after
-                system: systemPrompt,
+                system: [
+                    {
+                        type: 'text',
+                        text: systemPrompt,
+                        cache_control: { type: 'ephemeral' } // Cache the large system prompt (17 docs) — 90% savings on repeated requests
+                    }
+                ],
                 messages: messages
             });
             
@@ -809,7 +815,7 @@ responseText = truncatedText; // Use the truncated version
                         `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`,
                         {
                             text: truncatedText,
-                            model_id: 'eleven_multilingual_v2',
+                            model_id: 'eleven_multilingual_v2', // Required for French bilingual support
                             voice_settings: {
                                 stability: 0.5,
                                 similarity_boost: 0.75
@@ -868,18 +874,28 @@ responseText = truncatedText; // Use the truncated version
             }
             
             const maxTokens = isFastMode ? 1024 : 4096; // Fast: ~250 words, Deep: ~1000 words
+            
+            // Haiku for Fast (cheap + fast), Sonnet for Deep (quality matters)
+            const textModel = isFastMode ? 'claude-haiku-4-5-20251001' : 'claude-sonnet-4-20250514';
+            console.log(`🤖 Model: ${textModel}`);
 
             let response = await anthropic.messages.create({
-                model: 'claude-sonnet-4-20250514',
+                model: textModel,
                 max_tokens: maxTokens,
-                system: systemPrompt,
+                system: [
+                    {
+                        type: 'text',
+                        text: systemPrompt,
+                        cache_control: { type: 'ephemeral' } // Cache system prompt — 90% savings on repeated requests
+                    }
+                ],
                 messages: messages,
                 tools: toolsList
             });
 
             let currentMessages = [...messages];
             let toolCallCount = 0;
-            const MAX_TOOL_CALLS = 10;
+            const MAX_TOOL_CALLS = isFastMode ? 3 : 5; // Fast: 3 max, Deep: 5 max (diminishing returns after 5)
             // documentsAccessed is declared at top level
 
             // Handle tool use
@@ -991,9 +1007,15 @@ responseText = truncatedText; // Use the truncated version
                 });
 
                 response = await anthropic.messages.create({
-                    model: 'claude-sonnet-4-20250514',
+                    model: textModel, // Same model as initial call (Haiku for Fast, Sonnet for Deep)
                     max_tokens: maxTokens,
-                    system: systemPrompt,
+                    system: [
+                        {
+                            type: 'text',
+                            text: systemPrompt,
+                            cache_control: { type: 'ephemeral' } // Cache system prompt across tool loop iterations
+                        }
+                    ],
                     messages: currentMessages,
                     tools: toolsList
                 });
@@ -1014,6 +1036,13 @@ responseText = truncatedText; // Use the truncated version
         
         const responseTime = ((Date.now() - startTime) / 1000).toFixed(1);
         console.log(`⏱️ Total time: ${responseTime}s`);
+        
+        // Cost estimation logging
+        const model = isVoiceMode ? 'haiku-4.5' : (textMode === 'fast' ? 'haiku-4.5' : 'sonnet-4');
+        console.log(`💰 Model used: ${model} | Mode: ${isVoiceMode ? 'voice' : textMode}`);
+        if (!isVoiceMode && typeof toolCallCount !== 'undefined') {
+            console.log(`💰 Tool calls: ${toolCallCount} (cached system prompt)`);
+        }
         console.log('='.repeat(60));
         
         const responseData = {
