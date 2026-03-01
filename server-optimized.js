@@ -17,8 +17,8 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-app.set('trust proxy', 1);
 const PORT = process.env.PORT || 10000;
+app.set('trust proxy', 1); // Trust Render's proxy for accurate rate limiting
 
 app.use(cors({
     origin: [
@@ -141,7 +141,58 @@ console.log('   Text: Comprehensive (All Sources)');
 console.log('='.repeat(60));
 
 // ============================================================================
-// DOUG'S CORE DOCUMENTS - SUMMARIES (Voice Mode Only - OPTIMIZED!)
+// USAGE STATISTICS TRACKING
+// ============================================================================
+
+const usageStats = {
+    startedAt: new Date().toISOString(),
+    totalQuestions: 0,
+    byMode: { voice: 0, fast: 0, deep: 0 },
+    byLanguage: { en: 0, fr: 0 },
+    daily: {},   // { '2026-03-01': { total: 5, voice: 2, fast: 2, deep: 1 } }
+    recentQuestions: [], // last 50 questions (no personal data, just metadata)
+    totalResponseTime: 0,
+    errors: 0,
+    cacheHits: 0
+};
+
+function trackQuestion(mode, language, responseTime, cached) {
+    const today = new Date().toISOString().split('T')[0];
+    
+    usageStats.totalQuestions++;
+    usageStats.byMode[mode] = (usageStats.byMode[mode] || 0) + 1;
+    usageStats.byLanguage[language] = (usageStats.byLanguage[language] || 0) + 1;
+    usageStats.totalResponseTime += responseTime;
+    if (cached) usageStats.cacheHits++;
+    
+    // Daily tracking
+    if (!usageStats.daily[today]) {
+        usageStats.daily[today] = { total: 0, voice: 0, fast: 0, deep: 0 };
+    }
+    usageStats.daily[today].total++;
+    usageStats.daily[today][mode] = (usageStats.daily[today][mode] || 0) + 1;
+    
+    // Recent questions log (metadata only, no user content)
+    usageStats.recentQuestions.push({
+        time: new Date().toISOString(),
+        mode,
+        language,
+        responseTime,
+        cached
+    });
+    // Keep only last 100
+    if (usageStats.recentQuestions.length > 100) {
+        usageStats.recentQuestions = usageStats.recentQuestions.slice(-100);
+    }
+    
+    // Clean up daily stats older than 90 days
+    const cutoff = new Date();
+    cutoff.setDate(cutoff.getDate() - 90);
+    const cutoffStr = cutoff.toISOString().split('T')[0];
+    for (const date of Object.keys(usageStats.daily)) {
+        if (date < cutoffStr) delete usageStats.daily[date];
+    }
+}
 // Using concise summaries instead of full documents for faster responses
 // ============================================================================
 
@@ -734,6 +785,10 @@ app.post('/api/chat', chatLimiter, async (req, res) => {
             console.log(`⏱️ Cache response time: ${responseTime}s (INSTANT!)`);
             console.log(`${'='.repeat(60)}`);
             
+            // Track cached response
+            const cachedMode = isVoiceMode ? 'voice' : textMode;
+            trackQuestion(cachedMode, language, parseFloat(responseTime), true);
+            
             // Return cached response with updated timestamp
             return res.json({
                 ...cachedResponse,
@@ -1072,10 +1127,15 @@ responseText = truncatedText; // Use the truncated version
         
         cacheResponse(message, cacheMode, responseData);
         
+        // Track new response
+        const trackedMode = isVoiceMode ? 'voice' : textMode;
+        trackQuestion(trackedMode, language, parseFloat(responseTime), false);
+        
         res.json(responseData);
 
     } catch (error) {
         console.error('❌ Error:', error);
+        usageStats.errors++;
         res.status(500).json({ 
             error: 'An error occurred processing your request',
             details: error.message 
@@ -1138,6 +1198,42 @@ app.get('/api/health', (req, res) => {
             maxAge: `${CACHE_DURATION / 60000} minutes`
         },
         timestamp: new Date().toISOString()
+    });
+});
+
+// ============================================================================
+// USAGE STATISTICS ENDPOINT (Hidden dashboard)
+// ============================================================================
+
+app.get('/api/stats', (req, res) => {
+    const avgResponseTime = usageStats.totalQuestions > 0 
+        ? (usageStats.totalResponseTime / usageStats.totalQuestions).toFixed(1) 
+        : 0;
+    
+    res.json({
+        uptime: usageStats.startedAt,
+        summary: {
+            totalQuestions: usageStats.totalQuestions,
+            avgResponseTime: parseFloat(avgResponseTime),
+            cacheHitRate: usageStats.totalQuestions > 0 
+                ? ((usageStats.cacheHits / usageStats.totalQuestions) * 100).toFixed(1) + '%'
+                : '0%',
+            errors: usageStats.errors
+        },
+        byMode: usageStats.byMode,
+        byLanguage: usageStats.byLanguage,
+        daily: usageStats.daily,
+        recentQuestions: usageStats.recentQuestions.slice(-20),
+        voice: {
+            creditsUsed: monthlyVoiceUsage,
+            monthlyLimit: MONTHLY_VOICE_LIMIT,
+            percentUsed: ((monthlyVoiceUsage / MONTHLY_VOICE_LIMIT) * 100).toFixed(1) + '%'
+        },
+        system: {
+            documentsLoaded: dougDocuments.size,
+            mcpConnected: !!mcpClient,
+            cacheEntries: responseCache.size
+        }
     });
 });
 
