@@ -1,0 +1,238 @@
+DOCUMENT TITLE: Towards a Churchill River Action Plan-2041
+AUTHOR: Dr. Doug May
+DOCUMENT TYPE: Discussion Paper / Policy Proposal
+TOPIC: A proposed alternative action plan for the Churchill River hydroelectric resource development leading to 2041, challenging the December 2024 MOU framework and advocating for water-royalty-based valuation, proactive government planning, and expanded grid connectivity
+
+---
+
+OVERVIEW
+
+The recent resignation of Premier Legault, along with interruptions in negotiations by Hydro-Quebec and Newfoundland and Labrador Hydro following the election of Premier Wakeham, may slightly alter some proposals in the MOU of December 12th, 2024. However, the MOU lacked some essential details. May's concerns about deficiencies in the proposed prices and projects have been discussed in detail in his other commentaries. The MOU is simply a continuation of discussions that have taken place over the past fifty years. Jason Churchill, in his paper "A History of Negotiations to Develop the Hydroelectric Resources of the Churchill River from 1949 to 2007," provides an excellent account of these negotiations.
+
+Quebec initiated the MOU under its Action Plan 2035, amid droughts that disrupted Hydro-Quebec's hydroelectric output and increased demand for affordable, clean electricity. The Government of Newfoundland and Labrador, through its Crown corporation, responded to Quebec's proposal. Quebec faced the challenge of assuring Newfoundland and Labrador that the new agreement offered a fair solution to disputes over the original 1969 Contract's fixed prices, which decline in purchasing value over time due to inflation. The carrot in Quebec's offer was the revenue that the debt-stressed Government of Newfoundland and Labrador would receive over the new contract period, though a possible projected revenue was sold as an expected revenue.
+
+KEY POINT: Prudent management requires that the decision-maker consider a Best Alternative To a Negotiated Agreement (BATNA). The December 2024 MOU contained some specifics but lacked many others and was a long way from being a negotiated agreement. A BATNA is not possible without a negotiated agreement in place. One can work towards an alternative by formulating, as Hydro-Quebec has wisely done, an action plan.
+
+---
+
+PURPOSE AND SCOPE OF ACTION PLAN-2041
+
+This commentary aims to initiate an action plan titled "Towards Action-2041." The year 2041 was selected as the end date for several reasons. First, that year marks the expiration of the 1969 Contract, which currently governs CF(L)Co's operations. Second, given the rapidly evolving landscape of electricity demand and supply at both the national and international levels, certain aspects of long-term planning are nearly impossible to execute with high accuracy. Third, the timeframe aligns with that of Hydro-Quebec, a well-managed public utility.
+
+THREE GOALS OF ACTION PLAN-2041:
+
+1. FAIR VALUE: Enhance and secure fair value for electricity by increasing the rates paid to CF(L)Co for the existing power supply.
+
+2. SUPPLY: Expand Newfoundland and Labrador's electricity generation capacity and improve the province's interconnectedness with the national grid.
+
+3. ECONOMIC DEVELOPMENT: Use the natural resources of the Churchill River to increase the general well-being of Newfoundlanders and Labradorians, as well as First Nations peoples. Well-being is used in a general sense to include not only economic well-being but also environmental, cultural, and community issues.
+
+KEY POINT: This discussion paper does not push for one specific development plan or suggest taking immediate action. Its purpose is to expand how Newfoundlanders and Labradorians consider their options for developing the Churchill Falls resource, especially as 2041 approaches. The paper examines different approaches to valuing water, structuring agreements, and planning infrastructure.
+
+KEY POINT: Before Newfoundland and Labrador commits to any binding agreement on the future development of the Churchill River, whether under the current MOU or a revised version, it should first articulate its own clear, proactive action plan. The purpose is not to replace negotiations, but to establish the province's objectives, principles, and alternatives in advance, with particular emphasis on how the value of water is priced, how risks are allocated, and how long-term public well-being is affected.
+
+---
+
+A SHORT HISTORICAL PERSPECTIVE
+
+It was Albert Low of the Dominion (Canada) Geological Survey who recognized Churchill Falls' potential for electricity production in 1894 (at the time called "Grand Falls" on the Hamilton River). The constraints on realizing the potential were the remoteness of the Falls and the engineering technology needed to transmit generated electricity to final consumers. These constraints were overcome in the 1950s with the development of iron mines and their processing and distribution facilities. Specifically, the Quebec North Shore and Labrador Railway permitted the materials and equipment needed to build a generating station to be brought closer to the site at a cost-effective rate.
+
+On the Newfoundland side, Premier Joey Smallwood encouraged and subsidized foreign investment through BRINCO to accelerate industrialization. In 1958, BRINCO established a subsidiary, Churchill Falls (Labrador) Corporation, to develop the Falls' hydroelectric capacity. One of the owners of CF(L)Co was Shawinigan Water and Power Company, which was nationalized by Quebec in 1963 and incorporated into Hydro-Quebec.
+
+BRINCO encountered financial difficulties in the late 1960s. Hydro-Quebec played a role in helping BRINCO secure financing through a long-term contract and enabling CF(L)Co to access markets in Quebec and beyond via its transmission lines. Because the power was sold to Quebec, which controlled the transmission line and the price until 2041, CF(L)Co essentially functioned as a Hydro-Quebec hydroelectric plant providing inexpensive power to Quebec while utilizing a natural resource in Labrador.
+
+KEY POINT: In 1974, Newfoundland's Premier Frank Moores nationalized the private segment of CF(L)Co so that this portion became a Crown corporation and a provincial asset. Before nationalization, the private segment focused on private interests serving shareholders by generating profit. With nationalization, the governance objective shifted from profit maximization to enhancing the well-being of the people of Newfoundland and Labrador. As Mark Carney argues in his book "Value(s)," any proposed plan must be viewed through a societal lens, rather than solely a business perspective, as appears to be the case in the analytical framework of the December MOU.
+
+---
+
+FINDING VALUE
+
+The production of electricity can be viewed as a supply chain beginning with water in a reservoir, which flows into an intake and down a penstock to the turbines. The process includes physical capital assets (dam, penstocks, turbines, generators), personnel, and purchased materials and services. This production process is highly capital-intensive. The output, including the water supply, is electricity measured in megawatts per hour.
+
+KEY DISTINCTION: Water is owned by the government, while the production itself may be owned privately, publicly, or through a combination. CF(L)Co is owned by two Crown corporations: Newfoundland and Labrador Hydro and Hydro-Quebec.
+
+CURRENT WATER ROYALTY RATES AT CHURCHILL FALLS:
+
+CF(L)Co pays both an annual water royalty and a water rental fee to the Government of Newfoundland and Labrador. The royalty is set at $0.50 per horsepower-year generated, amounting to approximately $2.6 million. The water rental is 8% of consolidated net profits before income taxes. For the year ending December 31, 2024, the total combined fees were $8.79 million, or about 0.025 cents per kWh in 2023.
+
+KEY COMPARISON: A rough non-verifiable estimate of the water royalty rate in Quebec is about 0.5 cents per kWh for 2026, almost 20 times greater than Newfoundland and Labrador's rate, and 2.5 times greater than the base rate Quebec pays CF(L)Co. In Ontario, the water royalty rate is 9.5% of gross revenue.
+
+---
+
+MOU'S APPROACH: FINDING VALUE THROUGH OUTPUT PRICE
+
+In the MOU, determining the value of electricity seems based solely on the price at which it is sold to Quebec at the generating station. The current price is 0.2 cents per kWh for most of the power, with an additional price under the Guaranteed Winter Availability Contract.
+
+May's concerns about deriving value from the MOU proposal are that the benefits flow to both Newfoundland and Labrador Hydro and Hydro-Quebec rather than directly to the Government of Newfoundland and Labrador. Since CF(L)Co currently makes a profit, Hydro-Quebec could simply remit any dividends to itself.
+
+KEY POINT: A genuine concern is that Hydro-Quebec and Quebec regard Churchill Falls as a vital part of their hydroelectric generating station portfolio. Hydro-Quebec's aim is to supply electricity as cheaply as possible into its system. Quebec does not have a wholesale electricity market; instead, there is a regulated transfer price within Hydro-Quebec.
+
+---
+
+ACTION PLAN-2041'S PROPOSED WATER ROYALTY SYSTEM
+
+The water royalty system proposed in Towards an Action Plan 2041 is a hybrid model based on the following principles:
+
+1. Payment must be made directly to the Government of Newfoundland and Labrador (similar to Quebec).
+
+2. The value of water would be determined using Ricardian rents and opportunity costs. The wholesale price of electricity would be linked to open competitive markets rather than closed, regulated transfer prices.
+
+3. Rents will reflect seasonal fluctuations in market prices. Average annual electricity prices are expected to rise over time, likely exceeding inflation.
+
+4. Rent would be tied to the amount of electricity produced during the month.
+
+5. The entire potential water rent will not be captured by Newfoundland and Labrador, since the final outcome is determined through bargaining.
+
+6. Determination of the appropriate rate structure would be undertaken under the lead of the Government of Newfoundland and Labrador, not by Newfoundland and Labrador Hydro, which would take a subsidiary role.
+
+7. The basic rent structure would be reviewed every five years. A long-term contract would be about 15 years for existing infrastructure.
+
+WORKED EXAMPLE - PROPOSED WATER RENT CALCULATION:
+
+The average price Hydro-Quebec paid for electricity from New York State and Vermont in December, in Canadian dollars, was about $160/MWh. This was nearly the same price Newfoundland and Labrador charged to the NE-ISO for its electricity.
+
+Calculation: $160/MWh minus $5/MWh (transmission cost, firm delivery) = $155/MWh. Then $155/MWh minus $2/MWh (average cost) = $153/MWh. Then $153/MWh multiplied by 0.65 (arbitrary discount based on relative ownership in CF(L)Co, lasting only until 2041) = $100.67/MWh, or 10.7 cents per kWh.
+
+KEY COMPARISON: The proposed price of 10.7 cents per kWh (plus the current 0.2 cents) is higher than most Quebec households pay in December but still below the 16 cents per kWh that Hydro-Quebec paid for imported electricity. Hydro-Quebec also noted it exported power to New England last winter for about 20 cents per kWh. If Hydro-Quebec exports the power, Newfoundland and Labrador would split the potential water rents with Quebec.
+
+---
+
+US MARKET ACCESS
+
+A concern during the construction of Churchill Falls was that access to markets outside Quebec was limited because Hydro-Quebec owned the transmission lines. This changed when the United States Federal Energy Regulatory Commission (FERC) enacted the Energy Policy Act and FERC Order 2000: "All transmission users should receive access under rates, terms and conditions comparable to those the transmitting utility applies to itself to serve its own customers."
+
+KEY POINT: As a result, power from the Churchill River, which now uses the Quebec transmission corridor, has the same access to markets in the USA as Hydro-Quebec. The USA removed the restrictions, giving all parties greater access to American markets.
+
+The Action Plan assumes that access to American markets would not be restricted by any electricity agreements between Quebec and Newfoundland and Labrador, specifically that additional capacity available to Newfoundland and Labrador Hydro would not be subject to a right of first refusal by Quebec, which would limit access to more profitable alternative opportunities.
+
+---
+
+OTHER CONSIDERATIONS IN DETERMINING VALUE
+
+Hydro-Quebec's Action Plan takes a broader, more proactive approach. It has recently finalized a power exchange agreement with Ontario and is actively working with New Brunswick, Maine, Vermont, and New York State. The best way to ensure fair value is to develop and promote competitive markets.
+
+KEY POINT: The Government of Newfoundland and Labrador must consider new transmission lines connecting Churchill Falls to Gull Island and Muskrat Falls with a view to connecting the Upper Churchill to the Atlantic Canadian grid. This aligns with Prime Minister Mark Carney's call for an East-West Grid, urgently needed especially for Prince Edward Island and Nova Scotia.
+
+---
+
+MODERNIZING WATER ROYALTIES - MOU APPROACH VS. ACTION PLAN
+
+Newfoundland and Labrador Hydro and probably Hydro-Quebec see a need to update how water royalties are paid. However, the process appears to add value by allowing CF(L)Co to increase export prices to Quebec. By setting the price of electricity first, you then calculate the water royalty.
+
+KEY COMPARISON: In the Action Plan proposal, the Government of Newfoundland and Labrador would establish a monthly water royalty rate based on market competition, and CF(L)Co would treat this as an external input cost. The MOU seems to be "putting the cart before the horse" when it comes to updating resource royalties.
+
+---
+
+SECURITY OF SUPPLY
+
+MOU APPROACH - EXTENDING 2041 CONTRACT:
+
+The December 2024 MOU aims to improve security of supply from 2042 to 2075 by projecting prices for existing power during this period. Action Plan-2041 would consider extending by 15 years with a review. The extension would depend on changes to water-royalty rates within a year, subject to five-year review cycles, and rely on developments related to the national grid plan.
+
+MOU APPROACH - NEW INFRASTRUCTURE PROJECTS:
+
+The December 2024 MOU proposes four new infrastructure projects:
+
+1. TURBINE UPGRADE AT EXISTING CHURCHILL FALLS STATION: Replacing the 11 turbines over 11 years. This would increase the plant's capacity by 550 MWh with a load factor of 22.83%, suggesting not all turbines might always be running. Under the proposed water royalty rate, this project would generate about $95 million per year if operated during winter months. The MOU suggests using projected existing power prices to cover costs.
+
+2. EXPANSION OF CHURCHILL FALLS STATION: Proposed cost of $4.6 billion, producing 0.4 TWh annually with an average utilization rate of just over 4%. Designed for peak winter loads and to target the export market to the USA, helping Hydro-Quebec fulfill its legal contract commitments. Financing would be provided by CF(L)Co consistent with Hydro-Quebec's practices. If borrowing might influence provincial borrowing costs, some water royalties could be allocated to a "heritage fund" to reduce Government debt.
+
+3. GULL ISLAND GENERATING STATION: Hourly generating capacity of 2,250 megawatts, expected to generate about 12 terawatt-hours annually. Dr. Wade Locke has pointed out there is insufficient information within the MOU to evaluate the project from either a business or societal cost-benefit perspective. Two major concerns: (a) the project would be undertaken jointly with Hydro-Quebec, which has competing goals, Quebec wants cheap energy while NL wants fair return and fair water value; (b) the borrowing Newfoundland and Labrador Hydro would face, estimated at $24.9 billion if undertaken alone. The MOU includes a transmission line at $3.6 billion for NLH to connect to the Quebec grid.
+
+KEY POINT: Fair value of water is achievable only with unimpeded access to competitive wholesale electricity markets, including being part of a truly national grid connecting Churchill Falls and Gull Island to Newfoundland and other Atlantic provinces. Is the ideal solution to have Newfoundland and Labrador Hydro as the sole owner of Gull Island?
+
+4. TRANSMISSION LINE: The MOU specifies $3.6 billion for Newfoundland and Labrador Hydro to connect the Gull Island generating station to the Quebec grid.
+
+---
+
+ISSUES WITH JOINT OWNERSHIP OF CHURCHILL RIVER OPERATIONS
+
+The MOU suggests Hydro-Quebec acquire a 40% ownership stake in the company structure related to Gull Island. There are potential issues with joint ownership because of conflicting goals.
+
+Quebec's goal is to produce electricity from its Churchill operations in CF(L)Co at the lowest cost possible and pass savings to its parent, Hydro-Quebec. When electricity is used locally, Hydro-Quebec can provide very affordable power to households and industry. If there is surplus, Hydro-Quebec can sell it on competitive markets, earning water rents from Churchill Falls and passing savings to consumers.
+
+For Newfoundland and Labrador Hydro, the 1969 contract remains a burden. The nationalization of BRINCO in 1974 was hoped to increase value through government-to-government negotiations. Any increase in Newfoundland and Labrador's value decreases Quebec's societal value.
+
+KEY POINT: This conflict in objectives is internal to CF(L)Co and to another jointly owned company associated with Gull Island. Any Action Plan must recognize and deal with this internal conflict of objectives.
+
+---
+
+OTHER CONSIDERATIONS FOR ACTION PLAN-2041
+
+ENVIRONMENTAL: A more recent environmental study should occur, given recent climate changes in Quebec and Newfoundland and Labrador.
+
+INDIGENOUS CULTURE AND ECONOMY: Hydroelectric projects in northern parts of the country can impact fishing, hunting, and trapping. The Innu hold the Tshash Petapen Agreement-in-Principle (2011) with Canada and Newfoundland and Labrador, securing certain rights and interests. The Innu have acknowledged the damage to their culture and language caused by past developments.
+
+EMPLOYMENT: The former Government's Fact Sheet indicates an average of 3,000 direct jobs during the development phase. The MOU does not specify which occupations will be affected or the length of employment. In a cost-benefit analysis, the benefit to an employed individual is the boost to well-being such as higher wages. Although wages may increase, many tradespeople might not want to work on these projects because the guaranteed work duration is shorter than their current jobs. If a worker is already employed and is assigned to these projects, there would generally be no increase in well-being.
+
+WELL-BEING: Since the provincial government is the likely direct beneficiary, the public would be interested in how it might use the money. Quebec provides a good example: potential resource rents led to significantly lower household electricity costs, direct water royalties are allocated to a Heritage Fund to reduce provincial debt, and some rents are used to offer businesses low electricity prices to support industrial development.
+
+---
+
+ACTION PLAN-2041 VERSUS THE DECEMBER MOU - KEY DIFFERENCES
+
+The Action Plan seeks to secure value from the Churchill River resource using implicit water rentals referencing competitive wholesale electricity markets. The plan shifts management of the resource and how its value is determined back to the Government of Newfoundland and Labrador. CF(L)Co must treat the monthly adjusted royalty as an external cost and modify the cost of exported electricity accordingly.
+
+KEY COMPARISON - MOU VS. ACTION PLAN:
+
+The MOU determines value based on the annual price charged for electricity, which rises with general inflation and does not account for real price fluctuations caused by shifts in supply and demand. The Action Plan uses market-based water royalties.
+
+The MOU extends prices to 2075, essentially attempting to secure supply from Churchill Falls for another 50 years beyond the 1969 Contract. Action Plan-2041 uses 2041 as a cutoff date and calls for five-year reviews, following Hydro-Quebec's lead with its Action Plan 2035.
+
+KEY POINT: The MOU, by extending prices to 2075, is essentially attempting to secure supply from Churchill Falls for another 50 years beyond the 1969 Contract ending in 2041. This may be the main way Hydro-Quebec guarantees security of supply, rather than through expanding Churchill Falls. No timelines or prices are attached to either the Gull Island project or the Churchill Falls expansion project.
+
+The December MOU acknowledges that any agreement must involve raising the fair value of existing electricity from Churchill Falls, a condition that has been part of the discussion for nearly fifty years. The MOU achieves this indirectly by increasing the price CF(L)Co receives. Since Hydro-Quebec owns 34.2% of CF(L)Co, this effectively lowers the amount the parent company pays by that percentage.
+
+KEY COMPARISON: Action Plan-2041 adopts an economic approach similar to Hydro-Quebec's, using water royalties to directly fund the provincial treasury. The MOU does not mention water royalties. The proposed electricity prices in the MOU appear to lack a clear economic basis and seem to overlook current electricity market realities.
+
+---
+
+PROVINCIAL DEBT AND FINANCING
+
+The main obstacle to implementing the infrastructure projects is the size of the provincial debt and the guarantees it provides to municipalities and Crown corporations. The MOU proposes a $4.8 billion payment to the Government of Newfoundland and Labrador to support equity commitments related to new generating projects.
+
+Action Plan-2041 believes that significant increases in cash from higher water royalties will help reduce the province's debt issues but recommends adopting a cash-flow strategy where money enters the provincial treasury before incurring more debt.
+
+---
+
+SCHEDULE E - NEW ALLOCATIONS
+
+Schedule E details new allocations to Newfoundland and Labrador for the existing Churchill Falls plant from 2025 to 2075. While these increased allocations could be used to promote industrialization, if not used for that purpose, the Government through Newfoundland and Labrador Hydro should have freedom to determine how the surplus power is utilized. The importance of extending the grid eastward grows increasingly. This approach should also permit the Government to immediately begin discussions with the United States government and companies.
+
+---
+
+FINAL ASSESSMENT
+
+In response to the MOU, Dr. Wade Locke and May agree: an agreement between Quebec and Newfoundland and Labrador could be potentially transformative. As Dr. Locke points out: "There is not sufficient information in the MOU to thoroughly evaluate all, or any, of the proposed new developments." May's further analysis has been particularly critical of the MOU's ability to reach fair value through its proposed pricing structure.
+
+Towards Action Plan-2041 aims to explore alternatives to the MOU which help unlock the potential of existing power generated at Churchill Falls, along with any new developments on the Churchill River, to enhance the well-being of Newfoundlanders and Labradorians while acknowledging national responsibilities.
+
+KEY POINT: To unlock the potential of the Churchill River, the government must be proactive rather than merely reactive, innovative in exploring new opportunities by actively engaging with the Federal Government, other provinces, and traditional trading partners in the United States. Quebec focuses on proactive "planification," whereas Newfoundland and Labrador's approach tends to be reactive. Like Hydro-Quebec and the Carney government, our Action Plan-2041 requires further discussion and development.
+
+---
+
+ACRONYMS:
+CF - Churchill Falls Generating Station
+CF(L)Co - Churchill Falls (Labrador) Corporation
+NLH - Newfoundland and Labrador Hydro
+HQ - Hydro-Quebec
+GNL - Government of Newfoundland and Labrador
+MOU - Memorandum of Understanding (December 12, 2024)
+BRINCO - British Newfoundland Corporation
+FERC - Federal Energy Regulatory Commission (United States)
+NE-ISO - New England Independent System Operator
+BATNA - Best Alternative To a Negotiated Agreement
+TAP-2041 - Towards Action Plan-2041
+TWh - Terawatt-hours
+MWh - Megawatt-hours
+kWh - Kilowatt-hours
+
+DOCUMENT METADATA
+Author: Dr. Doug May
+Date: 2025 (exact date not specified in document)
+Series: Churchill River Power Project Analysis
+Format: Discussion Paper / Policy Proposal
+Focus: Alternative action plan for Churchill River development emphasizing water-royalty-based valuation, competitive market pricing, proactive government planning, and national grid connectivity
+Key Topics: Water royalties, Ricardian rents, BATNA, competitive wholesale markets, Gull Island, joint ownership conflicts, provincial debt, East-West Grid, FERC Order 2000, heritage fund
+Related Documents: December 2024 MOU, Doug May assessment of proposed prices, Wade Locke MOU assessment, Jason Churchill negotiation history paper, Dr. Jim Feehan BRINCO financing paper, Hydro-Quebec Action Plan 2035
+Purpose: Initiate public discussion on alternative development pathways for Churchill River resources before any binding agreement is reached
