@@ -813,15 +813,17 @@ function detectLanguage(text) {
 async function handleChatRequest(req, res) {
     const startTime = Date.now();
 
-    // Overall request timeout — just under Render's 30s proxy limit
-    // Ensures the user gets a response even if an API call stalls
+    // Overall request timeout — deep text queries can legitimately take 27-30s on this server,
+    // so we use 55s to give them room while still catching genuinely stalled requests.
+    let responded = false;
     const requestTimeoutHandle = setTimeout(() => {
-        if (!res.headersSent) {
-            console.error('⚠️ Request timeout (25s) — sending timeout response');
+        if (!responded && !res.headersSent) {
+            responded = true;
+            console.error('⚠️ Request timeout (55s) — sending timeout response');
             usageStats.errors++;
             res.status(503).json({ error: 'Request timed out. Please try again.' });
         }
-    }, 25000);
+    }, 55000);
 
     try {
         const { 
@@ -1220,7 +1222,10 @@ async function handleChatRequest(req, res) {
         const trackedMode = isVoiceMode ? 'voice' : textMode;
         trackQuestion(trackedMode, language, parseFloat(responseTime), false);
         
-        res.json(responseData);
+        if (!responded && !res.headersSent) {
+            responded = true;
+            res.json(responseData);
+        }
 
     } catch (error) {
         console.error('❌ Error:', error.stack || error.message); // full stack in server logs
