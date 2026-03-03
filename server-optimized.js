@@ -64,7 +64,7 @@ const CACHE_DURATION = 3600000; // 1 hour in milliseconds
 
 function getCacheKey(message, mode) {
     // Create a simple hash of the message + mode
-    const normalized = message.toLowerCase().trim();
+    const normalized = message.toLowerCase().trim().replace(/\s+/g, ' ');
     return `${mode}:${normalized}`;
 }
 
@@ -131,8 +131,41 @@ const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY;
 const ELEVENLABS_VOICE_ID = process.env.ELEVENLABS_VOICE_ID;
 const ELEVENLABS_VOICE_ID_FR = process.env.ELEVENLABS_VOICE_ID_FR; // French voice
 
-let monthlyVoiceUsage = 0;
 const MONTHLY_VOICE_LIMIT = 500000;
+const VOICE_USAGE_FILE = path.join(__dirname, '.voice-usage.json');
+
+// Load voice usage from disk so the monthly limit survives server restarts
+function loadVoiceUsage() {
+    try {
+        if (fs.existsSync(VOICE_USAGE_FILE)) {
+            const data = JSON.parse(fs.readFileSync(VOICE_USAGE_FILE, 'utf-8'));
+            const savedMonth = data.month || '';
+            const currentMonth = new Date().toISOString().slice(0, 7); // "2026-03"
+            if (savedMonth === currentMonth) {
+                console.log(`📊 Voice usage loaded: ${data.usage}/${MONTHLY_VOICE_LIMIT} chars this month`);
+                return data.usage || 0;
+            }
+            console.log('📊 New month — resetting voice usage counter');
+        }
+    } catch (e) {
+        console.error('⚠️ Could not load voice usage:', e.message);
+    }
+    return 0;
+}
+
+function saveVoiceUsage(usage) {
+    try {
+        fs.writeFileSync(VOICE_USAGE_FILE, JSON.stringify({
+            usage,
+            month: new Date().toISOString().slice(0, 7),
+            updatedAt: new Date().toISOString()
+        }));
+    } catch (e) {
+        console.error('⚠️ Could not save voice usage:', e.message);
+    }
+}
+
+let monthlyVoiceUsage = loadVoiceUsage();
 
 console.log('\n' + '='.repeat(60));
 console.log('🚀 Churchill Falls Assistant - OPTIMIZED');
@@ -261,6 +294,7 @@ loadDougDocuments();
 
 let mcpClient = null;
 let cachedToolsList = null; // Cache tools list since it doesn't change
+let mcpReconnecting = false; // Prevent concurrent reconnection from spawning duplicate child processes
 
 async function initializeMCP() {
     console.log('\n🔌 Initializing MCP for comprehensive text mode...');
@@ -304,11 +338,21 @@ async function initializeMCP() {
     }
 }
 
-// Auto-reconnect MCP if it drops
+// Auto-reconnect MCP if it drops — guarded so concurrent requests don't spawn duplicate processes
 async function ensureMCP() {
     if (mcpClient && cachedToolsList) return true;
+    if (mcpReconnecting) {
+        console.log('🔄 MCP reconnection already in progress — waiting 3s...');
+        await new Promise(r => setTimeout(r, 3000));
+        return !!(mcpClient && cachedToolsList);
+    }
+    mcpReconnecting = true;
     console.log('🔄 MCP disconnected - attempting reconnection...');
-    return await initializeMCP();
+    try {
+        return await initializeMCP();
+    } finally {
+        mcpReconnecting = false;
+    }
 }
 
 initializeMCP();
@@ -676,7 +720,7 @@ const TEXT_MODE_DEEP_PROMPT_FR = `Vous êtes un assistant IA expert spécialisé
 Fournissez des réponses complètes et bien documentées en utilisant tous les documents disponibles.
 
 STRATÉGIE DE RECHERCHE:
-1. Utilisez search_documents avec max_results=10-15 pour trouver TOUS les documents pertinents
+1. Utilisez search_documents avec max_results=8 pour trouver les documents les plus pertinents
 2. Pour les documents clés trouvés, utilisez get_document pour récupérer le contenu complet
 3. Synthétisez l'information de MULTIPLES sources (visez 5+ sources pour les questions complexes)
 4. Présentez diverses perspectives (analyse de Doug May, critique de Wade Locke, documents officiels, etc.)
@@ -694,6 +738,27 @@ INSTRUCTIONS CRITIQUES:
 - Référez-vous TOUJOURS à Wade Locke comme "Dr Wade Locke" ou "Dr Locke"
 
 Fournissez une recherche objective présentée comme des faits établis, pas comme l'analyse de quelqu'un.`;
+
+// ============================================================================
+// PRE-BUILT VOICE SYSTEM PROMPTS
+// Built once at startup — avoids reconstructing ~150KB string on every voice request
+// ============================================================================
+
+let voiceSystemPromptEN = '';
+let voiceSystemPromptFR = '';
+
+function buildVoiceSystemPrompts() {
+    let documentContext = '# Dr. Doug May\'s Analysis and Source Materials\n\n';
+    for (const [filename, content] of dougDocuments.entries()) {
+        documentContext += `## ${filename}\n${content}\n\n---\n\n`;
+    }
+    voiceSystemPromptEN = DOUG_VOICE_PROMPT + '\n\n' + documentContext;
+    voiceSystemPromptFR = DOUG_VOICE_PROMPT_FR + '\n\n' + documentContext;
+    const sizeKB = Math.round(voiceSystemPromptEN.length / 1024);
+    console.log(`✅ Voice system prompts pre-built (${sizeKB}KB — built once, reused per request)`);
+}
+
+buildVoiceSystemPrompts();
 
 // ============================================================================
 // LANGUAGE DETECTION - IMPROVED
@@ -745,9 +810,19 @@ function detectLanguage(text) {
 // MAIN CHAT ENDPOINT
 // ============================================================================
 
-app.post('/api/chat', chatLimiter, async (req, res) => {
+async function handleChatRequest(req, res) {
     const startTime = Date.now();
-    
+
+    // Overall request timeout — just under Render's 30s proxy limit
+    // Ensures the user gets a response even if an API call stalls
+    const requestTimeoutHandle = setTimeout(() => {
+        if (!res.headersSent) {
+            console.error('⚠️ Request timeout (25s) — sending timeout response');
+            usageStats.errors++;
+            res.status(503).json({ error: 'Request timed out. Please try again.' });
+        }
+    }, 25000);
+
     try {
         const { 
             message, 
@@ -806,8 +881,15 @@ app.post('/api/chat', chatLimiter, async (req, res) => {
         // GENERATE NEW RESPONSE
         // ============================================================================
         
+        // Validate and sanitize conversation history (prevent oversized payloads driving up API costs)
+        const MAX_HISTORY_MSG_LENGTH = 4000;
+        const safeHistory = (conversationHistory || [])
+            .slice(-20)
+            .filter(m => m && (m.role === 'user' || m.role === 'assistant') && typeof m.content === 'string')
+            .map(m => ({ role: m.role, content: m.content.slice(0, MAX_HISTORY_MSG_LENGTH) }));
+
         const messages = [
-            ...conversationHistory.slice(-20), // Limit to last 20 messages to control token usage
+            ...safeHistory,
             { role: 'user', content: message }
         ];
         
@@ -822,16 +904,8 @@ app.post('/api/chat', chatLimiter, async (req, res) => {
         if (isVoiceMode) {
             console.log('📚 Using Doug\'s analysis (17 documents)...');
             
-            // Build context from Doug's documents
-            let documentContext = '# Dr. Doug May\'s Analysis and Source Materials\n\n';
-            
-            for (const [filename, content] of dougDocuments.entries()) {
-                documentContext += `## ${filename}\n${content}\n\n---\n\n`;
-            }
-            
-            // Select prompt based on detected language
-            const basePrompt = language === 'fr' ? DOUG_VOICE_PROMPT_FR : DOUG_VOICE_PROMPT;
-            const systemPrompt = basePrompt + '\n\n' + documentContext;
+            // Use pre-built system prompt (built once at startup, not rebuilt per-request)
+            const systemPrompt = language === 'fr' ? voiceSystemPromptFR : voiceSystemPromptEN;
             
             const response = await anthropic.messages.create({
                 model: 'claude-haiku-4-5-20251001', // Haiku: 1/3 cost of Sonnet, faster, plenty smart for voice summaries
@@ -854,13 +928,13 @@ app.post('/api/chat', chatLimiter, async (req, res) => {
             console.log(`✅ Response generated: ${responseText.length} chars`);
             
             // Post-process for voice (acronym expansion, cleanup, etc.)
-           const processedText = postProcessForVoice(responseText);
-const cleanedText = cleanupVoiceText(processedText);
-const truncatedText = truncateToCompleteSentence(cleanedText, 1200); // Safety net — acronym expansion inflates text, needs room for complete sentences
+            const processedText = postProcessForVoice(responseText);
+            const cleanedText = cleanupVoiceText(processedText);
+            const truncatedText = truncateToCompleteSentence(cleanedText, 1200); // Safety net — acronym expansion inflates text
 
-console.log(`🎯 After post-processing: ${cleanedText.length} chars → ${truncatedText.length} chars`);
+            console.log(`🎯 After post-processing: ${cleanedText.length} chars → ${truncatedText.length} chars`);
 
-responseText = truncatedText; // Use the truncated version
+            responseText = truncatedText; // Use the truncated version
             
             // Select voice based on language
             const voiceId = ELEVENLABS_VOICE_ID; // Always use Doug's voice for both languages
@@ -891,9 +965,10 @@ responseText = truncatedText; // Use the truncated version
                     );
                     
                     audioData = Buffer.from(elevenLabsResponse.data).toString('base64');
-                    monthlyVoiceUsage += cleanedText.length;
-                    
-                    console.log(`✅ Audio generated (${cleanedText.length} chars)`);
+                    monthlyVoiceUsage += truncatedText.length; // track chars actually sent to ElevenLabs
+                    saveVoiceUsage(monthlyVoiceUsage); // persist across server restarts
+
+                    console.log(`✅ Audio generated (${truncatedText.length} chars)`);
                     console.log(`   Monthly usage: ${monthlyVoiceUsage}/${MONTHLY_VOICE_LIMIT}`);
                 } catch (audioError) {
                     console.error('⚠️  Audio generation failed:', audioError.message);
@@ -1041,15 +1116,18 @@ responseText = truncatedText; // Use the truncated version
                             });
                         } catch (error) {
                             console.error(`  ✗ ${block.name} error:`, error.message);
-                            
-                            // If MCP disconnected, try to reconnect
+
+                            // If MCP disconnected, trigger reconnect and bail out of the tool loop.
+                            // We can't continue: toolsList is stale and the new client is not set up yet.
+                            // A partial/empty response is better than corrupted tool calls.
                             if (error.message.includes('closed') || error.message.includes('disconnected')) {
-                                console.log('🔄 MCP appears disconnected, attempting reconnect...');
+                                console.log('🔄 MCP appears disconnected — breaking tool loop, scheduling reconnect...');
                                 mcpClient = null;
                                 cachedToolsList = null;
-                                await ensureMCP();
+                                ensureMCP(); // reconnect in background; don't await (we need to return now)
+                                break; // exit the for loop over blocks
                             }
-                            
+
                             toolResults.push({
                                 type: 'tool_result',
                                 tool_use_id: block.id,
@@ -1085,8 +1163,15 @@ responseText = truncatedText; // Use the truncated version
                 .map(block => block.text)
                 .join('\n');
 
+            // Fallback if MCP disconnect caused the tool loop to exit with no text content
+            if (!responseText.trim()) {
+                responseText = 'The research service encountered a connection issue. Please try again in a moment.';
+                console.log('⚠️ Empty response after tool loop — MCP likely disconnected mid-request');
+            }
+
             const wordCount = responseText.split(/\s+/).length;
             console.log(`✅ Comprehensive response: ${wordCount} words`);
+            console.log(`💰 Tool calls: ${toolCallCount}/${MAX_TOOL_CALLS} (cached system prompt)`);
         }
         
         // ====================================================================
@@ -1099,9 +1184,6 @@ responseText = truncatedText; // Use the truncated version
         // Cost estimation logging
         const model = isVoiceMode ? 'haiku-4.5' : (textMode === 'fast' ? 'haiku-4.5' : 'sonnet-4');
         console.log(`💰 Model used: ${model} | Mode: ${isVoiceMode ? 'voice' : textMode}`);
-        if (!isVoiceMode && typeof toolCallCount !== 'undefined') {
-            console.log(`💰 Tool calls: ${toolCallCount} (cached system prompt)`);
-        }
         console.log('='.repeat(60));
         
         const responseData = {
@@ -1128,7 +1210,11 @@ responseText = truncatedText; // Use the truncated version
         // CACHE THE RESPONSE (Optimization 2)
         // ============================================================================
         
-        cacheResponse(message, cacheMode, responseData);
+        // Don't cache voice responses when audio failed — prevents serving a silent response
+        // for up to an hour while ElevenLabs is down and then recovers
+        if (!isVoiceMode || audioData !== null) {
+            cacheResponse(message, cacheMode, responseData);
+        }
         
         // Track new response
         const trackedMode = isVoiceMode ? 'voice' : textMode;
@@ -1137,35 +1223,27 @@ responseText = truncatedText; // Use the truncated version
         res.json(responseData);
 
     } catch (error) {
-        console.error('❌ Error:', error);
+        console.error('❌ Error:', error.stack || error.message); // full stack in server logs
         usageStats.errors++;
-        res.status(500).json({ 
-            error: 'An error occurred processing your request',
-            details: error.message 
-        });
+        if (!res.headersSent) { // timeout may have already responded
+            res.status(500).json({ error: 'An error occurred processing your request' });
+        }
+    } finally {
+        clearTimeout(requestTimeoutHandle);
     }
-});
+}
+
+app.post('/api/chat', chatLimiter, handleChatRequest);
 
 // ============================================================================
 // LEGACY ENDPOINT (For compatibility)
 // ============================================================================
 
-app.post('/api/voice-chat', async (req, res) => {
-    // Convert old format to new format
+app.post('/api/voice-chat', chatLimiter, async (req, res) => {
+    // Legacy endpoint — translate old field names to current format, then call the same handler
     const { message, conversationHistory, requestVoice } = req.body;
-    
-    req.body = {
-        message,
-        conversationHistory,
-        isVoiceMode: requestVoice
-    };
-    
-    // Forward to main endpoint
-    return app._router.handle(
-        { ...req, url: '/api/chat', method: 'POST' },
-        res,
-        () => {}
-    );
+    req.body = { message, conversationHistory, isVoiceMode: requestVoice };
+    return handleChatRequest(req, res);
 });
 
 // ============================================================================
@@ -1209,7 +1287,11 @@ app.get('/api/health', (req, res) => {
 // ============================================================================
 
 app.get('/api/stats', (req, res) => {
-    const avgResponseTime = usageStats.totalQuestions > 0 
+    const statsKey = process.env.STATS_KEY;
+    if (statsKey && req.query.key !== statsKey) {
+        return res.status(403).json({ error: 'Forbidden' });
+    }
+    const avgResponseTime = usageStats.totalQuestions > 0
         ? (usageStats.totalResponseTime / usageStats.totalQuestions).toFixed(1) 
         : 0;
     
@@ -1245,7 +1327,7 @@ app.get('/api/stats', (req, res) => {
 // ============================================================================
 
 process.on('uncaughtException', (error) => {
-    console.error('⚠️ Uncaught Exception:', error.message);
+    console.error('⚠️ Uncaught Exception:', error.stack || error.message);
     // Don't exit - keep server running
 });
 
