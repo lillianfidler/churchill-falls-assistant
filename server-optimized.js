@@ -393,6 +393,9 @@ function expandAcronyms(text) {
 }
 
 function postProcessForVoice(text) {
+    // 0. Fix local pronunciations
+    text = text.replace(/Newfoundland/g, 'Noofenland');
+
     // 1. First expand acronyms
     text = expandAcronyms(text);
     
