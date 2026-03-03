@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Churchill Falls — Usage Dashboard</title>
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root { --bg: #111; --card: #1a1a1a; --border: #2a2a2a; --aqua: #5eead4; --text: #d4d4d4; --muted: #777; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding: 24px; }
+    h1 { color: var(--aqua); font-size: 22px; font-weight: 400; margin-bottom: 4px; }
+    .subtitle { color: var(--muted); font-size: 13px; margin-bottom: 28px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 28px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+    .card-label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+    .card-value { font-size: 32px; font-weight: 300; color: #fff; }
+    .card-value small { font-size: 14px; color: var(--muted); font-weight: 400; }
+    .card-sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
+    .section-title { color: #fff; font-size: 16px; font-weight: 500; margin-bottom: 12px; margin-top: 8px; }
+
+    /* Mode breakdown bar */
+    .mode-bar { display: flex; height: 28px; border-radius: 6px; overflow: hidden; margin-bottom: 8px; }
+    .mode-bar div { display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 500; color: #111; min-width: 40px; }
+    .mode-voice { background: var(--aqua); }
+    .mode-fast { background: #60a5fa; }
+    .mode-deep { background: #a78bfa; }
+    .mode-legend { display: flex; gap: 16px; font-size: 12px; color: var(--muted); }
+    .mode-legend span::before { content: ''; display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
+    .legend-voice::before { background: var(--aqua) !important; }
+    .legend-fast::before { background: #60a5fa !important; }
+    .legend-deep::before { background: #a78bfa !important; }
+
+    /* Daily table */
+    .daily-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .daily-table th { text-align: left; color: var(--muted); font-weight: 400; padding: 8px 12px; border-bottom: 1px solid var(--border); font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .daily-table td { padding: 8px 12px; border-bottom: 1px solid var(--border); }
+    .daily-table tr:last-child td { border-bottom: none; }
+
+    /* Recent activity */
+    .activity-list { list-style: none; }
+    .activity-list li { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px; display: flex; justify-content: space-between; align-items: center; }
+    .activity-list li:last-child { border-bottom: none; }
+    .activity-tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 500; }
+    .tag-voice { background: rgba(94,234,212,0.15); color: var(--aqua); }
+    .tag-fast { background: rgba(96,165,250,0.15); color: #60a5fa; }
+    .tag-deep { background: rgba(167,139,250,0.15); color: #a78bfa; }
+    .activity-time { color: var(--muted); font-size: 11px; }
+
+    .refresh-btn { background: none; border: 1px solid var(--border); color: var(--muted); padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 12px; float: right; }
+    .refresh-btn:hover { border-color: var(--aqua); color: var(--aqua); }
+    .loading { color: var(--muted); font-style: italic; }
+    .error-msg { color: #f87171; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <button class="refresh-btn" onclick="loadStats()">↻ Refresh</button>
+  <h1>Churchill Falls — Usage Dashboard</h1>
+  <div class="subtitle">Statistics since last server restart. Auto-refreshes every 60 seconds.</div>
+
+  <div id="content"><p class="loading">Loading statistics...</p></div>
+
+  <script>
+    const API_BASE = 'https://churchill-falls.onrender.com';
+
+    function formatTime(iso) {
+      const d = new Date(iso);
+      return d.toLocaleTimeString('en-CA', { hour: '2-digit', minute: '2-digit', hour12: true });
+    }
+
+    function formatDate(dateStr) {
+      const d = new Date(dateStr + 'T12:00:00');
+      return d.toLocaleDateString('en-CA', { weekday: 'short', month: 'short', day: 'numeric' });
+    }
+
+    function modeTag(mode) {
+      return `<span class="activity-tag tag-${mode}">${mode}</span>`;
+    }
+
+    async function loadStats() {
+      const el = document.getElementById('content');
+      try {
+        const resp = await fetch(`${API_BASE}/api/stats`);
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        const data = await resp.json();
+        renderDashboard(data);
+      } catch (err) {
+        el.innerHTML = `<p class="error-msg">Could not load stats: ${err.message}<br>The server may be starting up — try again in 30 seconds.</p>`;
+      }
+    }
+
+    function renderDashboard(data) {
+      const s = data.summary;
+      const totalByMode = data.byMode;
+      const total = s.totalQuestions || 1; // avoid divide by zero
+
+      // Mode bar percentages
+      const voicePct = ((totalByMode.voice || 0) / total * 100).toFixed(0);
+      const fastPct = ((totalByMode.fast || 0) / total * 100).toFixed(0);
+      const deepPct = ((totalByMode.deep || 0) / total * 100).toFixed(0);
+
+      // Daily data sorted newest first
+      const dailyDates = Object.keys(data.daily).sort().reverse().slice(0, 14);
+
+      // Recent activity
+      const recent = (data.recentQuestions || []).slice().reverse().slice(0, 15);
+
+      let html = `
+        <!-- SUMMARY CARDS -->
+        <div class="grid">
+          <div class="card">
+            <div class="card-label">Total Questions</div>
+            <div class="card-value">${s.totalQuestions}</div>
+            <div class="card-sub">since server start</div>
+          </div>
+          <div class="card">
+            <div class="card-label">Avg Response Time</div>
+            <div class="card-value">${s.avgResponseTime}<small>s</small></div>
+          </div>
+          <div class="card">
+            <div class="card-label">Cache Hit Rate</div>
+            <div class="card-value">${s.cacheHitRate}</div>
+            <div class="card-sub">${data.system.cacheEntries} cached responses</div>
+          </div>
+          <div class="card">
+            <div class="card-label">Errors</div>
+            <div class="card-value">${s.errors}</div>
+          </div>
+          <div class="card">
+            <div class="card-label">Voice Credits</div>
+            <div class="card-value">${data.voice.percentUsed}</div>
+            <div class="card-sub">${data.voice.creditsUsed.toLocaleString()} / ${data.voice.monthlyLimit.toLocaleString()} chars</div>
+          </div>
+          <div class="card">
+            <div class="card-label">System</div>
+            <div class="card-value" style="font-size:16px;">
+              Docs: ${data.system.documentsLoaded}<br>
+              MCP: ${data.system.mcpConnected ? '✓ Connected' : '✗ Down'}
+            </div>
+          </div>
+        </div>
+
+        <!-- MODE BREAKDOWN -->
+        <div class="section-title">Questions by Mode</div>
+        <div class="card" style="margin-bottom:28px;">
+          <div class="mode-bar">
+            ${voicePct > 0 ? `<div class="mode-voice" style="width:${voicePct}%">🎤 ${totalByMode.voice || 0}</div>` : ''}
+            ${fastPct > 0 ? `<div class="mode-fast" style="width:${fastPct}%">⚡ ${totalByMode.fast || 0}</div>` : ''}
+            ${deepPct > 0 ? `<div class="mode-deep" style="width:${deepPct}%">🔬 ${totalByMode.deep || 0}</div>` : ''}
+          </div>
+          <div class="mode-legend">
+            <span class="legend-voice">Voice (${voicePct}%)</span>
+            <span class="legend-fast">Fast (${fastPct}%)</span>
+            <span class="legend-deep">Deep (${deepPct}%)</span>
+          </div>
+          <div class="card-sub" style="margin-top:8px;">
+            Languages: English ${data.byLanguage.en || 0} · French ${data.byLanguage.fr || 0}
+          </div>
+        </div>
+
+        <div class="two-col">
+          <!-- DAILY BREAKDOWN -->
+          <div>
+            <div class="section-title">Daily Activity (last 14 days)</div>
+            <div class="card">
+              ${dailyDates.length === 0 ? '<p style="color:var(--muted);font-size:13px;">No data yet</p>' : `
+              <table class="daily-table">
+                <tr><th>Date</th><th>Total</th><th>Voice</th><th>Fast</th><th>Deep</th></tr>
+                ${dailyDates.map(d => {
+                  const day = data.daily[d];
+                  return `<tr>
+                    <td>${formatDate(d)}</td>
+                    <td><strong>${day.total}</strong></td>
+                    <td>${day.voice || 0}</td>
+                    <td>${day.fast || 0}</td>
+                    <td>${day.deep || 0}</td>
+                  </tr>`;
+                }).join('')}
+              </table>`}
+            </div>
+          </div>
+
+          <!-- RECENT ACTIVITY -->
+          <div>
+            <div class="section-title">Recent Activity</div>
+            <div class="card">
+              ${recent.length === 0 ? '<p style="color:var(--muted);font-size:13px;">No questions yet</p>' : `
+              <ul class="activity-list">
+                ${recent.map(q => `
+                  <li>
+                    <span>${modeTag(q.mode)} ${q.responseTime}s ${q.cached ? '(cached)' : ''} ${q.language === 'fr' ? '🇫🇷' : ''}</span>
+                    <span class="activity-time">${formatTime(q.time)}</span>
+                  </li>
+                `).join('')}
+              </ul>`}
+            </div>
+          </div>
+        </div>
+
+        <div class="card-sub" style="margin-top:20px; text-align:center;">
+          Server started: ${new Date(data.uptime).toLocaleString('en-CA')} · Dashboard refreshes every 60s
+        </div>
+      `;
+
+      document.getElementById('content').innerHTML = html;
+    }
+
+    // Initial load
+    loadStats();
+    // Auto-refresh every 60 seconds
+    setInterval(loadStats, 60000);
+  </script>
+</body>
+</html>

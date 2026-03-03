@@ -41,16 +41,16 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
         }
 
         .logo {
             color: var(--aqua);
-            font-size: 20px;
-            font-weight: 700;
+            font-size: 16px;
+            font-weight: 600;
             text-decoration: none;
-            letter-spacing: -0.5px;
+            letter-spacing: -0.2px;
         }
 
         .nav-links {
@@ -72,9 +72,38 @@
             color: var(--aqua);
         }
 
+        .hamburger {
+            display: none; flex-direction: column; gap: 5px; cursor: pointer;
+            padding: 4px; background: none; border: none; z-index: 200;
+        }
+        .hamburger span {
+            display: block; width: 24px; height: 2px; background: #a8a8a8;
+            border-radius: 2px; transition: all 0.3s;
+        }
+        .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+        .mobile-overlay {
+            display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 149;
+        }
+        .mobile-overlay.active { display: block; }
+
+        .mobile-nav {
+            display: none; position: fixed; top: 0; right: -280px; width: 280px; height: 100%;
+            background: #222; border-left: 1px solid rgba(255,255,255,0.1); z-index: 150;
+            padding: 72px 24px 24px; transition: right 0.3s ease; flex-direction: column; gap: 4px;
+        }
+        .mobile-nav.active { right: 0; }
+        .mobile-nav a {
+            display: block; color: #a8a8a8; text-decoration: none; font-size: 16px; font-weight: 500;
+            padding: 12px 16px; border-radius: 8px; transition: all 0.2s;
+        }
+        .mobile-nav a:hover { color: var(--aqua); background: rgba(94,234,212,0.08); }
+
         /* ---------- CONTENT ---------- */
         .container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 40px 20px;
         }
@@ -165,10 +194,81 @@
             text-decoration: underline;
         }
 
+        /* ---------- VIDEO MODAL ---------- */
+        .video-modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+        }
+        .video-modal-overlay.active {
+            display: flex;
+        }
+        .video-modal {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            background: #1a1a1a;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(94, 234, 212, 0.2);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+        .video-modal-close {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            transition: background 0.2s;
+        }
+        .video-modal-close:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .video-modal video {
+            width: 100%;
+            display: block;
+        }
+        .demo-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 22px;
+            background: rgba(94, 234, 212, 0.1);
+            border: 1px solid rgba(94, 234, 212, 0.3);
+            border-radius: 8px;
+            color: var(--aqua);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .demo-btn:hover {
+            background: rgba(94, 234, 212, 0.18);
+            border-color: rgba(94, 234, 212, 0.5);
+        }
+
         @media (max-width: 768px) {
-            .nav-links {
-                gap: 16px;
-            }
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+            .mobile-nav { display: flex; }
             
             .content {
                 padding: 24px;
@@ -181,10 +281,14 @@
     </style>
 </head>
 <body>
+<script src="access-check.js"></script>
     <!-- HEADER -->
+    <!-- ACCESS CONTROL -->
+    <script src="access-check.js"></script>
+
     <div class="header">
         <nav class="nav">
-            <a href="index.html" class="logo">Churchill Falls Assistant</a>
+            <a href="index.html" class="logo">Churchill Falls Information Assistant</a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html" class="active">About</a>
@@ -193,8 +297,22 @@
                 <a href="videos.html">Videos</a>
                 <a href="contact.html">Contact</a>
             </div>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
         </nav>
     </div>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="sources.html">Sources</a>
+        <a href="history.html">History</a>
+        <a href="videos.html">Videos</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
     <!-- MAIN CONTENT -->
     <div class="container">
@@ -203,6 +321,13 @@
             <p class="subtitle">
                 Expert analysis and comprehensive information about Churchill Falls hydroelectric projects and energy agreements.
             </p>
+
+            <div style="text-align: center; margin-bottom: 30px;">
+                <button class="demo-btn" id="demoVideoBtn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    Introduction &amp; Walkthrough
+                </button>
+            </div>
 
             <h2>Welcome</h2>
             <p>
@@ -221,9 +346,13 @@
 
             <h2>About Dr. Doug May</h2>
             <p>
-                Dr. Doug May is an economist and Professor Emeritus at Memorial University of Newfoundland. 
-                His research focuses on energy economics, regional economic development, and public policy 
-                analysis with particular expertise in hydroelectric agreements and their economic impacts.
+                Dr. Doug May is an Honorary Research Professor in the Department of Economics at Memorial 
+                University of Newfoundland. His applied economics research focuses on well-being and general 
+                economic conditions, primarily in Newfoundland and Labrador. He was the chief architect of 
+                NL's Community Accounts (<a href="https://nl.communityaccounts.ca" target="_blank">nl.communityaccounts.ca</a>) 
+                and now manages CARE (Collaboration of Applied Research in Economics-NL). The analysis he 
+                undertakes builds on his background in business economics and on his work on cost functions 
+                and productivity in the manufacturing and resource sectors.
             </p>
             <p>
                 Dr. May has created the most comprehensive independent economic assessment of the December 2024 
@@ -257,6 +386,21 @@
                 Receive comprehensive analysis with text answers from all sources. This mode searches through 
                 all available documents to provide the most thorough response possible, with citations and 
                 multiple perspectives.
+            </p>
+
+            <h3>🇫🇷 Bilingual Support</h3>
+            <p>
+                The assistant automatically detects French input and responds in French, including voice responses. 
+                Simply type or speak your question in French to receive a complete French-language experience.
+            </p>
+
+            <h3>📜 History</h3>
+            <p>
+                The assistant draws on historical documentation spanning from 1949 to the present day, covering 
+                seven decades of negotiations, agreements, and policy developments related to Churchill River 
+                hydroelectric resources. This includes the original 1969 BRINCO contract, the 2002 Gull Island 
+                Framework Agreement, and the comprehensive history of negotiations through successive provincial 
+                governments.
             </p>
 
             <h2>Source Materials</h2>
@@ -320,10 +464,73 @@
             <p><strong>Technical Infrastructure:</strong></p>
             <ul>
                 <li>AI Technology: Claude by Anthropic</li>
-                <li>Development: Fidler Innovations Inc.</li>
-                <li>Hosting: Render.com</li>
+                <li>Development: <a href="https://fidlerinnovations.com" target="_blank">Fidler Innovations Inc.</a></li>
             </ul>
         </div>
     </div>
+
+    <!-- VIDEO MODAL -->
+    <div class="video-modal-overlay" id="videoModalOverlay">
+        <div class="video-modal">
+            <button class="video-modal-close" id="videoModalClose">✕</button>
+            <video id="demoVideo" controls preload="metadata">
+                <source src="assets/video/CF-demo.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+        </div>
+    </div>
+
+    <script>
+        const demoBtn = document.getElementById('demoVideoBtn');
+        const modalOverlay = document.getElementById('videoModalOverlay');
+        const modalClose = document.getElementById('videoModalClose');
+        const demoVideo = document.getElementById('demoVideo');
+
+        if (demoBtn && modalOverlay) {
+            demoBtn.addEventListener('click', () => {
+                modalOverlay.classList.add('active');
+                demoVideo.play();
+            });
+            modalClose.addEventListener('click', () => {
+                modalOverlay.classList.remove('active');
+                demoVideo.pause();
+                demoVideo.currentTime = 0;
+            });
+            modalOverlay.addEventListener('click', (e) => {
+                if (e.target === modalOverlay) {
+                    modalOverlay.classList.remove('active');
+                    demoVideo.pause();
+                    demoVideo.currentTime = 0;
+                }
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+                    modalOverlay.classList.remove('active');
+                    demoVideo.pause();
+                    demoVideo.currentTime = 0;
+                }
+            });
+        }
+
+        // Mobile menu
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileOverlay2 = document.getElementById('mobileOverlay');
+        function toggleMobileMenu() {
+            hamburgerBtn.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            mobileOverlay2.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        }
+        function closeMobileMenu() {
+            hamburgerBtn.classList.remove('active');
+            mobileNav.classList.remove('active');
+            mobileOverlay2.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        hamburgerBtn.addEventListener('click', toggleMobileMenu);
+        mobileOverlay2.addEventListener('click', closeMobileMenu);
+        mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMobileMenu));
+    </script>
 </body>
 </html>

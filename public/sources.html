@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sources - Churchill Falls Assistant</title>
+    <title>Sources & Documentation - Churchill Falls Information Assistant</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <style>
+        :root {
+            --bg-dark: #1a1a1a;
+            --bg-card: #2a2a2a;
+            --bg-hover: #333333;
+            --aqua: #5eead4;
+            --aqua-dim: #2dd4bf;
+            --aqua-glow: rgba(94, 234, 212, 0.1);
+            --text-primary: #e5e5e5;
+            --text-secondary: #a0a0a0;
+            --text-muted: #777777;
+            --border: rgba(255, 255, 255, 0.1);
+            --border-hover: rgba(94, 234, 212, 0.3);
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        :root {
-            --aqua: #5eead4;
-            --aqua-dim: #2dd4bf;
-        }
-
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Segoe UI Emoji', sans-serif;
-            background: #1a1a1a;
-            color: #e5e5e5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
             min-height: 100vh;
+            line-height: 1.6;
         }
 
-        /* HEADER */
         .header {
             background: rgba(26, 26, 26, 0.8);
             backdrop-filter: blur(20px);
@@ -35,28 +45,29 @@
         }
 
         .nav {
+            max-width: 1400px;
+            margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1400px;
-            margin: 0 auto;
         }
 
         .logo {
+            color: var(--aqua);
             font-size: 16px;
             font-weight: 600;
-            color: var(--aqua);
-            letter-spacing: -0.2px;
             text-decoration: none;
+            letter-spacing: -0.2px;
         }
 
         .nav-links {
             display: flex;
             gap: 24px;
+            align-items: center;
         }
 
         .nav-links a {
-            color: #a8a8a8;
+            color: var(--text-secondary);
             text-decoration: none;
             font-size: 14px;
             font-weight: 500;
@@ -68,83 +79,161 @@
             color: var(--aqua);
         }
 
-        /* MAIN CONTENT */
+        .hamburger {
+            display: none; flex-direction: column; gap: 5px; cursor: pointer;
+            padding: 4px; background: none; border: none; z-index: 200;
+        }
+        .hamburger span {
+            display: block; width: 24px; height: 2px; background: #a8a8a8;
+            border-radius: 2px; transition: all 0.3s;
+        }
+        .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+        .mobile-overlay {
+            display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 149;
+        }
+        .mobile-overlay.active { display: block; }
+
+        .mobile-nav {
+            display: none; position: fixed; top: 0; right: -280px; width: 280px; height: 100%;
+            background: #222; border-left: 1px solid rgba(255,255,255,0.1); z-index: 150;
+            padding: 72px 24px 24px; transition: right 0.3s ease; flex-direction: column; gap: 4px;
+        }
+        .mobile-nav.active { right: 0; }
+        .mobile-nav a {
+            display: block; color: #a8a8a8; text-decoration: none; font-size: 16px; font-weight: 500;
+            padding: 12px 16px; border-radius: 8px; transition: all 0.2s;
+        }
+        .mobile-nav a:hover { color: var(--aqua); background: rgba(94,234,212,0.08); }
+
         .container {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 60px 20px;
+            padding: 48px 24px 80px;
         }
 
         h1 {
             font-size: 36px;
-            font-weight: 400;
-            margin-bottom: 16px;
-            background: linear-gradient(135deg, #fff 0%, #a8a8a8 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-primary);
         }
 
         .subtitle {
+            color: var(--text-secondary);
             font-size: 16px;
-            color: #a8a8a8;
-            margin-bottom: 48px;
-            line-height: 1.6;
+            margin-bottom: 40px;
         }
 
         .content-section {
-            margin-bottom: 60px;
+            margin-bottom: 48px;
         }
 
-        .content-section h2 {
+        h2 {
             font-size: 24px;
             font-weight: 600;
-            color: #fff;
-            margin-bottom: 20px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid rgba(94, 234, 212, 0.3);
-        }
-
-        .content-section h3 {
-            font-size: 20px;
-            font-weight: 600;
             color: var(--aqua);
-            margin-top: 30px;
-            margin-bottom: 15px;
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
         }
 
-        .content-section p {
-            font-size: 15px;
-            line-height: 1.8;
-            color: #e5e5e5;
-            margin-bottom: 16px;
+        h2 .doc-count {
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--text-muted);
+            margin-left: 8px;
         }
 
-        .content-section ul {
-            color: #e5e5e5;
-            line-height: 1.8;
-            margin-left: 20px;
-            margin-bottom: 15px;
+        .section-description {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 20px;
+            line-height: 1.5;
         }
 
-        .content-section li {
-            margin-bottom: 12px;
+        .document-list {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .doc-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 12px 16px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.2s;
+        }
+
+        .doc-item:hover {
+            background: var(--bg-hover);
+            border-color: var(--border-hover);
+            transform: translateX(4px);
+        }
+
+        .doc-icon {
+            flex-shrink: 0;
+            width: 36px;
+            height: 36px;
+            background: rgba(78, 205, 196, 0.1);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .doc-icon svg {
+            width: 18px;
+            height: 18px;
+            fill: var(--aqua);
+        }
+
+        .doc-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .doc-title {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-primary);
+            line-height: 1.3;
+        }
+
+        .doc-meta {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .doc-download {
+            flex-shrink: 0;
+            font-size: 12px;
+            color: var(--aqua-dim);
+            font-weight: 500;
+            white-space: nowrap;
         }
 
         .highlight-box {
-            background: rgba(94, 234, 212, 0.08);
-            border-left: 4px solid var(--aqua);
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 4px;
+            background: var(--aqua-glow);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 24px;
+            margin-top: 48px;
         }
 
         .highlight-box p {
-            margin: 0;
-        }
-
-        .highlight-box strong {
-            color: var(--aqua);
+            color: var(--text-secondary);
+            font-size: 14px;
+            line-height: 1.6;
         }
 
         .highlight-box a {
@@ -157,53 +246,26 @@
             color: var(--aqua-dim);
         }
 
-        .document-list {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 8px;
-            margin: 15px 0;
-        }
-
-        .document-list li {
-            margin-bottom: 12px;
-        }
-
-        .document-list strong {
-            color: var(--aqua);
-        }
-
-        .document-list p {
-            font-weight: 600;
-            margin-bottom: 12px;
-            margin-top: 20px;
-        }
-
-        .document-list p:first-child {
-            margin-top: 0;
-        }
-
         @media (max-width: 768px) {
-            h1 {
-                font-size: 28px;
-            }
-
-            .subtitle {
-                font-size: 14px;
-            }
-
-            .nav-links {
-                gap: 16px;
-            }
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+            .mobile-nav { display: flex; }
+            h1 { font-size: 28px; }
+            .subtitle { font-size: 14px; }
+            .doc-item { padding: 10px 12px; gap: 10px; }
+            .doc-icon { width: 30px; height: 30px; }
+            .doc-icon svg { width: 15px; height: 15px; }
+            .doc-download { display: none; }
         }
     </style>
 </head>
 <body>
+    <!-- ACCESS CONTROL -->
+    <script src="access-check.js"></script>
 
-    <!-- HEADER -->
     <div class="header">
         <nav class="nav">
-            <a href="index.html" class="logo">Churchill Falls Assistant</a>
+            <a href="index.html" class="logo">Churchill Falls Information Assistant</a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
@@ -212,99 +274,455 @@
                 <a href="videos.html">Videos</a>
                 <a href="contact.html">Contact</a>
             </div>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
         </nav>
     </div>
 
-    <!-- MAIN CONTENT -->
+    <!-- MOBILE NAV -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="sources.html">Sources</a>
+        <a href="history.html">History</a>
+        <a href="videos.html">Videos</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
     <div class="container">
         <h1>Sources & Documentation</h1>
-        <p class="subtitle">Complete reference library for the Churchill Falls Assistant</p>
+        <p class="subtitle">Complete reference library — 42 source documents available for download</p>
 
+        <!-- OFFICIAL AGREEMENTS -->
         <div class="content-section">
-            <h2>Source Documents</h2>
-            <p>All documents below are integrated into the Churchill Falls Assistant's knowledge base. The assistant can answer questions, provide summaries, and make comparisons across all of these materials.</p>
-
-            <h3>Official Agreements and Documents</h3>
+            <h2>Official Agreements & Government Documents <span class="doc-count">(3)</span></h2>
+            <p class="section-description">The December 2024 Memorandum of Understanding and related government publications.</p>
             <div class="document-list">
-                <ul>
-                    <li><strong>December 12, 2024 Memorandum of Understanding (MOU)</strong> - The complete text of the proposed agreement between Newfoundland and Labrador and Quebec</li>
-                    <li><strong>1969 Churchill Falls Power Contract</strong> - The original agreement and its terms</li>
-                    <li><strong>2002 Gull Island Framework Agreement</strong> - Historical context for proposed developments</li>
-                    <li><strong>January 2025 NL Hydro MOU Documentation</strong> - Supporting provincial materials</li>
-                </ul>
-            </div>
-
-            <h3>Economic Analyses - Dr. Doug May</h3>
-            <div class="document-list">
-                <p><strong>Video Series Transcripts:</strong></p>
-                <ul>
-                    <li>Video 1: Quebec's Emerging Electricity Shortage (transcript)</li>
-                    <li>Video 2A: Electricity Pricing - Quebec's Costs (transcript)</li>
-                    <li>Video 2B: Electricity Pricing - Churchill Falls' Role (transcript)</li>
-                    <li>Video 3A: Hydro-Québec's Electricity Imports (transcript)</li>
-                    <li>Video 3B: Hydro-Québec's Electricity Exports (transcript)</li>
-                    <li>Video 4: Water Royalties and Resource Rents (transcript)</li>
-                </ul>
-                
-                <p><strong>Written Analyses:</strong></p>
-                <ul>
-                    <li>Assessment of Proposed Prices for Existing Power</li>
-                    <li>Assessment of the Proposed Projects (Gull Island, CF Expansion, CF Upgrade)</li>
-                    <li>Understanding Financial Concepts (Present Value, Discount Rates)</li>
-                    <li>Quebec's Electricity Supply Problem</li>
-                    <li>Quebec's Changing Import Picture</li>
-                    <li>Reassessing the Churchill Falls MOU</li>
-                    <li>Hydro-Québec's Exports and Imports Analysis</li>
-                </ul>
-            </div>
-
-            <h3>Economic Analyses - Other Economists</h3>
-            <div class="document-list">
-                <ul>
-                    <li><strong>Wade Locke's Economic Assessment (2024)</strong> - Critical analysis of the MOU's economic implications for Newfoundland and Labrador</li>
-                    <li><strong>James Feehan's Academic Research</strong> - Historical and economic context of Churchill Falls agreements</li>
-                    <li><strong>NL Debt and Fiscal Sustainability Analysis</strong> - Provincial fiscal context</li>
-                </ul>
-            </div>
-
-            <h3>Corporate and Government Reports</h3>
-            <div class="document-list">
-                <ul>
-                    <li><strong>Churchill Falls (Labrador) Corporation Annual Report 2024</strong> - Financial performance and operational data</li>
-                    <li><strong>Churchill Falls Consolidated Financial Statements (2021-2024)</strong> - Multi-year financial data</li>
-                    <li><strong>Hydro-Québec Annual Report 2024</strong> - Financial results, operations, and strategic direction</li>
-                    <li><strong>Hydro-Québec Action Plan 2035</strong> - Strategic plan for decarbonization and capacity expansion</li>
-                    <li><strong>Newfoundland and Labrador Hydro Reports</strong> - Provincial utility operations and planning</li>
-                    <li><strong>Lower Churchill Project Combined Financial Statements 2024</strong> - Muskrat Falls and Gull Island data</li>
-                    <li><strong>Hydro-Québec Production and Import/Export Data</strong> - Operational statistics</li>
-                </ul>
-            </div>
-
-            <h3>Historical Documentation</h3>
-            <div class="document-list">
-                <ul>
-                    <li><strong>History of Churchill River Hydro Development (1949-2007)</strong> - Comprehensive historical overview of the project's development</li>
-                    <li><strong>History of Churchill Falls Development</strong> - Detailed development timeline</li>
-                    <li><strong>Lower Churchill Projects Documentation</strong> - Historical context for Muskrat Falls and Gull Island</li>
-                    <li>Historical contract analyses and government documents</li>
-                </ul>
-            </div>
-
-            <div class="highlight-box">
-                <p><strong>Using These Sources:</strong> Instead of reading through all these documents, ask the assistant questions. It will synthesize information across multiple sources, cite specific documents, and provide clear answers based on this complete reference library.</p>
-                <p style="margin-top: 15px;"><a href="index.html">← Return to Assistant to ask questions</a></p>
+                <a class="doc-item" href="assets/PDF-FILES/MOU-December-2024.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Memorandum of Understanding — December 12, 2024</div>
+                        <div class="doc-meta">Full legal text of the MOU between NL Hydro, Hydro-Québec, and CF(L)Co</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/HYDRO_MOU_GNL_Jan_2025.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Government of NL — MOU Summary Presentation (January 2025)</div>
+                        <div class="doc-meta">Official government slide deck summarizing key MOU terms and projected benefits</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/executive, plain-language summary.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Executive Plain-Language Summary of the MOU</div>
+                        <div class="doc-meta">Accessible overview of the MOU terms for general readership</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
             </div>
         </div>
 
+        <!-- DOUG MAY - MOU ANALYSES -->
         <div class="content-section">
-            <h2>Dr. Doug May's Video Series</h2>
-            <p>All video content is also available on the <a href="videos.html" style="color: var(--aqua); text-decoration: underline;">Videos page</a> with embedded players. Dr. Doug May's comprehensive 6-part video series provides an independent economic assessment of the December 2024 Churchill Falls MOU.</p>
-            
-            <div class="highlight-box">
-                <p><strong>Note:</strong> All of Dr. May's video analyses and written documents are integrated into the assistant's knowledge base. You can ask questions about any aspect of his analysis through the chat interface.</p>
+            <h2>Dr. Doug May — MOU Analysis & Assessments <span class="doc-count">(10)</span></h2>
+            <p class="section-description">Comprehensive independent analyses of the December 2024 MOU by Dr. Doug May, retired Professor of Economics at Memorial University of Newfoundland.</p>
+            <div class="document-list">
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-MOU-Assessment.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">The Churchill River MOU: A Comprehensive Assessment</div>
+                        <div class="doc-meta">Full assessment of values vs. value, pricing errors, and transfer pricing</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-MOU-Prices-Assessment.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Assessment of MOU Prices</div>
+                        <div class="doc-meta">Detailed analysis of proposed pricing structure for existing Churchill Falls power</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-MOU-Prices-Long-Evaluation.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">MOU Prices — Extended Evaluation</div>
+                        <div class="doc-meta">Long-form evaluation of the proposed pricing framework over the 51-year term</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-MAY-MOU-Prices-Long-Evaluation pdf.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">MOU Prices — Extended Evaluation (Supplementary)</div>
+                        <div class="doc-meta">Additional materials for the extended pricing evaluation</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-Proposed-Projects-Assessment.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Assessment of Proposed Projects Under the MOU</div>
+                        <div class="doc-meta">Analysis of Gull Island, CF Expansion, CF Upgrades, and transmission projects</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug -May-Inital-Summary-Evaluation.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Initial Summary Evaluation of the MOU</div>
+                        <div class="doc-meta">Early-stage assessment of MOU terms and implications</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-Questions-for-NLH.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Questions for Newfoundland and Labrador Hydro</div>
+                        <div class="doc-meta">Key questions the public and analysts should be asking about the MOU</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-Executive-Summary-Assessment-MOU.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Executive Summary — MOU Assessment</div>
+                        <div class="doc-meta">Condensed overview of the comprehensive MOU assessment</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-Executive-Summary-Assessment-Existing-Prices.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Executive Summary — Assessment of Existing Power Prices</div>
+                        <div class="doc-meta">Summary of the pricing analysis for existing Churchill Falls generation</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-Executive-Summary-Assessment-MOU-Projects.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Executive Summary — Assessment of MOU Development Projects</div>
+                        <div class="doc-meta">Summary of analysis on Gull Island, CF Expansion, and related infrastructure</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-Point-Summary-Prices-Assessments.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Point Summary — Prices Assessments</div>
+                        <div class="doc-meta">Quick-reference summary of key pricing findings</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
             </div>
+        </div>
+
+        <!-- DOUG MAY - QUEBEC ENERGY ANALYSIS -->
+        <div class="content-section">
+            <h2>Dr. Doug May — Quebec Energy & Financial Analysis <span class="doc-count">(7)</span></h2>
+            <p class="section-description">Analysis of Quebec's electricity landscape, Hydro-Québec operations, water royalties, and financial concepts relevant to Churchill Falls.</p>
+            <div class="document-list">
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-Quebecs-Electricity-Supply-Problem.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Quebec's Electricity Supply Problem</div>
+                        <div class="doc-meta">Analysis of Quebec's growing energy deficit and dependence on Churchill Falls</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-HQ Exports-Update.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Hydro-Québec Exports Update</div>
+                        <div class="doc-meta">Updated analysis of HQ electricity export volumes and trends</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-HQ-Exports-Price-Escalation.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Hydro-Québec Exports — Price Escalation Analysis</div>
+                        <div class="doc-meta">Declining export volumes, price reversals, and changing market dynamics</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-HQ-Imports-Update.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Hydro-Québec Imports Update</div>
+                        <div class="doc-meta">Quebec's changing import picture and New England supply reversal</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-HQ Production-Update.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Hydro-Québec Production Update</div>
+                        <div class="doc-meta">Analysis of HQ generation capacity, output, and Churchill Falls contribution</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-Water's-Value.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">The Value of Water — Royalty Analysis</div>
+                        <div class="doc-meta">Water royalty disparity: NL 0.025¢/kWh vs Quebec 0.9¢/kWh (36× gap)</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-Understanding-Financial-Concepts.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Understanding Some Financial Concepts</div>
+                        <div class="doc-meta">Explanation of present value, discount rates, and financial concepts relevant to the MOU</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- DOUG MAY - VIDEO SERIES -->
+        <div class="content-section">
+            <h2>Dr. Doug May — Video Series Companion Documents <span class="doc-count">(6)</span></h2>
+            <p class="section-description">Slide decks and data accompanying the six-part video analysis series. Videos are available on the <a href="videos.html" style="color: var(--aqua);">Videos page</a>.</p>
+            <div class="document-list">
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-Video-Seies-Video1.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Video 1 — Quebec's Electricity Supply Problem</div>
+                        <div class="doc-meta">Churchill Falls' 17% contribution to Quebec, 3,900 MW proposed projects</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-Video-Series-Video2A.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Video 2A — Quebec Pricing Mechanisms</div>
+                        <div class="doc-meta">Montreal 8.30¢/kWh vs St. John's 15.02¢/kWh, Churchill Falls 0.295¢/kWh</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-Video-Series-Video2B.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Video 2B — Churchill Falls Role in Quebec's Strategy</div>
+                        <div class="doc-meta">HQ 34.2% ownership factor and industrial pricing strategy</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-Video-Series-Video3A.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Video 3A — Import Analysis</div>
+                        <div class="doc-meta">Churchill Falls 0.308¢/kWh vs Ontario 3.23¢/kWh vs US 7.4-20¢/kWh</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-Video-Series-Video3B.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Video 3B — Export Analysis</div>
+                        <div class="doc-meta">Declining export volumes, price reversals, New England import reversal</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Doug-May-Video-Series-Video4.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Video 4 — Water Royalties and Resource Rent</div>
+                        <div class="doc-meta">NL 0.025¢/kWh vs Quebec 0.9¢/kWh (36× disparity)</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- WADE LOCKE & JOINT ANALYSES -->
+        <div class="content-section">
+            <h2>Dr. Wade Locke — Economic Analyses <span class="doc-count">(4)</span></h2>
+            <p class="section-description">Independent economic assessments by Dr. Wade Locke, retired Professor of Economics at Memorial University, including joint work with Dr. Doug May.</p>
+            <div class="document-list">
+                <a class="doc-item" href="assets/PDF-FILES/Wade-Locke-MOU-Assessment.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Assessment of the Churchill Falls MOU</div>
+                        <div class="doc-meta">Critical economic assessment examining whether the MOU represents good value for NL</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Wade-Locke-MOU-Assessment-Summary.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">MOU Assessment — Summary</div>
+                        <div class="doc-meta">Condensed version of Locke's key findings and concerns</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Wade-Locke-Understanding-Investment-Concepts.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Understanding Investment Concepts</div>
+                        <div class="doc-meta">Explanation of economic concepts relevant to evaluating the MOU</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Locke-May-GNL-Debt-Sustainability.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">NL Debt, Fiscal Sustainability and the Churchill Falls MOU (Locke & May)</div>
+                        <div class="doc-meta">Joint presentation: $19.4B provincial debt, CF revenue as path to national-average debt levels</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- OTHER EXPERT ANALYSES -->
+        <div class="content-section">
+            <h2>Other Expert Analyses <span class="doc-count">(2)</span></h2>
+            <p class="section-description">Academic and expert research providing additional perspectives on Churchill Falls and the broader energy context.</p>
+            <div class="document-list">
+                <a class="doc-item" href="assets/PDF-FILES/Jim-Feehan-CF-Power-Corridor.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Smallwood, Churchill Falls, and the Power Corridor through Quebec — James P. Feehan</div>
+                        <div class="doc-meta">Acadiensis journal article examining whether the federal government failed NL in the 1960s</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Thomas-Bernard-HQ-Rent-Dissipation-Electricity.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Hydro-Québec Rent Dissipation in Electricity — Thomas Bernard</div>
+                        <div class="doc-meta">Analysis of how HQ dissipates resource rents through below-market pricing</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- CORPORATE & FINANCIAL REPORTS -->
+        <div class="content-section">
+            <h2>Corporate & Financial Reports <span class="doc-count">(8)</span></h2>
+            <p class="section-description">Annual reports, financial statements, and strategic plans from CF(L)Co, Hydro-Québec, and the Lower Churchill Project.</p>
+            <div class="document-list">
+                <a class="doc-item" href="assets/PDF-FILES/CFLCo-Annual-Report-2024.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Churchill Falls (Labrador) Corporation — Annual Report 2024</div>
+                        <div class="doc-meta">Revenue $195.5M, profit $81.5M — final full year before MOU pricing</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/CFLCo-Annual-Report-2023.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Churchill Falls (Labrador) Corporation — Annual Report 2023</div>
+                        <div class="doc-meta">Financial performance and operations under existing contract terms</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/CFLCo-Annual-Report-2022.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Churchill Falls (Labrador) Corporation — Annual Report 2022</div>
+                        <div class="doc-meta">Financial performance and operations</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/CFLCo-Annual-Report-2021.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Churchill Falls (Labrador) Corporation — Annual Report 2021</div>
+                        <div class="doc-meta">Financial performance and operations</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/HQ-Annual-Report-2024.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Hydro-Québec — Annual Report 2024</div>
+                        <div class="doc-meta">Net income $2.7B, revenue $16.1B, residential rate 8.05¢/kWh</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/HQ-Action-Plan-2035.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Hydro-Québec — Action Plan 2035</div>
+                        <div class="doc-meta">60 TWh additional energy needed, $155-185B investment, 8,000-9,000 MW new capacity</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/HQ quarterly-bulletin-2025-3.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Hydro-Québec — Quarterly Bulletin Q3 2025</div>
+                        <div class="doc-meta">Latest quarterly financial and operational update</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+                <a class="doc-item" href="assets/PDF-FILES/Lower Churchill Combined-2024-Final.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">Lower Churchill Project — Combined Financial Statements 2024</div>
+                        <div class="doc-meta">Muskrat Falls and Labrador-Island Link financial data</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- HISTORICAL DOCUMENTS -->
+        <div class="content-section">
+            <h2>Historical Documentation <span class="doc-count">(1)</span></h2>
+            <p class="section-description">Comprehensive historical research on the development of Churchill River hydroelectric resources.</p>
+            <div class="document-list">
+                <a class="doc-item" href="assets/PDF-FILES/Jason-Churchill-CR-Negotiations--1949-2007.pdf" target="_blank">
+                    <div class="doc-icon"><svg viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg></div>
+                    <div class="doc-info">
+                        <div class="doc-title">A History of Negotiations to Develop the Churchill River (1949-2007) — Jason Churchill</div>
+                        <div class="doc-meta">Muskrat Falls Inquiry background report covering seven premiers and six decades of negotiations</div>
+                    </div>
+                    <span class="doc-download">PDF ↓</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- FOOTER BOX -->
+        <div class="highlight-box">
+            <p><strong>Using These Sources:</strong> Rather than reading through all these documents, ask the assistant your questions. It synthesizes information across multiple sources, cites specific documents, and provides clear answers based on this complete reference library.</p>
+            <p style="margin-top: 15px;"><a href="index.html">← Return to Assistant to ask questions</a></p>
         </div>
     </div>
+
+    <script>
+        // Mobile menu
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        function toggleMobileMenu() {
+            hamburgerBtn.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        }
+        function closeMobileMenu() {
+            hamburgerBtn.classList.remove('active');
+            mobileNav.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        hamburgerBtn.addEventListener('click', toggleMobileMenu);
+        mobileOverlay.addEventListener('click', closeMobileMenu);
+        mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMobileMenu));
+    </script>
 
 </body>
 </html>
