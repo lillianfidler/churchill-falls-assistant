@@ -930,13 +930,12 @@ async function handleChatRequest(req, res) {
             console.log(`✅ Response generated: ${responseText.length} chars`);
             
             // Post-process for voice (acronym expansion, cleanup, etc.)
-            const processedText = postProcessForVoice(responseText);
-            const cleanedText = cleanupVoiceText(processedText);
-            const truncatedText = truncateToCompleteSentence(cleanedText, 1200); // Safety net — acronym expansion inflates text
-
-            console.log(`🎯 After post-processing: ${cleanedText.length} chars → ${truncatedText.length} chars`);
-
-            responseText = truncatedText; // Use the truncated version
+const displayText = cleanupVoiceText(responseText); // Clean for display, original spelling
+const processedText = postProcessForVoice(responseText); // Pronunciation changes for audio only
+const cleanedText = cleanupVoiceText(processedText);
+const truncatedText = truncateToCompleteSentence(cleanedText, 1200);
+console.log(`🎯 After post-processing: ${cleanedText.length} chars → ${truncatedText.length} chars`);
+responseText = displayText; // Display uses original spelling
             
             // Select voice based on language
             const voiceId = ELEVENLABS_VOICE_ID; // Always use Doug's voice for both languages
