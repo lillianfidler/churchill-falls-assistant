@@ -638,8 +638,9 @@ Provide comprehensive, well-researched answers using all available documents.
 RESEARCH STRATEGY:
 1. Use search_documents with max_results=8 to find the most relevant documents
 2. For the top 2-3 most relevant documents found, use get_document to retrieve full content
-3. Synthesize information from multiple sources
-4. Present diverse perspectives (Doug May's analysis, Wade Locke's critique, official documents, etc.)
+3. Do NOT retrieve more than 3 full documents — summarize from search results for the rest
+4. Synthesize information from multiple sources
+5. Present diverse perspectives (Doug May's analysis, Wade Locke's critique, official documents, etc.)
 
 CRITICAL INSTRUCTIONS:
 - Write in direct, factual third person voice
@@ -656,8 +657,8 @@ CRITICAL INSTRUCTIONS:
 
 WHEN ANSWERING ABOUT DOUG MAY'S ANALYSIS:
 - Search for: "Doug video" or "Doug May analysis"
-- Retrieve ALL Doug video transcripts (video1, 2A, 2B, 3A, 3B, 4)
-- Synthesize his complete perspective across all videos
+- Retrieve only the 2 MOST relevant Doug transcripts (not all 6 — the search results contain enough context for the others)
+- Synthesize his perspective using search excerpts + the 2 retrieved documents
 - Include his economic frameworks, cost comparisons, and strategic analysis
 
 Example of what NOT to do:
@@ -721,9 +722,10 @@ Fournissez des réponses complètes et bien documentées en utilisant tous les d
 
 STRATÉGIE DE RECHERCHE:
 1. Utilisez search_documents avec max_results=8 pour trouver les documents les plus pertinents
-2. Pour les documents clés trouvés, utilisez get_document pour récupérer le contenu complet
-3. Synthétisez l'information de MULTIPLES sources (visez 5+ sources pour les questions complexes)
-4. Présentez diverses perspectives (analyse de Doug May, critique de Wade Locke, documents officiels, etc.)
+2. Pour les 2-3 documents les plus pertinents, utilisez get_document pour récupérer le contenu complet
+3. Ne récupérez PAS plus de 3 documents complets — résumez à partir des résultats de recherche pour les autres
+4. Synthétisez l'information de multiples sources
+5. Présentez diverses perspectives (analyse de Doug May, critique de Wade Locke, documents officiels, etc.)
 
 INSTRUCTIONS CRITIQUES:
 - Écrivez à la troisième personne de façon directe et factuelle
@@ -805,6 +807,34 @@ function detectLanguage(text) {
     return detectedLang;
 }
 
+
+// ============================================================================
+// MCP RESULT TRUNCATION — Prevents context overflow on deep research queries
+// Full documents can be 15-20K tokens each; retrieving 3-5 of them balloons
+// the context past 200K and causes intermittent API failures.
+// ============================================================================
+
+const MAX_TOOL_RESULT_CHARS = 12000; // ~3000 tokens — enough for key content, prevents blowup
+
+function truncateToolResult(text, maxChars = MAX_TOOL_RESULT_CHARS) {
+    if (!text || text.length <= maxChars) return text;
+    
+    // For search results (JSON arrays), keep them intact — they're small
+    if (text.trimStart().startsWith('[')) return text;
+    
+    // For full documents, take the first portion and note truncation
+    const truncated = text.substring(0, maxChars);
+    // Find the last complete sentence or paragraph break
+    const lastBreak = Math.max(
+        truncated.lastIndexOf('\n\n'),
+        truncated.lastIndexOf('. '),
+        truncated.lastIndexOf('.\n')
+    );
+    const cutPoint = lastBreak > maxChars * 0.6 ? lastBreak + 1 : maxChars;
+    
+    return text.substring(0, cutPoint).trim() + 
+        '\n\n[Document truncated — showing first ~' + Math.round(cutPoint / 1000) + 'K chars of ' + Math.round(text.length / 1000) + 'K total]';
+}
 
 // ============================================================================
 // MAIN CHAT ENDPOINT
@@ -1014,19 +1044,27 @@ responseText = displayText; // Display uses original spelling
             const textModel = isFastMode ? 'claude-haiku-4-5-20251001' : 'claude-sonnet-4-20250514';
             console.log(`🤖 Model: ${textModel}`);
 
-            let response = await anthropic.messages.create({
-                model: textModel,
-                max_tokens: maxTokens,
-                system: [
-                    {
-                        type: 'text',
-                        text: systemPrompt,
-                        cache_control: { type: 'ephemeral' } // Cache system prompt — 90% savings on repeated requests
-                    }
-                ],
-                messages: messages,
-                tools: toolsList
-            });
+            // Per-call timeout for the initial API call
+            const initialCallTimeout = new Promise((_, reject) => 
+                setTimeout(() => reject(new Error('Claude API call timed out (40s)')), 40000)
+            );
+
+            let response = await Promise.race([
+                anthropic.messages.create({
+                    model: textModel,
+                    max_tokens: maxTokens,
+                    system: [
+                        {
+                            type: 'text',
+                            text: systemPrompt,
+                            cache_control: { type: 'ephemeral' }
+                        }
+                    ],
+                    messages: messages,
+                    tools: toolsList
+                }),
+                initialCallTimeout
+            ]);
 
             let currentMessages = [...messages];
             let toolCallCount = 0;
@@ -1113,7 +1151,7 @@ responseText = displayText; // Display uses original spelling
                             toolResults.push({
                                 type: 'tool_result',
                                 tool_use_id: block.id,
-                                content: result.content[0].text
+                                content: truncateToolResult(result.content[0].text)
                             });
                         } catch (error) {
                             console.error(`  ✗ ${block.name} error:`, error.message);
@@ -1144,19 +1182,37 @@ responseText = displayText; // Display uses original spelling
                     content: toolResults
                 });
 
-                response = await anthropic.messages.create({
-                    model: textModel, // Same model as initial call (Haiku for Fast, Sonnet for Deep)
-                    max_tokens: maxTokens,
-                    system: [
-                        {
-                            type: 'text',
-                            text: systemPrompt,
-                            cache_control: { type: 'ephemeral' } // Cache system prompt across tool loop iterations
-                        }
-                    ],
-                    messages: currentMessages,
-                    tools: toolsList
-                });
+                // Estimate context size to warn about potential overflow
+                const contextEstimate = JSON.stringify(currentMessages).length;
+                const estimatedTokens = Math.round(contextEstimate / 3.5);
+                console.log(`  📏 Context estimate: ~${Math.round(contextEstimate / 1024)}KB (~${estimatedTokens.toLocaleString()} tokens)`);
+                
+                if (estimatedTokens > 180000) {
+                    console.log('  ⚠️ Context approaching 200K limit — stopping tool loop to prevent overflow');
+                    break; // Exit the while loop; Claude will respond with what it has so far
+                }
+
+                // Per-call timeout: abort if a single API call takes too long
+                const callTimeout = new Promise((_, reject) => 
+                    setTimeout(() => reject(new Error('Claude API call timed out (40s)')), 40000)
+                );
+
+                response = await Promise.race([
+                    anthropic.messages.create({
+                        model: textModel,
+                        max_tokens: maxTokens,
+                        system: [
+                            {
+                                type: 'text',
+                                text: systemPrompt,
+                                cache_control: { type: 'ephemeral' }
+                            }
+                        ],
+                        messages: currentMessages,
+                        tools: toolsList
+                    }),
+                    callTimeout
+                ]);
             }
 
             responseText = response.content
@@ -1227,10 +1283,40 @@ responseText = displayText; // Display uses original spelling
         }
 
     } catch (error) {
-        console.error('❌ Error:', error.stack || error.message); // full stack in server logs
+        const errorMsg = error.message || 'Unknown error';
+        const errorType = error.status || error.code || 'server_error';
+        console.error('❌ Error:', error.stack || errorMsg);
         usageStats.errors++;
-        if (!res.headersSent) { // timeout may have already responded
-            res.status(500).json({ error: 'An error occurred processing your request' });
+        
+        // Classify the error to return a meaningful message
+        let userMessage = 'An error occurred processing your request.';
+        let statusCode = 500;
+        
+        if (errorMsg.includes('timed out')) {
+            userMessage = 'The request took too long to process. This can happen with complex research questions. Please try again, or try a simpler question.';
+            statusCode = 504;
+        } else if (errorMsg.includes('prompt is too long') || errorMsg.includes('token')) {
+            userMessage = 'The research context became too large for this question. Please try a more specific question, or use Fast mode instead of Deep mode.';
+            statusCode = 413;
+        } else if (errorMsg.includes('overloaded') || error.status === 529) {
+            userMessage = 'The AI service is temporarily overloaded. Please wait a moment and try again.';
+            statusCode = 503;
+        } else if (errorMsg.includes('closed') || errorMsg.includes('disconnected') || errorMsg.includes('MCP')) {
+            userMessage = 'The research service lost its connection. Please try again in a moment.';
+            statusCode = 503;
+        } else if (error.status === 429) {
+            userMessage = 'Rate limit reached. Please wait a moment before asking another question.';
+            statusCode = 429;
+        }
+        
+        console.error(`   → Error type: ${errorType} | User message: ${userMessage}`);
+        
+        if (!res.headersSent) {
+            res.status(statusCode).json({ 
+                error: userMessage,
+                errorType: errorType,
+                text: userMessage // So frontend can display it as a message
+            });
         }
     } finally {
         clearTimeout(requestTimeoutHandle);
