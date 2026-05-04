@@ -14,7 +14,7 @@
     }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", sans-serif;
-      background: #1a1a1a;
+      background: #1f2428;
       color: #e5e5e5;
       min-height: 100vh;
       display: flex;
@@ -22,32 +22,26 @@
     }
 
     /* ---------- FOOTER ---------- */
-    .site-footer {
-      padding: 20px 24px;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      text-align: center;
-    }
-    .site-footer a {
-      color: #777;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 13px;
-      transition: color 0.2s;
-    }
-    .site-footer a:hover {
-      color: #a8a8a8;
-    }
-    .site-footer img {
-      height: 22px;
-      width: auto;
-      opacity: 0.6;
-      transition: opacity 0.2s;
-    }
-    .site-footer a:hover img {
-      opacity: 0.85;
-    }
+.site-footer {
+    padding: 20px 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: left;
+}
+.site-footer a {
+    color: #a8a8a8;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+.site-footer img {
+    height: 32px;
+    width: auto;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
 
     /* ---------- VIDEO MODAL ---------- */
     .video-modal-overlay {
@@ -56,7 +50,7 @@
     }
     .video-modal-overlay.active { display: flex; }
     .video-modal {
-      position: relative; width: 100%; max-width: 1200px; background: #1a1a1a;
+      position: relative; width: 100%; max-width: 1200px; background: #141414;
       border-radius: 12px; overflow: hidden; border: 1px solid rgba(94,234,212,0.2);
       box-shadow: 0 20px 60px rgba(0,0,0,0.5);
     }
@@ -579,6 +573,11 @@
         conversationHistory = []; conversationEl.innerHTML = '';
         welcomeState.classList.remove('hidden'); conversationEl.classList.add('hidden');
         textInput.value = '';
+        // Reset mode toggle back to default (Fast)
+        currentTextMode = 'fast';
+        document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+        const fastBtn = document.querySelector('.mode-btn[data-mode="fast"]');
+        if (fastBtn) fastBtn.classList.add('active');
         window.history.pushState({}, '', window.location.pathname);
         saveSession();
       }
