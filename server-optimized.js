@@ -1121,7 +1121,8 @@ responseText = displayText; // Display uses original spelling
                             if (result && result.content && result.content[0]) {
                                 const resultText = result.content[0].text || '';
                                 
-                                // For search_documents: Parse JSON and extract ALL filenames
+                                // For search_documents: log results but don't track as sources
+                                // (search results are the index doing its job — only fully-retrieved docs count as sources)
                                 if (block.name === 'search_documents') {
                                     try {
                                         const searchResults = JSON.parse(resultText);
@@ -1129,8 +1130,7 @@ responseText = displayText; // Display uses original spelling
                                             console.log(`  📚 Search returned ${searchResults.length} documents:`);
                                             searchResults.forEach(result => {
                                                 if (result.filename) {
-                                                    documentsAccessed.add(result.filename);
-                                                    console.log(`     ✓ ${result.filename} (score: ${result.score})`);
+                                                    console.log(`     ~ ${result.filename} (score: ${result.score})`);
                                                 }
                                             });
                                         }

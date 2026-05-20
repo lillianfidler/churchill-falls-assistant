@@ -157,7 +157,7 @@
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            background: rgba(255, 255, 255, 0.08);
+            background: #1c1c1c;
             border-color: var(--aqua);
         }
 
@@ -202,14 +202,40 @@
             color: var(--aqua);
         }
 
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 28px;
-            }
+        .hamburger {
+            display: none; flex-direction: column; gap: 5px; cursor: pointer;
+            padding: 4px; background: none; border: none; z-index: 200;
+        }
+        .hamburger span {
+            display: block; width: 24px; height: 2px; background: #a8a8a8;
+            border-radius: 2px; transition: all 0.3s;
+        }
+        .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
-            .nav-links {
-                gap: 16px;
-            }
+        .mobile-overlay {
+            display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 149;
+        }
+        .mobile-overlay.active { display: block; }
+
+        .mobile-nav {
+            display: none; position: fixed; top: 0; right: -280px; width: 280px; height: 100%;
+            background: #222; border-left: 1px solid rgba(255,255,255,0.1); z-index: 150;
+            padding: 72px 24px 24px; transition: right 0.3s ease; flex-direction: column; gap: 4px;
+        }
+        .mobile-nav.active { right: 0; }
+        .mobile-nav a {
+            display: block; color: #a8a8a8; text-decoration: none; font-size: 16px; font-weight: 500;
+            padding: 12px 16px; border-radius: 8px; transition: all 0.2s;
+        }
+        .mobile-nav a:hover { color: var(--aqua); background: rgba(94,234,212,0.08); }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+            .mobile-nav { display: flex; }
+            h1 { font-size: 28px; }
         }
     </style>
 </head>
@@ -228,8 +254,21 @@
                 <a href="videos.html">Videos</a>
                 <a href="contact.html" class="active">Contact</a>
             </div>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
         </nav>
     </div>
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="sources.html">Sources</a>
+        <a href="history.html">History</a>
+        <a href="videos.html">Videos</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
     <!-- MAIN CONTENT -->
     <div class="container">
@@ -273,6 +312,25 @@
     </div>
 
     <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        function toggleMobileMenu() {
+            hamburgerBtn.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        }
+        function closeMobileMenu() {
+            hamburgerBtn.classList.remove('active');
+            mobileNav.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        hamburgerBtn.addEventListener('click', toggleMobileMenu);
+        mobileOverlay.addEventListener('click', closeMobileMenu);
+        mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMobileMenu));
+
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             

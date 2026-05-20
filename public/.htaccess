@@ -1,0 +1,17 @@
+# Cache-Control headers by file type
+
+<IfModule mod_headers.c>
+    # HTML — always revalidate so content changes are seen immediately
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "no-cache, must-revalidate"
+    </FilesMatch>
+
+    # Static assets — cache aggressively (change filenames to bust cache)
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "max-age=604800, public"
+    </FilesMatch>
+
+    <FilesMatch "\.(jpg|jpeg|png|gif|svg|ico|webp|woff|woff2|ttf)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </FilesMatch>
+</IfModule>
