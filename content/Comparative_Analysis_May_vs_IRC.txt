@@ -1,0 +1,330 @@
+A Comparative Analysis: My Action Plan / MOU Assessment vs The IRC Report
+
+Comparative Overview
+
+The most striking conclusion from comparing Dr. Doug May's work with the Independent Review Committee (IRC) report is not how different they are — but how much overlap exists in the core structural concerns identified.
+
+Although the tone, framing, and emphasis differ, both analyses converge on several major themes:
+- the importance of long-term strategic planning;
+- concern about fixed or constrained pricing structures;
+- concern over Newfoundland and Labrador assuming disproportionate risk;
+- the importance of economic development versus simply exporting electricity;
+- the need for better alternatives analysis;
+- concern regarding constrained access to Churchill River power after 2041;
+- and the need for improved governance and negotiation strategy.
+
+At the same time, there are important differences in philosophy, emphasis, and conclusions regarding:
+- whether the MOU is fundamentally flawed or potentially salvageable;
+- how "fair value" should be measured;
+- the role of market pricing;
+- the desirability of long-term contracts;
+- the role of Hydro-Québec in future development;
+- and the extent to which the MOU should proceed at all.
+
+
+1. Core Philosophical Alignment
+
+Shared Broad Objective
+
+Both Doug May and the IRC frame Churchill River development as:
+- a multi-generational public policy issue;
+- not merely a commercial utility transaction;
+- involving long-term provincial well-being;
+- requiring strategic planning beyond immediate revenues.
+
+Doug explicitly frames the issue through a "well-being" and public-value lens influenced by Mark Carney's Value(s).
+
+The IRC similarly frames the issue as:
+- creating "long-term value" for the people of Newfoundland and Labrador;
+- balancing financial and economic value;
+- and determining whether the MOU is in the "public interest."
+
+This is a major conceptual overlap.
+
+
+2. Areas of Strong Overlap
+
+A. Need for a Long-Term Provincial Strategy
+
+Doug May Position
+
+Doug argues that Newfoundland and Labrador should first establish:
+- a proactive Action Plan;
+- clear provincial objectives;
+- principles for pricing water value;
+- risk allocation rules;
+- and development priorities
+
+before entering binding agreements.
+
+He repeatedly criticizes reactive negotiation.
+
+IRC Position
+
+The IRC independently reaches a remarkably similar conclusion.
+
+Recommendation #1 states that Government should determine the balance between:
+- financial value (export revenues); and
+- economic value (industrial development).
+
+Recommendation #5 states that Government should prepare a fully articulated negotiation strategy and governance process before future negotiations.
+
+Comparison
+
+This is one of the strongest overlaps.
+
+Doug's "Action Plan-2041" concept and the IRC's call for:
+- long-run planning;
+- negotiation strategy;
+- and balancing competing objectives
+
+are highly aligned.
+
+B. Concern About Long-Term Contract Duration
+
+Doug May Position
+
+Doug criticizes locking Newfoundland and Labrador into long-term pricing arrangements extending to 2075.
+
+He argues that:
+- future electricity markets are highly uncertain;
+- electrification and AI may dramatically increase prices;
+- and fixed structures risk large opportunity costs.
+
+IRC Position
+
+The IRC similarly questions the 51-year term:
+- noting electricity-sector PPAs are often shorter;
+- and arguing forecasting conditions over 50 years is extremely uncertain.
+
+Comparison
+
+Both believe:
+- the agreement extends too far into an uncertain future;
+- and risks limiting future flexibility.
+
+C. Concern About Limited Access to Churchill Power After 2041
+
+Doug May Position
+
+Doug repeatedly argues that Newfoundland and Labrador must retain access to sufficient Churchill power to support:
+- industrial development;
+- economic diversification;
+- and long-term provincial transformation.
+
+IRC Position
+
+The IRC independently concludes that:
+- NLH's limited post-2041 power allocation could significantly constrain industrial growth;
+- especially mining and energy-intensive industries.
+
+The IRC even quantifies lost GDP opportunity.
+
+Comparison
+
+This is another major convergence.
+
+Doug framed this earlier in conceptual terms.
+The IRC formalizes it through economic modeling.
+
+D. BATNA / Alternatives Analysis
+
+Doug May Position
+
+Doug strongly argues the MOU cannot properly be evaluated unless compared against credible alternatives (BATNA).
+
+IRC Position
+
+The IRC effectively performs a similar analysis indirectly by:
+- comparing financial vs economic outcomes;
+- discussing alternative ownership models for Gull Island;
+- questioning transmission access arrangements;
+- and evaluating opportunity costs.
+
+Comparison
+
+Doug makes BATNA an explicit framework.
+The IRC does not use the term extensively but reaches parallel conclusions.
+
+E. Concern About Hydro-Québec Pricing Structure
+
+Doug May Position
+
+Doug argues Hydro-Québec:
+- does not operate a true wholesale market;
+- uses internal regulated transfer pricing;
+- seeks low-cost electricity for Quebec;
+- and therefore is not an objective market benchmark.
+
+IRC Position
+
+The IRC similarly criticizes the proposed pricing model for being heavily tied to:
+- Hydro-Québec regulated rates;
+- and Hydro-Québec replacement costs,
+
+rather than broader market prices.
+
+Comparison
+
+Strong overlap again.
+
+Doug framed this as a structural pricing asymmetry.
+The IRC validates many of the same concerns in more technical language.
+
+F. Concern About Risk Allocation
+
+Doug May Position
+
+Doug argues Newfoundland and Labrador assumes:
+- debt risk;
+- pricing risk;
+- long-term opportunity cost risk;
+
+while Hydro-Québec retains major structural advantages.
+
+IRC Position
+
+The IRC similarly criticizes:
+- misaligned financing structures;
+- deferred payment schedules;
+- transmission restrictions;
+- downward allocation risks;
+- and governance asymmetries.
+
+Comparison
+
+Again, substantial overlap.
+
+
+3. Major Differences
+
+A. Doug Is More Skeptical of the MOU Overall
+
+Doug's Position
+
+Doug's assessment is substantially more critical and cautionary.
+
+He repeatedly implies:
+- the MOU may fundamentally entrench historical structural disadvantages;
+- and may not represent Newfoundland and Labrador's best long-term option.
+
+IRC Position
+
+The IRC takes a more balanced institutional approach:
+- acknowledging significant benefits;
+- while concluding the MOU "in its current form" is not in the public interest.
+
+The IRC leaves open the possibility of a revised agreement.
+
+Difference
+
+Doug's analysis trends toward:
+- structural skepticism;
+- rethinking the framework itself.
+
+The IRC trends toward:
+- revising and renegotiating.
+
+B. Doug Places Much Greater Emphasis on Market-Based Water Value
+
+Doug's Position
+
+Doug advocates:
+- market-referenced water rents;
+- seasonal pricing;
+- scarcity pricing;
+- transparent external benchmarks;
+- and competitive-market references.
+
+His framework is explicitly economic and rent-based.
+
+IRC Position
+
+The IRC critiques the current pricing model but does not go nearly as far toward:
+- explicit market-based water rent pricing;
+- or dynamic scarcity pricing.
+
+Difference
+
+Doug advances a more developed alternative pricing philosophy.
+
+C. Doug Places Greater Emphasis on Water Ownership and Resource Rents
+
+Doug consistently reframes the issue as:
+- valuation of water;
+- public ownership of natural resources;
+- and capture of Ricardian rents.
+
+The IRC discusses pricing and value but less explicitly through:
+- resource economics;
+- or water-rent theory.
+
+D. IRC More Explicitly Supports Some Development Projects
+
+The IRC:
+- supports transmission expansion;
+- sees substantial near-term economic benefit;
+- and accepts that revised agreements may still be beneficial.
+
+Doug is more cautious regarding:
+- debt-financed expansion;
+- long-term export lock-in;
+- and infrastructure sequencing.
+
+
+4. Perhaps the Most Important Observation
+
+One of the most significant findings from this comparison is:
+
+Many issues Doug raised independently were later validated — at least partially — by the IRC.
+
+Examples include:
+- constrained post-2041 power access;
+- excessive contract duration;
+- pricing concerns;
+- need for alternatives analysis;
+- need for provincial strategy;
+- governance concerns;
+- economic-development trade-offs;
+- and risk allocation concerns.
+
+This does not mean the IRC fully agrees with Doug's conclusions.
+
+But it does indicate:
+- many of the structural concerns raised in the Action Plan were not fringe concerns;
+- they became central themes in the official review itself.
+
+
+5. High-Level Comparative Summary Table
+
+Theme | Doug May Action Plan / Assessment | IRC Report
+Long-term provincial strategy | Central emphasis | Strongly supported
+BATNA / alternatives | Explicit framework | Implicitly supported
+Public well-being focus | Central | Present but less explicit
+Concern about 51-year term | Strong | Strong
+Concern about constrained NL access post-2041 | Strong | Strong
+Concern about HQ pricing structure | Strong | Strong
+Dynamic market pricing | Strong advocacy | Limited support
+Water-rent/resource-rent theory | Central | Secondary
+Concern about debt/risk allocation | Strong | Strong
+Need for transmission strategy | Present | Strong
+MOU salvageable? | More skeptical | Potentially yes, if revised
+Emphasis on industrial development | Strong | Strong
+Governance reform | Important | Important
+
+
+Concluding Assessment
+
+At a strategic level, the IRC report can almost be read as partial institutional validation of many of the concerns and themes developed earlier in Doug's work.
+
+The largest difference is probably not diagnosis — but remedy.
+
+Doug's work leans toward:
+- rethinking the overall framework around water value, market access, and provincial strategy.
+
+The IRC leans toward:
+- revising and improving the negotiated structure while preserving the possibility of a future agreement with Hydro-Québec.
+
+Both, however, appear to agree on a fundamental point:
+
+The Churchill River should not simply be treated as a narrow electricity sales arrangement. It should be viewed as a strategic, multi-generational provincial development issue requiring deliberate long-term planning and careful balancing of financial and economic objectives.
