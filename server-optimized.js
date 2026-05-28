@@ -133,6 +133,7 @@ const ELEVENLABS_VOICE_ID_FR = process.env.ELEVENLABS_VOICE_ID_FR; // French voi
 
 const MONTHLY_VOICE_LIMIT = 500000;
 const VOICE_USAGE_FILE = path.join(__dirname, '.voice-usage.json');
+const STATS_FILE = path.join(__dirname, '.usage-stats.json');
 
 // Load voice usage from disk so the monthly limit survives server restarts
 function loadVoiceUsage() {
@@ -177,17 +178,48 @@ console.log('='.repeat(60));
 // USAGE STATISTICS TRACKING
 // ============================================================================
 
-const usageStats = {
-    startedAt: new Date().toISOString(),
-    totalQuestions: 0,
-    byMode: { voice: 0, fast: 0, deep: 0 },
-    byLanguage: { en: 0, fr: 0 },
-    daily: {},   // { '2026-03-01': { total: 5, voice: 2, fast: 2, deep: 1 } }
-    recentQuestions: [], // last 50 questions (no personal data, just metadata)
-    totalResponseTime: 0,
-    errors: 0,
-    cacheHits: 0
-};
+function loadUsageStats() {
+    try {
+        if (fs.existsSync(STATS_FILE)) {
+            const saved = JSON.parse(fs.readFileSync(STATS_FILE, 'utf-8'));
+            console.log(`📊 Usage stats loaded: ${saved.totalQuestions || 0} total questions since ${saved.startedAt}`);
+            return {
+                startedAt: saved.startedAt || new Date().toISOString(),
+                totalQuestions: saved.totalQuestions || 0,
+                byMode: saved.byMode || { voice: 0, fast: 0, deep: 0 },
+                byLanguage: saved.byLanguage || { en: 0, fr: 0 },
+                daily: saved.daily || {},
+                recentQuestions: saved.recentQuestions || [],
+                totalResponseTime: saved.totalResponseTime || 0,
+                errors: saved.errors || 0,
+                cacheHits: saved.cacheHits || 0
+            };
+        }
+    } catch (e) {
+        console.error('⚠️ Could not load usage stats:', e.message);
+    }
+    return {
+        startedAt: new Date().toISOString(),
+        totalQuestions: 0,
+        byMode: { voice: 0, fast: 0, deep: 0 },
+        byLanguage: { en: 0, fr: 0 },
+        daily: {},
+        recentQuestions: [],
+        totalResponseTime: 0,
+        errors: 0,
+        cacheHits: 0
+    };
+}
+
+function saveUsageStats() {
+    try {
+        fs.writeFileSync(STATS_FILE, JSON.stringify(usageStats));
+    } catch (e) {
+        console.error('⚠️ Could not save usage stats:', e.message);
+    }
+}
+
+const usageStats = loadUsageStats();
 
 function trackQuestion(mode, language, responseTime, cached) {
     const today = new Date().toISOString().split('T')[0];
@@ -225,6 +257,8 @@ function trackQuestion(mode, language, responseTime, cached) {
     for (const date of Object.keys(usageStats.daily)) {
         if (date < cutoffStr) delete usageStats.daily[date];
     }
+
+    saveUsageStats();
 }
 // Using concise summaries instead of full documents for faster responses
 // ============================================================================
