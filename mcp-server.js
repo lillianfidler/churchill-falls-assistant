@@ -45,6 +45,7 @@ const DOCUMENTS = [
   'HQ-exports-electricity-price-escalation.txt',
   'HYDRO_MOU_GNL_Jan_2025.txt',
   'Hydro-quebec-annual-report-2024.txt',
+  'Hydro-Quebec-NECEC-Transmission-Line.txt',
   'HYDRO-QUEBECS-IMPORTS.txt',
   
   // MOU Supporting Documents

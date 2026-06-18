@@ -52,6 +52,57 @@ const CORE_DOCUMENTS = [
 ];
 
 /**
+ * Normalize a filename for fuzzy matching across case, punctuation, and accents.
+ */
+function normalizeFileName(value) {
+    return value
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+        .replace(/\.txt$/i, '')
+        .replace(/[^a-z0-9]/g, '');
+}
+
+/**
+ * Resolve a requested document filename to the best available file in /content.
+ */
+function resolveCoreDocumentFilename(requestedName, availableFiles) {
+    // Prefer exact filename first.
+    const exactMatch = availableFiles.find(name => name === requestedName);
+    if (exactMatch) {
+        return exactMatch;
+    }
+
+    const requestedNormalized = normalizeFileName(requestedName);
+
+    // Then try exact normalized match.
+    const normalizedMatches = availableFiles.filter(name =>
+        normalizeFileName(name) === requestedNormalized
+    );
+    if (normalizedMatches.length > 0) {
+        return normalizedMatches[0];
+    }
+
+    // Finally, pick the closest partial match by overlap in normalized form.
+    let best = null;
+    let bestScore = 0;
+
+    for (const name of availableFiles) {
+        const normalized = normalizeFileName(name);
+
+        if (normalized.includes(requestedNormalized) || requestedNormalized.includes(normalized)) {
+            const score = Math.min(normalized.length, requestedNormalized.length);
+            if (score > bestScore) {
+                best = name;
+                bestScore = score;
+            }
+        }
+    }
+
+    return best;
+}
+
+/**
  * Load core documents into memory for context window
  */
 function loadCoreDocuments() {
@@ -60,11 +111,27 @@ function loadCoreDocuments() {
     console.log('============================================\n');
     
     const contentDir = path.join(__dirname, 'content');
+    let availableFiles = [];
+
+    try {
+        availableFiles = fs.readdirSync(contentDir).filter(name => name.toLowerCase().endsWith('.txt'));
+    } catch (error) {
+        console.error('✗ Failed to read content directory:', error.message);
+        return false;
+    }
+
     let documentsLoaded = 0;
     let totalSize = 0;
     
-    for (const filename of CORE_DOCUMENTS) {
-        const filepath = path.join(contentDir, filename);
+    for (const requestedFilename of CORE_DOCUMENTS) {
+        const resolvedFilename = resolveCoreDocumentFilename(requestedFilename, availableFiles);
+
+        if (!resolvedFilename) {
+            console.warn(`⚠ File not found (or no close match): ${requestedFilename}`);
+            continue;
+        }
+
+        const filepath = path.join(contentDir, resolvedFilename);
         
         try {
             if (fs.existsSync(filepath)) {
@@ -73,22 +140,26 @@ function loadCoreDocuments() {
                 
                 // Add document with clear headers for Claude to reference
                 coreDocumentsText += `\n\n========================================\n`;
-                coreDocumentsText += `DOCUMENT: ${filename}\n`;
+                coreDocumentsText += `DOCUMENT: ${resolvedFilename}\n`;
                 coreDocumentsText += `========================================\n\n`;
                 coreDocumentsText += content;
                 coreDocumentsText += `\n\n========================================\n`;
-                coreDocumentsText += `END OF DOCUMENT: ${filename}\n`;
+                coreDocumentsText += `END OF DOCUMENT: ${resolvedFilename}\n`;
                 coreDocumentsText += `========================================\n\n`;
                 
                 documentsLoaded++;
                 totalSize += Buffer.byteLength(content, 'utf-8');
                 
-                console.log(`✓ Loaded: ${filename} (${sizeKB} KB)`);
+                if (resolvedFilename !== requestedFilename) {
+                    console.log(`✓ Loaded: ${requestedFilename} -> ${resolvedFilename} (${sizeKB} KB)`);
+                } else {
+                    console.log(`✓ Loaded: ${resolvedFilename} (${sizeKB} KB)`);
+                }
             } else {
-                console.warn(`⚠ File not found: ${filename}`);
+                console.warn(`⚠ File not found: ${resolvedFilename}`);
             }
         } catch (error) {
-            console.error(`✗ Error loading ${filename}:`, error.message);
+            console.error(`✗ Error loading ${resolvedFilename}:`, error.message);
         }
     }
     
