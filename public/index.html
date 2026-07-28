@@ -684,7 +684,9 @@
 
         try {
           const controller = new AbortController();
-          const timeoutId = setTimeout(() => controller.abort(), 90000);
+          // Deep mode tool loops can take 60-100s; Fast/voice stay closer to 90s.
+          const clientTimeoutMs = (!isVoice && currentTextMode === 'deep') ? 130000 : 90000;
+          const timeoutId = setTimeout(() => controller.abort(), clientTimeoutMs);
           const response = await fetch('https://churchill-falls.onrender.com/api/chat', {
             method: 'POST', headers: { 'Content-Type': 'application/json' }, signal: controller.signal,
             body: JSON.stringify({ message, conversationHistory: conversationHistory.slice(-20), isVoiceMode: isVoice, textMode: currentTextMode })
@@ -695,7 +697,7 @@
           const tempMsg = document.getElementById('temp-researching'); if (tempMsg) tempMsg.remove();
 
           if (data.error) {
-            addMessage('assistant', 'I apologize, but I encountered an error. Please try again.');
+            addMessage('assistant', data.text || data.error || 'I apologize, but I encountered an error. Please try again.');
           } else {
             const fullText = data.text || '';
             addMessage('assistant', fullText, data.sources, data.audio, data.mode, data.cached);

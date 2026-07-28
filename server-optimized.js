@@ -877,17 +877,22 @@ function truncateToolResult(text, maxChars = MAX_TOOL_RESULT_CHARS) {
 async function handleChatRequest(req, res) {
     const startTime = Date.now();
 
-    // Overall request timeout — deep text queries can legitimately take 27-30s on this server,
-    // so we use 55s to give them room while still catching genuinely stalled requests.
+    // Overall request timeout — Deep mode with tool loops often needs 60-100s on Sonnet 4.6.
+    // Fast/voice stay on a shorter leash; Deep gets more room before we bail.
     let responded = false;
-    const requestTimeoutHandle = setTimeout(() => {
-        if (!responded && !res.headersSent) {
-            responded = true;
-            console.error('⚠️ Request timeout (55s) — sending timeout response');
-            usageStats.errors++;
-            res.status(503).json({ error: 'Request timed out. Please try again.' });
-        }
-    }, 55000);
+    let requestTimeoutHandle = null;
+    const armRequestTimeout = (ms) => {
+        if (requestTimeoutHandle) clearTimeout(requestTimeoutHandle);
+        requestTimeoutHandle = setTimeout(() => {
+            if (!responded && !res.headersSent) {
+                responded = true;
+                console.error(`⚠️ Request timeout (${Math.round(ms / 1000)}s) — sending timeout response`);
+                usageStats.errors++;
+                res.status(503).json({ error: 'Request timed out. Please try again.' });
+            }
+        }, ms);
+    };
+    armRequestTimeout(120000);
 
     try {
         const { 
@@ -896,6 +901,9 @@ async function handleChatRequest(req, res) {
             isVoiceMode = false,
             textMode = 'deep' // 'fast' or 'deep' for text responses
         } = req.body;
+
+        const isDeepMode = !isVoiceMode && textMode === 'deep';
+        armRequestTimeout(isDeepMode ? 120000 : 55000);
         
         if (!message?.trim()) {
             return res.status(400).json({ error: 'Message is required' });
@@ -1077,11 +1085,13 @@ responseText = displayText; // Display uses original spelling
             // Haiku for Fast (cheap + fast), Sonnet for Deep (quality matters)
             // Note: claude-sonnet-4-20250514 was retired June 15, 2026 — use Sonnet 4.6
             const textModel = isFastMode ? 'claude-haiku-4-5-20251001' : 'claude-sonnet-4-6';
+            // Deep tool rounds can exceed 40s on Sonnet 4.6; Fast stays shorter.
+            const claudeCallTimeoutMs = isFastMode ? 40000 : 75000;
             console.log(`🤖 Model: ${textModel}`);
 
             // Per-call timeout for the initial API call
             const initialCallTimeout = new Promise((_, reject) => 
-                setTimeout(() => reject(new Error('Claude API call timed out (40s)')), 40000)
+                setTimeout(() => reject(new Error(`Claude API call timed out (${claudeCallTimeoutMs / 1000}s)`)), claudeCallTimeoutMs)
             );
 
             let response = await Promise.race([
@@ -1229,7 +1239,7 @@ responseText = displayText; // Display uses original spelling
 
                 // Per-call timeout: abort if a single API call takes too long
                 const callTimeout = new Promise((_, reject) => 
-                    setTimeout(() => reject(new Error('Claude API call timed out (40s)')), 40000)
+                    setTimeout(() => reject(new Error(`Claude API call timed out (${claudeCallTimeoutMs / 1000}s)`)), claudeCallTimeoutMs)
                 );
 
                 response = await Promise.race([
