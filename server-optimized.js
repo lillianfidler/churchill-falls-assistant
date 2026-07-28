@@ -1075,7 +1075,8 @@ responseText = displayText; // Display uses original spelling
             const maxTokens = isFastMode ? 1024 : 4096; // Fast: ~250 words, Deep: ~1000 words
             
             // Haiku for Fast (cheap + fast), Sonnet for Deep (quality matters)
-            const textModel = isFastMode ? 'claude-haiku-4-5-20251001' : 'claude-sonnet-4-20250514';
+            // Note: claude-sonnet-4-20250514 was retired June 15, 2026 — use Sonnet 4.6
+            const textModel = isFastMode ? 'claude-haiku-4-5-20251001' : 'claude-sonnet-4-6';
             console.log(`🤖 Model: ${textModel}`);
 
             // Per-call timeout for the initial API call
@@ -1273,7 +1274,7 @@ responseText = displayText; // Display uses original spelling
         console.log(`⏱️ Total time: ${responseTime}s`);
         
         // Cost estimation logging
-        const model = isVoiceMode ? 'haiku-4.5' : (textMode === 'fast' ? 'haiku-4.5' : 'sonnet-4');
+        const model = isVoiceMode ? 'haiku-4.5' : (textMode === 'fast' ? 'haiku-4.5' : 'sonnet-4.6');
         console.log(`💰 Model used: ${model} | Mode: ${isVoiceMode ? 'voice' : textMode}`);
         console.log('='.repeat(60));
         
