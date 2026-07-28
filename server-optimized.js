@@ -49,7 +49,7 @@ const chatLimiter = rateLimit({
   standardHeaders: true, // Return rate limit info in headers
   legacyHeaders: false,
   // Skip rate limiting for health checks
-  skip: (req) => req.path === '/api/health' || req.path === '/api/voice-status'
+  skip: (req) => req.path === '/api/health' || req.path === '/api/health/deep' || req.path === '/api/voice-status'
 });
 
 console.log('🛡️ Rate limiting enabled: 20 requests/hour per IP');
@@ -126,6 +126,14 @@ setInterval(() => {
 const anthropic = new Anthropic({
     apiKey: process.env.ANTHROPIC_API_KEY
 });
+
+// Keep these in one place so Deep health checks and chat use the same IDs.
+const FAST_MODEL = 'claude-haiku-4-5-20251001';
+const DEEP_MODEL = 'claude-sonnet-4-6'; // successor after claude-sonnet-4-20250514 retirement
+
+// Cache Deep health probes so uptime monitors don't hit Anthropic on every poll.
+let deepHealthCache = null;
+const DEEP_HEALTH_CACHE_MS = 5 * 60 * 1000;
 
 const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY;
 const ELEVENLABS_VOICE_ID = process.env.ELEVENLABS_VOICE_ID;
@@ -1083,8 +1091,7 @@ responseText = displayText; // Display uses original spelling
             const maxTokens = isFastMode ? 1024 : 4096; // Fast: ~250 words, Deep: ~1000 words
             
             // Haiku for Fast (cheap + fast), Sonnet for Deep (quality matters)
-            // Note: claude-sonnet-4-20250514 was retired June 15, 2026 — use Sonnet 4.6
-            const textModel = isFastMode ? 'claude-haiku-4-5-20251001' : 'claude-sonnet-4-6';
+            const textModel = isFastMode ? FAST_MODEL : DEEP_MODEL;
             // Deep tool rounds can exceed 40s on Sonnet 4.6; Fast stays shorter.
             const claudeCallTimeoutMs = isFastMode ? 40000 : 75000;
             console.log(`🤖 Model: ${textModel}`);
@@ -1415,6 +1422,67 @@ app.get('/api/health', (req, res) => {
         },
         timestamp: new Date().toISOString()
     });
+});
+
+/**
+ * Deep-mode health probe for uptime monitors.
+ * Verifies MCP is up and that the configured Deep model still exists in the Anthropic API
+ * (catches retired/renamed model IDs like the Sonnet 4 retirement).
+ * Returns HTTP 503 when unhealthy so monitors can alert on status code.
+ * Results are cached for 5 minutes.
+ */
+app.get('/api/health/deep', async (req, res) => {
+    const forceRefresh = req.query.refresh === '1';
+    const now = Date.now();
+
+    if (!forceRefresh && deepHealthCache && (now - deepHealthCache.checkedAt) < DEEP_HEALTH_CACHE_MS) {
+        return res.status(deepHealthCache.statusCode).json(deepHealthCache.body);
+    }
+
+    const mcpConnected = !!mcpClient && !!cachedToolsList;
+    let modelAvailable = false;
+    let modelError = null;
+
+    try {
+        // Lightweight Models API lookup — no chat tokens burned.
+        const modelRes = await axios.get(
+            `https://api.anthropic.com/v1/models/${DEEP_MODEL}`,
+            {
+                headers: {
+                    'x-api-key': process.env.ANTHROPIC_API_KEY,
+                    'anthropic-version': '2023-06-01'
+                },
+                timeout: 15000,
+                validateStatus: () => true
+            }
+        );
+
+        if (modelRes.status === 200 && modelRes.data?.id) {
+            modelAvailable = true;
+        } else {
+            modelError = modelRes.data?.error?.message
+                || `Model lookup returned HTTP ${modelRes.status}`;
+        }
+    } catch (error) {
+        modelError = error.message || 'Model lookup failed';
+    }
+
+    const healthy = mcpConnected && modelAvailable;
+    const body = {
+        status: healthy ? 'healthy' : 'unhealthy',
+        deepMode: {
+            model: DEEP_MODEL,
+            modelAvailable,
+            modelError,
+            mcpConnected
+        },
+        timestamp: new Date().toISOString(),
+        cachedForSeconds: DEEP_HEALTH_CACHE_MS / 1000
+    };
+    const statusCode = healthy ? 200 : 503;
+
+    deepHealthCache = { checkedAt: now, statusCode, body };
+    res.status(statusCode).json(body);
 });
 
 // ============================================================================
